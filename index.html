@@ -1,0 +1,99 @@
+---
+layout: default
+---
+
+<div class="row">
+
+  <div class="large-7 columns samping">
+
+    <article class="headerpost tag-speeches">
+      <div style="padding: 20px;">
+        <header class="post-header">
+          <h1 class="post-title" style="font-size: 3em;"><center>We're the PClub!</center></h1>
+        </header>
+        <section class="post-excerpt">
+          <em><center><h4>Talk is cheap, show us the code!</h4></center></em>
+          <center><h3>Current Coordinators:</h3></center>
+          <center>
+          <ul>
+            <li> Kunal Kapila (kunalkap)</li>
+            <li> Saksham Sharma (sakshams)</li>
+            <li> Vinayak Tantia (vtantia)</li>
+          </ul>
+          </center>
+        </section>
+      </div>
+    </article>
+
+    {% for post in paginator.posts %}
+    <article class="post tag-speeches">
+      <div style="padding: 20px;">
+        <header class="post-header">
+          <h2 class="post-title"><a id="route" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        </header>
+        <section class="post-excerpt">
+          <p>{{ post.content | strip_html | truncatewords:45}} <a id="route" class="read-more" href="{{ post.url | prepend: site.baseurl }}">»</a></p>
+        </section>
+      </div>
+      <footer class="post-meta" style="    background: #00bc8c;
+      padding: 10px 0 0px 20px;">
+
+
+        <p class="post-tags"><i class="typico typcn typcn-tags" style="    font-size: 28px;
+        position: relative;
+        top: 1px;
+        font-size:15px"></i> {% include post-tags.html %}</p>
+        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" style="color:#fff;"><i class="typico typcn typcn-calendar-outline" style="    font-size: 28px;
+        position: relative;
+        top: 1px;
+        font-size:15px"></i> {{ post.date | date: "%b %-d, %Y" }}</time>
+        <p class="post-tags" style="text-align: right;"> -- {{ post.author }}</p>
+        <!--<p class="post-date"><i class="typico typcn typcn-messages" style="    font-size: 28px;-->
+        <!--position: relative;-->
+        <!--top: 1px;-->
+        <!--font-size:15px"></i> <a id="route" class="disqus-comment-count"  href="{{ post.url | prepend: site.baseurl }}#disqus_thread" style="color:#fff"> 0 Comments</a></p>-->
+      </footer>
+    </article>
+    {% endfor %}
+
+
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if paginator.previous_page %}
+      <a id="route" href="{{ paginator.previous_page_path }}" class="previous"><i class="typcn typcn-chevron-left-outline" style="    font-size: 14px;
+      position: relative;
+
+"></i> Previous</a>
+      {% else %}
+      <span class="previous" align="left"><i class="typcn typcn-chevron-left-outline" style="    font-size: 14px;
+      position: relative;
+
+"></i> Previous</span>
+      {% endif %}
+
+      {% if paginator.next_page %}
+      <a id="route" href="{{ paginator.next_page_path }}" class="next">Next <i class="typcn typcn-chevron-right-outline" style="    font-size: 14px;
+      position: relative;
+
+"></i></a>
+      {% else %}
+      <span class="next" align="right">Next <i class="typcn typcn-chevron-right-outline" style="    font-size: 14px;
+      position: relative;
+
+"></i></span>
+      {% endif %}
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+  {% include widgets.html %}
+
+
+</div>
+</div>

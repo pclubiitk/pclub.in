@@ -1,0 +1,97 @@
+---
+layout: default
+---
+<div style="margin: 4.5rem auto;">
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="inpost-header">
+    <h1 class="inpost-title" itemprop="name headline">{{ page.title }}</h1>
+    <h1 style="float:right" class="comment-postingatas">
+     <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="#disqus_thread" style="color:#fff"> 0</a>
+    </h1>
+    </p>
+  </header>
+  
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+<div class="arrowNav">
+ 
+{% if page.next.url %} 
+<div class="arrowLeft">
+<a id="route" class="tooltip-right" href="{{page.next.url}}" title="
+&lt;p class=hoveratas&gt;{{page.next.title}}&lt;/p&gt; &lt;p class=hoverbawah&gt;{{ page.next.content | strip_html | truncatewords:10}}&lt;/p&gt;
+"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+{% endif %}
+
+{% if page.previous.url %} 
+<div class="arrowRight" style="float:right">
+<a id="route" class="tooltip-left" href="{{page.previous.url}}" title="
+&lt;p class=hoveratas&gt;{{page.previous.title}}&lt;/p&gt; &lt;p class=hoverbawah&gt;{{ page.previous.content | strip_html | truncatewords:10}}&lt;/p&gt;
+"><i class="typcn typcn-chevron-right" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+{% endif %}
+</div>
+
+
+  <p class="post-meta" style="    background: #00bc8c;
+    padding: 15px 0px 15px 20px;"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> {{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} 
+    |{% if post %}
+    {% assign tags = post.tags %}
+  {% else %}
+    {% assign tags = page.tags %}
+  {% endif %}
+  {% for tag in tags %}
+  <a href="/tags/#{{tag|slugize}}" style="color: #fff;"><i class="typcn typcn-tags"></i> {{tag}}</a>{% unless forloop.last %} {% endunless %}
+  {% endfor %}
+  
+
+</article>
+
+
+
+
+
+<style>
+    #disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+</style>
+<div id="disqus_thread"></div>
+<script>
+
+var disqus_config = function () {
+this.page.url = spaghetti.ga; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = {{page.id}}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//{{ site.disqus_id }}/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+ 
+
+
+
+</div>
