@@ -87,13 +87,17 @@ Oh, and do go here for some hands on -> [Git Tutorial](https://try.github.io/). 
 ### A Good coding style
 A seasoned programmer can judge a coder by his code style. Some things off the top of my head:
 
-* Do NOT write badly indented code. Most editors have an auto-indent feature. Make sure you indent your code all the time. Indent involves giving similar spaces to distinguish code blocks etc.
-* Fix an indent width. Most commonly used is 4 spaces. Set your tabstop to 4 spaces.
-* Fix whether to use tabs or spaces. Most editors will also have an option to convert all indent tabs to spaces. Do that to ensure uniformity.
 
-* Do not leave useless lines in between.
+- Do NOT write badly indented code. Most editors have an auto-indent feature. Make sure you indent your code all the time. Indent involves giving similar spaces to distinguish code blocks etc.
 
-* Use a fixed style of function definitions and curly braces. For instance, I prefer this one:
+- Fix an indent width. Most commonly used is 4 spaces. Set your tabstop to 4 spaces.
+
+- Fix whether to use tabs or spaces. Most editors will also have an option to convert all indent tabs to spaces. Do that to ensure uniformity.
+
+- Do not leave useless lines in between.
+
+- Use a fixed style of function definitions and curly braces. For instance, I prefer this one:
+
 
 {% highlight c %}
 int main() {
