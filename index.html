@@ -2,6 +2,21 @@
 layout: default
 ---
 
+<script type="text/javascript">
+// For animating the title to appear one by one
+var title = "We're the PClub!"
+window.onload = function() {
+    var dv = $('#titlePclub');
+    dv.text("");
+    jQuery({count:0}).animate({count:title.length}, {
+        duration: 1500,
+        step: function() {
+          dv.text(title.substring(0, Math.round(this.count)));
+        }
+    });
+};
+</script>
+
 <div class="row">
 
   <div class="large-7 columns samping">
@@ -9,7 +24,7 @@ layout: default
     <article class="headerpost tag-speeches">
       <div style="padding: 20px;">
         <header class="post-header">
-          <h1 class="post-title" style="font-size: 3em;"><center>We're the PClub!</center></h1>
+          <h1 class="post-title" style="font-size: 3em;"><center id="titlePclub"></center></h1>
         </header>
         <section class="post-excerpt">
           <em><center><h4>Talk is cheap, show us the code!</h4></center></em>
