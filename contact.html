@@ -4,47 +4,81 @@ title: Contact
 permalink: /contact.html
 ---
 
-
-
+<br>
 
 <div class="row">
-<div class="large-7 columns samping">
-<div style="margin-top: 0;
+  <div class="large-7 columns samping">
+    <div style="margin-top: 0;
     position: relative;
     padding-bottom: 1rem;
-    /* border-bottom: #636363 1px solid; */
     word-wrap: break-word;
     background: #3E3E3E;
     padding: 32px 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;">
 
-<br><br>
+      <br><br>
 
-<center>
-<h1 style="color: #00ffff;">Current Coordinators</h1>
-  <ul style="list-style: none; margin-left:0;">
-    <li> Kunal Kapila (kunalkap@iitk) (kunalapila@github)</li>
-    <li> Saksham Sharma (sakshams@iitk) (sakshamsharma@github)</li>
-    <li> Vinayak Tantia (vtantia@iitk) (vtantia@github)</li>
-  </ul>
-</center>
+      <center>
+        <h1 style="color: #00ffff;">Current Coordinators</h1>
+        <table cellpadding="10">
+          <tr>
+            <td> <b> Kunal Kapila </b> </td>
+            <td> kunalkap@iitk </td>
+            <td> kunalapila@github </td>
+            <td class="coordieRow"> <img src="assets/image/kunal.jpg" class="coordiePic" alt="Kunal Kapila"> </td>
+          </tr>
+          <tr>
+            <td> <b> Saksham Sharma </b> </td>
+            <td> sakshams@iitk </td>
+            <td> sakshamsharma@github </td>
+            <td class="coordieRow"> <img src="assets/image/saksham.jpg" class="coordiePic" alt="Saksham Sharma"> </li>
+          </tr>
+          <tr>
+            <td> <b> Vinayak Tantia </b> </td>
+            <td> vtantia@iitk </td>
+            <td> vtantia@github </td>
+            <td class="coordieRow"> <img src="assets/image/vinayak.jpg" class="coordiePic" alt="Vinayak Tantia"> </li>
+          </tr>
+        </table>
+      </center>
 
-<br>
-<br>
+      <br>
+      <br>
 
+    </div>
+  </div>
+  {% include widgets.html %}
 </div>
 
+<style>
+tr {
+}
+tr:hover {background-color: #333333}
+td {
+  display: block;
+}
 
+td b {
+  color: #33dddd;
+}
 
+.coordieRow {
+  display: table-cell;
+}
 
+.coordiePic {
+  position: relative;
+  max-width: 90%;
+  float: left;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
 
-</div>
-
-
-
-{% include widgets.html %}
-
-
-</div>
-</div>
+.coordiePic:hover {
+  max-width: 95%;
+}
+</style>
