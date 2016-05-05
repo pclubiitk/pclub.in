@@ -19,12 +19,12 @@ figure {
 }
 
 @font-face {
-  font-family: gidole;
-  src: url(/assets/font/gidole.otf);
+  font-family: 'Raleway';
+  src: url(https://fonts.googleapis.com/css?family=Raleway);
 }
 
 body {
-  font: 400 16px/1.5 gidole;
+  font: 400 16px/1.5 'Raleway';
   color: #fff;
   background-color: #222222;
   -webkit-text-size-adjust: 100%;
