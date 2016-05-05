@@ -20,7 +20,7 @@ image:
 
 # Kickstart to Vim
 
-This article has been taken from my blog at [acehack](http://www.acehack.org/posts/2015-06-15-vim.html). Please note that it assumes a bit of familiarity with Vim, and thus, you should first start off by reading about it, getting an installation of it, and learning how to type things in it (yes, you need to learn that too). It's fun, I promise :smile:
+This article has been taken from [acehack.org](http://www.acehack.org/posts/2015-06-15-vim.html). Please note that it assumes a bit of familiarity with Vim, and thus, you should first start off by reading about it, getting an installation of it, and learning how to type things in it (yes, you need to learn that too). It's fun, I promise :smile:
 
 ![](https://realpython.com/images/blog_images/vim/vim-ide.png)
 
