@@ -152,7 +152,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/vundle'
-call vundle#End
+call vundle#end()
 filetype plugin indent on
 {% endhighlight %}
 
