@@ -54,3 +54,5 @@ Follow this template to the bit.
 - Done already? Mail or message the markdown file to any of the coordinators, or at pclubiitk@gmail.com
 
 - [Contact Us](/contact.html) if there are any issues.
+
+- And of course, we're open source. Find the source code at [Github here](https://github.com/pclubiitk/pclub.in), and feel free to open new issues, pull requests etc.
