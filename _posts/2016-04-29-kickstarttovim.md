@@ -18,14 +18,16 @@ image:
 
 ---
 
-# Kickstart to Vim
+# Vim!
 
-This article has been taken from [acehack.org](http://www.acehack.org/posts/2015-06-15-vim.html). Please note that it assumes a bit of familiarity with Vim, and thus, you should first start off by reading about it, getting an installation of it, and learning how to type things in it (yes, you need to learn that too). It's fun, I promise :smile:
+Vim is one of the two widely known text-based Text Editor cum IDEs, the other one being, ahem, Emacs.
+For people new to Vim, it might have be a big leap, it is markedely different from the usual text editors, it being modal (implying that the same keys do differnt things in different modes. Don't worry, modes are awesome.)
 
 ![](https://realpython.com/images/blog_images/vim/vim-ide.png)
 
-Vim is one of the two widely known text-based Text Editor cum IDEs, the other one being, ahem, Emacs.
-For people new to Vim, it might have be a big leap, it is markedely different from the usual text editors, it being modal (implying that the same keys do differnt things in different modes. Don't worry, modes are awesome.) Anyhow, I'll list some cool things about Vim here first.
+This article has been taken from the blog at [acehack.org](http://www.acehack.org/posts/2015-06-15-vim.html). Please note that it assumes a bit of familiarity with Vim, and thus, you should first start off by reading about it, getting an installation of it, and learning how to type things in it (yes, you need to learn that too). It's fun, I promise :smile:
+
+So, first, some cool things about Vim:
 
 * Firstly, you don't have to press any keys beyond the Return key. No need to stretch/move your hands to press the home/end/page up/page down/left/right keys. There are much better ways to do that.
 
@@ -45,7 +47,7 @@ Now to embed the biggest change you should embrace, in Vim we use the keys 'hjkl
 * h: Left
 * j: Down
 * k: Up
-* l: Down
+* l: Right
 
 Get used to these, and stop using arrow keys pronto. This is because, to be able to use Vim at the speed it is meant for, you ought not to move your hands away from the alphabet region of the keyboard. I'll come to 'banning' the use of the arrow keys in a short while. Also, these 4 keys represent the 4 different motions in Vim (see section on Motions)
 
