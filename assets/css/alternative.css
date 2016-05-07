@@ -305,6 +305,10 @@ ul {
   visibility: hidden;
 }
 
+.tags-pagee ul {
+  list-style-type: none;
+}
+
 .tags li {
   position: relative;
   float: left;
