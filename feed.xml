@@ -6,9 +6,68 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 May 2016 21:43:47 +0000</pubDate>
-    <lastBuildDate>Fri, 13 May 2016 21:43:47 +0000</lastBuildDate>
+    <pubDate>Fri, 13 May 2016 23:46:18 +0000</pubDate>
+    <lastBuildDate>Fri, 13 May 2016 23:46:18 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Setting up a CI for pclub.in</title>
+        <description>&lt;p&gt;To begin with, I urge you to have a look at &lt;a href=&quot;https://github.com/pclubiitk/pclub.in&quot;&gt;our Github repo&lt;/a&gt; for this website.
+Sure, Github serves the purpose of keeping our code public and accessible, and also lets users open issues and pull requests for the same.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://assets-cdn.github.com/images/modules/logos_page/Octocat.png&quot; style=&quot;width: 35%; margin-left: auto; margin-right: auto;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But more, we wanted to use Github as a medium to build the website automatically on commits to the master, and deploy the website as well.
+This would mean, anyone can write a post, or fix a file using Github’s online interface, send a pull request; which can be merged online as well. At no point was there a need to download the repository, and yet, the website would build in less than 2 minutes, and be updated for public. Isn’t this cool? Hang on for how this was done.&lt;/p&gt;
+
+&lt;h2 id=&quot;some-basic-information&quot;&gt;Some basic information&lt;/h2&gt;
+
+&lt;p&gt;A lesser known fact is that Github also allows you to host webpages.
+For instance, this website is also hosted on Github at &lt;a href=&quot;pclubiitk.github.io/pclub.in&quot;&gt;pclubiitk.github.io/pclub.in&lt;/a&gt;.
+For this, you just need to keep your html files in a branch called &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; for a project repo, or in the master of a repo called &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;.
+This is itself a big topic to cover here.&lt;/p&gt;
+
+&lt;p&gt;An even lesser known fact is that you can use Github to build your static webpages for you automatically, using Continous Integration (CI).
+This is only true for Jekyll though.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-challenge&quot;&gt;The challenge&lt;/h2&gt;
+
+&lt;p&gt;On deciding about setting up a CI for this website, I had several options in hand. But before that, we had several constraints as well. Some of them were:
+* The website uses custom gems. Github’s automatic page building would not build it.
+* We host this website on a server inside IIT Kanpur. That server is not directly visible to the outside world, and only the HTTPS port is forwarded. So an external CI cannot send its built files to the server directly.
+* Deploying a local CI seemed like an overkill. Plus, IIT Kanpur’s internally deployed Gitlab wasn’t fully ready to be able to handle builds etc yet.
+* Even if one could somehow build the files, it would not be a direct task to get the files inside IIT Kanpur.
+* Providing permission to an external CI to push to the repository would require committing the private key, which is insecure.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-resolution&quot;&gt;The resolution&lt;/h2&gt;
+
+&lt;p&gt;We finally used &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis CI&lt;/a&gt; for this purpose. Travis is an online Continous Integration service, which offers to build your repositories for free, within some limits. You can customize how to build, and what else to do along with that much information. We set it up to build the code, and push it to the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch of the same repo.&lt;/p&gt;
+
+&lt;h4 id=&quot;giving-travis-push-access-to-the-repository&quot;&gt;Giving travis push access to the repository&lt;/h4&gt;
+&lt;p&gt;For travis to be able to push to the repo, it needed to be provided a ‘deploy-key’, a key which provides access to a repository to the person having the private counterpart of that deploy key. I generated a SSH-key pair, and added the public key to Github on this repository. As for the private, it had to be inside the repository. But then anyone could copy it and pretend to be our CI. The way out was &lt;a href=&quot;https://docs.travis-ci.com/user/encrypting-files/&quot;&gt;this&lt;/a&gt;. Turns out, Travis developers thought of this, and provided you ways to encrypt and decrypt files without storing the password anywhere. So finally, I ended up committing an encrypted version of the deploy-key, and then decrypting it inside the build machine during building. Have a look at that article to know how it can be done.&lt;/p&gt;
+
+&lt;h4 id=&quot;deploying-to-the-branch&quot;&gt;Deploying to the branch&lt;/h4&gt;
+
+&lt;p&gt;This was fairly easy. We make a folder named &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt;, and execute &lt;code class=&quot;highlighter-rouge&quot;&gt;git init&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;git remote ...&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; in that. We also checkout the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch. This is followed by the build. So basically, the required files get updated inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder. We add all files to git, and commit. This is then pushed to the origin, and we have the up to date build files in the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch.&lt;/p&gt;
+
+&lt;h4 id=&quot;getting-the-files-inside-the-server&quot;&gt;Getting the files inside the server&lt;/h4&gt;
+
+&lt;p&gt;Since the pclub server is running blind to the world, there was no direct way for it to know that the repository has been updated. &lt;code class=&quot;highlighter-rouge&quot;&gt;webhooks&lt;/code&gt; came to the rescue here. So Github has another gem, which lets you execute arbitrary actions on events. So first, I enabled PHP on the server which is serving this website, followed by a randomly named PHP script, which checks for a valid request, and pulls the updated repository from Git.&lt;/p&gt;
+
+&lt;p&gt;Think of it as a way to tell the machine that the code has been updated online, and it should pull in the new code. So currently, on every commit, the server will pull in the updated website. This is very convenient, as you can imagine, and simplifies the task of maintaining the website considerably.&lt;/p&gt;
+
+&lt;p&gt;Of note, the original version of &lt;a href=&quot;https://gist.github.com/sakshamsharma/209054260cd5a55c5789e20597f8a423&quot;&gt;this Gist&lt;/a&gt; was a major help in all this.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 May 2016 23:00:20 +0000</pubDate>
+        <link>http://pclub.in/pclub/2016/05/13/pclubci.html</link>
+        <guid isPermaLink="true">http://pclub.in/pclub/2016/05/13/pclubci.html</guid>
+        
+        <category>meta</category>
+        
+        
+        <category>pclub</category>
+        
+      </item>
     
       <item>
         <title>Plugin Managers for Vim</title>

@@ -3,6 +3,21 @@
   
     
     <url>
+      <loc>http://pclub.in/pclub/2016/05/13/pclubci.html</loc>
+      
+        <lastmod>2016-05-13T23:00:20+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>http://pclub.in/tutorial/vim/2016/05/08/plugins.html</loc>
       
         <lastmod>2016-05-08T07:32:20+00:00</lastmod>
@@ -70,7 +85,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2016-05-13T21:43:47+00:00</lastmod>
+        <lastmod>2016-05-13T23:46:18+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -88,7 +103,7 @@
     <url>
       <loc>http://pclub.in/about.html</loc>
       
-        <lastmod>2016-05-13T21:43:47+00:00</lastmod>
+        <lastmod>2016-05-13T23:46:18+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -106,7 +121,7 @@
     <url>
       <loc>http://pclub.in/archive.html</loc>
       
-        <lastmod>2016-05-13T21:43:47+00:00</lastmod>
+        <lastmod>2016-05-13T23:46:18+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -124,7 +139,7 @@
     <url>
       <loc>http://pclub.in/contact.html</loc>
       
-        <lastmod>2016-05-13T21:43:47+00:00</lastmod>
+        <lastmod>2016-05-13T23:46:18+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -152,7 +167,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2016-05-13T21:43:47+00:00</lastmod>
+        <lastmod>2016-05-13T23:46:18+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -175,7 +190,7 @@
     <url>
       <loc>http://pclub.in/projects.html</loc>
       
-        <lastmod>2016-05-13T21:43:47+00:00</lastmod>
+        <lastmod>2016-05-13T23:46:18+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -198,7 +213,7 @@
     <url>
       <loc>http://pclub.in/tags.html</loc>
       
-        <lastmod>2016-05-13T21:43:47+00:00</lastmod>
+        <lastmod>2016-05-13T23:46:18+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
