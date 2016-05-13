@@ -1,0 +1,96 @@
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <h2 class="footer-heading">{{ site.title }}</h2>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.description }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+          
+          {% if site.facebook_username %}
+          <li>
+            {% include icon-facebook.html username=site.facebook_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+      <div class="footer-col footer-col-3">
+        <p style="font-size: xx-small;">Design by Spaghetti</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Loading JavaScript -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-preload.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-tooltipster.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-autocomplete.js"></script>
+<script type="text/javascript" src="/assets/js/responsive_waterfall.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+<!--<script id="dsq-count-scr" src="//spaghettisan.disqus.com/count.js" async></script>-->
+
+<script>
+$(document).ready(function() {
+    "/" != location.pathname ? $('.trigger a[href^="/' + location.pathname.split("/")[1] + '"]').addClass("active") : $(".none a:eq(0)").addClass("active")
+}), $(document).ready(function() {
+    $(".tooltip-right").tooltipster({
+        contentAsHTML: !0,
+        position: "right"
+    })
+}), $(document).ready(function() {
+    $(".tooltip-left").tooltipster({
+        contentAsHTML: !0,
+        position: "left"
+    })
+});
+$(document).ready(function() {
+    $(".menu-icon").click(function() {
+        $(".trigger").toggle()
+    })
+}), Pace.on("done", function() {
+    $(".pacel").hide()
+}), $(function() {
+    $("img").lazyload({})
+});
+var options = {
+    url: "/gblk.json",
+    getValue: "title",
+    list: {
+        match: {
+            enabled: !0,
+            maxNumberOfElements: 5
+        }
+    },
+    template: {
+        type: "links",
+        fields: {
+            link: "url"
+        }
+    },
+    theme: "square"
+};
+$("#countries").easyAutocomplete(options);
+var waterfall = new Waterfall({
+    containerSelector: ".wf-container",
+    boxSelector: ".wf-box",
+    minBoxWidth: 180
+});
+</script>

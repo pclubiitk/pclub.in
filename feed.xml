@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming Club IIT Kanpur</title>
+    <description>The Programming Club, IIT Kanpur
+</description>
+    <link>http://pclub.in/</link>
+    <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 13 May 2016 20:04:23 +0000</pubDate>
+    <lastBuildDate>Fri, 13 May 2016 20:04:23 +0000</lastBuildDate>
+    <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Contributing to pclub.in</title>
+        <description>&lt;p&gt;We’ll be describing the procedure of contibuting posts to the Programming Club website here.&lt;/p&gt;
+
+&lt;p&gt;The website is based on &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, and we use Markdown format for writing posts.
+Here are some steps you should go through to contribute a post:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Have a look at previous posts here at &lt;a href=&quot;https://github.com/pclubiitk/pclub.in/tree/master/_posts&quot;&gt;our Github repository&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Have a look at the following template for each post:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;lt;some&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;cool&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;title&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2016-05-05 17:23:20 +200&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;lt;your-name&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;website&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;lt;website-if-any&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;some tag&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;another tag&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;a category&lt;/span&gt;
+
+&lt;span class=&quot;s&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;lt;link to a title image&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+
+Your article&#39;s content goes here in markdown syntax&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Follow this template to the bit.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ensure that you are familiar with basic markdown syntax. It’s really easy!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Check that you have included credits, if any part belongs to someone else.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Done already? Mail or message the markdown file to any of the coordinators, or at pclubiitk@gmail.com&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/contact.html&quot;&gt;Contact Us&lt;/a&gt; if there are any issues.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;And of course, we’re open source. Find the source code at &lt;a href=&quot;https://github.com/pclubiitk/pclub.in&quot;&gt;Github here&lt;/a&gt;, and feel free to open new issues, pull requests etc.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 05 May 2016 15:23:20 +0000</pubDate>
+        <link>http://pclub.in/tutorial/2016/05/05/posttemplate.html</link>
+        <guid isPermaLink="true">http://pclub.in/tutorial/2016/05/05/posttemplate.html</guid>
+        
+        <category>meta</category>
+        
+        <category>tutorial</category>
+        
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>Kickstart to Vim</title>
+        <description>&lt;h1 id=&quot;vim&quot;&gt;Vim!&lt;/h1&gt;
+
+&lt;p&gt;Vim is one of the two widely known text-based Text Editor cum IDEs, the other one being, ahem, Emacs.
+For people new to Vim, it might have be a big leap, it is markedely different from the usual text editors, it being modal (implying that the same keys do differnt things in different modes. Don’t worry, modes are awesome.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://realpython.com/images/blog_images/vim/vim-ide.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This article has been taken from the blog at &lt;a href=&quot;http://www.acehack.org/posts/2015-06-15-vim.html&quot;&gt;acehack.org&lt;/a&gt;. Please note that it assumes a bit of familiarity with Vim, and thus, you should first start off by reading about it, getting an installation of it, and learning how to type things in it (yes, you need to learn that too). It’s fun, I promise :smile:&lt;/p&gt;
+
+&lt;p&gt;So, first, some cool things about Vim:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Firstly, you don’t have to press any keys beyond the Return key. No need to stretch/move your hands to press the home/end/page up/page down/left/right keys. There are much better ways to do that.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Then, Vim would work even on the most old computer you will ever encounter in your lifetime, and also on computers older than that. As a big boon, it works in an SSH session, and you are likely to find it (or Vi) on every PC you will ever need to SSH to.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finally, Vim is yours to make. Everyone’s Vim is personalized, and is taken as a sign of identity. You make it whatever you want to; and yes, it can do whatever you want it to do (within sane limits).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;basics&quot;&gt;Basics&lt;/h3&gt;
+&lt;p&gt;Open Vim by typing &lt;code class=&quot;highlighter-rouge&quot;&gt;vim&lt;/code&gt; in your terminal, or else &lt;code class=&quot;highlighter-rouge&quot;&gt;vim &amp;lt;file&amp;gt;&lt;/code&gt; to open a particular file. I also first recommend you to open &lt;code class=&quot;highlighter-rouge&quot;&gt;vimtutor&lt;/code&gt;, Vim’s own tutor. I would be covering the basics pretty fast, as vimtutor explains them really well.&lt;/p&gt;
+
+&lt;p&gt;So, Vim by default opens in the ‘normal’ mode. This mode doesn’t let you type text (so don’t freak out when you try to type something). In this mode, most of the alphabet keys are binded to regular text-editing functions. For starters, pressing ‘x’ deletes the character below the cursor.&lt;/p&gt;
+
+&lt;p&gt;You press ‘i’ for Insert, this takes you to insert mode, where your alphabet keys work normally. Try typing something in Insert mode, then press the Escape key to exit to the Normal mode. Then move your cursor with the arrow keys (BAD practice, I’ll come to this) over some character, and press ‘x’ to see it get deleted.&lt;/p&gt;
+
+&lt;p&gt;Now to embed the biggest change you should embrace, in Vim we use the keys ‘hjkl’ for moving. The arrow keys are NOT to be used. Here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;h: Left&lt;/li&gt;
+  &lt;li&gt;j: Down&lt;/li&gt;
+  &lt;li&gt;k: Up&lt;/li&gt;
+  &lt;li&gt;l: Right&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Get used to these, and stop using arrow keys pronto. This is because, to be able to use Vim at the speed it is meant for, you ought not to move your hands away from the alphabet region of the keyboard. I’ll come to ‘banning’ the use of the arrow keys in a short while. Also, these 4 keys represent the 4 different motions in Vim (see section on Motions)&lt;/p&gt;
+
+&lt;p&gt;So, learn the basic moves, you type in the Insert mode, you exit the insert mode for any editing. This is where you use the Vim specific commands. I’ll list the main ones here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;i: Insert mode&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;x: Delete character&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;yy: Yank a line (Yank implies keeping a line for pasting, like the concept of ‘Copy’ in modern text editors)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;dd: Kill a line (Kill implies delete it, but keep it for pasting, like the concept of ‘Cut’ in modern text editors)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;dw: Delete a word (from current position to the end of the current word)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;p: Paste some previously killed text (y stands for Yanking)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;gg: Go to the start of the document&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;G: Go to the end of the document&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;o: Insert a new line below the current line, move the cursor there, and then enter insert mode&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;O: Insert a new line above the current line, move the cursor there, and then enter insert mode&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A: Enter insert mode at the end of the current line&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;0: Move to the start of the current line&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$: Move to the end of the current line&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;%: Move to a matching brace (when your cursor is one brace, this moves you to the matching one, useful in languages like C where blocks of code are bounded by curly braces)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“+yy: Copy line which can be pasted anywhere other than Vim too (like Browser)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“+p: Paste text copied from outside Vim (Their meaning will be explained in a later section)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now to saving files, you can save any text you write with &lt;code class=&quot;highlighter-rouge&quot;&gt;:w&lt;/code&gt;. Note that pressing ‘:’ takes you to a special mode where you can type out commands. More on this later. ‘w’ stands for write. You can save a file you opened with &lt;code class=&quot;highlighter-rouge&quot;&gt;:w&lt;/code&gt;, but if it was a new file, you would have to write something like &lt;code class=&quot;highlighter-rouge&quot;&gt;:w filename&lt;/code&gt; to save it by that name in the current directory where Vim was opened.&lt;/p&gt;
+
+&lt;p&gt;You can quit Vim with &lt;code class=&quot;highlighter-rouge&quot;&gt;:q&lt;/code&gt;. Also, you can quit without saving changes by typing &lt;code class=&quot;highlighter-rouge&quot;&gt;:q!&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure that you check out &lt;code class=&quot;highlighter-rouge&quot;&gt;vimtutor&lt;/code&gt; at this stage. Try practicing basic vim using that now.&lt;/p&gt;
+
+&lt;h3 id=&quot;repeating-commands&quot;&gt;Repeating commands&lt;/h3&gt;
+
+&lt;p&gt;If you have to delete 10 consecutive lines, in a normal editor you can select them with your mouse and then delete it. Or maybe press Ctrl+Shift+Down and select them, then delete. All this is too slow.&lt;/p&gt;
+
+&lt;p&gt;Here’s something better: &lt;code class=&quot;highlighter-rouge&quot;&gt;10dd&lt;/code&gt;. A simple and standard pattern for all commands in Vim. You can prefix them with a number to repeat them that number of times. So 10yy would copy/yank the next 10 lines.&lt;/p&gt;
+
+&lt;p&gt;This is a very important thing in Vim. Similarly, you can copy 10 lines with 10yy. You can delete 10 characters with 10x. You can go 10 lines downward with 10j, or 10 lines up with 10k. You can copy 10 lines (such that they can be pasted elsewhere too) with 10”+yy. Try things out!&lt;/p&gt;
+
+&lt;h3 id=&quot;motions&quot;&gt;Motions&lt;/h3&gt;
+
+&lt;p&gt;I’ll explain this with an example. Type some C code in Vim, and don’t try to align it. Let it remain unindented. Now to indent code, in Vim you use the character ‘=’. Now, to inform Vim of the block of code you want to indent, say you have 10 lines to indent, you go to the 1st line you want to indent, then type &lt;code class=&quot;highlighter-rouge&quot;&gt;10=j&lt;/code&gt;. What does this mean?
+It defines a motion for Vim. It reads as ‘Indent the 10 lines below me.’ (remember j stands for going down). This might be intimidating at first, but happens to be really versatile with practice.
+What if you want to indent the whole code? Try this &lt;code class=&quot;highlighter-rouge&quot;&gt;gg=G&lt;/code&gt;. This stands for ‘Go to the start, and indent all lines from the current position to the last line of the file’.&lt;/p&gt;
+
+&lt;h3 id=&quot;visual-mode&quot;&gt;Visual Mode&lt;/h3&gt;
+
+&lt;p&gt;Another way to do stuff like this, which might be more familiar to new users, is the Visual Mode. You wish you could just drag and select a block of lines to copy? Here’s a way.&lt;/p&gt;
+
+&lt;p&gt;Press &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+V&lt;/code&gt; (this does not stand for paste in Vim, remember). This activates Visual Mode. Now you can move around with hjkl and see text getting selected. Leave this mode with Escape key.&lt;/p&gt;
+
+&lt;p&gt;Now, say you want to copy 10 lines, go to the first line in normal mode. Press ‘0’ to get to the beginning of the current line. Enter Visual Mode. Press ‘$’ to select to the end of this line. Press j 10 times to go 10 lines down. See? You have 10 lines selected now (you can also use your mouse to do this, I’ll tell you how to enable mouse in a later section). Copy them with ‘y’, or if you want to paste them elsewhere, copy them with “+y.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-colon-commands&quot;&gt;The colon commands&lt;/h3&gt;
+
+&lt;p&gt;Vim can do various other non-editing stuff with the colon-commands. You want to change your colour-scheme? Type &lt;code class=&quot;highlighter-rouge&quot;&gt;:colorscheme &amp;lt;name&amp;gt;&lt;/code&gt; and you’re done (remember, Tab completion works here. Try experimenting with different schemes right now and choose one you like).&lt;/p&gt;
+
+&lt;p&gt;Try typing &lt;code class=&quot;highlighter-rouge&quot;&gt;:set &lt;/code&gt; and then try Tab completion, you’ll see the various settings you can play with.\n
+Of note, these commands stay active only till Vim is open. If you close it and re-open, these settings are gone. To keep them permanent, look at the section about the vimrc.
+Here is a simple setting: &lt;code class=&quot;highlighter-rouge&quot;&gt;:set nu&lt;/code&gt;, this shows the line numbers on the left. Another thing (though not really recommended), you can enable mouse with &lt;code class=&quot;highlighter-rouge&quot;&gt;:set mouse=a&lt;/code&gt;, where a stands for all. You can enable it for specific modes too, with n/i in place of a.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-vimrc&quot;&gt;The .vimrc&lt;/h3&gt;
+
+&lt;p&gt;So, I claimed Vim is yours to build. Here is the way you do that. You use the configuration file called vimrc. This is a file located in your home folder by the name &lt;em&gt;.vimrc&lt;/em&gt;. If not there, create a new one and open it.&lt;/p&gt;
+
+&lt;p&gt;Here, you can set commands to be executed whenever your Vim starts (mind it, it can slow it down a very little bit sometimes, still faster than everything out there though). So say for example you want to display line numbers all the time. You can simply write &lt;code class=&quot;highlighter-rouge&quot;&gt;set nu&lt;/code&gt; in your vimrc and save it. Next time you open Vim, it will have line numbers from the start.&lt;/p&gt;
+
+&lt;p&gt;You can save Keymappings here, enable Plugins here, and do almost anything with your Vim here.&lt;/p&gt;
+
+&lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;/h3&gt;
+
+&lt;p&gt;The best thing about Vim is, even though it doesn’t do everything itself, it can do almost anything with plugins written by the vast Vim community.
+Want Git support in Vim? git-gutter. Want auto-completion? AutoComplPop. Want to code in Scala? You have vim-scala.&lt;/p&gt;
+
+&lt;p&gt;Here is how to set up your Vim to handle plugins fast and easy. You need a plugin for that too! :p Don’t get scared already. So, its called Vundle (vim-bundle I fancy). You can clone it with:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This clones the files required for Vundle to your .vim folder where your Vim files are stored (other than your vimrc of course).&lt;/p&gt;
+
+&lt;p&gt;Now add this to the start of your .vimrc:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; nocompatible
+&lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; off
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; rtp&lt;span class=&quot;p&quot;&gt;+=~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.vim/&lt;/span&gt;bundle/Vundle&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;vim&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; vundle#begin&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+Plugin &lt;span class=&quot;s1&quot;&gt;&#39;gmarik/vundle&#39;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; vundle#&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; plugin indent &lt;span class=&quot;k&quot;&gt;on&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now look up the plugin on GitHub (or other sources, I’ll update this thing). Say the homepage of that plugin is this: https://github.com/tpope/vim-fugitive (a very useful Git plugin).&lt;/p&gt;
+
+&lt;p&gt;You can install it by adding this to your .vimrc: &lt;code class=&quot;highlighter-rouge&quot;&gt;Plugin &#39;tpope/vim-fugitive&#39;&lt;/code&gt; after the gmarik line in the text I told you to paste above. Restart vim (close and open it). Now type in &lt;code class=&quot;highlighter-rouge&quot;&gt;:PluginInstall&lt;/code&gt; (tab-completion works). There you go, Vundle will now download and install any new plugins you wanted to install.&lt;/p&gt;
+
+&lt;h3 id=&quot;keymappings&quot;&gt;Keymappings&lt;/h3&gt;
+
+&lt;p&gt;This is one of the great features of Vim, you can map almost any activity you repeat to a key binding.
+So here’s a scenario, I use a plugin called NERDcommenter (I cannot live without this). This plugin by default comments the current line when you press &lt;em&gt;leader ci&lt;/em&gt; . What I want instead is, to comment the line when I press ‘//’.
+So here is what I key-in: &lt;code class=&quot;highlighter-rouge&quot;&gt;:map // &amp;lt;leader&amp;gt;ci&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the--stuff&quot;&gt;The :! stuff&lt;/h3&gt;
+
+&lt;p&gt;One of the coolest things about Vim which modern editors cannot do, it to be able to run terminal commands right inside the editor. So say, you want to compile and run your C++ code from within Vim, and don’t want to exit, I’ll show you how to do that. Well modern editors can do this, but the fact that you can integrate these commands and actions into your keybindings, and plugins, and scripts etc etc, that makes this functionality a lot of fun.
+Try typing this: &lt;code class=&quot;highlighter-rouge&quot;&gt;:!echo &quot;Yo hey! Vim is cool!&quot;&lt;/code&gt;. See? Now try &lt;code class=&quot;highlighter-rouge&quot;&gt;:!date&lt;/code&gt;.
+I use this to compile my LaTeX documents on the fly: &lt;code class=&quot;highlighter-rouge&quot;&gt;nmap &amp;lt;F5&amp;gt; :w !pdflatex %&amp;lt;return&amp;gt;&lt;/code&gt;. A simple tap on F5, and the editor on the right refreshes the document preview. Neat, ain’t it?
+The possibilities with this are endless. You can write complete functions and scripts using this, to accomplish common tasks.&lt;/p&gt;
+
+&lt;p&gt;I’ll add more info here as and when I get time.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 29 Apr 2016 18:29:21 +0000</pubDate>
+        <link>http://pclub.in/tutorial/vim/2016/04/29/kickstarttovim.html</link>
+        <guid isPermaLink="true">http://pclub.in/tutorial/vim/2016/04/29/kickstarttovim.html</guid>
+        
+        <category>summer16</category>
+        
+        <category>tutorial</category>
+        
+        <category>vim</category>
+        
+        
+        <category>tutorial</category>
+        
+        <category>vim</category>
+        
+      </item>
+    
+      <item>
+        <title>A Coding Primer</title>
+        <description>&lt;h1 id=&quot;welcome-to-the-programming-club-summer-camp&quot;&gt;Welcome to the Programming Club Summer Camp!&lt;/h1&gt;
+
+&lt;p&gt;This post will serve as a list of things you should and should not do while you get into coding.
+First off, coding is not this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.ytimg.com/vi/aGujPFCKgdU/hqdefault.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Well, not to begin with, atleast. It’ll be plain, but we’ll get there in a while :smile:&lt;/p&gt;
+
+&lt;h3 id=&quot;so-youve-done-esc101&quot;&gt;So you’ve done ESC101?&lt;/h3&gt;
+&lt;p&gt;Well, that’s a start. But ESC has focussed on the algorithmic, and syntax part of programming. Most
+of the programs you’d have written would have been less than 200 lines of code (LOC). We’ll write thousands of lines together during the summers!&lt;/p&gt;
+
+&lt;p&gt;It’s not as tough as you may think. Here we’ll focus mostly on design of applications. The code is not going to be as challenging as in ESC, but the design phase is going to be new. Structuring large applications is a very important thing to be comfortable with.&lt;/p&gt;
+
+&lt;p&gt;Another requirement for most projects would be to use Linux and the Linux terminal. While the Game development ones, and the app development projects would be probably on Windows in all likeliness, we’d advise that you use Linux for all other projects.&lt;/p&gt;
+
+&lt;p&gt;In addition, you’d also need to learn a very important tool called &lt;em&gt;Git&lt;/em&gt;. Often people do not realize it’s importance till very late, and so, starting this year, all projects will be reviewed and hosted on a local Git.&lt;/p&gt;
+
+&lt;p&gt;There’s another point which I would stress upon: The art of googling. Coming up on this soon.&lt;/p&gt;
+
+&lt;p&gt;Now enough with the chit chat, we get to the real stuff now.&lt;/p&gt;
+
+&lt;h3 id=&quot;were-the-google-generation&quot;&gt;We’re the Google generation!&lt;/h3&gt;
+&lt;p&gt;Quite literally; a programmer’s significant amount of time goes into googling away his/her troubles. This seems like a very abstract thing to say.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I know how to Google! I’ve been using it for ages!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well, here’s the deal. By Googling, I mean knowing the right keywords to search for, and knowing what all information is superflous in an article, which links are useless, which paras will not help me find the solution faster; these things.&lt;/p&gt;
+
+&lt;p&gt;This comes by practice. If you cannot find a solution, Google more. You’ll be inproving this skill. Getting everything on a platter is not what coding is about, and you will need to dig deep to find ways to accomplish tasks.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-art-of-gisting&quot;&gt;The art of gisting!&lt;/h3&gt;
+&lt;p&gt;Yes I coined a new word up there. The skill of absorbing information without having to spend 3 days trying to learn every single new thing; well I cannot stress enough on this skill’s importance.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;You should have a clear aim in mind as to what you want to accomplish.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Follow it up with a basic reading of what all possible packages/technologies/softwares you can use for that.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Get hold of the basics of that technology. So if it is a web development framework, read the first 2 chapters of it’s documentation.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Set a small goal. For instance: I want a cool-looking top-bar for my website. Then read about how to do that (Google!). Do it, and keep seeing things which you do not know.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Keep setting newer targets, and the moment you come across something new, read a little on it; only as much as is needed for your target. And implement it.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This way, you would be churning out code after code, and it’ll be cool! You’ll not be mugging things, or reading long long articles. The majority of your time would be spent actually implementing things.&lt;/p&gt;
+
+&lt;p&gt;So when people ask me how long it’ll take to learn Python, I say half an hour. Because that is the amount of time you would need to learn enough to start on a goal. Once you’re on a goal, you’ll be learning along the way. There’s no point spending days together on a thing for which you only need to know a little to implement.&lt;/p&gt;
+
+&lt;h3 id=&quot;linux&quot;&gt;Linux&lt;/h3&gt;
+&lt;p&gt;Well, Ubuntu would be great for 99% of Linux beginners out there, so go ahead and install it. Ask the coordinators for any help if needed. Go here -&amp;gt; &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt;
+You’d need to have an empty partition (disk drive) ready to be emptied completely, for this. If for some exceptional reasons, that is not manageable, try using VirtualBox.&lt;/p&gt;
+
+&lt;p&gt;What is going to be the useful part is to learn how to use the Linux terminal. Once you have Ubuntu installed, try pressing &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+Alt+T&lt;/code&gt;. You’d see a &lt;em&gt;hacking-waala-box&lt;/em&gt;. That’s the terminal (Windows people know it as &lt;em&gt;Command Line&lt;/em&gt;). The computer systems running today all run over such a thing. The graphics are mostly a farce, and a terminal is the one running things (Yes, really), and running the graphics as well. You can do everything you can do on a graphical system using this terminal (except of course the things requiring visual manipulation).&lt;/p&gt;
+
+&lt;p&gt;So coming to the point, terminal is a really useful thing to know. Here’s an article you can follow up for this -&amp;gt; &lt;a href=&quot;https://help.ubuntu.com/community/UsingTheTerminal&quot;&gt;UsingTheTerminal&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
+&lt;p&gt;As mentioned before, Git is going to be invaluable. Git is a version control system, implying that it will manage your program’s versions; keep it organized, clean and presentable; let you go back to older versions; visualize your progress on the project; and many more things.&lt;/p&gt;
+
+&lt;p&gt;To begin with, read some about Git and GitHub/Bitbucket/GitLab (&lt;em&gt;PLEASE&lt;/em&gt; note that Git and GitHub are very different). Start here -&amp;gt; &lt;a href=&quot;https://www.atlassian.com/git/tutorials/&quot;&gt;Git Tutorial Atlassian&lt;/a&gt;. Go with the first few chapters.&lt;/p&gt;
+
+&lt;p&gt;Git is an offline thing. It manages local versions of your code, so you do not have to keep folders like &lt;code class=&quot;highlighter-rouge&quot;&gt;code-5-may&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;code-10-may&lt;/code&gt; and the likes. GitHub etc are online hosts for this. So if you want to work in a team on the same code, these websites will manage a centralized version of the code, and everyone can get copies of it and work together, and merge their work. Here’s something to help you understand the part GitHub does -&amp;gt; &lt;a href=&quot;https://guides.github.com/activities/hello-world/&quot;&gt;GitHub tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Oh, and do go here for some hands on -&amp;gt; &lt;a href=&quot;https://try.github.io/&quot;&gt;Git Tutorial&lt;/a&gt;. This is a pretty cool tutorial.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-good-coding-style&quot;&gt;A Good coding style&lt;/h3&gt;
+&lt;p&gt;A seasoned programmer can judge a coder by his code style. Some things off the top of my head:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Do NOT write badly indented code. Most editors have an auto-indent feature. Make sure you indent your code all the time. Indent involves giving similar spaces to distinguish code blocks etc.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fix an indent width. Most commonly used is 4 spaces. Set your tabstop to 4 spaces.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fix whether to use tabs or spaces. Most editors will also have an option to convert all indent tabs to spaces. Do that to ensure uniformity.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Do not leave useless lines in between.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use a fixed style of function definitions and curly braces. For instance, I prefer this one:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Code here
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Write ample comments. This is extremely important. But make sure you comment only at the useful places. Adding 2 numbers does not need a comment. Why you did that may need one.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Keep in mind that a clean code is more likely to be finally deployed. Mentors will not want to look at bad codes and fix them if need be. So it is up to you to ensure that your code is good to look at.&lt;/p&gt;
+
+&lt;h3 id=&quot;text-editors&quot;&gt;Text Editors!&lt;/h3&gt;
+&lt;p&gt;This may seem out of place here, but text editors are among the most important things on a programmer’s machine. Be sure to configure one properly. I’ll recommend &lt;code class=&quot;highlighter-rouge&quot;&gt;atom&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;sublime&lt;/code&gt; for beginners. But if you want to reach the pinnacle of nerd-dom (No its not a bad thing, No it won’t stop you from having fun), I cannot recommend Vim/Emacs enough. Go and google Vim, please do. It’ll take weeks to configure properly, but it’s worth it.&lt;/p&gt;
+
+&lt;p&gt;P.S. If you have some free time, also google for &lt;a href=&quot;https://en.wikipedia.org/wiki/Editor_war&quot;&gt;Editor Holy Wars&lt;/a&gt; and look at the Humor section there.&lt;/p&gt;
+
+&lt;h3 id=&quot;hacks-in-the-code&quot;&gt;Hacks in the code&lt;/h3&gt;
+&lt;p&gt;By hacks I mean tricks which are out-of-place, but work. These are temporary solutions, and are likely to break when you least expect them to. Try to stay away from them as much as possible. If not possible, put a comment starting with &lt;code class=&quot;highlighter-rouge&quot;&gt;TODO&lt;/code&gt; mentioning you have to fix it.&lt;/p&gt;
+
+&lt;p&gt;Also, placing code in random files is a hack too. For instance, for web development projects, you must not mix HTML/CSS/JS/PHP etc in the same file. Keep things logically separated. I made a sample website which demonstrates a good way of organizing your web code. Have a look at it once you’re done with learning the basics of web development. Here -&amp;gt; &lt;a href=&quot;https://github.com/sakshamsharma/webdev-basic&quot;&gt;Webdev-basics&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;done&quot;&gt;Done?&lt;/h3&gt;
+&lt;p&gt;We’re just scratching the surface yet! Get ready to code! Feel free to contact the coordinators for any help regarding these. You’ve got the spark, let’s get coding!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 29 Apr 2016 18:20:21 +0000</pubDate>
+        <link>http://pclub.in/tutorial/2016/04/29/codingprimer.html</link>
+        <guid isPermaLink="true">http://pclub.in/tutorial/2016/04/29/codingprimer.html</guid>
+        
+        <category>meta</category>
+        
+        <category>summer16</category>
+        
+        <category>tutorial</category>
+        
+        <category>git</category>
+        
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+  </channel>
+</rss>
