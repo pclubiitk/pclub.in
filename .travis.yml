@@ -2,11 +2,18 @@ language: ruby
 rvm:
 - 2.1
 
+before_install:
+  - echo "Override default before_install"
+
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 install:
-  - bundle install
-  - bundler exec jekyll build
+  - echo "Override default install"
+
+before_script:
+  - echo "Override default before_script"
+
+script: bash ./deploy.sh
 
 # branch whitelist, only for GitHub Pages
 branches:
