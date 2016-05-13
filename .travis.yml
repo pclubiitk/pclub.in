@@ -1,0 +1,22 @@
+language: ruby
+rvm:
+- 2.1
+
+# Assume bundler is being used, therefore
+# the `install` step will run `bundle install` by default.
+install:
+  - bundle install
+  - bundler exec jekyll build
+
+# branch whitelist, only for GitHub Pages
+branches:
+  only:
+  - master
+
+env:
+  global:
+  - ENCRYPTION_LABEL="71b532d333d8"
+  - COMMIT_AUTHOR_EMAIL="saksham0808@gmail.com"
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+sudo: false # route your build to the container-based infrastructure for a faster build
