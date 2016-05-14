@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 May 2016 23:46:18 +0000</pubDate>
-    <lastBuildDate>Fri, 13 May 2016 23:46:18 +0000</lastBuildDate>
+    <pubDate>Sat, 14 May 2016 07:35:51 +0000</pubDate>
+    <lastBuildDate>Sat, 14 May 2016 07:35:51 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -32,12 +32,15 @@ This is only true for Jekyll though.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-challenge&quot;&gt;The challenge&lt;/h2&gt;
 
-&lt;p&gt;On deciding about setting up a CI for this website, I had several options in hand. But before that, we had several constraints as well. Some of them were:
-* The website uses custom gems. Github’s automatic page building would not build it.
-* We host this website on a server inside IIT Kanpur. That server is not directly visible to the outside world, and only the HTTPS port is forwarded. So an external CI cannot send its built files to the server directly.
-* Deploying a local CI seemed like an overkill. Plus, IIT Kanpur’s internally deployed Gitlab wasn’t fully ready to be able to handle builds etc yet.
-* Even if one could somehow build the files, it would not be a direct task to get the files inside IIT Kanpur.
-* Providing permission to an external CI to push to the repository would require committing the private key, which is insecure.&lt;/p&gt;
+&lt;p&gt;On deciding about setting up a CI for this website, I had several options in hand. But before that, we had several constraints as well. Some of them were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The website uses custom gems. Github’s automatic page building would not build it.&lt;/li&gt;
+  &lt;li&gt;We host this website on a server inside IIT Kanpur. That server is not directly visible to the outside world, and only the HTTPS port is forwarded. So an external CI cannot send its built files to the server directly.&lt;/li&gt;
+  &lt;li&gt;Deploying a local CI seemed like an overkill. Plus, IIT Kanpur’s internally deployed Gitlab wasn’t fully ready to be able to handle builds etc yet.&lt;/li&gt;
+  &lt;li&gt;Even if one could somehow build the files, it would not be a direct task to get the files inside IIT Kanpur.&lt;/li&gt;
+  &lt;li&gt;Providing permission to an external CI to push to the repository would require committing the private key, which is insecure.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;the-resolution&quot;&gt;The resolution&lt;/h2&gt;
 

@@ -129,12 +129,15 @@ This is only true for Jekyll though.</p>
 
 <h2 id="the-challenge">The challenge</h2>
 
-<p>On deciding about setting up a CI for this website, I had several options in hand. But before that, we had several constraints as well. Some of them were:
-* The website uses custom gems. Github’s automatic page building would not build it.
-* We host this website on a server inside IIT Kanpur. That server is not directly visible to the outside world, and only the HTTPS port is forwarded. So an external CI cannot send its built files to the server directly.
-* Deploying a local CI seemed like an overkill. Plus, IIT Kanpur’s internally deployed Gitlab wasn’t fully ready to be able to handle builds etc yet.
-* Even if one could somehow build the files, it would not be a direct task to get the files inside IIT Kanpur.
-* Providing permission to an external CI to push to the repository would require committing the private key, which is insecure.</p>
+<p>On deciding about setting up a CI for this website, I had several options in hand. But before that, we had several constraints as well. Some of them were:</p>
+
+<ul>
+  <li>The website uses custom gems. Github’s automatic page building would not build it.</li>
+  <li>We host this website on a server inside IIT Kanpur. That server is not directly visible to the outside world, and only the HTTPS port is forwarded. So an external CI cannot send its built files to the server directly.</li>
+  <li>Deploying a local CI seemed like an overkill. Plus, IIT Kanpur’s internally deployed Gitlab wasn’t fully ready to be able to handle builds etc yet.</li>
+  <li>Even if one could somehow build the files, it would not be a direct task to get the files inside IIT Kanpur.</li>
+  <li>Providing permission to an external CI to push to the repository would require committing the private key, which is insecure.</li>
+</ul>
 
 <h2 id="the-resolution">The resolution</h2>
 
