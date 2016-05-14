@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 May 2016 07:35:51 +0000</pubDate>
-    <lastBuildDate>Sat, 14 May 2016 07:35:51 +0000</lastBuildDate>
+    <pubDate>Sat, 14 May 2016 07:36:27 +0000</pubDate>
+    <lastBuildDate>Sat, 14 May 2016 07:36:27 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -23,7 +23,7 @@ This would mean, anyone can write a post, or fix a file using Github’s online 
 &lt;h2 id=&quot;some-basic-information&quot;&gt;Some basic information&lt;/h2&gt;
 
 &lt;p&gt;A lesser known fact is that Github also allows you to host webpages.
-For instance, this website is also hosted on Github at &lt;a href=&quot;pclubiitk.github.io/pclub.in&quot;&gt;pclubiitk.github.io/pclub.in&lt;/a&gt;.
+For instance, this website is also hosted on Github at &lt;a href=&quot;https://pclubiitk.github.io/pclub.in&quot;&gt;pclubiitk.github.io/pclub.in&lt;/a&gt;.
 For this, you just need to keep your html files in a branch called &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; for a project repo, or in the master of a repo called &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;.
 This is itself a big topic to cover here.&lt;/p&gt;
 
