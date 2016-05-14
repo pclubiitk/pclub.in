@@ -43,8 +43,19 @@ layout: default
 </div>
 
 
-  <p class="post-meta" style="    background: #00bc8c;
-    padding: 15px 0px 15px 20px;"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> {{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} 
+  <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
+  <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> {{ page.date | date: "%b %-d, %Y" }}</time>
+  {% if page.author %} 
+  • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">
+      {% if page.website == nil %}
+      {{ page.author }}
+      {% else %}
+      <a href="{{ page.website }}" style="color: #fff;">{{ page.author }}</a>
+      {% endif %}
+    </span>
+  </span>
+  {% endif %} 
     |{% if post %}
     {% assign tags = post.tags %}
   {% else %}
@@ -53,7 +64,7 @@ layout: default
   {% for tag in tags %}
   <a href="/tags.html#{{tag|slugize}}" style="color: #fff;"><i class="typcn typcn-tags"></i> {{tag}}</a>{% unless forloop.last %} {% endunless %}
   {% endfor %}
-  
+  </p>
 
 </article>
 

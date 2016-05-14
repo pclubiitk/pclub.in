@@ -58,7 +58,11 @@ window.onload = function() {
         position: relative;
         top: 1px;
         font-size:15px"></i> {{ post.date | date: "%b %-d, %Y" }}</time>
+        {% if post.website == nil %}
         <p class="post-tags" style="text-align: right;"> -- {{ post.author }}</p>
+        {% else %}
+        <p class="post-tags" style="text-align: right;"> -- <a href="{{ post.website }}">{{ post.author }}</a></p>
+        {% endif %}
         <!--<p class="post-date"><i class="typico typcn typcn-messages" style="    font-size: 28px;-->
         <!--position: relative;-->
         <!--top: 1px;-->
