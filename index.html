@@ -61,7 +61,7 @@ window.onload = function() {
         {% if post.website == nil %}
         <p class="post-tags" style="text-align: right;"> -- {{ post.author }}</p>
         {% else %}
-        <p class="post-tags" style="text-align: right;"> -- <a href="{{ post.website }}">{{ post.author }}</a></p>
+        <p class="post-tags" style="text-align: right;"> -- <a href="{{ post.website }}" target="_blank">{{ post.author }}</a></p>
         {% endif %}
         <!--<p class="post-date"><i class="typico typcn typcn-messages" style="    font-size: 28px;-->
         <!--position: relative;-->
