@@ -8,7 +8,7 @@ layout: default
   <header class="inpost-header">
     <h1 class="inpost-title" itemprop="name headline">{{ page.title }}</h1>
     <h1 style="float:right" class="comment-postingatas">
-     <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="#disqus_thread" style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
@@ -83,20 +83,24 @@ layout: default
 </style>
 <div id="disqus_thread"></div>
 <script>
-
-var disqus_config = function () {
-this.page.url = 'https://pclub.in{{page.id}}';
-this.page.identifier = '{{page.id}}';
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-
-s.src = '//pclubiitk.disqus.com/embed.js';
-
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+  // For debugging
+  // var disqus_developer = 1;
+  var disqus_shortname = 'pclubiitk';
+  var disqus_config = function () {
+    this.page.url = 'https://pclub.in{{page.id}}';
+    this.page.identifier = '{{page.id}}';
+  };
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
