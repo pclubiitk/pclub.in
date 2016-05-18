@@ -103,7 +103,7 @@
   <header class="inpost-header">
     <h1 class="inpost-title" itemprop="name headline">Setting up a CI for pclub.in</h1>
     <h1 style="float:right" class="comment-postingatas">
-     <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="#disqus_thread" style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/pclub/2016/05/13/pclubci.html#disqus_thread" data-disqus-identifier="/pclub/2016/05/13/pclubci"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
@@ -211,20 +211,24 @@ This is only true for Jekyll though.</p>
 </style>
 <div id="disqus_thread"></div>
 <script>
-
-var disqus_config = function () {
-this.page.url = 'https://pclub.in/pclub/2016/05/13/pclubci';
-this.page.identifier = '/pclub/2016/05/13/pclubci';
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-
-s.src = '//pclubiitk.disqus.com/embed.js';
-
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+  // For debugging
+  // var disqus_developer = 1;
+  var disqus_shortname = 'pclubiitk';
+  var disqus_config = function () {
+    this.page.url = 'https://pclub.in/pclub/2016/05/13/pclubci';
+    this.page.identifier = '/pclub/2016/05/13/pclubci';
+  };
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
@@ -292,7 +296,6 @@ s.setAttribute('data-timestamp', +new Date());
 <script type="text/javascript" src="/assets/js/jquery-autocomplete.js"></script>
 <script type="text/javascript" src="/assets/js/responsive_waterfall.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
-<!--<script id="dsq-count-scr" src="//spaghettisan.disqus.com/count.js" async></script>-->
 
 <script>
 $(document).ready(function() {
