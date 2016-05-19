@@ -58,12 +58,8 @@ of toggling comments. So in order to have that same command for `//`, you will
 need to map `//` to it:
 
 {% highlight vim %}
-"nmap // <leader>c<space>
-"vmap // <leader>cs
-" The above will do, but we will use the ones below
-nnoremap // <leader>c<space>
-" When you select multiple lines in visual mode
-vnoremap // <leader>cs
+nmap // <leader>c<space>
+vmap // <leader>cs
 " I map // to <leader>cs for sexy commenting instead of the normal
 " It is my own setting and you may wish to change it to <leader>c<space> or <leader>ci
 {% endhighlight %}
@@ -74,9 +70,6 @@ machine to comment code ( which usually works in C :P ) many times.
 
 ## Further Reading
 
-In order to understand, why we used `nnoremap` and not `nmap`,
+In order to understand, why we used `nmap`
 you might want to [Learn Vimscript](http://learnvimscriptthehardway.stevelosh.com/).
-Its not compulsory.  
-As a general rule of thumb, we use `nnoremap`, `inoremap`
-and `vnoremap` for mapping keys in the normal, insert and visual mode respectively to
-prevent your other mappings from interfering.
+Its not compulsory, but it allows you to modify vim to your settings more easily.
