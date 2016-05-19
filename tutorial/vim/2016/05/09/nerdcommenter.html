@@ -8,16 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Projects</title>
-  <meta name="description" content="The Programming Club, IIT Kanpur
-">
+  <title>NERDCommenter</title>
+  <meta name="description" content="Plugin: NERDCommenter">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/projects.html">
+  <link rel="canonical" href="http://pclub.in/tutorial/vim/2016/05/09/nerdcommenter.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -99,25 +98,180 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div style="margin: 1rem auto;">
+        <div style="margin: 4.5rem auto;">
 
-<h1 class="archive-header"></h1>
-<div class="wf-container" style="margin-top: 80px;">
-      
-              
-      
-              
-      
-              
-      
-              
-      
-              
-      
-              
-              
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <header class="inpost-header">
+    <h1 class="inpost-title" itemprop="name headline">NERDCommenter</h1>
+    <h1 style="float:right" class="comment-postingatas">
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/tutorial/vim/2016/05/09/nerdcommenter.html#disqus_thread" data-disqus-identifier="/tutorial/vim/2016/05/09/nerdcommenter"style="color:#fff"> 0</a>
+    </h1>
+    </p>
+  </header>
   
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="plugin-nerdcommenterhttpsgithubcomscrooloosenerdcommenter">Plugin: <a href="https://github.com/scrooloose/nerdcommenter">NERDCommenter</a></h1>
+
+<p><a href="https://github.com/scrooloose/nerdcommenter">NERDCommenter</a> is an awesome
+plugin for commenting code. It works primarily
+in the normal mode and is aimed at more efficient coding and debugging.</p>
+
+<p>What it does is allow you to comment out a line in any file using the
+same keybindings. Let’s say you want to have the shortcut to comment
+out a line as <code class="highlighter-rouge">//</code> because that is easy to type. Now for a block of
+code, you go to a particular line and press <code class="highlighter-rouge">//</code>, the line gets commented.
+You press <code class="highlighter-rouge">//</code> again, the line gets uncommented into the <code class="highlighter-rouge">before</code> state.
+This adds a very powerful tool to your workflow allowing you comment
+out as well as comment in lines very fast. You could also type something
+like <code class="highlighter-rouge">5//</code> to comment out 5 lines.</p>
+
+<p>This is what would happen:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Filetype</th>
+      <th style="text-align: center">Before</th>
+      <th style="text-align: center">After</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">C</td>
+      <td style="text-align: center"><code class="highlighter-rouge">int a = 5;</code></td>
+      <td style="text-align: center"><code class="highlighter-rouge">//int a = 5;</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Python</td>
+      <td style="text-align: center"><code class="highlighter-rouge">a = 5;</code></td>
+      <td style="text-align: center"><code class="highlighter-rouge">#a = 5;</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">.vimrc</td>
+      <td style="text-align: center"><code class="highlighter-rouge">set rnu</code></td>
+      <td style="text-align: center"><code class="highlighter-rouge">"set rnu</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="installation">Installation</h2>
+<p>For vim-plug, add the following line to your <code class="highlighter-rouge">.vimrc</code>:</p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim">Plug <span class="s1">'scrooloose/nerdcommenter'</span></code></pre></figure>
+
+<h2 id="configuration">Configuration</h2>
+<p>Read the <code class="highlighter-rouge">README.md</code> as well as <code class="highlighter-rouge">:help commenter</code> for a complete description
+of features. If you are wondering what is <code class="highlighter-rouge">&lt;leader&gt;</code>, it is a special <code class="highlighter-rouge">power-key</code>
+in vim with default value <code class="highlighter-rouge">\</code>. You can change it to whatever you like. Now to get
+the setting we discussed before, i.e., fast commenting out and in using <code class="highlighter-rouge">//</code>.</p>
+
+<p>In the <a href="https://github.com/scrooloose/nerdcommenter/blob/master/README.md">README</a>,
+you will find that <code class="highlighter-rouge">&lt;leader&gt;c&lt;space&gt;</code> has the behaviour we want
+of toggling comments. So in order to have that same command for <code class="highlighter-rouge">//</code>, you will
+need to map <code class="highlighter-rouge">//</code> to it:</p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim">nmap <span class="sr">//</span> <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">c</span><span class="p">&lt;</span>space<span class="p">&gt;</span>
+vmap <span class="sr">//</span> <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">cs</span>
+<span class="c">" I map // to &lt;leader&gt;cs for sexy commenting instead of the normal</span>
+<span class="c">" It is my own setting and you may wish to change it to &lt;leader&gt;c&lt;space&gt; or &lt;leader&gt;ci</span></code></pre></figure>
+
+<p>And now open up your favourite file and try this out. It is very efficient and something
+very valuable to my current workflow. I have found myself pressing <code class="highlighter-rouge">//</code> on someone else’s
+machine to comment code ( which usually works in C :P ) many times.</p>
+
+<h2 id="further-reading">Further Reading</h2>
+
+<p>In order to understand, why we used <code class="highlighter-rouge">nmap</code>
+you might want to <a href="http://learnvimscriptthehardway.stevelosh.com/">Learn Vimscript</a>.
+Its not compulsory, but it allows you to modify vim to your settings more easily.</p>
+
+  </div>
+
+<div class="arrowNav">
+ 
+ 
+<div class="arrowLeft">
+<a id="route" class="tooltip-right" href="/pclub/2016/05/13/pclubci.html" title="
+&lt;p class=hoveratas&gt;Setting up a CI for pclub.in&lt;/p&gt; &lt;p class=hoverbawah&gt;To begin with, I urge you to have a look...&lt;/p&gt;
+"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+
+ 
+<div class="arrowRight" style="float:right">
+<a id="route" class="tooltip-left" href="/tutorial/vim/2016/05/08/plugins.html" title="
+&lt;p class=hoveratas&gt;Plugin Managers for Vim&lt;/p&gt; &lt;p class=hoverbawah&gt;Plugins!! Vim is a very simple text-based Text-Editor which can...&lt;/p&gt;
+"><i class="typcn typcn-chevron-right" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+</div>
+
+
+  <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
+  <time datetime="2016-05-09T18:05:20+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> May 9, 2016</time>
+   
+  • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">
+      
+      <a href="http://yashsriv.github.io" target="_blank" style="color: #fff;">Yash Srivastav</a>
+      
+    </span>
+  </span>
+   
+    |
+  
+  <a href="/tags.html#vim" style="color: #fff;"><i class="typcn typcn-tags"></i> vim</a>
+  
+  <a href="/tags.html#tutorial" style="color: #fff;"><i class="typcn typcn-tags"></i> tutorial</a>
+  
+  </p>
+
+</article>
+
+
+
+
+
+<style>
+    #disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+</style>
+<div id="disqus_thread"></div>
+<script>
+  // For debugging
+  // var disqus_developer = 1;
+  var disqus_shortname = 'pclubiitk';
+  var disqus_config = function () {
+    this.page.url = 'https://pclub.in/tutorial/vim/2016/05/09/nerdcommenter';
+    this.page.identifier = '/tutorial/vim/2016/05/09/nerdcommenter';
+  };
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
 
       </div>
     </div>

@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 May 2016 09:20:30 +0000</pubDate>
-    <lastBuildDate>Thu, 19 May 2016 09:20:30 +0000</lastBuildDate>
+    <pubDate>Thu, 19 May 2016 11:03:36 +0000</pubDate>
+    <lastBuildDate>Thu, 19 May 2016 11:03:36 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -69,6 +69,98 @@ This is only true for Jekyll though.&lt;/p&gt;
         
         
         <category>pclub</category>
+        
+      </item>
+    
+      <item>
+        <title>NERDCommenter</title>
+        <description>&lt;h1 id=&quot;plugin-nerdcommenterhttpsgithubcomscrooloosenerdcommenter&quot;&gt;Plugin: &lt;a href=&quot;https://github.com/scrooloose/nerdcommenter&quot;&gt;NERDCommenter&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/scrooloose/nerdcommenter&quot;&gt;NERDCommenter&lt;/a&gt; is an awesome
+plugin for commenting code. It works primarily
+in the normal mode and is aimed at more efficient coding and debugging.&lt;/p&gt;
+
+&lt;p&gt;What it does is allow you to comment out a line in any file using the
+same keybindings. Let’s say you want to have the shortcut to comment
+out a line as &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt; because that is easy to type. Now for a block of
+code, you go to a particular line and press &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt;, the line gets commented.
+You press &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt; again, the line gets uncommented into the &lt;code class=&quot;highlighter-rouge&quot;&gt;before&lt;/code&gt; state.
+This adds a very powerful tool to your workflow allowing you comment
+out as well as comment in lines very fast. You could also type something
+like &lt;code class=&quot;highlighter-rouge&quot;&gt;5//&lt;/code&gt; to comment out 5 lines.&lt;/p&gt;
+
+&lt;p&gt;This is what would happen:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Filetype&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Before&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;After&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;C&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int a = 5;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;//int a = 5;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Python&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a = 5;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#a = 5;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;.vimrc&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;set rnu&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;set rnu&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;For vim-plug, add the following line to your &lt;code class=&quot;highlighter-rouge&quot;&gt;.vimrc&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;Plug &lt;span class=&quot;s1&quot;&gt;&#39;scrooloose/nerdcommenter&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;configuration&quot;&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;Read the &lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt; as well as &lt;code class=&quot;highlighter-rouge&quot;&gt;:help commenter&lt;/code&gt; for a complete description
+of features. If you are wondering what is &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;&lt;/code&gt;, it is a special &lt;code class=&quot;highlighter-rouge&quot;&gt;power-key&lt;/code&gt;
+in vim with default value &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;. You can change it to whatever you like. Now to get
+the setting we discussed before, i.e., fast commenting out and in using &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;https://github.com/scrooloose/nerdcommenter/blob/master/README.md&quot;&gt;README&lt;/a&gt;,
+you will find that &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;c&amp;lt;space&amp;gt;&lt;/code&gt; has the behaviour we want
+of toggling comments. So in order to have that same command for &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt;, you will
+need to map &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt; to it:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;nmap &lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;space&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+vmap &lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cs&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&quot; I map // to &amp;lt;leader&amp;gt;cs for sexy commenting instead of the normal&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&quot; It is my own setting and you may wish to change it to &amp;lt;leader&amp;gt;c&amp;lt;space&amp;gt; or &amp;lt;leader&amp;gt;ci&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And now open up your favourite file and try this out. It is very efficient and something
+very valuable to my current workflow. I have found myself pressing &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt; on someone else’s
+machine to comment code ( which usually works in C :P ) many times.&lt;/p&gt;
+
+&lt;h2 id=&quot;further-reading&quot;&gt;Further Reading&lt;/h2&gt;
+
+&lt;p&gt;In order to understand, why we used &lt;code class=&quot;highlighter-rouge&quot;&gt;nmap&lt;/code&gt;
+you might want to &lt;a href=&quot;http://learnvimscriptthehardway.stevelosh.com/&quot;&gt;Learn Vimscript&lt;/a&gt;.
+Its not compulsory, but it allows you to modify vim to your settings more easily.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 09 May 2016 18:05:20 +0000</pubDate>
+        <link>http://pclub.in/tutorial/vim/2016/05/09/nerdcommenter.html</link>
+        <guid isPermaLink="true">http://pclub.in/tutorial/vim/2016/05/09/nerdcommenter.html</guid>
+        
+        <category>vim</category>
+        
+        <category>tutorial</category>
+        
+        
+        <category>tutorial</category>
+        
+        <category>vim</category>
         
       </item>
     
