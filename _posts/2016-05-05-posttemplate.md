@@ -51,7 +51,7 @@ Follow this template to the bit.
 
 - Check that you have included credits, if any part belongs to someone else.
 
-- Done already? Mail or message the markdown file to any of the coordinators, or at pclubiitk@gmail.com
+- Done already? Mail or message the markdown file to any of the coordinators, or at pclubiitk@gmail.com. If you're familiar with Git, you can also send us a Pull Request on our Github repository listed in the below point.
 
 - [Contact Us](/contact.html) if there are any issues.
 
