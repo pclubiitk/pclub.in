@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 May 2016 20:25:30 +0000</pubDate>
-    <lastBuildDate>Wed, 25 May 2016 20:25:30 +0000</lastBuildDate>
+    <pubDate>Wed, 25 May 2016 20:38:00 +0000</pubDate>
+    <lastBuildDate>Wed, 25 May 2016 20:38:00 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -301,8 +301,8 @@ changed by the named argument, &lt;code class=&quot;highlighter-rouge&quot;&gt;s
 ** We will look into arrays, factors, table, matrix, data frames in the next part **&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 May 2016 16:36:00 +0000</pubDate>
-        <link>http://pclub.inhttp://thenewstack.io/wp-content/uploads/2014/10/R-1024x776.png</link>
-        <guid isPermaLink="true">http://pclub.inhttp://thenewstack.io/wp-content/uploads/2014/10/R-1024x776.png</guid>
+        <link>http://pclub.in/tutorial/2016/05/25/rpart1.html</link>
+        <guid isPermaLink="true">http://pclub.in/tutorial/2016/05/25/rpart1.html</guid>
         
         <category>R</category>
         
