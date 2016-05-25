@@ -1,0 +1,271 @@
+---
+layout: post
+title: "Introduction to R (Part 1)"
+date: 2016-05-25 22:06:00 +200
+author: Anish Lamba
+website: http://home.iitk.ac.in/~anishl/
+category: 
+tags:
+- R
+- Summers
+- Analytics
+- Data Plotting
+- Statistics
+categories:
+- tutorial
+
+image:
+  url: http://thenewstack.io/wp-content/uploads/2014/10/R-1024x776.png 
+
+--
+
+**Basics Of R**
+===================
+-----------------------------------------
+
+### Why Learn R ?
+- Free, Open Source, Cross Platform Compatible
+	- No *Windows*, No Doors – R runs on all the platforms. Just name it and you got it!!
+- R is a language evolved from the **Language** ***S*** (*created by Bell Technologies*)
+- I bet plotting graphs could never have been easier
+- It is the leading open source statistical and data analysis programming language,  as it handles and manipulates data too efficiently.
+
+- I personally recommend you to use R on *UNIX* machines . I haven’t tried it on *Windows* yet :P
+- Still not convinced ? [Here](http://blog.revolutionanalytics.com/2012/07/a-big-list-of-the-things-r-can-do.html) is a list of things that R can do . Keep Counting !!
+
+> ***Having Fun with R***
+> 
+> `install.packages("sudoku")`
+> 
+> `library(sudoku)`
+> 
+>`s <- readSudoku("c:/hard sudoku problem.txt")`
+>
+>`solveSudoku(s)`
+>
+> Wondering what the above 4 lines of code can do ? Well It can solve the **hardest** *Soduku Puzzle* ever made ! Sounds Cool ?
+> 
+> Google ***"Making a word cloud in R"*** and see how easy it is !
+
+
+Some Pre Requiste Knowledge
+--------------------------
+
+- How to start R ? 
+- Will their be an IDE where I can code ?
+
+The installation instructions for various platforms (including Non *UNIX* products) can be found [here](https://cran.r-project.org/doc/manuals/r-release/R-admin.html)
+
+After Installation. Just open your terminal and type `R`
+
+### **Some important things first** 
+
+- Whenever you are done with this language or simply wanna quit this Just type `q()`
+- Whenever you are struck anywhere just type `help(commandname)` 
+- ***R*** is an expression language and is *case sensitive*
+	- "R" & "r" are two different things
+	
+- Whenever you type an expression, the value is **calculated , printed and lost**.
+	- You better save the results of your expressions in a variable
+	- An **assignment** also evaluates an expression and passes the value to a variable but the result is ***not automatically printed***
+
+- Comments can be put anywhere starting with a Hashmark ( `#` )
+- Commands are separated either by a ***semi-colon*** `;` or by a ***newline***
+- If your command is incomplete R by default will give a `+` prompt and will continue to give a `+` prompt until your syntax is corrected.
+- ***NaN*** stands for Not a Number
+
+
+### ***Programming in R Finally*** 
+ 
+ After reading so much about ***R*** . It’s time to really start coding 
+
+#### Loading commands in R 
+
+If you already have a .R extension file with certain commands already written , you can load it with the following syntax
+
+`source(“nameofthefile".R)`
+
+Wanna store all the outputs for a particular session ?
+
+`sink (“nameoffile”)`
+
+
+Simliar to a *UNIX* terminal you can type `ls()` to view all the objects you created in ***R*** for a particular session.
+
+>The collection of objects currently stored is called the ***workspace***
+
+How to remove an object ?
+
+Use `rm(objectname1,objectname2)`
+
+> **Removing all objects**
+> `rm(list=ls())`
+> 
+> *Try to understand this command on your own.It's pretty easy*
+`
+
+#### Data Types 
+
+Used Python ? ***R*** might look familiar!
+
+You can do mathemtical operations like 
+
+`1+1` : Prints 2
+
+Time to make vectors!
+
+> `test` : name of the variable where the vector is stored
+> 
+>  ` <-`  :  assignment operator (points in direction of the variable in which value is to be updated/stored)
+>  
+>  `c()` : a function used to concatenate
+
+```a <-"Hello World" ```
+
+```b <-c("Hello ","World")```
+
+Here you can see different ways to defining the same string.
+
+
+`1:9` :   Creates sequence : **1 2 3 4 5 6 7 8 9**
+
+
+`1.5:10` Creates sequence : **1.5 2.5 3.5 4.5 5.5 6.5 7.5 8.5 9.5**
+
+`seq(intial,final,by,length)` : Function use to create sequence; we can provide increment values or number of values
+
+`rep()`:  Function used for Replicating
+
+**Examples**
+
+|Code|Output |
+|-------|-----------|
+|```seq(1,5,by=1.5)``` |**1.0 2.5 4.0**|
+|``` seq(1,5,length=9)```|**1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0**|
+|``` rep(10,10)```| **10 10 10 10 10 10 10 10 10 10** |
+
+> ***Try it yourself***
+> 
+> Try to understand the code snippet below, guess the output and then run on ***R*** and check
+> 
+> `temp <- 1:5`  
+> `matrix(rep(temp,2), nrow = 2)`
+
+
+
+#### Operations on vector 
+
+You can do almost all possible arithemetic operations on a vector 
+Adding 2 vectors of same size, different size, multiplying, dividing, `log()`,`exp()`,`sin()`, `sum()`,`length()`,`var()`,`mean()`,`sort()`,`max()`,`min()`
+
+>**pmin and pmax** :Returns parallel max and min of input values
+>
+>*Example*
+>Run these commands and you will get a clear idea of pmin and pmax
+>
+>`a <- c(10,3,7,9)`
+>
+>`b <- c(9,4,6,4)`
+>
+>`c -< c(9,6,8,6)`
+>`pmin(a,b,c)`
+>
+>`pmax(a,b,c)`
+>
+>`max(a,b,c)`
+>
+>`min(a,b,c)`
+
+To intialize a vector with a value `numeric()` is used
+
+`a <- numeric(10)` : a has now value 10
+> **An Intersting Thing to Note**
+> 
+> Try the following commands 
+> 
+> `test <- numeric()`
+> 
+> `test[10] <- 1`
+> 
+> `test`
+> 
+> You should now see **NA's** in the vector 
+> 
+> **NA** stands for Not Available
+
+***NA*** : Missing values are represented by the symbol NA (not available)
+
+How to check for **NA** in a vector ? : `is.na()`
+
+> ***Example***
+> 
+> `test <- c(1,2,3,NA)`
+> 
+> `check <- is.na(test)`
+> 
+> `check`
+> 
+> check will be **FALSE** for non NA values and **TRUE** for NA values
+> 
+> How to remove **NA** values ? Let's substitute NA with -1
+> 
+>` test[is.na(test)] <- -1`
+
+
+#### LOGICAL VECTORS ####
+Can contain **TRUE** or **FALSE**.  What else ? **NA** : Don't forget this :P
+
+Example: `test <- 5<6`
+
+
+**Operations on Logical Vectors** 
+
+`!`: For Negation 
+
+`&` or `&&` : for *Logical AND*
+
+`|` or `||` : for *LOGICAL OR*
+
+#### Determining the type of a variable 
+`typeof(variablename)` : Return the type of variable 
+> Check out `mode()` and `class()` and read about the difference between the three
+> 
+> *We will discuss this in the next part :D*
+
+
+##### Mathematical Basic Operations ####
+
+
+| Syntax | Operation |
+|-------|--------|
+|```sqrt(a)```|  Returns the square root of ***a*** |
+|```exp(a)``` | Return the value of exponent of ***a*** |
+|```log(a)``` | Returns the Logarithm base **e** of ***a*** Try ```log10()``` for base **10** |
+|```var()```|Returns Variance of a vector which is passed as an argument |
+|```sd()```|Returns	Standard Deviation of a vector which is passed as an argument|
+> Note : Providing an input to a function outside it's domain will result in NaN ***Not a Number***
+
+
+#### Strings ####
+
+Also called ***Character Vectors*** follow **C** type escape character `\`
+
+Combining Characters to Numbers !
+
+`test <- paste(c("X,"Y"),1:10,sep="")`
+
+`test`
+
+The Output should look like ***"X1"  "Y2"  "X3"  "Y4"  "X5"  "Y6"  "X7"  "Y8"  "X9"  "Y10"***
+
+>***paste()***
+>
+>Function takes an arbitrary number of arguments and concatenates them one by
+one into character strings.
+>
+>The arguments are by default separated in the result by a single blank character, but this can be
+changed by the named argument, `sep=`
+
+
+***That's all for the Part 1 :D , We will be posting Part 2 soon***
+** We will look into arrays, factors, table, matrix, data frames in the next part **
