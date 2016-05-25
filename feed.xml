@@ -6,9 +6,318 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 May 2016 12:34:54 +0000</pubDate>
-    <lastBuildDate>Fri, 20 May 2016 12:34:54 +0000</lastBuildDate>
+    <pubDate>Wed, 25 May 2016 20:25:30 +0000</pubDate>
+    <lastBuildDate>Wed, 25 May 2016 20:25:30 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Introduction to R (Part 1)</title>
+        <description>&lt;h1 id=&quot;basics-of-r&quot;&gt;Basics Of R&lt;/h1&gt;
+
+&lt;h3 id=&quot;why-learn-r-&quot;&gt;Why Learn R ?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Free, Open Source, Cross Platform Compatible&lt;/li&gt;
+  &lt;li&gt;No &lt;em&gt;Windows&lt;/em&gt;, No Doors – R runs on all the platforms. Just name it and you got it!!&lt;/li&gt;
+  &lt;li&gt;R is a language evolved from the &lt;strong&gt;Language&lt;/strong&gt; &lt;strong&gt;&lt;em&gt;S&lt;/em&gt;&lt;/strong&gt; (&lt;em&gt;created by Bell Technologies&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;I bet plotting graphs could never have been easier&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It is the leading open source statistical and data analysis programming language,  as it handles and manipulates data too efficiently.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I personally recommend you to use R on &lt;em&gt;UNIX&lt;/em&gt; machines . I haven’t tried it on &lt;em&gt;Windows&lt;/em&gt; yet :P&lt;/li&gt;
+  &lt;li&gt;Still not convinced ? &lt;a href=&quot;http://blog.revolutionanalytics.com/2012/07/a-big-list-of-the-things-r-can-do.html&quot;&gt;Here&lt;/a&gt; is a list of things that R can do . Keep Counting !!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Having Fun with R&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;install.packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sudoku&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sudoku&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;readSudoku&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;c:/hard sudoku problem.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;solveSudoku&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Wondering what the above 4 lines of code can do ? Well It can solve the &lt;strong&gt;hardest&lt;/strong&gt; &lt;em&gt;Soduku Puzzle&lt;/em&gt; ever made ! Sounds Cool ?&lt;/p&gt;
+
+&lt;p&gt;Google &lt;strong&gt;&lt;em&gt;“Making a word cloud in R”&lt;/em&gt;&lt;/strong&gt; and see how easy it is !&lt;/p&gt;
+
+&lt;h2 id=&quot;some-pre-requiste-knowledge&quot;&gt;Some Pre Requiste Knowledge&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;How to start R ?&lt;/li&gt;
+  &lt;li&gt;Will their be an IDE where I can code ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The installation instructions for various platforms (including Non &lt;em&gt;UNIX&lt;/em&gt; products) can be found &lt;a href=&quot;https://cran.r-project.org/doc/manuals/r-release/R-admin.html&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After Installation. Just open your terminal and type &lt;code class=&quot;highlighter-rouge&quot;&gt;R&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;some-important-things-first&quot;&gt;&lt;strong&gt;Some important things first&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Whenever you are done with this language or simply wanna quit this Just type &lt;code class=&quot;highlighter-rouge&quot;&gt;q()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Whenever you are struck anywhere just type &lt;code class=&quot;highlighter-rouge&quot;&gt;help(commandname)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;R&lt;/em&gt;&lt;/strong&gt; is an expression language and is &lt;em&gt;case sensitive&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“R” &amp;amp; “r” are two different things&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Whenever you type an expression, the value is &lt;strong&gt;calculated , printed and lost&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;You better save the results of your expressions in a variable&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;An &lt;strong&gt;assignment&lt;/strong&gt; also evaluates an expression and passes the value to a variable but the result is &lt;strong&gt;&lt;em&gt;not automatically printed&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Comments can be put anywhere starting with a Hashmark ( &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt; )&lt;/li&gt;
+  &lt;li&gt;Commands are separated either by a &lt;strong&gt;&lt;em&gt;semi-colon&lt;/em&gt;&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;;&lt;/code&gt; or by a &lt;strong&gt;&lt;em&gt;newline&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;If your command is incomplete R by default will give a &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; prompt and will continue to give a &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; prompt until your syntax is corrected.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;NaN&lt;/em&gt;&lt;/strong&gt; stands for Not a Number&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;programming-in-r-finally&quot;&gt;&lt;strong&gt;&lt;em&gt;Programming in R Finally&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;After reading so much about &lt;strong&gt;&lt;em&gt;R&lt;/em&gt;&lt;/strong&gt; . It’s time to really start coding&lt;/p&gt;
+
+&lt;h4 id=&quot;loading-commands-in-r&quot;&gt;Loading commands in R&lt;/h4&gt;
+
+&lt;p&gt;If you already have a .R extension file with certain commands already written , you can load it with the following syntax&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;source(“nameofthefile&quot;.R)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Wanna store all the outputs for a particular session ?&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sink (“nameoffile”)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Simliar to a &lt;em&gt;UNIX&lt;/em&gt; terminal you can type &lt;code class=&quot;highlighter-rouge&quot;&gt;ls()&lt;/code&gt; to view all the objects you created in &lt;strong&gt;&lt;em&gt;R&lt;/em&gt;&lt;/strong&gt; for a particular session.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The collection of objects currently stored is called the &lt;strong&gt;&lt;em&gt;workspace&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;How to remove an object ?&lt;/p&gt;
+
+&lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;rm(objectname1,objectname2)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Removing all objects&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;rm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;Try to understand this command on your own.It’s pretty easy&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;data-types&quot;&gt;Data Types&lt;/h4&gt;
+
+&lt;p&gt;Used Python ? &lt;strong&gt;&lt;em&gt;R&lt;/em&gt;&lt;/strong&gt; might look familiar!&lt;/p&gt;
+
+&lt;p&gt;You can do mathematical operations like&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1+1&lt;/code&gt; : Prints 2&lt;/p&gt;
+
+&lt;p&gt;Time to make vectors!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt; : name of the variable where the vector is stored&lt;/p&gt;
+
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; &amp;lt;-&lt;/code&gt;  :  assignment operator (points in direction of the variable in which value is to be updated/stored)&lt;/p&gt;
+
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c()&lt;/code&gt; : a function used to concatenate&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Here you can see different ways to defining the same string.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1:9&lt;/code&gt; :   Creates sequence : &lt;strong&gt;1 2 3 4 5 6 7 8 9&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1.5:10&lt;/code&gt; Creates sequence : &lt;strong&gt;1.5 2.5 3.5 4.5 5.5 6.5 7.5 8.5 9.5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;seq(intial,final,by,length)&lt;/code&gt; : Function use to create sequence; we can provide increment values or number of values&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rep()&lt;/code&gt;:  Function used for Replicating&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Code&lt;/th&gt;
+      &lt;th&gt;Output&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;seq(1,5,by=1.5)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;1.0 2.5 4.0&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;seq(1,5,length=9)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rep(10,10)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;10 10 10 10 10 10 10 10 10 10&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;strong&gt;Try it yourself&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Try to understand the code snippet below, guess the output and then run on &lt;strong&gt;&lt;em&gt;R&lt;/em&gt;&lt;/strong&gt; and check&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nrow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;operations-on-vector&quot;&gt;Operations on vector&lt;/h4&gt;
+
+&lt;p&gt;You can do almost all possible arithemetic operations on a vector
+Adding 2 vectors of same size, different size, multiplying, dividing, &lt;code class=&quot;highlighter-rouge&quot;&gt;log()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;exp()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;sin()&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;sum()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;length()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;var()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;mean()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;sort()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;max()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;min()&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;pmin and pmax&lt;/strong&gt; :Returns parallel max and min of input values&lt;/p&gt;
+
+  &lt;p&gt;&lt;em&gt;Example&lt;/em&gt;
+Run these commands and you will get a clear idea of pmin and pmax&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pmin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;To intialize a vector with a value &lt;code class=&quot;highlighter-rouge&quot;&gt;numeric()&lt;/code&gt; is used&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a &amp;lt;- numeric(10)` : a has now value 10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;An Intersting Thing to Note&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Try the following commands&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numeric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You should now see &lt;strong&gt;NA’s&lt;/strong&gt; in the vector&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NA&lt;/strong&gt; stands for Not Available&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;NA&lt;/em&gt;&lt;/strong&gt; : Missing values are represented by the symbol NA (not available)&lt;/p&gt;
+
+&lt;p&gt;How to check for &lt;strong&gt;NA&lt;/strong&gt; in a vector ? : &lt;code class=&quot;highlighter-rouge&quot;&gt;is.na()&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;check&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is.na&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;check&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;check will be &lt;strong&gt;FALSE&lt;/strong&gt; for non NA values and &lt;strong&gt;TRUE&lt;/strong&gt; for NA values&lt;/p&gt;
+
+&lt;p&gt;How to remove &lt;strong&gt;NA&lt;/strong&gt; values ? Let’s substitute NA with -1
+&lt;code class=&quot;highlighter-rouge&quot;&gt;test[is.na(test)] &amp;lt;- -1&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;logical-vectors&quot;&gt;LOGICAL VECTORS&lt;/h4&gt;
+&lt;p&gt;Can contain &lt;strong&gt;TRUE&lt;/strong&gt; or &lt;strong&gt;FALSE&lt;/strong&gt;.  What else ? &lt;strong&gt;NA&lt;/strong&gt; : Don’t forget this :P&lt;/p&gt;
+
+&lt;p&gt;Example: &lt;code class=&quot;highlighter-rouge&quot;&gt;test &amp;lt;- 5&amp;lt;6&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operations on Logical Vectors&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!&lt;/code&gt;: For Negation&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;&lt;/code&gt; : for &lt;em&gt;Logical AND&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;||&lt;/code&gt; : for &lt;em&gt;LOGICAL OR&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;determining-the-type-of-a-variable&quot;&gt;Determining the type of a variable&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;typeof(variablename)&lt;/code&gt; : Return the type of variable
+&amp;gt; Check out &lt;code class=&quot;highlighter-rouge&quot;&gt;mode()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;class()&lt;/code&gt; and read about the difference between the three&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;We will discuss this in the next part :D&lt;/em&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;mathematical-basic-operations&quot;&gt;Mathematical Basic Operations&lt;/h5&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Syntax&lt;/th&gt;
+      &lt;th&gt;Operation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sqrt(a)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Returns the square root of &lt;strong&gt;&lt;em&gt;a&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exp(a)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Return the value of exponent of &lt;strong&gt;&lt;em&gt;a&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;log(a)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Returns the Logarithm base &lt;strong&gt;e&lt;/strong&gt; of &lt;strong&gt;&lt;em&gt;a&lt;/em&gt;&lt;/strong&gt; Try &lt;code class=&quot;highlighter-rouge&quot;&gt;log10()&lt;/code&gt; for base &lt;strong&gt;10&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;var()&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Returns Variance of a vector which is passed as an argument&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sd()&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Returns	Standard Deviation of a vector which is passed as an argument&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note : Providing an input to a function outside it’s domain will result in NaN &lt;strong&gt;&lt;em&gt;Not a Number&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;strings&quot;&gt;Strings&lt;/h4&gt;
+
+&lt;p&gt;Also called &lt;strong&gt;&lt;em&gt;Character Vectors&lt;/em&gt;&lt;/strong&gt; follow &lt;strong&gt;C&lt;/strong&gt; type escape character &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Combining Characters to Numbers !&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;test &amp;lt;- paste(c(&quot;X,&quot;Y&quot;),1:10,sep=&quot;&quot;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The Output should look like &lt;strong&gt;&lt;em&gt;“X1”  “Y2”  “X3”  “Y4”  “X5”  “Y6”  “X7”  “Y8”  “X9”  “Y10”&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;paste()&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;Function takes an arbitrary number of arguments and concatenates them one by
+one into character strings.&lt;/p&gt;
+
+  &lt;p&gt;The arguments are by default separated in the result by a single blank character, but this can be
+changed by the named argument, &lt;code class=&quot;highlighter-rouge&quot;&gt;sep=&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;That’s all for the Part 1 :D , We will be posting Part 2 soon&lt;/em&gt;&lt;/strong&gt;
+** We will look into arrays, factors, table, matrix, data frames in the next part **&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 May 2016 16:36:00 +0000</pubDate>
+        <link>http://pclub.inhttp://thenewstack.io/wp-content/uploads/2014/10/R-1024x776.png</link>
+        <guid isPermaLink="true">http://pclub.inhttp://thenewstack.io/wp-content/uploads/2014/10/R-1024x776.png</guid>
+        
+        <category>R</category>
+        
+        <category>Summers</category>
+        
+        <category>Analytics</category>
+        
+        <category>Data Plotting</category>
+        
+        <category>Statistics</category>
+        
+        
+        <category>tutorial</category>
+        
+      </item>
     
       <item>
         <title>Setting up a CI for pclub.in</title>
