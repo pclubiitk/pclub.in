@@ -8,16 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Contact</title>
-  <meta name="description" content="The Programming Club, IIT Kanpur
-">
+  <title>AngularJS --- Superheroic Javascript Framework</title>
+  <meta name="description" content="AngularJS: Superheroic Javascript Framework">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/contact.html">
+  <link rel="canonical" href="http://pclub.in/angularjs/web%20development/2016/05/27/angular.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -99,197 +98,156 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <br>
+        <div style="margin: 4.5rem auto;">
 
-<div class="row">
-  <div class="large-7 columns samping">
-    <div style="margin-top: 0;
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="inpost-header">
+    <h1 class="inpost-title" itemprop="name headline">AngularJS --- Superheroic Javascript Framework</h1>
+    <h1 style="float:right" class="comment-postingatas">
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/angularjs/web%20development/2016/05/27/angular.html#disqus_thread" data-disqus-identifier="/angularjs/web%20development/2016/05/27/angular"style="color:#fff"> 0</a>
+    </h1>
+    </p>
+  </header>
+  
+  <div class="post-content" itemprop="articleBody">
+    <h3 id="angularjs-superheroic-javascript-framework">AngularJS: Superheroic Javascript Framework</h3>
+
+<p>For all those who have worked with HTML and CSS, you know very well that HTML is great for declaring static documents. It doesn’t do so <strong>well</strong> for declaring dynamic views in web-applications. Angular lets us create expressive, readable, quick to develop dynamic web pages. AngularJS framework is written in <em>Javascript</em>. In this article, I’m going to be introducing you to very basic AngularJS, essentially talking about directives, expressions, controllers, data binding and filters.</p>
+
+<h4 id="prerequisites">Prerequisites</h4>
+<ul>
+  <li><strong>Elementary</strong> knowledge about HTML, CSS and Javascript.</li>
+  <li>Desire to develop responsive and dynamic web pages.</li>
+</ul>
+
+<h4 id="angular-directives">Angular Directives</h4>
+<p>Let us begin now. We’ll start with a website, albeit a simple one, that IITK’s alumni have <a href="http://sid17.github.io/iitky12/#/">made</a>. The purpose of this website is for Y12 batch to stay in touch with batch mates and know the whereabouts of Y12 junta. A brilliant idea. We won’t be talking about the backend that is how the data is added and how the website fetches the data.</p>
+
+<p>Now if you right click anywhere on the site and chose inspect element, a small window opens in your browser. Find the body tag and you would find something like:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;body ng-app='iitky12App' ng-init='loadSettings()' ng-controller='AppCtrl' class='ng-scope'&gt;
+</code></pre>
+</div>
+
+<p>So what exactly is ng-app, ng-init and ng-controller?
+These are the angular <strong>directives</strong>. Directives are markers on a DOM (Document Object Model) element (such as an attribute, element name, comment or CSS class) that tell AngularJS’s HTML compiler to attach a specified behavior to that DOM element (e.g. via event listeners), or even to transform the DOM element and its children.
+Some common directives:
+* The <strong>ng-app</strong> directive tells AngularJS that the <code class="highlighter-rouge">&lt;body&gt;</code> element is the “owner” of an AngularJS application.
+* The <strong>ng-init</strong> directive initializes AngularJS application variables.
+* The <strong>ng-model</strong> directive binds the value of HTML controls (input, select, textarea) to application data. The ng-model directive provides a two-way binding between the model and the view.
+* The <strong>ng-repeat</strong> directive actually clones HTML elements once for each item in a collection. Consider this like a loop for HTML elements.</p>
+
+<h4 id="angular-expressions">Angular Expressions</h4>
+
+<p>AngularJS binds data to HTML using <strong>Expressions</strong>.AngularJS expressions can be written inside double braces:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">expression</span><span class="w"> </span><span class="p">}</span><span class="err">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<p>If you remove the ng-app directive, HTML will display the expression as it is, without solving it.</p>
+
+<h4 id="two-way-data-binding">Two Way Data binding</h4>
+
+<p>Data binding in AngularJS is the synchronization between the model and the view. When data in the model changes, the view reflects the change, and when data in the view changes, the modelis updated as well. This happens immediately and automatically, which makes sure that the model and the view is updated at all times. ng-model directive mentioned earlier, is used for two way data binding.</p>
+
+<h4 id="angular-controllers">Angular Controllers</h4>
+
+<p>AngularJS controllers control the data of AngularJS applications. AngularJS controllers are regular JavaScript Objects. AngularJS applications are controlled by controllers. The ng-controller directive defines the application controller. Like in the site mentioned in the beginning, in the body tag <code class="highlighter-rouge">ng-controller='AppCtrl'</code> has been used. This means AppCtrl is defined as the application controller.</p>
+
+<h4 id="angular-filters">Angular Filters</h4>
+
+<p>Perhaps again we should visit the site I mentioned earlier. Let us type CSE in the search bar ( :P ). Without taking any time, we get the results which have CSE linked to them. How does this happen?</p>
+
+<p>Angular Filters!! They give us the ability to format and filter the output according to our needs. So by using two way data binding we are able to use the search text entered and then filter the database using Angular Filters. We can also use filters to Order the results. Here is the link to the <a href="https://docs.angularjs.org/guide/filter">documentation</a>
+So I guess this is enough for a start. There is much to learn, but perhaps that would be covered in another article. I present to you a few useful links:</p>
+
+<ul>
+  <li><a href="https://www.coursera.org/learn/angular-js/home/welcome">Coursera Course on AngularJS</a></li>
+  <li><a href="https://angularjs.org/">Angular JS Website</a></li>
+  <li><a href="http://www.w3schools.com/angular/">W3Schools Tutorial on Angular</a></li>
+</ul>
+
+  </div>
+
+<div class="arrowNav">
+ 
+
+
+ 
+<div class="arrowRight" style="float:right">
+<a id="route" class="tooltip-left" href="/tutorial/2016/05/25/rpart1.html" title="
+&lt;p class=hoveratas&gt;Introduction to R (Part 1)&lt;/p&gt; &lt;p class=hoverbawah&gt;Basics Of R Why Learn R ? Free, Open Source,...&lt;/p&gt;
+"><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
-    padding-bottom: 1rem;
-    word-wrap: break-word;
-    background: #3E3E3E;
-    padding: 32px 20px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;">
-
-      <br><br>
-
-      <center>
-        <h1 style="color: #00ffff;">Current Coordinators</h1>
-        <table cellpadding="10">
-          <tr>
-            <td> <b> Kunal Kapila </b> </td>
-            <td> kunalkap@iitk </td>
-            <td> <a href="https://github.com/kunalapila" target="none">kunalapila@github</a></td>
-            <td class="coordieRow"> <img src="assets/image/kunal.jpg" class="coordiePic" alt="Kunal Kapila"> </td>
-          </tr>
-          <tr>
-            <td> <b> Saksham Sharma </b> </td>
-            <td> sakshams@iitk </td>
-            <td> <a href="https://github.com/sakshamsharma" target="none">sakshamsharma@github</a></td>
-            <td class="coordieRow"> <img src="assets/image/saksham.jpg" class="coordiePic" alt="Saksham Sharma"> </li>
-          </tr>
-          <tr>
-            <td> <b> Vinayak Tantia </b> </td>
-            <td> vtantia@iitk </td>
-            <td> <a href="https://github.com/vtantia" target="none">vtantia@github</a></td>
-            <td class="coordieRow"> <img src="assets/image/vinayak.jpg" class="coordiePic" alt="Vinayak Tantia"> </li>
-          </tr>
-        </table>
-      </center>
-
-      <br>
-      <br>
-
-    </div>
-  </div>
-  <div class="large-4 columns">
-<div class="widgetnya">
-  <h1 class="page-heading">Search</h1>
-  <div class="badanwidget" style="width:0">
-    <input type="text" placeholder="Search for articles..." id="countries"/>
-  </div>
-</div>
-
-<div class="widgetnya">
-  <h1 class="page-heading">Tags</h1>
-  <div class="badanwidget">
-    <ul class="tags" style="padding-bottom: 20px; list-style: none;">
-      
-      <li style="font-size: 93%">
-        <a id="route" href="/tags#meta">
-          meta
-          <span>3</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 85%">
-        <a id="route" href="/tags#summer16">
-          summer16
-          <span>2</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 108%">
-        <a id="route" href="/tags#tutorial">
-          tutorial
-          <span>5</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 77%">
-        <a id="route" href="/tags#git">
-          git
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 93%">
-        <a id="route" href="/tags#vim">
-          vim
-          <span>3</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 77%">
-        <a id="route" href="/tags#R">
-          R
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 77%">
-        <a id="route" href="/tags#Summers">
-          Summers
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 77%">
-        <a id="route" href="/tags#Analytics">
-          Analytics
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 77%">
-        <a id="route" href="/tags#Data Plotting">
-          Data Plotting
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 77%">
-        <a id="route" href="/tags#Statistics">
-          Statistics
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 77%">
-        <a id="route" href="/tags#web development">
-          web development
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 77%">
-        <a id="route" href="/tags#javascript">
-          javascript
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 77%">
-        <a id="route" href="/tags#angularjs">
-          angularjs
-          <span>1</span>
-        </a>
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="widgetnya" style="background: transparent;">
-  <img src="/assets/image/iitklogo.png" class="iitklogo">
-  <div class="badanwidget">
-  </div>
+   
+    "></i></a>
 </div>
 
 </div>
+
+
+  <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
+  <time datetime="2016-05-27T19:05:23+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> May 27, 2016</time>
+   
+  • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">
+      
+      Siddharth Mittal
+      
+    </span>
+  </span>
+   
+    |
+  
+  <a href="/tags.html#web development" style="color: #fff;"><i class="typcn typcn-tags"></i> web development</a>
+  
+  <a href="/tags.html#javascript" style="color: #fff;"><i class="typcn typcn-tags"></i> javascript</a>
+  
+  <a href="/tags.html#angularjs" style="color: #fff;"><i class="typcn typcn-tags"></i> angularjs</a>
+  
+  </p>
+
+</article>
+
+
+
+
 
 <style>
-tr {
-}
-tr:hover {background-color: #333333}
-td {
-  display: block;
-}
+    #disqus_thread {
+  overflow: hidden;
 
-td b {
-  color: #33dddd;
-}
-
-.coordieRow {
-  display: table-cell;
-}
-
-.coordiePic {
-  position: relative;
-  width: 90%;
-  float: left;
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-}
-
-.coordiePic:hover {
-  width: 95%;
+  iframe {
+    margin-bottom: -54px;
+  }
 }
 </style>
+<div id="disqus_thread"></div>
+<script>
+  // For debugging
+  // var disqus_developer = 1;
+  var disqus_shortname = 'pclubiitk';
+  var disqus_config = function () {
+    this.page.url = 'https://pclub.in/angularjs/web%20development/2016/05/27/angular';
+    this.page.identifier = '/angularjs/web%20development/2016/05/27/angular';
+  };
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
 
       </div>
     </div>
