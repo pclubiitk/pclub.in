@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 May 2016 19:15:02 +0000</pubDate>
-    <lastBuildDate>Fri, 27 May 2016 19:15:02 +0000</lastBuildDate>
+    <pubDate>Sat, 28 May 2016 17:06:57 +0000</pubDate>
+    <lastBuildDate>Sat, 28 May 2016 17:06:57 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -43,8 +43,8 @@ Some common directives:
 
 &lt;p&gt;AngularJS binds data to HTML using &lt;strong&gt;Expressions&lt;/strong&gt;.AngularJS expressions can be written inside double braces:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;expression&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{{ expression }}
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;If you remove the ng-app directive, HTML will display the expression as it is, without solving it.&lt;/p&gt;
