@@ -1,6 +1,8 @@
 pclub.in
 ========
 
+[![Build Status](https://travis-ci.org/pclubiitk/pclub.in.svg?branch=master)](https://travis-ci.org/pclubiitk/pclub.in)
+
 Source for Jekyll based static-website cum blog for the *Programming Club* IIT Kanpur.
 Based off: spaghetti.ga
 
