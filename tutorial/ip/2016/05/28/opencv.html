@@ -8,15 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>AngularJS --- Superheroic Javascript Framework</title>
-  <meta name="description" content="AngularJS: Superheroic Javascript Framework">
+  <title>Image Processing using OpenCV</title>
+  <meta name="description" content="OpenCV is the most widely used Computer Vision Library out there. It isvery powerful and offers many features suiting the needs of anyone requiringImage Proc...">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/angularjs/web%20development/2016/05/27/angular.html">
+  <link rel="canonical" href="http://pclub.in/tutorial/ip/2016/05/28/opencv.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -103,91 +103,139 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">AngularJS --- Superheroic Javascript Framework</h1>
+    <h1 class="inpost-title" itemprop="name headline">Image Processing using OpenCV</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/angularjs/web%20development/2016/05/27/angular.html#disqus_thread" data-disqus-identifier="/angularjs/web%20development/2016/05/27/angular"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/tutorial/ip/2016/05/28/opencv.html#disqus_thread" data-disqus-identifier="/tutorial/ip/2016/05/28/opencv"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <h3 id="angularjs-superheroic-javascript-framework">AngularJS: Superheroic Javascript Framework</h3>
+    <p>OpenCV is the most widely used Computer Vision Library out there. It is
+very powerful and offers many features suiting the needs of anyone requiring
+Image Processing. This tutorial is a slightly modified version of
+<a href="http://students.iitk.ac.in/robocon/docs/doku.php?id=programming:image_processing_intro">this</a>
+with a simpler method of compiling.</p>
 
-<p>For all those who have worked with HTML and CSS, you know very well that HTML is great for declaring static documents. It doesn’t do so <strong>well</strong> for declaring dynamic views in web-applications. Angular lets us create expressive, readable, quick to develop dynamic web pages. AngularJS framework is written in <em>Javascript</em>. In this article, I’m going to be introducing you to very basic AngularJS, essentially talking about directives, expressions, controllers, data binding and filters.</p>
+<h2 id="installation">Installation</h2>
 
-<h4 id="prerequisites">Prerequisites</h4>
-<ul>
-  <li><strong>Elementary</strong> knowledge about HTML, CSS and Javascript.</li>
-  <li>Desire to develop responsive and dynamic web pages.</li>
-</ul>
+<p>The simplest possible install is always from the repositories.</p>
 
-<h4 id="angular-directives">Angular Directives</h4>
-<p>Let us begin now. We’ll start with a website, albeit a simple one, that IITK’s alumni have <a href="http://sid17.github.io/iitky12/#/">made</a>. The purpose of this website is for Y12 batch to stay in touch with batch mates and know the whereabouts of Y12 junta. A brilliant idea. We won’t be talking about the backend that is how the data is added and how the website fetches the data.</p>
+<p>For Debian/Ubuntu/Mint:</p>
 
-<p>Now if you right click anywhere on the site and chose inspect element, a small window opens in your browser. Find the body tag and you would find something like:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;body ng-app='iitky12App' ng-init='loadSettings()' ng-controller='AppCtrl' class='ng-scope'&gt;
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install libopencv-dev
 </code></pre>
 </div>
 
-<p>So what exactly is ng-app, ng-init and ng-controller?
-These are the angular <strong>directives</strong>. Directives are markers on a DOM (Document Object Model) element (such as an attribute, element name, comment or CSS class) that tell AngularJS’s HTML compiler to attach a specified behavior to that DOM element (e.g. via event listeners), or even to transform the DOM element and its children.
-Some common directives:
-* The <strong>ng-app</strong> directive tells AngularJS that the <code class="highlighter-rouge">&lt;body&gt;</code> element is the “owner” of an AngularJS application.
-* The <strong>ng-init</strong> directive initializes AngularJS application variables.
-* The <strong>ng-model</strong> directive binds the value of HTML controls (input, select, textarea) to application data. The ng-model directive provides a two-way binding between the model and the view.
-* The <strong>ng-repeat</strong> directive actually clones HTML elements once for each item in a collection. Consider this like a loop for HTML elements.</p>
+<p>For Other distros like Arch, you can find the respective commands on the internet.</p>
 
-<h4 id="angular-expressions">Angular Expressions</h4>
+<p>If you want python support too, you will need to install the python support by:</p>
 
-<p>AngularJS binds data to HTML using <strong>Expressions</strong>.AngularJS expressions can be written inside double braces:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>{{ expression }}
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install python-opencv
 </code></pre>
 </div>
 
-<p>If you remove the ng-app directive, HTML will display the expression as it is, without solving it.</p>
+<p>The repository versions of OpenCV are usually not the latest versions and you might miss
+some features.</p>
 
-<h4 id="two-way-data-binding">Two Way Data binding</h4>
+<p>If you need specific features or a newer version of OpenCV (let’s say for python3 support),
+you could look <a href="milq.github.io/install-opencv-ubuntu-debian">here</a> for a very good guide
+on compiling OpenCV from source.</p>
 
-<p>Data binding in AngularJS is the synchronization between the model and the view. When data in the model changes, the view reflects the change, and when data in the view changes, the modelis updated as well. This happens immediately and automatically, which makes sure that the model and the view is updated at all times. ng-model directive mentioned earlier, is used for two way data binding.</p>
+<h2 id="compiling-and-running-programs-in-c">Compiling and running Programs in C++</h2>
 
-<h4 id="angular-controllers">Angular Controllers</h4>
+<p>Now that OpenCV has been installed, you might want to run a program to see if it is working
+properly. I would suggest the following program:</p>
 
-<p>AngularJS controllers control the data of AngularJS applications. AngularJS controllers are regular JavaScript Objects. AngularJS applications are controlled by controllers. The ng-controller directive defines the application controller. Like in the site mentioned in the beginning, in the body tag <code class="highlighter-rouge">ng-controller='AppCtrl'</code> has been used. This means AppCtrl is defined as the application controller.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;opencv2/opencv.hpp&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">cv</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
 
-<h4 id="angular-filters">Angular Filters</h4>
+  <span class="c1">// A camera object
+</span>  <span class="n">VideoCapture</span> <span class="n">cam</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 
-<p>Perhaps again we should visit the site I mentioned earlier. Let us type CSE in the search bar ( :P ). Without taking any time, we get the results which have CSE linked to them. How does this happen?</p>
+  <span class="c1">// An image object
+</span>  <span class="n">Mat</span> <span class="n">img</span><span class="p">;</span>
 
-<p>Angular Filters!! They give us the ability to format and filter the output according to our needs. So by using two way data binding we are able to use the search text entered and then filter the database using Angular Filters. We can also use filters to Order the results. Here is the link to the <a href="https://docs.angularjs.org/guide/filter">documentation</a>
-So I guess this is enough for a start. There is much to learn, but perhaps that would be covered in another article. I present to you a few useful links:</p>
+  <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="c1">// Storing a frame from camera to image
+</span>    <span class="n">cam</span> <span class="o">&gt;&gt;</span> <span class="n">img</span><span class="p">;</span>
+
+    <span class="c1">// Do Your Operations Here
+</span>
+    <span class="c1">// Displaying image in a window named "Image"
+</span>    <span class="n">imshow</span><span class="p">(</span><span class="s">"Image"</span><span class="p">,</span><span class="n">img</span><span class="p">);</span>
+
+    <span class="c1">// Waiting for a keypress for 5ms
+</span>
+    <span class="cm">/**
+      * WaitKey is very important.
+      * Even if you don't want a delay/keypress you should
+      * use it with minimum delay otherwise, the gui does not update
+      */</span>
+    <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">waitKey</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+
+    <span class="c1">// Quit on pressing q
+</span>    <span class="k">if</span><span class="p">(</span> <span class="n">c</span> <span class="o">==</span> <span class="sc">'q'</span> <span class="o">||</span> <span class="n">c</span> <span class="o">==</span> <span class="sc">'Q'</span><span class="p">)</span>
+      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>This simple program just takes input from your webcam and displays it in a window.
+You can save it in a file named <code class="highlighter-rouge">test.cpp</code>.</p>
+
+<p>Now, in order to compile this program, execute this from the terminal:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>g++ -o Test /path/to/test.cpp <span class="sb">`</span>pkg-config --libs opencv<span class="sb">`</span>
+</code></pre>
+</div>
+
+<p>The parameter after <code class="highlighter-rouge">-o</code>, i.e., <code class="highlighter-rouge">Test</code> refers to the name of the executable created after compiling.</p>
+
+<p>After compilation finishes (hopefully without any errors), you can run this test program with:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>./Test
+</code></pre>
+</div>
+
+<p>For a more involved and complex compilation involving <code class="highlighter-rouge">cmake</code>, you can look
+<a href="http://students.iitk.ac.in/robocon/docs/doku.php?id=programming:image_processing_intro">here</a> and
+<a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_gcc_cmake/linux_gcc_cmake.html#linux-gcc-usage">here</a>.</p>
+
+<h2 id="learning-opencv">Learning OpenCV</h2>
+
+<p>Now that you can compile and execute OpenCV programs, you are ready to begin learning OpenCV.
+The OpenCV <a href="http://docs.opencv.org/2.4/doc/tutorials/tutorials.html">tutorials</a> on their website is a
+good starting point. My suggested order of reading is:</p>
 
 <ul>
-  <li><a href="https://www.coursera.org/learn/angular-js/home/welcome">Coursera Course on AngularJS</a></li>
-  <li><a href="https://angularjs.org/">Angular JS Website</a></li>
-  <li><a href="http://www.w3schools.com/angular/">W3Schools Tutorial on Angular</a></li>
+  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/display_image/display_image.html#display-image">Load and display an image</a></li>
+  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/core/adding_images/adding_images.html#adding-images">Adding Images</a></li>
+  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/core/basic_geometric_drawing/basic_geometric_drawing.html#drawing-1">Basic Drawing</a></li>
+  <li>Followed by all tutorials in the <a href="http://docs.opencv.org/2.4/doc/tutorials/imgproc/table_of_content_imgproc/table_of_content_imgproc.html#table-of-content-imgproc">Image Processing Module</a></li>
 </ul>
+
+<p>The above order is because the initial tutorials tend to be more theoretical and focussing on the internals of OpenCV
+rather than actual usage.</p>
+
+<p>Plus, you might not need to see all the tutorials depending upon your needs.</p>
+
+<p>Best of Luck developing your OpenCV application.</p>
 
   </div>
 
 <div class="arrowNav">
  
- 
-<div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/tutorial/ip/2016/05/28/opencv.html" title="
-&lt;p class=hoveratas&gt;Image Processing using OpenCV&lt;/p&gt; &lt;p class=hoverbawah&gt;OpenCV is the most widely used Computer Vision Library out...&lt;/p&gt;
-"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
-    position: relative;
-   
-    "></i></a>
-</div>
 
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/tutorial/2016/05/25/rpart1.html" title="
-&lt;p class=hoveratas&gt;Introduction to R (Part 1)&lt;/p&gt; &lt;p class=hoverbawah&gt;Basics Of R Why Learn R ? Free, Open Source,...&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/angularjs/web%20development/2016/05/27/angular.html" title="
+&lt;p class=hoveratas&gt;AngularJS --- Superheroic Javascript Framework&lt;/p&gt; &lt;p class=hoverbawah&gt;AngularJS: Superheroic Javascript Framework For all those who have worked...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -198,23 +246,21 @@ So I guess this is enough for a start. There is much to learn, but perhaps that 
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2016-05-27T19:05:23+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> May 27, 2016</time>
+  <time datetime="2016-05-28T12:18:35+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> May 28, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      Siddharth Mittal
+      <a href="http://yashsriv.github.io" target="_blank" style="color: #fff;">Yash Srivastav</a>
       
     </span>
   </span>
    
     |
   
-  <a href="/tags.html#web development" style="color: #fff;"><i class="typcn typcn-tags"></i> web development</a>
+  <a href="/tags.html#ip" style="color: #fff;"><i class="typcn typcn-tags"></i> ip</a>
   
-  <a href="/tags.html#javascript" style="color: #fff;"><i class="typcn typcn-tags"></i> javascript</a>
-  
-  <a href="/tags.html#angularjs" style="color: #fff;"><i class="typcn typcn-tags"></i> angularjs</a>
+  <a href="/tags.html#tutorial" style="color: #fff;"><i class="typcn typcn-tags"></i> tutorial</a>
   
   </p>
 
@@ -239,8 +285,8 @@ So I guess this is enough for a start. There is much to learn, but perhaps that 
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/angularjs/web%20development/2016/05/27/angular';
-    this.page.identifier = '/angularjs/web%20development/2016/05/27/angular';
+    this.page.url = 'https://pclub.in/tutorial/ip/2016/05/28/opencv';
+    this.page.identifier = '/tutorial/ip/2016/05/28/opencv';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
