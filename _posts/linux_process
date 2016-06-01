@@ -16,7 +16,7 @@ categories:
 ### **The `ps` command**
 Short for ***process status*** . Returns all *currently running processes* running on the system.
 
-When called without arguments, information return can be a little worthless.
+When called without arguments, information return can be a little useless.
 
 To get a more clear picture we use `ps -aux` .
 
