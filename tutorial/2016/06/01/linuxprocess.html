@@ -8,15 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Image Processing using OpenCV</title>
-  <meta name="description" content="OpenCV is the most widely used Computer Vision Library out there. It isvery powerful and offers many features suiting the needs of anyone requiringImage Proc...">
+  <title>Managing Processes in Linux</title>
+  <meta name="description" content="Managing Processes in Linux">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/tutorial/ip/2016/05/28/opencv.html">
+  <link rel="canonical" href="http://pclub.in/tutorial/2016/06/01/linuxprocess.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -103,148 +103,109 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Image Processing using OpenCV</h1>
+    <h1 class="inpost-title" itemprop="name headline">Managing Processes in Linux</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/tutorial/ip/2016/05/28/opencv.html#disqus_thread" data-disqus-identifier="/tutorial/ip/2016/05/28/opencv"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/tutorial/2016/06/01/linuxprocess.html#disqus_thread" data-disqus-identifier="/tutorial/2016/06/01/linuxprocess"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <p>OpenCV is the most widely used Computer Vision Library out there. It is
-very powerful and offers many features suiting the needs of anyone requiring
-Image Processing. This tutorial is a slightly modified version of
-<a href="http://students.iitk.ac.in/robocon/docs/doku.php?id=programming:image_processing_intro">this</a>
-with a simpler method of compiling.</p>
+    <h1 id="managing-processes-in-linux">Managing Processes in Linux</h1>
 
-<h2 id="installation">Installation</h2>
+<h3 id="the-ps-command">The <code class="highlighter-rouge">ps</code> command</h3>
+<p>Short for <strong><em>process status</em></strong> . Returns all <em>currently running processes</em> running on the system.</p>
 
-<p>The simplest possible install is always from the repositories.</p>
+<p>When called without arguments, information return can be a little useless.</p>
 
-<p>For Debian/Ubuntu/Mint:</p>
+<p>To get a more clear picture we use <code class="highlighter-rouge">ps -aux</code> .</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install libopencv-dev
-</code></pre>
-</div>
+<p>This tells <code class="highlighter-rouge">ps</code>  to return list of process from <strong>all users</strong>
+We can also use <code class="highlighter-rouge">ps -ef</code> to view <strong>all running process</strong>
+where <code class="highlighter-rouge">-e</code>is used to <strong>display all processes</strong> and <code class="highlighter-rouge">-f</code> is used to <strong>display in full format listing</strong></p>
 
-<p>For Other distros like Arch, you can find the respective commands on the internet.</p>
+<p>To view all running processes that belongs to a particular user, we use <code class="highlighter-rouge">ps -f -u username1,username2</code></p>
 
-<p>If you want python support too, you will need to install the python support by:</p>
+<p><strong>Note</strong>: We can see processes limited to a set of users by seperating the usernames by a comma()
+Often <code class="highlighter-rouge">ps aux | grep commandname</code> is used to get details of process with the given command</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install python-opencv
-</code></pre>
-</div>
+<p>To see all proccesses in a tree structure we use <code class="highlighter-rouge">ps axjf</code>
+Using this we get to know the parent processes (by getting an hierarchical structure)</p>
 
-<p>The repository versions of OpenCV are usually not the latest versions and you might miss
-some features.</p>
+<h3 id="pids">PIDs</h3>
 
-<p>If you need specific features or a newer version of OpenCV (let’s say for python3 support),
-you could look <a href="milq.github.io/install-opencv-ubuntu-debian">here</a> for a very good guide
-on compiling OpenCV from source.</p>
+<p>Each process is assigned a <em>unique</em> <strong>Process ID (PID)</strong></p>
 
-<h2 id="compiling-and-running-programs-in-c">Compiling and running Programs in C++</h2>
+<p>Each process also has a <strong>Parent Process ID (PPID)</strong></p>
 
-<p>Now that OpenCV has been installed, you might want to run a program to see if it is working
-properly. I would suggest the following program:</p>
+<p>To filter your searches with a specific <strong>PID</strong> use <code class="highlighter-rouge">ps -f -p PIDofProcess</code></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;opencv2/opencv.hpp&gt;
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">cv</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
+<p>Similarly to filter by PPID use <code class="highlighter-rouge">ps -f --ppid PPIDofProcess</code>
+Also you may get pid by <code class="highlighter-rouge">pidof commandname</code></p>
 
-  <span class="c1">// A camera object
-</span>  <span class="n">VideoCapture</span> <span class="n">cam</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<h3 id="killing-the-process">Killing the process</h3>
 
-  <span class="c1">// An image object
-</span>  <span class="n">Mat</span> <span class="n">img</span><span class="p">;</span>
+<h4 id="the-kill-command">The kill command</h4>
 
-  <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+<p>It is used to send a signal to a process or to kill a process</p>
 
-    <span class="c1">// Storing a frame from camera to image
-</span>    <span class="n">cam</span> <span class="o">&gt;&gt;</span> <span class="n">img</span><span class="p">;</span>
+<p>Basic Synatx is <code class="highlighter-rouge">kill -SIGNAL PID</code></p>
 
-    <span class="c1">// Do Your Operations Here
-</span>
-    <span class="c1">// Displaying image in a window named "Image"
-</span>    <span class="n">imshow</span><span class="p">(</span><span class="s">"Image"</span><span class="p">,</span><span class="n">img</span><span class="p">);</span>
+<p><strong>Signals of our interest</strong> : SIGTERM &amp; SIGKILL</p>
 
-    <span class="c1">// Waiting for a keypress for 5ms
-</span>
-    <span class="cm">/**
-      * WaitKey is very important.
-      * Even if you don't want a delay/keypress you should
-      * use it with minimum delay otherwise, the gui does not update
-      */</span>
-    <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">waitKey</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+<h4 id="sigterm">SIGTERM</h4>
 
-    <span class="c1">// Quit on pressing q
-</span>    <span class="k">if</span><span class="p">(</span> <span class="n">c</span> <span class="o">==</span> <span class="sc">'q'</span> <span class="o">||</span> <span class="n">c</span> <span class="o">==</span> <span class="sc">'Q'</span><span class="p">)</span>
-      <span class="k">break</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">kill PID</code> will send a SIGTERM signal by default. The application can determine what to do once it receives a SIGTERM signal</p>
 
-<p>This simple program just takes input from your webcam and displays it in a window.
-You can save it in a file named <code class="highlighter-rouge">test.cpp</code>.</p>
+<p>It may stop the process immediately, may stop after a delay after cleaning resources or might run endlessly</p>
 
-<p>Now, in order to compile this program, execute this from the terminal:</p>
+<p><code class="highlighter-rouge">kill -SIGTERM PID</code> and <code class="highlighter-rouge">kill -15 PID</code> are same</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>g++ -o Test /path/to/test.cpp <span class="sb">`</span>pkg-config --libs opencv<span class="sb">`</span>
-</code></pre>
-</div>
+<h4 id="sigkill-the-super-power">SIGKILL (The Super Power)</h4>
 
-<p>The parameter after <code class="highlighter-rouge">-o</code>, i.e., <code class="highlighter-rouge">Test</code> refers to the name of the executable created after compiling.</p>
+<p>Kind of Force Kill</p>
 
-<p>After compilation finishes (hopefully without any errors), you can run this test program with:</p>
+<p>Unlike SIGTERM , SIGKILL cannot be ignored by the process , even the process is not aware when SIGKILL signal is sent.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>./Test
-</code></pre>
-</div>
+<p>While there are rare cases where an external influence (like waiting I/O) may be the reason of ignoring SIGKILL. But it works in most cases ! 
+<code class="highlighter-rouge">kill -SIGKILL PID</code> and <code class="highlighter-rouge">kill -9 PID</code> is same</p>
 
-<p>For a more involved and complex compilation involving <code class="highlighter-rouge">cmake</code>, you can look
-<a href="http://students.iitk.ac.in/robocon/docs/doku.php?id=programming:image_processing_intro">here</a> and
-<a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_gcc_cmake/linux_gcc_cmake.html#linux-gcc-usage">here</a>.</p>
+<p>Suppose your firefox is not responding and you decided to kill the process : <code class="highlighter-rouge">kill -9 `pidof firefox`</code></p>
 
-<h2 id="learning-opencv">Learning OpenCV</h2>
+<h4 id="the-killall-command">The killall command</h4>
 
-<p>Now that you can compile and execute OpenCV programs, you are ready to begin learning OpenCV.
-The OpenCV <a href="http://docs.opencv.org/2.4/doc/tutorials/tutorials.html">tutorials</a> on their website is a
-good starting point. My suggested order of reading is:</p>
+<p>Too lazy to find the PID of a process ? Here have a look at the killall command</p>
 
-<ul>
-  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/display_image/display_image.html#display-image">Load and display an image</a></li>
-  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/core/adding_images/adding_images.html#adding-images">Adding Images</a></li>
-  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/core/basic_geometric_drawing/basic_geometric_drawing.html#drawing-1">Basic Drawing</a></li>
-  <li>Followed by all tutorials in the <a href="http://docs.opencv.org/2.4/doc/tutorials/imgproc/table_of_content_imgproc/table_of_content_imgproc.html#table-of-content-imgproc">Image Processing Module</a></li>
-</ul>
+<p><strong>Example (killing firefox)</strong> : <code class="highlighter-rouge">killall -9 firefox</code></p>
 
-<p>The above order is because the initial tutorials tend to be more theoretical and focussing on the internals of OpenCV
-rather than actual usage.</p>
+<p><strong>pkill command</strong>
+Almost the same as <code class="highlighter-rouge">kilall</code> command. The only difference being you don’t have to provide the exact process name, partial process name will do.</p>
 
-<p>Plus, you might not need to see all the tutorials depending upon your needs.</p>
+<p><strong>Beware you might also kill other process which you didn’t intend to kill</strong>
+<em>Example (killing firefox)</em> : <code class="highlighter-rouge">pkill firef</code> will also do ! :D</p>
 
-<p>Best of Luck developing your OpenCV application.</p>
+<h4 id="the-xkill-command">The xkill command</h4>
+
+<p>If you are new to using <strong>LINUX</strong> or hate the bash, you may do it the GUI way :P</p>
+
+<p>Simply  type <code class="highlighter-rouge">xkill</code> in the terminal and it will ask you to select a window whose client you wish to kill.</p>
+
+<p>Fast if you have a GUI :P</p>
+
+<p><em>Have fun killing !!</em></p>
+
+<p><strong>Fin</strong></p>
 
   </div>
 
 <div class="arrowNav">
  
- 
-<div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/tutorial/2016/06/01/linuxprocess.html" title="
-&lt;p class=hoveratas&gt;Managing Processes in Linux&lt;/p&gt; &lt;p class=hoverbawah&gt;# Managing Processes in Linux ### The `ps` command Short...&lt;/p&gt;
-"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
-    position: relative;
-   
-    "></i></a>
-</div>
 
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/angularjs/web%20development/2016/05/27/angular.html" title="
-&lt;p class=hoveratas&gt;AngularJS --- Superheroic Javascript Framework&lt;/p&gt; &lt;p class=hoverbawah&gt;AngularJS: Superheroic Javascript Framework For all those who have worked...&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/tutorial/ip/2016/05/28/opencv.html" title="
+&lt;p class=hoveratas&gt;Image Processing using OpenCV&lt;/p&gt; &lt;p class=hoverbawah&gt;OpenCV is the most widely used Computer Vision Library out...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -255,21 +216,21 @@ rather than actual usage.</p>
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2016-05-28T12:18:35+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> May 28, 2016</time>
+  <time datetime="2016-06-01T16:06:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Jun 1, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      <a href="http://yashsriv.github.io" target="_blank" style="color: #fff;">Yash Srivastav</a>
+      <a href="http://home.iitk.ac.in/~anishl/" target="_blank" style="color: #fff;">Anish Lamba</a>
       
     </span>
   </span>
    
     |
   
-  <a href="/tags.html#ip" style="color: #fff;"><i class="typcn typcn-tags"></i> ip</a>
+  <a href="/tags.html#linux" style="color: #fff;"><i class="typcn typcn-tags"></i> linux</a>
   
-  <a href="/tags.html#tutorial" style="color: #fff;"><i class="typcn typcn-tags"></i> tutorial</a>
+  <a href="/tags.html#bash" style="color: #fff;"><i class="typcn typcn-tags"></i> bash</a>
   
   </p>
 
@@ -294,8 +255,8 @@ rather than actual usage.</p>
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/tutorial/ip/2016/05/28/opencv';
-    this.page.identifier = '/tutorial/ip/2016/05/28/opencv';
+    this.page.url = 'https://pclub.in/tutorial/2016/06/01/linuxprocess';
+    this.page.identifier = '/tutorial/2016/06/01/linuxprocess';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

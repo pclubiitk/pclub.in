@@ -6,9 +6,109 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 May 2016 22:15:05 +0000</pubDate>
-    <lastBuildDate>Mon, 30 May 2016 22:15:05 +0000</lastBuildDate>
+    <pubDate>Wed, 01 Jun 2016 21:10:04 +0000</pubDate>
+    <lastBuildDate>Wed, 01 Jun 2016 21:10:04 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Managing Processes in Linux</title>
+        <description>&lt;h1 id=&quot;managing-processes-in-linux&quot;&gt;Managing Processes in Linux&lt;/h1&gt;
+
+&lt;h3 id=&quot;the-ps-command&quot;&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;ps&lt;/code&gt; command&lt;/h3&gt;
+&lt;p&gt;Short for &lt;strong&gt;&lt;em&gt;process status&lt;/em&gt;&lt;/strong&gt; . Returns all &lt;em&gt;currently running processes&lt;/em&gt; running on the system.&lt;/p&gt;
+
+&lt;p&gt;When called without arguments, information return can be a little useless.&lt;/p&gt;
+
+&lt;p&gt;To get a more clear picture we use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps -aux&lt;/code&gt; .&lt;/p&gt;
+
+&lt;p&gt;This tells &lt;code class=&quot;highlighter-rouge&quot;&gt;ps&lt;/code&gt;  to return list of process from &lt;strong&gt;all users&lt;/strong&gt;
+We can also use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps -ef&lt;/code&gt; to view &lt;strong&gt;all running process&lt;/strong&gt;
+where &lt;code class=&quot;highlighter-rouge&quot;&gt;-e&lt;/code&gt;is used to &lt;strong&gt;display all processes&lt;/strong&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt; is used to &lt;strong&gt;display in full format listing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To view all running processes that belongs to a particular user, we use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps -f -u username1,username2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: We can see processes limited to a set of users by seperating the usernames by a comma()
+Often &lt;code class=&quot;highlighter-rouge&quot;&gt;ps aux | grep commandname&lt;/code&gt; is used to get details of process with the given command&lt;/p&gt;
+
+&lt;p&gt;To see all proccesses in a tree structure we use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps axjf&lt;/code&gt;
+Using this we get to know the parent processes (by getting an hierarchical structure)&lt;/p&gt;
+
+&lt;h3 id=&quot;pids&quot;&gt;PIDs&lt;/h3&gt;
+
+&lt;p&gt;Each process is assigned a &lt;em&gt;unique&lt;/em&gt; &lt;strong&gt;Process ID (PID)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Each process also has a &lt;strong&gt;Parent Process ID (PPID)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To filter your searches with a specific &lt;strong&gt;PID&lt;/strong&gt; use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps -f -p PIDofProcess&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Similarly to filter by PPID use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps -f --ppid PPIDofProcess&lt;/code&gt;
+Also you may get pid by &lt;code class=&quot;highlighter-rouge&quot;&gt;pidof commandname&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;killing-the-process&quot;&gt;Killing the process&lt;/h3&gt;
+
+&lt;h4 id=&quot;the-kill-command&quot;&gt;The kill command&lt;/h4&gt;
+
+&lt;p&gt;It is used to send a signal to a process or to kill a process&lt;/p&gt;
+
+&lt;p&gt;Basic Synatx is &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -SIGNAL PID&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Signals of our interest&lt;/strong&gt; : SIGTERM &amp;amp; SIGKILL&lt;/p&gt;
+
+&lt;h4 id=&quot;sigterm&quot;&gt;SIGTERM&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kill PID&lt;/code&gt; will send a SIGTERM signal by default. The application can determine what to do once it receives a SIGTERM signal&lt;/p&gt;
+
+&lt;p&gt;It may stop the process immediately, may stop after a delay after cleaning resources or might run endlessly&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kill -SIGTERM PID&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -15 PID&lt;/code&gt; are same&lt;/p&gt;
+
+&lt;h4 id=&quot;sigkill-the-super-power&quot;&gt;SIGKILL (The Super Power)&lt;/h4&gt;
+
+&lt;p&gt;Kind of Force Kill&lt;/p&gt;
+
+&lt;p&gt;Unlike SIGTERM , SIGKILL cannot be ignored by the process , even the process is not aware when SIGKILL signal is sent.&lt;/p&gt;
+
+&lt;p&gt;While there are rare cases where an external influence (like waiting I/O) may be the reason of ignoring SIGKILL. But it works in most cases ! 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;kill -SIGKILL PID&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -9 PID&lt;/code&gt; is same&lt;/p&gt;
+
+&lt;p&gt;Suppose your firefox is not responding and you decided to kill the process : &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -9 `pidof firefox`&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;the-killall-command&quot;&gt;The killall command&lt;/h4&gt;
+
+&lt;p&gt;Too lazy to find the PID of a process ? Here have a look at the killall command&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example (killing firefox)&lt;/strong&gt; : &lt;code class=&quot;highlighter-rouge&quot;&gt;killall -9 firefox&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;pkill command&lt;/strong&gt;
+Almost the same as &lt;code class=&quot;highlighter-rouge&quot;&gt;kilall&lt;/code&gt; command. The only difference being you don’t have to provide the exact process name, partial process name will do.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Beware you might also kill other process which you didn’t intend to kill&lt;/strong&gt;
+&lt;em&gt;Example (killing firefox)&lt;/em&gt; : &lt;code class=&quot;highlighter-rouge&quot;&gt;pkill firef&lt;/code&gt; will also do ! :D&lt;/p&gt;
+
+&lt;h4 id=&quot;the-xkill-command&quot;&gt;The xkill command&lt;/h4&gt;
+
+&lt;p&gt;If you are new to using &lt;strong&gt;LINUX&lt;/strong&gt; or hate the bash, you may do it the GUI way :P&lt;/p&gt;
+
+&lt;p&gt;Simply  type &lt;code class=&quot;highlighter-rouge&quot;&gt;xkill&lt;/code&gt; in the terminal and it will ask you to select a window whose client you wish to kill.&lt;/p&gt;
+
+&lt;p&gt;Fast if you have a GUI :P&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Have fun killing !!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fin&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Jun 2016 16:06:00 +0000</pubDate>
+        <link>http://pclub.in/tutorial/2016/06/01/linuxprocess.html</link>
+        <guid isPermaLink="true">http://pclub.in/tutorial/2016/06/01/linuxprocess.html</guid>
+        
+        <category>linux</category>
+        
+        <category>bash</category>
+        
+        
+        <category>tutorial</category>
+        
+      </item>
     
       <item>
         <title>Image Processing using OpenCV</title>
