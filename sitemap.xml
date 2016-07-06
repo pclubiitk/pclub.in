@@ -3,6 +3,21 @@
   
     
     <url>
+      <loc>http://pclub.in/project/2016/07/06/smartmirror.html</loc>
+      
+        <lastmod>2016-07-06T11:12:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>http://pclub.in/tutorial/2016/06/01/linuxprocess.html</loc>
       
         <lastmod>2016-06-01T16:06:00+00:00</lastmod>
@@ -160,7 +175,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2016-06-17T09:25:17+00:00</lastmod>
+        <lastmod>2016-07-06T15:33:05+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -178,7 +193,7 @@
     <url>
       <loc>http://pclub.in/about.html</loc>
       
-        <lastmod>2016-06-17T09:25:17+00:00</lastmod>
+        <lastmod>2016-07-06T15:33:05+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -196,7 +211,7 @@
     <url>
       <loc>http://pclub.in/archive.html</loc>
       
-        <lastmod>2016-06-17T09:25:17+00:00</lastmod>
+        <lastmod>2016-07-06T15:33:05+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -214,7 +229,7 @@
     <url>
       <loc>http://pclub.in/contact.html</loc>
       
-        <lastmod>2016-06-17T09:25:17+00:00</lastmod>
+        <lastmod>2016-07-06T15:33:05+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -242,7 +257,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2016-06-17T09:25:17+00:00</lastmod>
+        <lastmod>2016-07-06T15:33:05+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -265,7 +280,7 @@
     <url>
       <loc>http://pclub.in/projects.html</loc>
       
-        <lastmod>2016-06-17T09:25:17+00:00</lastmod>
+        <lastmod>2016-07-06T15:33:05+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -288,7 +303,7 @@
     <url>
       <loc>http://pclub.in/tags.html</loc>
       
-        <lastmod>2016-06-17T09:25:17+00:00</lastmod>
+        <lastmod>2016-07-06T15:33:05+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -306,7 +321,25 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2016-06-17T09:25:17+00:00</lastmod>
+        <lastmod>2016-07-06T15:33:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    
+
+    
+    <url>
+      <loc>http://pclub.in</loc>
+      
+        <lastmod>2016-07-06T15:33:05+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

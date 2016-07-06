@@ -8,15 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Contributing to pclub.in</title>
-  <meta name="description" content="We’ll be describing the procedure of contibuting posts to the Programming Club website here.">
+  <title>Smart Mirror</title>
+  <meta name="description" content="Smart Mirror">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/tutorial/2016/05/05/posttemplate.html">
+  <link rel="canonical" href="http://pclub.in/project/2016/07/06/smartmirror.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -105,86 +105,48 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Contributing to pclub.in</h1>
+    <h1 class="inpost-title" itemprop="name headline">Smart Mirror</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/tutorial/2016/05/05/posttemplate.html#disqus_thread" data-disqus-identifier="/tutorial/2016/05/05/posttemplate"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/project/2016/07/06/smartmirror.html#disqus_thread" data-disqus-identifier="/project/2016/07/06/smartmirror"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <p>We’ll be describing the procedure of contibuting posts to the Programming Club website here.</p>
+    <h1 id="smart-mirrorhttp11000011githubiosmart-mirror"><a href="http://11000011.github.io/Smart-Mirror/">Smart Mirror</a></h1>
 
-<p>The website is based on <a href="https://jekyllrb.com/">Jekyll</a>, and we use Markdown format for writing posts.
-Here are some steps you should go through to contribute a post:</p>
+<p>Smart Mirror is a project designed to get you ready for the day. It displays
+the current weather, your schedule for the day, notifications from your mobile
+and performs facial recognition so that the same software works for all users
+using the mirror.</p>
 
-<ul>
-  <li>
-    <p>Have a look at previous posts here at <a href="https://github.com/pclubiitk/pclub.in/tree/master/_posts">our Github repository</a>.</p>
-  </li>
-  <li>
-    <p>Have a look at the following template for each post:</p>
-  </li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
-<span class="s">layout</span><span class="pi">:</span> <span class="s">post</span>
-<span class="s">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;some</span><span class="nv"> </span><span class="s">cool</span><span class="nv"> </span><span class="s">title&gt;"</span>
-<span class="s">date</span><span class="pi">:</span> <span class="s">2016-05-05 17:23:20 +200</span>
-<span class="s">author</span><span class="pi">:</span> <span class="s">&lt;your-name&gt;</span>
-<span class="s">website</span><span class="pi">:</span> <span class="s">&lt;website-if-any&gt;</span>
-<span class="s">category</span><span class="pi">:</span>
-<span class="s">tags</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="s">some tag</span>
-<span class="pi">-</span> <span class="s">another tag</span>
-<span class="s">categories</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="s">a category</span>
-
-<span class="s">image</span><span class="pi">:</span>
-  <span class="s">url</span><span class="pi">:</span> <span class="s">&lt;link to a title image&gt;</span>
-<span class="nn">---</span>
-
-Your article's content goes here in markdown syntax</code></pre></figure>
-
-<p>Follow this template to the bit.</p>
+<p><img src="https://github.com/11000011/Smart-Mirror/raw/gh-pages/img/sample.png" alt="image" />
+^ The above image will be superimposed over the reflection from mirror displaying only the bright portions.</p>
 
 <ul>
-  <li>
-    <p>Ensure that you are familiar with basic markdown syntax. It’s really easy!</p>
-  </li>
-  <li>
-    <p>Check that you have included credits, if any part belongs to someone else.</p>
-  </li>
-  <li>
-    <p>Done already? Mail or message the markdown file to any of the coordinators, or at pclubiitk@gmail.com. If you’re familiar with Git, you can also send us a Pull Request on our Github repository listed in the below point.</p>
-  </li>
-  <li>
-    <p><a href="/contact.html">Contact Us</a> if there are any issues.</p>
-  </li>
-  <li>
-    <p>And of course, we’re open source. Find the source code at <a href="https://github.com/pclubiitk/pclub.in">Github here</a>, and feel free to open new issues, pull requests etc.</p>
-  </li>
+  <li>Weather is obtained using your current location</li>
+  <li>Schedule is obtained from Google Calendar</li>
+  <li>Notifications are mirrored from the user’s mobile phone via PushBullet</li>
+  <li>Facial Recognition ensures that notifications/schedule displayed are those of the person standing in front of the mirror</li>
 </ul>
+
+<p>Received the <strong>Best Applicative Project</strong> during the Science &amp; Technology Summer
+Camp 2016.</p>
+
+<p>Website: <a href="http://11000011.github.io/Smart-Mirror">http://11000011.github.io/Smart-Mirror</a><br />
+LaTeX Report: <a href="http://github.com/11000011/Smart-Mirror/raw/gh-pages/report.pdf">report.pdf</a><br />
+Github Wiki: <a href="http://github.com/11000011/Smart-Mirror/wiki/">Smart Mirror Wiki</a></p>
 
   </div>
 
 <div class="arrowNav">
  
- 
-<div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/tutorial/vim/2016/05/08/plugins.html" title="
-&lt;p class=hoveratas&gt;Plugin Managers for Vim&lt;/p&gt; &lt;p class=hoverbawah&gt;# Plugins!! Vim is a very simple text-based Text-Editor which...&lt;/p&gt;
-"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
-    position: relative;
-   
-    "></i></a>
-</div>
 
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/tutorial/vim/2016/04/29/kickstarttovim.html" title="
-&lt;p class=hoveratas&gt;Kickstart to Vim&lt;/p&gt; &lt;p class=hoverbawah&gt;Vim! Vim is one of the two widely known text-based...&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/tutorial/2016/06/01/linuxprocess.html" title="
+&lt;p class=hoveratas&gt;Managing Processes in Linux&lt;/p&gt; &lt;p class=hoverbawah&gt;Managing Processes in Linux The ps command Short for process...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -195,21 +157,21 @@ Your article's content goes here in markdown syntax</code></pre></figure>
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2016-05-05T15:23:20+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> May 5, 2016</time>
+  <time datetime="2016-07-06T11:12:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Jul 6, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      <a href="http://acehack.org" target="_blank" style="color: #fff;">Saksham Sharma</a>
+      <a href="http://11000011.github.io/Smart-Mirror/" target="_blank" style="color: #fff;">11000011</a>
       
     </span>
   </span>
    
     |
   
-  <a href="/tags.html#meta" style="color: #fff;"><i class="typcn typcn-tags"></i> meta</a>
+  <a href="/tags.html#summer16" style="color: #fff;"><i class="typcn typcn-tags"></i> summer16</a>
   
-  <a href="/tags.html#tutorial" style="color: #fff;"><i class="typcn typcn-tags"></i> tutorial</a>
+  <a href="/tags.html#project" style="color: #fff;"><i class="typcn typcn-tags"></i> project</a>
   
   </p>
 
@@ -234,8 +196,8 @@ Your article's content goes here in markdown syntax</code></pre></figure>
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/tutorial/2016/05/05/posttemplate';
-    this.page.identifier = '/tutorial/2016/05/05/posttemplate';
+    this.page.url = 'https://pclub.in/project/2016/07/06/smartmirror';
+    this.page.identifier = '/project/2016/07/06/smartmirror';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
