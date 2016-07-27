@@ -8,15 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Smart Mirror</title>
-  <meta name="description" content="Smart Mirror">
+  <title>HTML5 Game Development</title>
+  <meta name="description" content="HTML5 Game DevelopmentFor all those gaming nerds out there, there isn’t a better way to develop your gaming skills but to start from scratch of how a game wo...">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/project/2016/07/06/smartmirror.html">
+  <link rel="canonical" href="http://pclub.in/tutorial/2016/07/27/html5gamedev.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -105,57 +105,81 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Smart Mirror</h1>
+    <h1 class="inpost-title" itemprop="name headline">HTML5 Game Development</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/project/2016/07/06/smartmirror.html#disqus_thread" data-disqus-identifier="/project/2016/07/06/smartmirror"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/tutorial/2016/07/27/html5gamedev.html#disqus_thread" data-disqus-identifier="/tutorial/2016/07/27/html5gamedev"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <h1 id="smart-mirrorhttp11000011githubiosmart-mirror"><a href="http://11000011.github.io/Smart-Mirror/">Smart Mirror</a></h1>
+    <h1 id="html5-game-development">HTML5 Game Development</h1>
+<p>For all those gaming nerds out there, there isn’t a better way to develop your gaming skills but to start from scratch of how a game works and to build your own one!<br />
+HTML 5 provides rich environment to create your games using Javascript and the html5 canvas object.</p>
 
-<p>Smart Mirror is a project designed to get you ready for the day. It displays
-the current weather, your schedule for the day, notifications from your mobile
-and performs facial recognition so that the same software works for all users
-using the mirror.</p>
+<h3 id="pre-requisites">PRE-REQUISITES</h3>
+<p>Well all you need is to know the basics of html and javascript. And of course a little bit of enthu in the pot is forever welcomed !  :)</p>
 
-<p><img src="https://github.com/11000011/Smart-Mirror/raw/gh-pages/img/sample.png" alt="image" />
-^ The above image will be superimposed over the reflection from mirror displaying only the bright portions.</p>
+<h3 id="why-not-other-game-engines-">WHY NOT OTHER GAME-ENGINES ?</h3>
+<p>We have hundreds of cool game engines in the market, to name few unity ,unreal engine, cryengine, source 2 etc. But here we focus on learning things from the scratch, in engines like these things are more  drag and drop and the essence of how things work from the basic fails to deliver. In this article we discuss things from the very basic !</p>
 
+<h3 id="game-canvas-and-game-components">GAME CANVAS AND GAME COMPONENTS</h3>
+<p>Without much ado, we talk about the canvas object in the html 5 that offers to us the work place for doing all our cool gaming stuffs. To note is that it is a container to hold the graphics content and nothing more. Everything that needs to be done must be defined beforehand unlike the game engines like unity which have predefined objects like planes, spheres etc.<br />
+<strong>Game Components</strong>-We can draw rectangles, circles, lines using the 2D context of canvas object ( in layman’s term - drawing in the canvas holder by using its 2 Dimensional object ).We can provide colors to fill , or use gradient colors , or even load images to make animations in the 2d context of canvas object.<br />
+<em>Reference Code in js-</em>
+<code class="highlighter-rouge"> 
+var canvas=Document.createElement("canvas");  
+document.appendChild(canvas);  
+var context=canvas.getContext("2D");  
+context.fillStyle="red";  
+context.fillRect(10,20,30,40);
+</code>
+This creates a color filled red rectangle in the canvas at (10,20) coordinates of 30px as width and 40px as height.</p>
+
+<h3 id="game-components-and-their-movement">GAME COMPONENTS AND THEIR MOVEMENT</h3>
+<p>The importance of these objects is that they can be moved inside the canvas by redrawing them to different positions , this being done per frame ! A separate function is created which helps in drawing the components taking the position as arguments that is called many times a second to update the position of the game components.The position can incremented each time adding a constant or a uniformly increasing function to make the component move uniformly or accelerate respectively.<br />
+The movement is triggered also by adding event handlers through javascript, like “keydown” , “keyup” for keyboard keys, which then can be recognised using the keyCode attribute of the event argument of event -handler function call (see attached reference code) .<br />
+<em>Reference Code in js-</em>
+<code class="highlighter-rouge"> 
+window.addEventListener('keydown', function (e) {  
+	    myGameArea.key = e.keyCode;  
+    	})  
+//for calling a function callMe at 50 every milliseconds ( or  
+//better say 20 frames per second)  
+//setInterval(callMe,50); 
+</code>
+Hence by knowing which key is pressed we can call the required functions for action to be taken.</p>
+
+<h3 id="game-obstacles-and-score">GAME OBSTACLES AND SCORE</h3>
+<p>Like other game components game obstacles are also game components but being generated at random coordinates of random shape, the code of which is much the same and i leave it to you :) .<br />
+The score in most of the cases is decided by certain collision events or by the current frame from the beginning of the game.
+Its very easy to ascertain the collision between objects exploiting the again the boundary coordinates, and the current frame can be known by ensuring a  counter that is incremented for the function that is called per frame.I leave the job for you to google out the way to write text in canvas element to display the score when needed.</p>
+
+<h3 id="almost-there-">ALMOST THERE !</h3>
+<p>We  have known  everything to create our first simple html5 game with our own game arena and game components, game obstacles and score to compete !</p>
+
+<h3 id="lonely-without-sounds-">LONELY WITHOUT SOUNDS ?</h3>
+<p>Well everyone loves the charm when there’s music in the air ! Luckily we can have it too in case of html5 “audio” object . Not going into much detail , we can add sound using the following sample code link, which i leave you to dissect.</p>
+
+<h3 id="links-and-further-reading">LINKS AND FURTHER READING</h3>
 <ul>
-  <li>Weather is obtained using your current location</li>
-  <li>Schedule is obtained from Google Calendar</li>
-  <li>Notifications are mirrored from the user’s mobile phone via PushBullet</li>
-  <li>Facial Recognition ensures that notifications/schedule displayed are those of the person standing in front of the mirror</li>
+  <li><a href="http://home.iitk.ac.in/~akashdut/sounddev.txt">adding sounds</a></li>
+  <li><a href="https://www.udacity.com/course/html5-game-development--cs255">udacity course on html5 game dev</a></li>
+  <li><a href="https://www.udacity.com/course/html5-canvas--ud292">udacity course on html5 canvas element</a></li>
+  <li><a href="http://www.w3schools.com/games/default.asp">w3schools tutorial for html game</a></li>
 </ul>
 
-<p>Received the <strong>Best Applicative Project</strong> during the Science &amp; Technology Summer
-Camp 2016.</p>
-
-<p>Website: <a href="http://11000011.github.io/Smart-Mirror">http://11000011.github.io/Smart-Mirror</a><br />
-LaTeX Report: <a href="http://github.com/11000011/Smart-Mirror/raw/gh-pages/report.pdf">report.pdf</a><br />
-Github Wiki: <a href="http://github.com/11000011/Smart-Mirror/wiki/">Smart Mirror Wiki</a></p>
 
   </div>
 
 <div class="arrowNav">
  
- 
-<div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/tutorial/2016/07/27/html5gamedev.html" title="
-&lt;p class=hoveratas&gt;HTML5 Game Development&lt;/p&gt; &lt;p class=hoverbawah&gt;# HTML5 Game Development For all those gaming nerds out...&lt;/p&gt;
-"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
-    position: relative;
-   
-    "></i></a>
-</div>
 
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/tutorial/2016/06/01/linuxprocess.html" title="
-&lt;p class=hoveratas&gt;Managing Processes in Linux&lt;/p&gt; &lt;p class=hoverbawah&gt;Managing Processes in Linux The ps command Short for process...&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/project/2016/07/06/smartmirror.html" title="
+&lt;p class=hoveratas&gt;Smart Mirror&lt;/p&gt; &lt;p class=hoverbawah&gt;Smart Mirror Smart Mirror is a project designed to get...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -166,21 +190,23 @@ Github Wiki: <a href="http://github.com/11000011/Smart-Mirror/wiki/">Smart Mirro
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2016-07-06T11:12:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Jul 6, 2016</time>
+  <time datetime="2016-07-27T10:35:20+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Jul 27, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      <a href="http://11000011.github.io/Smart-Mirror/" target="_blank" style="color: #fff;">11000011</a>
+      Akash Kumar Dutta
       
     </span>
   </span>
    
     |
   
-  <a href="/tags.html#summer16" style="color: #fff;"><i class="typcn typcn-tags"></i> summer16</a>
+  <a href="/tags.html#tutorial" style="color: #fff;"><i class="typcn typcn-tags"></i> tutorial</a>
   
-  <a href="/tags.html#project" style="color: #fff;"><i class="typcn typcn-tags"></i> project</a>
+  <a href="/tags.html#game dev" style="color: #fff;"><i class="typcn typcn-tags"></i> game dev</a>
+  
+  <a href="/tags.html#html5" style="color: #fff;"><i class="typcn typcn-tags"></i> html5</a>
   
   </p>
 
@@ -205,8 +231,8 @@ Github Wiki: <a href="http://github.com/11000011/Smart-Mirror/wiki/">Smart Mirro
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/project/2016/07/06/smartmirror';
-    this.page.identifier = '/project/2016/07/06/smartmirror';
+    this.page.url = 'https://pclub.in/tutorial/2016/07/27/html5gamedev';
+    this.page.identifier = '/tutorial/2016/07/27/html5gamedev';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -6,9 +6,83 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Jul 2016 15:33:05 +0000</pubDate>
-    <lastBuildDate>Wed, 06 Jul 2016 15:33:05 +0000</lastBuildDate>
+    <pubDate>Wed, 27 Jul 2016 18:58:32 +0000</pubDate>
+    <lastBuildDate>Wed, 27 Jul 2016 18:58:32 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>HTML5 Game Development</title>
+        <description>&lt;h1 id=&quot;html5-game-development&quot;&gt;HTML5 Game Development&lt;/h1&gt;
+&lt;p&gt;For all those gaming nerds out there, there isn’t a better way to develop your gaming skills but to start from scratch of how a game works and to build your own one!&lt;br /&gt;
+HTML 5 provides rich environment to create your games using Javascript and the html5 canvas object.&lt;/p&gt;
+
+&lt;h3 id=&quot;pre-requisites&quot;&gt;PRE-REQUISITES&lt;/h3&gt;
+&lt;p&gt;Well all you need is to know the basics of html and javascript. And of course a little bit of enthu in the pot is forever welcomed !  :)&lt;/p&gt;
+
+&lt;h3 id=&quot;why-not-other-game-engines-&quot;&gt;WHY NOT OTHER GAME-ENGINES ?&lt;/h3&gt;
+&lt;p&gt;We have hundreds of cool game engines in the market, to name few unity ,unreal engine, cryengine, source 2 etc. But here we focus on learning things from the scratch, in engines like these things are more  drag and drop and the essence of how things work from the basic fails to deliver. In this article we discuss things from the very basic !&lt;/p&gt;
+
+&lt;h3 id=&quot;game-canvas-and-game-components&quot;&gt;GAME CANVAS AND GAME COMPONENTS&lt;/h3&gt;
+&lt;p&gt;Without much ado, we talk about the canvas object in the html 5 that offers to us the work place for doing all our cool gaming stuffs. To note is that it is a container to hold the graphics content and nothing more. Everything that needs to be done must be defined beforehand unlike the game engines like unity which have predefined objects like planes, spheres etc.&lt;br /&gt;
+&lt;strong&gt;Game Components&lt;/strong&gt;-We can draw rectangles, circles, lines using the 2D context of canvas object ( in layman’s term - drawing in the canvas holder by using its 2 Dimensional object ).We can provide colors to fill , or use gradient colors , or even load images to make animations in the 2d context of canvas object.&lt;br /&gt;
+&lt;em&gt;Reference Code in js-&lt;/em&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt; 
+var canvas=Document.createElement(&quot;canvas&quot;);  
+document.appendChild(canvas);  
+var context=canvas.getContext(&quot;2D&quot;);  
+context.fillStyle=&quot;red&quot;;  
+context.fillRect(10,20,30,40);
+&lt;/code&gt;
+This creates a color filled red rectangle in the canvas at (10,20) coordinates of 30px as width and 40px as height.&lt;/p&gt;
+
+&lt;h3 id=&quot;game-components-and-their-movement&quot;&gt;GAME COMPONENTS AND THEIR MOVEMENT&lt;/h3&gt;
+&lt;p&gt;The importance of these objects is that they can be moved inside the canvas by redrawing them to different positions , this being done per frame ! A separate function is created which helps in drawing the components taking the position as arguments that is called many times a second to update the position of the game components.The position can incremented each time adding a constant or a uniformly increasing function to make the component move uniformly or accelerate respectively.&lt;br /&gt;
+The movement is triggered also by adding event handlers through javascript, like “keydown” , “keyup” for keyboard keys, which then can be recognised using the keyCode attribute of the event argument of event -handler function call (see attached reference code) .&lt;br /&gt;
+&lt;em&gt;Reference Code in js-&lt;/em&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt; 
+window.addEventListener(&#39;keydown&#39;, function (e) {  
+	    myGameArea.key = e.keyCode;  
+    	})  
+//for calling a function callMe at 50 every milliseconds ( or  
+//better say 20 frames per second)  
+//setInterval(callMe,50); 
+&lt;/code&gt;
+Hence by knowing which key is pressed we can call the required functions for action to be taken.&lt;/p&gt;
+
+&lt;h3 id=&quot;game-obstacles-and-score&quot;&gt;GAME OBSTACLES AND SCORE&lt;/h3&gt;
+&lt;p&gt;Like other game components game obstacles are also game components but being generated at random coordinates of random shape, the code of which is much the same and i leave it to you :) .&lt;br /&gt;
+The score in most of the cases is decided by certain collision events or by the current frame from the beginning of the game.
+Its very easy to ascertain the collision between objects exploiting the again the boundary coordinates, and the current frame can be known by ensuring a  counter that is incremented for the function that is called per frame.I leave the job for you to google out the way to write text in canvas element to display the score when needed.&lt;/p&gt;
+
+&lt;h3 id=&quot;almost-there-&quot;&gt;ALMOST THERE !&lt;/h3&gt;
+&lt;p&gt;We  have known  everything to create our first simple html5 game with our own game arena and game components, game obstacles and score to compete !&lt;/p&gt;
+
+&lt;h3 id=&quot;lonely-without-sounds-&quot;&gt;LONELY WITHOUT SOUNDS ?&lt;/h3&gt;
+&lt;p&gt;Well everyone loves the charm when there’s music in the air ! Luckily we can have it too in case of html5 “audio” object . Not going into much detail , we can add sound using the following sample code link, which i leave you to dissect.&lt;/p&gt;
+
+&lt;h3 id=&quot;links-and-further-reading&quot;&gt;LINKS AND FURTHER READING&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://home.iitk.ac.in/~akashdut/sounddev.txt&quot;&gt;adding sounds&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.udacity.com/course/html5-game-development--cs255&quot;&gt;udacity course on html5 game dev&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.udacity.com/course/html5-canvas--ud292&quot;&gt;udacity course on html5 canvas element&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.w3schools.com/games/default.asp&quot;&gt;w3schools tutorial for html game&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Wed, 27 Jul 2016 10:35:20 +0000</pubDate>
+        <link>http://pclub.in/tutorial/2016/07/27/html5gamedev.html</link>
+        <guid isPermaLink="true">http://pclub.in/tutorial/2016/07/27/html5gamedev.html</guid>
+        
+        <category>tutorial</category>
+        
+        <category>game dev</category>
+        
+        <category>html5</category>
+        
+        
+        <category>tutorial</category>
+        
+      </item>
     
       <item>
         <title>Smart Mirror</title>
@@ -1135,203 +1209,6 @@ Your article&#39;s content goes here in markdown syntax&lt;/code&gt;&lt;/pre&gt;
         
         
         <category>tutorial</category>
-        
-      </item>
-    
-      <item>
-        <title>Kickstart to Vim</title>
-        <description>&lt;h1 id=&quot;vim&quot;&gt;Vim!&lt;/h1&gt;
-
-&lt;p&gt;Vim is one of the two widely known text-based Text Editor cum IDEs, the other one being, ahem, Emacs.
-For people new to Vim, it might have be a big leap, it is markedely different from the usual text editors, it being modal (implying that the same keys do differnt things in different modes. Don’t worry, modes are awesome.)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://realpython.com/images/blog_images/vim/vim-ide.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This article has been taken from the blog at &lt;a href=&quot;http://www.acehack.org/posts/2015-06-15-vim.html&quot;&gt;acehack.org&lt;/a&gt;. Please note that it assumes a bit of familiarity with Vim, and thus, you should first start off by reading about it, getting an installation of it, and learning how to type things in it (yes, you need to learn that too). It’s fun, I promise :smile:&lt;/p&gt;
-
-&lt;p&gt;So, first, some cool things about Vim:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Firstly, you don’t have to press any keys beyond the Return key. No need to stretch/move your hands to press the home/end/page up/page down/left/right keys. There are much better ways to do that.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Then, Vim would work even on the most old computer you will ever encounter in your lifetime, and also on computers older than that. As a big boon, it works in an SSH session, and you are likely to find it (or Vi) on every PC you will ever need to SSH to.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Finally, Vim is yours to make. Everyone’s Vim is personalized, and is taken as a sign of identity. You make it whatever you want to; and yes, it can do whatever you want it to do (within sane limits).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;basics&quot;&gt;Basics&lt;/h3&gt;
-&lt;p&gt;Open Vim by typing &lt;code class=&quot;highlighter-rouge&quot;&gt;vim&lt;/code&gt; in your terminal, or else &lt;code class=&quot;highlighter-rouge&quot;&gt;vim &amp;lt;file&amp;gt;&lt;/code&gt; to open a particular file. I also first recommend you to open &lt;code class=&quot;highlighter-rouge&quot;&gt;vimtutor&lt;/code&gt;, Vim’s own tutor. I would be covering the basics pretty fast, as vimtutor explains them really well.&lt;/p&gt;
-
-&lt;p&gt;So, Vim by default opens in the ‘normal’ mode. This mode doesn’t let you type text (so don’t freak out when you try to type something). In this mode, most of the alphabet keys are binded to regular text-editing functions. For starters, pressing ‘x’ deletes the character below the cursor.&lt;/p&gt;
-
-&lt;p&gt;You press ‘i’ for Insert, this takes you to insert mode, where your alphabet keys work normally. Try typing something in Insert mode, then press the Escape key to exit to the Normal mode. Then move your cursor with the arrow keys (BAD practice, I’ll come to this) over some character, and press ‘x’ to see it get deleted.&lt;/p&gt;
-
-&lt;p&gt;Now to embed the biggest change you should embrace, in Vim we use the keys ‘hjkl’ for moving. The arrow keys are NOT to be used. Here:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;h: Left&lt;/li&gt;
-  &lt;li&gt;j: Down&lt;/li&gt;
-  &lt;li&gt;k: Up&lt;/li&gt;
-  &lt;li&gt;l: Right&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Get used to these, and stop using arrow keys pronto. This is because, to be able to use Vim at the speed it is meant for, you ought not to move your hands away from the alphabet region of the keyboard. I’ll come to ‘banning’ the use of the arrow keys in a short while. Also, these 4 keys represent the 4 different motions in Vim (see section on Motions)&lt;/p&gt;
-
-&lt;p&gt;So, learn the basic moves, you type in the Insert mode, you exit the insert mode for any editing. This is where you use the Vim specific commands. I’ll list the main ones here:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;i: Insert mode&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;x: Delete character&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;yy: Yank a line (Yank implies keeping a line for pasting, like the concept of ‘Copy’ in modern text editors)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;dd: Kill a line (Kill implies delete it, but keep it for pasting, like the concept of ‘Cut’ in modern text editors)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;dw: Delete a word (from current position to the end of the current word)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;p: Paste some previously killed text (y stands for Yanking)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;gg: Go to the start of the document&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;G: Go to the end of the document&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;o: Insert a new line below the current line, move the cursor there, and then enter insert mode&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;O: Insert a new line above the current line, move the cursor there, and then enter insert mode&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;A: Enter insert mode at the end of the current line&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;0: Move to the start of the current line&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;$: Move to the end of the current line&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;%: Move to a matching brace (when your cursor is one brace, this moves you to the matching one, useful in languages like C where blocks of code are bounded by curly braces)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“+yy: Copy line which can be pasted anywhere other than Vim too (like Browser)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“+p: Paste text copied from outside Vim (Their meaning will be explained in a later section)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Now to saving files, you can save any text you write with &lt;code class=&quot;highlighter-rouge&quot;&gt;:w&lt;/code&gt;. Note that pressing ‘:’ takes you to a special mode where you can type out commands. More on this later. ‘w’ stands for write. You can save a file you opened with &lt;code class=&quot;highlighter-rouge&quot;&gt;:w&lt;/code&gt;, but if it was a new file, you would have to write something like &lt;code class=&quot;highlighter-rouge&quot;&gt;:w filename&lt;/code&gt; to save it by that name in the current directory where Vim was opened.&lt;/p&gt;
-
-&lt;p&gt;You can quit Vim with &lt;code class=&quot;highlighter-rouge&quot;&gt;:q&lt;/code&gt;. Also, you can quit without saving changes by typing &lt;code class=&quot;highlighter-rouge&quot;&gt;:q!&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Make sure that you check out &lt;code class=&quot;highlighter-rouge&quot;&gt;vimtutor&lt;/code&gt; at this stage. Try practicing basic vim using that now.&lt;/p&gt;
-
-&lt;h3 id=&quot;repeating-commands&quot;&gt;Repeating commands&lt;/h3&gt;
-
-&lt;p&gt;If you have to delete 10 consecutive lines, in a normal editor you can select them with your mouse and then delete it. Or maybe press Ctrl+Shift+Down and select them, then delete. All this is too slow.&lt;/p&gt;
-
-&lt;p&gt;Here’s something better: &lt;code class=&quot;highlighter-rouge&quot;&gt;10dd&lt;/code&gt;. A simple and standard pattern for all commands in Vim. You can prefix them with a number to repeat them that number of times. So 10yy would copy/yank the next 10 lines.&lt;/p&gt;
-
-&lt;p&gt;This is a very important thing in Vim. Similarly, you can copy 10 lines with 10yy. You can delete 10 characters with 10x. You can go 10 lines downward with 10j, or 10 lines up with 10k. You can copy 10 lines (such that they can be pasted elsewhere too) with 10”+yy. Try things out!&lt;/p&gt;
-
-&lt;h3 id=&quot;motions&quot;&gt;Motions&lt;/h3&gt;
-
-&lt;p&gt;I’ll explain this with an example. Type some C code in Vim, and don’t try to align it. Let it remain unindented. Now to indent code, in Vim you use the character ‘=’. Now, to inform Vim of the block of code you want to indent, say you have 10 lines to indent, you go to the 1st line you want to indent, then type &lt;code class=&quot;highlighter-rouge&quot;&gt;10=j&lt;/code&gt;. What does this mean?
-It defines a motion for Vim. It reads as ‘Indent the 10 lines below me.’ (remember j stands for going down). This might be intimidating at first, but happens to be really versatile with practice.
-What if you want to indent the whole code? Try this &lt;code class=&quot;highlighter-rouge&quot;&gt;gg=G&lt;/code&gt;. This stands for ‘Go to the start, and indent all lines from the current position to the last line of the file’.&lt;/p&gt;
-
-&lt;h3 id=&quot;visual-mode&quot;&gt;Visual Mode&lt;/h3&gt;
-
-&lt;p&gt;Another way to do stuff like this, which might be more familiar to new users, is the Visual Mode. You wish you could just drag and select a block of lines to copy? Here’s a way.&lt;/p&gt;
-
-&lt;p&gt;Press &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+V&lt;/code&gt; (this does not stand for paste in Vim, remember). This activates Visual Mode. Now you can move around with hjkl and see text getting selected. Leave this mode with Escape key.&lt;/p&gt;
-
-&lt;p&gt;Now, say you want to copy 10 lines, go to the first line in normal mode. Press ‘0’ to get to the beginning of the current line. Enter Visual Mode. Press ‘$’ to select to the end of this line. Press j 10 times to go 10 lines down. See? You have 10 lines selected now (you can also use your mouse to do this, I’ll tell you how to enable mouse in a later section). Copy them with ‘y’, or if you want to paste them elsewhere, copy them with “+y.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-colon-commands&quot;&gt;The colon commands&lt;/h3&gt;
-
-&lt;p&gt;Vim can do various other non-editing stuff with the colon-commands. You want to change your colour-scheme? Type &lt;code class=&quot;highlighter-rouge&quot;&gt;:colorscheme &amp;lt;name&amp;gt;&lt;/code&gt; and you’re done (remember, Tab completion works here. Try experimenting with different schemes right now and choose one you like).&lt;/p&gt;
-
-&lt;p&gt;Try typing &lt;code class=&quot;highlighter-rouge&quot;&gt;:set &lt;/code&gt; and then try Tab completion, you’ll see the various settings you can play with.\n
-Of note, these commands stay active only till Vim is open. If you close it and re-open, these settings are gone. To keep them permanent, look at the section about the vimrc.
-Here is a simple setting: &lt;code class=&quot;highlighter-rouge&quot;&gt;:set nu&lt;/code&gt;, this shows the line numbers on the left. Another thing (though not really recommended), you can enable mouse with &lt;code class=&quot;highlighter-rouge&quot;&gt;:set mouse=a&lt;/code&gt;, where a stands for all. You can enable it for specific modes too, with n/i in place of a.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-vimrc&quot;&gt;The .vimrc&lt;/h3&gt;
-
-&lt;p&gt;So, I claimed Vim is yours to build. Here is the way you do that. You use the configuration file called vimrc. This is a file located in your home folder by the name &lt;em&gt;.vimrc&lt;/em&gt;. If not there, create a new one and open it.&lt;/p&gt;
-
-&lt;p&gt;Here, you can set commands to be executed whenever your Vim starts (mind it, it can slow it down a very little bit sometimes, still faster than everything out there though). So say for example you want to display line numbers all the time. You can simply write &lt;code class=&quot;highlighter-rouge&quot;&gt;set nu&lt;/code&gt; in your vimrc and save it. Next time you open Vim, it will have line numbers from the start.&lt;/p&gt;
-
-&lt;p&gt;You can save Keymappings here, enable Plugins here, and do almost anything with your Vim here.&lt;/p&gt;
-
-&lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;/h3&gt;
-
-&lt;p&gt;The best thing about Vim is, even though it doesn’t do everything itself, it can do almost anything with plugins written by the vast Vim community.
-Want Git support in Vim? git-gutter. Want auto-completion? AutoComplPop. Want to code in Scala? You have vim-scala.&lt;/p&gt;
-
-&lt;p&gt;Here is how to set up your Vim to handle plugins fast and easy. You need a plugin for that too! :p Don’t get scared already. So, its called Vundle (vim-bundle I fancy). You can clone it with:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This clones the files required for Vundle to your .vim folder where your Vim files are stored (other than your vimrc of course).&lt;/p&gt;
-
-&lt;p&gt;Now add this to the start of your .vimrc:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; nocompatible
-&lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; off
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; rtp&lt;span class=&quot;p&quot;&gt;+=~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.vim/&lt;/span&gt;bundle/Vundle&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;vim&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; vundle#begin&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-Plugin &lt;span class=&quot;s1&quot;&gt;&#39;gmarik/vundle&#39;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; vundle#&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; plugin indent &lt;span class=&quot;k&quot;&gt;on&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Now look up the plugin on GitHub (or other sources, I’ll update this thing). Say the homepage of that plugin is this: https://github.com/tpope/vim-fugitive (a very useful Git plugin).&lt;/p&gt;
-
-&lt;p&gt;You can install it by adding this to your .vimrc: &lt;code class=&quot;highlighter-rouge&quot;&gt;Plugin &#39;tpope/vim-fugitive&#39;&lt;/code&gt; after the gmarik line in the text I told you to paste above. Restart vim (close and open it). Now type in &lt;code class=&quot;highlighter-rouge&quot;&gt;:PluginInstall&lt;/code&gt; (tab-completion works). There you go, Vundle will now download and install any new plugins you wanted to install.&lt;/p&gt;
-
-&lt;h3 id=&quot;keymappings&quot;&gt;Keymappings&lt;/h3&gt;
-
-&lt;p&gt;This is one of the great features of Vim, you can map almost any activity you repeat to a key binding.
-So here’s a scenario, I use a plugin called NERDcommenter (I cannot live without this). This plugin by default comments the current line when you press &lt;em&gt;leader ci&lt;/em&gt; . What I want instead is, to comment the line when I press ‘//’.
-So here is what I key-in: &lt;code class=&quot;highlighter-rouge&quot;&gt;:map // &amp;lt;leader&amp;gt;ci&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;the--stuff&quot;&gt;The :! stuff&lt;/h3&gt;
-
-&lt;p&gt;One of the coolest things about Vim which modern editors cannot do, it to be able to run terminal commands right inside the editor. So say, you want to compile and run your C++ code from within Vim, and don’t want to exit, I’ll show you how to do that. Well modern editors can do this, but the fact that you can integrate these commands and actions into your keybindings, and plugins, and scripts etc etc, that makes this functionality a lot of fun.
-Try typing this: &lt;code class=&quot;highlighter-rouge&quot;&gt;:!echo &quot;Yo hey! Vim is cool!&quot;&lt;/code&gt;. See? Now try &lt;code class=&quot;highlighter-rouge&quot;&gt;:!date&lt;/code&gt;.
-I use this to compile my LaTeX documents on the fly: &lt;code class=&quot;highlighter-rouge&quot;&gt;nmap &amp;lt;F5&amp;gt; :w !pdflatex %&amp;lt;return&amp;gt;&lt;/code&gt;. A simple tap on F5, and the editor on the right refreshes the document preview. Neat, ain’t it?
-The possibilities with this are endless. You can write complete functions and scripts using this, to accomplish common tasks.&lt;/p&gt;
-
-&lt;p&gt;I’ll add more info here as and when I get time.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 29 Apr 2016 18:29:21 +0000</pubDate>
-        <link>http://pclub.in/tutorial/vim/2016/04/29/kickstarttovim.html</link>
-        <guid isPermaLink="true">http://pclub.in/tutorial/vim/2016/04/29/kickstarttovim.html</guid>
-        
-        <category>summer16</category>
-        
-        <category>tutorial</category>
-        
-        <category>vim</category>
-        
-        
-        <category>tutorial</category>
-        
-        <category>vim</category>
         
       </item>
     
