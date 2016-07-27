@@ -35,10 +35,10 @@ Without much ado, we talk about the canvas object in the html 5 that offers to u
 _Reference Code in js-_
 
 ```javascript
-var canvas=Document.createElement("canvas");  
-document.appendChild(canvas);  
-var context=canvas.getContext("2D");  
-context.fillStyle="red";  
+var canvas=Document.createElement("canvas");
+document.appendChild(canvas);
+var context=canvas.getContext("2D");
+context.fillStyle="red";
 context.fillRect(10,20,30,40);
 ```
 
@@ -51,12 +51,12 @@ The movement is triggered also by adding event handlers through javascript, like
 _Reference Code in js-_
 
 ```javascript
-window.addEventListener('keydown', function (e) {  
-	    myGameArea.key = e.keyCode;  
-    	})  
-//for calling a function callMe at 50 every milliseconds ( or  
-//better say 20 frames per second)  
-//setInterval(callMe,50); 
+window.addEventListener('keydown', function (e) {
+myGameArea.key = e.keyCode;
+})
+//for calling a function callMe at 50 every milliseconds ( or
+//better say 20 frames per second)
+//setInterval(callMe,50);
 ```
 
 Hence by knowing which key is pressed we can call the required functions for action to be taken.
