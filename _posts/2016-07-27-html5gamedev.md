@@ -35,7 +35,7 @@ Without much ado, we talk about the canvas object in the html 5 that offers to u
 _Reference Code in js-_  
 >var canvas=Document.createElement("canvas");  
 document.appendChild(canvas);  
-var context=canvas.getContext("2D);  
+var context=canvas.getContext("2D");  
 context.fillStyle="red";  
 context.fillRect(10,20,30,40);
 
