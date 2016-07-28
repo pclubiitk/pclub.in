@@ -26,35 +26,43 @@ Well all you need is to know the basics of html and javascript. And of course a 
 
 
 ### WHY NOT OTHER GAME-ENGINES ?  
-We have hundreds of cool game engines in the market, to name few unity ,unreal engine, cryengine, source 2 etc. But here we focus on learning things from the scratch, in engines like these things are more  drag and drop and the essence of how things work from the basic fails to deliver. In this article we discuss things from the very basic !
+We have hundreds of cool game engines in the market, to name few unity,unreal engine, cryengine, source 2 etc. But here we focus on learning things from the scratch, in engines like these things are more  drag and drop and the essence of how things work from the basic fails to deliver. In this article we discuss things from the very basic !
 
 
 ### GAME CANVAS AND GAME COMPONENTS 
 Without much ado, we talk about the canvas object in the html 5 that offers to us the work place for doing all our cool gaming stuffs. To note is that it is a container to hold the graphics content and nothing more. Everything that needs to be done must be defined beforehand unlike the game engines like unity which have predefined objects like planes, spheres etc.  
-**Game Components**-We can draw rectangles, circles, lines using the 2D context of canvas object ( in layman's term - drawing in the canvas holder by using its 2 Dimensional object ).We can provide colors to fill , or use gradient colors , or even load images to make animations in the 2d context of canvas object.  
-_Reference Code in js-_
-```  
+
+**Game Components**
+We can draw rectangles, circles, lines using the 2D context of canvas object (in layman's term - drawing in the canvas holder by using its 2 Dimensional object ).We can provide colors to fill, or use gradient colors, or even load images to make animations in the 2d context of canvas object.  
+
+Reference Code in js-
+
+{% highlight js %}
 var canvas=Document.createElement("canvas");  
 document.appendChild(canvas);  
 var context=canvas.getContext("2D");  
 context.fillStyle="red";  
 context.fillRect(10,20,30,40);
-```
+{% endhighlight %}
+
 This creates a color filled red rectangle in the canvas at (10,20) coordinates of 30px as width and 40px as height.
 
 
 ### GAME COMPONENTS AND THEIR MOVEMENT
-The importance of these objects is that they can be moved inside the canvas by redrawing them to different positions , this being done per frame ! A separate function is created which helps in drawing the components taking the position as arguments that is called many times a second to update the position of the game components.The position can incremented each time adding a constant or a uniformly increasing function to make the component move uniformly or accelerate respectively.  
-The movement is triggered also by adding event handlers through javascript, like "keydown" , "keyup" for keyboard keys, which then can be recognised using the keyCode attribute of the event argument of event -handler function call (see attached reference code) .  
-_Reference Code in js-_
-```  
+The importance of these objects is that they can be moved inside the canvas by redrawing them to different positions, this being done per frame ! A separate function is created which helps in drawing the components taking the position as arguments that is called many times a second to update the position of the game components.The position can incremented each time adding a constant or a uniformly increasing function to make the component move uniformly or accelerate respectively.  
+The movement is triggered also by adding event handlers through javascript, like "keydown", "keyup" for keyboard keys, which then can be recognised using the keyCode attribute of the event argument of event -handler function call (see attached reference code).
+
+Reference Code in js-
+
+{% highlight js %}
 window.addEventListener('keydown', function (e) {  
 	    myGameArea.key = e.keyCode;  
     	})  
-//for calling a function callMe at 50 every milliseconds ( or  
+//for calling a function callMe at 50 every milliseconds (or  
 //better say 20 frames per second)  
 //setInterval(callMe,50); 
-```
+{% endhighlight %}
+
 Hence by knowing which key is pressed we can call the required functions for action to be taken.
 
 
@@ -68,14 +76,10 @@ Its very easy to ascertain the collision between objects exploiting the again th
 We  have known  everything to create our first simple html5 game with our own game arena and game components, game obstacles and score to compete !
 
 ### LONELY WITHOUT SOUNDS ?  
-Well everyone loves the charm when there's music in the air ! Luckily we can have it too in case of html5 "audio" object . Not going into much detail , we can add sound using the following sample code link, which i leave you to dissect.
+Well everyone loves the charm when there's music in the air ! Luckily we can have it too in case of html5 "audio" object . Not going into much detail, we can add sound using the following sample code link, which i leave you to dissect.
 
 ### LINKS AND FURTHER READING
-* [adding sounds](http://home.iitk.ac.in/~akashdut/sounddev.txt)
-* [udacity course on html5 game dev](https://www.udacity.com/course/html5-game-development--cs255)
-* [udacity course on html5 canvas element](https://www.udacity.com/course/html5-canvas--ud292)
-* [w3schools tutorial for html game](http://www.w3schools.com/games/default.asp)
-
-
-
-
+* [Adding sounds](http://home.iitk.ac.in/~akashdut/sounddev.txt)
+* [Udacity course on html5 game dev](https://www.udacity.com/course/html5-game-development--cs255)
+* [Udacity course on html5 canvas element](https://www.udacity.com/course/html5-canvas--ud292)
+* [W3schools tutorial for html game](http://www.w3schools.com/games/default.asp)
