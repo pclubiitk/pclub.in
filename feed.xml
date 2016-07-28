@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Jul 2016 18:58:32 +0000</pubDate>
-    <lastBuildDate>Wed, 27 Jul 2016 18:58:32 +0000</lastBuildDate>
+    <pubDate>Thu, 28 Jul 2016 11:12:33 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Jul 2016 11:12:33 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -20,34 +20,38 @@ HTML 5 provides rich environment to create your games using Javascript and the h
 &lt;p&gt;Well all you need is to know the basics of html and javascript. And of course a little bit of enthu in the pot is forever welcomed !  :)&lt;/p&gt;
 
 &lt;h3 id=&quot;why-not-other-game-engines-&quot;&gt;WHY NOT OTHER GAME-ENGINES ?&lt;/h3&gt;
-&lt;p&gt;We have hundreds of cool game engines in the market, to name few unity ,unreal engine, cryengine, source 2 etc. But here we focus on learning things from the scratch, in engines like these things are more  drag and drop and the essence of how things work from the basic fails to deliver. In this article we discuss things from the very basic !&lt;/p&gt;
+&lt;p&gt;We have hundreds of cool game engines in the market, to name few unity,unreal engine, cryengine, source 2 etc. But here we focus on learning things from the scratch, in engines like these things are more  drag and drop and the essence of how things work from the basic fails to deliver. In this article we discuss things from the very basic !&lt;/p&gt;
 
 &lt;h3 id=&quot;game-canvas-and-game-components&quot;&gt;GAME CANVAS AND GAME COMPONENTS&lt;/h3&gt;
-&lt;p&gt;Without much ado, we talk about the canvas object in the html 5 that offers to us the work place for doing all our cool gaming stuffs. To note is that it is a container to hold the graphics content and nothing more. Everything that needs to be done must be defined beforehand unlike the game engines like unity which have predefined objects like planes, spheres etc.&lt;br /&gt;
-&lt;strong&gt;Game Components&lt;/strong&gt;-We can draw rectangles, circles, lines using the 2D context of canvas object ( in layman’s term - drawing in the canvas holder by using its 2 Dimensional object ).We can provide colors to fill , or use gradient colors , or even load images to make animations in the 2d context of canvas object.&lt;br /&gt;
-&lt;em&gt;Reference Code in js-&lt;/em&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt; 
-var canvas=Document.createElement(&quot;canvas&quot;);  
-document.appendChild(canvas);  
-var context=canvas.getContext(&quot;2D&quot;);  
-context.fillStyle=&quot;red&quot;;  
-context.fillRect(10,20,30,40);
-&lt;/code&gt;
-This creates a color filled red rectangle in the canvas at (10,20) coordinates of 30px as width and 40px as height.&lt;/p&gt;
+&lt;p&gt;Without much ado, we talk about the canvas object in the html 5 that offers to us the work place for doing all our cool gaming stuffs. To note is that it is a container to hold the graphics content and nothing more. Everything that needs to be done must be defined beforehand unlike the game engines like unity which have predefined objects like planes, spheres etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Game Components&lt;/strong&gt;
+We can draw rectangles, circles, lines using the 2D context of canvas object (in layman’s term - drawing in the canvas holder by using its 2 Dimensional object ).We can provide colors to fill, or use gradient colors, or even load images to make animations in the 2d context of canvas object.&lt;/p&gt;
+
+&lt;p&gt;Reference Code in js-&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;canvas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
+&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2D&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
+&lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fillStyle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+&lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fillRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This creates a color filled red rectangle in the canvas at (10,20) coordinates of 30px as width and 40px as height.&lt;/p&gt;
 
 &lt;h3 id=&quot;game-components-and-their-movement&quot;&gt;GAME COMPONENTS AND THEIR MOVEMENT&lt;/h3&gt;
-&lt;p&gt;The importance of these objects is that they can be moved inside the canvas by redrawing them to different positions , this being done per frame ! A separate function is created which helps in drawing the components taking the position as arguments that is called many times a second to update the position of the game components.The position can incremented each time adding a constant or a uniformly increasing function to make the component move uniformly or accelerate respectively.&lt;br /&gt;
-The movement is triggered also by adding event handlers through javascript, like “keydown” , “keyup” for keyboard keys, which then can be recognised using the keyCode attribute of the event argument of event -handler function call (see attached reference code) .&lt;br /&gt;
-&lt;em&gt;Reference Code in js-&lt;/em&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt; 
-window.addEventListener(&#39;keydown&#39;, function (e) {  
-	    myGameArea.key = e.keyCode;  
-    	})  
-//for calling a function callMe at 50 every milliseconds ( or  
-//better say 20 frames per second)  
-//setInterval(callMe,50); 
-&lt;/code&gt;
-Hence by knowing which key is pressed we can call the required functions for action to be taken.&lt;/p&gt;
+&lt;p&gt;The importance of these objects is that they can be moved inside the canvas by redrawing them to different positions, this being done per frame ! A separate function is created which helps in drawing the components taking the position as arguments that is called many times a second to update the position of the game components.The position can incremented each time adding a constant or a uniformly increasing function to make the component move uniformly or accelerate respectively.&lt;br /&gt;
+The movement is triggered also by adding event handlers through javascript, like “keydown”, “keyup” for keyboard keys, which then can be recognised using the keyCode attribute of the event argument of event -handler function call (see attached reference code).&lt;/p&gt;
+
+&lt;p&gt;Reference Code in js-&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;keydown&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
+	    &lt;span class=&quot;nx&quot;&gt;myGameArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+    	&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;  
+&lt;span class=&quot;c1&quot;&gt;//for calling a function callMe at 50 every milliseconds (or  &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//better say 20 frames per second)  &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//setInterval(callMe,50); &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Hence by knowing which key is pressed we can call the required functions for action to be taken.&lt;/p&gt;
 
 &lt;h3 id=&quot;game-obstacles-and-score&quot;&gt;GAME OBSTACLES AND SCORE&lt;/h3&gt;
 &lt;p&gt;Like other game components game obstacles are also game components but being generated at random coordinates of random shape, the code of which is much the same and i leave it to you :) .&lt;br /&gt;
@@ -58,16 +62,15 @@ Its very easy to ascertain the collision between objects exploiting the again th
 &lt;p&gt;We  have known  everything to create our first simple html5 game with our own game arena and game components, game obstacles and score to compete !&lt;/p&gt;
 
 &lt;h3 id=&quot;lonely-without-sounds-&quot;&gt;LONELY WITHOUT SOUNDS ?&lt;/h3&gt;
-&lt;p&gt;Well everyone loves the charm when there’s music in the air ! Luckily we can have it too in case of html5 “audio” object . Not going into much detail , we can add sound using the following sample code link, which i leave you to dissect.&lt;/p&gt;
+&lt;p&gt;Well everyone loves the charm when there’s music in the air ! Luckily we can have it too in case of html5 “audio” object . Not going into much detail, we can add sound using the following sample code link, which i leave you to dissect.&lt;/p&gt;
 
 &lt;h3 id=&quot;links-and-further-reading&quot;&gt;LINKS AND FURTHER READING&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://home.iitk.ac.in/~akashdut/sounddev.txt&quot;&gt;adding sounds&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.udacity.com/course/html5-game-development--cs255&quot;&gt;udacity course on html5 game dev&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.udacity.com/course/html5-canvas--ud292&quot;&gt;udacity course on html5 canvas element&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.w3schools.com/games/default.asp&quot;&gt;w3schools tutorial for html game&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://home.iitk.ac.in/~akashdut/sounddev.txt&quot;&gt;Adding sounds&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.udacity.com/course/html5-game-development--cs255&quot;&gt;Udacity course on html5 game dev&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.udacity.com/course/html5-canvas--ud292&quot;&gt;Udacity course on html5 canvas element&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.w3schools.com/games/default.asp&quot;&gt;W3schools tutorial for html game&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 </description>
         <pubDate>Wed, 27 Jul 2016 10:35:20 +0000</pubDate>
         <link>http://pclub.in/tutorial/2016/07/27/html5gamedev.html</link>
