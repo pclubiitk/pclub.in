@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Aug 2016 05:30:08 +0000</pubDate>
-    <lastBuildDate>Sat, 13 Aug 2016 05:30:08 +0000</lastBuildDate>
+    <pubDate>Sat, 13 Aug 2016 06:23:35 +0000</pubDate>
+    <lastBuildDate>Sat, 13 Aug 2016 06:23:35 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -157,6 +157,36 @@ print b + 5
 &lt;/div&gt;
 
 &lt;p&gt;So you should now &lt;strong&gt;certainly&lt;/strong&gt; create an account on CodeChef! Try submitting the solution there (don’t forget to select Python when you submit). Happy coding!&lt;/p&gt;
+
+&lt;h1 id=&quot;c&quot;&gt;C&lt;/h1&gt;
+
+&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.c&lt;/code&gt; with the following content:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+int main() {
+  printf(&quot;Hello World\n&quot;);
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;compiling&quot;&gt;Compiling&lt;/h2&gt;
+
+&lt;p&gt;To actually run the code, execute the following command on the terminal:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcc -o hello hello.c
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The above command tells the computer to create an executable called &lt;code class=&quot;highlighter-rouge&quot;&gt;hello&lt;/code&gt; (The part after &lt;code class=&quot;highlighter-rouge&quot;&gt;-o&lt;/code&gt;) using the code from the file &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.c&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now to run the executable, type:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./hello
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;in the terminal.&lt;/p&gt;
 </description>
         <pubDate>Sat, 13 Aug 2016 04:55:00 +0000</pubDate>
         <link>http://pclub.in/pclub/2016/08/13/introworkshop16.html</link>
