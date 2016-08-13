@@ -120,3 +120,34 @@ while True:
 ```
 
 So you should now **certainly** create an account on CodeChef! Try submitting the solution there (don't forget to select Python when you submit). Happy coding!
+
+
+# C
+
+Create a file called `hello.c` with the following content:
+
+```
+#include <stdio.h>
+int main() {
+  printf("Hello World\n");
+  return 0;
+}
+```
+
+## Compiling
+
+To actually run the code, execute the following command on the terminal:
+
+```
+gcc -o hello hello.c
+```
+
+The above command tells the computer to create an executable called `hello` (The part after `-o`) using the code from the file `hello.c`.
+
+Now to run the executable, type:
+
+```
+./hello
+```
+
+in the terminal.
