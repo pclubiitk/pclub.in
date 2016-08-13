@@ -8,16 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Projects</title>
-  <meta name="description" content="The Programming Club, IIT Kanpur
-">
+  <title>Introductory Workshop 2016</title>
+  <meta name="description" content="Introduction">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/projects.html">
+  <link rel="canonical" href="http://pclub.in/pclub/2016/08/13/introworkshop16.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -101,70 +100,239 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div style="margin: 1rem auto;">
+        <div style="margin: 4.5rem auto;">
 
-<h1 class="archive-header"></h1>
-<div class="wf-container" style="margin-top: 80px;">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="inpost-header">
+    <h1 class="inpost-title" itemprop="name headline">Introductory Workshop 2016</h1>
+    <h1 style="float:right" class="comment-postingatas">
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/pclub/2016/08/13/introworkshop16.html#disqus_thread" data-disqus-identifier="/pclub/2016/08/13/introworkshop16"style="color:#fff"> 0</a>
+    </h1>
+    </p>
+  </header>
   
-    
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="introduction">Introduction</h1>
+
+<p>Hi all, welcome to the Programming Club Introductory Workshop 2016!</p>
+
+<h2 id="terminal">Terminal</h2>
+<p>Try opening Terminal (sometimes known as Command Line) from the top-left menus. You should find it in the ‘System’ applications.</p>
+
+<p>Mind it, some operating systems like Ubuntu might have a shortcut for this, you can open it using <code class="highlighter-rouge">Ctrl+Alt+T</code>, but <em>not</em> in the CC machines.</p>
+
+<p>This is where you should learn to do all stuff related to programming, since this gives you <em>unfathomable</em> power.</p>
+
+<h2 id="directory-structure">Directory structure</h2>
+<p>Linux organizes files and folders in the following way:</p>
+
+<ul>
+  <li>Files are kept inside folders</li>
+  <li>You can enter and exit folders just like in Windows</li>
+  <li>Folders are named in the following way: <code class="highlighter-rouge">/path-to-folder/folder-name</code>. This is what completely describes a folder (or a file).</li>
+  <li>We will be using the word <code class="highlighter-rouge">directory</code> for folders. Please note this.</li>
+</ul>
+
+<p>To play around with this, try to use the following commands:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Command</td>
+      <td>Full form</td>
+      <td>Description</td>
+    </tr>
+    <tr>
+      <td>ls</td>
+      <td>list screen</td>
+      <td>List all the files and folders in current directory</td>
+    </tr>
+    <tr>
+      <td>cd</td>
+      <td>change directory</td>
+      <td>Enter a folder whose path is known</td>
+    </tr>
+    <tr>
+      <td>pwd</td>
+      <td>present working directory</td>
+      <td>Full name of the current folder you are in</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>tilde</td>
+      <td>Short form for your home folder</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Ctrl+c</code>(keyboard)</td>
+      <td> </td>
+      <td>Exit/Cancel the current command</td>
+    </tr>
+    <tr>
+      <td>exit</td>
+      <td>Exit</td>
+      <td>Exit the terminal</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="gedit">Gedit</h2>
+<p>We will be using <code class="highlighter-rouge">gedit</code> to write your programs. Find it from the applications menu and open it. Don’t be scared, it’s very much like <code class="highlighter-rouge">notepad</code> from Windows.</p>
+
+<h1 id="python">Python</h1>
+
+<p>Try running <code class="highlighter-rouge">python</code> command in the terminal. You should see something like:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Python 2.7.10 (default, Jul  6 2016, 22:05:31) 
+[GCC 4.9.3] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; 
+</code></pre>
+</div>
+
+<p>The <code class="highlighter-rouge">&gt;&gt;&gt;</code> is the place where you type. Try typing the following:</p>
+
+<ul>
+  <li>2+2</li>
+  <li>print “hello world!”</li>
+  <li>print a (you should get an error)</li>
+  <li>a = 4</li>
+  <li>print a*2</li>
+</ul>
+
+<h2 id="ifelse">If/Else</h2>
+
+<p>Now that you know how to write simple things, let’s proceed to something interesting.</p>
+
+<p>Python reads spaces and tabs in your program as well. So for writing a complicated instruction for the computer, we will need to use multiple lines. We will <code class="highlighter-rouge">indent</code> the lines in such a way that the computer can understand that they are meant to be read together.</p>
+
+<p>Try the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">if</span> <span class="n">a</span> <span class="ow">is</span> <span class="ow">not</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"a is not zero"</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"a is zero"</span>
+</code></pre>
+</div>
+
+<p>That’s it! See?</p>
+
+<h2 id="loops">Loops</h2>
+
+<p>Now for some loopy-loops!</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">a</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre>
+</div>
+
+<h2 id="reading-input">Reading input</h2>
+<p>You can read input from the user using something like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>a = raw_input()
+print "Hello mr. " + a
+
+b = int(raw_input())
+print b + 5
+</code></pre>
+</div>
+
+<p>See what happens there?</p>
+
+<h1 id="codechef">CodeChef!</h1>
+<p>Try this link <a href="https://www.codechef.com/problems/TEST">here</a></p>
+
+<p>Can you solve this problem? Try writing a program for this! Please give it a try before you scroll down.</p>
+
+<p>It’s quite small! Here’s the solution!</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>while True:
+    x = int(raw_input())
+    if x == 42:
+        break
+    print x
+</code></pre>
+</div>
+
+<p>So you should now <strong>certainly</strong> create an account on CodeChef! Try submitting the solution there (don’t forget to select Python when you submit). Happy coding!</p>
+
+  </div>
+
+<div class="arrowNav">
+ 
+
+
+ 
+<div class="arrowRight" style="float:right">
+<a id="route" class="tooltip-left" href="/tutorial/2016/07/27/html5gamedev.html" title="
+&lt;p class=hoveratas&gt;HTML5 Game Development&lt;/p&gt; &lt;p class=hoverbawah&gt;HTML5 Game Development For all those gaming nerds out there,...&lt;/p&gt;
+"><i class="typcn typcn-chevron-right" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+</div>
+
+
+  <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
+  <time datetime="2016-08-13T04:55:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Aug 13, 2016</time>
+   
+  • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">
+      
+      <a href="pclub.in" target="_blank" style="color: #fff;">Coordinators</a>
+      
+    </span>
+  </span>
+   
+    |
   
-    
+  <a href="/tags.html#pclub" style="color: #fff;"><i class="typcn typcn-tags"></i> pclub</a>
   
-    
-      <div class="wf-box">
-        <a id="route" href="/project/2016/07/06/smartmirror.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url(https://github.com/11000011/Smart-Mirror/raw/gh-pages/img/sample.png);
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/project/2016/07/06/smartmirror.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Smart Mirror
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
+  </p>
+
+</article>
+
+
+
+
+
+<style>
+    #disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+</style>
+<div id="disqus_thread"></div>
+<script>
+  // For debugging
+  // var disqus_developer = 1;
+  var disqus_shortname = 'pclubiitk';
+  var disqus_config = function () {
+    this.page.url = 'https://pclub.in/pclub/2016/08/13/introworkshop16';
+    this.page.identifier = '/pclub/2016/08/13/introworkshop16';
+  };
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 </div>
 
       </div>

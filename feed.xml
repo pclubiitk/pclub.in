@@ -6,9 +6,168 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 12 Aug 2016 08:29:01 +0000</pubDate>
-    <lastBuildDate>Fri, 12 Aug 2016 08:29:01 +0000</lastBuildDate>
+    <pubDate>Sat, 13 Aug 2016 05:30:08 +0000</pubDate>
+    <lastBuildDate>Sat, 13 Aug 2016 05:30:08 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Introductory Workshop 2016</title>
+        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Hi all, welcome to the Programming Club Introductory Workshop 2016!&lt;/p&gt;
+
+&lt;h2 id=&quot;terminal&quot;&gt;Terminal&lt;/h2&gt;
+&lt;p&gt;Try opening Terminal (sometimes known as Command Line) from the top-left menus. You should find it in the ‘System’ applications.&lt;/p&gt;
+
+&lt;p&gt;Mind it, some operating systems like Ubuntu might have a shortcut for this, you can open it using &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+Alt+T&lt;/code&gt;, but &lt;em&gt;not&lt;/em&gt; in the CC machines.&lt;/p&gt;
+
+&lt;p&gt;This is where you should learn to do all stuff related to programming, since this gives you &lt;em&gt;unfathomable&lt;/em&gt; power.&lt;/p&gt;
+
+&lt;h2 id=&quot;directory-structure&quot;&gt;Directory structure&lt;/h2&gt;
+&lt;p&gt;Linux organizes files and folders in the following way:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Files are kept inside folders&lt;/li&gt;
+  &lt;li&gt;You can enter and exit folders just like in Windows&lt;/li&gt;
+  &lt;li&gt;Folders are named in the following way: &lt;code class=&quot;highlighter-rouge&quot;&gt;/path-to-folder/folder-name&lt;/code&gt;. This is what completely describes a folder (or a file).&lt;/li&gt;
+  &lt;li&gt;We will be using the word &lt;code class=&quot;highlighter-rouge&quot;&gt;directory&lt;/code&gt; for folders. Please note this.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To play around with this, try to use the following commands:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Command&lt;/td&gt;
+      &lt;td&gt;Full form&lt;/td&gt;
+      &lt;td&gt;Description&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ls&lt;/td&gt;
+      &lt;td&gt;list screen&lt;/td&gt;
+      &lt;td&gt;List all the files and folders in current directory&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cd&lt;/td&gt;
+      &lt;td&gt;change directory&lt;/td&gt;
+      &lt;td&gt;Enter a folder whose path is known&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;pwd&lt;/td&gt;
+      &lt;td&gt;present working directory&lt;/td&gt;
+      &lt;td&gt;Full name of the current folder you are in&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;~&lt;/td&gt;
+      &lt;td&gt;tilde&lt;/td&gt;
+      &lt;td&gt;Short form for your home folder&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+c&lt;/code&gt;(keyboard)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Exit/Cancel the current command&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;exit&lt;/td&gt;
+      &lt;td&gt;Exit&lt;/td&gt;
+      &lt;td&gt;Exit the terminal&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;gedit&quot;&gt;Gedit&lt;/h2&gt;
+&lt;p&gt;We will be using &lt;code class=&quot;highlighter-rouge&quot;&gt;gedit&lt;/code&gt; to write your programs. Find it from the applications menu and open it. Don’t be scared, it’s very much like &lt;code class=&quot;highlighter-rouge&quot;&gt;notepad&lt;/code&gt; from Windows.&lt;/p&gt;
+
+&lt;h1 id=&quot;python&quot;&gt;Python&lt;/h1&gt;
+
+&lt;p&gt;Try running &lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt; command in the terminal. You should see something like:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Python 2.7.10 (default, Jul  6 2016, 22:05:31) 
+[GCC 4.9.3] on linux2
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&amp;gt;&amp;gt;&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; is the place where you type. Try typing the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2+2&lt;/li&gt;
+  &lt;li&gt;print “hello world!”&lt;/li&gt;
+  &lt;li&gt;print a (you should get an error)&lt;/li&gt;
+  &lt;li&gt;a = 4&lt;/li&gt;
+  &lt;li&gt;print a*2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ifelse&quot;&gt;If/Else&lt;/h2&gt;
+
+&lt;p&gt;Now that you know how to write simple things, let’s proceed to something interesting.&lt;/p&gt;
+
+&lt;p&gt;Python reads spaces and tabs in your program as well. So for writing a complicated instruction for the computer, we will need to use multiple lines. We will &lt;code class=&quot;highlighter-rouge&quot;&gt;indent&lt;/code&gt; the lines in such a way that the computer can understand that they are meant to be read together.&lt;/p&gt;
+
+&lt;p&gt;Try the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is not zero&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is zero&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;That’s it! See?&lt;/p&gt;
+
+&lt;h2 id=&quot;loops&quot;&gt;Loops&lt;/h2&gt;
+
+&lt;p&gt;Now for some loopy-loops!&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;reading-input&quot;&gt;Reading input&lt;/h2&gt;
+&lt;p&gt;You can read input from the user using something like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a = raw_input()
+print &quot;Hello mr. &quot; + a
+
+b = int(raw_input())
+print b + 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;See what happens there?&lt;/p&gt;
+
+&lt;h1 id=&quot;codechef&quot;&gt;CodeChef!&lt;/h1&gt;
+&lt;p&gt;Try this link &lt;a href=&quot;https://www.codechef.com/problems/TEST&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Can you solve this problem? Try writing a program for this! Please give it a try before you scroll down.&lt;/p&gt;
+
+&lt;p&gt;It’s quite small! Here’s the solution!&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;while True:
+    x = int(raw_input())
+    if x == 42:
+        break
+    print x
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So you should now &lt;strong&gt;certainly&lt;/strong&gt; create an account on CodeChef! Try submitting the solution there (don’t forget to select Python when you submit). Happy coding!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 13 Aug 2016 04:55:00 +0000</pubDate>
+        <link>http://pclub.in/pclub/2016/08/13/introworkshop16.html</link>
+        <guid isPermaLink="true">http://pclub.in/pclub/2016/08/13/introworkshop16.html</guid>
+        
+        <category>pclub</category>
+        
+        
+        <category>pclub</category>
+        
+      </item>
     
       <item>
         <title>HTML5 Game Development</title>
@@ -1144,74 +1303,6 @@ feel free to correct me in the comments.&lt;/p&gt;
         <category>tutorial</category>
         
         <category>vim</category>
-        
-      </item>
-    
-      <item>
-        <title>Contributing to pclub.in</title>
-        <description>&lt;p&gt;We’ll be describing the procedure of contibuting posts to the Programming Club website here.&lt;/p&gt;
-
-&lt;p&gt;The website is based on &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, and we use Markdown format for writing posts.
-Here are some steps you should go through to contribute a post:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Have a look at previous posts here at &lt;a href=&quot;https://github.com/pclubiitk/pclub.in/tree/master/_posts&quot;&gt;our Github repository&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Have a look at the following template for each post:&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;lt;some&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;cool&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;title&amp;gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2016-05-05 17:23:20 +200&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;lt;your-name&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;website&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;lt;website-if-any&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;some tag&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;another tag&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;a category&lt;/span&gt;
-
-&lt;span class=&quot;s&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;lt;link to a title image&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-
-Your article&#39;s content goes here in markdown syntax&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Follow this template to the bit.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Ensure that you are familiar with basic markdown syntax. It’s really easy!&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Check that you have included credits, if any part belongs to someone else.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Done already? Mail or message the markdown file to any of the coordinators, or at pclubiitk@gmail.com. If you’re familiar with Git, you can also send us a Pull Request on our Github repository listed in the below point.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/contact.html&quot;&gt;Contact Us&lt;/a&gt; if there are any issues.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;And of course, we’re open source. Find the source code at &lt;a href=&quot;https://github.com/pclubiitk/pclub.in&quot;&gt;Github here&lt;/a&gt;, and feel free to open new issues, pull requests etc.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 05 May 2016 15:23:20 +0000</pubDate>
-        <link>http://pclub.in/tutorial/2016/05/05/posttemplate.html</link>
-        <guid isPermaLink="true">http://pclub.in/tutorial/2016/05/05/posttemplate.html</guid>
-        
-        <category>meta</category>
-        
-        <category>tutorial</category>
-        
-        
-        <category>tutorial</category>
         
       </item>
     
