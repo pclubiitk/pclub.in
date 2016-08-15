@@ -200,6 +200,33 @@ Type "help", "copyright", "credits" or "license" for more information.
   <li>print a*2</li>
 </ul>
 
+<p>You used an <em>operator</em> in <code class="highlighter-rouge">a*2</code> - the multiplication operator. Other operators you need to try out are:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>+</td>
+      <td>Addition</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Subtraction</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Multiplication</td>
+    </tr>
+    <tr>
+      <td>\/</td>
+      <td>Division</td>
+    </tr>
+    <tr>
+      <td>**</td>
+      <td>To the power of</td>
+    </tr>
+  </tbody>
+</table>
+
 <h2 id="ifelse">If/Else</h2>
 
 <p>Now that you know how to write simple things, let’s proceed to something interesting.</p>
@@ -218,6 +245,31 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <p>That’s it! See?</p>
 
+<p>Sometimes one condition isn’t enough though. In that case, you are allowed to chain up multiple conditions using <code class="highlighter-rouge">and</code> and <code class="highlighter-rouge">or</code> like so:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">if</span> <span class="n">a</span> <span class="ow">is</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">b</span> <span class="ow">is</span> <span class="n">a</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"Condition successful"</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"condition failed"</span>
+</code></pre>
+</div>
+
+<p>That’s all good, but what if you want multiple checks on a variable? For example, let’s say you want to do Action 1 if <code class="highlighter-rouge">a&lt;10</code> and Action 2 if <code class="highlighter-rouge">a=10</code> and Action 3 when <code class="highlighter-rouge">a&gt;10</code>, what then? This is where <code class="highlighter-rouge">if-elif-elif-elif-...-else</code> construct comes into the picture. Use it like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"a is less than 0"</span>
+<span class="k">elif</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"a is between 0 and 4"</span>
+<span class="k">elif</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"a is between 4 and 10"</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"a is bigger than 10"</span>
+</code></pre>
+</div>
+
 <h2 id="loops">Loops</h2>
 
 <p>Now for some loopy-loops!</p>
@@ -232,11 +284,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 <h2 id="reading-input">Reading input</h2>
 <p>You can read input from the user using something like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>a = raw_input()
-print "Hello mr. " + a
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">()</span>
+<span class="k">print</span> <span class="s">"Hello mr. "</span> <span class="o">+</span> <span class="n">a</span>
 
-b = int(raw_input())
-print b + 5
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">())</span>
+<span class="k">print</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">5</span>
 </code></pre>
 </div>
 
@@ -249,11 +301,11 @@ print b + 5
 
 <p>It’s quite small! Here’s the solution!</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>while True:
-    x = int(raw_input())
-    if x == 42:
-        break
-    print x
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">())</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">42</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="k">print</span> <span class="n">x</span>
 </code></pre>
 </div>
 
@@ -263,11 +315,11 @@ print b + 5
 
 <p>Create a file called <code class="highlighter-rouge">hello.c</code> with the following content:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>#include &lt;stdio.h&gt;
-int main() {
-  printf("Hello World\n");
-  return 0;
-}
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre>
 </div>
 
