@@ -6,9 +6,75 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Aug 2016 17:50:41 +0000</pubDate>
-    <lastBuildDate>Mon, 15 Aug 2016 17:50:41 +0000</lastBuildDate>
+    <pubDate>Mon, 15 Aug 2016 18:22:20 +0000</pubDate>
+    <lastBuildDate>Mon, 15 Aug 2016 18:22:20 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Practice Programming Contest, Summer 2016</title>
+        <description>&lt;h1 id=&quot;contest-summary-summer-2016&quot;&gt;Contest Summary: Summer 2016&lt;/h1&gt;
+
+&lt;p&gt;This summer, Programming Club IIT Kanpur kicked off the 2016-17 season, with a Summer WPC
+held on the Hackerearth platform. The primary problem setter and tester was
+&lt;a href=&quot;http://codeforces.com/profile/ajs97&quot;&gt;Arjun Sinha&lt;/a&gt;, a student of the Y15 batch.
+There was an amazing amount of participation, both from within and outside the IITK campus.
+The contest was very well received by all those who participatd. Here are some of the contest statistics:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Duration: 6:00 pm 28&lt;sup&gt;th&lt;/sup&gt; June, 2016 IST - 7:00pm 29&lt;sup&gt;th&lt;/sup&gt; June, 2016 IST&lt;/li&gt;
+  &lt;li&gt;Number of registered participants: 1301&lt;/li&gt;
+  &lt;li&gt;Number of participants with atleast one submission:507&lt;/li&gt;
+  &lt;li&gt;Problem with most number of submissions: &lt;strong&gt;Weird Chemists&lt;/strong&gt; :&lt;em&gt;464 correct submissions&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Problem with the least number of submissions: &lt;strong&gt;Tree Tank&lt;/strong&gt; :&lt;em&gt;10 correct submissions&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now for the contest ranks-&lt;br /&gt;
+1. &lt;strong&gt;Mohib Manva&lt;/strong&gt;, of DAIICT Gandhinagar&lt;br /&gt;
+2. &lt;strong&gt;Satyaki Upadhyay&lt;/strong&gt;, of BITS Pilani, Pilani Campus&lt;br /&gt;
+3. &lt;strong&gt;Swastik Sharma&lt;/strong&gt;, of IIT Kanpur&lt;/p&gt;
+
+&lt;p&gt;The three winners solved all the 12 problems in the contest. Congratulations to winners!&lt;/p&gt;
+
+&lt;p&gt;In conclusion, we at PClub were more than happy with the participation and peformance of the contestants.
+The problem gradient was good, with the easy problems being solved by a large fraction of contestants,
+along with submissions decreasing gradually on the medium and hard problems.&lt;/p&gt;
+
+&lt;p&gt;Here are the problems links for you to read:&lt;br /&gt;
+(Note: You must be logged into HackerEarth to be able to view these links)&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/weird-chemists-3/&quot;&gt;&lt;strong&gt;Weird Chemists&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/alternating-sequences-3/&quot;&gt;&lt;strong&gt;Alternating Sequences&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/om-nom-and-candies/&quot;&gt;&lt;strong&gt;Om Nom and Candies&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/andrew-and-his-bike-3/&quot;&gt;&lt;strong&gt;Andrew and His Bike&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/horn-ok-please/&quot;&gt;&lt;strong&gt;Horn Ok Please&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/inverted-gcd/&quot;&gt;&lt;strong&gt;Inverted GCD&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/lizzys-queries/&quot;&gt;&lt;strong&gt;Lizzy’s Queries&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/monochrome-tree/&quot;&gt;&lt;strong&gt;Monochrome Tree&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/rendezvous-3/&quot;&gt;&lt;strong&gt;Rendezvous&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/tree-tank/&quot;&gt;&lt;strong&gt;Tree Tank&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/miranda-writes/&quot;&gt;&lt;strong&gt;Miranda Writes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/find-the-triangle-3/&quot;&gt;&lt;strong&gt;Find The Triangle&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you want to submit solutions to the problems, you can submit them in the links given above.
+Here is the &lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/&quot;&gt;link&lt;/a&gt; of the contest for your reference.
+We look forward further WPCs being held this year.&lt;/p&gt;
+
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 13 Aug 2016 18:55:00 +0000</pubDate>
+        <link>http://pclub.in/competitive/2016/08/13/SummerContestReport.html</link>
+        <guid isPermaLink="true">http://pclub.in/competitive/2016/08/13/SummerContestReport.html</guid>
+        
+        <category>competitive</category>
+        
+        <category>WPC</category>
+        
+        
+        <category>competitive</category>
+        
+      </item>
     
       <item>
         <title>Introductory Workshop 2016</title>
@@ -1133,249 +1199,6 @@ Its not compulsory, but it allows you to modify vim to your settings more easily
         <pubDate>Mon, 09 May 2016 18:05:20 +0000</pubDate>
         <link>http://pclub.in/tutorial/vim/2016/05/09/nerdcommenter.html</link>
         <guid isPermaLink="true">http://pclub.in/tutorial/vim/2016/05/09/nerdcommenter.html</guid>
-        
-        <category>vim</category>
-        
-        <category>tutorial</category>
-        
-        
-        <category>tutorial</category>
-        
-        <category>vim</category>
-        
-      </item>
-    
-      <item>
-        <title>Plugin Managers for Vim</title>
-        <description>&lt;h1 id=&quot;plugins&quot;&gt;Plugins!!&lt;/h1&gt;
-
-&lt;p&gt;Vim is a very simple text-based Text-Editor which can be transformed into a powerful IDE using plugins.
-This is the first of many posts I’ll write about vim plugins one at a time and how to set them up fully for a truly satisfying
-experience( custom tailored to &lt;em&gt;your&lt;/em&gt; requirements ).&lt;/p&gt;
-
-&lt;p&gt;The first step to using vim plugins is finding them. You can find a list of trending vim plugins at &lt;a href=&quot;http://vimawesome.com&quot;&gt;vimawesome&lt;/a&gt;.
-Once you find a plugin, you have to install it. Most plugins have a README.md which you should read carefully before deciding to use them.
-  &amp;gt; Maybe it requires an external dependency&lt;br /&gt;
-  &amp;gt; Maybe it needs a particular version of vim&lt;br /&gt;
-  &amp;gt; Maybe it requires NeoVim&lt;/p&gt;
-
-&lt;p&gt;After deciding upon that, installation needs to be done via a plugin manager like &lt;a href=&quot;https://github.com/tpope/vim-pathogen&quot;&gt;Pathogen&lt;/a&gt; or
-&lt;a href=&quot;https://github.com/VundleVim/Vundle.vim&quot;&gt;Vundle&lt;/a&gt; or &lt;a href=&quot;https://github.com/Shougo/neobundle.vim&quot;&gt;Neobundle&lt;/a&gt; or
-&lt;a href=&quot;https://github.com/junegunn/vim-plug&quot;&gt;Vim-plug&lt;/a&gt; or &lt;a href=&quot;https://github.com/Shougo/dein.vim&quot;&gt;dein&lt;/a&gt; …&lt;/p&gt;
-
-&lt;p&gt;So now starting upon my theme of taking one plugin at a time and setting it up, let’s start with plugin managers. I’ll highlight installation
-of a single plugin in Vim-Plug, the one I use and just brush up on the other plugin managers. For an example, the plugin we
-will be installing alongside the plugin manager is -&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/scrooloose/nerdcommenter&quot;&gt;NERDCommenter&lt;/a&gt; - It adds superb commenting powers in vim&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Vim-Plug&lt;/code&gt; is relatively newer so most plugins don’t refer to its installation instructions. The example I have taken
-is generic enough to consider most cases. The steps remain the same for all plugins, only the link changes and some
-of the options I specified change.
-So now onto Vim-Plug&lt;/p&gt;
-
-&lt;h2 id=&quot;vim-plughttpsgithubcomjunegunnvim-plug&quot;&gt;&lt;a href=&quot;https://github.com/junegunn/vim-plug&quot;&gt;Vim-Plug&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;A minimalist plugin manager and the one I use currently. Its features are highlighted at the top of
-&lt;a href=&quot;https://github.com/junegunn/vim-plug/blob/master/README.md&quot;&gt;README.md&lt;/a&gt;.As per what I wrote previously, you really should check out the homepage, i.e, the README.md
-and then decide whether this plugin is for you.&lt;/p&gt;
-
-&lt;h3 id=&quot;installation&quot;&gt;Installation&lt;/h3&gt;
-
-&lt;p&gt;This involves a single file, plug.vim, which needs to be loaded when Vim starts and hence
-it is placed in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.vim/autoload&lt;/code&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;The plugin is fetched using &lt;code class=&quot;highlighter-rouge&quot;&gt;curl&lt;/code&gt; which is a command line utility for downloading content from the web.
-Now to install plugins, you need to add the relevant section in your &lt;code class=&quot;highlighter-rouge&quot;&gt;.vimrc&lt;/code&gt;. For the example plugin:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; plug#begin&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;expand&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;~/.vim/bundle&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&quot; Use single quotes&lt;/span&gt;
-
-Plug &lt;span class=&quot;s1&quot;&gt;&#39;scrooloose/nerdcommenter&#39;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; plug#&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;So let’s understand what I did here:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;called &lt;code class=&quot;highlighter-rouge&quot;&gt;plug#begin()&lt;/code&gt; ( a function ) with an argument specifying where to install the plugins. Indicates that all lines
-below this contain plugin options&lt;/li&gt;
-  &lt;li&gt;Used &lt;code class=&quot;highlighter-rouge&quot;&gt;Plug &#39;scrooloose/nerdcommenter&#39;&lt;/code&gt; to specify the plugin. Most plugins are distributed via github repositories nowadays
-so &lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;scrooloose/nerdcommenter&#39;&lt;/code&gt; is a shorthand for &lt;code class=&quot;highlighter-rouge&quot;&gt;https://github.com/scrooloose/nerdcommenter&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;called &lt;code class=&quot;highlighter-rouge&quot;&gt;plug#end()&lt;/code&gt; to specify that no more plugins beyond this point&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.vim/bundle&lt;/code&gt; is where the plugins get installed. After adding this to your &lt;code class=&quot;highlighter-rouge&quot;&gt;.vimrc&lt;/code&gt;, fire up vim and run
-&lt;code class=&quot;highlighter-rouge&quot;&gt;:PlugInstall&lt;/code&gt;. This will start the installation in a side window with a nice progress bar while you can continue editing a file
-due to the asynchronous install.&lt;/p&gt;
-
-&lt;p&gt;To update plugins, run &lt;code class=&quot;highlighter-rouge&quot;&gt;:PlugUpdate&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;To uninstall a plugin, remove it from your vimrc and run &lt;code class=&quot;highlighter-rouge&quot;&gt;:PlugClean&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;To update vim-plug itself, run &lt;code class=&quot;highlighter-rouge&quot;&gt;:PlugUpgrade&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Extensive options are available for customising the experience. Many examples of installing
-are in the README.md with full documentation available by help.&lt;/p&gt;
-
-&lt;p&gt;Also for learning how to use a plugin, once a plugin is fetched, you are encouraged to read its documentation using
-&lt;code class=&quot;highlighter-rouge&quot;&gt;:help plugin_name&lt;/code&gt;, in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;:help commenter&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Advantages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Minimal and easy to use&lt;/li&gt;
-  &lt;li&gt;Highly customisable plugin loading&lt;/li&gt;
-  &lt;li&gt;Asynchronous install&lt;/li&gt;
-  &lt;li&gt;On demand plugin loading and hence faster startup time for vim&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Disadvantages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;None that bother me&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;deinhttpsgithubcomshougodeinvim&quot;&gt;&lt;a href=&quot;https://github.com/Shougo/dein.vim&quot;&gt;Dein&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Shougo/dein.vim&quot;&gt;Dein&lt;/a&gt; is the apparent successor of &lt;a href=&quot;https://github.com/Shougo/neobundle.vim&quot;&gt;Neobundle&lt;/a&gt; both by the same person - &lt;code class=&quot;highlighter-rouge&quot;&gt;Shougo&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;One of the main reasons why I liked &lt;code class=&quot;highlighter-rouge&quot;&gt;dein&lt;/code&gt; is because it supports asynchronous installation/updating of plugins, something which &lt;code class=&quot;highlighter-rouge&quot;&gt;Vundle&lt;/code&gt;
-or &lt;code class=&quot;highlighter-rouge&quot;&gt;Pathogen&lt;/code&gt; do not support. &lt;code class=&quot;highlighter-rouge&quot;&gt;Neobundle&lt;/code&gt; provides this with the help of another plugin (&lt;code class=&quot;highlighter-rouge&quot;&gt;vimproc&lt;/code&gt;), but I believe inbuilt support is better.&lt;/p&gt;
-
-&lt;p&gt;Advantages of using dein.vim:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Asynchronous Installs like vim-plug&lt;/li&gt;
-  &lt;li&gt;Post installation hooks&lt;/li&gt;
-  &lt;li&gt;Only Loads relevant plugins for a certain filetype and hence vim starts up faster&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Disadvantages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Relatively new and very little support&lt;/li&gt;
-  &lt;li&gt;Help docs might be confusing sometimes due to too many features&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;neobundlehttpsgithubcomshougoneobundlevim&quot;&gt;&lt;a href=&quot;https://github.com/Shougo/neobundle.vim&quot;&gt;Neobundle&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Since dein.vim is the newer version as mentioned &lt;a href=&quot;https://github.com/Shougo/neobundle.vim/blob/master/README.md&quot;&gt;here&lt;/a&gt;,
-I’ll leave this out as deprecated&lt;/p&gt;
-
-&lt;h2 id=&quot;pathogenhttpsgithubcomtpopevim-pathogen&quot;&gt;&lt;a href=&quot;https://github.com/tpope/vim-pathogen&quot;&gt;Pathogen&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;One of the oldest plugin managers for vim and hence it is slightly involved.
-Pathogen works on the principle that most plugins are available from git repos,
-so any git folder in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.vim/bundle&lt;/code&gt; is a plugin and hence it needs to be added
-to the &lt;code class=&quot;highlighter-rouge&quot;&gt;runtimepath&lt;/code&gt; so that its data is loaded when vim fires up.&lt;/p&gt;
-
-&lt;p&gt;So coming to the advantages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Old and ancient and hence extensive support&lt;/li&gt;
-  &lt;li&gt;Very clean vimrc&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Disadvantages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Requires extensive effort from user side( some might consider this an advantage because you actually
-learn whats happening inside instead of an abstraction hiding it )&lt;/li&gt;
-  &lt;li&gt;Help tags not generated automatically, need to update manually, need to uninstall manually, etc.&lt;/li&gt;
-  &lt;li&gt;All plugins are loaded irrespective of filetype&lt;/li&gt;
-  &lt;li&gt;Asynchronous installs only if you can type asynchronously&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;vundlehttpsgithubcomvundlevimvundlevim&quot;&gt;&lt;a href=&quot;https://github.com/VundleVim/Vundle.vim&quot;&gt;Vundle&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;The last but not the least, Vundle. Neobundle was a fork of this
-with more features and has now become dein. This is one of the first
-plugin managers I used, thanks to &lt;a href=&quot;https://lakshayg.github.io&quot;&gt;Lakshay&lt;/a&gt; and kept for a long time till I decided to switch
-to Vim-Plug. This is very nice and easy to use but just a little outdated as compared to Vim-plug.&lt;/p&gt;
-
-&lt;p&gt;The reason why I shifted from &lt;strong&gt;Vundle&lt;/strong&gt; to &lt;strong&gt;VimPlug&lt;/strong&gt; was because of its synchronous(blocking)
-install with no feedback on progress.&lt;/p&gt;
-
-&lt;p&gt;Advantages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Simple&lt;/li&gt;
-  &lt;li&gt;Automated updation and helptags generation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Disadvantages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Blocking install&lt;/li&gt;
-  &lt;li&gt;No post installation hooks&lt;/li&gt;
-  &lt;li&gt;Loads all plugins irrespective of filetype. Slower vim startup&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;a-more-custom-tailored-installation-using-vim-plug&quot;&gt;A more custom-tailored installation using Vim-Plug&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;This portion is only for those who have some experience in vim&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;If you are a vim learner, you may skip it right now&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ternjs/tern_for_vim&quot;&gt;tern-for-vim&lt;/a&gt; - It adds support for javascript in vim.&lt;br /&gt;
-&lt;em&gt;tern_for_vim requires nodejs. (This is just an example, you don’t need to install this specifically)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I am choosing this Plugin because it has a build step alongside the usual installation and is valid for only some file types.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; plug#begin&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;expand&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;~/.vim/bundle&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&quot; Use single quotes&lt;/span&gt;
-
-Plug &lt;span class=&quot;s1&quot;&gt;&#39;ternjs/tern_for_vim&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;do&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;npm install&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;for&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;javascript&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;foobarlang&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; plug#&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;What I did here:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;called &lt;code class=&quot;highlighter-rouge&quot;&gt;plug#begin()&lt;/code&gt; ( a function ) with an argument specifying where to install the plugins. Indicates that all lines
-below this contain plugin options&lt;/li&gt;
-  &lt;li&gt;Used &lt;code class=&quot;highlighter-rouge&quot;&gt;Plug &#39;ternjs/tern_for_vim&#39;&lt;/code&gt; to specify the plugin. Most plugins are distributed via github repositories nowadays
-so &lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;ternjs/tern_for_vim&#39;&lt;/code&gt; is a shorthand for &lt;code class=&quot;highlighter-rouge&quot;&gt;https://github.com/ternjs/tern_for_vim&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Now, if you read the README.md for &lt;code class=&quot;highlighter-rouge&quot;&gt;tern_for_vim&lt;/code&gt;, it requires an additional step after installation, i.e., you
-need to run &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; in its directory. Now, with other plugin managers, you will need to do this yourself but
-&lt;code class=&quot;highlighter-rouge&quot;&gt;Vim-plug&lt;/code&gt; offers the option to specify a &lt;code class=&quot;highlighter-rouge&quot;&gt;post-install-hook&lt;/code&gt; i.e. the &lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;do&#39;&lt;/code&gt; which specifies what needs to be done
-after fetching the source.&lt;/li&gt;
-  &lt;li&gt;I know that this plugin is useful only for javascript and foobarlang ( a super awesome language that can code the universe!! ).
-So I denote that this plugin should only be loaded &lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;for&#39;&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;[&#39;javascript&#39;, &#39;foobarlang&#39;]&lt;/code&gt;. If I did not specify this, it would have
-been loaded for all filetypes, slowing down startup.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Apart from the two non-default options above, there are many more. So how will you come to know about them???
-Read the help docs like I did at the github repo.&lt;/p&gt;
-
-&lt;h5 id=&quot;example-of-advanced-usage&quot;&gt;Example of advanced usage&lt;/h5&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Vim-Plug&lt;/code&gt; takes the concept of loading plugins to another level by having an option to load plugins only when I call a certain function.
-For example let there be a plugin X which has a function Y. Now this plugin won’t be loaded at vim startup. Instead it will be loaded
-when I try to call the function Y. This plugin is valid for all filetypes but I only use it sometimes, so I set it up to only load
-when the function is called.&lt;/p&gt;
-
-&lt;h2 id=&quot;ending&quot;&gt;Ending&lt;/h2&gt;
-
-&lt;p&gt;If you are a beginner in vim, I would suggest Vundle or Vim-Plug.
-Pathogen is too ancient and dein.vim is too complex. On a personal note,
-use vim plug as it has a simple interface for beginners and as and when you
-grow more experienced, you can fine tune your plugins using it, as in the custom-tailored
-example above. Even the pclub cordis use vim-plug. See &lt;a href=&quot;https://github.com/sakshamsharma/vivid-vim/blob/master/vimfiles/plugins.vim&quot;&gt;here&lt;/a&gt;
-and &lt;a href=&quot;https://github.com/kunalapila/vimrc/blob/master/.vimrc&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ps&quot;&gt;PS&lt;/h2&gt;
-
-&lt;p&gt;I consider myself a novice in vim with only 30-40% knowledge. So if my views seem
-biased towards Vundle or Vim-plug its because I used them. If there are any errors here,
-feel free to correct me in the comments.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 08 May 2016 07:32:20 +0000</pubDate>
-        <link>http://pclub.in/tutorial/vim/2016/05/08/plugins.html</link>
-        <guid isPermaLink="true">http://pclub.in/tutorial/vim/2016/05/08/plugins.html</guid>
         
         <category>vim</category>
         
