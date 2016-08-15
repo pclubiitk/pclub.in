@@ -249,6 +249,22 @@ tr {
       -ms-transition: all 1s ease;
           transition: all 1s ease;
 }
+
+.secyTable tr:hover {
+    background-color: #333333;
+    -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+    z-index: 1;
+}
+
 .secyRow{
   display:table-cell;
 } 
@@ -258,9 +274,7 @@ tr {
 .secyTable tr:nth-child(even){
      background-color: #2F4F4F; 
 }
-.secyTable tr:hover{
-  background-color: #333333
-}
+
 .coordiePic:hover {
   width: 95%;
 }
