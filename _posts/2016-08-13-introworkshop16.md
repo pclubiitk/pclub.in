@@ -127,7 +127,7 @@ while a < 10:
 ## Reading input
 You can read input from the user using something like this:
 
-```
+```python
 a = raw_input()
 print "Hello mr. " + a
 
@@ -144,7 +144,7 @@ Can you solve this problem? Try writing a program for this! Please give it a try
 
 It's quite small! Here's the solution!
 
-```
+```python
 while True:
     x = int(raw_input())
     if x == 42:
@@ -159,7 +159,7 @@ So you should now **certainly** create an account on CodeChef! Try submitting th
 
 Create a file called `hello.c` with the following content:
 
-```
+```c
 #include <stdio.h>
 int main() {
   printf("Hello World\n");
@@ -171,7 +171,7 @@ int main() {
 
 To actually run the code, execute the following command on the terminal:
 
-```
+```bash
 gcc -o hello hello.c
 ```
 
@@ -179,7 +179,7 @@ The above command tells the computer to create an executable called `hello` (The
 
 Now to run the executable, type:
 
-```
+```bash
 ./hello
 ```
 
