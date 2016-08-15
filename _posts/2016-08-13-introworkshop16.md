@@ -62,6 +62,14 @@ The `>>>` is the place where you type. Try typing the following:
 - a = 4
 - print a*2
 
+You used an *operator* in `a*2` - the multiplication operator. Other operators you need to try out are:
+
+| \+ | Addition |
+| \- | Subtraction |
+| \* | Multiplication |
+| \/ | Division |
+| \**| To the power of |
+
 ## If/Else
 
 Now that you know how to write simple things, let's proceed to something interesting.
@@ -79,6 +87,31 @@ else:
 ```
 
 That's it! See?
+
+Sometimes one condition isn't enough though. In that case, you are allowed to chain up multiple conditions using `and` and `or` like so:
+
+```python
+a = 0
+b = 0
+if a is 1 or b is a:
+	print "Condition successful"
+else:
+	print "condition failed"
+```
+
+That's all good, but what if you want multiple checks on a variable? For example, let's say you want to do Action 1 if `a<10` and Action 2 if `a=10` and Action 3 when `a>10`, what then? This is where `if-elif-elif-elif-...-else` construct comes into the picture. Use it like this:
+
+```python
+a = 4
+if a < 0:
+	print "a is less than 0"
+elif a >= 0 and a < 4:
+	print "a is between 0 and 4"
+elif a >= 4 and a < 10:
+	print "a is between 4 and 10"
+else:
+	print "a is bigger than 10"
+```
 
 ## Loops
 
