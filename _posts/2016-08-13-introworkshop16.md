@@ -184,3 +184,14 @@ Now to run the executable, type:
 ```
 
 in the terminal.
+
+# Follow up
+
+Congrats on finishing up to here! If you're now pumped up for trying out some more challenges, try your hand at the following problems:
+
+* [ATM](https://www.codechef.com/problems/HS08TEST)
+* [Factorial](https://www.codechef.com/problems/FCTRL)
+* [Enormous Input Test](https://www.codechef.com/problems/INTEST)
+* [The Lead Game](https://www.codechef.com/problems/TLG)
+
+*Note* C/C++/Java is the preferred language while participating in competitive contests, as ACM ICPC does not allow Python.
