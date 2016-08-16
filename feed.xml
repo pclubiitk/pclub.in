@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Aug 2016 18:22:20 +0000</pubDate>
-    <lastBuildDate>Mon, 15 Aug 2016 18:22:20 +0000</lastBuildDate>
+    <pubDate>Tue, 16 Aug 2016 10:44:21 +0000</pubDate>
+    <lastBuildDate>Tue, 16 Aug 2016 10:44:21 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -305,6 +305,19 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 &lt;/div&gt;
 
 &lt;p&gt;in the terminal.&lt;/p&gt;
+
+&lt;h1 id=&quot;follow-up&quot;&gt;Follow up&lt;/h1&gt;
+
+&lt;p&gt;Congrats on finishing up to here! If you’re now pumped up for trying out some more challenges, try your hand at the following problems:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/HS08TEST&quot;&gt;ATM&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/FCTRL&quot;&gt;Factorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/INTEST&quot;&gt;Enormous Input Test&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/TLG&quot;&gt;The Lead Game&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt; C/C++/Java is the preferred language while participating in competitive contests, as ACM ICPC does not allow Python.&lt;/p&gt;
 </description>
         <pubDate>Sat, 13 Aug 2016 04:55:00 +0000</pubDate>
         <link>http://pclub.in/pclub/2016/08/13/introworkshop16.html</link>
