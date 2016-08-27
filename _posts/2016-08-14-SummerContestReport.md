@@ -20,26 +20,26 @@ This summer, Programming Club IIT Kanpur kicked off the 2016-17 season, with a S
 held on the Hackerearth platform. The primary problem setter and tester was
 [Arjun Sinha](http://codeforces.com/profile/ajs97), a student of the Y15 batch.
 There was an amazing amount of participation, both from within and outside the IITK campus.
-The contest was very well received by all those who participatd. Here are some of the contest statistics:  
+The contest was very well received by all those who participatd. Here are some of the contest statistics:
 
-* Duration: 6:00 pm 28<sup>th</sup> June, 2016 IST - 7:00pm 29<sup>th</sup> June, 2016 IST  
+* Duration: 6:00 pm 28<sup>th</sup> June, 2016 IST - 7:00pm 29<sup>th</sup> June, 2016 IST
 * Number of registered participants: 1301
 * Number of participants with atleast one submission:507
 * Problem with most number of submissions: **Weird Chemists** :_464 correct submissions_
 * Problem with the least number of submissions: **Tree Tank** :_10 correct submissions_
 
-Now for the contest ranks-  
-1. **Mohib Manva**, of DAIICT Gandhinagar  
-2. **Satyaki Upadhyay**, of BITS Pilani, Pilani Campus  
-3. **Swastik Sharma**, of IIT Kanpur  
+Now for the contest ranks-
+1. **Mohib Manva**, of DAIICT Gandhinagar
+2. **Satyaki Upadhyay**, of BITS Pilani, Pilani Campus
+3. **Swastik Sharma**, of IIT Kanpur
 
-The three winners solved all the 12 problems in the contest. Congratulations to winners!  
+The three winners solved all the 12 problems in the contest. Congratulations to winners!
 
 In conclusion, we at PClub were more than happy with the participation and peformance of the contestants.
 The problem gradient was good, with the easy problems being solved by a large fraction of contestants,
 along with submissions decreasing gradually on the medium and hard problems.
 
-Here are the problems links for you to read:  
+Here are the problems links for you to read:
 (Note: You must be logged into HackerEarth to be able to view these links)
 
 1. [**Weird Chemists**](https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/weird-chemists-3/)

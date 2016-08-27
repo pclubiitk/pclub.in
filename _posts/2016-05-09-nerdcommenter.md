@@ -4,8 +4,8 @@ title: "NERDCommenter"
 date: 2016-05-09 23:35:20 +0530
 author: Yash Srivastav
 website: http://yashsriv.github.io
-category: 
-tags: 
+category: Vim
+tags:
 - vim
 - tutorial
 categories:

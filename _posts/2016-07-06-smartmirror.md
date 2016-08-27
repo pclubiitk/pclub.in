@@ -4,8 +4,8 @@ title: "Smart Mirror"
 date: 2016-07-06 16:42:00 +0530
 author: 11000011
 website: http://11000011.github.io/Smart-Mirror/
-category: 
-tags: 
+category: Project
+tags:
 - summer16
 - project
 categories:
@@ -34,6 +34,6 @@ using the mirror.
 Received the **Best Applicative Project** during the Science & Technology Summer
 Camp 2016.
 
-Website: [http://11000011.github.io/Smart-Mirror](http://11000011.github.io/Smart-Mirror)  
-LaTeX Report: [report.pdf](http://github.com/11000011/Smart-Mirror/raw/gh-pages/report.pdf)  
+Website: [http://11000011.github.io/Smart-Mirror](http://11000011.github.io/Smart-Mirror)
+LaTeX Report: [report.pdf](http://github.com/11000011/Smart-Mirror/raw/gh-pages/report.pdf)
 Github Wiki: [Smart Mirror Wiki](http://github.com/11000011/Smart-Mirror/wiki/)

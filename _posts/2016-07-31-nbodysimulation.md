@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "N-Body Simulation"
-date: 2016-07-31 01:00:00 +0530
+date: 2016-08-27 01:00:00 +0530
 author: sagnikb
 website: http://sagnikb.github.io/Simulati-ON/
-category: 
-tags: 
+category: Project
+tags:
 - summer16
 - project
 categories:
@@ -32,6 +32,6 @@ The N-body simulation is an interesting topic in Physics, and finds applications
 Received the **Best Research Project** during the Science & Technology Summer
 Camp 2016.
 
-Website: [http://sagnikb.github.io/Simulati-ON/](http://sagnikb.github.io/Simulati-ON/)  
-LaTeX Report: [report.pdf](http://github.com/sagnikb/documentation/report.pdf)  
+Website: [http://sagnikb.github.io/Simulati-ON/](http://sagnikb.github.io/Simulati-ON/)
+LaTeX Report: [report.pdf](http://github.com/sagnikb/documentation/report.pdf)
 Github Wiki: [Simulati-ON Wiki](https://github.com/sagnikb/Simulati-ON/wiki)
