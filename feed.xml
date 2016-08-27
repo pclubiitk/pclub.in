@@ -6,9 +6,126 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 Aug 2016 17:18:07 +0000</pubDate>
-    <lastBuildDate>Sun, 21 Aug 2016 17:18:07 +0000</lastBuildDate>
+    <pubDate>Sat, 27 Aug 2016 14:11:06 +0000</pubDate>
+    <lastBuildDate>Sat, 27 Aug 2016 14:11:06 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;h2 id=&quot;dynamic-programming-optimisation-with--convex-hull-trick-&quot;&gt;Dynamic Programming Optimisation with  Convex Hull Trick :&lt;/h2&gt;
+
+&lt;h4 id=&quot;why-dynamic-programming&quot;&gt;Why Dynamic programming?&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dynamic programming is a very useful method for solving a particular class of problems in which the problem is broken into smaller sub-problems and the optimal solution of sub-problems contribute towards the optimal solution of given problem.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you are new to Dynamic Programming you can read a good tutorial here:
+&lt;a href=&quot;https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/&quot;&gt;link1&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Most of the problems solved by DP(dynamic programming) seem to be of brute force type, but you can identify them by observing the repetative calculation of sub-problems and by formulating a recursive relationship to get the optimal soution.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;whats-a-convex-hull-trick&quot;&gt;What’s a Convex Hull Trick?&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Although it seems to be related to the &lt;strong&gt;Convex Hull Algorithm&lt;/strong&gt; from its name, but it’s not. It is a “trick”, as its name suggests, in which from a set of linear function, the function which attains the extreme value for an independent variable is obtained effeciently by some preprocessing. Only because the soultion looks like an open convex polygon it is known as “Convex Hull Trick”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For simple understanding, consider &lt;strong&gt;N&lt;/strong&gt; lines of the form:&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;y=m&lt;sub&gt;i&lt;/sub&gt;x+c&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; , ∀ i ∈[1,&lt;strong&gt;N&lt;/strong&gt;]&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The problem is to find the line with extremum value of y for a particular value of x.
+Let’s consider finding the minimum value of y.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;http://www.cs.wustl.edu/~pless/506/f8_3.gif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;From the figure you can see that the parts of lines marked as &lt;em&gt;lower envelope&lt;/em&gt; gives us the required solution.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Few simple observations that can be made are :&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;A part of line can be the solution for a &lt;strong&gt;continuous range&lt;/strong&gt; of &lt;strong&gt;x&lt;/strong&gt;.&lt;/li&gt;
+      &lt;li&gt;As &lt;strong&gt;x&lt;/strong&gt; increases, the slope of the required line keeps on decreasing and these parts of lines form an open convex hull.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;So, if you are given the set of lines initially, the you can sort the lines with decresasing value of slope and add then build the solution based on their point of intersection.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;http://img1.mnimgs.com/img/shared/userimages/mn_images/image/Tr1.png&quot; alt=&quot;img1&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To build the solution you should discard the lines that can’t be a part of the solution. As you can see the above image, the slopes of lines are such that :&lt;/p&gt;
+
+    &lt;p&gt;m&lt;sub&gt;m&lt;/sub&gt; &amp;gt; m&lt;sub&gt;l&lt;/sub&gt; &amp;gt; m&lt;sub&gt;n&lt;/sub&gt;&lt;/p&gt;
+
+    &lt;p&gt;First, consider you have only lines &lt;strong&gt;m&lt;/strong&gt; &amp;amp; &lt;strong&gt;l&lt;/strong&gt;. Then, add the line n to the set of line. Here, you can see that the x-co-ordinate of point &lt;strong&gt;C&lt;/strong&gt; is less than the x-co-ordinate of point &lt;strong&gt;A&lt;/strong&gt;. Hence, the line &lt;strong&gt;n&lt;/strong&gt; attains minimum value even before the line &lt;strong&gt;l&lt;/strong&gt;. From this you can see that the line &lt;strong&gt;l&lt;/strong&gt; can be discarded from the solution set.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;After discarding all such unnecessary lines, you can maintain the lines with decresing slope and the x-co-ordinate of its point of intersection with its previous line. (Observe that these x-co-ordinates will be in increasing order).&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For the query, you can do &lt;strong&gt;binary search&lt;/strong&gt; on the x-co-ordinate  of point of intersections and and get the line with the minimum value of &lt;strong&gt;y&lt;/strong&gt; effeciently in &lt;strong&gt;Ο&lt;/strong&gt;(log&lt;strong&gt;N&lt;/strong&gt;), where &lt;strong&gt;N&lt;/strong&gt; is number of lines.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;PreProcessing time: &lt;strong&gt;Ο&lt;/strong&gt;(&lt;strong&gt;N&lt;/strong&gt;log&lt;strong&gt;N&lt;/strong&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;There is also a fully &lt;strong&gt;dynamic variant&lt;/strong&gt; of this Convex Hull Trick in which the lines are added during the query time. For this a data structure like &lt;a href=&quot;https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/#set&quot;&gt;&lt;strong&gt;set&lt;/strong&gt;&lt;/a&gt; can be used which maintain the sorted list of slopes of lines dynamically. The only difference is after each insertion of a new line(insertion of slope) into set, we check its intersection with its neighbouring elements in &lt;strong&gt;set&lt;/strong&gt; and decide wheathter to discard it or not using the same condition as stated above. We should also check if any line already present in the set is discarded after the insertion of the line.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You can also try solving this problem &lt;a href=&quot;https://www.codechef.com/JAN16/problems/CYCLRACE/&quot;&gt;here&lt;/a&gt;, which is based on direct implementation of its dynamic variant.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;how-can-you-optimise-dp-with-convex-hull-trick&quot;&gt;How can you optimise DP with Convex Hull Trick?&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;In some specific problems that can be solved by &lt;strong&gt;Dynamic Programming&lt;/strong&gt; we can do faster calculation of the state using the Convex Hull Trick. In these type of problems, the recursive relation between the states is as follows:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;dp&lt;sub&gt;i&lt;/sub&gt; = min(b&lt;sub&gt;j&lt;/sub&gt;*a&lt;sub&gt;i&lt;/sub&gt; + dp&lt;sub&gt;j&lt;/sub&gt;)&lt;/strong&gt; ,where j ∈ [1,i-1]&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;b&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; &amp;gt; &lt;strong&gt;b&lt;sub&gt;j&lt;/sub&gt;&lt;/strong&gt; ,∀ i&amp;lt;j.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;Our task is to calculate &lt;strong&gt;dp&lt;sub&gt;N&lt;/sub&gt;&lt;/strong&gt; from this relation. Here &lt;strong&gt;b&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; and &lt;strong&gt;dp&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; can be analogously interpreted as the &lt;strong&gt;slope&lt;/strong&gt; and &lt;strong&gt;y-intercept&lt;/strong&gt; for a line, and our problem of calculating the i’th state can be viewed as finding the minimum value of a line for x-co-ordinate &lt;strong&gt;a&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt;,which can be effeciently done using the convex hull trick.
+The slopes of the are given in the decreasing order here, so after calculating &lt;strong&gt;dp&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; we can add a line with slope &lt;strong&gt;b&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; and y-intercept &lt;strong&gt;dp&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; directly to the right of the sorted list maintained for calculating further states.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the above problem if we directly calculate &lt;strong&gt;dp&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; by taking i-1 steps for each i, the the time complexity turns out to be &lt;strong&gt;Ο&lt;/strong&gt;(&lt;strong&gt;N&lt;sup&gt;2&lt;/sup&gt;&lt;/strong&gt;), but by using this optimisation technique we can calculate each state in &lt;strong&gt;Ο&lt;/strong&gt;(log&lt;strong&gt;N&lt;/strong&gt;) and the total complexity of the problem reduces to &lt;strong&gt;Ο&lt;/strong&gt;(&lt;strong&gt;N&lt;/strong&gt;log&lt;strong&gt;N&lt;/strong&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This problem can also be more constrained by a condition:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;a&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; &amp;lt; &lt;strong&gt;a&lt;sub&gt;j&lt;/sub&gt;&lt;/strong&gt;, ∀ i&amp;lt;j.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;In this case, as we know that the x-co-ordinates are in increasing order, we can just maintain a pointer to the line giving minimunm value and then update the pointer to the next line according to the query. Here the steps taken for binary search are replaced by some amortised constant steps to update the pointer to the next lines(decreasing slope order). So, the calculation of each 
+state takes time &lt;strong&gt;Ο&lt;/strong&gt;(&lt;strong&gt;1&lt;/strong&gt;) and the total time complexity reduces to &lt;strong&gt;Ο&lt;/strong&gt;(&lt;strong&gt;N&lt;/strong&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If there if no constraints given for &lt;strong&gt;a&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; and &lt;strong&gt;b&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt;, then you can relate the problem with the dynamic variant of Convex Hull Trick. For this problem, we use the data structure &lt;strong&gt;set&lt;/strong&gt; that maintains the lines in decreasing order of slopes along with dynamic insertions. Each insertion of line into &lt;strong&gt;set&lt;/strong&gt; takes time &lt;strong&gt;Ο&lt;/strong&gt;(log&lt;strong&gt;N&lt;/strong&gt;) and calculation of each state takes time &lt;strong&gt;Ο&lt;/strong&gt;(log&lt;strong&gt;N&lt;/strong&gt;). So, the total time complexity will be &lt;strong&gt;Ο&lt;/strong&gt;(&lt;strong&gt;N&lt;/strong&gt;log&lt;strong&gt;N&lt;/strong&gt;). You should be &lt;strong&gt;cautious&lt;/strong&gt; in using &lt;strong&gt;set&lt;/strong&gt; when you are given a constraint  for &lt;strong&gt;b&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; because even though by both ways you get &lt;strong&gt;Ο&lt;/strong&gt;(&lt;strong&gt;N&lt;/strong&gt;log&lt;strong&gt;N&lt;/strong&gt;), &lt;strong&gt;set&lt;/strong&gt; has a high proportionality time constant.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You can try solving some problems here :
+ &lt;a href=&quot;http://codeforces.com/contest/536/problem/C&quot;&gt;link1&lt;/a&gt;
+ &lt;a href=&quot;http://codeforces.com/contest/319/problem/C&quot;&gt;link2&lt;/a&gt;
+ &lt;a href=&quot;http://www.spoj.com/problems/NKLEAVES/en/&quot;&gt;link3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Here’s an image just for fun :)
+&lt;a href=&quot;https://cdn.meme.am/instances/500x/54146722.jpg&quot;&gt;img&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;………………………………………&lt;/p&gt;
+</description>
+        <pubDate>Sat, 27 Aug 2016 14:11:06 +0000</pubDate>
+        <link>http://pclub.in/2016/08/27/2016-08-23-dpconvex.html</link>
+        <guid isPermaLink="true">http://pclub.in/2016/08/27/2016-08-23-dpconvex.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Practice Programming Contest, Summer 2016</title>
@@ -1129,98 +1246,6 @@ This is only true for Jekyll though.&lt;/p&gt;
         
         
         <category>pclub</category>
-        
-      </item>
-    
-      <item>
-        <title>NERDCommenter</title>
-        <description>&lt;h1 id=&quot;plugin-nerdcommenterhttpsgithubcomscrooloosenerdcommenter&quot;&gt;Plugin: &lt;a href=&quot;https://github.com/scrooloose/nerdcommenter&quot;&gt;NERDCommenter&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/scrooloose/nerdcommenter&quot;&gt;NERDCommenter&lt;/a&gt; is an awesome
-plugin for commenting code. It works primarily
-in the normal mode and is aimed at more efficient coding and debugging.&lt;/p&gt;
-
-&lt;p&gt;What it does is allow you to comment out a line in any file using the
-same keybindings. Let’s say you want to have the shortcut to comment
-out a line as &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt; because that is easy to type. Now for a block of
-code, you go to a particular line and press &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt;, the line gets commented.
-You press &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt; again, the line gets uncommented into the &lt;code class=&quot;highlighter-rouge&quot;&gt;before&lt;/code&gt; state.
-This adds a very powerful tool to your workflow allowing you comment
-out as well as comment in lines very fast. You could also type something
-like &lt;code class=&quot;highlighter-rouge&quot;&gt;5//&lt;/code&gt; to comment out 5 lines.&lt;/p&gt;
-
-&lt;p&gt;This is what would happen:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Filetype&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Before&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;After&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;C&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int a = 5;&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;//int a = 5;&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Python&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a = 5;&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#a = 5;&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;.vimrc&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;set rnu&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;set rnu&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-&lt;p&gt;For vim-plug, add the following line to your &lt;code class=&quot;highlighter-rouge&quot;&gt;.vimrc&lt;/code&gt;:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;Plug &lt;span class=&quot;s1&quot;&gt;&#39;scrooloose/nerdcommenter&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;configuration&quot;&gt;Configuration&lt;/h2&gt;
-&lt;p&gt;Read the &lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt; as well as &lt;code class=&quot;highlighter-rouge&quot;&gt;:help commenter&lt;/code&gt; for a complete description
-of features. If you are wondering what is &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;&lt;/code&gt;, it is a special &lt;code class=&quot;highlighter-rouge&quot;&gt;power-key&lt;/code&gt;
-in vim with default value &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;. You can change it to whatever you like. Now to get
-the setting we discussed before, i.e., fast commenting out and in using &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;In the &lt;a href=&quot;https://github.com/scrooloose/nerdcommenter/blob/master/README.md&quot;&gt;README&lt;/a&gt;,
-you will find that &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;c&amp;lt;space&amp;gt;&lt;/code&gt; has the behaviour we want
-of toggling comments. So in order to have that same command for &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt;, you will
-need to map &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt; to it:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;nmap &lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;space&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-vmap &lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cs&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&quot; I map // to &amp;lt;leader&amp;gt;cs for sexy commenting instead of the normal&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&quot; It is my own setting and you may wish to change it to &amp;lt;leader&amp;gt;c&amp;lt;space&amp;gt; or &amp;lt;leader&amp;gt;ci&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;And now open up your favourite file and try this out. It is very efficient and something
-very valuable to my current workflow. I have found myself pressing &lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt; on someone else’s
-machine to comment code ( which usually works in C :P ) many times.&lt;/p&gt;
-
-&lt;h2 id=&quot;further-reading&quot;&gt;Further Reading&lt;/h2&gt;
-
-&lt;p&gt;In order to understand, why we used &lt;code class=&quot;highlighter-rouge&quot;&gt;nmap&lt;/code&gt;
-you might want to &lt;a href=&quot;http://learnvimscriptthehardway.stevelosh.com/&quot;&gt;Learn Vimscript&lt;/a&gt;.
-Its not compulsory, but it allows you to modify vim to your settings more easily.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 09 May 2016 18:05:20 +0000</pubDate>
-        <link>http://pclub.in/tutorial/vim/2016/05/09/nerdcommenter.html</link>
-        <guid isPermaLink="true">http://pclub.in/tutorial/vim/2016/05/09/nerdcommenter.html</guid>
-        
-        <category>vim</category>
-        
-        <category>tutorial</category>
-        
-        
-        <category>tutorial</category>
-        
-        <category>vim</category>
         
       </item>
     
