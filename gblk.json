@@ -1,18 +1,19 @@
 [
-  {"title":"", "url":"/2016/08/27/2016-08-23-dpconvex.html"},
+  {"title":"Open Source Software", "url":"/open%20source/2016/08/27/floss.html"},
+  {"title":"N-Body Simulation", "url":"/project/2016/08/26/nbodysimulation.html"},
+  {"title":"Dynamic Programming Optimization with Convex Hull Trick", "url":"/tutorial/algos/2016/08/22/dpconvex.html"},
   {"title":"Practice Programming Contest, Summer 2016", "url":"/competitive/2016/08/13/SummerContestReport.html"},
   {"title":"Introductory Workshop 2016", "url":"/pclub/2016/08/13/introworkshop16.html"},
-  {"title":"N-Body Simulation", "url":"/project/2016/07/30/nbodysimulation.html"},
-  {"title":"HTML5 Game Development", "url":"/tutorial/2016/07/27/html5gamedev.html"},
+  {"title":"HTML5 Game Development", "url":"/tutorial/game%20dev/2016/07/27/html5gamedev.html"},
   {"title":"Smart Mirror", "url":"/project/2016/07/06/smartmirror.html"},
   {"title":"Managing Processes in Linux", "url":"/tutorial/2016/06/01/linuxprocess.html"},
-  {"title":"Image Processing using OpenCV", "url":"/tutorial/ip/2016/05/28/opencv.html"},
+  {"title":"Image Processing using OpenCV", "url":"/tutorial/ip/opencv/2016/05/28/opencv.html"},
   {"title":"AngularJS --- Superheroic Javascript Framework", "url":"/angularjs/web%20development/2016/05/27/angular.html"},
-  {"title":"Introduction to R (Part 1)", "url":"/tutorial/2016/05/25/rpart1.html"},
+  {"title":"Introduction to R (Part 1)", "url":"/tutorial/data%20analytics/2016/05/25/rpart1.html"},
   {"title":"Setting up a CI for pclub.in", "url":"/pclub/2016/05/13/pclubci.html"},
   {"title":"NERDCommenter", "url":"/tutorial/vim/2016/05/09/nerdcommenter.html"},
   {"title":"Plugin Managers for Vim", "url":"/tutorial/vim/2016/05/08/plugins.html"},
   {"title":"Contributing to pclub.in", "url":"/tutorial/2016/05/05/posttemplate.html"},
   {"title":"Kickstart to Vim", "url":"/tutorial/vim/2016/04/29/kickstarttovim.html"},
-  {"title":"A Coding Primer", "url":"/tutorial/2016/04/29/codingprimer.html"}
+  {"title":"A Coding Primer", "url":"/tutorial/beginner/2016/04/29/codingprimer.html"}
 ]

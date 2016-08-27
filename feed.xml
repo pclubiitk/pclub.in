@@ -6,12 +6,158 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 27 Aug 2016 14:11:40 +0000</pubDate>
-    <lastBuildDate>Sat, 27 Aug 2016 14:11:40 +0000</lastBuildDate>
+    <pubDate>Sat, 27 Aug 2016 14:27:52 +0000</pubDate>
+    <lastBuildDate>Sat, 27 Aug 2016 14:27:52 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
-        <title></title>
+        <title>Open Source Software</title>
+        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Free Libre and open-source software (FLOSS) is computer software that can be classified as both free software and open-source software. That is, anyone is freely licensed to use, copy, study, and change the software in any way, and the source code is openly shared so that people are encouraged to voluntarily improve the design of the software. Free, open-source operating systems such as &lt;a href=&quot;“https://www.gnu.org/gnu/linux-and-gnu.en.html”&quot;&gt;GNU/Linux&lt;/a&gt; are widely utilised today, powering millions of servers, desktops, smartphones (e.g. Android), and other devices.&lt;sup&gt;[1]&lt;sup&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
+
+&lt;p&gt;It is common knowledge, from the 1950’s to the 70’s, the common trend for developers and users was to freely share source code with one another, and used to tailor it for their needs.&lt;/p&gt;
+
+&lt;p&gt;However, in the 70’s and early 80’s, the evolving software industry began to directly sell software, which usually was in the form of binary copies, thereby preventing users to reverse engineer the software. In 1980, the copyright law in the States was extended to software programs.&lt;/p&gt;
+
+&lt;p&gt;In 1983, &lt;a href=&quot;“https://stallman.org”&quot;&gt;Richard Stallman&lt;/a&gt; at the MIT AI Laboratory, announced the &lt;em&gt;GNU Project&lt;/em&gt;. Along with the GNU OS development, the &lt;em&gt;Free Software Foundation a.k.a. FSF&lt;/em&gt; was founded in 1985. The &lt;a href=&quot;&amp;quot;https://en.wikipedia.org/wiki/GNU_Manifesto&amp;quot;&quot;&gt;GNU Manifesto&lt;/a&gt; contained the GNU philosophy of Free Software definition and “copyleft” ideas.&lt;/p&gt;
+
+&lt;p&gt;The Linux kernel was released as a freely modifiable open source software in 1991, which was relicensed under the GNU GPL in 1992.
+FreeBSD and NetBSD were released as free software in 1993. In 1995, the &lt;a href=&quot;“https://httpd.apache.org”&quot;&gt;Apache Web Server&lt;/a&gt; (A patchy web server, there is sure history behind its name :P) was released.&lt;/p&gt;
+
+&lt;p&gt;Then came a revolutionary moment in 1998. The Netscape Corporation released its famous Netscape Communicator Suite as free software. (I am sure you guys must have heard Firefox and ThunderBird. Yeah, that is the descendant of the Netscape; however, another story, another time).&lt;/p&gt;
+
+&lt;p&gt;Netscape saw business potential in collaborating and sharing source code, however the FSF and its ideals were not not appealing enough to them. Hence, they decided to rebrand the movement; coining the famous “open source” and the &lt;a href=&quot;%22https://opensource.org/%22&quot;&gt;Open Source Initiative&lt;/a&gt; was established in February, 1998. In 2001, the European Commission introduced the term FLOSS, which has been in both popular and official use since 2004.&lt;sup&gt;[2]&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;licensing--an-important-part&quot;&gt;Licensing : An important part&lt;/h2&gt;
+
+&lt;p&gt;Since the establishment of the GNU Project, there have been ideas floating around for an explicit open source license. The GNU General Public License v1.0 was thus released in 1989, with v2.0 coming in 1991.&lt;/p&gt;
+
+&lt;p&gt;Various popular licenses pertaining to Free software, as approved by the OSI are:   &lt;sup&gt;[3]&lt;/sup&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apache License 2.0&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;BSD 3-Clause “New” or “Revised” license&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;BSD 2-Clause “Simplified” or “FreeBSD” license&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;GNU General Public License (GPL)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;GNU Library or “Lesser” General Public License (LGPL)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MIT license&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Mozilla Public License 2.0&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Common Development and Distribution License&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Eclipse Public License&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Check out these licenses and their full texts at &lt;a href=&quot;&amp;quot;https://opensource.org/licenses”&quot;&gt;the OSI website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;gnulinux&quot;&gt;GNU/Linux&lt;/h2&gt;
+
+&lt;p&gt;One can’t write an article on FLOSS, and skip out GNU/Linux. There is quite a lot of history surrounding the most popular OSS Linux kernel, and it sure is a favourite amongst developers and the community alike.
+There are a lot of Operating systems (referred to as linux distributions) based on the linux kernel, popular ones being&lt;/p&gt;
+
+&lt;h1 id=&quot;ubuntu&quot;&gt;Ubuntu&lt;/h1&gt;
+&lt;p&gt;Arguably the largest used linux OS in PCs around the world, it is quite popular amongst the people entering the dynamic world of open source. A clean graphical user interface, with the nix terminal; it provides an easy transition from Windows to Linux. It is based on the Debian distribution. &lt;sup&gt;[4]&lt;/sup&gt;
+Check out the &lt;a href=&quot;&amp;quot;https://www.ubuntu.com”&quot;&gt;Ubuntu&lt;/a&gt; website for more details.&lt;/p&gt;
+
+&lt;h1 id=&quot;kali-linux&quot;&gt;Kali Linux&lt;/h1&gt;
+&lt;p&gt;Kali Linux is a security testing distro. (Of course, it does have a cool interface :P).&lt;/p&gt;
+
+&lt;h1 id=&quot;elementary-os&quot;&gt;Elementary OS&lt;/h1&gt;
+&lt;p&gt;Elementary OS is a distribution based on Ubuntu, and borrows its looks from the Mac OS X.&lt;/p&gt;
+
+&lt;h1 id=&quot;gentoo-linux&quot;&gt;Gentoo Linux&lt;/h1&gt;
+&lt;p&gt;Gentoo is a distribution which, in my opinion, stands apart from others in the list. It is an OS, which you actually have to compile and install. Honestly speaking, I never had the chance to compile and install it myself, but I have seen people do it, and mind you; I have not come across an operating system so configurable during installation. For the record, I’ve heard it is fun using and installing. Do check out the &lt;a href=&quot;&amp;quot;https://www.gentoo.org”&quot;&gt;Gentoo&lt;/a&gt; website.
+I would not recommend this operating system to users new to the Linux environment; but after all, we stumble when we learn to walk.&lt;/p&gt;
+
+&lt;h1 id=&quot;arch-linux&quot;&gt;Arch Linux&lt;/h1&gt;
+&lt;p&gt;The aim of Arch Linux is to Keep It Simple Stupid. Historically, Arch was sometimes described as “Linux, with a nice package manager.” Arch does not aim to be your friendly, caring operating system; which would do stuff for you. Instead, it is very customisable and favours architectural simplicity and avoids over-engineering. &lt;sup&gt;[5]&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;apricityos&quot;&gt;ApricityOS&lt;/h1&gt;
+&lt;p&gt;Another linux distribution with great aesthetics. It is based on the Arch Linux OS, and uses GNOME or Cinnamon as the Graphical User Interface.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Credits:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;“https://en.wikipedia.org/wiki/Free_and_open-source_software”&quot;&gt;https://en.wikipedia.org/wiki/Free_and_open-source_software&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;“https://en.wikipedia.org/wiki/Free_and_open-source_software#History”&quot;&gt;https://en.wikipedia.org/wiki/Free_and_open-source_software#History&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;“https://opensource.org/licenses”&quot;&gt;https://opensource.org/licenses&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;“http://www.ubuntu.com/about/about-ubuntu/ubuntu-and-debian”&quot;&gt;http://www.ubuntu.com/about/about-ubuntu/ubuntu-and-debian&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;“https://wiki.archlinux.org/index.php/arch_compared_to_other_distributions”&quot;&gt;https://wiki.archlinux.org/index.php/arch_compared_to_other_distributions&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sat, 27 Aug 2016 11:28:30 +0000</pubDate>
+        <link>http://pclub.in/open%20source/2016/08/27/floss.html</link>
+        <guid isPermaLink="true">http://pclub.in/open%20source/2016/08/27/floss.html</guid>
+        
+        <category>open source</category>
+        
+        <category>linux</category>
+        
+        
+        <category>Open Source</category>
+        
+      </item>
+    
+      <item>
+        <title>N-Body Simulation</title>
+        <description>&lt;h1 id=&quot;n-body-simulationhttpsagnikbgithubiosimulati-on&quot;&gt;&lt;a href=&quot;http://sagnikb.github.io/Simulati-ON/&quot;&gt;N-body simulation&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;The N-body simulation is an interesting topic in Physics, and finds applications in astrophysics, biomoecular studies and other areas of science. Mathematical soultions of this problem are not possible, so numerical methods are necessary for visualisation. The problem basically involves several bodies with defined properties and also a well defined force that acts between each of these bodies, and involves studying how the system evolves with time. Parallel programming is used for increasing performance, and problems of this type are ideally suited for the parallel programming paradigm.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://raw.githubusercontent.com/sagnikb/Simulati-ON/master/Pics/simulation_sample.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;^ This is a screenshot of a simulation in action with 5 bodies. The program works well with 20 bodies.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;OpenACC is used for parallel programming&lt;/li&gt;
+  &lt;li&gt;Gnuplot is used for visulisation of data&lt;/li&gt;
+  &lt;li&gt;Performance improvement over sequential code easily apparent&lt;/li&gt;
+  &lt;li&gt;Uses compiler pgcc. For testing of non parallel programs, the files can also be compiled using gcc&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Received the &lt;strong&gt;Best Research Project&lt;/strong&gt; during the Science &amp;amp; Technology Summer
+Camp 2016.&lt;/p&gt;
+
+&lt;p&gt;Website: &lt;a href=&quot;http://sagnikb.github.io/Simulati-ON/&quot;&gt;http://sagnikb.github.io/Simulati-ON/&lt;/a&gt;
+LaTeX Report: &lt;a href=&quot;http://github.com/sagnikb/documentation/report.pdf&quot;&gt;report.pdf&lt;/a&gt;
+Github Wiki: &lt;a href=&quot;https://github.com/sagnikb/Simulati-ON/wiki&quot;&gt;Simulati-ON Wiki&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 26 Aug 2016 19:30:00 +0000</pubDate>
+        <link>http://pclub.in/project/2016/08/26/nbodysimulation.html</link>
+        <guid isPermaLink="true">http://pclub.in/project/2016/08/26/nbodysimulation.html</guid>
+        
+        <category>summer16</category>
+        
+        <category>project</category>
+        
+        
+        <category>project</category>
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
+        <title>Dynamic Programming Optimization with Convex Hull Trick</title>
         <description>&lt;h2 id=&quot;dynamic-programming-optimisation-with--convex-hull-trick-&quot;&gt;Dynamic Programming Optimisation with  Convex Hull Trick :&lt;/h2&gt;
 
 &lt;h4 id=&quot;why-dynamic-programming&quot;&gt;Why Dynamic programming?&lt;/h4&gt;
@@ -104,7 +250,7 @@ The slopes of the are given in the decreasing order here, so after calculating &
       &lt;li&gt;&lt;strong&gt;a&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; &amp;lt; &lt;strong&gt;a&lt;sub&gt;j&lt;/sub&gt;&lt;/strong&gt;, ∀ i&amp;lt;j.&lt;/li&gt;
     &lt;/ul&gt;
 
-    &lt;p&gt;In this case, as we know that the x-co-ordinates are in increasing order, we can just maintain a pointer to the line giving minimunm value and then update the pointer to the next line according to the query. Here the steps taken for binary search are replaced by some amortised constant steps to update the pointer to the next lines(decreasing slope order). So, the calculation of each 
+    &lt;p&gt;In this case, as we know that the x-co-ordinates are in increasing order, we can just maintain a pointer to the line giving minimunm value and then update the pointer to the next line according to the query. Here the steps taken for binary search are replaced by some amortised constant steps to update the pointer to the next lines(decreasing slope order). So, the calculation of each
 state takes time &lt;strong&gt;Ο&lt;/strong&gt;(&lt;strong&gt;1&lt;/strong&gt;) and the total time complexity reduces to &lt;strong&gt;Ο&lt;/strong&gt;(&lt;strong&gt;N&lt;/strong&gt;)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -120,10 +266,20 @@ state takes time &lt;strong&gt;Ο&lt;/strong&gt;(&lt;strong&gt;1&lt;/strong&gt;)
 
 &lt;p&gt;………………………………………&lt;/p&gt;
 </description>
-        <pubDate>Sat, 27 Aug 2016 14:11:40 +0000</pubDate>
-        <link>http://pclub.in/2016/08/27/2016-08-23-dpconvex.html</link>
-        <guid isPermaLink="true">http://pclub.in/2016/08/27/2016-08-23-dpconvex.html</guid>
+        <pubDate>Mon, 22 Aug 2016 20:45:00 +0000</pubDate>
+        <link>http://pclub.in/tutorial/algos/2016/08/22/dpconvex.html</link>
+        <guid isPermaLink="true">http://pclub.in/tutorial/algos/2016/08/22/dpconvex.html</guid>
         
+        <category>tutorial</category>
+        
+        <category>Dynamic Programming</category>
+        
+        <category>competitive</category>
+        
+        
+        <category>tutorial</category>
+        
+        <category>Algos</category>
         
       </item>
     
@@ -145,9 +301,9 @@ The contest was very well received by all those who participatd. Here are some o
   &lt;li&gt;Problem with the least number of submissions: &lt;strong&gt;Tree Tank&lt;/strong&gt; :&lt;em&gt;10 correct submissions&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Now for the contest ranks-&lt;br /&gt;
-1. &lt;strong&gt;Mohib Manva&lt;/strong&gt;, of DAIICT Gandhinagar&lt;br /&gt;
-2. &lt;strong&gt;Satyaki Upadhyay&lt;/strong&gt;, of BITS Pilani, Pilani Campus&lt;br /&gt;
+&lt;p&gt;Now for the contest ranks-
+1. &lt;strong&gt;Mohib Manva&lt;/strong&gt;, of DAIICT Gandhinagar
+2. &lt;strong&gt;Satyaki Upadhyay&lt;/strong&gt;, of BITS Pilani, Pilani Campus
 3. &lt;strong&gt;Swastik Sharma&lt;/strong&gt;, of IIT Kanpur&lt;/p&gt;
 
 &lt;p&gt;The three winners solved all the 12 problems in the contest. Congratulations to winners!&lt;/p&gt;
@@ -156,7 +312,7 @@ The contest was very well received by all those who participatd. Here are some o
 The problem gradient was good, with the easy problems being solved by a large fraction of contestants,
 along with submissions decreasing gradually on the medium and hard problems.&lt;/p&gt;
 
-&lt;p&gt;Here are the problems links for you to read:&lt;br /&gt;
+&lt;p&gt;Here are the problems links for you to read:
 (Note: You must be logged into HackerEarth to be able to view these links)&lt;/p&gt;
 
 &lt;ol&gt;
@@ -448,46 +604,9 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
       </item>
     
       <item>
-        <title>N-Body Simulation</title>
-        <description>&lt;h1 id=&quot;n-body-simulationhttpsagnikbgithubiosimulati-on&quot;&gt;&lt;a href=&quot;http://sagnikb.github.io/Simulati-ON/&quot;&gt;N-body simulation&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;The N-body simulation is an interesting topic in Physics, and finds applications in astrophysics, biomoecular studies and other areas of science. Mathematical soultions of this problem are not possible, so numerical methods are necessary for visualisation. The problem basically involves several bodies with defined properties and also a well defined force that acts between each of these bodies, and involves studying how the system evolves with time. Parallel programming is used for increasing performance, and problems of this type are ideally suited for the parallel programming paradigm.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://raw.githubusercontent.com/sagnikb/Simulati-ON/master/Pics/simulation_sample.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;^ This is a screenshot of a simulation in action with 5 bodies. The program works well with 20 bodies.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;OpenACC is used for parallel programming&lt;/li&gt;
-  &lt;li&gt;Gnuplot is used for visulisation of data&lt;/li&gt;
-  &lt;li&gt;Performance improvement over sequential code easily apparent&lt;/li&gt;
-  &lt;li&gt;Uses compiler pgcc. For testing of non parallel programs, the files can also be compiled using gcc&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Received the &lt;strong&gt;Best Research Project&lt;/strong&gt; during the Science &amp;amp; Technology Summer
-Camp 2016.&lt;/p&gt;
-
-&lt;p&gt;Website: &lt;a href=&quot;http://sagnikb.github.io/Simulati-ON/&quot;&gt;http://sagnikb.github.io/Simulati-ON/&lt;/a&gt;&lt;br /&gt;
-LaTeX Report: &lt;a href=&quot;http://github.com/sagnikb/documentation/report.pdf&quot;&gt;report.pdf&lt;/a&gt;&lt;br /&gt;
-Github Wiki: &lt;a href=&quot;https://github.com/sagnikb/Simulati-ON/wiki&quot;&gt;Simulati-ON Wiki&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 30 Jul 2016 19:30:00 +0000</pubDate>
-        <link>http://pclub.in/project/2016/07/30/nbodysimulation.html</link>
-        <guid isPermaLink="true">http://pclub.in/project/2016/07/30/nbodysimulation.html</guid>
-        
-        <category>summer16</category>
-        
-        <category>project</category>
-        
-        
-        <category>project</category>
-        
-      </item>
-    
-      <item>
         <title>HTML5 Game Development</title>
         <description>&lt;h1 id=&quot;html5-game-development&quot;&gt;HTML5 Game Development&lt;/h1&gt;
-&lt;p&gt;For all those gaming nerds out there, there isn’t a better way to develop your gaming skills but to start from scratch of how a game works and to build your own one!&lt;br /&gt;
+&lt;p&gt;For all those gaming nerds out there, there isn’t a better way to develop your gaming skills but to start from scratch of how a game works and to build your own one!
 HTML 5 provides rich environment to create your games using Javascript and the html5 canvas object.&lt;/p&gt;
 
 &lt;h3 id=&quot;pre-requisites&quot;&gt;PRE-REQUISITES&lt;/h3&gt;
@@ -504,31 +623,31 @@ We can draw rectangles, circles, lines using the 2D context of canvas object (in
 
 &lt;p&gt;Reference Code in js-&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;canvas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
-&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2D&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
-&lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fillStyle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;canvas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2D&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fillStyle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fillRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;This creates a color filled red rectangle in the canvas at (10,20) coordinates of 30px as width and 40px as height.&lt;/p&gt;
 
 &lt;h3 id=&quot;game-components-and-their-movement&quot;&gt;GAME COMPONENTS AND THEIR MOVEMENT&lt;/h3&gt;
-&lt;p&gt;The importance of these objects is that they can be moved inside the canvas by redrawing them to different positions, this being done per frame ! A separate function is created which helps in drawing the components taking the position as arguments that is called many times a second to update the position of the game components.The position can incremented each time adding a constant or a uniformly increasing function to make the component move uniformly or accelerate respectively.&lt;br /&gt;
+&lt;p&gt;The importance of these objects is that they can be moved inside the canvas by redrawing them to different positions, this being done per frame ! A separate function is created which helps in drawing the components taking the position as arguments that is called many times a second to update the position of the game components.The position can incremented each time adding a constant or a uniformly increasing function to make the component move uniformly or accelerate respectively.
 The movement is triggered also by adding event handlers through javascript, like “keydown”, “keyup” for keyboard keys, which then can be recognised using the keyCode attribute of the event argument of event -handler function call (see attached reference code).&lt;/p&gt;
 
 &lt;p&gt;Reference Code in js-&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;keydown&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
-	    &lt;span class=&quot;nx&quot;&gt;myGameArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
-    	&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;  
-&lt;span class=&quot;c1&quot;&gt;//for calling a function callMe at 50 every milliseconds (or  &lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//better say 20 frames per second)  &lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//setInterval(callMe,50); &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;keydown&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;myGameArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//for calling a function callMe at 50 every milliseconds (or&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//better say 20 frames per second)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//setInterval(callMe,50);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Hence by knowing which key is pressed we can call the required functions for action to be taken.&lt;/p&gt;
 
 &lt;h3 id=&quot;game-obstacles-and-score&quot;&gt;GAME OBSTACLES AND SCORE&lt;/h3&gt;
-&lt;p&gt;Like other game components game obstacles are also game components but being generated at random coordinates of random shape, the code of which is much the same and i leave it to you :) .&lt;br /&gt;
+&lt;p&gt;Like other game components game obstacles are also game components but being generated at random coordinates of random shape, the code of which is much the same and i leave it to you :) .
 The score in most of the cases is decided by certain collision events or by the current frame from the beginning of the game.
 Its very easy to ascertain the collision between objects exploiting the again the boundary coordinates, and the current frame can be known by ensuring a  counter that is incremented for the function that is called per frame.I leave the job for you to google out the way to write text in canvas element to display the score when needed.&lt;/p&gt;
 
@@ -547,8 +666,8 @@ Its very easy to ascertain the collision between objects exploiting the again th
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 27 Jul 2016 10:35:20 +0000</pubDate>
-        <link>http://pclub.in/tutorial/2016/07/27/html5gamedev.html</link>
-        <guid isPermaLink="true">http://pclub.in/tutorial/2016/07/27/html5gamedev.html</guid>
+        <link>http://pclub.in/tutorial/game%20dev/2016/07/27/html5gamedev.html</link>
+        <guid isPermaLink="true">http://pclub.in/tutorial/game%20dev/2016/07/27/html5gamedev.html</guid>
         
         <category>tutorial</category>
         
@@ -558,6 +677,8 @@ Its very easy to ascertain the collision between objects exploiting the again th
         
         
         <category>tutorial</category>
+        
+        <category>Game Dev</category>
         
       </item>
     
@@ -583,8 +704,8 @@ using the mirror.&lt;/p&gt;
 &lt;p&gt;Received the &lt;strong&gt;Best Applicative Project&lt;/strong&gt; during the Science &amp;amp; Technology Summer
 Camp 2016.&lt;/p&gt;
 
-&lt;p&gt;Website: &lt;a href=&quot;http://11000011.github.io/Smart-Mirror&quot;&gt;http://11000011.github.io/Smart-Mirror&lt;/a&gt;&lt;br /&gt;
-LaTeX Report: &lt;a href=&quot;http://github.com/11000011/Smart-Mirror/raw/gh-pages/report.pdf&quot;&gt;report.pdf&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;Website: &lt;a href=&quot;http://11000011.github.io/Smart-Mirror&quot;&gt;http://11000011.github.io/Smart-Mirror&lt;/a&gt;
+LaTeX Report: &lt;a href=&quot;http://github.com/11000011/Smart-Mirror/raw/gh-pages/report.pdf&quot;&gt;report.pdf&lt;/a&gt;
 Github Wiki: &lt;a href=&quot;http://github.com/11000011/Smart-Mirror/wiki/&quot;&gt;Smart Mirror Wiki&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 06 Jul 2016 11:12:00 +0000</pubDate>
@@ -597,6 +718,8 @@ Github Wiki: &lt;a href=&quot;http://github.com/11000011/Smart-Mirror/wiki/&quot
         
         
         <category>project</category>
+        
+        <category>Project</category>
         
       </item>
     
@@ -658,7 +781,7 @@ Also you may get pid by &lt;code class=&quot;highlighter-rouge&quot;&gt;pidof co
 
 &lt;p&gt;Unlike SIGTERM , SIGKILL cannot be ignored by the process , even the process is not aware when SIGKILL signal is sent.&lt;/p&gt;
 
-&lt;p&gt;While there are rare cases where an external influence (like waiting I/O) may be the reason of ignoring SIGKILL. But it works in most cases ! 
+&lt;p&gt;While there are rare cases where an external influence (like waiting I/O) may be the reason of ignoring SIGKILL. But it works in most cases !
 &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -SIGKILL PID&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -9 PID&lt;/code&gt; is same&lt;/p&gt;
 
 &lt;p&gt;Suppose your firefox is not responding and you decided to kill the process : &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -9 `pidof firefox`&lt;/code&gt;&lt;/p&gt;
@@ -818,8 +941,8 @@ rather than actual usage.&lt;/p&gt;
 &lt;p&gt;Best of Luck developing your OpenCV application.&lt;/p&gt;
 </description>
         <pubDate>Sat, 28 May 2016 12:18:35 +0000</pubDate>
-        <link>http://pclub.in/tutorial/ip/2016/05/28/opencv.html</link>
-        <guid isPermaLink="true">http://pclub.in/tutorial/ip/2016/05/28/opencv.html</guid>
+        <link>http://pclub.in/tutorial/ip/opencv/2016/05/28/opencv.html</link>
+        <guid isPermaLink="true">http://pclub.in/tutorial/ip/opencv/2016/05/28/opencv.html</guid>
         
         <category>ip</category>
         
@@ -829,6 +952,8 @@ rather than actual usage.&lt;/p&gt;
         <category>tutorial</category>
         
         <category>ip</category>
+        
+        <category>OpenCV</category>
         
       </item>
     
@@ -912,315 +1037,6 @@ Some common directives:&lt;/p&gt;
         <category>angularjs</category>
         
         <category>web development</category>
-        
-      </item>
-    
-      <item>
-        <title>Introduction to R (Part 1)</title>
-        <description>&lt;h1 id=&quot;basics-of-r&quot;&gt;Basics Of R&lt;/h1&gt;
-
-&lt;h3 id=&quot;why-learn-r-&quot;&gt;Why Learn R ?&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Free, Open Source, Cross Platform Compatible&lt;/li&gt;
-  &lt;li&gt;No &lt;em&gt;Windows&lt;/em&gt;, No Doors – R runs on all the platforms. Just name it and you got it!!&lt;/li&gt;
-  &lt;li&gt;R is a language evolved from the &lt;strong&gt;Language&lt;/strong&gt; &lt;strong&gt;&lt;em&gt;S&lt;/em&gt;&lt;/strong&gt; (&lt;em&gt;created by Bell Technologies&lt;/em&gt;)&lt;/li&gt;
-  &lt;li&gt;I bet plotting graphs could never have been easier&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;It is the leading open source statistical and data analysis programming language,  as it handles and manipulates data too efficiently.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;I personally recommend you to use R on &lt;em&gt;UNIX&lt;/em&gt; machines . I haven’t tried it on &lt;em&gt;Windows&lt;/em&gt; yet :P&lt;/li&gt;
-  &lt;li&gt;Still not convinced ? &lt;a href=&quot;http://blog.revolutionanalytics.com/2012/07/a-big-list-of-the-things-r-can-do.html&quot;&gt;Here&lt;/a&gt; is a list of things that R can do . Keep Counting !!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Having Fun with R&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;install.packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sudoku&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sudoku&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;readSudoku&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;c:/hard sudoku problem.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;solveSudoku&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Wondering what the above 4 lines of code can do ? Well It can solve the &lt;strong&gt;hardest&lt;/strong&gt; &lt;em&gt;Soduku Puzzle&lt;/em&gt; ever made ! Sounds Cool ?&lt;/p&gt;
-
-&lt;p&gt;Google &lt;strong&gt;&lt;em&gt;“Making a word cloud in R”&lt;/em&gt;&lt;/strong&gt; and see how easy it is !&lt;/p&gt;
-
-&lt;h2 id=&quot;some-pre-requiste-knowledge&quot;&gt;Some Pre Requiste Knowledge&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;How to start R ?&lt;/li&gt;
-  &lt;li&gt;Will their be an IDE where I can code ?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The installation instructions for various platforms (including Non &lt;em&gt;UNIX&lt;/em&gt; products) can be found &lt;a href=&quot;https://cran.r-project.org/doc/manuals/r-release/R-admin.html&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After Installation. Just open your terminal and type &lt;code class=&quot;highlighter-rouge&quot;&gt;R&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;some-important-things-first&quot;&gt;&lt;strong&gt;Some important things first&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Whenever you are done with this language or simply wanna quit this Just type &lt;code class=&quot;highlighter-rouge&quot;&gt;q()&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Whenever you are struck anywhere just type &lt;code class=&quot;highlighter-rouge&quot;&gt;help(commandname)&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;R&lt;/em&gt;&lt;/strong&gt; is an expression language and is &lt;em&gt;case sensitive&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“R” &amp;amp; “r” are two different things&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Whenever you type an expression, the value is &lt;strong&gt;calculated , printed and lost&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;You better save the results of your expressions in a variable&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;An &lt;strong&gt;assignment&lt;/strong&gt; also evaluates an expression and passes the value to a variable but the result is &lt;strong&gt;&lt;em&gt;not automatically printed&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Comments can be put anywhere starting with a Hashmark ( &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt; )&lt;/li&gt;
-  &lt;li&gt;Commands are separated either by a &lt;strong&gt;&lt;em&gt;semi-colon&lt;/em&gt;&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;;&lt;/code&gt; or by a &lt;strong&gt;&lt;em&gt;newline&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;If your command is incomplete R by default will give a &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; prompt and will continue to give a &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; prompt until your syntax is corrected.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;NaN&lt;/em&gt;&lt;/strong&gt; stands for Not a Number&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;programming-in-r-finally&quot;&gt;&lt;strong&gt;&lt;em&gt;Programming in R Finally&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;After reading so much about &lt;strong&gt;&lt;em&gt;R&lt;/em&gt;&lt;/strong&gt; . It’s time to really start coding&lt;/p&gt;
-
-&lt;h4 id=&quot;loading-commands-in-r&quot;&gt;Loading commands in R&lt;/h4&gt;
-
-&lt;p&gt;If you already have a .R extension file with certain commands already written , you can load it with the following syntax&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;source(“nameofthefile&quot;.R)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Wanna store all the outputs for a particular session ?&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sink (“nameoffile”)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Simliar to a &lt;em&gt;UNIX&lt;/em&gt; terminal you can type &lt;code class=&quot;highlighter-rouge&quot;&gt;ls()&lt;/code&gt; to view all the objects you created in &lt;strong&gt;&lt;em&gt;R&lt;/em&gt;&lt;/strong&gt; for a particular session.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The collection of objects currently stored is called the &lt;strong&gt;&lt;em&gt;workspace&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;How to remove an object ?&lt;/p&gt;
-
-&lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;rm(objectname1,objectname2)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Removing all objects&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;rm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;em&gt;Try to understand this command on your own.It’s pretty easy&lt;/em&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;data-types&quot;&gt;Data Types&lt;/h4&gt;
-
-&lt;p&gt;Used Python ? &lt;strong&gt;&lt;em&gt;R&lt;/em&gt;&lt;/strong&gt; might look familiar!&lt;/p&gt;
-
-&lt;p&gt;You can do mathematical operations like&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1+1&lt;/code&gt; : Prints 2&lt;/p&gt;
-
-&lt;p&gt;Time to make vectors!&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt; : name of the variable where the vector is stored&lt;/p&gt;
-
-  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; &amp;lt;-&lt;/code&gt;  :  assignment operator (points in direction of the variable in which value is to be updated/stored)&lt;/p&gt;
-
-  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c()&lt;/code&gt; : a function used to concatenate&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;
-Here you can see different ways to defining the same string.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1:9&lt;/code&gt; :   Creates sequence : &lt;strong&gt;1 2 3 4 5 6 7 8 9&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1.5:10&lt;/code&gt; Creates sequence : &lt;strong&gt;1.5 2.5 3.5 4.5 5.5 6.5 7.5 8.5 9.5&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;seq(intial,final,by,length)&lt;/code&gt; : Function use to create sequence; we can provide increment values or number of values&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rep()&lt;/code&gt;:  Function used for Replicating&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Code&lt;/th&gt;
-      &lt;th&gt;Output&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;seq(1,5,by=1.5)&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;1.0 2.5 4.0&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;seq(1,5,length=9)&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rep(10,10)&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;10 10 10 10 10 10 10 10 10 10&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;strong&gt;Try it yourself&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Try to understand the code snippet below, guess the output and then run on &lt;strong&gt;&lt;em&gt;R&lt;/em&gt;&lt;/strong&gt; and check&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nrow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;operations-on-vector&quot;&gt;Operations on vector&lt;/h4&gt;
-
-&lt;p&gt;You can do almost all possible arithemetic operations on a vector
-Adding 2 vectors of same size, different size, multiplying, dividing, &lt;code class=&quot;highlighter-rouge&quot;&gt;log()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;exp()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;sin()&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;sum()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;length()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;var()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;mean()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;sort()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;max()&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;min()&lt;/code&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;pmin and pmax&lt;/strong&gt; :Returns parallel max and min of input values&lt;/p&gt;
-
-  &lt;p&gt;&lt;em&gt;Example&lt;/em&gt;
-Run these commands and you will get a clear idea of pmin and pmax&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;pmin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;pmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;To intialize a vector with a value &lt;code class=&quot;highlighter-rouge&quot;&gt;numeric()&lt;/code&gt; is used&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a &amp;lt;- numeric(10)` : a has now value 10
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;An Intersting Thing to Note&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Try the following commands&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numeric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;You should now see &lt;strong&gt;NA’s&lt;/strong&gt; in the vector&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;NA&lt;/strong&gt; stands for Not Available&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;NA&lt;/em&gt;&lt;/strong&gt; : Missing values are represented by the symbol NA (not available)&lt;/p&gt;
-
-&lt;p&gt;How to check for &lt;strong&gt;NA&lt;/strong&gt; in a vector ? : &lt;code class=&quot;highlighter-rouge&quot;&gt;is.na()&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;check&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is.na&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;check&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;check will be &lt;strong&gt;FALSE&lt;/strong&gt; for non NA values and &lt;strong&gt;TRUE&lt;/strong&gt; for NA values&lt;/p&gt;
-
-&lt;p&gt;How to remove &lt;strong&gt;NA&lt;/strong&gt; values ? Let’s substitute NA with -1
-&lt;code class=&quot;highlighter-rouge&quot;&gt;test[is.na(test)] &amp;lt;- -1&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;logical-vectors&quot;&gt;LOGICAL VECTORS&lt;/h4&gt;
-&lt;p&gt;Can contain &lt;strong&gt;TRUE&lt;/strong&gt; or &lt;strong&gt;FALSE&lt;/strong&gt;.  What else ? &lt;strong&gt;NA&lt;/strong&gt; : Don’t forget this :P&lt;/p&gt;
-
-&lt;p&gt;Example: &lt;code class=&quot;highlighter-rouge&quot;&gt;test &amp;lt;- 5&amp;lt;6&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Operations on Logical Vectors&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!&lt;/code&gt;: For Negation&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;&lt;/code&gt; : for &lt;em&gt;Logical AND&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;||&lt;/code&gt; : for &lt;em&gt;LOGICAL OR&lt;/em&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;determining-the-type-of-a-variable&quot;&gt;Determining the type of a variable&lt;/h4&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;typeof(variablename)&lt;/code&gt; : Return the type of variable
-&amp;gt; Check out &lt;code class=&quot;highlighter-rouge&quot;&gt;mode()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;class()&lt;/code&gt; and read about the difference between the three&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;We will discuss this in the next part :D&lt;/em&gt;&lt;/p&gt;
-
-&lt;h5 id=&quot;mathematical-basic-operations&quot;&gt;Mathematical Basic Operations&lt;/h5&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Syntax&lt;/th&gt;
-      &lt;th&gt;Operation&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sqrt(a)&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Returns the square root of &lt;strong&gt;&lt;em&gt;a&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exp(a)&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Return the value of exponent of &lt;strong&gt;&lt;em&gt;a&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;log(a)&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Returns the Logarithm base &lt;strong&gt;e&lt;/strong&gt; of &lt;strong&gt;&lt;em&gt;a&lt;/em&gt;&lt;/strong&gt; Try &lt;code class=&quot;highlighter-rouge&quot;&gt;log10()&lt;/code&gt; for base &lt;strong&gt;10&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;var()&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Returns Variance of a vector which is passed as an argument&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sd()&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Returns	Standard Deviation of a vector which is passed as an argument&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Note : Providing an input to a function outside it’s domain will result in NaN &lt;strong&gt;&lt;em&gt;Not a Number&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;strings&quot;&gt;Strings&lt;/h4&gt;
-
-&lt;p&gt;Also called &lt;strong&gt;&lt;em&gt;Character Vectors&lt;/em&gt;&lt;/strong&gt; follow &lt;strong&gt;C&lt;/strong&gt; type escape character &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Combining Characters to Numbers !&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;test &amp;lt;- paste(c(&quot;X,&quot;Y&quot;),1:10,sep=&quot;&quot;)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The Output should look like &lt;strong&gt;&lt;em&gt;“X1”  “Y2”  “X3”  “Y4”  “X5”  “Y6”  “X7”  “Y8”  “X9”  “Y10”&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;&lt;em&gt;paste()&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;Function takes an arbitrary number of arguments and concatenates them one by
-one into character strings.&lt;/p&gt;
-
-  &lt;p&gt;The arguments are by default separated in the result by a single blank character, but this can be
-changed by the named argument, &lt;code class=&quot;highlighter-rouge&quot;&gt;sep=&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;That’s all for the Part 1 :D , We will be posting Part 2 soon&lt;/em&gt;&lt;/strong&gt;
-** We will look into arrays, factors, table, matrix, data frames in the next part **&lt;/p&gt;
-</description>
-        <pubDate>Wed, 25 May 2016 16:36:00 +0000</pubDate>
-        <link>http://pclub.in/tutorial/2016/05/25/rpart1.html</link>
-        <guid isPermaLink="true">http://pclub.in/tutorial/2016/05/25/rpart1.html</guid>
-        
-        <category>R</category>
-        
-        <category>Summers</category>
-        
-        <category>Analytics</category>
-        
-        <category>Data Plotting</category>
-        
-        <category>Statistics</category>
-        
-        
-        <category>tutorial</category>
         
       </item>
     

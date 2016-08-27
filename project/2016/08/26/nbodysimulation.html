@@ -8,15 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Setting up a CI for pclub.in</title>
-  <meta name="description" content="To begin with, I urge you to have a look at our Github repo for this website.Sure, Github serves the purpose of keeping our code public and accessible, and a...">
+  <title>N-Body Simulation</title>
+  <meta name="description" content="N-body simulation">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/pclub/2016/05/13/pclubci.html">
+  <link rel="canonical" href="http://pclub.in/project/2016/08/26/nbodysimulation.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -107,62 +107,35 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Setting up a CI for pclub.in</h1>
+    <h1 class="inpost-title" itemprop="name headline">N-Body Simulation</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/pclub/2016/05/13/pclubci.html#disqus_thread" data-disqus-identifier="/pclub/2016/05/13/pclubci"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/project/2016/08/26/nbodysimulation.html#disqus_thread" data-disqus-identifier="/project/2016/08/26/nbodysimulation"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <p>To begin with, I urge you to have a look at <a href="https://github.com/pclubiitk/pclub.in">our Github repo</a> for this website.
-Sure, Github serves the purpose of keeping our code public and accessible, and also lets users open issues and pull requests for the same.</p>
+    <h1 id="n-body-simulationhttpsagnikbgithubiosimulati-on"><a href="http://sagnikb.github.io/Simulati-ON/">N-body simulation</a></h1>
 
-<p><img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" style="width: 35%; margin-left: auto; margin-right: auto;" /></p>
+<p>The N-body simulation is an interesting topic in Physics, and finds applications in astrophysics, biomoecular studies and other areas of science. Mathematical soultions of this problem are not possible, so numerical methods are necessary for visualisation. The problem basically involves several bodies with defined properties and also a well defined force that acts between each of these bodies, and involves studying how the system evolves with time. Parallel programming is used for increasing performance, and problems of this type are ideally suited for the parallel programming paradigm.</p>
 
-<p>But more, we wanted to use Github as a medium to build the website automatically on commits to the master, and deploy the website as well.
-This would mean, anyone can write a post, or fix a file using Github’s online interface, send a pull request; which can be merged online as well. At no point was there a need to download the repository, and yet, the website would build in less than 2 minutes, and be updated for public. Isn’t this cool? Hang on for how this was done.</p>
+<p><img src="http://raw.githubusercontent.com/sagnikb/Simulati-ON/master/Pics/simulation_sample.png" alt="image" /></p>
 
-<h2 id="some-basic-information">Some basic information</h2>
-
-<p>A lesser known fact is that Github also allows you to host webpages.
-For instance, this website is also hosted on Github at <a href="https://pclubiitk.github.io/pclub.in">pclubiitk.github.io/pclub.in</a>.
-For this, you just need to keep your html files in a branch called <code class="highlighter-rouge">gh-pages</code> for a project repo, or in the master of a repo called <code class="highlighter-rouge">username.github.io</code>.
-This is itself a big topic to cover here.</p>
-
-<p>An even lesser known fact is that you can use Github to build your static webpages for you automatically, using Continous Integration (CI).
-This is only true for Jekyll though.</p>
-
-<h2 id="the-challenge">The challenge</h2>
-
-<p>On deciding about setting up a CI for this website, I had several options in hand. But before that, we had several constraints as well. Some of them were:</p>
+<p>^ This is a screenshot of a simulation in action with 5 bodies. The program works well with 20 bodies.</p>
 
 <ul>
-  <li>The website uses custom gems. Github’s automatic page building would not build it.</li>
-  <li>We host this website on a server inside IIT Kanpur. That server is not directly visible to the outside world, and only the HTTPS port is forwarded. So an external CI cannot send its built files to the server directly.</li>
-  <li>Deploying a local CI seemed like an overkill. Plus, IIT Kanpur’s internally deployed Gitlab wasn’t fully ready to be able to handle builds etc yet.</li>
-  <li>Even if one could somehow build the files, it would not be a direct task to get the files inside IIT Kanpur.</li>
-  <li>Providing permission to an external CI to push to the repository would require committing the private key, which is insecure.</li>
+  <li>OpenACC is used for parallel programming</li>
+  <li>Gnuplot is used for visulisation of data</li>
+  <li>Performance improvement over sequential code easily apparent</li>
+  <li>Uses compiler pgcc. For testing of non parallel programs, the files can also be compiled using gcc</li>
 </ul>
 
-<h2 id="the-resolution">The resolution</h2>
+<p>Received the <strong>Best Research Project</strong> during the Science &amp; Technology Summer
+Camp 2016.</p>
 
-<p>We finally used <a href="https://travis-ci.org/">Travis CI</a> for this purpose. Travis is an online Continous Integration service, which offers to build your repositories for free, within some limits. You can customize how to build, and what else to do along with that much information. We set it up to build the code, and push it to the <code class="highlighter-rouge">gh-pages</code> branch of the same repo.</p>
-
-<h4 id="giving-travis-push-access-to-the-repository">Giving travis push access to the repository</h4>
-<p>For travis to be able to push to the repo, it needed to be provided a ‘deploy-key’, a key which provides access to a repository to the person having the private counterpart of that deploy key. I generated a SSH-key pair, and added the public key to Github on this repository. As for the private, it had to be inside the repository. But then anyone could copy it and pretend to be our CI. The way out was <a href="https://docs.travis-ci.com/user/encrypting-files/">this</a>. Turns out, Travis developers thought of this, and provided you ways to encrypt and decrypt files without storing the password anywhere. So finally, I ended up committing an encrypted version of the deploy-key, and then decrypting it inside the build machine during building. Have a look at that article to know how it can be done.</p>
-
-<h4 id="deploying-to-the-branch">Deploying to the branch</h4>
-
-<p>This was fairly easy. We make a folder named <code class="highlighter-rouge">_site</code>, and execute <code class="highlighter-rouge">git init</code>, <code class="highlighter-rouge">git remote ...</code> and <code class="highlighter-rouge">git pull</code> in that. We also checkout the <code class="highlighter-rouge">gh-pages</code> branch. This is followed by the build. So basically, the required files get updated inside the <code class="highlighter-rouge">_site</code> folder. We add all files to git, and commit. This is then pushed to the origin, and we have the up to date build files in the <code class="highlighter-rouge">gh-pages</code> branch.</p>
-
-<h4 id="getting-the-files-inside-the-server">Getting the files inside the server</h4>
-
-<p>Since the pclub server is running blind to the world, there was no direct way for it to know that the repository has been updated. <code class="highlighter-rouge">webhooks</code> came to the rescue here. So Github has another gem, which lets you execute arbitrary actions on events. So first, I enabled PHP on the server which is serving this website, followed by a randomly named PHP script, which checks for a valid request, and pulls the updated repository from Git.</p>
-
-<p>Think of it as a way to tell the machine that the code has been updated online, and it should pull in the new code. So currently, on every commit, the server will pull in the updated website. This is very convenient, as you can imagine, and simplifies the task of maintaining the website considerably.</p>
-
-<p>Of note, the original version of <a href="https://gist.github.com/sakshamsharma/209054260cd5a55c5789e20597f8a423">this Gist</a> was a major help in all this.</p>
+<p>Website: <a href="http://sagnikb.github.io/Simulati-ON/">http://sagnikb.github.io/Simulati-ON/</a>
+LaTeX Report: <a href="http://github.com/sagnikb/documentation/report.pdf">report.pdf</a>
+Github Wiki: <a href="https://github.com/sagnikb/Simulati-ON/wiki">Simulati-ON Wiki</a></p>
 
   </div>
 
@@ -170,8 +143,8 @@ This is only true for Jekyll though.</p>
  
  
 <div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/tutorial/data%20analytics/2016/05/25/rpart1.html" title="
-&lt;p class=hoveratas&gt;Introduction to R (Part 1)&lt;/p&gt; &lt;p class=hoverbawah&gt;# Basics Of R ### Why Learn R ? -...&lt;/p&gt;
+<a id="route" class="tooltip-right" href="/open%20source/2016/08/27/floss.html" title="
+&lt;p class=hoveratas&gt;Open Source Software&lt;/p&gt; &lt;p class=hoverbawah&gt;## Introduction Free Libre and open-source software (FLOSS) is computer...&lt;/p&gt;
 "><i class="typcn typcn-chevron-left" style="    font-size: 30px;
     position: relative;
    
@@ -181,8 +154,8 @@ This is only true for Jekyll though.</p>
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/tutorial/vim/2016/05/09/nerdcommenter.html" title="
-&lt;p class=hoveratas&gt;NERDCommenter&lt;/p&gt; &lt;p class=hoverbawah&gt;Plugin: NERDCommenter NERDCommenter is an awesome plugin for commenting code....&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/tutorial/algos/2016/08/22/dpconvex.html" title="
+&lt;p class=hoveratas&gt;Dynamic Programming Optimization with Convex Hull Trick&lt;/p&gt; &lt;p class=hoverbawah&gt;Dynamic Programming Optimisation with Convex Hull Trick : Why Dynamic...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -193,19 +166,21 @@ This is only true for Jekyll though.</p>
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2016-05-13T23:00:20+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> May 13, 2016</time>
+  <time datetime="2016-08-26T19:30:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Aug 26, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      <a href="http://acehack.org" target="_blank" style="color: #fff;">Saksham Sharma</a>
+      <a href="http://sagnikb.github.io/Simulati-ON/" target="_blank" style="color: #fff;">sagnikb</a>
       
     </span>
   </span>
    
     |
   
-  <a href="/tags.html#meta" style="color: #fff;"><i class="typcn typcn-tags"></i> meta</a>
+  <a href="/tags.html#summer16" style="color: #fff;"><i class="typcn typcn-tags"></i> summer16</a>
+  
+  <a href="/tags.html#project" style="color: #fff;"><i class="typcn typcn-tags"></i> project</a>
   
   </p>
 
@@ -230,8 +205,8 @@ This is only true for Jekyll though.</p>
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/pclub/2016/05/13/pclubci';
-    this.page.identifier = '/pclub/2016/05/13/pclubci';
+    this.page.url = 'https://pclub.in/project/2016/08/26/nbodysimulation';
+    this.page.identifier = '/project/2016/08/26/nbodysimulation';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

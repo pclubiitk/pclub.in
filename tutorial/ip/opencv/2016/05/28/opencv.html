@@ -8,15 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Setting up a CI for pclub.in</title>
-  <meta name="description" content="To begin with, I urge you to have a look at our Github repo for this website.Sure, Github serves the purpose of keeping our code public and accessible, and a...">
+  <title>Image Processing using OpenCV</title>
+  <meta name="description" content="OpenCV is the most widely used Computer Vision Library out there. It isvery powerful and offers many features suiting the needs of anyone requiringImage Proc...">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/pclub/2016/05/13/pclubci.html">
+  <link rel="canonical" href="http://pclub.in/tutorial/ip/opencv/2016/05/28/opencv.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -107,62 +107,128 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Setting up a CI for pclub.in</h1>
+    <h1 class="inpost-title" itemprop="name headline">Image Processing using OpenCV</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/pclub/2016/05/13/pclubci.html#disqus_thread" data-disqus-identifier="/pclub/2016/05/13/pclubci"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/tutorial/ip/opencv/2016/05/28/opencv.html#disqus_thread" data-disqus-identifier="/tutorial/ip/opencv/2016/05/28/opencv"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <p>To begin with, I urge you to have a look at <a href="https://github.com/pclubiitk/pclub.in">our Github repo</a> for this website.
-Sure, Github serves the purpose of keeping our code public and accessible, and also lets users open issues and pull requests for the same.</p>
+    <p>OpenCV is the most widely used Computer Vision Library out there. It is
+very powerful and offers many features suiting the needs of anyone requiring
+Image Processing. This tutorial is a slightly modified version of
+<a href="http://students.iitk.ac.in/robocon/docs/doku.php?id=programming:image_processing_intro">this</a>
+with a simpler method of compiling.</p>
 
-<p><img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" style="width: 35%; margin-left: auto; margin-right: auto;" /></p>
+<h2 id="installation">Installation</h2>
 
-<p>But more, we wanted to use Github as a medium to build the website automatically on commits to the master, and deploy the website as well.
-This would mean, anyone can write a post, or fix a file using Github’s online interface, send a pull request; which can be merged online as well. At no point was there a need to download the repository, and yet, the website would build in less than 2 minutes, and be updated for public. Isn’t this cool? Hang on for how this was done.</p>
+<p>The simplest possible install is always from the repositories.</p>
 
-<h2 id="some-basic-information">Some basic information</h2>
+<p>For Debian/Ubuntu/Mint:</p>
 
-<p>A lesser known fact is that Github also allows you to host webpages.
-For instance, this website is also hosted on Github at <a href="https://pclubiitk.github.io/pclub.in">pclubiitk.github.io/pclub.in</a>.
-For this, you just need to keep your html files in a branch called <code class="highlighter-rouge">gh-pages</code> for a project repo, or in the master of a repo called <code class="highlighter-rouge">username.github.io</code>.
-This is itself a big topic to cover here.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install libopencv-dev
+</code></pre>
+</div>
 
-<p>An even lesser known fact is that you can use Github to build your static webpages for you automatically, using Continous Integration (CI).
-This is only true for Jekyll though.</p>
+<p>For Other distros like Arch, you can find the respective commands on the internet.</p>
 
-<h2 id="the-challenge">The challenge</h2>
+<p>If you want python support too, you will need to install the python support by:</p>
 
-<p>On deciding about setting up a CI for this website, I had several options in hand. But before that, we had several constraints as well. Some of them were:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install python-opencv
+</code></pre>
+</div>
+
+<p>The repository versions of OpenCV are usually not the latest versions and you might miss
+some features.</p>
+
+<p>If you need specific features or a newer version of OpenCV (let’s say for python3 support),
+you could look <a href="milq.github.io/install-opencv-ubuntu-debian">here</a> for a very good guide
+on compiling OpenCV from source.</p>
+
+<h2 id="compiling-and-running-programs-in-c">Compiling and running Programs in C++</h2>
+
+<p>Now that OpenCV has been installed, you might want to run a program to see if it is working
+properly. I would suggest the following program:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;opencv2/opencv.hpp&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">cv</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="c1">// A camera object
+</span>  <span class="n">VideoCapture</span> <span class="n">cam</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+  <span class="c1">// An image object
+</span>  <span class="n">Mat</span> <span class="n">img</span><span class="p">;</span>
+
+  <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="c1">// Storing a frame from camera to image
+</span>    <span class="n">cam</span> <span class="o">&gt;&gt;</span> <span class="n">img</span><span class="p">;</span>
+
+    <span class="c1">// Do Your Operations Here
+</span>
+    <span class="c1">// Displaying image in a window named "Image"
+</span>    <span class="n">imshow</span><span class="p">(</span><span class="s">"Image"</span><span class="p">,</span><span class="n">img</span><span class="p">);</span>
+
+    <span class="c1">// Waiting for a keypress for 5ms
+</span>
+    <span class="cm">/**
+      * WaitKey is very important.
+      * Even if you don't want a delay/keypress you should
+      * use it with minimum delay otherwise, the gui does not update
+      */</span>
+    <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">waitKey</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+
+    <span class="c1">// Quit on pressing q
+</span>    <span class="k">if</span><span class="p">(</span> <span class="n">c</span> <span class="o">==</span> <span class="sc">'q'</span> <span class="o">||</span> <span class="n">c</span> <span class="o">==</span> <span class="sc">'Q'</span><span class="p">)</span>
+      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>This simple program just takes input from your webcam and displays it in a window.
+You can save it in a file named <code class="highlighter-rouge">test.cpp</code>.</p>
+
+<p>Now, in order to compile this program, execute this from the terminal:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>g++ -o Test /path/to/test.cpp <span class="sb">`</span>pkg-config --libs opencv<span class="sb">`</span>
+</code></pre>
+</div>
+
+<p>The parameter after <code class="highlighter-rouge">-o</code>, i.e., <code class="highlighter-rouge">Test</code> refers to the name of the executable created after compiling.</p>
+
+<p>After compilation finishes (hopefully without any errors), you can run this test program with:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>./Test
+</code></pre>
+</div>
+
+<p>For a more involved and complex compilation involving <code class="highlighter-rouge">cmake</code>, you can look
+<a href="http://students.iitk.ac.in/robocon/docs/doku.php?id=programming:image_processing_intro">here</a> and
+<a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_gcc_cmake/linux_gcc_cmake.html#linux-gcc-usage">here</a>.</p>
+
+<h2 id="learning-opencv">Learning OpenCV</h2>
+
+<p>Now that you can compile and execute OpenCV programs, you are ready to begin learning OpenCV.
+The OpenCV <a href="http://docs.opencv.org/2.4/doc/tutorials/tutorials.html">tutorials</a> on their website is a
+good starting point. My suggested order of reading is:</p>
 
 <ul>
-  <li>The website uses custom gems. Github’s automatic page building would not build it.</li>
-  <li>We host this website on a server inside IIT Kanpur. That server is not directly visible to the outside world, and only the HTTPS port is forwarded. So an external CI cannot send its built files to the server directly.</li>
-  <li>Deploying a local CI seemed like an overkill. Plus, IIT Kanpur’s internally deployed Gitlab wasn’t fully ready to be able to handle builds etc yet.</li>
-  <li>Even if one could somehow build the files, it would not be a direct task to get the files inside IIT Kanpur.</li>
-  <li>Providing permission to an external CI to push to the repository would require committing the private key, which is insecure.</li>
+  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/display_image/display_image.html#display-image">Load and display an image</a></li>
+  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/core/adding_images/adding_images.html#adding-images">Adding Images</a></li>
+  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/core/basic_geometric_drawing/basic_geometric_drawing.html#drawing-1">Basic Drawing</a></li>
+  <li>Followed by all tutorials in the <a href="http://docs.opencv.org/2.4/doc/tutorials/imgproc/table_of_content_imgproc/table_of_content_imgproc.html#table-of-content-imgproc">Image Processing Module</a></li>
 </ul>
 
-<h2 id="the-resolution">The resolution</h2>
+<p>The above order is because the initial tutorials tend to be more theoretical and focussing on the internals of OpenCV
+rather than actual usage.</p>
 
-<p>We finally used <a href="https://travis-ci.org/">Travis CI</a> for this purpose. Travis is an online Continous Integration service, which offers to build your repositories for free, within some limits. You can customize how to build, and what else to do along with that much information. We set it up to build the code, and push it to the <code class="highlighter-rouge">gh-pages</code> branch of the same repo.</p>
+<p>Plus, you might not need to see all the tutorials depending upon your needs.</p>
 
-<h4 id="giving-travis-push-access-to-the-repository">Giving travis push access to the repository</h4>
-<p>For travis to be able to push to the repo, it needed to be provided a ‘deploy-key’, a key which provides access to a repository to the person having the private counterpart of that deploy key. I generated a SSH-key pair, and added the public key to Github on this repository. As for the private, it had to be inside the repository. But then anyone could copy it and pretend to be our CI. The way out was <a href="https://docs.travis-ci.com/user/encrypting-files/">this</a>. Turns out, Travis developers thought of this, and provided you ways to encrypt and decrypt files without storing the password anywhere. So finally, I ended up committing an encrypted version of the deploy-key, and then decrypting it inside the build machine during building. Have a look at that article to know how it can be done.</p>
-
-<h4 id="deploying-to-the-branch">Deploying to the branch</h4>
-
-<p>This was fairly easy. We make a folder named <code class="highlighter-rouge">_site</code>, and execute <code class="highlighter-rouge">git init</code>, <code class="highlighter-rouge">git remote ...</code> and <code class="highlighter-rouge">git pull</code> in that. We also checkout the <code class="highlighter-rouge">gh-pages</code> branch. This is followed by the build. So basically, the required files get updated inside the <code class="highlighter-rouge">_site</code> folder. We add all files to git, and commit. This is then pushed to the origin, and we have the up to date build files in the <code class="highlighter-rouge">gh-pages</code> branch.</p>
-
-<h4 id="getting-the-files-inside-the-server">Getting the files inside the server</h4>
-
-<p>Since the pclub server is running blind to the world, there was no direct way for it to know that the repository has been updated. <code class="highlighter-rouge">webhooks</code> came to the rescue here. So Github has another gem, which lets you execute arbitrary actions on events. So first, I enabled PHP on the server which is serving this website, followed by a randomly named PHP script, which checks for a valid request, and pulls the updated repository from Git.</p>
-
-<p>Think of it as a way to tell the machine that the code has been updated online, and it should pull in the new code. So currently, on every commit, the server will pull in the updated website. This is very convenient, as you can imagine, and simplifies the task of maintaining the website considerably.</p>
-
-<p>Of note, the original version of <a href="https://gist.github.com/sakshamsharma/209054260cd5a55c5789e20597f8a423">this Gist</a> was a major help in all this.</p>
+<p>Best of Luck developing your OpenCV application.</p>
 
   </div>
 
@@ -170,8 +236,8 @@ This is only true for Jekyll though.</p>
  
  
 <div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/tutorial/data%20analytics/2016/05/25/rpart1.html" title="
-&lt;p class=hoveratas&gt;Introduction to R (Part 1)&lt;/p&gt; &lt;p class=hoverbawah&gt;# Basics Of R ### Why Learn R ? -...&lt;/p&gt;
+<a id="route" class="tooltip-right" href="/tutorial/2016/06/01/linuxprocess.html" title="
+&lt;p class=hoveratas&gt;Managing Processes in Linux&lt;/p&gt; &lt;p class=hoverbawah&gt;# Managing Processes in Linux ### The `ps` command Short...&lt;/p&gt;
 "><i class="typcn typcn-chevron-left" style="    font-size: 30px;
     position: relative;
    
@@ -181,8 +247,8 @@ This is only true for Jekyll though.</p>
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/tutorial/vim/2016/05/09/nerdcommenter.html" title="
-&lt;p class=hoveratas&gt;NERDCommenter&lt;/p&gt; &lt;p class=hoverbawah&gt;Plugin: NERDCommenter NERDCommenter is an awesome plugin for commenting code....&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/angularjs/web%20development/2016/05/27/angular.html" title="
+&lt;p class=hoveratas&gt;AngularJS --- Superheroic Javascript Framework&lt;/p&gt; &lt;p class=hoverbawah&gt;AngularJS: Superheroic Javascript Framework For all those who have worked...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -193,19 +259,21 @@ This is only true for Jekyll though.</p>
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2016-05-13T23:00:20+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> May 13, 2016</time>
+  <time datetime="2016-05-28T12:18:35+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> May 28, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      <a href="http://acehack.org" target="_blank" style="color: #fff;">Saksham Sharma</a>
+      <a href="http://yashsriv.github.io" target="_blank" style="color: #fff;">Yash Srivastav</a>
       
     </span>
   </span>
    
     |
   
-  <a href="/tags.html#meta" style="color: #fff;"><i class="typcn typcn-tags"></i> meta</a>
+  <a href="/tags.html#ip" style="color: #fff;"><i class="typcn typcn-tags"></i> ip</a>
+  
+  <a href="/tags.html#tutorial" style="color: #fff;"><i class="typcn typcn-tags"></i> tutorial</a>
   
   </p>
 
@@ -230,8 +298,8 @@ This is only true for Jekyll though.</p>
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/pclub/2016/05/13/pclubci';
-    this.page.identifier = '/pclub/2016/05/13/pclubci';
+    this.page.url = 'https://pclub.in/tutorial/ip/opencv/2016/05/28/opencv';
+    this.page.identifier = '/tutorial/ip/opencv/2016/05/28/opencv';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

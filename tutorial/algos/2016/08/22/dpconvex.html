@@ -8,15 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Setting up a CI for pclub.in</title>
-  <meta name="description" content="To begin with, I urge you to have a look at our Github repo for this website.Sure, Github serves the purpose of keeping our code public and accessible, and a...">
+  <title>Dynamic Programming Optimization with Convex Hull Trick</title>
+  <meta name="description" content="Dynamic Programming Optimisation with  Convex Hull Trick :">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/pclub/2016/05/13/pclubci.html">
+  <link rel="canonical" href="http://pclub.in/tutorial/algos/2016/08/22/dpconvex.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -107,62 +107,121 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Setting up a CI for pclub.in</h1>
+    <h1 class="inpost-title" itemprop="name headline">Dynamic Programming Optimization with Convex Hull Trick</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/pclub/2016/05/13/pclubci.html#disqus_thread" data-disqus-identifier="/pclub/2016/05/13/pclubci"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/tutorial/algos/2016/08/22/dpconvex.html#disqus_thread" data-disqus-identifier="/tutorial/algos/2016/08/22/dpconvex"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <p>To begin with, I urge you to have a look at <a href="https://github.com/pclubiitk/pclub.in">our Github repo</a> for this website.
-Sure, Github serves the purpose of keeping our code public and accessible, and also lets users open issues and pull requests for the same.</p>
+    <h2 id="dynamic-programming-optimisation-with--convex-hull-trick-">Dynamic Programming Optimisation with  Convex Hull Trick :</h2>
 
-<p><img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" style="width: 35%; margin-left: auto; margin-right: auto;" /></p>
-
-<p>But more, we wanted to use Github as a medium to build the website automatically on commits to the master, and deploy the website as well.
-This would mean, anyone can write a post, or fix a file using Github’s online interface, send a pull request; which can be merged online as well. At no point was there a need to download the repository, and yet, the website would build in less than 2 minutes, and be updated for public. Isn’t this cool? Hang on for how this was done.</p>
-
-<h2 id="some-basic-information">Some basic information</h2>
-
-<p>A lesser known fact is that Github also allows you to host webpages.
-For instance, this website is also hosted on Github at <a href="https://pclubiitk.github.io/pclub.in">pclubiitk.github.io/pclub.in</a>.
-For this, you just need to keep your html files in a branch called <code class="highlighter-rouge">gh-pages</code> for a project repo, or in the master of a repo called <code class="highlighter-rouge">username.github.io</code>.
-This is itself a big topic to cover here.</p>
-
-<p>An even lesser known fact is that you can use Github to build your static webpages for you automatically, using Continous Integration (CI).
-This is only true for Jekyll though.</p>
-
-<h2 id="the-challenge">The challenge</h2>
-
-<p>On deciding about setting up a CI for this website, I had several options in hand. But before that, we had several constraints as well. Some of them were:</p>
+<h4 id="why-dynamic-programming">Why Dynamic programming?</h4>
 
 <ul>
-  <li>The website uses custom gems. Github’s automatic page building would not build it.</li>
-  <li>We host this website on a server inside IIT Kanpur. That server is not directly visible to the outside world, and only the HTTPS port is forwarded. So an external CI cannot send its built files to the server directly.</li>
-  <li>Deploying a local CI seemed like an overkill. Plus, IIT Kanpur’s internally deployed Gitlab wasn’t fully ready to be able to handle builds etc yet.</li>
-  <li>Even if one could somehow build the files, it would not be a direct task to get the files inside IIT Kanpur.</li>
-  <li>Providing permission to an external CI to push to the repository would require committing the private key, which is insecure.</li>
+  <li>
+    <p>Dynamic programming is a very useful method for solving a particular class of problems in which the problem is broken into smaller sub-problems and the optimal solution of sub-problems contribute towards the optimal solution of given problem.</p>
+  </li>
+  <li>
+    <p>If you are new to Dynamic Programming you can read a good tutorial here:
+<a href="https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/">link1</a></p>
+  </li>
+  <li>
+    <p>Most of the problems solved by DP(dynamic programming) seem to be of brute force type, but you can identify them by observing the repetative calculation of sub-problems and by formulating a recursive relationship to get the optimal soution.</p>
+  </li>
 </ul>
 
-<h2 id="the-resolution">The resolution</h2>
+<h4 id="whats-a-convex-hull-trick">What’s a Convex Hull Trick?</h4>
 
-<p>We finally used <a href="https://travis-ci.org/">Travis CI</a> for this purpose. Travis is an online Continous Integration service, which offers to build your repositories for free, within some limits. You can customize how to build, and what else to do along with that much information. We set it up to build the code, and push it to the <code class="highlighter-rouge">gh-pages</code> branch of the same repo.</p>
+<ul>
+  <li>
+    <p>Although it seems to be related to the <strong>Convex Hull Algorithm</strong> from its name, but it’s not. It is a “trick”, as its name suggests, in which from a set of linear function, the function which attains the extreme value for an independent variable is obtained effeciently by some preprocessing. Only because the soultion looks like an open convex polygon it is known as “Convex Hull Trick”.</p>
+  </li>
+  <li>
+    <p>For simple understanding, consider <strong>N</strong> lines of the form:</p>
 
-<h4 id="giving-travis-push-access-to-the-repository">Giving travis push access to the repository</h4>
-<p>For travis to be able to push to the repo, it needed to be provided a ‘deploy-key’, a key which provides access to a repository to the person having the private counterpart of that deploy key. I generated a SSH-key pair, and added the public key to Github on this repository. As for the private, it had to be inside the repository. But then anyone could copy it and pretend to be our CI. The way out was <a href="https://docs.travis-ci.com/user/encrypting-files/">this</a>. Turns out, Travis developers thought of this, and provided you ways to encrypt and decrypt files without storing the password anywhere. So finally, I ended up committing an encrypted version of the deploy-key, and then decrypting it inside the build machine during building. Have a look at that article to know how it can be done.</p>
+    <p><strong>y=m<sub>i</sub>x+c<sub>i</sub></strong> , ∀ i ∈[1,<strong>N</strong>]</p>
+  </li>
+  <li>
+    <p>The problem is to find the line with extremum value of y for a particular value of x.
+Let’s consider finding the minimum value of y.</p>
 
-<h4 id="deploying-to-the-branch">Deploying to the branch</h4>
+    <p><img src="http://www.cs.wustl.edu/~pless/506/f8_3.gif" alt="img" /></p>
+  </li>
+  <li>
+    <p>From the figure you can see that the parts of lines marked as <em>lower envelope</em> gives us the required solution.</p>
+  </li>
+  <li>
+    <p>Few simple observations that can be made are :</p>
 
-<p>This was fairly easy. We make a folder named <code class="highlighter-rouge">_site</code>, and execute <code class="highlighter-rouge">git init</code>, <code class="highlighter-rouge">git remote ...</code> and <code class="highlighter-rouge">git pull</code> in that. We also checkout the <code class="highlighter-rouge">gh-pages</code> branch. This is followed by the build. So basically, the required files get updated inside the <code class="highlighter-rouge">_site</code> folder. We add all files to git, and commit. This is then pushed to the origin, and we have the up to date build files in the <code class="highlighter-rouge">gh-pages</code> branch.</p>
+    <ul>
+      <li>A part of line can be the solution for a <strong>continuous range</strong> of <strong>x</strong>.</li>
+      <li>As <strong>x</strong> increases, the slope of the required line keeps on decreasing and these parts of lines form an open convex hull.</li>
+    </ul>
+  </li>
+  <li>
+    <p>So, if you are given the set of lines initially, the you can sort the lines with decresasing value of slope and add then build the solution based on their point of intersection.</p>
 
-<h4 id="getting-the-files-inside-the-server">Getting the files inside the server</h4>
+    <p><img src="http://img1.mnimgs.com/img/shared/userimages/mn_images/image/Tr1.png" alt="img1" /></p>
+  </li>
+  <li>
+    <p>To build the solution you should discard the lines that can’t be a part of the solution. As you can see the above image, the slopes of lines are such that :</p>
 
-<p>Since the pclub server is running blind to the world, there was no direct way for it to know that the repository has been updated. <code class="highlighter-rouge">webhooks</code> came to the rescue here. So Github has another gem, which lets you execute arbitrary actions on events. So first, I enabled PHP on the server which is serving this website, followed by a randomly named PHP script, which checks for a valid request, and pulls the updated repository from Git.</p>
+    <p>m<sub>m</sub> &gt; m<sub>l</sub> &gt; m<sub>n</sub></p>
 
-<p>Think of it as a way to tell the machine that the code has been updated online, and it should pull in the new code. So currently, on every commit, the server will pull in the updated website. This is very convenient, as you can imagine, and simplifies the task of maintaining the website considerably.</p>
+    <p>First, consider you have only lines <strong>m</strong> &amp; <strong>l</strong>. Then, add the line n to the set of line. Here, you can see that the x-co-ordinate of point <strong>C</strong> is less than the x-co-ordinate of point <strong>A</strong>. Hence, the line <strong>n</strong> attains minimum value even before the line <strong>l</strong>. From this you can see that the line <strong>l</strong> can be discarded from the solution set.</p>
+  </li>
+  <li>After discarding all such unnecessary lines, you can maintain the lines with decresing slope and the x-co-ordinate of its point of intersection with its previous line. (Observe that these x-co-ordinates will be in increasing order).</li>
+  <li>
+    <p>For the query, you can do <strong>binary search</strong> on the x-co-ordinate  of point of intersections and and get the line with the minimum value of <strong>y</strong> effeciently in <strong>Ο</strong>(log<strong>N</strong>), where <strong>N</strong> is number of lines.</p>
+  </li>
+  <li>
+    <p>PreProcessing time: <strong>Ο</strong>(<strong>N</strong>log<strong>N</strong>).</p>
+  </li>
+  <li>
+    <p>There is also a fully <strong>dynamic variant</strong> of this Convex Hull Trick in which the lines are added during the query time. For this a data structure like <a href="https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/#set"><strong>set</strong></a> can be used which maintain the sorted list of slopes of lines dynamically. The only difference is after each insertion of a new line(insertion of slope) into set, we check its intersection with its neighbouring elements in <strong>set</strong> and decide wheathter to discard it or not using the same condition as stated above. We should also check if any line already present in the set is discarded after the insertion of the line.</p>
+  </li>
+  <li>You can also try solving this problem <a href="https://www.codechef.com/JAN16/problems/CYCLRACE/">here</a>, which is based on direct implementation of its dynamic variant.</li>
+</ul>
 
-<p>Of note, the original version of <a href="https://gist.github.com/sakshamsharma/209054260cd5a55c5789e20597f8a423">this Gist</a> was a major help in all this.</p>
+<h4 id="how-can-you-optimise-dp-with-convex-hull-trick">How can you optimise DP with Convex Hull Trick?</h4>
+
+<ul>
+  <li>
+    <p>In some specific problems that can be solved by <strong>Dynamic Programming</strong> we can do faster calculation of the state using the Convex Hull Trick. In these type of problems, the recursive relation between the states is as follows:</p>
+
+    <ul>
+      <li><strong>dp<sub>i</sub> = min(b<sub>j</sub>*a<sub>i</sub> + dp<sub>j</sub>)</strong> ,where j ∈ [1,i-1]</li>
+      <li><strong>b<sub>i</sub></strong> &gt; <strong>b<sub>j</sub></strong> ,∀ i&lt;j.</li>
+    </ul>
+
+    <p>Our task is to calculate <strong>dp<sub>N</sub></strong> from this relation. Here <strong>b<sub>i</sub></strong> and <strong>dp<sub>i</sub></strong> can be analogously interpreted as the <strong>slope</strong> and <strong>y-intercept</strong> for a line, and our problem of calculating the i’th state can be viewed as finding the minimum value of a line for x-co-ordinate <strong>a<sub>i</sub></strong>,which can be effeciently done using the convex hull trick.
+The slopes of the are given in the decreasing order here, so after calculating <strong>dp<sub>i</sub></strong> we can add a line with slope <strong>b<sub>i</sub></strong> and y-intercept <strong>dp<sub>i</sub></strong> directly to the right of the sorted list maintained for calculating further states.</p>
+  </li>
+  <li>
+    <p>In the above problem if we directly calculate <strong>dp<sub>i</sub></strong> by taking i-1 steps for each i, the the time complexity turns out to be <strong>Ο</strong>(<strong>N<sup>2</sup></strong>), but by using this optimisation technique we can calculate each state in <strong>Ο</strong>(log<strong>N</strong>) and the total complexity of the problem reduces to <strong>Ο</strong>(<strong>N</strong>log<strong>N</strong>)</p>
+  </li>
+  <li>This problem can also be more constrained by a condition:
+    <ul>
+      <li><strong>a<sub>i</sub></strong> &lt; <strong>a<sub>j</sub></strong>, ∀ i&lt;j.</li>
+    </ul>
+
+    <p>In this case, as we know that the x-co-ordinates are in increasing order, we can just maintain a pointer to the line giving minimunm value and then update the pointer to the next line according to the query. Here the steps taken for binary search are replaced by some amortised constant steps to update the pointer to the next lines(decreasing slope order). So, the calculation of each
+state takes time <strong>Ο</strong>(<strong>1</strong>) and the total time complexity reduces to <strong>Ο</strong>(<strong>N</strong>)</p>
+  </li>
+  <li>
+    <p>If there if no constraints given for <strong>a<sub>i</sub></strong> and <strong>b<sub>i</sub></strong>, then you can relate the problem with the dynamic variant of Convex Hull Trick. For this problem, we use the data structure <strong>set</strong> that maintains the lines in decreasing order of slopes along with dynamic insertions. Each insertion of line into <strong>set</strong> takes time <strong>Ο</strong>(log<strong>N</strong>) and calculation of each state takes time <strong>Ο</strong>(log<strong>N</strong>). So, the total time complexity will be <strong>Ο</strong>(<strong>N</strong>log<strong>N</strong>). You should be <strong>cautious</strong> in using <strong>set</strong> when you are given a constraint  for <strong>b<sub>i</sub></strong> because even though by both ways you get <strong>Ο</strong>(<strong>N</strong>log<strong>N</strong>), <strong>set</strong> has a high proportionality time constant.</p>
+  </li>
+  <li>You can try solving some problems here :
+ <a href="http://codeforces.com/contest/536/problem/C">link1</a>
+ <a href="http://codeforces.com/contest/319/problem/C">link2</a>
+ <a href="http://www.spoj.com/problems/NKLEAVES/en/">link3</a></li>
+  <li>Here’s an image just for fun :)
+<a href="https://cdn.meme.am/instances/500x/54146722.jpg">img</a></li>
+</ul>
+
+<p>………………………………………</p>
 
   </div>
 
@@ -170,8 +229,8 @@ This is only true for Jekyll though.</p>
  
  
 <div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/tutorial/data%20analytics/2016/05/25/rpart1.html" title="
-&lt;p class=hoveratas&gt;Introduction to R (Part 1)&lt;/p&gt; &lt;p class=hoverbawah&gt;# Basics Of R ### Why Learn R ? -...&lt;/p&gt;
+<a id="route" class="tooltip-right" href="/project/2016/08/26/nbodysimulation.html" title="
+&lt;p class=hoveratas&gt;N-Body Simulation&lt;/p&gt; &lt;p class=hoverbawah&gt;# [N-body simulation](http://sagnikb.github.io/Simulati-ON/) The N-body simulation is an interesting topic...&lt;/p&gt;
 "><i class="typcn typcn-chevron-left" style="    font-size: 30px;
     position: relative;
    
@@ -181,8 +240,8 @@ This is only true for Jekyll though.</p>
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/tutorial/vim/2016/05/09/nerdcommenter.html" title="
-&lt;p class=hoveratas&gt;NERDCommenter&lt;/p&gt; &lt;p class=hoverbawah&gt;Plugin: NERDCommenter NERDCommenter is an awesome plugin for commenting code....&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/competitive/2016/08/13/SummerContestReport.html" title="
+&lt;p class=hoveratas&gt;Practice Programming Contest, Summer 2016&lt;/p&gt; &lt;p class=hoverbawah&gt;Contest Summary: Summer 2016 This summer, Programming Club IIT Kanpur...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -193,19 +252,23 @@ This is only true for Jekyll though.</p>
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2016-05-13T23:00:20+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> May 13, 2016</time>
+  <time datetime="2016-08-22T20:45:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Aug 22, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      <a href="http://acehack.org" target="_blank" style="color: #fff;">Saksham Sharma</a>
+      Ginuga Saketh
       
     </span>
   </span>
    
     |
   
-  <a href="/tags.html#meta" style="color: #fff;"><i class="typcn typcn-tags"></i> meta</a>
+  <a href="/tags.html#tutorial" style="color: #fff;"><i class="typcn typcn-tags"></i> tutorial</a>
+  
+  <a href="/tags.html#Dynamic Programming" style="color: #fff;"><i class="typcn typcn-tags"></i> Dynamic Programming</a>
+  
+  <a href="/tags.html#competitive" style="color: #fff;"><i class="typcn typcn-tags"></i> competitive</a>
   
   </p>
 
@@ -230,8 +293,8 @@ This is only true for Jekyll though.</p>
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/pclub/2016/05/13/pclubci';
-    this.page.identifier = '/pclub/2016/05/13/pclubci';
+    this.page.url = 'https://pclub.in/tutorial/algos/2016/08/22/dpconvex';
+    this.page.identifier = '/tutorial/algos/2016/08/22/dpconvex';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

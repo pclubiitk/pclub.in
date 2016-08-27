@@ -3,9 +3,39 @@
   
     
     <url>
-      <loc>http://pclub.in/2016/08/27/2016-08-23-dpconvex.html</loc>
+      <loc>http://pclub.in/open%20source/2016/08/27/floss.html</loc>
       
-        <lastmod>2016-08-27T14:11:40+00:00</lastmod>
+        <lastmod>2016-08-27T11:28:30+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://pclub.in/project/2016/08/26/nbodysimulation.html</loc>
+      
+        <lastmod>2016-08-26T19:30:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://pclub.in/tutorial/algos/2016/08/22/dpconvex.html</loc>
+      
+        <lastmod>2016-08-22T20:45:00+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -48,22 +78,7 @@
   
     
     <url>
-      <loc>http://pclub.in/project/2016/07/30/nbodysimulation.html</loc>
-      
-        <lastmod>2016-07-30T19:30:00+00:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://pclub.in/tutorial/2016/07/27/html5gamedev.html</loc>
+      <loc>http://pclub.in/tutorial/game%20dev/2016/07/27/html5gamedev.html</loc>
       
         <lastmod>2016-07-27T10:35:20+00:00</lastmod>
       
@@ -108,7 +123,7 @@
   
     
     <url>
-      <loc>http://pclub.in/tutorial/ip/2016/05/28/opencv.html</loc>
+      <loc>http://pclub.in/tutorial/ip/opencv/2016/05/28/opencv.html</loc>
       
         <lastmod>2016-05-28T12:18:35+00:00</lastmod>
       
@@ -138,7 +153,7 @@
   
     
     <url>
-      <loc>http://pclub.in/tutorial/2016/05/25/rpart1.html</loc>
+      <loc>http://pclub.in/tutorial/data%20analytics/2016/05/25/rpart1.html</loc>
       
         <lastmod>2016-05-25T16:36:00+00:00</lastmod>
       
@@ -228,7 +243,7 @@
   
     
     <url>
-      <loc>http://pclub.in/tutorial/2016/04/29/codingprimer.html</loc>
+      <loc>http://pclub.in/tutorial/beginner/2016/04/29/codingprimer.html</loc>
       
         <lastmod>2016-04-29T18:20:21+00:00</lastmod>
       
@@ -250,7 +265,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2016-08-27T14:11:40+00:00</lastmod>
+        <lastmod>2016-08-27T14:27:52+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -268,7 +283,7 @@
     <url>
       <loc>http://pclub.in/about.html</loc>
       
-        <lastmod>2016-08-27T14:11:40+00:00</lastmod>
+        <lastmod>2016-08-27T14:27:52+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -286,7 +301,7 @@
     <url>
       <loc>http://pclub.in/archive.html</loc>
       
-        <lastmod>2016-08-27T14:11:40+00:00</lastmod>
+        <lastmod>2016-08-27T14:27:52+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -304,7 +319,7 @@
     <url>
       <loc>http://pclub.in/contact.html</loc>
       
-        <lastmod>2016-08-27T14:11:40+00:00</lastmod>
+        <lastmod>2016-08-27T14:27:52+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -332,7 +347,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2016-08-27T14:11:40+00:00</lastmod>
+        <lastmod>2016-08-27T14:27:52+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -355,7 +370,7 @@
     <url>
       <loc>http://pclub.in/projects.html</loc>
       
-        <lastmod>2016-08-27T14:11:40+00:00</lastmod>
+        <lastmod>2016-08-27T14:27:52+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -378,7 +393,7 @@
     <url>
       <loc>http://pclub.in/tags.html</loc>
       
-        <lastmod>2016-08-27T14:11:40+00:00</lastmod>
+        <lastmod>2016-08-27T14:27:52+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -396,7 +411,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2016-08-27T14:11:40+00:00</lastmod>
+        <lastmod>2016-08-27T14:27:52+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -414,7 +429,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2016-08-27T14:11:40+00:00</lastmod>
+        <lastmod>2016-08-27T14:27:52+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -432,7 +447,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2016-08-27T14:11:40+00:00</lastmod>
+        <lastmod>2016-08-27T14:27:52+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
