@@ -8,15 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Handwriting Recognition By Machine Learning</title>
-  <meta name="description" content="Hand writing Recognition by Machine Learning">
+  <title>Forex Prediction</title>
+  <meta name="description" content="PREDICTING FOREIGN EXCHANGE RATES">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/project/2016/09/23/Ml_HR.html">
+  <link rel="canonical" href="http://pclub.in/project/2016/09/23/Forex.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -107,63 +107,45 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Handwriting Recognition By Machine Learning</h1>
+    <h1 class="inpost-title" itemprop="name headline">Forex Prediction</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/project/2016/09/23/Ml_HR.html#disqus_thread" data-disqus-identifier="/project/2016/09/23/Ml_HR"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/project/2016/09/23/Forex.html#disqus_thread" data-disqus-identifier="/project/2016/09/23/Forex"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <h1 id="hand-writing-recognition-by-machine-learninghttpsshanugithubiomlhr"><a href="http://sshanu.github.io/ml_HR/">Hand writing Recognition by Machine Learning</a></h1>
+    <h1 id="predicting-foreign-exchange-rates">PREDICTING FOREIGN EXCHANGE RATES</h1>
 
-<p>This project uses Neural Network Modelling  for identification of Handwriting from Optical Images.
-Artificial Neural Network is a network inspired by biological neural networks and is one of the most advanced techniques in Artificial Intelligence research.
-Our software  can recognize handwritten text from any image by first segmenting the image into segments by using binary logistic regressions and brute force segementation and then applying multi class logistic regression for character recognition on these segments.
-Our Neural Network Model  can learn any individual person’s handwriting since it  learns English Alphabets and Hindu Arabic from any labelled data of images.
-We trained our model over a data set containing over 65000 data points.
-The CNN model used advanced Convolution Neural Network so that it could train even over data points with less dimensions.</p>
+<h3 id="about-the-project">About the project</h3>
 
-<p><img src="https://github.com/Sshanu/ml_HR/raw/gh-pages/CNNArchitecture.jpg" alt="image,center" /></p>
+<p>The project is designed to predict foreign exchange rates. It takes opening , maximum and minimum price as inputs and learns and create the model from the trainig data and then you can use that model to predict the closing price of foreign exchange. Training data should be large enough (at least 60,000 sets) in order to predict the output precisely. In our project we are testing our model on a validation set and printing the accuracy as final output.</p>
 
-<p>^ This is a screenshot of our program predicting a character and also show how our network features works.</p>
+<h3 id="what-we-learnt">What we learnt</h3>
 
-<ul>
-  <li>iTorch Notebook is used for executing the code.</li>
-  <li>Torch Framework is used for implementing the Neural Network Architecture.</li>
-  <li>This software can be used in varied number of applications such as:</li>
-  <li>Converting paper book libraries into digital libraries.</li>
-  <li>Identifying  an individual’s handwriting in forensic science.</li>
-  <li>Converting text written individual’s handwriting into someone else’s handwriting.</li>
-  <li>Helping blind people to read by converting text to audio.</li>
-</ul>
+<p>After completing this project we became well versed with <a href="https://www.lua.org/about.html">Lua</a> and <a href="https://en.wikipedia.org/wiki/Torch_(machine_learning)">Torch</a>. Also, one learns the basic concepts involved in the construction of <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">neural networks</a> and the various machine learning algorithms.</p>
 
-<p>Received the <strong>Special Mention Award</strong> during the Science &amp; Technology Summer
-Camp 2016.</p>
+<h3 id="how-to-use">How to use</h3>
 
-<p>Website: <a href="http://sshanu.github.io/ml_HR/">http://sshanu.github.io/ml_HR/</a>
-Project Timeline Video: <a href="https://youtu.be/z7tzr_anlJs">https://youtu.be/z7tzr_anlJs</a>
-Github Wiki: <a href="https://github.com/Sshanu/ml_HR/wiki">Ml_HR Wiki</a></p>
+<p>Install torch from <a href="https://github.com/torch/torch7/wiki/Cheatsheet">this link</a>.
+Download free forex data from <a href="http://www.histdata.com/">here</a> and convert the csv file into txt file separated by ;.
+This data will form your training and validation set. Download the code from <a href="https://github.com/adjhawar/forex_ml">here</a> and run on your system by using <em>th filename</em>
+You will also see a graph plot between the expected value and predicted value.</p>
+
+<h3 id="how-does-the-code-work">How does the code work</h3>
+
+<p>Well, the program uses gradient descent algorithm and uses a test data set to train itself. This is necessary for the program to learn and this model is saved. Now, this saved model is reloaded in a new program and there it predicts the values for the validation set. Then the actual values and obtained values are obtained on the graph.</p>
 
   </div>
 
 <div class="arrowNav">
  
- 
-<div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/project/2016/09/23/Forex.html" title="
-&lt;p class=hoveratas&gt;Forex Prediction&lt;/p&gt; &lt;p class=hoverbawah&gt;# PREDICTING FOREIGN EXCHANGE RATES ### About the project The...&lt;/p&gt;
-"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
-    position: relative;
-   
-    "></i></a>
-</div>
 
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/open%20source/2016/08/27/floss.html" title="
-&lt;p class=hoveratas&gt;Open Source Software&lt;/p&gt; &lt;p class=hoverbawah&gt;Introduction Free Libre and open-source software (FLOSS) is computer software...&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/project/2016/09/23/Ml_HR.html" title="
+&lt;p class=hoveratas&gt;Handwriting Recognition By Machine Learning&lt;/p&gt; &lt;p class=hoverbawah&gt;Hand writing Recognition by Machine Learning This project uses Neural...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -174,12 +156,12 @@ Github Wiki: <a href="https://github.com/Sshanu/ml_HR/wiki">Ml_HR Wiki</a></p>
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2016-09-23T09:30:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Sep 23, 2016</time>
+  <time datetime="2016-09-23T10:30:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Sep 23, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      <a href="http://sshanu.github.io/ml_HR/" target="_blank" style="color: #fff;">BornToCode Team</a>
+      <a href="http://adjhawar.github.io/" target="_blank" style="color: #fff;">adjhawar</a>
       
     </span>
   </span>
@@ -189,6 +171,8 @@ Github Wiki: <a href="https://github.com/Sshanu/ml_HR/wiki">Ml_HR Wiki</a></p>
   <a href="/tags.html#summer16" style="color: #fff;"><i class="typcn typcn-tags"></i> summer16</a>
   
   <a href="/tags.html#project" style="color: #fff;"><i class="typcn typcn-tags"></i> project</a>
+  
+  <a href="/tags.html#ML" style="color: #fff;"><i class="typcn typcn-tags"></i> ML</a>
   
   </p>
 
@@ -213,8 +197,8 @@ Github Wiki: <a href="https://github.com/Sshanu/ml_HR/wiki">Ml_HR Wiki</a></p>
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/project/2016/09/23/Ml_HR';
-    this.page.identifier = '/project/2016/09/23/Ml_HR';
+    this.page.url = 'https://pclub.in/project/2016/09/23/Forex';
+    this.page.identifier = '/project/2016/09/23/Forex';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

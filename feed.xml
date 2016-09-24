@@ -6,9 +6,49 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Sep 2016 11:10:18 +0000</pubDate>
-    <lastBuildDate>Sat, 24 Sep 2016 11:10:18 +0000</lastBuildDate>
+    <pubDate>Sat, 24 Sep 2016 11:13:47 +0000</pubDate>
+    <lastBuildDate>Sat, 24 Sep 2016 11:13:47 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Forex Prediction</title>
+        <description>&lt;h1 id=&quot;predicting-foreign-exchange-rates&quot;&gt;PREDICTING FOREIGN EXCHANGE RATES&lt;/h1&gt;
+
+&lt;h3 id=&quot;about-the-project&quot;&gt;About the project&lt;/h3&gt;
+
+&lt;p&gt;The project is designed to predict foreign exchange rates. It takes opening , maximum and minimum price as inputs and learns and create the model from the trainig data and then you can use that model to predict the closing price of foreign exchange. Training data should be large enough (at least 60,000 sets) in order to predict the output precisely. In our project we are testing our model on a validation set and printing the accuracy as final output.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-we-learnt&quot;&gt;What we learnt&lt;/h3&gt;
+
+&lt;p&gt;After completing this project we became well versed with &lt;a href=&quot;https://www.lua.org/about.html&quot;&gt;Lua&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Torch_(machine_learning)&quot;&gt;Torch&lt;/a&gt;. Also, one learns the basic concepts involved in the construction of &lt;a href=&quot;https://en.wikipedia.org/wiki/Artificial_neural_network&quot;&gt;neural networks&lt;/a&gt; and the various machine learning algorithms.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-use&quot;&gt;How to use&lt;/h3&gt;
+
+&lt;p&gt;Install torch from &lt;a href=&quot;https://github.com/torch/torch7/wiki/Cheatsheet&quot;&gt;this link&lt;/a&gt;.
+Download free forex data from &lt;a href=&quot;http://www.histdata.com/&quot;&gt;here&lt;/a&gt; and convert the csv file into txt file separated by ;.
+This data will form your training and validation set. Download the code from &lt;a href=&quot;https://github.com/adjhawar/forex_ml&quot;&gt;here&lt;/a&gt; and run on your system by using &lt;em&gt;th filename&lt;/em&gt;
+You will also see a graph plot between the expected value and predicted value.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-does-the-code-work&quot;&gt;How does the code work&lt;/h3&gt;
+
+&lt;p&gt;Well, the program uses gradient descent algorithm and uses a test data set to train itself. This is necessary for the program to learn and this model is saved. Now, this saved model is reloaded in a new program and there it predicts the values for the validation set. Then the actual values and obtained values are obtained on the graph.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Sep 2016 10:30:00 +0000</pubDate>
+        <link>http://pclub.in/project/2016/09/23/Forex.html</link>
+        <guid isPermaLink="true">http://pclub.in/project/2016/09/23/Forex.html</guid>
+        
+        <category>summer16</category>
+        
+        <category>project</category>
+        
+        <category>ML</category>
+        
+        
+        <category>project</category>
+        
+        <category>Project</category>
+        
+      </item>
     
       <item>
         <title>Handwriting Recognition By Machine Learning</title>
@@ -867,140 +907,6 @@ Almost the same as &lt;code class=&quot;highlighter-rouge&quot;&gt;kilall&lt;/co
         
         
         <category>tutorial</category>
-        
-      </item>
-    
-      <item>
-        <title>Image Processing using OpenCV</title>
-        <description>&lt;p&gt;OpenCV is the most widely used Computer Vision Library out there. It is
-very powerful and offers many features suiting the needs of anyone requiring
-Image Processing. This tutorial is a slightly modified version of
-&lt;a href=&quot;http://students.iitk.ac.in/robocon/docs/doku.php?id=programming:image_processing_intro&quot;&gt;this&lt;/a&gt;
-with a simpler method of compiling.&lt;/p&gt;
-
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-
-&lt;p&gt;The simplest possible install is always from the repositories.&lt;/p&gt;
-
-&lt;p&gt;For Debian/Ubuntu/Mint:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install libopencv-dev
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;For Other distros like Arch, you can find the respective commands on the internet.&lt;/p&gt;
-
-&lt;p&gt;If you want python support too, you will need to install the python support by:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install python-opencv
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The repository versions of OpenCV are usually not the latest versions and you might miss
-some features.&lt;/p&gt;
-
-&lt;p&gt;If you need specific features or a newer version of OpenCV (let’s say for python3 support),
-you could look &lt;a href=&quot;milq.github.io/install-opencv-ubuntu-debian&quot;&gt;here&lt;/a&gt; for a very good guide
-on compiling OpenCV from source.&lt;/p&gt;
-
-&lt;h2 id=&quot;compiling-and-running-programs-in-c&quot;&gt;Compiling and running Programs in C++&lt;/h2&gt;
-
-&lt;p&gt;Now that OpenCV has been installed, you might want to run a program to see if it is working
-properly. I would suggest the following program:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;opencv2/opencv.hpp&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-  &lt;span class=&quot;c1&quot;&gt;// A camera object
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;VideoCapture&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-  &lt;span class=&quot;c1&quot;&gt;// An image object
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;Mat&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// Storing a frame from camera to image
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;cam&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// Do Your Operations Here
-&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// Displaying image in a window named &quot;Image&quot;
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Image&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// Waiting for a keypress for 5ms
-&lt;/span&gt;
-    &lt;span class=&quot;cm&quot;&gt;/**
-      * WaitKey is very important.
-      * Even if you don&#39;t want a delay/keypress you should
-      * use it with minimum delay otherwise, the gui does not update
-      */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;waitKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// Quit on pressing q
-&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&#39;q&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&#39;Q&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This simple program just takes input from your webcam and displays it in a window.
-You can save it in a file named &lt;code class=&quot;highlighter-rouge&quot;&gt;test.cpp&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now, in order to compile this program, execute this from the terminal:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;g++ -o Test /path/to/test.cpp &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;pkg-config --libs opencv&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The parameter after &lt;code class=&quot;highlighter-rouge&quot;&gt;-o&lt;/code&gt;, i.e., &lt;code class=&quot;highlighter-rouge&quot;&gt;Test&lt;/code&gt; refers to the name of the executable created after compiling.&lt;/p&gt;
-
-&lt;p&gt;After compilation finishes (hopefully without any errors), you can run this test program with:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./Test
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;For a more involved and complex compilation involving &lt;code class=&quot;highlighter-rouge&quot;&gt;cmake&lt;/code&gt;, you can look
-&lt;a href=&quot;http://students.iitk.ac.in/robocon/docs/doku.php?id=programming:image_processing_intro&quot;&gt;here&lt;/a&gt; and
-&lt;a href=&quot;http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_gcc_cmake/linux_gcc_cmake.html#linux-gcc-usage&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;learning-opencv&quot;&gt;Learning OpenCV&lt;/h2&gt;
-
-&lt;p&gt;Now that you can compile and execute OpenCV programs, you are ready to begin learning OpenCV.
-The OpenCV &lt;a href=&quot;http://docs.opencv.org/2.4/doc/tutorials/tutorials.html&quot;&gt;tutorials&lt;/a&gt; on their website is a
-good starting point. My suggested order of reading is:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://docs.opencv.org/2.4/doc/tutorials/introduction/display_image/display_image.html#display-image&quot;&gt;Load and display an image&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://docs.opencv.org/2.4/doc/tutorials/core/adding_images/adding_images.html#adding-images&quot;&gt;Adding Images&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://docs.opencv.org/2.4/doc/tutorials/core/basic_geometric_drawing/basic_geometric_drawing.html#drawing-1&quot;&gt;Basic Drawing&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Followed by all tutorials in the &lt;a href=&quot;http://docs.opencv.org/2.4/doc/tutorials/imgproc/table_of_content_imgproc/table_of_content_imgproc.html#table-of-content-imgproc&quot;&gt;Image Processing Module&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The above order is because the initial tutorials tend to be more theoretical and focussing on the internals of OpenCV
-rather than actual usage.&lt;/p&gt;
-
-&lt;p&gt;Plus, you might not need to see all the tutorials depending upon your needs.&lt;/p&gt;
-
-&lt;p&gt;Best of Luck developing your OpenCV application.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 28 May 2016 12:18:35 +0000</pubDate>
-        <link>http://pclub.in/tutorial/ip/opencv/2016/05/28/opencv.html</link>
-        <guid isPermaLink="true">http://pclub.in/tutorial/ip/opencv/2016/05/28/opencv.html</guid>
-        
-        <category>ip</category>
-        
-        <category>tutorial</category>
-        
-        
-        <category>tutorial</category>
-        
-        <category>ip</category>
-        
-        <category>OpenCV</category>
         
       </item>
     
