@@ -6,9 +6,56 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Sep 2016 11:05:22 +0000</pubDate>
-    <lastBuildDate>Sat, 24 Sep 2016 11:05:22 +0000</lastBuildDate>
+    <pubDate>Sat, 24 Sep 2016 11:07:01 +0000</pubDate>
+    <lastBuildDate>Sat, 24 Sep 2016 11:07:01 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Handwriting Recognition By Machine Learning</title>
+        <description>&lt;h1 id=&quot;hand-writing-recognition-by-machine-learninghttpsshanugithubiomlhr&quot;&gt;&lt;a href=&quot;http://sshanu.github.io/ml_HR/&quot;&gt;Hand writing Recognition by Machine Learning&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;This project uses Neural Network Modelling  for identification of Handwriting from Optical Images.
+Artificial Neural Network is a network inspired by biological neural networks and is one of the most advanced techniques in Artificial Intelligence research.
+Our software  can recognize handwritten text from any image by first segmenting the image into segments by using binary logistic regressions and brute force segementation and then applying multi class logistic regression for character recognition on these segments.
+Our Neural Network Model  can learn any individual person’s handwriting since it  learns English Alphabets and Hindu Arabic from any labelled data of images.
+We trained our model over a data set containing over 65000 data points.
+The CNN model used advanced Convolution Neural Network so that it could train even over data points with less dimensions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/Sshanu/ml_HR/raw/gh-pages/CNNArchitecture.jpg&quot; alt=&quot;image,center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;^ This is a screenshot of our program predicting a character and also show how our network features works.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;iTorch Notebook is used for executing the code.&lt;/li&gt;
+  &lt;li&gt;Torch Framework is used for implementing the Neural Network Architecture.&lt;/li&gt;
+  &lt;li&gt;This software can be used in varied number of applications such as:&lt;/li&gt;
+  &lt;li&gt;Converting paper book libraries into digital libraries.&lt;/li&gt;
+  &lt;li&gt;Identifying  an individual’s handwriting in forensic science.&lt;/li&gt;
+  &lt;li&gt;Converting text written individual’s handwriting into someone else’s handwriting.&lt;/li&gt;
+  &lt;li&gt;Helping blind people to read by converting text to audio.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Received the &lt;strong&gt;Special Mention Award&lt;/strong&gt; during the Science &amp;amp; Technology Summer
+Camp 2016.&lt;/p&gt;
+
+&lt;p&gt;Website: &lt;a href=&quot;http://sshanu.github.io/ml_HR/&quot;&gt;http://sshanu.github.io/ml_HR/&lt;/a&gt;
+Project Timeline Video: &lt;a href=&quot;https://youtu.be/z7tzr_anlJs&quot;&gt;https://youtu.be/z7tzr_anlJs&lt;/a&gt;
+Github Wiki: &lt;a href=&quot;https://github.com/Sshanu/ml_HR/wiki&quot;&gt;Ml_HR Wiki&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Sep 2016 09:30:00 +0000</pubDate>
+        <link>http://pclub.in/project/2016/09/23/Ml_HR.html</link>
+        <guid isPermaLink="true">http://pclub.in/project/2016/09/23/Ml_HR.html</guid>
+        
+        <category>summer16</category>
+        
+        <category>project</category>
+        
+        
+        <category>project</category>
+        
+        <category>Project</category>
+        
+      </item>
     
       <item>
         <title>Open Source Software</title>
@@ -954,89 +1001,6 @@ rather than actual usage.&lt;/p&gt;
         <category>ip</category>
         
         <category>OpenCV</category>
-        
-      </item>
-    
-      <item>
-        <title>AngularJS --- Superheroic Javascript Framework</title>
-        <description>&lt;h3 id=&quot;angularjs-superheroic-javascript-framework&quot;&gt;AngularJS: Superheroic Javascript Framework&lt;/h3&gt;
-
-&lt;p&gt;For all those who have worked with HTML and CSS, you know very well that HTML is great for declaring static documents. It doesn’t do so &lt;strong&gt;well&lt;/strong&gt; for declaring dynamic views in web-applications. Angular lets us create expressive, readable, quick to develop dynamic web pages. AngularJS framework is written in &lt;em&gt;Javascript&lt;/em&gt;. In this article, I’m going to be introducing you to very basic AngularJS, essentially talking about directives, expressions, controllers, data binding and filters.&lt;/p&gt;
-
-&lt;h4 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Elementary&lt;/strong&gt; knowledge about HTML, CSS and Javascript.&lt;/li&gt;
-  &lt;li&gt;Desire to develop responsive and dynamic web pages.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;angular-directives&quot;&gt;Angular Directives&lt;/h4&gt;
-&lt;p&gt;Let us begin now. We’ll start with a website, albeit a simple one, that IITK’s alumni have &lt;a href=&quot;http://sid17.github.io/iitky12/#/&quot;&gt;made&lt;/a&gt;. The purpose of this website is for Y12 batch to stay in touch with batch mates and know the whereabouts of Y12 junta. A brilliant idea. We won’t be talking about the backend that is how the data is added and how the website fetches the data.&lt;/p&gt;
-
-&lt;p&gt;Now if you right click anywhere on the site and chose inspect element, a small window opens in your browser. Find the body tag and you would find something like:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;body ng-app=&#39;iitky12App&#39; ng-init=&#39;loadSettings()&#39; ng-controller=&#39;AppCtrl&#39; class=&#39;ng-scope&#39;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;So what exactly is ng-app, ng-init and ng-controller?
-These are the angular &lt;strong&gt;directives&lt;/strong&gt;. Directives are markers on a DOM (Document Object Model) element (such as an attribute, element name, comment or CSS class) that tell AngularJS’s HTML compiler to attach a specified behavior to that DOM element (e.g. via event listeners), or even to transform the DOM element and its children.
-Some common directives:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The &lt;strong&gt;ng-app&lt;/strong&gt; directive tells AngularJS that the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; element is the “owner” of an AngularJS application.&lt;/li&gt;
-  &lt;li&gt;The &lt;strong&gt;ng-init&lt;/strong&gt; directive initializes AngularJS application variables.&lt;/li&gt;
-  &lt;li&gt;The &lt;strong&gt;ng-model&lt;/strong&gt; directive binds the value of HTML controls (input, select, textarea) to application data. The ng-model directive provides a two-way binding between the model and the view.&lt;/li&gt;
-  &lt;li&gt;The &lt;strong&gt;ng-repeat&lt;/strong&gt; directive actually clones HTML elements once for each item in a collection. Consider this like a loop for HTML elements.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;angular-expressions&quot;&gt;Angular Expressions&lt;/h4&gt;
-
-&lt;p&gt;AngularJS binds data to HTML using &lt;strong&gt;Expressions&lt;/strong&gt;.AngularJS expressions can be written inside double braces:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{{ expression }}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you remove the ng-app directive, HTML will display the expression as it is, without solving it.&lt;/p&gt;
-
-&lt;h4 id=&quot;two-way-data-binding&quot;&gt;Two Way Data binding&lt;/h4&gt;
-
-&lt;p&gt;Data binding in AngularJS is the synchronization between the model and the view. When data in the model changes, the view reflects the change, and when data in the view changes, the modelis updated as well. This happens immediately and automatically, which makes sure that the model and the view is updated at all times. ng-model directive mentioned earlier, is used for two way data binding.&lt;/p&gt;
-
-&lt;h4 id=&quot;angular-controllers&quot;&gt;Angular Controllers&lt;/h4&gt;
-
-&lt;p&gt;AngularJS controllers control the data of AngularJS applications. AngularJS controllers are regular JavaScript Objects. AngularJS applications are controlled by controllers. The ng-controller directive defines the application controller. Like in the site mentioned in the beginning, in the body tag &lt;code class=&quot;highlighter-rouge&quot;&gt;ng-controller=&#39;AppCtrl&#39;&lt;/code&gt; has been used. This means AppCtrl is defined as the application controller.&lt;/p&gt;
-
-&lt;h4 id=&quot;angular-filters&quot;&gt;Angular Filters&lt;/h4&gt;
-
-&lt;p&gt;Perhaps again we should visit the site I mentioned earlier. Let us type CSE in the search bar ( :P ). Without taking any time, we get the results which have CSE linked to them. How does this happen?&lt;/p&gt;
-
-&lt;p&gt;Angular Filters!! They give us the ability to format and filter the output according to our needs. So by using two way data binding we are able to use the search text entered and then filter the database using Angular Filters. We can also use filters to Order the results. Here is the link to the &lt;a href=&quot;https://docs.angularjs.org/guide/filter&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;supporting-links&quot;&gt;Supporting Links&lt;/h4&gt;
-
-&lt;p&gt;So I guess this is enough for a start. There is much to learn, but perhaps that would be covered in another article. I present to you a few useful links:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/angular-js/home/welcome&quot;&gt;Coursera Course on AngularJS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://angularjs.org/&quot;&gt;Angular JS Website&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.w3schools.com/angular/&quot;&gt;W3Schools Tutorial on Angular&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 27 May 2016 19:05:23 +0000</pubDate>
-        <link>http://pclub.in/angularjs/web%20development/2016/05/27/angular.html</link>
-        <guid isPermaLink="true">http://pclub.in/angularjs/web%20development/2016/05/27/angular.html</guid>
-        
-        <category>web development</category>
-        
-        <category>javascript</category>
-        
-        <category>angularjs</category>
-        
-        
-        <category>angularjs</category>
-        
-        <category>web development</category>
         
       </item>
     
