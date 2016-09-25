@@ -6,9 +6,142 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Sep 2016 11:13:47 +0000</pubDate>
-    <lastBuildDate>Sat, 24 Sep 2016 11:13:47 +0000</lastBuildDate>
+    <pubDate>Sun, 25 Sep 2016 13:34:18 +0000</pubDate>
+    <lastBuildDate>Sun, 25 Sep 2016 13:34:18 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>WebD: Introduction</title>
+        <description>&lt;h1 id=&quot;web-development-lecture-series-introduction&quot;&gt;Web Development Lecture Series: Introduction&lt;/h1&gt;
+
+&lt;h2 id=&quot;basics-of-what-the-browser-does&quot;&gt;Basics of what the browser does&lt;/h2&gt;
+&lt;p&gt;Here we briefly describe the back-breaking work the browser does, every time you open your favorite websites.&lt;/p&gt;
+
+&lt;p&gt;The internet does not understand &lt;code class=&quot;highlighter-rouge&quot;&gt;facebook.com&lt;/code&gt;. Yet, everything on the internet has an address. How does this work?&lt;/p&gt;
+
+&lt;p&gt;There is a protocol called &lt;code class=&quot;highlighter-rouge&quot;&gt;IP&lt;/code&gt;, which provides a numeric address to every computer on the internet. So when you open &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;, your computer somehow figures out where the files for the website are stored. Here, we mean that your computer has to find out how to locate the machine storing the files for &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;. Here is what happens:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Your browser talks to a machine called &lt;strong&gt;DNS Server&lt;/strong&gt;, which converts &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt; to an IP address. In this case, it is &lt;code class=&quot;highlighter-rouge&quot;&gt;192.30.252.153&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;This IP address is where the files are to be found. So now your computer tells the internet to provide the files placed at that location.&lt;/li&gt;
+  &lt;li&gt;The machine pointed to by the IP address above (the computer which stores the files of the website) is called the &lt;strong&gt;server&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;The first file to be loaded is an &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; web page. This is something which describes the structure of the page, what it contains, and what all other images etc need to be fetched.&lt;/li&gt;
+  &lt;li&gt;The browser reads the &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; file, and figures out the extra files it will need to fetch for that.&lt;/li&gt;
+  &lt;li&gt;It fetches some &lt;code class=&quot;highlighter-rouge&quot;&gt;CSS&lt;/code&gt; files (for styling), some &lt;code class=&quot;highlighter-rouge&quot;&gt;JS&lt;/code&gt; files (for interactive behavior), and images.&lt;/li&gt;
+  &lt;li&gt;The above files need not all be on &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;. I could link to some image lying at some other website’s location, and the browser would repeat the same procedure as above for that file, finding that website’s location and then getting the image.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;exploring-the-files-being-received&quot;&gt;Exploring the files being received&lt;/h2&gt;
+&lt;p&gt;Here’s a simple exercise. Open a new tab in your browser, and press F12. You will see a (scary looking?) panel pop up, to your right or at the bottom. Don’t lose heart, it isn’t all that scary :) It is called &lt;em&gt;Developer Tools&lt;/em&gt;, or related terms, depending on the context.&lt;/p&gt;
+
+&lt;p&gt;Now you need to click on the tab named &lt;code class=&quot;highlighter-rouge&quot;&gt;Network&lt;/code&gt; in that panel. Once you’ve done that, open up &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It would probably look somewhat like in the images below.&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;Chrome&lt;/strong&gt;:
+&lt;img src=&quot;/assets/image/article/chrome-network.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;Firefox&lt;/strong&gt;:
+&lt;img src=&quot;/assets/image/article/firefox-network.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ll be referring to the &lt;strong&gt;Google Chrome&lt;/strong&gt; image.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Note the first entry in the list. It says &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;. That means that you made a request for &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;. You can even see when it finished in the bars on the right.&lt;/li&gt;
+  &lt;li&gt;Some &lt;code class=&quot;highlighter-rouge&quot;&gt;css&lt;/code&gt; files follow that request. They are necessary for making the page look good, and provide all the styling information.&lt;/li&gt;
+  &lt;li&gt;A little down, there is an entry called &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.png&lt;/code&gt;. That was a request made for the main PClub image, and as you can see, it made it to your screen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are plenty more files, which we don’t need to know about so soon. We urge you to give this a shot, try this yourself, and explore (Google) more on this.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;We’ll hope that you have some decent knowledge of programming, and are comfortable with using a computer.&lt;/p&gt;
+
+&lt;p&gt;In addition, it will be highly preferred if you are using a Linux/Mac machine. Windows imposes restrictions on things you can do, gives you no way of doing things it has no softwares for, and is not Open Source (which, Mac is not too). Nonetheless, we hope that you install SSH and SCP clients on your windows machines, so that you can copy your files to the IIT Kanpur servers and get your homepage ready. Linux users don’t need any special software in most cases (ensure that &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh&lt;/code&gt; command is working in your terminal).&lt;/p&gt;
+
+&lt;p&gt;Some softwares you should have installed for Windows (&lt;strong&gt;before&lt;/strong&gt; the lecture) are:
+* &lt;a href=&quot;https://winscp.net/eng/index.php&quot;&gt;WinSCP&lt;/a&gt;
+* &lt;a href=&quot;http://www.putty.org/&quot;&gt;PuTTY&lt;/a&gt;
+* &lt;a href=&quot;http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html&quot;&gt;PSCP&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Also, to be able to benefit from the lecture, you are strongly recommended to get your IITK Homepage directory made &lt;strong&gt;BEFORE&lt;/strong&gt; the lecture. If time permits, we will cover some of that too.&lt;/p&gt;
+
+&lt;p&gt;Here are the &lt;strong&gt;Official&lt;/strong&gt; instructions on how to make your homepage:
+&lt;a href=&quot;http://www.iitk.ac.in/cc/homepage/&quot;&gt;Creating Personal Homepage&lt;/a&gt;. You need to look at the section saying &lt;em&gt;For uploading and downloading and editing (using WinSCP)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;topics-to-be-covered&quot;&gt;Topics to be covered&lt;/h2&gt;
+&lt;p&gt;Here’s a brief description of what this series will attempt to cover, and what those topics are.&lt;/p&gt;
+
+&lt;h3 id=&quot;html&quot;&gt;HTML&lt;/h3&gt;
+&lt;p&gt;Say you need to design a poster, how would you go about doing that?&lt;/p&gt;
+
+&lt;p&gt;You begin with a vague idea. Perhaps you want a title, followed by a subtitle. A title image would be good too. Some text in paragraphs, and some more images.&lt;/p&gt;
+
+&lt;p&gt;Note that the things which immediately come to mind describe the structure of the poster. You could later on choose to write things in a pretty font, display images to the right; or even choose to make the font size in the paragraphs larger than the title itself. This all is secondary. What you initially need to know is, what is the structure of the document.&lt;/p&gt;
+
+&lt;p&gt;On the web, that is precisely what HTML does. HTML, (or Hyper Text Markup Language) is a templating language, meaning that it let’s you create a template of what structure you have in mind. Displaying it nicely is a whole other matter, which we will look at later.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the things which are preferably done in HTML, for a web page:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Title of the page (the one which is displayed as the name of the current tab)&lt;/li&gt;
+  &lt;li&gt;Information about the web page for browsers&lt;/li&gt;
+  &lt;li&gt;The &lt;em&gt;body&lt;/em&gt; of the webpage, which you see.&lt;/li&gt;
+  &lt;li&gt;Images in the web page&lt;/li&gt;
+  &lt;li&gt;Text in the web page&lt;/li&gt;
+  &lt;li&gt;Subdividing text into paragraphs&lt;/li&gt;
+  &lt;li&gt;Adding whitespace (newlines, spaces etc)&lt;/li&gt;
+  &lt;li&gt;Some simple styling of webpages&lt;/li&gt;
+  &lt;li&gt;Add links to other pages&lt;/li&gt;
+  &lt;li&gt;Quite more :)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;css&quot;&gt;CSS&lt;/h3&gt;
+&lt;p&gt;Now suppose you need to show something in a colored font on your webpage, or you want an image to display on the right side of the webpage instead of the left.&lt;/p&gt;
+
+&lt;p&gt;How do you do that? Thanks to the structured form of HTML, it is possible to label and identify items in your website’s structure (maybe you need to refer to all images, maybe only the images inside a particular paragraph, who knows?). Using this, you can define rules for every particular set of items on your web page.&lt;/p&gt;
+
+&lt;p&gt;HTML and CSS alone form the majority of the visible part of the websites you see. The design of the &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt; website, how &lt;code class=&quot;highlighter-rouge&quot;&gt;google.com&lt;/code&gt; looks, Google’s new material design websites; most of the styling is still done in CSS (apart from some complicated, dynamic ones). CSS is what you use to design your websites, make them look pretty (or ugly if you want to), and even add some animations!&lt;/p&gt;
+
+&lt;p&gt;For an example, try navigating to &lt;a href=&quot;http://pclub.in/contact.html&quot;&gt;the ‘contact’ page on pclub.in&lt;/a&gt;. Try hovering your mouse above any of the images, or names of the secretaries. The smooth animation you see was implemented with a few standard lines of CSS :)&lt;/p&gt;
+
+&lt;h3 id=&quot;javascript&quot;&gt;JavaScript&lt;/h3&gt;
+&lt;p&gt;You’ve got an idea about how to describe the structure of a document, you even know how to put some style to it. But how do you handle clicks?&lt;/p&gt;
+
+&lt;p&gt;One simple thing is to put links. That could open up a new page. But what if you want the click to, say, change some text on the page? Or maybe you’re making an online game, and you want it to use some buttons. Think YouTube, and how it handles the Play button. How do you describe what should happen when you click something?&lt;/p&gt;
+
+&lt;p&gt;Also, you’ve seen some simple animations. Did you notice the animation for &lt;em&gt;We’re the PClub&lt;/em&gt; on the programming club website homepage? The alphabets appear one by one, after a certain time delay. How do you do that?&lt;/p&gt;
+
+&lt;p&gt;What about Facebook, how does it get more information when you scroll down, and display it on the same page?&lt;/p&gt;
+
+&lt;p&gt;What we’ve described above are actual programming challenges, not just styling and structuring problems. JavaScript is the de-facto language of the internet, and it is what helps us describe all the above actions in a way computers understand. JavaScript is in itself, a full fledged programming language, and you can do quite a bit using it. It is what makes websites responsive. These files have an extension of &lt;code class=&quot;highlighter-rouge&quot;&gt;.js&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;nodejs-and-other-backend-languages-like-php&quot;&gt;Node.js (and other Backend languages like PHP)&lt;/h3&gt;
+&lt;p&gt;All you’ve seen till now is what is called the &lt;em&gt;frontend&lt;/em&gt;. Everything was happening on the browser (which is called the &lt;em&gt;client side&lt;/em&gt;). The machine hosting the website (as we mentioned in the very start) only has to send the &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;js&lt;/code&gt; files to the browser, which interprets these files. Websites comprising only of that type of items are called static websites. Think of, &lt;a href=&quot;http://example.com&quot;&gt;example.com&lt;/a&gt;, or &lt;a href=&quot;http://cse.iitk.ac.in/index.html&quot;&gt;cse.iitk.ac.in&lt;/a&gt;. These websites have content which changes rarely, and is manually updated by updating the files stored on the host computer (called the &lt;strong&gt;server&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;How about Facebook? People post thousands of images every minute, yet it does not create a separate &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt; page for everyone every 1 second. In such cases, the server is not only sending static content (&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;js&lt;/code&gt;), but is also responding to complex queries. When you log in, you send an &lt;em&gt;HTTP request&lt;/em&gt; (google this term!) to the server, with your password. It then verifies that it is correct, and lets you in. On this, it looks up in its store of information (called the &lt;em&gt;Database&lt;/em&gt;), and generates data to display to you. This is how you get this information. The user’s browser sends more &lt;em&gt;HTTP Requests&lt;/em&gt; to the server, say asking for new items in your news feed. The server responds by providing that information, and the browser takes that information, and JavaScript converts that information into content you can see on your screen.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The above is a (fairly-long) description of the various things necessary to be known to be able to do some serious web development. Don’t worry if you don’t understand part$s of it, you’ll come to know eventually, when you cover the topics in more detail. Till then, happy Googling!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 24 Sep 2016 10:16:12 +0000</pubDate>
+        <link>http://pclub.in/lecture/web%20development/2016/09/24/webdev1.html</link>
+        <guid isPermaLink="true">http://pclub.in/lecture/web%20development/2016/09/24/webdev1.html</guid>
+        
+        <category>meta</category>
+        
+        <category>webd</category>
+        
+        <category>tutorial</category>
+        
+        <category>lecture</category>
+        
+        
+        <category>lecture</category>
+        
+        <category>Web Development</category>
+        
+      </item>
     
       <item>
         <title>Forex Prediction</title>
@@ -807,106 +940,6 @@ Github Wiki: &lt;a href=&quot;http://github.com/11000011/Smart-Mirror/wiki/&quot
         <category>project</category>
         
         <category>Project</category>
-        
-      </item>
-    
-      <item>
-        <title>Managing Processes in Linux</title>
-        <description>&lt;h1 id=&quot;managing-processes-in-linux&quot;&gt;Managing Processes in Linux&lt;/h1&gt;
-
-&lt;h3 id=&quot;the-ps-command&quot;&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;ps&lt;/code&gt; command&lt;/h3&gt;
-&lt;p&gt;Short for &lt;strong&gt;&lt;em&gt;process status&lt;/em&gt;&lt;/strong&gt; . Returns all &lt;em&gt;currently running processes&lt;/em&gt; running on the system.&lt;/p&gt;
-
-&lt;p&gt;When called without arguments, information return can be a little useless.&lt;/p&gt;
-
-&lt;p&gt;To get a more clear picture we use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps -aux&lt;/code&gt; .&lt;/p&gt;
-
-&lt;p&gt;This tells &lt;code class=&quot;highlighter-rouge&quot;&gt;ps&lt;/code&gt;  to return list of process from &lt;strong&gt;all users&lt;/strong&gt;
-We can also use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps -ef&lt;/code&gt; to view &lt;strong&gt;all running process&lt;/strong&gt;
-where &lt;code class=&quot;highlighter-rouge&quot;&gt;-e&lt;/code&gt;is used to &lt;strong&gt;display all processes&lt;/strong&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt; is used to &lt;strong&gt;display in full format listing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;To view all running processes that belongs to a particular user, we use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps -f -u username1,username2&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: We can see processes limited to a set of users by seperating the usernames by a comma()
-Often &lt;code class=&quot;highlighter-rouge&quot;&gt;ps aux | grep commandname&lt;/code&gt; is used to get details of process with the given command&lt;/p&gt;
-
-&lt;p&gt;To see all proccesses in a tree structure we use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps axjf&lt;/code&gt;
-Using this we get to know the parent processes (by getting an hierarchical structure)&lt;/p&gt;
-
-&lt;h3 id=&quot;pids&quot;&gt;PIDs&lt;/h3&gt;
-
-&lt;p&gt;Each process is assigned a &lt;em&gt;unique&lt;/em&gt; &lt;strong&gt;Process ID (PID)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Each process also has a &lt;strong&gt;Parent Process ID (PPID)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;To filter your searches with a specific &lt;strong&gt;PID&lt;/strong&gt; use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps -f -p PIDofProcess&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Similarly to filter by PPID use &lt;code class=&quot;highlighter-rouge&quot;&gt;ps -f --ppid PPIDofProcess&lt;/code&gt;
-Also you may get pid by &lt;code class=&quot;highlighter-rouge&quot;&gt;pidof commandname&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;killing-the-process&quot;&gt;Killing the process&lt;/h3&gt;
-
-&lt;h4 id=&quot;the-kill-command&quot;&gt;The kill command&lt;/h4&gt;
-
-&lt;p&gt;It is used to send a signal to a process or to kill a process&lt;/p&gt;
-
-&lt;p&gt;Basic Synatx is &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -SIGNAL PID&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Signals of our interest&lt;/strong&gt; : SIGTERM &amp;amp; SIGKILL&lt;/p&gt;
-
-&lt;h4 id=&quot;sigterm&quot;&gt;SIGTERM&lt;/h4&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kill PID&lt;/code&gt; will send a SIGTERM signal by default. The application can determine what to do once it receives a SIGTERM signal&lt;/p&gt;
-
-&lt;p&gt;It may stop the process immediately, may stop after a delay after cleaning resources or might run endlessly&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kill -SIGTERM PID&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -15 PID&lt;/code&gt; are same&lt;/p&gt;
-
-&lt;h4 id=&quot;sigkill-the-super-power&quot;&gt;SIGKILL (The Super Power)&lt;/h4&gt;
-
-&lt;p&gt;Kind of Force Kill&lt;/p&gt;
-
-&lt;p&gt;Unlike SIGTERM , SIGKILL cannot be ignored by the process , even the process is not aware when SIGKILL signal is sent.&lt;/p&gt;
-
-&lt;p&gt;While there are rare cases where an external influence (like waiting I/O) may be the reason of ignoring SIGKILL. But it works in most cases !
-&lt;code class=&quot;highlighter-rouge&quot;&gt;kill -SIGKILL PID&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -9 PID&lt;/code&gt; is same&lt;/p&gt;
-
-&lt;p&gt;Suppose your firefox is not responding and you decided to kill the process : &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -9 `pidof firefox`&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;the-killall-command&quot;&gt;The killall command&lt;/h4&gt;
-
-&lt;p&gt;Too lazy to find the PID of a process ? Here have a look at the killall command&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example (killing firefox)&lt;/strong&gt; : &lt;code class=&quot;highlighter-rouge&quot;&gt;killall -9 firefox&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;pkill command&lt;/strong&gt;
-Almost the same as &lt;code class=&quot;highlighter-rouge&quot;&gt;kilall&lt;/code&gt; command. The only difference being you don’t have to provide the exact process name, partial process name will do.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Beware you might also kill other process which you didn’t intend to kill&lt;/strong&gt;
-&lt;em&gt;Example (killing firefox)&lt;/em&gt; : &lt;code class=&quot;highlighter-rouge&quot;&gt;pkill firef&lt;/code&gt; will also do ! :D&lt;/p&gt;
-
-&lt;h4 id=&quot;the-xkill-command&quot;&gt;The xkill command&lt;/h4&gt;
-
-&lt;p&gt;If you are new to using &lt;strong&gt;LINUX&lt;/strong&gt; or hate the bash, you may do it the GUI way :P&lt;/p&gt;
-
-&lt;p&gt;Simply  type &lt;code class=&quot;highlighter-rouge&quot;&gt;xkill&lt;/code&gt; in the terminal and it will ask you to select a window whose client you wish to kill.&lt;/p&gt;
-
-&lt;p&gt;Fast if you have a GUI :P&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Have fun killing !!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Fin&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 01 Jun 2016 16:06:00 +0000</pubDate>
-        <link>http://pclub.in/tutorial/2016/06/01/linuxprocess.html</link>
-        <guid isPermaLink="true">http://pclub.in/tutorial/2016/06/01/linuxprocess.html</guid>
-        
-        <category>linux</category>
-        
-        <category>bash</category>
-        
-        
-        <category>tutorial</category>
         
       </item>
     
