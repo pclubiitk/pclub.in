@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Sep 2016 13:35:57 +0000</pubDate>
-    <lastBuildDate>Sun, 25 Sep 2016 13:35:57 +0000</lastBuildDate>
+    <pubDate>Mon, 26 Sep 2016 09:10:05 +0000</pubDate>
+    <lastBuildDate>Mon, 26 Sep 2016 09:10:05 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -55,7 +55,7 @@
 &lt;p&gt;There are plenty more files, which we don’t need to know about so soon. We urge you to give this a shot, try this yourself, and explore (Google) more on this.&lt;/p&gt;
 
 &lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
-&lt;p&gt;We’ll hope that you have some decent knowledge of programming, and are comfortable with using a computer.&lt;/p&gt;
+&lt;p&gt;We’ll hope that you have some knowledge of programming, and are comfortable with using a computer.&lt;/p&gt;
 
 &lt;p&gt;In addition, it will be highly preferred if you are using a Linux/Mac machine. Windows imposes restrictions on things you can do, gives you no way of doing things it has no softwares for, and is not Open Source (which, Mac is not too). Nonetheless, we hope that you install SSH and SCP clients on your windows machines, so that you can copy your files to the IIT Kanpur servers and get your homepage ready. Linux users don’t need any special software in most cases (ensure that &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh&lt;/code&gt; command is working in your terminal).&lt;/p&gt;
 
@@ -91,7 +91,7 @@
   &lt;li&gt;Text in the web page&lt;/li&gt;
   &lt;li&gt;Subdividing text into paragraphs&lt;/li&gt;
   &lt;li&gt;Adding whitespace (newlines, spaces etc)&lt;/li&gt;
-  &lt;li&gt;Some simple styling of webpages&lt;/li&gt;
+  &lt;li&gt;Some simple styling of webpages (not recommended)&lt;/li&gt;
   &lt;li&gt;Add links to other pages&lt;/li&gt;
   &lt;li&gt;Quite more :)&lt;/li&gt;
 &lt;/ul&gt;
@@ -122,7 +122,7 @@
 &lt;p&gt;How about Facebook? People post thousands of images every minute, yet it does not create a separate &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt; page for everyone every 1 second. In such cases, the server is not only sending static content (&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;js&lt;/code&gt;), but is also responding to complex queries. When you log in, you send an &lt;em&gt;HTTP request&lt;/em&gt; (google this term!) to the server, with your password. It then verifies that it is correct, and lets you in. On this, it looks up in its store of information (called the &lt;em&gt;Database&lt;/em&gt;), and generates data to display to you. This is how you get this information. The user’s browser sends more &lt;em&gt;HTTP Requests&lt;/em&gt; to the server, say asking for new items in your news feed. The server responds by providing that information, and the browser takes that information, and JavaScript converts that information into content you can see on your screen.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;The above is a (fairly-long) description of the various things necessary to be known to be able to do some serious web development. Don’t worry if you don’t understand part$s of it, you’ll come to know eventually, when you cover the topics in more detail. Till then, happy Googling!&lt;/p&gt;
+&lt;p&gt;The above is a (fairly-long) description of the various things necessary to be known to be able to do some serious web development. Don’t worry if you don’t understand parts of it, you’ll come to know eventually, when you cover the topics in more detail. Till then, happy Googling!&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Sep 2016 10:16:12 +0000</pubDate>
         <link>http://pclub.in/lecture/web%20development/2016/09/24/webdev1.html</link>
