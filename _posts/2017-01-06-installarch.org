@@ -4,7 +4,7 @@
 #+AUTHOR: Yash Srivastav
 #+LIQUID: enabled
 #+WEBSITE: https://yashsriv.org
-#+SUBSECTION: installfest
+#+SUBSECTION: installfest17
 #+HIDDEN: true
 
 ** Pre-installation
@@ -67,23 +67,10 @@
 
 **** Partition the disks
 
-      When recognized by the live system, disks are assigned to a block
-      device such as /dev/sda. To identify these devices, use lsblk or fdisk
-      -- results ending in rom, loop or airoot may be ignored:
-   # fdisk -l
-
-      The following partitions (shown with a numerical suffix) are required
-      for a chosen device:
-        * One partition for the root directory /.
-        * If UEFI is enabled, an EFI System Partition.
-
-      Swap space can be set on a separate partition or a swap file.
-
-      To modify partition tables, use fdisk or parted. See Partitioning for
-      more information.
-
-      If wanting to create any stacked block devices for LVM, disk encryption
-      or RAID, do it now.
+     You might have already partitioned your disks from windows if you have seen
+     the parent guide of this post. So, you will have 3 partitions:
+       * One partition for the root directory / - approx 50-100gb.
+       * A swap partition of approximately your RAM size.
 
 **** Format the partitions
 
