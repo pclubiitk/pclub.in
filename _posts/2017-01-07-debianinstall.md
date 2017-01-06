@@ -3,7 +3,7 @@ layout: post
 title: "Install Fest: Debian"
 date: 2017-01-07 00:57:00 +530
 author: milindl
-subsection: installfest
+subsection: installfest17
 hidden: true
 ---
 
