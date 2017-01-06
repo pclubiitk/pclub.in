@@ -6,9 +6,29 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 26 Sep 2016 09:10:05 +0000</pubDate>
-    <lastBuildDate>Mon, 26 Sep 2016 09:10:05 +0000</lastBuildDate>
+    <pubDate>Fri, 06 Jan 2017 16:34:43 +0000</pubDate>
+    <lastBuildDate>Fri, 06 Jan 2017 16:34:43 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Linux Install Fest</title>
+        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Hi all, welcome to the Programming Club Linux Install Fest 2017!&lt;/p&gt;
+
+&lt;p&gt;Here are the separate posts for each supported Linux Distribution:&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 06 Jan 2017 14:55:00 +0000</pubDate>
+        <link>http://pclub.in/installfest17/2017/01/06/installfest.html</link>
+        <guid isPermaLink="true">http://pclub.in/installfest17/2017/01/06/installfest.html</guid>
+        
+        <category>linux</category>
+        
+        
+        <category>installfest17</category>
+        
+      </item>
     
       <item>
         <title>WebD: Introduction</title>
@@ -901,47 +921,6 @@ Its very easy to ascertain the collision between objects exploiting the again th
         <category>tutorial</category>
         
         <category>Game Dev</category>
-        
-      </item>
-    
-      <item>
-        <title>Smart Mirror</title>
-        <description>&lt;h1 id=&quot;smart-mirrorhttp11000011githubiosmart-mirror&quot;&gt;&lt;a href=&quot;http://11000011.github.io/Smart-Mirror/&quot;&gt;Smart Mirror&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;Smart Mirror is a project designed to get you ready for the day. It displays
-the current weather, your schedule for the day, notifications from your mobile
-and performs facial recognition so that the same software works for all users
-using the mirror.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/11000011/Smart-Mirror/raw/gh-pages/img/sample.png&quot; alt=&quot;image&quot; /&gt;
-^ The above image will be superimposed over the reflection from mirror displaying only the bright portions.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Weather is obtained using your current location&lt;/li&gt;
-  &lt;li&gt;Schedule is obtained from Google Calendar&lt;/li&gt;
-  &lt;li&gt;Notifications are mirrored from the user’s mobile phone via PushBullet&lt;/li&gt;
-  &lt;li&gt;Facial Recognition ensures that notifications/schedule displayed are those of the person standing in front of the mirror&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Received the &lt;strong&gt;Best Applicative Project&lt;/strong&gt; during the Science &amp;amp; Technology Summer
-Camp 2016.&lt;/p&gt;
-
-&lt;p&gt;Website: &lt;a href=&quot;http://11000011.github.io/Smart-Mirror&quot;&gt;http://11000011.github.io/Smart-Mirror&lt;/a&gt;
-LaTeX Report: &lt;a href=&quot;http://github.com/11000011/Smart-Mirror/raw/gh-pages/report.pdf&quot;&gt;report.pdf&lt;/a&gt;
-Github Wiki: &lt;a href=&quot;http://github.com/11000011/Smart-Mirror/wiki/&quot;&gt;Smart Mirror Wiki&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 06 Jul 2016 11:12:00 +0000</pubDate>
-        <link>http://pclub.in/project/2016/07/06/smartmirror.html</link>
-        <guid isPermaLink="true">http://pclub.in/project/2016/07/06/smartmirror.html</guid>
-        
-        <category>summer16</category>
-        
-        <category>project</category>
-        
-        
-        <category>project</category>
-        
-        <category>Project</category>
         
       </item>
     
