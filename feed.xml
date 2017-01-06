@@ -6,9 +6,9 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 Jan 2017 16:34:43 +0000</pubDate>
-    <lastBuildDate>Fri, 06 Jan 2017 16:34:43 +0000</lastBuildDate>
-    <generator>Jekyll v3.0.2</generator>
+    <pubDate>Fri, 06 Jan 2017 16:46:19 +0000</pubDate>
+    <lastBuildDate>Fri, 06 Jan 2017 16:46:19 +0000</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Linux Install Fest</title>
@@ -17,6 +17,10 @@
 &lt;p&gt;Hi all, welcome to the Programming Club Linux Install Fest 2017!&lt;/p&gt;
 
 &lt;p&gt;Here are the separate posts for each supported Linux Distribution:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/2017/01/06/installarch.html&quot;&gt;Install Fest: Arch Linux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 </description>
         <pubDate>Fri, 06 Jan 2017 14:55:00 +0000</pubDate>
@@ -27,6 +31,256 @@
         
         
         <category>installfest17</category>
+        
+      </item>
+    
+      <item>
+        <title>Install Fest: Arch Linux</title>
+        <description>&lt;h2&gt;Pre-installation&lt;/h2&gt;
+&lt;p&gt;Arch Linux should run on any i686 or x86_64 compatible machine with a
+  minimum of 256 MB RAM, or 512 MB for x86_64. A basic installation with
+  all packages from the base group should take less than 800 MB of disk
+  space. As the installation process needs to retrieve packages from a
+  remote repository, a working internet connection is required.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; : All commands will look like this:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# some_command
+&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;some_command&lt;/code&gt; portion is supposed to be typed after the prompt which is usually:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+root@archiso ~ #
+&lt;/pre&gt;
+&lt;h4&gt;Set the keyboard layout&lt;/h4&gt;
+&lt;p&gt;See Archwiki installation page if you really need this, i.e., your keyboard
+  is not working as expected.&lt;/p&gt;
+&lt;h4&gt;Verify the boot mode&lt;/h4&gt;
+&lt;p&gt;If UEFI mode is enabled on an UEFI motherboard, Archiso will boot Arch
+  Linux accordingly via systemd-boot. To verify this, list the efivars
+  directory:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# ls /sys/firmware/efi/efivars
+&lt;/pre&gt;
+&lt;h4&gt;Connect to the Internet&lt;/h4&gt;
+&lt;p&gt;For wired connection with &lt;b&gt;DHCP&lt;/b&gt; (for example - academic area),
+  just connecting a LAN cord to your ethernet port should start the connection.
+  You can verify connection on iitk network with the following command:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# ping 172.31.1.1
+&lt;/pre&gt;
+&lt;p&gt;For networks requiring static ip (such as your rooms), first stop
+  dhcpcd service with &lt;code&gt;systemctl stop dhcpcd@&amp;lt;TAB&amp;gt;&lt;/code&gt; (Here &lt;code&gt;&amp;lt;TAB&amp;gt;&lt;/code&gt; refers to pressing the TAB key on the keyboard)
+  and then see: &lt;a href=&quot;https://wiki.archlinux.org/index.php/Netctl#Wired&quot;&gt;ArchWiki Network Configuration&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For wireless connections, use:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# wifi-menu
+&lt;/pre&gt;
+&lt;p&gt;to connect to available networks. You can check connection using the previous command.&lt;/p&gt;
+&lt;h4&gt;Update the system clock&lt;/h4&gt;
+&lt;p&gt;Use timedatectl(1) to ensure the system clock is accurate:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# timedatectl set-ntp true
+&lt;/pre&gt;
+&lt;p&gt;To check the service status, use &lt;code&gt;timedatectl status&lt;/code&gt;.&lt;/p&gt;
+&lt;h4&gt;Partition the disks&lt;/h4&gt;
+&lt;p&gt;You might have already partitioned your disks from windows if you have seen
+  the parent guide of this post. So, you will have 3 partitions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;One partition for the root directory / - approx 50-100gb.&lt;/li&gt;
+  &lt;li&gt;A swap partition of approximately your RAM size.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Format the partitions&lt;/h4&gt;
+&lt;p&gt;Once the partitions have been created, each must be formatted with an
+  appropriate file system. For a list of partitions use:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# lsblk -o name,size,type,mountpoint,fstype
+
+NAME                                                       SIZE TYPE MOUNTPOINT FSTYPE
+sda                                                      931.5G disk
+├─sda1                                                     260M part            vfat
+├─sda2                                                      16M part
+├─sda3                                                   416.2G part            ntfs
+├─sda4                                                     808M part            ntfs
+├─sda5                                                      12G part            swap
+├─sda6                                                      10G part            ext4
+├─sda7                                                      50G part            ext4
+├─sda8                                                   308.5G part            ext4
+├─sda9                                                    68.4G part            ext4
+├─sda10                                                     50G part            ext4
+├─sda11                                                    694M part            ntfs
+└─sda12                                                   13.6G part            ntfs
+
+&lt;/pre&gt;
+&lt;p&gt;Now, in the example above, my main harddisk is &lt;code&gt;/dev/sda&lt;/code&gt;, yours can be anything. From now
+  on, I will refer to it as &lt;code&gt;/dev/sdx&lt;/code&gt; (&lt;code&gt;x&lt;/code&gt; = variable corresponding to your harddisk).&lt;/p&gt;
+&lt;p&gt;Now find the partitions you created. They will probably be the ones with the highest index
+  (it's still your job to verify that).&lt;/p&gt;
+&lt;p&gt;To format the main root partition (the 50-100 gb one), use:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# mkfs.ext4 /dev/sdxy
+&lt;/pre&gt;
+&lt;p&gt;where &lt;code&gt;y&lt;/code&gt; is the number of the partition from the output of &lt;code&gt;lsblk&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To format the swap partition (the partition with the same size as your RAM), use:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# mkswap /dev/sdxy
+&lt;/pre&gt;
+&lt;p&gt;where &lt;code&gt;x&lt;/code&gt; is the number of the root partition from the output of &lt;code&gt;lsblk&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;Mount the file systems&lt;/h4&gt;
+&lt;p&gt;Mount the root partition to &lt;code&gt;/mnt&lt;/code&gt;, for example:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# mount /dev/sdxy /mnt
+&lt;/pre&gt;
+&lt;p&gt;Find out if your computer uses UEFI or not. The best way (I know) is to verify
+  whether you have a &lt;code&gt;vfat&lt;/code&gt; partition (as in my case &lt;code&gt;/dev/sda1&lt;/code&gt;).
+  If yes, then:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# mkdir /mnt/boot
+# mount /dev/sdxy
+&lt;/pre&gt;
+&lt;p&gt;(Here &lt;code&gt;/dev/sdxy&lt;/code&gt; is the &lt;code&gt;vfat&lt;/code&gt; partition)
+  Also remember this info(whether you have a UEFI system or not) for one of the future steps.&lt;/p&gt;
+&lt;p&gt;Mount the swap partition:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# mkswap /dev/sdxy
+&lt;/pre&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;h4&gt;Select the mirrors&lt;/h4&gt;
+&lt;p&gt;Packages to be installed must be downloaded from mirror servers, which
+  are defined in &lt;code&gt;/etc/pacman.d/mirrorlist&lt;/code&gt;. Since we are in iitk, we will
+  use the iitk mirrors. For that, use &lt;code&gt;nano&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# nano /etc/pacman.d/mirrorlist
+&lt;/pre&gt;
+&lt;p&gt;And insert this line at the very top just below the initial comments:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+Server = http://mirror.cse.iitk.ac.in/archlinux/$repo/os/$arch
+&lt;/pre&gt;
+&lt;h4&gt;Install the base packages&lt;/h4&gt;
+&lt;p&gt;Use the pacstrap script to install the base package group and other useful stuff:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# pacstrap /mnt base wifi-menu dialog iw wpa_supplicant sudo
+&lt;/pre&gt;
+&lt;h2&gt;Configure the system&lt;/h2&gt;
+&lt;h4&gt;Fstab&lt;/h4&gt;
+&lt;p&gt;Generate an fstab file:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab
+&lt;/pre&gt;
+&lt;h4&gt;Chroot&lt;/h4&gt;
+&lt;p&gt;Change root into the new system:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# arch-chroot /mnt
+&lt;/pre&gt;
+&lt;h4&gt;Time zone&lt;/h4&gt;
+&lt;p&gt;Set the time zone (probably &lt;code&gt;Asia/Kolkata&lt;/code&gt;, since you live in India):&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+&lt;/pre&gt;
+&lt;p&gt;Run hwclock(8) to generate &lt;code&gt;/etc/adjtime&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# hwclock --systohc --localtime
+&lt;/pre&gt;
+&lt;h4&gt;Locale&lt;/h4&gt;
+&lt;p&gt;Open &lt;code&gt;/etc/locale.gen&lt;/code&gt; using &lt;code&gt;nano&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# nano /etc/locale.gen
+&lt;/pre&gt;
+&lt;p&gt;Go to the line and remove the first &lt;code&gt;#&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+#en_US.UTF-8 UTF-8
+&lt;/pre&gt;
+&lt;p&gt;Generate localisations with:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# locale-gen
+&lt;/pre&gt;
+&lt;p&gt;Open &lt;code&gt;/etc/locale.conf&lt;/code&gt; using &lt;code&gt;nano&lt;/code&gt; and add the following line:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+LANG=en_US.UTF-8
+&lt;/pre&gt;
+&lt;h4&gt;Hostname&lt;/h4&gt;
+&lt;p&gt;Create the &lt;code&gt;/etc/hostname&lt;/code&gt; file. A hostname is a name for your pc (You can set that to anything consisting of only letters):&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+myhostname
+&lt;/pre&gt;
+&lt;p&gt;You will need to add a matching entry to &lt;code&gt;/etc/hosts&lt;/code&gt; (the last line):&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+127.0.0.1       localhost.localdomain   localhost
+::1             localhost.localdomain   localhost
+127.0.1.1       myhostname.localdomain  myhostname
+&lt;/pre&gt;
+&lt;h4&gt;Root password&lt;/h4&gt;
+&lt;p&gt;Set the root password:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# passwd
+&lt;/pre&gt;
+&lt;h4&gt;Boot loader&lt;/h4&gt;
+&lt;p&gt;If you have an Intel CPU, install the intel-ucode package&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# pacman -S intel-ucode
+&lt;/pre&gt;
+&lt;p&gt;Now, you need to remember if you have a UEFI system or not.&lt;/p&gt;
+&lt;h5&gt;No UEFI&lt;/h5&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# pacman -S grub os-prober ntfs-3g
+# grub-install --target=i386-pc /dev/sdx
+# grub-mkconfig -o /boot/grub/grub.cfg
+&lt;/pre&gt;
+&lt;p&gt;Please replace &lt;code&gt;x&lt;/code&gt; with the character of your harddisk.&lt;/p&gt;
+&lt;h5&gt;UEFI&lt;/h5&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# pacman -S grub os-prober efibootmgr ntfs-3g
+# grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
+# grub-mkconfig -o /boot/grub/grub.cfg
+&lt;/pre&gt;
+&lt;h5&gt;After&lt;/h5&gt;
+&lt;p&gt;The above steps may sometimes fail to recognize windows. Don't panic, see the reboot section.&lt;/p&gt;
+&lt;h4&gt;New User&lt;/h4&gt;
+&lt;p&gt;Now, its time to create a new user:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# useradd -m -G wheel -s /bin/bash archie
+&lt;/pre&gt;
+&lt;p&gt;Here, a new user was added with the username &lt;code&gt;archie&lt;/code&gt; and default shell &lt;code&gt;/bin/bash&lt;/code&gt;.
+  Just changing the username should suffice for most people.
+  To change the user's password:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# passwd the_username_you_just_set
+&lt;/pre&gt;
+&lt;p&gt;Now setup &lt;code&gt;sudo&lt;/code&gt; by typing &lt;code&gt;visudo&lt;/code&gt;. This opens up the sudo configuration file in &lt;code&gt;vim&lt;/code&gt;.
+  Press &lt;code&gt;&amp;lt;Shift&amp;gt; + g&lt;/code&gt; to goto the end of the file. Now go up, till you see this line:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+## Uncomment to allow members of group wheel to execute any command
+# %wheel ALL=(ALL) ALL
+&lt;/pre&gt;
+&lt;p&gt;Now, carefully place your cursor on the &lt;code&gt;#&lt;/code&gt; just before &lt;code&gt;%wheel&lt;/code&gt; and press &lt;code&gt;x&lt;/code&gt;.
+  This will remove the &lt;code&gt;#&lt;/code&gt;. It will now look like this:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+## Uncomment to allow members of group wheel to execute any command
+ %wheel ALL=(ALL) ALL
+&lt;/pre&gt;
+&lt;p&gt;Now type &lt;code&gt;:wq&lt;/code&gt; to save and exit.&lt;/p&gt;
+&lt;p&gt;This should give your user sudo rights.&lt;/p&gt;
+&lt;h2&gt;Reboot&lt;/h2&gt;
+&lt;p&gt;Exit the chroot environment by typing exit or pressing &lt;code&gt;Ctrl+D&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Optionally manually unmount all the partitions with &lt;code&gt;umount -R /mnt&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Finally, restart the machine by typing &lt;code&gt;reboot&lt;/code&gt;. Now while booting choose
+  grub as the default boot option.&lt;/p&gt;
+&lt;p&gt;After booting, you will encounter a black screen with option to login.
+  You can now log in with your user.&lt;/p&gt;
+&lt;h4&gt;Post Reboot GRUB Fix&lt;/h4&gt;
+&lt;p&gt;If your Windows did not show up during boot, run this command and check if windows
+  shows up on a reboot:&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+# grub-mkconfig -o /boot/grub/grub.cfg
+&lt;/pre&gt;
+&lt;h2&gt;Post-installation&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&quot;https://wiki.archlinux.org/index.php/General_recommendations&quot;&gt;General Recommendations&lt;/a&gt; for system management directions and
+  post-installation tutorials (like setting up a graphical user
+  interface, sound or a touchpad).&lt;/p&gt;
+&lt;p&gt;For a list of applications that may be of interest, see &lt;a href=&quot;https://wiki.archlinux.org/index.php/List_of_applications&quot;&gt;List of applications&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 06 Jan 2017 13:05:20 +0000</pubDate>
+        <link>http://pclub.in/2017/01/06/installarch.html</link>
+        <guid isPermaLink="true">http://pclub.in/2017/01/06/installarch.html</guid>
+        
         
       </item>
     
@@ -79,10 +333,12 @@
 
 &lt;p&gt;In addition, it will be highly preferred if you are using a Linux/Mac machine. Windows imposes restrictions on things you can do, gives you no way of doing things it has no softwares for, and is not Open Source (which, Mac is not too). Nonetheless, we hope that you install SSH and SCP clients on your windows machines, so that you can copy your files to the IIT Kanpur servers and get your homepage ready. Linux users don’t need any special software in most cases (ensure that &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh&lt;/code&gt; command is working in your terminal).&lt;/p&gt;
 
-&lt;p&gt;Some softwares you should have installed for Windows (&lt;strong&gt;before&lt;/strong&gt; the lecture) are:
-* &lt;a href=&quot;https://winscp.net/eng/index.php&quot;&gt;WinSCP&lt;/a&gt;
-* &lt;a href=&quot;http://www.putty.org/&quot;&gt;PuTTY&lt;/a&gt;
-* &lt;a href=&quot;http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html&quot;&gt;PSCP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Some softwares you should have installed for Windows (&lt;strong&gt;before&lt;/strong&gt; the lecture) are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://winscp.net/eng/index.php&quot;&gt;WinSCP&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.putty.org/&quot;&gt;PuTTY&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html&quot;&gt;PSCP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Also, to be able to benefit from the lecture, you are strongly recommended to get your IITK Homepage directory made &lt;strong&gt;BEFORE&lt;/strong&gt; the lecture. If time permits, we will cover some of that too.&lt;/p&gt;
 
@@ -205,7 +461,7 @@ You will also see a graph plot between the expected value and predicted value.&l
     
       <item>
         <title>Handwriting Recognition By Machine Learning</title>
-        <description>&lt;h1 id=&quot;hand-writing-recognition-by-machine-learninghttpsshanugithubiomlhr&quot;&gt;&lt;a href=&quot;http://sshanu.github.io/ml_HR/&quot;&gt;Hand writing Recognition by Machine Learning&lt;/a&gt;&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;hand-writing-recognition-by-machine-learning&quot;&gt;&lt;a href=&quot;http://sshanu.github.io/ml_HR/&quot;&gt;Hand writing Recognition by Machine Learning&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;This project uses Neural Network Modelling  for identification of Handwriting from Optical Images.
 Artificial Neural Network is a network inspired by biological neural networks and is one of the most advanced techniques in Artificial Intelligence research.
@@ -361,7 +617,7 @@ I would not recommend this operating system to users new to the Linux environmen
     
       <item>
         <title>N-Body Simulation</title>
-        <description>&lt;h1 id=&quot;n-body-simulationhttpsagnikbgithubiosimulati-on&quot;&gt;&lt;a href=&quot;http://sagnikb.github.io/Simulati-ON/&quot;&gt;N-body simulation&lt;/a&gt;&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;n-body-simulation&quot;&gt;&lt;a href=&quot;http://sagnikb.github.io/Simulati-ON/&quot;&gt;N-body simulation&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;The N-body simulation is an interesting topic in Physics, and finds applications in astrophysics, biomoecular studies and other areas of science. Mathematical soultions of this problem are not possible, so numerical methods are necessary for visualisation. The problem basically involves several bodies with defined properties and also a well defined force that acts between each of these bodies, and involves studying how the system evolves with time. Parallel programming is used for increasing performance, and problems of this type are ideally suited for the parallel programming paradigm.&lt;/p&gt;
 
@@ -543,10 +799,12 @@ The contest was very well received by all those who participatd. Here are some o
   &lt;li&gt;Problem with the least number of submissions: &lt;strong&gt;Tree Tank&lt;/strong&gt; :&lt;em&gt;10 correct submissions&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Now for the contest ranks-
-1. &lt;strong&gt;Mohib Manva&lt;/strong&gt;, of DAIICT Gandhinagar
-2. &lt;strong&gt;Satyaki Upadhyay&lt;/strong&gt;, of BITS Pilani, Pilani Campus
-3. &lt;strong&gt;Swastik Sharma&lt;/strong&gt;, of IIT Kanpur&lt;/p&gt;
+&lt;p&gt;Now for the contest ranks-&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Mohib Manva&lt;/strong&gt;, of DAIICT Gandhinagar&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Satyaki Upadhyay&lt;/strong&gt;, of BITS Pilani, Pilani Campus&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Swastik Sharma&lt;/strong&gt;, of IIT Kanpur&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;The three winners solved all the 12 problems in the contest. Congratulations to winners!&lt;/p&gt;
 
@@ -715,7 +973,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 
 &lt;p&gt;Try the following:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is not zero&quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -727,7 +985,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 
 &lt;p&gt;Sometimes one condition isn’t enough though. In that case, you are allowed to chain up multiple conditions using &lt;code class=&quot;highlighter-rouge&quot;&gt;and&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;or&lt;/code&gt; like so:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Condition successful&quot;&lt;/span&gt;
@@ -738,7 +996,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 
 &lt;p&gt;That’s all good, but what if you want multiple checks on a variable? For example, let’s say you want to do Action 1 if &lt;code class=&quot;highlighter-rouge&quot;&gt;a&amp;lt;10&lt;/code&gt; and Action 2 if &lt;code class=&quot;highlighter-rouge&quot;&gt;a=10&lt;/code&gt; and Action 3 when &lt;code class=&quot;highlighter-rouge&quot;&gt;a&amp;gt;10&lt;/code&gt;, what then? This is where &lt;code class=&quot;highlighter-rouge&quot;&gt;if-elif-elif-elif-...-else&lt;/code&gt; construct comes into the picture. Use it like this:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is less than 0&quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -754,7 +1012,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 
 &lt;p&gt;Now for some loopy-loops!&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
@@ -764,7 +1022,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 &lt;h2 id=&quot;reading-input&quot;&gt;Reading input&lt;/h2&gt;
 &lt;p&gt;You can read input from the user using something like this:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello mr. &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
@@ -781,7 +1039,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 
 &lt;p&gt;It’s quite small! Here’s the solution!&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
@@ -795,7 +1053,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 
 &lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.c&lt;/code&gt; with the following content:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
 &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -807,7 +1065,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 
 &lt;p&gt;To actually run the code, execute the following command on the terminal:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcc -o hello hello.c
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcc -o hello hello.c
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -815,7 +1073,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 
 &lt;p&gt;Now to run the executable, type:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./hello
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./hello
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -842,85 +1100,6 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
         
         
         <category>pclub</category>
-        
-      </item>
-    
-      <item>
-        <title>HTML5 Game Development</title>
-        <description>&lt;h1 id=&quot;html5-game-development&quot;&gt;HTML5 Game Development&lt;/h1&gt;
-&lt;p&gt;For all those gaming nerds out there, there isn’t a better way to develop your gaming skills but to start from scratch of how a game works and to build your own one!
-HTML 5 provides rich environment to create your games using Javascript and the html5 canvas object.&lt;/p&gt;
-
-&lt;h3 id=&quot;pre-requisites&quot;&gt;PRE-REQUISITES&lt;/h3&gt;
-&lt;p&gt;Well all you need is to know the basics of html and javascript. And of course a little bit of enthu in the pot is forever welcomed !  :)&lt;/p&gt;
-
-&lt;h3 id=&quot;why-not-other-game-engines-&quot;&gt;WHY NOT OTHER GAME-ENGINES ?&lt;/h3&gt;
-&lt;p&gt;We have hundreds of cool game engines in the market, to name few unity,unreal engine, cryengine, source 2 etc. But here we focus on learning things from the scratch, in engines like these things are more  drag and drop and the essence of how things work from the basic fails to deliver. In this article we discuss things from the very basic !&lt;/p&gt;
-
-&lt;h3 id=&quot;game-canvas-and-game-components&quot;&gt;GAME CANVAS AND GAME COMPONENTS&lt;/h3&gt;
-&lt;p&gt;Without much ado, we talk about the canvas object in the html 5 that offers to us the work place for doing all our cool gaming stuffs. To note is that it is a container to hold the graphics content and nothing more. Everything that needs to be done must be defined beforehand unlike the game engines like unity which have predefined objects like planes, spheres etc.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Game Components&lt;/strong&gt;
-We can draw rectangles, circles, lines using the 2D context of canvas object (in layman’s term - drawing in the canvas holder by using its 2 Dimensional object ).We can provide colors to fill, or use gradient colors, or even load images to make animations in the 2d context of canvas object.&lt;/p&gt;
-
-&lt;p&gt;Reference Code in js-&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;canvas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2D&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fillStyle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fillRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;This creates a color filled red rectangle in the canvas at (10,20) coordinates of 30px as width and 40px as height.&lt;/p&gt;
-
-&lt;h3 id=&quot;game-components-and-their-movement&quot;&gt;GAME COMPONENTS AND THEIR MOVEMENT&lt;/h3&gt;
-&lt;p&gt;The importance of these objects is that they can be moved inside the canvas by redrawing them to different positions, this being done per frame ! A separate function is created which helps in drawing the components taking the position as arguments that is called many times a second to update the position of the game components.The position can incremented each time adding a constant or a uniformly increasing function to make the component move uniformly or accelerate respectively.
-The movement is triggered also by adding event handlers through javascript, like “keydown”, “keyup” for keyboard keys, which then can be recognised using the keyCode attribute of the event argument of event -handler function call (see attached reference code).&lt;/p&gt;
-
-&lt;p&gt;Reference Code in js-&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;keydown&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;myGameArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//for calling a function callMe at 50 every milliseconds (or&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//better say 20 frames per second)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//setInterval(callMe,50);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Hence by knowing which key is pressed we can call the required functions for action to be taken.&lt;/p&gt;
-
-&lt;h3 id=&quot;game-obstacles-and-score&quot;&gt;GAME OBSTACLES AND SCORE&lt;/h3&gt;
-&lt;p&gt;Like other game components game obstacles are also game components but being generated at random coordinates of random shape, the code of which is much the same and i leave it to you :) .
-The score in most of the cases is decided by certain collision events or by the current frame from the beginning of the game.
-Its very easy to ascertain the collision between objects exploiting the again the boundary coordinates, and the current frame can be known by ensuring a  counter that is incremented for the function that is called per frame.I leave the job for you to google out the way to write text in canvas element to display the score when needed.&lt;/p&gt;
-
-&lt;h3 id=&quot;almost-there-&quot;&gt;ALMOST THERE !&lt;/h3&gt;
-&lt;p&gt;We  have known  everything to create our first simple html5 game with our own game arena and game components, game obstacles and score to compete !&lt;/p&gt;
-
-&lt;h3 id=&quot;lonely-without-sounds-&quot;&gt;LONELY WITHOUT SOUNDS ?&lt;/h3&gt;
-&lt;p&gt;Well everyone loves the charm when there’s music in the air ! Luckily we can have it too in case of html5 “audio” object . Not going into much detail, we can add sound using the following sample code link, which i leave you to dissect.&lt;/p&gt;
-
-&lt;h3 id=&quot;links-and-further-reading&quot;&gt;LINKS AND FURTHER READING&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://home.iitk.ac.in/~akashdut/sounddev.txt&quot;&gt;Adding sounds&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.udacity.com/course/html5-game-development--cs255&quot;&gt;Udacity course on html5 game dev&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.udacity.com/course/html5-canvas--ud292&quot;&gt;Udacity course on html5 canvas element&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.w3schools.com/games/default.asp&quot;&gt;W3schools tutorial for html game&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 27 Jul 2016 10:35:20 +0000</pubDate>
-        <link>http://pclub.in/tutorial/game%20dev/2016/07/27/html5gamedev.html</link>
-        <guid isPermaLink="true">http://pclub.in/tutorial/game%20dev/2016/07/27/html5gamedev.html</guid>
-        
-        <category>tutorial</category>
-        
-        <category>game dev</category>
-        
-        <category>html5</category>
-        
-        
-        <category>tutorial</category>
-        
-        <category>Game Dev</category>
         
       </item>
     

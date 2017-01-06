@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <!---
+  Dark Kimochi By Spaghetti
+  -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Install Fest: Arch Linux</title>
+  <meta name="description" content="Pre-installationArch Linux should run on any i686 or x86_64 compatible machine with a  minimum of 256 MB RAM, or 512 MB for x86_64. A basic installation with...">
+  <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
+  <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/css/alternative.css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
+  <link rel="canonical" href="http://pclub.in/2017/01/06/installarch.html">
+  <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
+</head>
+
+
+  <Body>
+
+    <header class="site-header">
+  <div class="wrapper">
+<div class="pacel"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+  <a id="route" class="site-title" href="/">Programming Club IIT Kanpur</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#fff" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#fff" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#fff" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/about.html">About</a>
+          
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/archive.html">Archive</a>
+          
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/contact.html">Contact</a>
+          
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/projects.html">Projects</a>
+          
+          
+        
+          
+        
+          
+          
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <!--<a class="page-link" href="http://pclub.in/feed.xml"> Feeds</a>-->
+        <a class="page-link" href="http://github.com/pclubiitk?tab=repositories"><i class="typico typcn typcn-social-github" style="font-size:"></i> Repositories</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div style="margin: 4.5rem auto;">
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="inpost-header">
+    <h1 class="inpost-title" itemprop="name headline">Install Fest: Arch Linux</h1>
+    <h1 style="float:right" class="comment-postingatas">
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/2017/01/06/installarch.html#disqus_thread" data-disqus-identifier="/2017/01/06/installarch"style="color:#fff"> 0</a>
+    </h1>
+    </p>
+  </header>
+  
+  <div class="post-content" itemprop="articleBody">
+    <h2>Pre-installation</h2>
+<p>Arch Linux should run on any i686 or x86_64 compatible machine with a
+  minimum of 256 MB RAM, or 512 MB for x86_64. A basic installation with
+  all packages from the base group should take less than 800 MB of disk
+  space. As the installation process needs to retrieve packages from a
+  remote repository, a working internet connection is required.</p>
+<p><b>Note</b> : All commands will look like this:</p>
+<pre class="example">
+# some_command
+</pre>
+<p>The <code>some_command</code> portion is supposed to be typed after the prompt which is usually:</p>
+<pre class="example">
+root@archiso ~ #
+</pre>
+<h4>Set the keyboard layout</h4>
+<p>See Archwiki installation page if you really need this, i.e., your keyboard
+  is not working as expected.</p>
+<h4>Verify the boot mode</h4>
+<p>If UEFI mode is enabled on an UEFI motherboard, Archiso will boot Arch
+  Linux accordingly via systemd-boot. To verify this, list the efivars
+  directory:</p>
+<pre class="example">
+# ls /sys/firmware/efi/efivars
+</pre>
+<h4>Connect to the Internet</h4>
+<p>For wired connection with <b>DHCP</b> (for example - academic area),
+  just connecting a LAN cord to your ethernet port should start the connection.
+  You can verify connection on iitk network with the following command:</p>
+<pre class="example">
+# ping 172.31.1.1
+</pre>
+<p>For networks requiring static ip (such as your rooms), first stop
+  dhcpcd service with <code>systemctl stop dhcpcd@&lt;TAB&gt;</code> (Here <code>&lt;TAB&gt;</code> refers to pressing the TAB key on the keyboard)
+  and then see: <a href="https://wiki.archlinux.org/index.php/Netctl#Wired">ArchWiki Network Configuration</a></p>
+<p>For wireless connections, use:</p>
+<pre class="example">
+# wifi-menu
+</pre>
+<p>to connect to available networks. You can check connection using the previous command.</p>
+<h4>Update the system clock</h4>
+<p>Use timedatectl(1) to ensure the system clock is accurate:</p>
+<pre class="example">
+# timedatectl set-ntp true
+</pre>
+<p>To check the service status, use <code>timedatectl status</code>.</p>
+<h4>Partition the disks</h4>
+<p>You might have already partitioned your disks from windows if you have seen
+  the parent guide of this post. So, you will have 3 partitions:</p>
+<ul>
+  <li>One partition for the root directory / - approx 50-100gb.</li>
+  <li>A swap partition of approximately your RAM size.</li>
+</ul>
+<h4>Format the partitions</h4>
+<p>Once the partitions have been created, each must be formatted with an
+  appropriate file system. For a list of partitions use:</p>
+<pre class="example">
+# lsblk -o name,size,type,mountpoint,fstype
+
+NAME                                                       SIZE TYPE MOUNTPOINT FSTYPE
+sda                                                      931.5G disk
+├─sda1                                                     260M part            vfat
+├─sda2                                                      16M part
+├─sda3                                                   416.2G part            ntfs
+├─sda4                                                     808M part            ntfs
+├─sda5                                                      12G part            swap
+├─sda6                                                      10G part            ext4
+├─sda7                                                      50G part            ext4
+├─sda8                                                   308.5G part            ext4
+├─sda9                                                    68.4G part            ext4
+├─sda10                                                     50G part            ext4
+├─sda11                                                    694M part            ntfs
+└─sda12                                                   13.6G part            ntfs
+
+</pre>
+<p>Now, in the example above, my main harddisk is <code>/dev/sda</code>, yours can be anything. From now
+  on, I will refer to it as <code>/dev/sdx</code> (<code>x</code> = variable corresponding to your harddisk).</p>
+<p>Now find the partitions you created. They will probably be the ones with the highest index
+  (it's still your job to verify that).</p>
+<p>To format the main root partition (the 50-100 gb one), use:</p>
+<pre class="example">
+# mkfs.ext4 /dev/sdxy
+</pre>
+<p>where <code>y</code> is the number of the partition from the output of <code>lsblk</code></p>
+<p>To format the swap partition (the partition with the same size as your RAM), use:</p>
+<pre class="example">
+# mkswap /dev/sdxy
+</pre>
+<p>where <code>x</code> is the number of the root partition from the output of <code>lsblk</code></p>
+<h4>Mount the file systems</h4>
+<p>Mount the root partition to <code>/mnt</code>, for example:</p>
+<pre class="example">
+# mount /dev/sdxy /mnt
+</pre>
+<p>Find out if your computer uses UEFI or not. The best way (I know) is to verify
+  whether you have a <code>vfat</code> partition (as in my case <code>/dev/sda1</code>).
+  If yes, then:</p>
+<pre class="example">
+# mkdir /mnt/boot
+# mount /dev/sdxy
+</pre>
+<p>(Here <code>/dev/sdxy</code> is the <code>vfat</code> partition)
+  Also remember this info(whether you have a UEFI system or not) for one of the future steps.</p>
+<p>Mount the swap partition:</p>
+<pre class="example">
+# mkswap /dev/sdxy
+</pre>
+<h2>Installation</h2>
+<h4>Select the mirrors</h4>
+<p>Packages to be installed must be downloaded from mirror servers, which
+  are defined in <code>/etc/pacman.d/mirrorlist</code>. Since we are in iitk, we will
+  use the iitk mirrors. For that, use <code>nano</code>:</p>
+<pre class="example">
+# nano /etc/pacman.d/mirrorlist
+</pre>
+<p>And insert this line at the very top just below the initial comments:</p>
+<pre class="example">
+Server = http://mirror.cse.iitk.ac.in/archlinux/$repo/os/$arch
+</pre>
+<h4>Install the base packages</h4>
+<p>Use the pacstrap script to install the base package group and other useful stuff:</p>
+<pre class="example">
+# pacstrap /mnt base wifi-menu dialog iw wpa_supplicant sudo
+</pre>
+<h2>Configure the system</h2>
+<h4>Fstab</h4>
+<p>Generate an fstab file:</p>
+<pre class="example">
+# genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</pre>
+<h4>Chroot</h4>
+<p>Change root into the new system:</p>
+<pre class="example">
+# arch-chroot /mnt
+</pre>
+<h4>Time zone</h4>
+<p>Set the time zone (probably <code>Asia/Kolkata</code>, since you live in India):</p>
+<pre class="example">
+# ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+</pre>
+<p>Run hwclock(8) to generate <code>/etc/adjtime</code>:</p>
+<pre class="example">
+# hwclock --systohc --localtime
+</pre>
+<h4>Locale</h4>
+<p>Open <code>/etc/locale.gen</code> using <code>nano</code>:</p>
+<pre class="example">
+# nano /etc/locale.gen
+</pre>
+<p>Go to the line and remove the first <code>#</code>:</p>
+<pre class="example">
+#en_US.UTF-8 UTF-8
+</pre>
+<p>Generate localisations with:</p>
+<pre class="example">
+# locale-gen
+</pre>
+<p>Open <code>/etc/locale.conf</code> using <code>nano</code> and add the following line:</p>
+<pre class="example">
+LANG=en_US.UTF-8
+</pre>
+<h4>Hostname</h4>
+<p>Create the <code>/etc/hostname</code> file. A hostname is a name for your pc (You can set that to anything consisting of only letters):</p>
+<pre class="example">
+myhostname
+</pre>
+<p>You will need to add a matching entry to <code>/etc/hosts</code> (the last line):</p>
+<pre class="example">
+127.0.0.1       localhost.localdomain   localhost
+::1             localhost.localdomain   localhost
+127.0.1.1       myhostname.localdomain  myhostname
+</pre>
+<h4>Root password</h4>
+<p>Set the root password:</p>
+<pre class="example">
+# passwd
+</pre>
+<h4>Boot loader</h4>
+<p>If you have an Intel CPU, install the intel-ucode package</p>
+<pre class="example">
+# pacman -S intel-ucode
+</pre>
+<p>Now, you need to remember if you have a UEFI system or not.</p>
+<h5>No UEFI</h5>
+<pre class="example">
+# pacman -S grub os-prober ntfs-3g
+# grub-install --target=i386-pc /dev/sdx
+# grub-mkconfig -o /boot/grub/grub.cfg
+</pre>
+<p>Please replace <code>x</code> with the character of your harddisk.</p>
+<h5>UEFI</h5>
+<pre class="example">
+# pacman -S grub os-prober efibootmgr ntfs-3g
+# grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
+# grub-mkconfig -o /boot/grub/grub.cfg
+</pre>
+<h5>After</h5>
+<p>The above steps may sometimes fail to recognize windows. Don't panic, see the reboot section.</p>
+<h4>New User</h4>
+<p>Now, its time to create a new user:</p>
+<pre class="example">
+# useradd -m -G wheel -s /bin/bash archie
+</pre>
+<p>Here, a new user was added with the username <code>archie</code> and default shell <code>/bin/bash</code>.
+  Just changing the username should suffice for most people.
+  To change the user's password:</p>
+<pre class="example">
+# passwd the_username_you_just_set
+</pre>
+<p>Now setup <code>sudo</code> by typing <code>visudo</code>. This opens up the sudo configuration file in <code>vim</code>.
+  Press <code>&lt;Shift&gt; + g</code> to goto the end of the file. Now go up, till you see this line:</p>
+<pre class="example">
+## Uncomment to allow members of group wheel to execute any command
+# %wheel ALL=(ALL) ALL
+</pre>
+<p>Now, carefully place your cursor on the <code>#</code> just before <code>%wheel</code> and press <code>x</code>.
+  This will remove the <code>#</code>. It will now look like this:</p>
+<pre class="example">
+## Uncomment to allow members of group wheel to execute any command
+ %wheel ALL=(ALL) ALL
+</pre>
+<p>Now type <code>:wq</code> to save and exit.</p>
+<p>This should give your user sudo rights.</p>
+<h2>Reboot</h2>
+<p>Exit the chroot environment by typing exit or pressing <code>Ctrl+D</code>.</p>
+<p>Optionally manually unmount all the partitions with <code>umount -R /mnt</code>:</p>
+<p>Finally, restart the machine by typing <code>reboot</code>. Now while booting choose
+  grub as the default boot option.</p>
+<p>After booting, you will encounter a black screen with option to login.
+  You can now log in with your user.</p>
+<h4>Post Reboot GRUB Fix</h4>
+<p>If your Windows did not show up during boot, run this command and check if windows
+  shows up on a reboot:</p>
+<pre class="example">
+# grub-mkconfig -o /boot/grub/grub.cfg
+</pre>
+<h2>Post-installation</h2>
+<p>See <a href="https://wiki.archlinux.org/index.php/General_recommendations">General Recommendations</a> for system management directions and
+  post-installation tutorials (like setting up a graphical user
+  interface, sound or a touchpad).</p>
+<p>For a list of applications that may be of interest, see <a href="https://wiki.archlinux.org/index.php/List_of_applications">List of applications</a>.</p>
+
+  </div>
+
+<div class="arrowNav">
+ 
+ 
+<div class="arrowLeft">
+<a id="route" class="tooltip-right" href="/installfest17/2017/01/06/installfest.html" title="
+&lt;p class=hoveratas&gt;Linux Install Fest&lt;/p&gt; &lt;p class=hoverbawah&gt;# Introduction Hi all, welcome to the Programming Club Linux...&lt;/p&gt;
+"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+
+ 
+<div class="arrowRight" style="float:right">
+<a id="route" class="tooltip-left" href="/lecture/web%20development/2016/09/24/webdev1.html" title="
+&lt;p class=hoveratas&gt;WebD: Introduction&lt;/p&gt; &lt;p class=hoverbawah&gt;Web Development Lecture Series: Introduction Basics of what the browser...&lt;/p&gt;
+"><i class="typcn typcn-chevron-right" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+</div>
+
+
+  <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
+  <time datetime="2017-01-06T13:05:20+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Jan 6, 2017</time>
+   
+  • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">
+      
+      <a href="https://yashsriv.org" target="_blank" style="color: #fff;">Yash Srivastav</a>
+      
+    </span>
+  </span>
+   
+    |
+  
+  </p>
+
+</article>
+
+
+
+
+
+<style>
+    #disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+</style>
+<div id="disqus_thread"></div>
+<script>
+  // For debugging
+  // var disqus_developer = 1;
+  var disqus_shortname = 'pclubiitk';
+  var disqus_config = function () {
+    this.page.url = 'https://pclub.in/2017/01/06/installarch';
+    this.page.identifier = '/2017/01/06/installarch';
+  };
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
+
+      </div>
+    </div>
+
+    
+<footer class="site-footer">
+  <div class="wrapper">
+    <h2 class="footer-heading">Programming Club IIT Kanpur</h2>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>The Programming Club, IIT Kanpur
+</li>
+          <li><a href="mailto:pclubiitk@gmail.com">pclubiitk@gmail.com</a></li>
+          <li>Send us Pull Requests to this website <a href="https://github.com/pclubiitk/pclub.in" target="_blank">here</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/pclubiitk"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">pclubiitk</span></a>
+
+          </li>
+          
+          
+          
+          <li>
+            <a href="https://facebook.com/groups/pclubiitk"><span class="icon icon--facebook"><?xml version="1.0"?>
+<svg class="icon icon-facebook" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path class="background" fill="#828282" d="M 0.875,0 C 0.38722,0 0,0.38721 0,0.875 l 0,14.25 C 0,15.61266 0.38715,16 0.875,16 l 7.65625,0 0,-6.1875 -2.0625,0 0,-2.4375 2.0625,0 0,-1.78125 c 0,-2.06656 1.2814395,-3.1875 3.125,-3.1875 0.88307,0 1.62261,0.06435 1.84375,0.09375 l 0,2.15625 -1.25,0.03125 c -1.00252,0 -1.21875,0.45713 -1.21875,1.15625 l 0,1.53125 2.40625,0 -0.3125,2.4375 -2.09375,0 0,6.1875 4.09375,0 C 15.612599,16 16,15.61272 16,15.125 L 16,0.875 C 16,0.38721 15.61266,0 15.125,0 L 0.875,0 z"/>
+  <path class="foreground" fill="white" d="m 11.03968,16.000001 v -6.19608 h 2.07973 l 0.31141,-2.41472 h -2.39114 v -1.54165 c 0,-0.69912 0.19414,-1.17555 1.19666,-1.17555 l 1.27866,-5.6e-4 v -2.15974 c -0.22114,-0.0294 -0.98017,-0.0952 -1.86324,-0.0952 -1.8435605,0 -3.1057105,1.12532 -3.1057105,3.19188 v 1.7808 h -2.08506 v 2.41472 h 2.08506 v 6.19608 H 11.03968 z"/>
+</svg>
+</span><span class="username">PClubIITK</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/pclubiitk"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">pclubiitk</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+      <div class="footer-col footer-col-3">
+        <p style="font-size: xx-small;">Design by Spaghetti</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Loading JavaScript -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-preload.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-tooltipster.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-autocomplete.js"></script>
+<script type="text/javascript" src="/assets/js/responsive_waterfall.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    "/" != location.pathname ? $('.trigger a[href^="/' + location.pathname.split("/")[1] + '"]').addClass("active") : $(".none a:eq(0)").addClass("active")
+}), $(document).ready(function() {
+    $(".tooltip-right").tooltipster({
+        contentAsHTML: !0,
+        position: "right"
+    })
+}), $(document).ready(function() {
+    $(".tooltip-left").tooltipster({
+        contentAsHTML: !0,
+        position: "left"
+    })
+});
+$(document).ready(function() {
+    $(".menu-icon").click(function() {
+        $(".trigger").toggle()
+    })
+}), Pace.on("done", function() {
+    $(".pacel").hide()
+}), $(function() {
+    $("img").lazyload({})
+});
+var options = {
+    url: "/gblk.json",
+    getValue: "title",
+    list: {
+        match: {
+            enabled: !0,
+            maxNumberOfElements: 5
+        }
+    },
+    template: {
+        type: "links",
+        fields: {
+            link: "url"
+        }
+    },
+    theme: "square"
+};
+$("#countries").easyAutocomplete(options);
+var waterfall = new Waterfall({
+    containerSelector: ".wf-container",
+    boxSelector: ".wf-box",
+    minBoxWidth: 180
+});
+</script>
+
+
+  </Body>
+
+</html>

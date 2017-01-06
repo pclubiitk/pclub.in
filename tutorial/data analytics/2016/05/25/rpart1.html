@@ -134,10 +134,10 @@
 
 <p><strong><em>Having Fun with R</em></strong></p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">install.packages</span><span class="p">(</span><span class="s2">"sudoku"</span><span class="p">)</span>
-<span class="n">library</span><span class="p">(</span><span class="n">sudoku</span><span class="p">)</span>
-<span class="n">s</span> <span class="o">&lt;-</span> <span class="n">readSudoku</span><span class="p">(</span><span class="s2">"c:/hard sudoku problem.txt"</span><span class="p">)</span>
-<span class="n">solveSudoku</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">install.packages</span><span class="p">(</span><span class="s2">"sudoku"</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">sudoku</span><span class="p">)</span><span class="w">
+</span><span class="n">s</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">readSudoku</span><span class="p">(</span><span class="s2">"c:/hard sudoku problem.txt"</span><span class="p">)</span><span class="w">
+</span><span class="n">solveSudoku</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></code></pre></figure>
 
 <p>Wondering what the above 4 lines of code can do ? Well It can solve the <strong>hardest</strong> <em>Soduku Puzzle</em> ever made ! Sounds Cool ?</p>
 
@@ -222,8 +222,8 @@
   <p><code class="highlighter-rouge">c()</code> : a function used to concatenate</p>
 </blockquote>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">a</span> <span class="o">&lt;-</span><span class="s2">"Hello World"</span>
-<span class="n">b</span> <span class="o">&lt;-</span><span class="n">c</span><span class="p">(</span><span class="s2">"Hello "</span><span class="p">,</span><span class="s2">"World"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="s2">"Hello World"</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="nf">c</span><span class="p">(</span><span class="s2">"Hello "</span><span class="p">,</span><span class="s2">"World"</span><span class="p">)</span></code></pre></figure>
 
 <p><br />
 Here you can see different ways to defining the same string.</p>
@@ -266,8 +266,8 @@ Here you can see different ways to defining the same string.</p>
 
 <p>Try to understand the code snippet below, guess the output and then run on <strong><em>R</em></strong> and check</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">temp</span> <span class="o">&lt;-</span> <span class="m">1</span><span class="o">:</span><span class="m">5</span>
-<span class="n">matrix</span><span class="p">(</span><span class="n">rep</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span><span class="m">2</span><span class="p">),</span> <span class="n">nrow</span> <span class="o">=</span> <span class="m">2</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">temp</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="w">
+</span><span class="n">matrix</span><span class="p">(</span><span class="nf">rep</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span></code></pre></figure>
 
 <h4 id="operations-on-vector">Operations on vector</h4>
 
@@ -281,13 +281,13 @@ Adding 2 vectors of same size, different size, multiplying, dividing, <code clas
 Run these commands and you will get a clear idea of pmin and pmax</p>
 </blockquote>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">a</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="m">10</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">7</span><span class="p">,</span><span class="m">9</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="m">9</span><span class="p">,</span><span class="m">4</span><span class="p">,</span><span class="m">6</span><span class="p">,</span><span class="m">4</span><span class="p">)</span>
-<span class="n">c</span> <span class="o">-&lt;</span> <span class="n">c</span><span class="p">(</span><span class="m">9</span><span class="p">,</span><span class="m">6</span><span class="p">,</span><span class="m">8</span><span class="p">,</span><span class="m">6</span><span class="p">)</span>
-<span class="n">pmin</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
-<span class="n">pmax</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
-<span class="n">max</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
-<span class="n">min</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">10</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">7</span><span class="p">,</span><span class="m">9</span><span class="p">)</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">9</span><span class="p">,</span><span class="m">4</span><span class="p">,</span><span class="m">6</span><span class="p">,</span><span class="m">4</span><span class="p">)</span><span class="w">
+</span><span class="n">c</span><span class="w"> </span><span class="o">-&lt;</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">9</span><span class="p">,</span><span class="m">6</span><span class="p">,</span><span class="m">8</span><span class="p">,</span><span class="m">6</span><span class="p">)</span><span class="w">
+</span><span class="n">pmin</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span><span class="w">
+</span><span class="n">pmax</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span><span class="w">
+</span><span class="nf">max</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span><span class="w">
+</span><span class="nf">min</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span></code></pre></figure>
 
 <p>To intialize a vector with a value <code class="highlighter-rouge">numeric()</code> is used</p>
 
@@ -299,9 +299,9 @@ Run these commands and you will get a clear idea of pmin and pmax</p>
 
 <p>Try the following commands</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">test</span> <span class="o">&lt;-</span> <span class="n">numeric</span><span class="p">()</span>
-<span class="n">test</span><span class="p">[</span><span class="m">10</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="m">1</span>
-<span class="n">test</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">test</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">numeric</span><span class="p">()</span><span class="w">
+</span><span class="n">test</span><span class="p">[</span><span class="m">10</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="n">test</span></code></pre></figure>
 
 <p>You should now see <strong>NA’s</strong> in the vector</p>
 
@@ -313,9 +313,9 @@ Run these commands and you will get a clear idea of pmin and pmax</p>
 
 <p><strong>Example</strong></p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">test</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="n">NA</span><span class="p">)</span>
-<span class="n">check</span> <span class="o">&lt;-</span> <span class="n">is.na</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
-<span class="n">check</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">test</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="kc">NA</span><span class="p">)</span><span class="w">
+</span><span class="n">check</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">is.na</span><span class="p">(</span><span class="n">test</span><span class="p">)</span><span class="w">
+</span><span class="n">check</span></code></pre></figure>
 
 <p>check will be <strong>FALSE</strong> for non NA values and <strong>TRUE</strong> for NA values</p>
 
@@ -336,8 +336,10 @@ Run these commands and you will get a clear idea of pmin and pmax</p>
 <p><code class="highlighter-rouge">|</code> or <code class="highlighter-rouge">||</code> : for <em>LOGICAL OR</em></p>
 
 <h4 id="determining-the-type-of-a-variable">Determining the type of a variable</h4>
-<p><code class="highlighter-rouge">typeof(variablename)</code> : Return the type of variable
-&gt; Check out <code class="highlighter-rouge">mode()</code> and <code class="highlighter-rouge">class()</code> and read about the difference between the three</p>
+<p><code class="highlighter-rouge">typeof(variablename)</code> : Return the type of variable</p>
+<blockquote>
+  <p>Check out <code class="highlighter-rouge">mode()</code> and <code class="highlighter-rouge">class()</code> and read about the difference between the three</p>
+</blockquote>
 
 <p><em>We will discuss this in the next part :D</em></p>
 

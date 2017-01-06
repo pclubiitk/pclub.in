@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'thor'
+gem 'org-ruby'
 gem 'stringex'
 gem 'jekyll-paginate'
 gem 'kramdown'

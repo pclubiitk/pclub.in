@@ -153,7 +153,7 @@ on compiling OpenCV from source.</p>
 <p>Now that OpenCV has been installed, you might want to run a program to see if it is working
 properly. I would suggest the following program:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;opencv2/opencv.hpp&gt;
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;opencv2/opencv.hpp&gt;
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">cv</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
 
@@ -196,7 +196,7 @@ You can save it in a file named <code class="highlighter-rouge">test.cpp</code>.
 
 <p>Now, in order to compile this program, execute this from the terminal:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>g++ -o Test /path/to/test.cpp <span class="sb">`</span>pkg-config --libs opencv<span class="sb">`</span>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>g++ -o Test /path/to/test.cpp <span class="sb">`</span>pkg-config --libs opencv<span class="sb">`</span>
 </code></pre>
 </div>
 
@@ -204,7 +204,7 @@ You can save it in a file named <code class="highlighter-rouge">test.cpp</code>.
 
 <p>After compilation finishes (hopefully without any errors), you can run this test program with:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>./Test
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>./Test
 </code></pre>
 </div>
 
