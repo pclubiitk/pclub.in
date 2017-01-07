@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 Jan 2017 21:36:21 +0000</pubDate>
-    <lastBuildDate>Fri, 06 Jan 2017 21:36:21 +0000</lastBuildDate>
+    <pubDate>Sat, 07 Jan 2017 08:07:48 +0000</pubDate>
+    <lastBuildDate>Sat, 07 Jan 2017 08:07:48 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -78,6 +78,75 @@ If you do use one, select ‘India’ as your country and iitk as your mirror.&l
       </item>
     
       <item>
+        <title>Install Fest: Ubuntu</title>
+        <description>&lt;h2 id=&quot;ubuntu-installation-guide&quot;&gt;Ubuntu installation guide&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Insert the bootable USB stick, reboot the system and instruct the &lt;strong&gt;BIOS&lt;/strong&gt; to boot from the USB by pressing a special function key (usually &lt;strong&gt;F9&lt;/strong&gt;, &lt;strong&gt;F10&lt;/strong&gt; or &lt;strong&gt;F12&lt;/strong&gt; depending on your device) after the boot up a new grub screen should appear on the screen. From the menu select &lt;strong&gt;Install Ubuntu&lt;/strong&gt; and press &lt;strong&gt;Enter&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;After this a completely functional Ubuntu system running in live-mode will start up. On the launcher on left side hit on the second icon from top, &lt;strong&gt;Install Ubuntu 16.04 LTS&lt;/strong&gt;, and the installer utility will start. Choose language and hit &lt;strong&gt;Continue&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;In &lt;strong&gt;Preparing to install ubuntu&lt;/strong&gt; click &lt;strong&gt;Continue&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s24.postimg.org/fc1lev4tx/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In &lt;strong&gt;Installation type&lt;/strong&gt; check the &lt;strong&gt;Something else&lt;/strong&gt; option and hit on &lt;strong&gt;Continue&lt;/strong&gt; button to proceed furthur.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s24.postimg.org/qcwqjvx2t/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now we create two partitions one for &lt;strong&gt;&lt;em&gt;root&lt;/em&gt;&lt;/strong&gt; and other for &lt;strong&gt;&lt;em&gt;home&lt;/em&gt;&lt;/strong&gt;. To create the first partition, the &lt;strong&gt;&lt;em&gt;root&lt;/em&gt;&lt;/strong&gt; partition select the free space (the shrink space from windows created earlier) and hit on the &lt;strong&gt;+&lt;/strong&gt; icon below. On partition settings use the following configurations and hit &lt;strong&gt;OK&lt;/strong&gt; to continue:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   Size = at least 20000 MB
+   Type for the new partition = Primary
+   Location for the new partition = Beginning
+   Use as = EXT4 journaling file system
+   Mount point = /
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s24.postimg.org/oz53okxth/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s24.postimg.org/h7odq0to5/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create the &lt;strong&gt;&lt;em&gt;home&lt;/em&gt;&lt;/strong&gt; partition using the same steps as above. Use all the available free space left for home partition size. The partition settings should look like this:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   Size = all remaining free space
+   Type for the new partition = Primary
+   Location for the new partition = Beginning
+   Use as = EXT4 journaling file system
+   Mount point = /home
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://s24.postimg.org/69d47u52t/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Hit the &lt;strong&gt;Install Now&lt;/strong&gt; button to apply changes and start the installation process. An alert regarding swap space will appear click on &lt;strong&gt;Continue&lt;/strong&gt;. Again a pop-up window will appear, hit &lt;strong&gt;Continue&lt;/strong&gt; to write changes to disc and the installation process will now begin.&lt;/li&gt;
+  &lt;li&gt;Next select a nearby city and hit &lt;strong&gt;Continue&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Next select &lt;strong&gt;keyboard layout&lt;/strong&gt; and hit &lt;strong&gt;Continue&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fill up the &lt;strong&gt;Who are you?&lt;/strong&gt; window and hit &lt;strong&gt;Continue&lt;/strong&gt;. From here installation process will run automatically till it reaches the end.
+ &lt;img src=&quot;https://s24.postimg.org/fv6oo4w8l/6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;After installation restart the system and choose &lt;strong&gt;Ubuntu 16.04&lt;/strong&gt; from the &lt;strong&gt;Grub&lt;/strong&gt; menu and now you can enjoy the vivid features of &lt;strong&gt;Ubuntu&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 06 Jan 2017 19:20:00 +0000</pubDate>
+        <link>http://pclub.in/2017/01/06/ubuntuinstall.html</link>
+        <guid isPermaLink="true">http://pclub.in/2017/01/06/ubuntuinstall.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Linux Install Fest</title>
         <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
@@ -88,6 +157,9 @@ If you do use one, select ‘India’ as your country and iitk as your mirror.&l
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;/2017/01/06/debianinstall.html&quot;&gt;Install Fest: Debian&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/2017/01/06/ubuntuinstall.html&quot;&gt;Install Fest: Ubuntu&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;/2017/01/06/installarch.html&quot;&gt;Install Fest: Arch Linux&lt;/a&gt;&lt;/p&gt;
@@ -850,74 +922,6 @@ state takes time &lt;strong&gt;Ο&lt;/strong&gt;(&lt;strong&gt;1&lt;/strong&gt;)
         <category>tutorial</category>
         
         <category>Algos</category>
-        
-      </item>
-    
-      <item>
-        <title>Practice Programming Contest, Summer 2016</title>
-        <description>&lt;h1 id=&quot;contest-summary-summer-2016&quot;&gt;Contest Summary: Summer 2016&lt;/h1&gt;
-
-&lt;p&gt;This summer, Programming Club IIT Kanpur kicked off the 2016-17 season, with a Summer WPC
-held on the Hackerearth platform. The primary problem setter and tester was
-&lt;a href=&quot;http://codeforces.com/profile/ajs97&quot;&gt;Arjun Sinha&lt;/a&gt;, a student of the Y15 batch.
-There was an amazing amount of participation, both from within and outside the IITK campus.
-The contest was very well received by all those who participatd. Here are some of the contest statistics:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Duration: 6:00 pm 28&lt;sup&gt;th&lt;/sup&gt; June, 2016 IST - 7:00pm 29&lt;sup&gt;th&lt;/sup&gt; June, 2016 IST&lt;/li&gt;
-  &lt;li&gt;Number of registered participants: 1301&lt;/li&gt;
-  &lt;li&gt;Number of participants with atleast one submission:507&lt;/li&gt;
-  &lt;li&gt;Problem with most number of submissions: &lt;strong&gt;Weird Chemists&lt;/strong&gt; :&lt;em&gt;464 correct submissions&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Problem with the least number of submissions: &lt;strong&gt;Tree Tank&lt;/strong&gt; :&lt;em&gt;10 correct submissions&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Now for the contest ranks-&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Mohib Manva&lt;/strong&gt;, of DAIICT Gandhinagar&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Satyaki Upadhyay&lt;/strong&gt;, of BITS Pilani, Pilani Campus&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Swastik Sharma&lt;/strong&gt;, of IIT Kanpur&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The three winners solved all the 12 problems in the contest. Congratulations to winners!&lt;/p&gt;
-
-&lt;p&gt;In conclusion, we at PClub were more than happy with the participation and peformance of the contestants.
-The problem gradient was good, with the easy problems being solved by a large fraction of contestants,
-along with submissions decreasing gradually on the medium and hard problems.&lt;/p&gt;
-
-&lt;p&gt;Here are the problems links for you to read:
-(Note: You must be logged into HackerEarth to be able to view these links)&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/weird-chemists-3/&quot;&gt;&lt;strong&gt;Weird Chemists&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/alternating-sequences-3/&quot;&gt;&lt;strong&gt;Alternating Sequences&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/om-nom-and-candies/&quot;&gt;&lt;strong&gt;Om Nom and Candies&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/andrew-and-his-bike-3/&quot;&gt;&lt;strong&gt;Andrew and His Bike&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/horn-ok-please/&quot;&gt;&lt;strong&gt;Horn Ok Please&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/inverted-gcd/&quot;&gt;&lt;strong&gt;Inverted GCD&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/lizzys-queries/&quot;&gt;&lt;strong&gt;Lizzy’s Queries&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/monochrome-tree/&quot;&gt;&lt;strong&gt;Monochrome Tree&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/rendezvous-3/&quot;&gt;&lt;strong&gt;Rendezvous&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/tree-tank/&quot;&gt;&lt;strong&gt;Tree Tank&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/miranda-writes/&quot;&gt;&lt;strong&gt;Miranda Writes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/algorithm/find-the-triangle-3/&quot;&gt;&lt;strong&gt;Find The Triangle&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;If you want to submit solutions to the problems, you can submit them in the links given above.
-Here is the &lt;a href=&quot;https://www.hackerearth.com/IITK-WPC-Summer16/&quot;&gt;link&lt;/a&gt; of the contest for your reference.
-We look forward further WPCs being held this year.&lt;/p&gt;
-
-&lt;p&gt;Happy Coding!&lt;/p&gt;
-</description>
-        <pubDate>Sat, 13 Aug 2016 18:55:00 +0000</pubDate>
-        <link>http://pclub.in/competitive/2016/08/13/SummerContestReport.html</link>
-        <guid isPermaLink="true">http://pclub.in/competitive/2016/08/13/SummerContestReport.html</guid>
-        
-        <category>competitive</category>
-        
-        <category>WPC</category>
-        
-        
-        <category>competitive</category>
         
       </item>
     

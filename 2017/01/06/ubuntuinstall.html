@@ -8,15 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Install Fest: Debian</title>
-  <meta name="description" content="Installing Debian Jessie">
+  <title>Install Fest: Ubuntu</title>
+  <meta name="description" content="Ubuntu installation guide">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/2017/01/06/debianinstall.html">
+  <link rel="canonical" href="http://pclub.in/2017/01/06/ubuntuinstall.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -109,82 +109,93 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Install Fest: Debian</h1>
+    <h1 class="inpost-title" itemprop="name headline">Install Fest: Ubuntu</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/2017/01/06/debianinstall.html#disqus_thread" data-disqus-identifier="/2017/01/06/debianinstall"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/2017/01/06/ubuntuinstall.html#disqus_thread" data-disqus-identifier="/2017/01/06/ubuntuinstall"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <h1 id="installing-debian-jessie">Installing Debian Jessie</h1>
+    <h2 id="ubuntu-installation-guide">Ubuntu installation guide</h2>
 
-<p>This is almost the same for debian stretch.</p>
+<ul>
+  <li>
+    <p>Insert the bootable USB stick, reboot the system and instruct the <strong>BIOS</strong> to boot from the USB by pressing a special function key (usually <strong>F9</strong>, <strong>F10</strong> or <strong>F12</strong> depending on your device) after the boot up a new grub screen should appear on the screen. From the menu select <strong>Install Ubuntu</strong> and press <strong>Enter</strong>.</p>
+  </li>
+  <li>After this a completely functional Ubuntu system running in live-mode will start up. On the launcher on left side hit on the second icon from top, <strong>Install Ubuntu 16.04 LTS</strong>, and the installer utility will start. Choose language and hit <strong>Continue</strong>.</li>
+  <li>In <strong>Preparing to install ubuntu</strong> click <strong>Continue</strong>.</li>
+</ul>
 
-<h2 id="references">References:</h2>
+<p><img src="https://s24.postimg.org/fc1lev4tx/1.png" alt="" /></p>
 
-<ol>
-  <li>Official <a href="https://d-i.debian.org/manual/en.i386/apa.html">InstallationHowto</a></li>
-  <li><a href="http://acer--uk.custhelp.com/app/answers/detail/a_id/37059/~/windows-10%3A-enable-or-disable-fast-startup">Turning off FastBoot</a></li>
-  <li>Look at <a href="https://technet.microsoft.com/en-in/library/dn481258.aspx">turning off Secure Boot</a></li>
-  <li>Make some <a href="https://technet.microsoft.com/en-us/library/gg309169.aspx">free space</a></li>
-</ol>
+<ul>
+  <li>In <strong>Installation type</strong> check the <strong>Something else</strong> option and hit on <strong>Continue</strong> button to proceed furthur.</li>
+</ul>
 
-<h2 id="steps">Steps</h2>
+<p><img src="https://s24.postimg.org/qcwqjvx2t/2.png" alt="" /></p>
 
-<ol>
-  <li>Get bootable drive.</li>
-  <li>Make free space of at least 8 - 10 GB.</li>
-  <li>Turn off FastBoot and then Secure Boot.</li>
-  <li>Boot using the Installation USB.</li>
-  <li>Select “Graphical Install” or “Install”
-<img src="http://i.imgur.com/LqVGmO0.png" alt="one" /></li>
-  <li>Select language, location, keymap(American English works)
-<img src="http://i.imgur.com/BFPDHee.png" alt="two" /></li>
-  <li>Let it detect network hardware. If you’re using a LAN cable with a properly
-configured router(recommended), it should detect DHCP automatically. If not, you
-can set it up manually(like you set for your room). LAN cable is still recommended, 
-since wireless may not work out of the box.
-<img src="http://i.imgur.com/8ec3Zkn.png" alt="three" /></li>
-  <li>Enter hostname (your choice).</li>
-  <li>Make a root(admin) password. You can leave this empty(which is absolutely OK, since the system
-then makes your user a ‘sudo-er’ (you can perform actions as root using ‘sudo’ command).
-<img src="http://i.imgur.com/ocd8NcX.png" alt="four" /></li>
-  <li>Setup your user. Enter name, username, password.</li>
-  <li>Let the clock be setup and wait for the partioner to open.</li>
-  <li>Choose the ‘Manual’ method for partitioning. 
-<img src="http://i.imgur.com/1Esfyqr.png" alt="five" /></li>
-  <li>Select the partition with free space that you’ve just created in step 2. Select ‘Automatically 
-Partition the free space’ and proceed. Select ‘All Files in new partition’. 
-<img src="http://i.imgur.com/lKYJsji.png" alt="six" /></li>
-  <li>Finish partitioning and write the changes to disk.
-<img src="http://i.imgur.com/Y63c7tI.png" alt="seven" /></li>
-  <li>Configure the package manager to not scan any extra CD/DVD.</li>
-  <li>You can select a network mirror if you want, but if you’re using a DVD, it is not needed.
-If you do use one, select ‘India’ as your country and iitk as your mirror.</li>
-  <li>Choose whether you want to take part in a user survey.</li>
-  <li>Select the software you want to install (GNOME or another DE is recommended).
-<img src="http://i.imgur.com/onZRZQa.png" alt="nine" /></li>
-  <li>Choose whether to use nonfree and contrib software (you can, it usually helps).
-<img src="http://i.imgur.com/x4AXqU2.png" alt="ten" /></li>
-  <li>Install grub. It should detect MS Windows. If not, you can always set it up later
-(This won’t erase Windows!) 
-<img src="http://i.imgur.com/dm8wzsX.png?1" alt="eleven" /></li>
-  <li>Choose your hard drive (usually /dev/sda) when choosing where to install grub.
-<img src="http://i.imgur.com/mIxydte.png?1" alt="twelve" /></li>
-  <li>Installation is complete, reboot.</li>
-</ol>
+<ul>
+  <li>
+    <p>Now we create two partitions one for <strong><em>root</em></strong> and other for <strong><em>home</em></strong>. To create the first partition, the <strong><em>root</em></strong> partition select the free space (the shrink space from windows created earlier) and hit on the <strong>+</strong> icon below. On partition settings use the following configurations and hit <strong>OK</strong> to continue:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>   Size = at least 20000 MB
+   Type for the new partition = Primary
+   Location for the new partition = Beginning
+   Use as = EXT4 journaling file system
+   Mount point = /
+</code></pre>
+    </div>
+  </li>
+</ul>
+
+<p><img src="https://s24.postimg.org/oz53okxth/3.png" alt="" /></p>
+
+<p><img src="https://s24.postimg.org/h7odq0to5/4.png" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Create the <strong><em>home</em></strong> partition using the same steps as above. Use all the available free space left for home partition size. The partition settings should look like this:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>   Size = all remaining free space
+   Type for the new partition = Primary
+   Location for the new partition = Beginning
+   Use as = EXT4 journaling file system
+   Mount point = /home
+</code></pre>
+    </div>
+
+    <p><img src="https://s24.postimg.org/69d47u52t/5.png" alt="" /></p>
+  </li>
+  <li>Hit the <strong>Install Now</strong> button to apply changes and start the installation process. An alert regarding swap space will appear click on <strong>Continue</strong>. Again a pop-up window will appear, hit <strong>Continue</strong> to write changes to disc and the installation process will now begin.</li>
+  <li>Next select a nearby city and hit <strong>Continue</strong>.</li>
+  <li>Next select <strong>keyboard layout</strong> and hit <strong>Continue</strong>.</li>
+  <li>
+    <p>Fill up the <strong>Who are you?</strong> window and hit <strong>Continue</strong>. From here installation process will run automatically till it reaches the end.
+ <img src="https://s24.postimg.org/fv6oo4w8l/6.png" alt="" /></p>
+  </li>
+  <li>After installation restart the system and choose <strong>Ubuntu 16.04</strong> from the <strong>Grub</strong> menu and now you can enjoy the vivid features of <strong>Ubuntu</strong>.</li>
+</ul>
 
   </div>
 
 <div class="arrowNav">
  
+ 
+<div class="arrowLeft">
+<a id="route" class="tooltip-right" href="/2017/01/06/debianinstall.html" title="
+&lt;p class=hoveratas&gt;Install Fest: Debian&lt;/p&gt; &lt;p class=hoverbawah&gt;# Installing Debian Jessie This is almost the same for...&lt;/p&gt;
+"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
 
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/2017/01/06/ubuntuinstall.html" title="
-&lt;p class=hoveratas&gt;Install Fest: Ubuntu&lt;/p&gt; &lt;p class=hoverbawah&gt;Ubuntu installation guide Insert the bootable USB stick, reboot the...&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/installfest17/2017/01/06/installfest.html" title="
+&lt;p class=hoveratas&gt;Linux Install Fest&lt;/p&gt; &lt;p class=hoverbawah&gt;Introduction Hi all, welcome to the Programming Club Linux Install...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -195,12 +206,12 @@ If you do use one, select ‘India’ as your country and iitk as your mirror.</
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2017-01-06T19:27:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Jan 6, 2017</time>
+  <time datetime="2017-01-06T19:20:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Jan 6, 2017</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      milindl
+      Anmol Porwal
       
     </span>
   </span>
@@ -230,8 +241,8 @@ If you do use one, select ‘India’ as your country and iitk as your mirror.</
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/2017/01/06/debianinstall';
-    this.page.identifier = '/2017/01/06/debianinstall';
+    this.page.url = 'https://pclub.in/2017/01/06/ubuntuinstall';
+    this.page.identifier = '/2017/01/06/ubuntuinstall';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
