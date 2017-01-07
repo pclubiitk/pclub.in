@@ -2,7 +2,7 @@
 layout: post
 title: "Installing Ubuntu In Latest Asus Rog PCs"
 author: Akash Kumar Dutta
-subsection: installfest
+subsection: installfest17
 hidden: true
 ---
 **Problem occurs due to loading of Nvidia Drivers during booting. Follow the following simple steps.**
