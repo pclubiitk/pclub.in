@@ -6,9 +6,42 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 Jan 2017 08:15:42 +0000</pubDate>
-    <lastBuildDate>Sat, 07 Jan 2017 08:15:42 +0000</lastBuildDate>
+    <pubDate>Mon, 09 Jan 2017 18:50:51 +0000</pubDate>
+    <lastBuildDate>Mon, 09 Jan 2017 18:50:51 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Web Forum</title>
+        <description>&lt;h1 id=&quot;web-forum&quot;&gt;&lt;a href=&quot;https://github.com/heyitssat/Forum.github.io&quot;&gt;Web forum&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;This project is a forum where you can Read posts, Write , Discuss , Share your views and Ask your questions. It organizes all content in various tags to make it easier for you to connect with people of same interests. Here ideas and views on a particular issue can be exchanged.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/heyitssat/heyitssat.github.io/blob/master/report_image/1%20(2).png&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ckeditor and kcfinder provides you with the tools you may feel the need of to make your post interactive.&lt;/li&gt;
+  &lt;li&gt;Phpmailer is used to send emails for user verification making it secure.&lt;/li&gt;
+  &lt;li&gt;Use of materealizecss and bootstrap makes the portal interactive and responsive.&lt;/li&gt;
+  &lt;li&gt;Back-end programming is coded in php and database stored using mysql.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Website: &lt;a href=&quot;https://heyitssat.github.io/&quot;&gt;https://heyitssat.github.io/&lt;/a&gt; 
+Github Wiki: &lt;a href=&quot;https://github.com/heyitssat/Project_pragati/wiki&quot;&gt;Forum wiki&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Jan 2017 11:28:00 +0000</pubDate>
+        <link>http://pclub.in/project/2017/01/08/web_forum.html</link>
+        <guid isPermaLink="true">http://pclub.in/project/2017/01/08/web_forum.html</guid>
+        
+        <category>summer16</category>
+        
+        <category>project</category>
+        
+        
+        <category>project</category>
+        
+        <category>Project</category>
+        
+      </item>
     
       <item>
         <title>Install Fest: Debian</title>
@@ -834,45 +867,6 @@ I would not recommend this operating system to users new to the Linux environmen
         
         
         <category>Open Source</category>
-        
-      </item>
-    
-      <item>
-        <title>N-Body Simulation</title>
-        <description>&lt;h1 id=&quot;n-body-simulation&quot;&gt;&lt;a href=&quot;http://sagnikb.github.io/Simulati-ON/&quot;&gt;N-body simulation&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;The N-body simulation is an interesting topic in Physics, and finds applications in astrophysics, biomoecular studies and other areas of science. Mathematical soultions of this problem are not possible, so numerical methods are necessary for visualisation. The problem basically involves several bodies with defined properties and also a well defined force that acts between each of these bodies, and involves studying how the system evolves with time. Parallel programming is used for increasing performance, and problems of this type are ideally suited for the parallel programming paradigm.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://raw.githubusercontent.com/sagnikb/Simulati-ON/master/Pics/simulation_sample.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;^ This is a screenshot of a simulation in action with 5 bodies. The program works well with 20 bodies.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;OpenACC is used for parallel programming&lt;/li&gt;
-  &lt;li&gt;Gnuplot is used for visulisation of data&lt;/li&gt;
-  &lt;li&gt;Performance improvement over sequential code easily apparent&lt;/li&gt;
-  &lt;li&gt;Uses compiler pgcc. For testing of non parallel programs, the files can also be compiled using gcc&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Received the &lt;strong&gt;Best Research Project&lt;/strong&gt; during the Science &amp;amp; Technology Summer
-Camp 2016.&lt;/p&gt;
-
-&lt;p&gt;Website: &lt;a href=&quot;http://sagnikb.github.io/Simulati-ON/&quot;&gt;http://sagnikb.github.io/Simulati-ON/&lt;/a&gt;
-LaTeX Report: &lt;a href=&quot;http://github.com/sagnikb/documentation/report.pdf&quot;&gt;report.pdf&lt;/a&gt;
-Github Wiki: &lt;a href=&quot;https://github.com/sagnikb/Simulati-ON/wiki&quot;&gt;Simulati-ON Wiki&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 26 Aug 2016 19:30:00 +0000</pubDate>
-        <link>http://pclub.in/project/2016/08/26/nbodysimulation.html</link>
-        <guid isPermaLink="true">http://pclub.in/project/2016/08/26/nbodysimulation.html</guid>
-        
-        <category>summer16</category>
-        
-        <category>project</category>
-        
-        
-        <category>project</category>
-        
-        <category>Project</category>
         
       </item>
     
