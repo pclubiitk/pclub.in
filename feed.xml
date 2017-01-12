@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Jan 2017 18:50:51 +0000</pubDate>
-    <lastBuildDate>Mon, 09 Jan 2017 18:50:51 +0000</lastBuildDate>
+    <pubDate>Thu, 12 Jan 2017 16:16:21 +0000</pubDate>
+    <lastBuildDate>Thu, 12 Jan 2017 16:16:21 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -16,7 +16,7 @@
 
 &lt;p&gt;This project is a forum where you can Read posts, Write , Discuss , Share your views and Ask your questions. It organizes all content in various tags to make it easier for you to connect with people of same interests. Here ideas and views on a particular issue can be exchanged.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/heyitssat/heyitssat.github.io/blob/master/report_image/1%20(2).png&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/heyitssat/heyitssat.github.io/master/report_image/1%20(2).png&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Ckeditor and kcfinder provides you with the tools you may feel the need of to make your post interactive.&lt;/li&gt;
