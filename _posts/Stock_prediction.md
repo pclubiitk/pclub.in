@@ -50,19 +50,4 @@ The training set has been trained by "**step**" function.The code for it is simp
  Website : http://mlcoderss.github.io/ML-project/
 
 
-[//]: # 
-   [Torch]: <https://github.com/torch/torch7/wiki/Cheatsheet>
-   [Andrew NG]: <https://www.coursera.org/instructor/andrewng>
-   [Coursera]: <https://www.coursera.org/learn/machine-learning>
-   [neural networks]: <http://neuralnetworksanddeeplearning.com/>
-   [Michael Nelson]: <http://michaelnielsen.org/>
-   [rnduja blog]: <http://rnduja.github.io/2015/10/13/torch-mnist/>
-   [Dataset.txt]: <https://github.com/MLcoderss/ML-project/blob/master/Dataset.txt>
-   [data repository]: <https://github.com/MLcoderss/ML-project/blob/master/sp500hst.txt>
-   [stock_function.lua]: <https://github.com/MLcoderss/ML-project/blob/master/stock_function.lua>
-   [core_function.lua]: <https://github.com/MLcoderss/ML-project/blob/master/core_function.lua>
-   [optim]: <https://github.com/torch/optim>
-   [optim.sgd]: <http://torch.ch/docs/five-simple-examples.html#4-using-the-optim-package>
-   [final_output.lua]: <https://github.com/MLcoderss/ML-project/blob/master/final_output.lua>
-   [graph_output.lua]: <https://github.com/MLcoderss/ML-project/blob/master/graph_output.lua>
-   
+
