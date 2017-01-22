@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 Jan 2017 16:16:21 +0000</pubDate>
-    <lastBuildDate>Thu, 12 Jan 2017 16:16:21 +0000</lastBuildDate>
+    <pubDate>Sun, 22 Jan 2017 16:11:19 +0000</pubDate>
+    <lastBuildDate>Sun, 22 Jan 2017 16:11:19 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -715,6 +715,78 @@ You will also see a graph plot between the expected value and predicted value.&l
       </item>
     
       <item>
+        <title>WiFi Captive Portal with Dashboard</title>
+        <description>&lt;h1 id=&quot;wifi-captive-portal-and-administrator-dashboard&quot;&gt;&lt;a href=&quot;https://abhinavtripathi95.github.io/&quot;&gt;WIFI CAPTIVE PORTAL AND ADMINISTRATOR DASHBOARD&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h2 id=&quot;synopsis&quot;&gt;Synopsis&lt;/h2&gt;
+&lt;p&gt;The objective of the project was to create a system for authenticating users for free WiFi and a dashboard for the management of the same.
+When the user connects to the WiFi network, the user is prompted to type in his/her mobile number. The system will generate an OTP and the OTP is sent to the user via SMS. The user is prompted to enter the OTP. If the codes match, the user is then given limited access to the internet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/abhinavtripathi95/abhinavtripathi95.github.io/blob/master/tiltviewer/imgs/w2.jpeg&quot; alt=&quot;image,center&quot; /&gt;
+&lt;br /&gt;Wifi Login Portal: Authentication using Mobile Number.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/abhinavtripathi95/abhinavtripathi95.github.io/blob/master/tiltviewer/imgs/2.png&quot; alt=&quot;image,center&quot; /&gt;
+&lt;br /&gt;Dashboard showing summary of connected devices.&lt;/p&gt;
+&lt;h2 id=&quot;tasks&quot;&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;The project had following main tasks to perform:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Configuring the router through Nodogsplash (OpenWrt) for creating a framework for splash screen.&lt;/li&gt;
+  &lt;li&gt;Using Google Firebase to store the data as json files on global database.&lt;/li&gt;
+  &lt;li&gt;Using Django framework to run a local server.&lt;/li&gt;
+  &lt;li&gt;Using Django to link all the data stored into the Dashboard dynamically.&lt;/li&gt;
+  &lt;li&gt;Creating Sign-in/ OTP pages and Admin Dashboard using html, Bootstrap CSS and Javascript, Morris Charts, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dependencies&quot;&gt;Dependencies&lt;/h2&gt;
+&lt;h3 id=&quot;router&quot;&gt;Router&lt;/h3&gt;
+&lt;p&gt;The router used for the project was running on Openwrt v15.05.1 (Chaos Calmer). The specific build used for the project can be found &lt;a href=&quot;https://downloads.openwrt.org/snapshots/trunk/ar71xx/generic/openwrt-ar71xx-generic-tl-wr740n-v5-squashfs-factory.bin&quot;&gt;here&lt;/a&gt;. The following extra packages were also installed:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wiki.openwrt.org/doc/howto/wireless.hotspot.nodogsplash&quot;&gt;NodogSplash&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;server&quot;&gt;Server&lt;/h3&gt;
+&lt;p&gt;The following dependencies are needed to be installed, in order to run the server which handles the authentication of users:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Django v1.9.7&lt;/li&gt;
+  &lt;li&gt;BeautifulSoup4&lt;/li&gt;
+  &lt;li&gt;requests&lt;/li&gt;
+  &lt;li&gt;python-firebase(https://github.com/mikexstudios/python-firebase)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;external-services&quot;&gt;External Services&lt;/h3&gt;
+&lt;p&gt;The following external services were also used:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://enterprise.smsgupshup.com/&quot;&gt;Gupshup Enterprise edition&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://firebase.google.com/&quot;&gt;Firebase&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Awarded the &lt;strong&gt;Best Project&lt;/strong&gt; under PClub during SnT Summer Camp ‘16.&lt;/p&gt;
+
+&lt;p&gt;Website: &lt;a href=&quot;https://abhinavtripathi95.github.io/&quot;&gt;https://abhinavtripathi95.github.io/&lt;/a&gt;
+Github Link: &lt;a href=&quot;https://github.com/jayaaditya/adurcup-iitk-rc1&quot;&gt;https://github.com/jayaaditya/adurcup-iitk-rc1&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Sep 2016 09:30:00 +0000</pubDate>
+        <link>http://pclub.in/project/2016/09/23/wifiDash.html</link>
+        <guid isPermaLink="true">http://pclub.in/project/2016/09/23/wifiDash.html</guid>
+        
+        <category>summer16</category>
+        
+        <category>project</category>
+        
+        <category>Web Development</category>
+        
+        <category>Wifi Portal</category>
+        
+        <category>Dashboard</category>
+        
+        
+        <category>project</category>
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
         <title>Handwriting Recognition By Machine Learning</title>
         <description>&lt;h1 id=&quot;hand-writing-recognition-by-machine-learning&quot;&gt;&lt;a href=&quot;http://sshanu.github.io/ml_HR/&quot;&gt;Hand writing Recognition by Machine Learning&lt;/a&gt;&lt;/h1&gt;
 
@@ -760,113 +832,6 @@ Github Wiki: &lt;a href=&quot;https://github.com/Sshanu/ml_HR/wiki&quot;&gt;Ml_H
         <category>project</category>
         
         <category>Project</category>
-        
-      </item>
-    
-      <item>
-        <title>Open Source Software</title>
-        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;Free Libre and open-source software (FLOSS) is computer software that can be classified as both free software and open-source software. That is, anyone is freely licensed to use, copy, study, and change the software in any way, and the source code is openly shared so that people are encouraged to voluntarily improve the design of the software. Free, open-source operating systems such as &lt;a href=&quot;“https://www.gnu.org/gnu/linux-and-gnu.en.html”&quot;&gt;GNU/Linux&lt;/a&gt; are widely utilised today, powering millions of servers, desktops, smartphones (e.g. Android), and other devices.&lt;sup&gt;[1]&lt;sup&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
-
-&lt;p&gt;It is common knowledge, from the 1950’s to the 70’s, the common trend for developers and users was to freely share source code with one another, and used to tailor it for their needs.&lt;/p&gt;
-
-&lt;p&gt;However, in the 70’s and early 80’s, the evolving software industry began to directly sell software, which usually was in the form of binary copies, thereby preventing users to reverse engineer the software. In 1980, the copyright law in the States was extended to software programs.&lt;/p&gt;
-
-&lt;p&gt;In 1983, &lt;a href=&quot;“https://stallman.org”&quot;&gt;Richard Stallman&lt;/a&gt; at the MIT AI Laboratory, announced the &lt;em&gt;GNU Project&lt;/em&gt;. Along with the GNU OS development, the &lt;em&gt;Free Software Foundation a.k.a. FSF&lt;/em&gt; was founded in 1985. The &lt;a href=&quot;&amp;quot;https://en.wikipedia.org/wiki/GNU_Manifesto&amp;quot;&quot;&gt;GNU Manifesto&lt;/a&gt; contained the GNU philosophy of Free Software definition and “copyleft” ideas.&lt;/p&gt;
-
-&lt;p&gt;The Linux kernel was released as a freely modifiable open source software in 1991, which was relicensed under the GNU GPL in 1992.
-FreeBSD and NetBSD were released as free software in 1993. In 1995, the &lt;a href=&quot;“https://httpd.apache.org”&quot;&gt;Apache Web Server&lt;/a&gt; (A patchy web server, there is sure history behind its name :P) was released.&lt;/p&gt;
-
-&lt;p&gt;Then came a revolutionary moment in 1998. The Netscape Corporation released its famous Netscape Communicator Suite as free software. (I am sure you guys must have heard Firefox and ThunderBird. Yeah, that is the descendant of the Netscape; however, another story, another time).&lt;/p&gt;
-
-&lt;p&gt;Netscape saw business potential in collaborating and sharing source code, however the FSF and its ideals were not not appealing enough to them. Hence, they decided to rebrand the movement; coining the famous “open source” and the &lt;a href=&quot;%22https://opensource.org/%22&quot;&gt;Open Source Initiative&lt;/a&gt; was established in February, 1998. In 2001, the European Commission introduced the term FLOSS, which has been in both popular and official use since 2004.&lt;sup&gt;[2]&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;licensing--an-important-part&quot;&gt;Licensing : An important part&lt;/h2&gt;
-
-&lt;p&gt;Since the establishment of the GNU Project, there have been ideas floating around for an explicit open source license. The GNU General Public License v1.0 was thus released in 1989, with v2.0 coming in 1991.&lt;/p&gt;
-
-&lt;p&gt;Various popular licenses pertaining to Free software, as approved by the OSI are:   &lt;sup&gt;[3]&lt;/sup&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Apache License 2.0&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;BSD 3-Clause “New” or “Revised” license&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;BSD 2-Clause “Simplified” or “FreeBSD” license&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;GNU General Public License (GPL)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;GNU Library or “Lesser” General Public License (LGPL)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MIT license&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Mozilla Public License 2.0&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Common Development and Distribution License&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Eclipse Public License&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Check out these licenses and their full texts at &lt;a href=&quot;&amp;quot;https://opensource.org/licenses”&quot;&gt;the OSI website&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;gnulinux&quot;&gt;GNU/Linux&lt;/h2&gt;
-
-&lt;p&gt;One can’t write an article on FLOSS, and skip out GNU/Linux. There is quite a lot of history surrounding the most popular OSS Linux kernel, and it sure is a favourite amongst developers and the community alike.
-There are a lot of Operating systems (referred to as linux distributions) based on the linux kernel, popular ones being&lt;/p&gt;
-
-&lt;h1 id=&quot;ubuntu&quot;&gt;Ubuntu&lt;/h1&gt;
-&lt;p&gt;Arguably the largest used linux OS in PCs around the world, it is quite popular amongst the people entering the dynamic world of open source. A clean graphical user interface, with the nix terminal; it provides an easy transition from Windows to Linux. It is based on the Debian distribution. &lt;sup&gt;[4]&lt;/sup&gt;
-Check out the &lt;a href=&quot;&amp;quot;https://www.ubuntu.com”&quot;&gt;Ubuntu&lt;/a&gt; website for more details.&lt;/p&gt;
-
-&lt;h1 id=&quot;kali-linux&quot;&gt;Kali Linux&lt;/h1&gt;
-&lt;p&gt;Kali Linux is a security testing distro. (Of course, it does have a cool interface :P).&lt;/p&gt;
-
-&lt;h1 id=&quot;elementary-os&quot;&gt;Elementary OS&lt;/h1&gt;
-&lt;p&gt;Elementary OS is a distribution based on Ubuntu, and borrows its looks from the Mac OS X.&lt;/p&gt;
-
-&lt;h1 id=&quot;gentoo-linux&quot;&gt;Gentoo Linux&lt;/h1&gt;
-&lt;p&gt;Gentoo is a distribution which, in my opinion, stands apart from others in the list. It is an OS, which you actually have to compile and install. Honestly speaking, I never had the chance to compile and install it myself, but I have seen people do it, and mind you; I have not come across an operating system so configurable during installation. For the record, I’ve heard it is fun using and installing. Do check out the &lt;a href=&quot;&amp;quot;https://www.gentoo.org”&quot;&gt;Gentoo&lt;/a&gt; website.
-I would not recommend this operating system to users new to the Linux environment; but after all, we stumble when we learn to walk.&lt;/p&gt;
-
-&lt;h1 id=&quot;arch-linux&quot;&gt;Arch Linux&lt;/h1&gt;
-&lt;p&gt;The aim of Arch Linux is to Keep It Simple Stupid. Historically, Arch was sometimes described as “Linux, with a nice package manager.” Arch does not aim to be your friendly, caring operating system; which would do stuff for you. Instead, it is very customisable and favours architectural simplicity and avoids over-engineering. &lt;sup&gt;[5]&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;apricityos&quot;&gt;ApricityOS&lt;/h1&gt;
-&lt;p&gt;Another linux distribution with great aesthetics. It is based on the Arch Linux OS, and uses GNOME or Cinnamon as the Graphical User Interface.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Credits:&lt;/em&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;“https://en.wikipedia.org/wiki/Free_and_open-source_software”&quot;&gt;https://en.wikipedia.org/wiki/Free_and_open-source_software&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;“https://en.wikipedia.org/wiki/Free_and_open-source_software#History”&quot;&gt;https://en.wikipedia.org/wiki/Free_and_open-source_software#History&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;“https://opensource.org/licenses”&quot;&gt;https://opensource.org/licenses&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;“http://www.ubuntu.com/about/about-ubuntu/ubuntu-and-debian”&quot;&gt;http://www.ubuntu.com/about/about-ubuntu/ubuntu-and-debian&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;“https://wiki.archlinux.org/index.php/arch_compared_to_other_distributions”&quot;&gt;https://wiki.archlinux.org/index.php/arch_compared_to_other_distributions&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Sat, 27 Aug 2016 11:28:30 +0000</pubDate>
-        <link>http://pclub.in/open%20source/2016/08/27/floss.html</link>
-        <guid isPermaLink="true">http://pclub.in/open%20source/2016/08/27/floss.html</guid>
-        
-        <category>open source</category>
-        
-        <category>linux</category>
-        
-        
-        <category>Open Source</category>
         
       </item>
     

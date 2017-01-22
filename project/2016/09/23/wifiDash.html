@@ -8,16 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Projects</title>
-  <meta name="description" content="The Programming Club, IIT Kanpur
-">
+  <title>WiFi Captive Portal with Dashboard</title>
+  <meta name="description" content="WIFI CAPTIVE PORTAL AND ADMINISTRATOR DASHBOARD">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/projects.html">
+  <link rel="canonical" href="http://pclub.in/project/2016/09/23/wifiDash.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -105,263 +104,159 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div style="margin: 1rem auto;">
+        <div style="margin: 4.5rem auto;">
 
-<h1 class="archive-header"></h1>
-<div class="wf-container" style="margin-top: 80px;">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="inpost-header">
+    <h1 class="inpost-title" itemprop="name headline">WiFi Captive Portal with Dashboard</h1>
+    <h1 style="float:right" class="comment-postingatas">
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/project/2016/09/23/wifiDash.html#disqus_thread" data-disqus-identifier="/project/2016/09/23/wifiDash"style="color:#fff"> 0</a>
+    </h1>
+    </p>
+  </header>
   
-    
-      <div class="wf-box">
-        <a id="route" href="/project/2017/01/08/web_forum.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url(https://raw.githubusercontent.com/heyitssat/heyitssat.github.io/master/report_image/1%20(2).png);
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/project/2017/01/08/web_forum.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Web Forum
-              </h3>
-            </a>
-         </div>
-      </div>
-    
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="wifi-captive-portal-and-administrator-dashboard"><a href="https://abhinavtripathi95.github.io/">WIFI CAPTIVE PORTAL AND ADMINISTRATOR DASHBOARD</a></h1>
+
+<h2 id="synopsis">Synopsis</h2>
+<p>The objective of the project was to create a system for authenticating users for free WiFi and a dashboard for the management of the same.
+When the user connects to the WiFi network, the user is prompted to type in his/her mobile number. The system will generate an OTP and the OTP is sent to the user via SMS. The user is prompted to enter the OTP. If the codes match, the user is then given limited access to the internet.</p>
+
+<p><img src="https://github.com/abhinavtripathi95/abhinavtripathi95.github.io/blob/master/tiltviewer/imgs/w2.jpeg" alt="image,center" />
+<br />Wifi Login Portal: Authentication using Mobile Number.</p>
+
+<p><img src="https://github.com/abhinavtripathi95/abhinavtripathi95.github.io/blob/master/tiltviewer/imgs/2.png" alt="image,center" />
+<br />Dashboard showing summary of connected devices.</p>
+<h2 id="tasks">Tasks</h2>
+<p>The project had following main tasks to perform:</p>
+<ul>
+  <li>Configuring the router through Nodogsplash (OpenWrt) for creating a framework for splash screen.</li>
+  <li>Using Google Firebase to store the data as json files on global database.</li>
+  <li>Using Django framework to run a local server.</li>
+  <li>Using Django to link all the data stored into the Dashboard dynamically.</li>
+  <li>Creating Sign-in/ OTP pages and Admin Dashboard using html, Bootstrap CSS and Javascript, Morris Charts, etc.</li>
+</ul>
+
+<h2 id="dependencies">Dependencies</h2>
+<h3 id="router">Router</h3>
+<p>The router used for the project was running on Openwrt v15.05.1 (Chaos Calmer). The specific build used for the project can be found <a href="https://downloads.openwrt.org/snapshots/trunk/ar71xx/generic/openwrt-ar71xx-generic-tl-wr740n-v5-squashfs-factory.bin">here</a>. The following extra packages were also installed:</p>
+<ul>
+  <li><a href="https://wiki.openwrt.org/doc/howto/wireless.hotspot.nodogsplash">NodogSplash</a></li>
+</ul>
+
+<h3 id="server">Server</h3>
+<p>The following dependencies are needed to be installed, in order to run the server which handles the authentication of users:</p>
+<ul>
+  <li>Django v1.9.7</li>
+  <li>BeautifulSoup4</li>
+  <li>requests</li>
+  <li>python-firebase(https://github.com/mikexstudios/python-firebase)</li>
+</ul>
+
+<h3 id="external-services">External Services</h3>
+<p>The following external services were also used:</p>
+<ul>
+  <li><a href="http://enterprise.smsgupshup.com/">Gupshup Enterprise edition</a></li>
+  <li><a href="https://firebase.google.com/">Firebase</a></li>
+</ul>
+
+<p>Awarded the <strong>Best Project</strong> under PClub during SnT Summer Camp ‘16.</p>
+
+<p>Website: <a href="https://abhinavtripathi95.github.io/">https://abhinavtripathi95.github.io/</a>
+Github Link: <a href="https://github.com/jayaaditya/adurcup-iitk-rc1">https://github.com/jayaaditya/adurcup-iitk-rc1</a></p>
+
+  </div>
+
+<div class="arrowNav">
+ 
+ 
+<div class="arrowLeft">
+<a id="route" class="tooltip-right" href="/project/2016/09/23/Forex.html" title="
+&lt;p class=hoveratas&gt;Forex Prediction&lt;/p&gt; &lt;p class=hoverbawah&gt;# PREDICTING FOREIGN EXCHANGE RATES ### About the project The...&lt;/p&gt;
+"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+
+ 
+<div class="arrowRight" style="float:right">
+<a id="route" class="tooltip-left" href="/project/2016/09/23/Ml_HR.html" title="
+&lt;p class=hoveratas&gt;Handwriting Recognition By Machine Learning&lt;/p&gt; &lt;p class=hoverbawah&gt;Hand writing Recognition by Machine Learning This project uses Neural...&lt;/p&gt;
+"><i class="typcn typcn-chevron-right" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+</div>
+
+
+  <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
+  <time datetime="2016-09-23T09:30:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Sep 23, 2016</time>
+   
+  • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">
+      
+      <a href="https://abhinavtripathi95.github.io/" target="_blank" style="color: #fff;">Weboratis</a>
+      
+    </span>
+  </span>
+   
+    |
   
-    
+  <a href="/tags.html#summer16" style="color: #fff;"><i class="typcn typcn-tags"></i> summer16</a>
   
-    
+  <a href="/tags.html#project" style="color: #fff;"><i class="typcn typcn-tags"></i> project</a>
   
-    
+  <a href="/tags.html#Web Development" style="color: #fff;"><i class="typcn typcn-tags"></i> Web Development</a>
   
-    
+  <a href="/tags.html#Wifi Portal" style="color: #fff;"><i class="typcn typcn-tags"></i> Wifi Portal</a>
   
-    
+  <a href="/tags.html#Dashboard" style="color: #fff;"><i class="typcn typcn-tags"></i> Dashboard</a>
   
-    
-  
-    
-      <div class="wf-box">
-        <a id="route" href="/project/2016/09/23/Forex.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url(https://github.com/Sshanu/ml_HR/raw/gh-pages/neural_net2.jpeg);
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/project/2016/09/23/Forex.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Forex Prediction
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-      <div class="wf-box">
-        <a id="route" href="/project/2016/09/23/wifiDash.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url(https://github.com/abhinavtripathi95/abhinavtripathi95.github.io/blob/master/tiltviewer/imgs/w2.jpeg);
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/project/2016/09/23/wifiDash.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">WiFi Captive Portal with Dashboard
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-      <div class="wf-box">
-        <a id="route" href="/project/2016/09/23/Ml_HR.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url(https://github.com/Sshanu/ml_HR/raw/gh-pages/neural_net2.jpeg);
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/project/2016/09/23/Ml_HR.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Handwriting Recognition By Machine Learning
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-  
-    
-      <div class="wf-box">
-        <a id="route" href="/project/2016/08/26/nbodysimulation.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url(http://raw.githubusercontent.com/sagnikb/Simulati-ON/master/Pics/simulation.jpg);
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/project/2016/08/26/nbodysimulation.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">N-Body Simulation
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <div class="wf-box">
-        <a id="route" href="/project/2016/07/06/smartmirror.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url(https://github.com/11000011/Smart-Mirror/raw/gh-pages/img/sample.png);
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/project/2016/07/06/smartmirror.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Smart Mirror
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
+  </p>
+
+</article>
+
+
+
+
+
+<style>
+    #disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+</style>
+<div id="disqus_thread"></div>
+<script>
+  // For debugging
+  // var disqus_developer = 1;
+  var disqus_shortname = 'pclubiitk';
+  var disqus_config = function () {
+    this.page.url = 'https://pclub.in/project/2016/09/23/wifiDash';
+    this.page.identifier = '/project/2016/09/23/wifiDash';
+  };
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 </div>
 
       </div>
