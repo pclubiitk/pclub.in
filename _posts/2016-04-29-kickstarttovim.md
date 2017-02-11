@@ -4,11 +4,11 @@ title: "Kickstart to Vim"
 date: 2016-04-29 23:59:21 +530
 author: Saksham Sharma
 website: http://acehack.org
-category: 
-tags: 
-- summer16
+category: Vim
+tags:
 - tutorial
 - vim
+
 categories:
 - tutorial
 - vim
