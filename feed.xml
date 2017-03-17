@@ -6,9 +6,48 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Feb 2017 04:31:26 +0000</pubDate>
-    <lastBuildDate>Sat, 11 Feb 2017 04:31:26 +0000</lastBuildDate>
+    <pubDate>Fri, 17 Mar 2017 19:13:21 +0000</pubDate>
+    <lastBuildDate>Fri, 17 Mar 2017 19:13:21 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>I Got My PR Accepted!</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/NFf5CQ6.jpg&quot; alt=&quot;&quot; /&gt;
+This post is a list of students who managed to get a pull request accepted successfully (and get a TShirt). Congratulations!&lt;/p&gt;
+
+&lt;p&gt;Name: Anant Prakash&lt;br /&gt;
+GitHub: &lt;a href=&quot;https://github.com/APwhitehat&quot;&gt;APwhitehat&lt;/a&gt;&lt;br /&gt;
+Project: https://github.com/catapult-project/catapult&lt;br /&gt;
+Pull Request: https://codereview.chromium.org/2670003007/&lt;/p&gt;
+
+&lt;p&gt;Name: Vardhan Gupta&lt;br /&gt;
+GitHub: &lt;a href=&quot;https://github.com/vardhan26&quot;&gt;vardhan26&lt;/a&gt;&lt;br /&gt;
+Project and PR: https://github.com/whatwg/html/pull/2350&lt;/p&gt;
+
+&lt;p&gt;Name: Parv Mor&lt;br /&gt;
+GitHub: &lt;a href=&quot;https://github.com/parvmor&quot;&gt;parvmor&lt;/a&gt;&lt;br /&gt;
+Project and PR: https://github.com/pybee/batavia/pull/421&lt;/p&gt;
+
+&lt;p&gt;Name: Bhavishya Gopesh&lt;br /&gt;
+GitHub: &lt;a href=&quot;https://github.com/bhavishyagopesh&quot;&gt;bhavishyagopesh&lt;/a&gt;&lt;br /&gt;
+Project and PR: https://github.com/python-hyper/hyper-h2/pull/464&lt;/p&gt;
+
+&lt;p&gt;Name: Hritwik Taneja&lt;br /&gt;
+GitHub: &lt;a href=&quot;https://github.com/hritwik567&quot;&gt;hritwik567&lt;/a&gt;&lt;br /&gt;
+Project and PR: https://github.com/mozilla/thimble.mozilla.org/pull/1732&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Mar 2017 17:53:21 +0000</pubDate>
+        <link>http://pclub.in/events/2017/03/16/praccepted.html</link>
+        <guid isPermaLink="true">http://pclub.in/events/2017/03/16/praccepted.html</guid>
+        
+        <category>git</category>
+        
+        <category>opensource</category>
+        
+        
+        <category>events</category>
+        
+      </item>
     
       <item>
         <title>Web Forum</title>
@@ -778,55 +817,6 @@ Github Link: &lt;a href=&quot;https://github.com/jayaaditya/adurcup-iitk-rc1&quo
         <category>Wifi Portal</category>
         
         <category>Dashboard</category>
-        
-        
-        <category>project</category>
-        
-        <category>Project</category>
-        
-      </item>
-    
-      <item>
-        <title>Handwriting Recognition By Machine Learning</title>
-        <description>&lt;h1 id=&quot;hand-writing-recognition-by-machine-learning&quot;&gt;&lt;a href=&quot;http://sshanu.github.io/ml_HR/&quot;&gt;Hand writing Recognition by Machine Learning&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;This project uses Neural Network Modelling  for identification of Handwriting from Optical Images.
-Artificial Neural Network is a network inspired by biological neural networks and is one of the most advanced techniques in Artificial Intelligence research.
-Our software  can recognize handwritten text from any image by first segmenting the image into segments by using binary logistic regressions and brute force segementation and then applying multi class logistic regression for character recognition on these segments.
-Our Neural Network Model  can learn any individual person’s handwriting since it  learns English Alphabets and Hindu Arabic from any labelled data of images.
-We trained our model over a data set containing over 65000 data points.
-The CNN model used advanced Convolution Neural Network so that it could train even over data points with less dimensions.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/Sshanu/ml_HR/raw/gh-pages/CNNArchitecture.jpg&quot; alt=&quot;image,center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;^ This is a screenshot of our program predicting a character and also show how our network features works.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;iTorch Notebook is used for executing the code.&lt;/li&gt;
-  &lt;li&gt;Torch Framework is used for implementing the Neural Network Architecture.&lt;/li&gt;
-  &lt;li&gt;This software can be used in varied number of applications such as:&lt;/li&gt;
-  &lt;li&gt;Converting paper book libraries into digital libraries.&lt;/li&gt;
-  &lt;li&gt;Identifying  an individual’s handwriting in forensic science.&lt;/li&gt;
-  &lt;li&gt;Converting text written individual’s handwriting into someone else’s handwriting.&lt;/li&gt;
-  &lt;li&gt;Helping blind people to read by converting text to audio.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Received the &lt;strong&gt;Special Mention Award&lt;/strong&gt; during the Science &amp;amp; Technology Summer
-Camp 2016.&lt;/p&gt;
-
-&lt;p&gt;Website: &lt;a href=&quot;http://sshanu.github.io/ml_HR/&quot;&gt;http://sshanu.github.io/ml_HR/&lt;/a&gt;
-Project Timeline Video: &lt;a href=&quot;https://youtu.be/z7tzr_anlJs&quot;&gt;https://youtu.be/z7tzr_anlJs&lt;/a&gt;
-Github Wiki: &lt;a href=&quot;https://github.com/Sshanu/ml_HR/wiki&quot;&gt;Ml_HR Wiki&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 23 Sep 2016 09:30:00 +0000</pubDate>
-        <link>http://pclub.in/project/2016/09/23/Ml_HR.html</link>
-        <guid isPermaLink="true">http://pclub.in/project/2016/09/23/Ml_HR.html</guid>
-        
-        <category>summer16</category>
-        
-        <category>project</category>
-        
-        <category>ML</category>
         
         
         <category>project</category>
