@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I Got My PR Accepted!"
+title: "I got my first PR accepted!"
 date: 2017-03-16 23:23:21 +530
 author: Milind Luthra
 website: http://milindl.org
