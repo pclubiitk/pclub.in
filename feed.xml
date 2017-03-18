@@ -6,9 +6,54 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 17 Mar 2017 19:13:21 +0000</pubDate>
-    <lastBuildDate>Fri, 17 Mar 2017 19:13:21 +0000</lastBuildDate>
+    <pubDate>Sat, 18 Mar 2017 01:25:54 +0000</pubDate>
+    <lastBuildDate>Sat, 18 Mar 2017 01:25:54 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Antaragni-App</title>
+        <description>&lt;h1 id=&quot;antaragni-app-16&quot;&gt;Antaragni App 16&lt;/h1&gt;
+
+&lt;h2 id=&quot;synopsis&quot;&gt;Synopsis&lt;/h2&gt;
+
+&lt;p&gt;The objective of this project was to update the android app Antaragni-App 15 making it more dynamic and user-friendly for the Antaragni-16, the Annual cultural festival of IITK. Major changes include integration with the online database of Antaragni.
+The App is available at &lt;a href=&quot;https://play.google.com/store/apps/details?id=antaragni.in.antaragni&quot;&gt;https://play.google.com/store/apps/details?id=antaragni.in.antaragni&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/saransh7/pics/master/14729083_1280036892028146_8754690254501950483_n.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;updates-included&quot;&gt;Updates Included&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Integrating Real-Time database&lt;/li&gt;
+  &lt;li&gt;Extending its support to API 24(permission access)&lt;/li&gt;
+  &lt;li&gt;Integrating Facebook Sign-in&lt;/li&gt;
+  &lt;li&gt;Updating Theme(Hues of Bliss)&lt;/li&gt;
+  &lt;li&gt;Various Bug fixes in Antaragni-App 15&lt;/li&gt;
+  &lt;li&gt;Inclusion of Google Map services&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github Repositories&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Project-Ant : &lt;a href=&quot;https://github.com/navya/Project-Ant&quot;&gt;https://github.com/navya/Project-Ant&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Antaragni-App : &lt;a href=&quot;https://github.com/kunalapila/Antaragni-App&quot;&gt;https://github.com/kunalapila/Antaragni-App&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;project-timeline&quot;&gt;Project Timeline&lt;/h1&gt;
+&lt;p&gt;At first changes were made to the &lt;a href=&quot;https://github.com/navya/Project-Ant&quot;&gt;Project-Ant&lt;/a&gt; repository during summers-16. Afterwards during mid-october work shifted to a new repository &lt;a href=&quot;https://github.com/kunalapila/Antaragni-App&quot;&gt;Antaragni-App&lt;/a&gt; using basic framework of Project-Ant in collaboration with the Updates.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
+        <link>http://pclub.in/project/2017/03/18/Antaragni_App.html</link>
+        <guid isPermaLink="true">http://pclub.in/project/2017/03/18/Antaragni_App.html</guid>
+        
+        <category>summer16</category>
+        
+        <category>project</category>
+        
+        
+        <category>project</category>
+        
+        <category>Project</category>
+        
+      </item>
     
       <item>
         <title>I Got My PR Accepted!</title>
@@ -745,78 +790,6 @@ You will also see a graph plot between the expected value and predicted value.&l
         <category>project</category>
         
         <category>ML</category>
-        
-        
-        <category>project</category>
-        
-        <category>Project</category>
-        
-      </item>
-    
-      <item>
-        <title>WiFi Captive Portal with Dashboard</title>
-        <description>&lt;h1 id=&quot;wifi-captive-portal-and-administrator-dashboard&quot;&gt;&lt;a href=&quot;https://abhinavtripathi95.github.io/&quot;&gt;WIFI CAPTIVE PORTAL AND ADMINISTRATOR DASHBOARD&lt;/a&gt;&lt;/h1&gt;
-
-&lt;h2 id=&quot;synopsis&quot;&gt;Synopsis&lt;/h2&gt;
-&lt;p&gt;The objective of the project was to create a system for authenticating users for free WiFi and a dashboard for the management of the same.
-When the user connects to the WiFi network, the user is prompted to type in his/her mobile number. The system will generate an OTP and the OTP is sent to the user via SMS. The user is prompted to enter the OTP. If the codes match, the user is then given limited access to the internet.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/abhinavtripathi95/abhinavtripathi95.github.io/blob/master/tiltviewer/imgs/w2.jpeg&quot; alt=&quot;image,center&quot; /&gt;
-&lt;br /&gt;Wifi Login Portal: Authentication using Mobile Number.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/abhinavtripathi95/abhinavtripathi95.github.io/blob/master/tiltviewer/imgs/2.png&quot; alt=&quot;image,center&quot; /&gt;
-&lt;br /&gt;Dashboard showing summary of connected devices.&lt;/p&gt;
-&lt;h2 id=&quot;tasks&quot;&gt;Tasks&lt;/h2&gt;
-&lt;p&gt;The project had following main tasks to perform:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Configuring the router through Nodogsplash (OpenWrt) for creating a framework for splash screen.&lt;/li&gt;
-  &lt;li&gt;Using Google Firebase to store the data as json files on global database.&lt;/li&gt;
-  &lt;li&gt;Using Django framework to run a local server.&lt;/li&gt;
-  &lt;li&gt;Using Django to link all the data stored into the Dashboard dynamically.&lt;/li&gt;
-  &lt;li&gt;Creating Sign-in/ OTP pages and Admin Dashboard using html, Bootstrap CSS and Javascript, Morris Charts, etc.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;dependencies&quot;&gt;Dependencies&lt;/h2&gt;
-&lt;h3 id=&quot;router&quot;&gt;Router&lt;/h3&gt;
-&lt;p&gt;The router used for the project was running on Openwrt v15.05.1 (Chaos Calmer). The specific build used for the project can be found &lt;a href=&quot;https://downloads.openwrt.org/snapshots/trunk/ar71xx/generic/openwrt-ar71xx-generic-tl-wr740n-v5-squashfs-factory.bin&quot;&gt;here&lt;/a&gt;. The following extra packages were also installed:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wiki.openwrt.org/doc/howto/wireless.hotspot.nodogsplash&quot;&gt;NodogSplash&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;server&quot;&gt;Server&lt;/h3&gt;
-&lt;p&gt;The following dependencies are needed to be installed, in order to run the server which handles the authentication of users:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Django v1.9.7&lt;/li&gt;
-  &lt;li&gt;BeautifulSoup4&lt;/li&gt;
-  &lt;li&gt;requests&lt;/li&gt;
-  &lt;li&gt;python-firebase(https://github.com/mikexstudios/python-firebase)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;external-services&quot;&gt;External Services&lt;/h3&gt;
-&lt;p&gt;The following external services were also used:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://enterprise.smsgupshup.com/&quot;&gt;Gupshup Enterprise edition&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://firebase.google.com/&quot;&gt;Firebase&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Awarded the &lt;strong&gt;Best Project&lt;/strong&gt; under PClub during SnT Summer Camp ‘16.&lt;/p&gt;
-
-&lt;p&gt;Website: &lt;a href=&quot;https://abhinavtripathi95.github.io/&quot;&gt;https://abhinavtripathi95.github.io/&lt;/a&gt;
-Github Link: &lt;a href=&quot;https://github.com/jayaaditya/adurcup-iitk-rc1&quot;&gt;https://github.com/jayaaditya/adurcup-iitk-rc1&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 23 Sep 2016 09:30:00 +0000</pubDate>
-        <link>http://pclub.in/project/2016/09/23/wifiDash.html</link>
-        <guid isPermaLink="true">http://pclub.in/project/2016/09/23/wifiDash.html</guid>
-        
-        <category>summer16</category>
-        
-        <category>project</category>
-        
-        <category>Web Development</category>
-        
-        <category>Wifi Portal</category>
-        
-        <category>Dashboard</category>
         
         
         <category>project</category>
