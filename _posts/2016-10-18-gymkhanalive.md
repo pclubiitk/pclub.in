@@ -24,16 +24,17 @@ This project is a News web application for the Students Gymkhana of IIT Kanpur.
 ![image](https://github.com/soumye/gymkhanalive/blob/master/screenshot.png)
 ^ This is a screenshot of the SNT council tab of Gymkhana L!VE
 
-* The web app is able to run on mobile devices like an app would. The interface is similar to that of Quora / Twitter/Play newstand.
-* The website displays the latest news and upcoming and on- going events and highlights in the form of posts which can be expanded to view additional information. 
-* Also the name of the author and the date on which it was published are posted. On expanding the post additional material including images and details are displayed.
-* Also it has an option to like, comment and even share on facebook. For doing that one has to sign-up first with a valid email-id. To check that the email-id provided in the sign-up form is authentic, an email with an authentication link is sent to the given email-id.
-* The homepage will contain recent/top highlights. This page will also contain tabs for the various councils and senate. On clicking the posts are filtered out and the posts of the related council are displayed. 
-* We have also implemented a search feature for the posts. A person can search either on the home page or on a council specific page. 
-* For each council on the left side-bar there is important information related to that council eg. the name and contact details of the various coordinators of the clubs of that council
+* This is a client–server software application in which the client (or user interface) runs in a web browser.
+* It runs directly on a mobile device, just as a conventional software application runs directly on a desktop computer, without a web browser. The interface is similar to that of Quora/Twitter/Play newstand.
+* The webapp displays the latest news related to upcoming and on- going events with the highlights in the form of posts which can be expanded to view additional information. 
+* It includes the name of the author and the date on which it was published. Further on expanding the post additional material including images and details are displayed.
+* Every user can sign-up first with a valid email-id which is authenticated with a activation link. Users can then like, comment and even share on facebook.
+* The homepage contains recent/top highlights. This page will also contain tabs for the various councils and senate. On clicking the posts are filtered out and the posts of the related council are displayed. 
+* A search feature is also implemented. A person can search either on the home page or on a council specific page for the desired posts. 
+* For each council on the left side-bar there is important information related to that council which includes the name and contact details of the various coordinators of the clubs of that council .
 
 One of the successfully completed projects during the Science & Technology Summer
 Camp 2016.
 
 Website: [https://soumye.github.io/gymkhanalive/](https://soumye.github.io/gymkhanalive/)
-Github Wiki: [Smart Mirror Wiki](https://github.com/soumye/gymkhanalive/wiki/)
+Github Wiki: [Gymkhana L!VE Wiki](https://github.com/soumye/gymkhanalive/wiki/)
