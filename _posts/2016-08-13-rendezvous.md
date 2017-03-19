@@ -5,6 +5,8 @@ date: 2016-08-13 00:25:00 +530
 author: Arjun Sinha
 website:
 category:
+subsection: summerwpc
+hidden: true
 tags:
 - competitive
 categories:
