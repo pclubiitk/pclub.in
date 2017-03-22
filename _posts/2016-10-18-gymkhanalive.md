@@ -2,7 +2,7 @@
 layout: post
 title: "Gymkhana L!VE"
 date: 2016-10-18 16:42:00 +0530
-author: 11000011
+author: pj-iitk
 website: https://soumye.github.io/gymkhanalive/
 category: Project
 tags:
