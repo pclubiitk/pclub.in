@@ -6,45 +6,9 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Mar 2017 13:46:35 +0000</pubDate>
-    <lastBuildDate>Tue, 28 Mar 2017 13:46:35 +0000</lastBuildDate>
+    <pubDate>Tue, 28 Mar 2017 14:18:32 +0000</pubDate>
+    <lastBuildDate>Tue, 28 Mar 2017 14:18:32 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
-    
-      <item>
-        <title></title>
-        <description>&lt;h1 id=&quot;ar-navigation&quot;&gt;[AR Navigation]&lt;/h1&gt;
-
-&lt;h3 id=&quot;about-the-project&quot;&gt;About The Project&lt;/h3&gt;
-&lt;p&gt;We tried out experimenting Augmented Reality as a summer project. Our aim was to design a navigation app which instead of showing top view of map shows directions on real time camera feed. This will have two fold benefits:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The users will not have to match roads and adjust map to understand where to go&lt;/li&gt;
-  &lt;li&gt;Since it shows real time camera feed the user can remain in real world while looking for directions preventing accidents&lt;/li&gt;
-  &lt;li&gt;Received the &lt;strong&gt;Best Programming Club Project&lt;/strong&gt; during the Science &amp;amp; Technology Summer Camp 2016.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;approach-to-inculcate-ar-in-android-app&quot;&gt;Approach to inculcate AR in android app&lt;/h3&gt;
-&lt;p&gt;Unlike infrared sensors we didn’t have any means to calculate the exact distance of the real time objects in the mobiles so we switched to MATHEMATICS for our answers. OH! Technical Arts also played a key role in devising our strategy.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;We used GPS data combiined with mobiles orientation from Magnetic Compass to detect roads. Here Google Directions API came in handy to give the precise coordinates of the roads.&lt;/li&gt;
-  &lt;li&gt;We measured the relative motion of the user via gyroscope, accelerometer and GPS coordinates&lt;/li&gt;
-  &lt;li&gt;The Unity graphics were relayed on the camera feed via UNITY GAME ENGINE giving the graphics (navigating arrows) a psuedo-acceleration to look static on the ground.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&quot;&gt;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Android Documentation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;-App Demo video link: &lt;a href=&quot;https://youtu.be/Cnm6HZRYHeg&quot;&gt;https://youtu.be/Cnm6HZRYHeg&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 28 Mar 2017 13:46:35 +0000</pubDate>
-        <link>http://pclub.in/2017/03/28/2016-07-06-arnavigation-readme.html</link>
-        <guid isPermaLink="true">http://pclub.in/2017/03/28/2016-07-06-arnavigation-readme.html</guid>
-        
-        
-      </item>
     
       <item>
         <title>Antaragni-App</title>
@@ -678,6 +642,81 @@ myhostname
         <pubDate>Fri, 06 Jan 2017 13:05:20 +0000</pubDate>
         <link>http://pclub.in/2017/01/06/installarch.html</link>
         <guid isPermaLink="true">http://pclub.in/2017/01/06/installarch.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Installing Ubuntu In Latest Asus Rog PCs</title>
+        <description>&lt;p&gt;&lt;strong&gt;Problem occurs due to loading of Nvidia Drivers during booting. Follow the following simple steps.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;When the grub boot loader menu is visible highlight “Try Ubuntu GNOME without installing” (use your up and down arrows)&lt;/li&gt;
+  &lt;li&gt;Press “e” on your keyboard, this will allow you to edit the boot config.
+You will be brought to a page where you can make some edits.&lt;/li&gt;
+  &lt;li&gt;add the following right after the word “splash”
+    &lt;blockquote&gt;
+      &lt;p&gt;nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Press the “f10” key to boot into the installer&lt;/li&gt;
+  &lt;li&gt;When the desktop load move your mouse into the upper left hand corner, when the app launcher shows itself click on the very top icon “Install Ubuntu GNOME 16.04 LTS”&lt;/li&gt;
+  &lt;li&gt;Do not install third party software.&lt;/li&gt;
+  &lt;li&gt;Then follow the steps to install Ubuntu.&lt;/li&gt;
+  &lt;li&gt;After installation click “Keep trying Ubuntu”&lt;/li&gt;
+  &lt;li&gt;Shut down (NOT RESTART) your computer, remove installation media, hit enter.&lt;/li&gt;
+  &lt;li&gt;Hold down shift then press the power button to turn on your computer. (holding down shift while powering on will load the grub boot menu)&lt;/li&gt;
+  &lt;li&gt;When the grub boot menu appears press “e” and make the changes in step 3.&lt;/li&gt;
+  &lt;li&gt;Press “f10”&lt;/li&gt;
+  &lt;li&gt;Once your back into the desktop open your terminal and enter:
+    &lt;blockquote&gt;
+      &lt;p&gt;sudo gedit /etc/default/grub&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Find the line that reads ‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”‘ and change it to read
+    &lt;blockquote&gt;
+      &lt;p&gt;‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux         i915.preliminary_hw_support=1 idle=nomwait”‘&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Save the changes then exit gedit.&lt;/li&gt;
+  &lt;li&gt;In your terminal run the command: sudo update-grub&lt;/li&gt;
+  &lt;li&gt;Reboot your computer: sudo reboot.
+Enjoy UbuntuGNOME!!!!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Next, we need to install Nvidia Drivers.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Connect to a network&lt;/li&gt;
+  &lt;li&gt;Run the command:
+    &lt;blockquote&gt;
+      &lt;p&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get -y upgrade &amp;amp;&amp;amp; sudo apt-get -y dist-upgrade&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Remove all Nvidia installs(if any), run this command:
+    &lt;blockquote&gt;
+      &lt;p&gt;sudo apt-get purge nvidia*&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Run the command:
+    &lt;blockquote&gt;
+      &lt;p&gt;sudo apt-get install nvidia-361-updates nvidia-prime&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Reboot:
+    &lt;blockquote&gt;
+      &lt;p&gt;sudo reboot&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Once logged back in move your mouse to the upper left hand corner of your desktop and start typing “Nvidia”&lt;/li&gt;
+  &lt;li&gt;Click on “NVIDIA X Server”&lt;/li&gt;
+  &lt;li&gt;On the left side of the Nvidia X Server window you will see an option called “PRIME Profiles”.  This is were you         select which video card you would like to use.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Source: https://jeremymdyson.wordpress.com/2016/04/27/ubuntugnome-16-04-on-asus-rog-gl552v/&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
+        <link>http://pclub.in/2017/01/06/Linux-on-Asus-ROG.html</link>
+        <guid isPermaLink="true">http://pclub.in/2017/01/06/Linux-on-Asus-ROG.html</guid>
         
         
       </item>
