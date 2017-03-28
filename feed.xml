@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Mar 2017 13:36:40 +0000</pubDate>
-    <lastBuildDate>Tue, 28 Mar 2017 13:36:40 +0000</lastBuildDate>
+    <pubDate>Tue, 28 Mar 2017 13:40:01 +0000</pubDate>
+    <lastBuildDate>Tue, 28 Mar 2017 13:40:01 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -39,7 +39,7 @@
 
 &lt;p&gt;-App Demo video link: &lt;a href=&quot;https://youtu.be/Cnm6HZRYHeg&quot;&gt;https://youtu.be/Cnm6HZRYHeg&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 28 Mar 2017 13:36:40 +0000</pubDate>
+        <pubDate>Tue, 28 Mar 2017 13:40:01 +0000</pubDate>
         <link>http://pclub.in/2017/03/28/2016-07-06-arnavigation-readme.html</link>
         <guid isPermaLink="true">http://pclub.in/2017/03/28/2016-07-06-arnavigation-readme.html</guid>
         
@@ -148,6 +148,35 @@ Project and PR: https://github.com/mozilla/thimble.mozilla.org/pull/1732&lt;/p&g
         
         
         <category>events</category>
+        
+      </item>
+    
+      <item>
+        <title>Ethical Hacking</title>
+        <description>&lt;p&gt;‘Ethical Hacking’ was a ‘project’ under the PClub with an aim to familiarise the campus junta with the field and to prepare for CTFs. 
+After an initial reading on HTML, Javascript and PHP, we moved on to beginner challeges - &lt;a href=&quot;http://overthewire.org/wargames/bandit/&quot;&gt;Bandits&lt;/a&gt; and &lt;a href=&quot;http://overthewire.org/wargames/natas/&quot;&gt;Natas&lt;/a&gt;. These were helpful for learning basic bash commands and web security. The challenges on Hack This Site!, primarily the &lt;a href=&quot;https://www.hackthissite.org/missions/javascript/&quot;&gt;javascript challenges&lt;/a&gt; were also attempted.&lt;/p&gt;
+
+&lt;p&gt;We also completed the first two weeks of the Cyber Security course on &lt;a href=&quot;https://www.coursera.org/learn/software-security/home&quot;&gt;Coursera&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Apart from this, we also read basic assembly language and binary exploitation. First few challeges on &lt;a href=&quot;https://microcorruption.com/&quot;&gt;MicroCorruption&lt;/a&gt; were completed.&lt;/p&gt;
+
+&lt;p&gt;We also participated in an intra-campus CTF and attempted a few archived challenges of &lt;a href=&quot;https://backdoor.sdslabs.co/&quot;&gt;Backdoor&lt;/a&gt;, SDS Labs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/samarthc/project-report/blob/master/Pclub-Ethical-Hacking.pdf&quot;&gt;Link to the Project Report&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
+        <link>http://pclub.in/project/2017/01/31/Ethical-Hacking.html</link>
+        <guid isPermaLink="true">http://pclub.in/project/2017/01/31/Ethical-Hacking.html</guid>
+        
+        <category>summer16</category>
+        
+        <category>project</category>
+        
+        
+        <category>project</category>
+        
+        <category>Project</category>
         
       </item>
     
@@ -677,141 +706,6 @@ Enjoy UbuntuGNOME!!!!&lt;/li&gt;
         <link>http://pclub.in/2017/01/06/Linux-on-Asus-ROG.html</link>
         <guid isPermaLink="true">http://pclub.in/2017/01/06/Linux-on-Asus-ROG.html</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>WebD: Introduction</title>
-        <description>&lt;h1 id=&quot;web-development-lecture-series-introduction&quot;&gt;Web Development Lecture Series: Introduction&lt;/h1&gt;
-
-&lt;h2 id=&quot;basics-of-what-the-browser-does&quot;&gt;Basics of what the browser does&lt;/h2&gt;
-&lt;p&gt;Here we briefly describe the back-breaking work the browser does, every time you open your favorite websites.&lt;/p&gt;
-
-&lt;p&gt;The internet does not understand &lt;code class=&quot;highlighter-rouge&quot;&gt;facebook.com&lt;/code&gt;. Yet, everything on the internet has an address. How does this work?&lt;/p&gt;
-
-&lt;p&gt;There is a protocol called &lt;code class=&quot;highlighter-rouge&quot;&gt;IP&lt;/code&gt;, which provides a numeric address to every computer on the internet. So when you open &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;, your computer somehow figures out where the files for the website are stored. Here, we mean that your computer has to find out how to locate the machine storing the files for &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;. Here is what happens:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Your browser talks to a machine called &lt;strong&gt;DNS Server&lt;/strong&gt;, which converts &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt; to an IP address. In this case, it is &lt;code class=&quot;highlighter-rouge&quot;&gt;192.30.252.153&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;This IP address is where the files are to be found. So now your computer tells the internet to provide the files placed at that location.&lt;/li&gt;
-  &lt;li&gt;The machine pointed to by the IP address above (the computer which stores the files of the website) is called the &lt;strong&gt;server&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;The first file to be loaded is an &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; web page. This is something which describes the structure of the page, what it contains, and what all other images etc need to be fetched.&lt;/li&gt;
-  &lt;li&gt;The browser reads the &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; file, and figures out the extra files it will need to fetch for that.&lt;/li&gt;
-  &lt;li&gt;It fetches some &lt;code class=&quot;highlighter-rouge&quot;&gt;CSS&lt;/code&gt; files (for styling), some &lt;code class=&quot;highlighter-rouge&quot;&gt;JS&lt;/code&gt; files (for interactive behavior), and images.&lt;/li&gt;
-  &lt;li&gt;The above files need not all be on &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;. I could link to some image lying at some other website’s location, and the browser would repeat the same procedure as above for that file, finding that website’s location and then getting the image.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;exploring-the-files-being-received&quot;&gt;Exploring the files being received&lt;/h2&gt;
-&lt;p&gt;Here’s a simple exercise. Open a new tab in your browser, and press F12. You will see a (scary looking?) panel pop up, to your right or at the bottom. Don’t lose heart, it isn’t all that scary :) It is called &lt;em&gt;Developer Tools&lt;/em&gt;, or related terms, depending on the context.&lt;/p&gt;
-
-&lt;p&gt;Now you need to click on the tab named &lt;code class=&quot;highlighter-rouge&quot;&gt;Network&lt;/code&gt; in that panel. Once you’ve done that, open up &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;It would probably look somewhat like in the images below.&lt;/p&gt;
-
-&lt;p&gt;For &lt;strong&gt;Chrome&lt;/strong&gt;:
-&lt;img src=&quot;/assets/image/article/chrome-network.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For &lt;strong&gt;Firefox&lt;/strong&gt;:
-&lt;img src=&quot;/assets/image/article/firefox-network.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ll be referring to the &lt;strong&gt;Google Chrome&lt;/strong&gt; image.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Note the first entry in the list. It says &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;. That means that you made a request for &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt;. You can even see when it finished in the bars on the right.&lt;/li&gt;
-  &lt;li&gt;Some &lt;code class=&quot;highlighter-rouge&quot;&gt;css&lt;/code&gt; files follow that request. They are necessary for making the page look good, and provide all the styling information.&lt;/li&gt;
-  &lt;li&gt;A little down, there is an entry called &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.png&lt;/code&gt;. That was a request made for the main PClub image, and as you can see, it made it to your screen.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There are plenty more files, which we don’t need to know about so soon. We urge you to give this a shot, try this yourself, and explore (Google) more on this.&lt;/p&gt;
-
-&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
-&lt;p&gt;We’ll hope that you have some knowledge of programming, and are comfortable with using a computer.&lt;/p&gt;
-
-&lt;p&gt;In addition, it will be highly preferred if you are using a Linux/Mac machine. Windows imposes restrictions on things you can do, gives you no way of doing things it has no softwares for, and is not Open Source (which, Mac is not too). Nonetheless, we hope that you install SSH and SCP clients on your windows machines, so that you can copy your files to the IIT Kanpur servers and get your homepage ready. Linux users don’t need any special software in most cases (ensure that &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh&lt;/code&gt; command is working in your terminal).&lt;/p&gt;
-
-&lt;p&gt;Some softwares you should have installed for Windows (&lt;strong&gt;before&lt;/strong&gt; the lecture) are:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://winscp.net/eng/index.php&quot;&gt;WinSCP&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.putty.org/&quot;&gt;PuTTY&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html&quot;&gt;PSCP&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Also, to be able to benefit from the lecture, you are strongly recommended to get your IITK Homepage directory made &lt;strong&gt;BEFORE&lt;/strong&gt; the lecture. If time permits, we will cover some of that too.&lt;/p&gt;
-
-&lt;p&gt;Here are the &lt;strong&gt;Official&lt;/strong&gt; instructions on how to make your homepage:
-&lt;a href=&quot;http://www.iitk.ac.in/cc/homepage/&quot;&gt;Creating Personal Homepage&lt;/a&gt;. You need to look at the section saying &lt;em&gt;For uploading and downloading and editing (using WinSCP)&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;topics-to-be-covered&quot;&gt;Topics to be covered&lt;/h2&gt;
-&lt;p&gt;Here’s a brief description of what this series will attempt to cover, and what those topics are.&lt;/p&gt;
-
-&lt;h3 id=&quot;html&quot;&gt;HTML&lt;/h3&gt;
-&lt;p&gt;Say you need to design a poster, how would you go about doing that?&lt;/p&gt;
-
-&lt;p&gt;You begin with a vague idea. Perhaps you want a title, followed by a subtitle. A title image would be good too. Some text in paragraphs, and some more images.&lt;/p&gt;
-
-&lt;p&gt;Note that the things which immediately come to mind describe the structure of the poster. You could later on choose to write things in a pretty font, display images to the right; or even choose to make the font size in the paragraphs larger than the title itself. This all is secondary. What you initially need to know is, what is the structure of the document.&lt;/p&gt;
-
-&lt;p&gt;On the web, that is precisely what HTML does. HTML, (or Hyper Text Markup Language) is a templating language, meaning that it let’s you create a template of what structure you have in mind. Displaying it nicely is a whole other matter, which we will look at later.&lt;/p&gt;
-
-&lt;p&gt;Here are some of the things which are preferably done in HTML, for a web page:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Title of the page (the one which is displayed as the name of the current tab)&lt;/li&gt;
-  &lt;li&gt;Information about the web page for browsers&lt;/li&gt;
-  &lt;li&gt;The &lt;em&gt;body&lt;/em&gt; of the webpage, which you see.&lt;/li&gt;
-  &lt;li&gt;Images in the web page&lt;/li&gt;
-  &lt;li&gt;Text in the web page&lt;/li&gt;
-  &lt;li&gt;Subdividing text into paragraphs&lt;/li&gt;
-  &lt;li&gt;Adding whitespace (newlines, spaces etc)&lt;/li&gt;
-  &lt;li&gt;Some simple styling of webpages (not recommended)&lt;/li&gt;
-  &lt;li&gt;Add links to other pages&lt;/li&gt;
-  &lt;li&gt;Quite more :)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;css&quot;&gt;CSS&lt;/h3&gt;
-&lt;p&gt;Now suppose you need to show something in a colored font on your webpage, or you want an image to display on the right side of the webpage instead of the left.&lt;/p&gt;
-
-&lt;p&gt;How do you do that? Thanks to the structured form of HTML, it is possible to label and identify items in your website’s structure (maybe you need to refer to all images, maybe only the images inside a particular paragraph, who knows?). Using this, you can define rules for every particular set of items on your web page.&lt;/p&gt;
-
-&lt;p&gt;HTML and CSS alone form the majority of the visible part of the websites you see. The design of the &lt;code class=&quot;highlighter-rouge&quot;&gt;pclub.in&lt;/code&gt; website, how &lt;code class=&quot;highlighter-rouge&quot;&gt;google.com&lt;/code&gt; looks, Google’s new material design websites; most of the styling is still done in CSS (apart from some complicated, dynamic ones). CSS is what you use to design your websites, make them look pretty (or ugly if you want to), and even add some animations!&lt;/p&gt;
-
-&lt;p&gt;For an example, try navigating to &lt;a href=&quot;http://pclub.in/contact.html&quot;&gt;the ‘contact’ page on pclub.in&lt;/a&gt;. Try hovering your mouse above any of the images, or names of the secretaries. The smooth animation you see was implemented with a few standard lines of CSS :)&lt;/p&gt;
-
-&lt;h3 id=&quot;javascript&quot;&gt;JavaScript&lt;/h3&gt;
-&lt;p&gt;You’ve got an idea about how to describe the structure of a document, you even know how to put some style to it. But how do you handle clicks?&lt;/p&gt;
-
-&lt;p&gt;One simple thing is to put links. That could open up a new page. But what if you want the click to, say, change some text on the page? Or maybe you’re making an online game, and you want it to use some buttons. Think YouTube, and how it handles the Play button. How do you describe what should happen when you click something?&lt;/p&gt;
-
-&lt;p&gt;Also, you’ve seen some simple animations. Did you notice the animation for &lt;em&gt;We’re the PClub&lt;/em&gt; on the programming club website homepage? The alphabets appear one by one, after a certain time delay. How do you do that?&lt;/p&gt;
-
-&lt;p&gt;What about Facebook, how does it get more information when you scroll down, and display it on the same page?&lt;/p&gt;
-
-&lt;p&gt;What we’ve described above are actual programming challenges, not just styling and structuring problems. JavaScript is the de-facto language of the internet, and it is what helps us describe all the above actions in a way computers understand. JavaScript is in itself, a full fledged programming language, and you can do quite a bit using it. It is what makes websites responsive. These files have an extension of &lt;code class=&quot;highlighter-rouge&quot;&gt;.js&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;nodejs-and-other-backend-languages-like-php&quot;&gt;Node.js (and other Backend languages like PHP)&lt;/h3&gt;
-&lt;p&gt;All you’ve seen till now is what is called the &lt;em&gt;frontend&lt;/em&gt;. Everything was happening on the browser (which is called the &lt;em&gt;client side&lt;/em&gt;). The machine hosting the website (as we mentioned in the very start) only has to send the &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;js&lt;/code&gt; files to the browser, which interprets these files. Websites comprising only of that type of items are called static websites. Think of, &lt;a href=&quot;http://example.com&quot;&gt;example.com&lt;/a&gt;, or &lt;a href=&quot;http://cse.iitk.ac.in/index.html&quot;&gt;cse.iitk.ac.in&lt;/a&gt;. These websites have content which changes rarely, and is manually updated by updating the files stored on the host computer (called the &lt;strong&gt;server&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p&gt;How about Facebook? People post thousands of images every minute, yet it does not create a separate &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt; page for everyone every 1 second. In such cases, the server is not only sending static content (&lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;js&lt;/code&gt;), but is also responding to complex queries. When you log in, you send an &lt;em&gt;HTTP request&lt;/em&gt; (google this term!) to the server, with your password. It then verifies that it is correct, and lets you in. On this, it looks up in its store of information (called the &lt;em&gt;Database&lt;/em&gt;), and generates data to display to you. This is how you get this information. The user’s browser sends more &lt;em&gt;HTTP Requests&lt;/em&gt; to the server, say asking for new items in your news feed. The server responds by providing that information, and the browser takes that information, and JavaScript converts that information into content you can see on your screen.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;The above is a (fairly-long) description of the various things necessary to be known to be able to do some serious web development. Don’t worry if you don’t understand parts of it, you’ll come to know eventually, when you cover the topics in more detail. Till then, happy Googling!&lt;/p&gt;
-</description>
-        <pubDate>Sat, 24 Sep 2016 10:16:12 +0000</pubDate>
-        <link>http://pclub.in/lecture/web%20development/2016/09/24/webdev1.html</link>
-        <guid isPermaLink="true">http://pclub.in/lecture/web%20development/2016/09/24/webdev1.html</guid>
-        
-        <category>meta</category>
-        
-        <category>webd</category>
-        
-        <category>tutorial</category>
-        
-        <category>lecture</category>
-        
-        
-        <category>lecture</category>
-        
-        <category>Web Development</category>
         
       </item>
     
