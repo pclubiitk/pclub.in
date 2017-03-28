@@ -6,9 +6,45 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Mar 2017 13:33:36 +0000</pubDate>
-    <lastBuildDate>Tue, 28 Mar 2017 13:33:36 +0000</lastBuildDate>
+    <pubDate>Tue, 28 Mar 2017 13:36:40 +0000</pubDate>
+    <lastBuildDate>Tue, 28 Mar 2017 13:36:40 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;h1 id=&quot;ar-navigation&quot;&gt;[AR Navigation]&lt;/h1&gt;
+
+&lt;h3 id=&quot;about-the-project&quot;&gt;About The Project&lt;/h3&gt;
+&lt;p&gt;We tried out experimenting Augmented Reality as a summer project. Our aim was to design a navigation app which instead of showing top view of map shows directions on real time camera feed. This will have two fold benefits:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The users will not have to match roads and adjust map to understand where to go&lt;/li&gt;
+  &lt;li&gt;Since it shows real time camera feed the user can remain in real world while looking for directions preventing accidents&lt;/li&gt;
+  &lt;li&gt;Received the &lt;strong&gt;Best Programming Club Project&lt;/strong&gt; during the Science &amp;amp; Technology Summer Camp 2016.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;approach-to-inculcate-ar-in-android-app&quot;&gt;Approach to inculcate AR in android app&lt;/h3&gt;
+&lt;p&gt;Unlike infrared sensors we didn’t have any means to calculate the exact distance of the real time objects in the mobiles so we switched to MATHEMATICS for our answers. OH! Technical Arts also played a key role in devising our strategy.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;We used GPS data combiined with mobiles orientation from Magnetic Compass to detect roads. Here Google Directions API came in handy to give the precise coordinates of the roads.&lt;/li&gt;
+  &lt;li&gt;We measured the relative motion of the user via gyroscope, accelerometer and GPS coordinates&lt;/li&gt;
+  &lt;li&gt;The Unity graphics were relayed on the camera feed via UNITY GAME ENGINE giving the graphics (navigating arrows) a psuedo-acceleration to look static on the ground.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&quot;&gt;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Android Documentation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;-App Demo video link: &lt;a href=&quot;https://youtu.be/Cnm6HZRYHeg&quot;&gt;https://youtu.be/Cnm6HZRYHeg&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Mar 2017 13:36:40 +0000</pubDate>
+        <link>http://pclub.in/2017/03/28/2016-07-06-arnavigation-readme.html</link>
+        <guid isPermaLink="true">http://pclub.in/2017/03/28/2016-07-06-arnavigation-readme.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Antaragni-App</title>
@@ -776,46 +812,6 @@ Enjoy UbuntuGNOME!!!!&lt;/li&gt;
         <category>lecture</category>
         
         <category>Web Development</category>
-        
-      </item>
-    
-      <item>
-        <title>Forex Prediction</title>
-        <description>&lt;h1 id=&quot;predicting-foreign-exchange-rates&quot;&gt;PREDICTING FOREIGN EXCHANGE RATES&lt;/h1&gt;
-
-&lt;h3 id=&quot;about-the-project&quot;&gt;About the project&lt;/h3&gt;
-
-&lt;p&gt;The project is designed to predict foreign exchange rates. It takes opening , maximum and minimum price as inputs and learns and create the model from the trainig data and then you can use that model to predict the closing price of foreign exchange. Training data should be large enough (at least 60,000 sets) in order to predict the output precisely. In our project we are testing our model on a validation set and printing the accuracy as final output.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-we-learnt&quot;&gt;What we learnt&lt;/h3&gt;
-
-&lt;p&gt;After completing this project we became well versed with &lt;a href=&quot;https://www.lua.org/about.html&quot;&gt;Lua&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Torch_(machine_learning)&quot;&gt;Torch&lt;/a&gt;. Also, one learns the basic concepts involved in the construction of &lt;a href=&quot;https://en.wikipedia.org/wiki/Artificial_neural_network&quot;&gt;neural networks&lt;/a&gt; and the various machine learning algorithms.&lt;/p&gt;
-
-&lt;h3 id=&quot;how-to-use&quot;&gt;How to use&lt;/h3&gt;
-
-&lt;p&gt;Install torch from &lt;a href=&quot;https://github.com/torch/torch7/wiki/Cheatsheet&quot;&gt;this link&lt;/a&gt;.
-Download free forex data from &lt;a href=&quot;http://www.histdata.com/&quot;&gt;here&lt;/a&gt; and convert the csv file into txt file separated by ;.
-This data will form your training and validation set. Download the code from &lt;a href=&quot;https://github.com/adjhawar/forex_ml&quot;&gt;here&lt;/a&gt; and run on your system by using &lt;em&gt;th filename&lt;/em&gt;
-You will also see a graph plot between the expected value and predicted value.&lt;/p&gt;
-
-&lt;h3 id=&quot;how-does-the-code-work&quot;&gt;How does the code work&lt;/h3&gt;
-
-&lt;p&gt;Well, the program uses gradient descent algorithm and uses a test data set to train itself. This is necessary for the program to learn and this model is saved. Now, this saved model is reloaded in a new program and there it predicts the values for the validation set. Then the actual values and obtained values are obtained on the graph.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 23 Sep 2016 10:30:00 +0000</pubDate>
-        <link>http://pclub.in/project/2016/09/23/Forex.html</link>
-        <guid isPermaLink="true">http://pclub.in/project/2016/09/23/Forex.html</guid>
-        
-        <category>summer16</category>
-        
-        <category>project</category>
-        
-        <category>ML</category>
-        
-        
-        <category>project</category>
-        
-        <category>Project</category>
         
       </item>
     
