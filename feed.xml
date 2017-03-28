@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Mar 2017 13:40:01 +0000</pubDate>
-    <lastBuildDate>Tue, 28 Mar 2017 13:40:01 +0000</lastBuildDate>
+    <pubDate>Tue, 28 Mar 2017 13:44:16 +0000</pubDate>
+    <lastBuildDate>Tue, 28 Mar 2017 13:44:16 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -39,7 +39,7 @@
 
 &lt;p&gt;-App Demo video link: &lt;a href=&quot;https://youtu.be/Cnm6HZRYHeg&quot;&gt;https://youtu.be/Cnm6HZRYHeg&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 28 Mar 2017 13:40:01 +0000</pubDate>
+        <pubDate>Tue, 28 Mar 2017 13:44:16 +0000</pubDate>
         <link>http://pclub.in/2017/03/28/2016-07-06-arnavigation-readme.html</link>
         <guid isPermaLink="true">http://pclub.in/2017/03/28/2016-07-06-arnavigation-readme.html</guid>
         
@@ -214,6 +214,51 @@ Github Wiki: &lt;a href=&quot;https://github.com/heyitssat/Project_pragati/wiki&
       </item>
     
       <item>
+        <title>Install Fest: Linux Mint</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;Place Linux Mint DVD or USB bootable image in the appropriate drive and reboot the computer in order to start with Linux Mint 18 installation.&lt;/li&gt;
+  &lt;li&gt;After reboot, press the special function key and instruct the machine firmware (UEFI) to boot-up from the appropriate DVD or USB drive (the special function keys usually are F12, F10 or F2 depending on the motherboard manufacturer). Once the media boots-up a new screen should appear on your monitor. Choose Start Linux Mint 18 Cinnamon and hit Enter to continue.
+&lt;img src=&quot;http://www.tecmint.com/wp-content/uploads/2016/07/Select-Start-Linux-Mint-Cinnamon-Install.png&quot; alt=&quot;Boot Image&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Wait until the system loads into RAM in order to run in live-mode and open the installer by double clicking on Install Linux Mint icon. Choose the language you wish to perform the installation and click on Continue button to proceed further.&lt;/li&gt;
+  &lt;li&gt;On the next screen hit on Continue button to proceed further. Third-party software can be automatically download and installed on this step by checking the check-box. The recommendation would be to leave the box unchecked for the moment and manually install proprietary software later, after the installation process completes. &lt;img src=&quot;http://www.tecmint.com/wp-content/uploads/2016/07/Preparing-to-Install-Linux-Mint-18.png&quot; alt=&quot;Preparing to Install Linux Mint 18&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;At the next screen you can choose the Installation Type. If Windows Boot manager is automatically detected you can choose to Install Linux Mint alongside Windows Boot Manager. This option ensures that the HDD will be automatically partitioned by the installer without any data loss.The second option, Erase disk and install Ubuntu, should be avoided for dual-boot because is potentially dangerous and will wipe-out your disk. For a more flexible partition layout you should go with Something else option and hit on Continue button to proceed further.&lt;/li&gt;
+  &lt;li&gt;Now let’s create the partition layout for Linux Mint 18. I would recommend that you create three partitions, one for / (root), one for /home accounts data and one partition for swap.First create the swap partition. Select the free space and hit on the + icon from below. On this partition use the following settings and hit OK to create the partition.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Size = 1024 MB
+Type for for the new partition = Beginning of this space
+Use as = swap area
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Using the same steps as above create the /(root) partition with the below settings:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Size = minimum 20 GB
+Type for the new partition = Primary
+Location for the new partition = Beginning of this space
+Use as = EXT4 journaling file system
+Mount point = /
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Finally, create the home slice with the below settings (use all the available free space to create home partition). Home partition is the place where all documents for user accounts will be stored by default, except the root account. In case of a system failure you can reinstall the operating system for scratch without touching or losing the settings and documents of all users.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Size = remaining free space
+Type for the new partition = Primary
+Location for the new partition = Beginning 
+Use as = EXT4 journaling file system
+Mount point = /home
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&lt;img src=&quot;http://www.tecmint.com/wp-content/uploads/2016/07/Create-Home-Partition.png&quot; alt=&quot;Installation type&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;After finishing creating the partition layout, select Windows Boot Manager as the device for installing the Grub boot loader and hit on Install Now button in order to commit changes to disk and proceed with the installation. Next a new pop-up window will ask you if you agree with committing changes to disk. Hit on Continue to accept changes and the installer will now start to write changes to disk. &lt;a href=&quot;https://http://www.tecmint.com/install-linux-mint-18-alongside-windows-10-or-8-in-dual-boot-uefi-mode/&quot;&gt;This has been taken from tecmint.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Fri, 06 Jan 2017 19:45:00 +0000</pubDate>
+        <link>http://pclub.in/2017/01/06/Mint_install.html</link>
+        <guid isPermaLink="true">http://pclub.in/2017/01/06/Mint_install.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Install Fest: Debian</title>
         <description>&lt;h1 id=&quot;installing-debian-jessie&quot;&gt;Installing Debian Jessie&lt;/h1&gt;
 
@@ -358,6 +403,9 @@ If you do use one, select ‘India’ as your country and iitk as your mirror.&l
 &lt;p&gt;Here are the separate posts for each supported Linux Distribution:&lt;/p&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/2017/01/06/Mint_install.html&quot;&gt;Install Fest: Linux Mint&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;/2017/01/06/debianinstall.html&quot;&gt;Install Fest: Debian&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
@@ -630,81 +678,6 @@ myhostname
         <pubDate>Fri, 06 Jan 2017 13:05:20 +0000</pubDate>
         <link>http://pclub.in/2017/01/06/installarch.html</link>
         <guid isPermaLink="true">http://pclub.in/2017/01/06/installarch.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Installing Ubuntu In Latest Asus Rog PCs</title>
-        <description>&lt;p&gt;&lt;strong&gt;Problem occurs due to loading of Nvidia Drivers during booting. Follow the following simple steps.&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;When the grub boot loader menu is visible highlight “Try Ubuntu GNOME without installing” (use your up and down arrows)&lt;/li&gt;
-  &lt;li&gt;Press “e” on your keyboard, this will allow you to edit the boot config.
-You will be brought to a page where you can make some edits.&lt;/li&gt;
-  &lt;li&gt;add the following right after the word “splash”
-    &lt;blockquote&gt;
-      &lt;p&gt;nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Press the “f10” key to boot into the installer&lt;/li&gt;
-  &lt;li&gt;When the desktop load move your mouse into the upper left hand corner, when the app launcher shows itself click on the very top icon “Install Ubuntu GNOME 16.04 LTS”&lt;/li&gt;
-  &lt;li&gt;Do not install third party software.&lt;/li&gt;
-  &lt;li&gt;Then follow the steps to install Ubuntu.&lt;/li&gt;
-  &lt;li&gt;After installation click “Keep trying Ubuntu”&lt;/li&gt;
-  &lt;li&gt;Shut down (NOT RESTART) your computer, remove installation media, hit enter.&lt;/li&gt;
-  &lt;li&gt;Hold down shift then press the power button to turn on your computer. (holding down shift while powering on will load the grub boot menu)&lt;/li&gt;
-  &lt;li&gt;When the grub boot menu appears press “e” and make the changes in step 3.&lt;/li&gt;
-  &lt;li&gt;Press “f10”&lt;/li&gt;
-  &lt;li&gt;Once your back into the desktop open your terminal and enter:
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo gedit /etc/default/grub&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Find the line that reads ‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”‘ and change it to read
-    &lt;blockquote&gt;
-      &lt;p&gt;‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux         i915.preliminary_hw_support=1 idle=nomwait”‘&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Save the changes then exit gedit.&lt;/li&gt;
-  &lt;li&gt;In your terminal run the command: sudo update-grub&lt;/li&gt;
-  &lt;li&gt;Reboot your computer: sudo reboot.
-Enjoy UbuntuGNOME!!!!&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Next, we need to install Nvidia Drivers.&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Connect to a network&lt;/li&gt;
-  &lt;li&gt;Run the command:
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get -y upgrade &amp;amp;&amp;amp; sudo apt-get -y dist-upgrade&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Remove all Nvidia installs(if any), run this command:
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo apt-get purge nvidia*&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Run the command:
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo apt-get install nvidia-361-updates nvidia-prime&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Reboot:
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo reboot&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Once logged back in move your mouse to the upper left hand corner of your desktop and start typing “Nvidia”&lt;/li&gt;
-  &lt;li&gt;Click on “NVIDIA X Server”&lt;/li&gt;
-  &lt;li&gt;On the left side of the Nvidia X Server window you will see an option called “PRIME Profiles”.  This is were you         select which video card you would like to use.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Source: https://jeremymdyson.wordpress.com/2016/04/27/ubuntugnome-16-04-on-asus-rog-gl552v/&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
-        <link>http://pclub.in/2017/01/06/Linux-on-Asus-ROG.html</link>
-        <guid isPermaLink="true">http://pclub.in/2017/01/06/Linux-on-Asus-ROG.html</guid>
         
         
       </item>
