@@ -483,21 +483,6 @@
   
     
     <url>
-      <loc>http://pclub.in/2016/06/01/linux-process.html</loc>
-      
-        <lastmod>2016-06-01T00:00:00+00:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
       <loc>http://pclub.in/tutorial/ip/opencv/2016/05/28/opencv.html</loc>
       
         <lastmod>2016-05-28T12:18:35+00:00</lastmod>
@@ -640,7 +625,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
+        <lastmod>2017-03-28T13:33:36+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -658,7 +643,7 @@
     <url>
       <loc>http://pclub.in/about.html</loc>
       
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
+        <lastmod>2017-03-28T13:33:36+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -676,7 +661,7 @@
     <url>
       <loc>http://pclub.in/archive.html</loc>
       
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
+        <lastmod>2017-03-28T13:33:36+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -694,7 +679,7 @@
     <url>
       <loc>http://pclub.in/contact.html</loc>
       
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
+        <lastmod>2017-03-28T13:33:36+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -722,7 +707,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
+        <lastmod>2017-03-28T13:33:36+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -745,7 +730,7 @@
     <url>
       <loc>http://pclub.in/projects.html</loc>
       
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
+        <lastmod>2017-03-28T13:33:36+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -768,7 +753,7 @@
     <url>
       <loc>http://pclub.in/tags.html</loc>
       
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
+        <lastmod>2017-03-28T13:33:36+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -786,7 +771,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
+        <lastmod>2017-03-28T13:33:36+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -804,7 +789,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
+        <lastmod>2017-03-28T13:33:36+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -822,7 +807,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
+        <lastmod>2017-03-28T13:33:36+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -840,25 +825,7 @@
     <url>
       <loc>http://pclub.in</loc>
       
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    
-
-    
-    <url>
-      <loc>http://pclub.in</loc>
-      
-        <lastmod>2017-03-28T13:29:08+00:00</lastmod>
+        <lastmod>2017-03-28T13:33:36+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
