@@ -2,17 +2,14 @@
 layout: post
 title: "AR navigation"
 date: 2016-07-06 16:42:00 +0530
-author: I M AI
-category: 
+author: Varun Khare
+category: Medium
 tags: 
 - summer16
 - project
 - augmented_reality
 categories:
 - project
-
-image:
-i
 ---
 
 # [AR Navigation]
