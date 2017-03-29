@@ -42,5 +42,6 @@
   {"title":"Plugin Managers for Vim", "url":"/tutorial/vim/2016/05/08/plugins.html"},
   {"title":"Contributing to pclub.in", "url":"/tutorial/2016/05/05/posttemplate.html"},
   {"title":"Kickstart to Vim", "url":"/tutorial/vim/2016/04/29/kickstarttovim.html"},
-  {"title":"A Coding Primer", "url":"/tutorial/beginner/2016/04/29/codingprimer.html"}
+  {"title":"A Coding Primer", "url":"/tutorial/beginner/2016/04/29/codingprimer.html"},
+  {"title":"Handwriting Recognition using Machine Learning", "url":"/project/2016/01/24/handwritingrecognition.html"}
 ]
