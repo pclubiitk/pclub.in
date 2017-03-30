@@ -29,13 +29,7 @@ A database was made as a table in Torch using only images of alphabets android d
 
 Received the **Special Mention** during the Science & Technology Summer Camp 2016.
 
-Website: [http://
-
-
-
-
-
-v.github.io/](http://prathamv.github.io/)
+Website: [http://prathamv28.github.io/](http://prathamv28.github.io/)
 LaTeX Report: [report.pdf](https://github.com/pritesh1996/Handwriting-Recognition/blob/master/Handwriting%20Recognition%20Report.pdf)
 Github Wiki: [Simulati-ON Wiki](https://github.com/pritesh1996/Handwriting-Recognition/blob/master/README.md)
 
