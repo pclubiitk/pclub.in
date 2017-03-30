@@ -16,7 +16,7 @@ image:
 
 ---
 
-# [Handwriting Recognition using Machine Learning](http://prathamv.github.io/)
+# [Handwriting Recognition using Machine Learning](http://prathamv28.github.io/)
 
 Handwriting recognition (or HWR[1]) is the ability of a computer to receive and interpret intelligible handwritten input from sources such as paper documents, photographs, touch-screens and other devices. Machine Learning is incorporated to solve this interesting problem. Using neural networks and optimization the model learns the similarities of the training datasets which have a common result. Spell corrector is also incorporated to increase accuracy upto 97%.
 
@@ -31,5 +31,5 @@ Received the **Special Mention** during the Science & Technology Summer Camp 201
 
 Website: [http://prathamv.github.io/](http://prathamv.github.io/)
 LaTeX Report: [report.pdf](https://github.com/pritesh1996/Handwriting-Recognition/blob/master/Handwriting%20Recognition%20Report.pdf)
-Github Wiki: [Simulati-ON Wiki](https://github.com/pritesh1996/Handwriting-Recognition/README.md)
+Github Wiki: [Simulati-ON Wiki](https://github.com/pritesh1996/Handwriting-Recognition/blob/master/README.md)
 
