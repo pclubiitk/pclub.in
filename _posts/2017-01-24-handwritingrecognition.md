@@ -35,7 +35,7 @@ Website: [http://
 
 
 
-v.github.io/](http://prathamv.github.io/)
+v.github.io/](http://prathamv28.github.io/)
 LaTeX Report: [report.pdf](https://github.com/pritesh1996/Handwriting-Recognition/blob/master/Handwriting%20Recognition%20Report.pdf)
 Github Wiki: [Simulati-ON Wiki](https://github.com/pritesh1996/Handwriting-Recognition/blob/master/README.md)
 
