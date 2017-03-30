@@ -3,7 +3,7 @@ layout: post
 title: "Handwriting Recognition using Machine Learning"
 date: 2016-01-24 10:00:00 +0530
 author: pritesh
-website: http://prathamv.guthub.io/
+website: http://prathamv28.guthub.io/
 category: Project
 tags:
 - summer16
@@ -29,7 +29,13 @@ A database was made as a table in Torch using only images of alphabets android d
 
 Received the **Special Mention** during the Science & Technology Summer Camp 2016.
 
-Website: [http://prathamv.github.io/](http://prathamv.github.io/)
+Website: [http://
+
+
+
+
+
+v.github.io/](http://prathamv.github.io/)
 LaTeX Report: [report.pdf](https://github.com/pritesh1996/Handwriting-Recognition/blob/master/Handwriting%20Recognition%20Report.pdf)
 Github Wiki: [Simulati-ON Wiki](https://github.com/pritesh1996/Handwriting-Recognition/blob/master/README.md)
 
