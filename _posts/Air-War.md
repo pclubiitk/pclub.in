@@ -7,11 +7,11 @@ This is a single player air-fight based game built on Unity3D platform. The scri
 This game comprises of two modes-
 * **Arcade Mode:** The war is fought on three battle ground. One has to lead his forces through all these battlegrounds to lead his forces to victory.
 	* **Desert**
-		![Desert](https://lh5.googleusercontent.com/gaH34Bu6zsKFoO2YGXUm79cdCVgsJ1AeGMqdWJOdWYLVeGDWCcuuCvoj0xAXRQzITXQw-OMPpxTs_NU=w1920-h922-rw)
+		![](https://github.com/JitenDhawan/Windows-Game/blob/master/p1.PNG)
 	* **Hills**
-		![Hills](https://lh4.googleusercontent.com/eBS_DbwPPP9PFvS30FAf5vCgtWZ-h9uJvAdq82vQapdoXPH882SE_tVsEv5yDsAj0Obh9RLriQR9vb4=w1920-h922-rw)
+		![](https://github.com/JitenDhawan/Windows-Game/blob/master/p2.PNG)
 	* **Icy Mountains**
-		![Icy Mountains](https://lh6.googleusercontent.com/SUlNmjs9gTkAjWlw6XaLirTQdS3M8p2-2nlWJUrTQIhbfhg2ZKJb2VSb1yO91WuiMsMe6BnaVKrRG7U=w1920-h922-rw)
+		![](https://github.com/JitenDhawan/Windows-Game/blob/master/p3.PNG?raw=true)
 
 * **Survival Mode:** In this one has to survive in the battlefield as long as he can. However, battleground doesn't change.
 
