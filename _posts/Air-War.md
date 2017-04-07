@@ -1,6 +1,18 @@
+---
+layout: post
+title: "Air War Unity"
+date: 2016-12-23 16:42:00 +0530
+author: gupabhi	 
+tags: 
+ - summer16
+ - project
+categories:
+ - project
+ 
+url: http://github.com/jaskirat1208/Windows-Game
+---
 
-
-# [Air war](ttp://github.com/jaskirat1208/Windows-Game)
+# [Air war](http://github.com/jaskirat1208/Windows-Game)
 
 This is a single player air-fight based game built on Unity3D platform. The scripts were written in C# language using Microsoft Visual Studio
 
