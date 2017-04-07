@@ -8,15 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Installing Ubuntu In Latest Asus Rog PCs</title>
-  <meta name="description" content="Problem occurs due to loading of Nvidia Drivers during booting. Follow the following simple steps.  When the grub boot loader menu is visible highlight “Try ...">
+  <title>Air War Unity</title>
+  <meta name="description" content="Air warThis is a single player air-fight based game built on Unity3D platform. The scripts were written in C# language using Microsoft Visual StudioThis game...">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/2017/01/06/Linux-on-Asus-ROG.html">
+  <link rel="canonical" href="http://pclub.in/project/2016/12/23/Air-war.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
 </head>
 
@@ -111,79 +111,37 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Installing Ubuntu In Latest Asus Rog PCs</h1>
+    <h1 class="inpost-title" itemprop="name headline">Air War Unity</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/2017/01/06/Linux-on-Asus-ROG.html#disqus_thread" data-disqus-identifier="/2017/01/06/Linux-on-Asus-ROG"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/project/2016/12/23/Air-war.html#disqus_thread" data-disqus-identifier="/project/2016/12/23/Air-war"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <p><strong>Problem occurs due to loading of Nvidia Drivers during booting. Follow the following simple steps.</strong></p>
-<ol>
-  <li>When the grub boot loader menu is visible highlight “Try Ubuntu GNOME without installing” (use your up and down arrows)</li>
-  <li>Press “e” on your keyboard, this will allow you to edit the boot config.
-You will be brought to a page where you can make some edits.</li>
-  <li>add the following right after the word “splash”
-    <blockquote>
-      <p>nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait</p>
-    </blockquote>
-  </li>
-  <li>Press the “f10” key to boot into the installer</li>
-  <li>When the desktop load move your mouse into the upper left hand corner, when the app launcher shows itself click on the very top icon “Install Ubuntu GNOME 16.04 LTS”</li>
-  <li>Do not install third party software.</li>
-  <li>Then follow the steps to install Ubuntu.</li>
-  <li>After installation click “Keep trying Ubuntu”</li>
-  <li>Shut down (NOT RESTART) your computer, remove installation media, hit enter.</li>
-  <li>Hold down shift then press the power button to turn on your computer. (holding down shift while powering on will load the grub boot menu)</li>
-  <li>When the grub boot menu appears press “e” and make the changes in step 3.</li>
-  <li>Press “f10”</li>
-  <li>Once your back into the desktop open your terminal and enter:
-    <blockquote>
-      <p>sudo gedit /etc/default/grub</p>
-    </blockquote>
-  </li>
-  <li>Find the line that reads ‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”‘ and change it to read
-    <blockquote>
-      <p>‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux         i915.preliminary_hw_support=1 idle=nomwait”‘</p>
-    </blockquote>
-  </li>
-  <li>Save the changes then exit gedit.</li>
-  <li>In your terminal run the command: sudo update-grub</li>
-  <li>Reboot your computer: sudo reboot.
-Enjoy UbuntuGNOME!!!!</li>
-</ol>
+    <h1 id="air-war"><a href="http://github.com/jaskirat1208/Windows-Game">Air war</a></h1>
 
-<p><strong>Next, we need to install Nvidia Drivers.</strong></p>
-<ol>
-  <li>Connect to a network</li>
-  <li>Run the command:
-    <blockquote>
-      <p>sudo apt-get update &amp;&amp; sudo apt-get -y upgrade &amp;&amp; sudo apt-get -y dist-upgrade</p>
-    </blockquote>
-  </li>
-  <li>Remove all Nvidia installs(if any), run this command:
-    <blockquote>
-      <p>sudo apt-get purge nvidia*</p>
-    </blockquote>
-  </li>
-  <li>Run the command:
-    <blockquote>
-      <p>sudo apt-get install nvidia-361-updates nvidia-prime</p>
-    </blockquote>
-  </li>
-  <li>Reboot:
-    <blockquote>
-      <p>sudo reboot</p>
-    </blockquote>
-  </li>
-  <li>Once logged back in move your mouse to the upper left hand corner of your desktop and start typing “Nvidia”</li>
-  <li>Click on “NVIDIA X Server”</li>
-  <li>On the left side of the Nvidia X Server window you will see an option called “PRIME Profiles”.  This is were you         select which video card you would like to use.</li>
-</ol>
+<p>This is a single player air-fight based game built on Unity3D platform. The scripts were written in C# language using Microsoft Visual Studio</p>
 
-<p>Source: https://jeremymdyson.wordpress.com/2016/04/27/ubuntugnome-16-04-on-asus-rog-gl552v/</p>
+<p>This game comprises of two modes-</p>
+<ul>
+  <li><strong>Arcade Mode:</strong> The war is fought on three battle ground. One has to lead his forces through all these battlegrounds to lead his forces to victory.
+    <ul>
+      <li><strong>Desert</strong>
+  <img src="https://github.com/JitenDhawan/Windows-Game/blob/master/p1.PNG?raw=true" alt="" /></li>
+      <li><strong>Hills</strong>
+  <img src="https://github.com/JitenDhawan/Windows-Game/blob/master/p2.PNG?raw=true" alt="" /></li>
+      <li><strong>Icy Mountains</strong>
+  <img src="https://github.com/JitenDhawan/Windows-Game/blob/master/p3.PNG?raw=true" alt="" /></li>
+    </ul>
+  </li>
+  <li><strong>Survival Mode:</strong> In this one has to survive in the battlefield as long as he can. However, battleground doesn’t change.</li>
+</ul>
 
+<p>Received a <strong>Special Mention</strong> during the Science &amp; Technology Summer Camp 2016.</p>
+
+<h4 id="github-air-war">Github: <a href="http://github.com/jaskirat1208/Windows-Game">Air War</a></h4>
+<h4 id="video-air-waryoutube">Video: <a href="https://www.youtube.com/watch?v=MJNwBx_Hbhg">Air War(Youtube)</a></h4>
 
   </div>
 
@@ -191,8 +149,8 @@ Enjoy UbuntuGNOME!!!!</li>
  
  
 <div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/2017/01/06/installarch.html" title="
-&lt;p class=hoveratas&gt;Install Fest: Arch Linux&lt;/p&gt; &lt;p class=hoverbawah&gt;Pre-installation Arch Linux should run on any i686 or x86_64...&lt;/p&gt;
+<a id="route" class="tooltip-right" href="/2017/01/06/Linux-on-Asus-ROG.html" title="
+&lt;p class=hoveratas&gt;Installing Ubuntu In Latest Asus Rog PCs&lt;/p&gt; &lt;p class=hoverbawah&gt;**Problem occurs due to loading of Nvidia Drivers during booting....&lt;/p&gt;
 "><i class="typcn typcn-chevron-left" style="    font-size: 30px;
     position: relative;
    
@@ -202,8 +160,8 @@ Enjoy UbuntuGNOME!!!!</li>
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/project/2016/12/23/Air-war.html" title="
-&lt;p class=hoveratas&gt;Air War Unity&lt;/p&gt; &lt;p class=hoverbawah&gt;Air war This is a single player air-fight based game...&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/lecture/web%20development/2016/09/24/webdev1.html" title="
+&lt;p class=hoveratas&gt;WebD: Introduction&lt;/p&gt; &lt;p class=hoverbawah&gt;Web Development Lecture Series: Introduction Basics of what the browser...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -214,17 +172,21 @@ Enjoy UbuntuGNOME!!!!</li>
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2017-01-06T00:00:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Jan 6, 2017</time>
+  <time datetime="2016-12-23T11:12:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Dec 23, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      Akash Kumar Dutta
+      gupabhi
       
     </span>
   </span>
    
     |
+  
+  <a href="/tags.html#summer16" style="color: #fff;"><i class="typcn typcn-tags"></i> summer16</a>
+  
+  <a href="/tags.html#project" style="color: #fff;"><i class="typcn typcn-tags"></i> project</a>
   
   </p>
 
@@ -249,8 +211,8 @@ Enjoy UbuntuGNOME!!!!</li>
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/2017/01/06/Linux-on-Asus-ROG';
-    this.page.identifier = '/2017/01/06/Linux-on-Asus-ROG';
+    this.page.url = 'https://pclub.in/project/2016/12/23/Air-war';
+    this.page.identifier = '/project/2016/12/23/Air-war';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
