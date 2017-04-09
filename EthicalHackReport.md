@@ -10,4 +10,4 @@ Memory exploit (stack smash): https://drive.google.com/drive/folders/0B7Im8HCcxS
 Entire solution to some overthewire.org wargames was prepared:  
 https://drive.google.com/drive/folders/0BwuxmsGPlpW6Ym5DWEVVZG1IeTA
 
-Team members: Sandeep Kumar, Devashish Mehta, Rohit Bose, Vishal Kashyap
+Team members: Sandeep Kumar, Devashish Mehta, Rohit Bose, Vishal Kashyap, Pranjal Prasoon
