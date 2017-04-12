@@ -160,8 +160,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(1020px - (30px * 2));
+  max-width: 960px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;

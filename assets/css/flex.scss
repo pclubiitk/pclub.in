@@ -1,0 +1,60 @@
+---
+---
+
+.card {
+  background: #3e3e3e;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: 0;
+  padding: 32px 20px;
+  padding-bottom: 1rem;
+  position: relative;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.pic {
+  margin: 0 auto;
+  border-radius: 7.5vw;
+  width: 15vw;
+}
+
+.left-align-text {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.flex-row:hover {
+  background: #333333;
+}
+
+.flex-col {
+  align-content: center;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-row {
+  align-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-row-wrap {
+  flex-wrap: wrap;
+}
+
+.single-row {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}

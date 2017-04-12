@@ -18,21 +18,10 @@ figure {
   padding: 0;
 }
 
-@font-face {
-  font-family: 'Raleway';
-  /*src: url(https://fonts.googleapis.com/css?family=Raleway);*/
-}
-
 body {
-  font: 400 16px/1.5 'Raleway';
+  font: 400 16px/1.5 'Source Sans Pro';
   color: #fff;
   background-color: #222222;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
 }
 
 h1,
@@ -126,19 +115,17 @@ pre>code {
 }
 
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(1020px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  /* padding-right: 30px; */
+  /* padding-left: 30px; */
   position: relative;
+  width: 70vw;
+  max-width: 960px;
 }
 
 @media screen and (max-width: 800px) {
   .wrapper {
-    max-width: -webkit-calc(800px - (30px));
-    max-width: calc(800px - (30px));
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -1153,7 +1140,7 @@ ul {
 @media only screen and (min-width: 768px) {
   .samping {
     /* border-right:1px solid #E8e8e8; */
-    padding-right: 35px;
+    padding-right: 20px;
     padding-bottom: 20px;
   }
   .large-1 {
