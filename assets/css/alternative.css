@@ -2460,3 +2460,22 @@ img.iitklogo {
   margin-left: auto;
   margin-right: auto;
 }
+
+table {
+  background-color: #555555;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+table th {
+  background-color: #333333;
+  padding: 5px;
+}
+
+table td {
+  padding: 5px;
+}
+
+table tr:nth-child(even) {
+  background-color: #2F4F4F;
+}
