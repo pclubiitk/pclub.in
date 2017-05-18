@@ -6,9 +6,123 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 15 Apr 2017 20:10:48 +0000</pubDate>
-    <lastBuildDate>Sat, 15 Apr 2017 20:10:48 +0000</lastBuildDate>
+    <pubDate>Thu, 18 May 2017 07:18:26 +0000</pubDate>
+    <lastBuildDate>Thu, 18 May 2017 07:18:26 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Summer'17 Plans and Workshops</title>
+        <description>&lt;center&gt;
+  &lt;img src=&quot;/assets/image/summer.png&quot; style=&quot;width: 70%;&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Hello everyone!&lt;/p&gt;
+
+&lt;p&gt;This summer, the programming club has many activities planned, including
+lectures on open-source, web-dev, competitive programming and more. We also plan to
+conduct a hackathon to give people an opportunity to work on stuff and learn new technologies
+like Django, Node.JS, Ruby on Rails, etc.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;finalized-events&quot;&gt;Finalized Events&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Event&lt;/th&gt;
+      &lt;th&gt;Date Time&lt;/th&gt;
+      &lt;th&gt;Venue&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Linux Install Fest&lt;/td&gt;
+      &lt;td&gt;21/05, 2-7 PM&lt;/td&gt;
+      &lt;td&gt;L1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Basic Linux + Git&lt;/td&gt;
+      &lt;td&gt;23/05, 2-5 PM&lt;/td&gt;
+      &lt;td&gt;L1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;LaTeX&lt;/td&gt;
+      &lt;td&gt;24/05, 7-9 PM&lt;/td&gt;
+      &lt;td&gt;L1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C/C++ for Competitive Coding&lt;/td&gt;
+      &lt;td&gt;28/05, 8-10 PM&lt;/td&gt;
+      &lt;td&gt;L1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Basic Python Intro&lt;/td&gt;
+      &lt;td&gt;29/05, 8-10 PM&lt;/td&gt;
+      &lt;td&gt;L1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;tentative-events&quot;&gt;Tentative Events&lt;/h2&gt;
+
+&lt;p&gt;These may or may not occur based on interest of campus junta. Feel free to suggest more topics in the comments below.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Event&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Javascript&lt;/td&gt;
+      &lt;td&gt;From Intermediate to Advanced (3-4 Lectures)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Open Source Bootcamp&lt;/td&gt;
+      &lt;td&gt;Basic introduction to open source&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Competitive Programming Contests&lt;/td&gt;
+      &lt;td&gt;Various contests of different levels&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Hackathon&lt;/td&gt;
+      &lt;td&gt;Hackathon for people to try out new technologies&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Object Oriented Programming&lt;/td&gt;
+      &lt;td&gt;Introduction to OOP and common pitfalls (oops!)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Functional Programming&lt;/td&gt;
+      &lt;td&gt;Introduction to FP with some examples&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Capture the Flag Contest&lt;/td&gt;
+      &lt;td&gt;CTF for first-timers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Parallel Programming&lt;/td&gt;
+      &lt;td&gt;Intro to threads, mutex, etc.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Deploying Applications&lt;/td&gt;
+      &lt;td&gt;Intro to docker and modifying apps for docker based deployment.(This might be compulsory for people doing web based projects)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Mon, 15 May 2017 04:25:20 +0000</pubDate>
+        <link>http://pclub.in/2017/05/15/summerplans.html</link>
+        <guid isPermaLink="true">http://pclub.in/2017/05/15/summerplans.html</guid>
+        
+        <category>pclub</category>
+        
+        
+      </item>
     
       <item>
         <title>Antaragni-App</title>
@@ -642,81 +756,6 @@ myhostname
         <pubDate>Fri, 06 Jan 2017 13:05:20 +0000</pubDate>
         <link>http://pclub.in/2017/01/06/installarch.html</link>
         <guid isPermaLink="true">http://pclub.in/2017/01/06/installarch.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Installing Ubuntu In Latest Asus Rog PCs</title>
-        <description>&lt;p&gt;&lt;strong&gt;Problem occurs due to loading of Nvidia Drivers during booting. Follow the following simple steps.&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;When the grub boot loader menu is visible highlight “Try Ubuntu GNOME without installing” (use your up and down arrows)&lt;/li&gt;
-  &lt;li&gt;Press “e” on your keyboard, this will allow you to edit the boot config.
-You will be brought to a page where you can make some edits.&lt;/li&gt;
-  &lt;li&gt;add the following right after the word “splash”
-    &lt;blockquote&gt;
-      &lt;p&gt;nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Press the “f10” key to boot into the installer&lt;/li&gt;
-  &lt;li&gt;When the desktop load move your mouse into the upper left hand corner, when the app launcher shows itself click on the very top icon “Install Ubuntu GNOME 16.04 LTS”&lt;/li&gt;
-  &lt;li&gt;Do not install third party software.&lt;/li&gt;
-  &lt;li&gt;Then follow the steps to install Ubuntu.&lt;/li&gt;
-  &lt;li&gt;After installation click “Keep trying Ubuntu”&lt;/li&gt;
-  &lt;li&gt;Shut down (NOT RESTART) your computer, remove installation media, hit enter.&lt;/li&gt;
-  &lt;li&gt;Hold down shift then press the power button to turn on your computer. (holding down shift while powering on will load the grub boot menu)&lt;/li&gt;
-  &lt;li&gt;When the grub boot menu appears press “e” and make the changes in step 3.&lt;/li&gt;
-  &lt;li&gt;Press “f10”&lt;/li&gt;
-  &lt;li&gt;Once your back into the desktop open your terminal and enter:
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo gedit /etc/default/grub&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Find the line that reads ‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”‘ and change it to read
-    &lt;blockquote&gt;
-      &lt;p&gt;‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux         i915.preliminary_hw_support=1 idle=nomwait”‘&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Save the changes then exit gedit.&lt;/li&gt;
-  &lt;li&gt;In your terminal run the command: sudo update-grub&lt;/li&gt;
-  &lt;li&gt;Reboot your computer: sudo reboot.
-Enjoy UbuntuGNOME!!!!&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Next, we need to install Nvidia Drivers.&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Connect to a network&lt;/li&gt;
-  &lt;li&gt;Run the command:
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get -y upgrade &amp;amp;&amp;amp; sudo apt-get -y dist-upgrade&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Remove all Nvidia installs(if any), run this command:
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo apt-get purge nvidia*&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Run the command:
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo apt-get install nvidia-361-updates nvidia-prime&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Reboot:
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo reboot&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Once logged back in move your mouse to the upper left hand corner of your desktop and start typing “Nvidia”&lt;/li&gt;
-  &lt;li&gt;Click on “NVIDIA X Server”&lt;/li&gt;
-  &lt;li&gt;On the left side of the Nvidia X Server window you will see an option called “PRIME Profiles”.  This is were you         select which video card you would like to use.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Source: https://jeremymdyson.wordpress.com/2016/04/27/ubuntugnome-16-04-on-asus-rog-gl552v/&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
-        <link>http://pclub.in/2017/01/06/Linux-on-Asus-ROG.html</link>
-        <guid isPermaLink="true">http://pclub.in/2017/01/06/Linux-on-Asus-ROG.html</guid>
         
         
       </item>
