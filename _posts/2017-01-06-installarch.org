@@ -102,23 +102,30 @@
      Now find the partitions you created. They will probably be the ones with the highest index
      (it's still your job to verify that).
 
-     To format the main root partition (the 50-100 gb one), use:
+     To format the main root partition (let it be /dev/sdxr) (the 50-100 gb one), use:
      #+BEGIN_EXAMPLE
-     # mkfs.ext4 /dev/sdxy
+     # mkfs.ext4 /dev/sdxr
      #+END_EXAMPLE
-     where =y= is the number of the partition from the output of ~lsblk~
+     where =r= is the number of the root partition from the output of ~lsblk~
 
+     Swap partition is required if you have RAM less than 8 GB, else you can leave it out if you want.
      To format the swap partition (the partition with the same size as your RAM), use:
      #+BEGIN_EXAMPLE
-     # mkswap /dev/sdxy
+     # mkfs.ext4 /dev/sdxs
      #+END_EXAMPLE
-     where =x= is the number of the root partition from the output of ~lsblk~
+     where =s= is the number of the swap partition from the output of ~lsblk~
+
+     To format the home partition, use:
+     #+BEGIN_EXAMPLE
+     # mkfs.ext4 /dev/sdxh
+     #+END_EXAMPLE
+     where =h= is the number of the home partition from the output of ~lsblk~
 
 **** Mount the file systems
 
      Mount the root partition to =/mnt=, for example:
      #+BEGIN_EXAMPLE
-     # mount /dev/sdxy /mnt
+     # mount /dev/sdxh /mnt
      #+END_EXAMPLE
 
      Find out if your computer uses UEFI or not. The best way (I know) is to verify
@@ -126,14 +133,17 @@
      If yes, then:
      #+BEGIN_EXAMPLE
      # mkdir /mnt/boot
-     # mount /dev/sdxy
+     # mkdir /mnt/home
+     # mount /dev/sdxh /mnt/home
+     # mount /dev/sdxe /mnt/boot
      #+END_EXAMPLE
-     (Here =/dev/sdxy= is the =vfat= partition)
+     (Here =/dev/sdxe= is the =vfat= partition)
+     This new partition which we are mounting to boot is Windows EFI Partition which containes Windows Boot Manager.
      Also remember this info(whether you have a UEFI system or not) for one of the future steps.
 
      Mount the swap partition:
      #+BEGIN_EXAMPLE
-     # mkswap /dev/sdxy
+     # mkswap /dev/sdxs
      #+END_EXAMPLE
 
 
@@ -148,16 +158,17 @@
      # nano /etc/pacman.d/mirrorlist
      #+END_EXAMPLE
 
-     And insert this line at the very top just below the initial comments:
+     And insert these line at the very top just below the initial comments in this order:
      #+BEGIN_EXAMPLE
      Server = http://mirror.cse.iitk.ac.in/archlinux/$repo/os/$arch
+     Server = http://ftp.iitm.ac.in/archlinux/$repo/os/$arch
      #+END_EXAMPLE
 
 **** Install the base packages
 
      Use the pacstrap script to install the base package group and other useful stuff:
      #+BEGIN_EXAMPLE
-     # pacstrap /mnt base wifi-menu dialog iw wpa_supplicant sudo
+     # pacstrap /mnt base dialog iw wpa_supplicant sudo
      #+END_EXAMPLE
 
    
@@ -199,7 +210,7 @@
      #+BEGIN_EXAMPLE
      #en_US.UTF-8 UTF-8
      #+END_EXAMPLE
-     Generate localisations with:
+     Generate localisations with (execute):
      #+BEGIN_EXAMPLE
      # locale-gen
      #+END_EXAMPLE
@@ -263,9 +274,9 @@
    
      Now, its time to create a new user:
      #+BEGIN_EXAMPLE
-     # useradd -m -G wheel -s /bin/bash archie
+     # useradd -m -G wheel -s /bin/bash <username>
      #+END_EXAMPLE
-     Here, a new user was added with the username =archie= and default shell =/bin/bash=.
+     Here, a new user was added with the username you give and default shell =/bin/bash=.
      Just changing the username should suffice for most people.
      To change the user's password:
      #+BEGIN_EXAMPLE
@@ -275,7 +286,7 @@
      Now setup =sudo= by typing ~visudo~. This opens up the sudo configuration file in =vim=.
      Press =<Shift> + g= to goto the end of the file. Now go up, till you see this line:
      #+BEGIN_EXAMPLE
-     ## Uncomment to allow members of group wheel to execute any command
+     ## Uncomment the below line to allow members of group wheel to execute any command
      # %wheel ALL=(ALL) ALL
      #+END_EXAMPLE
      Now, carefully place your cursor on the =#= just before =%wheel= and press =x=.
