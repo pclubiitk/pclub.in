@@ -6,9 +6,293 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 18 May 2017 07:18:26 +0000</pubDate>
-    <lastBuildDate>Thu, 18 May 2017 07:18:26 +0000</lastBuildDate>
+    <pubDate>Sat, 12 Aug 2017 05:07:47 +0000</pubDate>
+    <lastBuildDate>Sat, 12 Aug 2017 05:07:47 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Introductory Workshop 2017</title>
+        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Hi all, welcome to the Programming Club Introductory Workshop 2017!&lt;/p&gt;
+
+&lt;h2 id=&quot;slack&quot;&gt;Slack&lt;/h2&gt;
+&lt;p&gt;First of all, please join our slack at &lt;a href=&quot;pclubiitk.slack.com&quot;&gt;pclubiitk.slack.com&lt;/a&gt;
+and join the channel &lt;code class=&quot;highlighter-rouge&quot;&gt;#y17&lt;/code&gt; to receive future emails regarding events and other stuff
+from slack announcements directly.&lt;/p&gt;
+
+&lt;h2 id=&quot;terminal&quot;&gt;Terminal&lt;/h2&gt;
+&lt;p&gt;Try opening Terminal (sometimes known as Command Line) from the top-left menus. You should find it in the ‘System’ applications.&lt;/p&gt;
+
+&lt;p&gt;Mind it, some operating systems like Ubuntu might have a shortcut for this, you can open it using &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+Alt+T&lt;/code&gt;, but &lt;em&gt;not&lt;/em&gt; in the CC machines.&lt;/p&gt;
+
+&lt;p&gt;This is where you should learn to do all stuff related to programming, since this gives you &lt;em&gt;unfathomable&lt;/em&gt; power.&lt;/p&gt;
+
+&lt;h2 id=&quot;directory-structure&quot;&gt;Directory structure&lt;/h2&gt;
+&lt;p&gt;Linux organizes files and folders in the following way:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Files are kept inside folders&lt;/li&gt;
+  &lt;li&gt;You can enter and exit folders just like in Windows&lt;/li&gt;
+  &lt;li&gt;Folders are named in the following way: &lt;code class=&quot;highlighter-rouge&quot;&gt;/path-to-folder/folder-name&lt;/code&gt;. This is what completely describes a folder (or a file).&lt;/li&gt;
+  &lt;li&gt;We will be using the word &lt;code class=&quot;highlighter-rouge&quot;&gt;directory&lt;/code&gt; for folders. Please note this.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To play around with this, try to use the following commands:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls
+
+# Lists contents of current folder
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd Desktop
+
+# Move to the folder named Desktop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ..
+
+# Go Back to previous folder
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~
+
+# Go back to home folder(where you start on opening a terminal)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Command&lt;/td&gt;
+      &lt;td&gt;Full form&lt;/td&gt;
+      &lt;td&gt;Description&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ls&lt;/td&gt;
+      &lt;td&gt;list screen&lt;/td&gt;
+      &lt;td&gt;List all the files and folders in current directory&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cd&lt;/td&gt;
+      &lt;td&gt;change directory&lt;/td&gt;
+      &lt;td&gt;Enter a folder whose path is known&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;pwd&lt;/td&gt;
+      &lt;td&gt;present working directory&lt;/td&gt;
+      &lt;td&gt;Full name of the current folder you are in&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;~&lt;/td&gt;
+      &lt;td&gt;tilde&lt;/td&gt;
+      &lt;td&gt;Short form for your home folder&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+c&lt;/code&gt;(keyboard)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Exit/Cancel the current command&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;exit&lt;/td&gt;
+      &lt;td&gt;Exit&lt;/td&gt;
+      &lt;td&gt;Exit the terminal&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;gedit&quot;&gt;Gedit&lt;/h2&gt;
+&lt;p&gt;We will be using &lt;code class=&quot;highlighter-rouge&quot;&gt;gedit&lt;/code&gt; to write your programs. Find it from the applications menu and open it. Don’t be scared, it’s very much like &lt;code class=&quot;highlighter-rouge&quot;&gt;notepad&lt;/code&gt; from Windows.&lt;/p&gt;
+
+&lt;h1 id=&quot;python&quot;&gt;Python&lt;/h1&gt;
+
+&lt;p&gt;Here are a few python expressions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a = 2+2&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print &quot;hello world!&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print a&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print a*2&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Try typing all the above lines in gedit and then saving the file as
+&lt;code class=&quot;highlighter-rouge&quot;&gt;test.py&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now after saving the file, you will need to navigate to its location
+from the terminal. Once you are in the folder containing &lt;code class=&quot;highlighter-rouge&quot;&gt;test.py&lt;/code&gt; such
+that &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt; shows &lt;code class=&quot;highlighter-rouge&quot;&gt;test.py&lt;/code&gt; as one of the files, run:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python test.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The output would be something like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;hello world!
+4
+8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You used an &lt;em&gt;operator&lt;/em&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;a*2&lt;/code&gt; - the multiplication operator. Other operators you need to try out are:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;+&lt;/td&gt;
+      &lt;td&gt;Addition&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;Subtraction&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;Multiplication&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt;Division&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**&lt;/td&gt;
+      &lt;td&gt;To the power of&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;ifelse&quot;&gt;If/Else&lt;/h2&gt;
+
+&lt;p&gt;Now that you know how to write simple things, let’s proceed to something interesting.&lt;/p&gt;
+
+&lt;p&gt;Python reads spaces and tabs in your program as well. So for writing a complicated
+instruction for the computer, we will need to use multiple lines.
+We will &lt;code class=&quot;highlighter-rouge&quot;&gt;indent&lt;/code&gt; the lines in such a way that the computer can understand that
+they are meant to be read together.&lt;/p&gt;
+
+&lt;p&gt;Try the following:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is not zero&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is zero&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;That’s it! See?&lt;/p&gt;
+
+&lt;p&gt;Sometimes one condition isn’t enough though. In that case, you are allowed to chain up multiple conditions using &lt;code class=&quot;highlighter-rouge&quot;&gt;and&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;or&lt;/code&gt; like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Condition successful&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;condition failed&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;That’s all good, but what if you want multiple checks on a variable? For example, let’s say you want to do Action 1 if &lt;code class=&quot;highlighter-rouge&quot;&gt;a&amp;lt;10&lt;/code&gt; and Action 2 if &lt;code class=&quot;highlighter-rouge&quot;&gt;a=10&lt;/code&gt; and Action 3 when &lt;code class=&quot;highlighter-rouge&quot;&gt;a&amp;gt;10&lt;/code&gt;, what then? This is where &lt;code class=&quot;highlighter-rouge&quot;&gt;if-elif-elif-elif-...-else&lt;/code&gt; construct comes into the picture. Use it like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is less than 0&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is between 0 and 4&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is between 4 and 10&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is bigger than 10&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;loops&quot;&gt;Loops&lt;/h2&gt;
+
+&lt;p&gt;Now for some loopy-loops!&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;reading-input&quot;&gt;Reading input&lt;/h2&gt;
+&lt;p&gt;You can read input from the user using something like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello mr. &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;See what happens there?&lt;/p&gt;
+
+&lt;h1 id=&quot;codechef&quot;&gt;CodeChef!&lt;/h1&gt;
+&lt;p&gt;Try this link &lt;a href=&quot;https://www.codechef.com/problems/TEST&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Can you solve this problem? Try writing a program for this! Please give it a try before you scroll down.&lt;/p&gt;
+
+&lt;p&gt;It’s quite small! Here’s the solution!&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So you should now &lt;strong&gt;certainly&lt;/strong&gt; create an account on CodeChef! Try submitting the solution there (don’t forget to select Python when you submit). Happy coding!&lt;/p&gt;
+
+&lt;h1 id=&quot;python-interpreter&quot;&gt;Python Interpreter&lt;/h1&gt;
+
+&lt;p&gt;Try running &lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt; command in the terminal. You should see something like:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Python 2.7.10 (default, Aug 12 2017, 22:05:31)
+[GCC 4.9.3] on linux2
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&amp;gt;&amp;gt;&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; is the place where you type. Try typing the some of the
+commands up like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2+2&lt;/li&gt;
+  &lt;li&gt;print “hello world!”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;follow-up&quot;&gt;Follow up&lt;/h1&gt;
+
+&lt;p&gt;Congrats on finishing up to here! If you’re now pumped up for trying out some more challenges, try your hand at the following problems:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/HS08TEST&quot;&gt;ATM&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/FCTRL&quot;&gt;Factorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/INTEST&quot;&gt;Enormous Input Test&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/TLG&quot;&gt;The Lead Game&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt; C/C++/Java is the preferred language while participating in competitive contests, as ACM ICPC does not allow Python.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 11 Aug 2017 04:55:00 +0000</pubDate>
+        <link>http://pclub.in/pclub/2017/08/11/introworkshop17.html</link>
+        <guid isPermaLink="true">http://pclub.in/pclub/2017/08/11/introworkshop17.html</guid>
+        
+        <category>pclub</category>
+        
+        
+        <category>pclub</category>
+        
+      </item>
     
       <item>
         <title>Summer'17 Plans and Workshops</title>
@@ -507,256 +791,6 @@ If you do use one, select ‘India’ as your country and iitk as your mirror.&l
         
         
         <category>installfest17</category>
-        
-      </item>
-    
-      <item>
-        <title>Install Fest: Arch Linux</title>
-        <description>&lt;h2&gt;Pre-installation&lt;/h2&gt;
-&lt;p&gt;Arch Linux should run on any i686 or x86_64 compatible machine with a
-  minimum of 256 MB RAM, or 512 MB for x86_64. A basic installation with
-  all packages from the base group should take less than 800 MB of disk
-  space. As the installation process needs to retrieve packages from a
-  remote repository, a working internet connection is required.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; : All commands will look like this:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# some_command
-&lt;/pre&gt;
-&lt;p&gt;The &lt;code&gt;some_command&lt;/code&gt; portion is supposed to be typed after the prompt which is usually:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-root@archiso ~ #
-&lt;/pre&gt;
-&lt;h4&gt;Set the keyboard layout&lt;/h4&gt;
-&lt;p&gt;See Archwiki installation page if you really need this, i.e., your keyboard
-  is not working as expected.&lt;/p&gt;
-&lt;h4&gt;Verify the boot mode&lt;/h4&gt;
-&lt;p&gt;If UEFI mode is enabled on an UEFI motherboard, Archiso will boot Arch
-  Linux accordingly via systemd-boot. To verify this, list the efivars
-  directory:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# ls /sys/firmware/efi/efivars
-&lt;/pre&gt;
-&lt;h4&gt;Connect to the Internet&lt;/h4&gt;
-&lt;p&gt;For wired connection with &lt;b&gt;DHCP&lt;/b&gt; (for example - academic area),
-  just connecting a LAN cord to your ethernet port should start the connection.
-  You can verify connection on iitk network with the following command:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# ping 172.31.1.1
-&lt;/pre&gt;
-&lt;p&gt;For networks requiring static ip (such as your rooms), first stop
-  dhcpcd service with &lt;code&gt;systemctl stop dhcpcd@&amp;lt;TAB&amp;gt;&lt;/code&gt; (Here &lt;code&gt;&amp;lt;TAB&amp;gt;&lt;/code&gt; refers to pressing the TAB key on the keyboard)
-  and then see: &lt;a href=&quot;https://wiki.archlinux.org/index.php/Netctl#Wired&quot;&gt;ArchWiki Network Configuration&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;For wireless connections, use:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# wifi-menu
-&lt;/pre&gt;
-&lt;p&gt;to connect to available networks. You can check connection using the previous command.&lt;/p&gt;
-&lt;h4&gt;Update the system clock&lt;/h4&gt;
-&lt;p&gt;Use timedatectl(1) to ensure the system clock is accurate:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# timedatectl set-ntp true
-&lt;/pre&gt;
-&lt;p&gt;To check the service status, use &lt;code&gt;timedatectl status&lt;/code&gt;.&lt;/p&gt;
-&lt;h4&gt;Partition the disks&lt;/h4&gt;
-&lt;p&gt;You might have already partitioned your disks from windows if you have seen
-  the parent guide of this post. So, you will have 3 partitions:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;One partition for the root directory / - approx 50-100gb.&lt;/li&gt;
-  &lt;li&gt;A swap partition of approximately your RAM size.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Format the partitions&lt;/h4&gt;
-&lt;p&gt;Once the partitions have been created, each must be formatted with an
-  appropriate file system. For a list of partitions use:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# lsblk -o name,size,type,mountpoint,fstype
-
-NAME                                                       SIZE TYPE MOUNTPOINT FSTYPE
-sda                                                      931.5G disk
-├─sda1                                                     260M part            vfat
-├─sda2                                                      16M part
-├─sda3                                                   416.2G part            ntfs
-├─sda4                                                     808M part            ntfs
-├─sda5                                                      12G part            swap
-├─sda6                                                      10G part            ext4
-├─sda7                                                      50G part            ext4
-├─sda8                                                   308.5G part            ext4
-├─sda9                                                    68.4G part            ext4
-├─sda10                                                     50G part            ext4
-├─sda11                                                    694M part            ntfs
-└─sda12                                                   13.6G part            ntfs
-
-&lt;/pre&gt;
-&lt;p&gt;Now, in the example above, my main harddisk is &lt;code&gt;/dev/sda&lt;/code&gt;, yours can be anything. From now
-  on, I will refer to it as &lt;code&gt;/dev/sdx&lt;/code&gt; (&lt;code&gt;x&lt;/code&gt; = variable corresponding to your harddisk).&lt;/p&gt;
-&lt;p&gt;Now find the partitions you created. They will probably be the ones with the highest index
-  (it's still your job to verify that).&lt;/p&gt;
-&lt;p&gt;To format the main root partition (the 50-100 gb one), use:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# mkfs.ext4 /dev/sdxy
-&lt;/pre&gt;
-&lt;p&gt;where &lt;code&gt;y&lt;/code&gt; is the number of the partition from the output of &lt;code&gt;lsblk&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;To format the swap partition (the partition with the same size as your RAM), use:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# mkswap /dev/sdxy
-&lt;/pre&gt;
-&lt;p&gt;where &lt;code&gt;x&lt;/code&gt; is the number of the root partition from the output of &lt;code&gt;lsblk&lt;/code&gt;&lt;/p&gt;
-&lt;h4&gt;Mount the file systems&lt;/h4&gt;
-&lt;p&gt;Mount the root partition to &lt;code&gt;/mnt&lt;/code&gt;, for example:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# mount /dev/sdxy /mnt
-&lt;/pre&gt;
-&lt;p&gt;Find out if your computer uses UEFI or not. The best way (I know) is to verify
-  whether you have a &lt;code&gt;vfat&lt;/code&gt; partition (as in my case &lt;code&gt;/dev/sda1&lt;/code&gt;).
-  If yes, then:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# mkdir /mnt/boot
-# mount /dev/sdxy
-&lt;/pre&gt;
-&lt;p&gt;(Here &lt;code&gt;/dev/sdxy&lt;/code&gt; is the &lt;code&gt;vfat&lt;/code&gt; partition)
-  Also remember this info(whether you have a UEFI system or not) for one of the future steps.&lt;/p&gt;
-&lt;p&gt;Mount the swap partition:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# mkswap /dev/sdxy
-&lt;/pre&gt;
-&lt;h2&gt;Installation&lt;/h2&gt;
-&lt;h4&gt;Select the mirrors&lt;/h4&gt;
-&lt;p&gt;Packages to be installed must be downloaded from mirror servers, which
-  are defined in &lt;code&gt;/etc/pacman.d/mirrorlist&lt;/code&gt;. Since we are in iitk, we will
-  use the iitk mirrors. For that, use &lt;code&gt;nano&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# nano /etc/pacman.d/mirrorlist
-&lt;/pre&gt;
-&lt;p&gt;And insert this line at the very top just below the initial comments:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-Server = http://mirror.cse.iitk.ac.in/archlinux/$repo/os/$arch
-&lt;/pre&gt;
-&lt;h4&gt;Install the base packages&lt;/h4&gt;
-&lt;p&gt;Use the pacstrap script to install the base package group and other useful stuff:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# pacstrap /mnt base wifi-menu dialog iw wpa_supplicant sudo
-&lt;/pre&gt;
-&lt;h2&gt;Configure the system&lt;/h2&gt;
-&lt;h4&gt;Fstab&lt;/h4&gt;
-&lt;p&gt;Generate an fstab file:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab
-&lt;/pre&gt;
-&lt;h4&gt;Chroot&lt;/h4&gt;
-&lt;p&gt;Change root into the new system:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# arch-chroot /mnt
-&lt;/pre&gt;
-&lt;h4&gt;Time zone&lt;/h4&gt;
-&lt;p&gt;Set the time zone (probably &lt;code&gt;Asia/Kolkata&lt;/code&gt;, since you live in India):&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
-&lt;/pre&gt;
-&lt;p&gt;Run hwclock(8) to generate &lt;code&gt;/etc/adjtime&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# hwclock --systohc --localtime
-&lt;/pre&gt;
-&lt;h4&gt;Locale&lt;/h4&gt;
-&lt;p&gt;Open &lt;code&gt;/etc/locale.gen&lt;/code&gt; using &lt;code&gt;nano&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# nano /etc/locale.gen
-&lt;/pre&gt;
-&lt;p&gt;Go to the line and remove the first &lt;code&gt;#&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-#en_US.UTF-8 UTF-8
-&lt;/pre&gt;
-&lt;p&gt;Generate localisations with:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# locale-gen
-&lt;/pre&gt;
-&lt;p&gt;Open &lt;code&gt;/etc/locale.conf&lt;/code&gt; using &lt;code&gt;nano&lt;/code&gt; and add the following line:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-LANG=en_US.UTF-8
-&lt;/pre&gt;
-&lt;h4&gt;Hostname&lt;/h4&gt;
-&lt;p&gt;Create the &lt;code&gt;/etc/hostname&lt;/code&gt; file. A hostname is a name for your pc (You can set that to anything consisting of only letters):&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-myhostname
-&lt;/pre&gt;
-&lt;p&gt;You will need to add a matching entry to &lt;code&gt;/etc/hosts&lt;/code&gt; (the last line):&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-127.0.0.1       localhost.localdomain   localhost
-::1             localhost.localdomain   localhost
-127.0.1.1       myhostname.localdomain  myhostname
-&lt;/pre&gt;
-&lt;h4&gt;Root password&lt;/h4&gt;
-&lt;p&gt;Set the root password:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# passwd
-&lt;/pre&gt;
-&lt;h4&gt;Boot loader&lt;/h4&gt;
-&lt;p&gt;If you have an Intel CPU, install the intel-ucode package&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# pacman -S intel-ucode
-&lt;/pre&gt;
-&lt;p&gt;Now, you need to remember if you have a UEFI system or not.&lt;/p&gt;
-&lt;h5&gt;No UEFI&lt;/h5&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# pacman -S grub os-prober ntfs-3g
-# grub-install --target=i386-pc /dev/sdx
-# grub-mkconfig -o /boot/grub/grub.cfg
-&lt;/pre&gt;
-&lt;p&gt;Please replace &lt;code&gt;x&lt;/code&gt; with the character of your harddisk.&lt;/p&gt;
-&lt;h5&gt;UEFI&lt;/h5&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# pacman -S grub os-prober efibootmgr ntfs-3g
-# grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
-# grub-mkconfig -o /boot/grub/grub.cfg
-&lt;/pre&gt;
-&lt;h5&gt;After&lt;/h5&gt;
-&lt;p&gt;The above steps may sometimes fail to recognize windows. Don't panic, see the reboot section.&lt;/p&gt;
-&lt;h4&gt;New User&lt;/h4&gt;
-&lt;p&gt;Now, its time to create a new user:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# useradd -m -G wheel -s /bin/bash archie
-&lt;/pre&gt;
-&lt;p&gt;Here, a new user was added with the username &lt;code&gt;archie&lt;/code&gt; and default shell &lt;code&gt;/bin/bash&lt;/code&gt;.
-  Just changing the username should suffice for most people.
-  To change the user's password:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# passwd the_username_you_just_set
-&lt;/pre&gt;
-&lt;p&gt;Now setup &lt;code&gt;sudo&lt;/code&gt; by typing &lt;code&gt;visudo&lt;/code&gt;. This opens up the sudo configuration file in &lt;code&gt;vim&lt;/code&gt;.
-  Press &lt;code&gt;&amp;lt;Shift&amp;gt; + g&lt;/code&gt; to goto the end of the file. Now go up, till you see this line:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-## Uncomment to allow members of group wheel to execute any command
-# %wheel ALL=(ALL) ALL
-&lt;/pre&gt;
-&lt;p&gt;Now, carefully place your cursor on the &lt;code&gt;#&lt;/code&gt; just before &lt;code&gt;%wheel&lt;/code&gt; and press &lt;code&gt;x&lt;/code&gt;.
-  This will remove the &lt;code&gt;#&lt;/code&gt;. It will now look like this:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-## Uncomment to allow members of group wheel to execute any command
- %wheel ALL=(ALL) ALL
-&lt;/pre&gt;
-&lt;p&gt;Now type &lt;code&gt;:wq&lt;/code&gt; to save and exit.&lt;/p&gt;
-&lt;p&gt;This should give your user sudo rights.&lt;/p&gt;
-&lt;h2&gt;Reboot&lt;/h2&gt;
-&lt;p&gt;Exit the chroot environment by typing exit or pressing &lt;code&gt;Ctrl+D&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Optionally manually unmount all the partitions with &lt;code&gt;umount -R /mnt&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;Finally, restart the machine by typing &lt;code&gt;reboot&lt;/code&gt;. Now while booting choose
-  grub as the default boot option.&lt;/p&gt;
-&lt;p&gt;After booting, you will encounter a black screen with option to login.
-  You can now log in with your user.&lt;/p&gt;
-&lt;h4&gt;Post Reboot GRUB Fix&lt;/h4&gt;
-&lt;p&gt;If your Windows did not show up during boot, run this command and check if windows
-  shows up on a reboot:&lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# grub-mkconfig -o /boot/grub/grub.cfg
-&lt;/pre&gt;
-&lt;h2&gt;Post-installation&lt;/h2&gt;
-&lt;p&gt;See &lt;a href=&quot;https://wiki.archlinux.org/index.php/General_recommendations&quot;&gt;General Recommendations&lt;/a&gt; for system management directions and
-  post-installation tutorials (like setting up a graphical user
-  interface, sound or a touchpad).&lt;/p&gt;
-&lt;p&gt;For a list of applications that may be of interest, see &lt;a href=&quot;https://wiki.archlinux.org/index.php/List_of_applications&quot;&gt;List of applications&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 06 Jan 2017 13:05:20 +0000</pubDate>
-        <link>http://pclub.in/2017/01/06/installarch.html</link>
-        <guid isPermaLink="true">http://pclub.in/2017/01/06/installarch.html</guid>
-        
         
       </item>
     
