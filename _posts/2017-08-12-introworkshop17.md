@@ -16,7 +16,7 @@ image:
 Hi all, welcome to the Programming Club Introductory Workshop 2017!
 
 ## Slack
-First of all, please join our slack at [pclubiitk.slack.com](pclubiitk.slack.com)
+First of all, please join our slack at [https://pclubiitk.slack.com](pclubiitk.slack.com)
 and join the channel `#y17` to receive future emails regarding events and other stuff
 from slack announcements directly.
 
