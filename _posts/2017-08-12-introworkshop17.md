@@ -16,7 +16,7 @@ image:
 Hi all, welcome to the Programming Club Introductory Workshop 2017!
 
 ## Slack
-First of all, please join our slack at [https://pclubiitk.slack.com](pclubiitk.slack.com)
+First of all, please join our slack at [https://pclubiitk.slack.com](https://pclubiitk.slack.com)
 and join the channel `#y17` to receive future emails regarding events and other stuff
 from slack announcements directly.
 
@@ -222,4 +222,4 @@ Congrats on finishing up to here! If you're now pumped up for trying out some mo
 * [Enormous Input Test](https://www.codechef.com/problems/INTEST)
 * [The Lead Game](https://www.codechef.com/problems/TLG)
 
-*Note* C/C++/Java is the preferred language while participating in competitive contests, as ACM ICPC does not allow Python.
+*Note* C/C++/Java are commonly the preferred languages while participating in competitive contests. Recently, ACM ICPC has started allowing Python as well.
