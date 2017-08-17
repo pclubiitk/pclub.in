@@ -10,7 +10,7 @@ tags:
 ---
 # Introduction
 
-Most of you reading this post might have a basic idea of programming. If you have spent some time learning JavaScript, you would 
+most of you reading this post might have a basic idea of programming. If you have spent some time learning JavaScript, you would 
 have noticed that constructs like loops, conditionals etc are similar to the languages you have learnt before.
 
 However, some topics in JavaScript might not seem obvious at the first glance. Here, we present you two such topics - **hoisting** and **closures**.  
