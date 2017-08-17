@@ -204,5 +204,7 @@ read further in the [documentation](https://developer.mozilla.org/en/docs/Web/Ja
 
 ### Useful Resources
 
+A good place to start/brush up JS concepts : [Head First Javascript](http://shop.oreilly.com/product/0636920027065.do)  
+
 
 
