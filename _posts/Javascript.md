@@ -155,7 +155,7 @@ run into a problem.
 
 The other possibility is using a local variable:
 
-```
+```javascript
 function counter(){
   var count = 0; // local variable
   count = count + 1;
@@ -168,7 +168,7 @@ always reassigned to 0 whenever we call the function.
 Thats where closures come in.
 
 We define the function in the following manner:
-```
+```javascript
 function makeCounter() {
   var count = 0;
   function counter() {
@@ -179,7 +179,7 @@ function makeCounter() {
 }
 ```
 Then we run the following commands:
-```
+```javascript
 var doCount = makeCounter();
 console.log(doCount()); // outputs 1
 console.log(doCount()); // outputs 2
