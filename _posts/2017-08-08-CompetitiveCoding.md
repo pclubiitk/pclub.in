@@ -51,7 +51,7 @@ import java.math.BigInteger;
 
 So if you are having a tool in your bag, learn to use it to the best of its ability. You ought to know what all your language can provide, like C++ has an amazing set of tools specifically built for implementation of various data structures and algorithms i.e. the 'Standard Template Library' while you'll have to waste a great deal of time implementing such stuff in C language from the very scratch. 
 
-[Follow this link to know more about STL] https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/
+[Follow this link to know more about STL] (https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1)
 
 ### Do things the most efficient way
 
