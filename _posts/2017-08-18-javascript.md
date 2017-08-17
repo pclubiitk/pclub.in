@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Javascript
-date: 2017-08-17 2:56 +530
+date: 2017-08-18
 authors: Paramansh Singh, Suryateja B.V.
-category: Javascript
+category: JavaScript
 tags:
 - closures
 - hoisting
