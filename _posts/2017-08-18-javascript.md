@@ -3,7 +3,7 @@ layout: post
 title: Javascript
 date: 2017-08-18
 authors: Paramansh Singh, Suryateja B.V.
-category: JavaScript
+category: Javascript
 tags:
 - closures
 - hoisting
