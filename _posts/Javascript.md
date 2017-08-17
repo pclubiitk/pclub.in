@@ -206,7 +206,11 @@ read further in the [documentation](https://developer.mozilla.org/en/docs/Web/Ja
 There are many other features in JavaScript that we have not discussed. If interested in exploring you can see the following links:
 
 [Difference between class and prototypal inheritance](https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9) 
+
+
 [Inheritance and the prototype chain](https://developer.mozilla.org/en/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+
+
 [Functional programming](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
 
 
