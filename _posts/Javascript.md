@@ -140,7 +140,7 @@ but it is better understood as you read further.
 
 Now we'll look at an example where we will actually see how these closures may be helpful.  
 Take a simple example of implementing a counter function. It can be implemented easily by running the following code.
-```
+```javascript
 var count = 0; // Global Variable
 function counter(){
   count = count + 1;
@@ -203,6 +203,9 @@ So this is basically what a closure is. There are many applications of closures 
 read further in the [documentation](https://developer.mozilla.org/en/docs/Web/JavaScript/Closures)
 
 ### Additional resources
+
+To brush up you concepts you can go through the book [Head First Javascript](http://shop.oreilly.com/product/0636920027065.do)
+
 There are many other features in JavaScript that we have not discussed. If interested in exploring you can see the following links:
 
 [Difference between class and prototypal inheritance](https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9) 
