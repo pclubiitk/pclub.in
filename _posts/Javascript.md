@@ -204,7 +204,7 @@ read further in the [documentation](https://developer.mozilla.org/en/docs/Web/Ja
 
 ### Additional resources
 
-To brush up you concepts you can go through the book [Head First Javascript](http://shop.oreilly.com/product/0636920027065.do)
+To brush up your concepts, you can go through the book [Head First Javascript](http://shop.oreilly.com/product/0636920027065.do)
 
 There are many other features in JavaScript that we have not discussed. If interested in exploring you can see the following links:
 
