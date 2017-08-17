@@ -10,10 +10,11 @@ tags:
 ---
 # Introduction
 
--use console.
--js made in 10 days thing
--js wats
--open new avenues
+Most of you reading this post might have a basic idea of programming. If you have spent some time learning JavaScript, you would 
+have noticed that constructs like loops, conditionals etc are similar to the languages you have learnt before.
+
+However, some topics in JavaScript might not seem obvious at the first glance. Here, we present you two such topics - hoisting and closures.   
+We highly recommend you to try out the code snippets on your browser console. Open the developer tools and choose the Console tab. 
 
 
 ## Hoisting
@@ -33,6 +34,7 @@ console.log(notDefined); //outputs undefined
 var notDefined = "Now I am defined";
 console.log(notDefined); //outputs Now I a defined
 ```
+( Allow typing multiple lines in the console, if there is any warning )  
 Let's analyze this from the perspective of JS interpreter. In the first turn, we have to collect all the variable and function
 declarations and hoist them. The code looks like this after the first turn:
 ```javascript
@@ -117,7 +119,7 @@ example_function = function() { console.log('bar') }; // variable defined
 example_function(); // second call
 ```
 Its code execution time! We see the first call to `example_function`. As of now, the definiton of `example_function` says 
-`console.log('foo')`. So, we log "foo" to the console. Next, we define the variable `example_function` with `console.log('bar').
+`console.log('foo')`. So, we log "foo" to the console. Next, we define the variable `example_function` with `console.log('bar')`.
 This overwrites the previous definiton. And in the second call, we log "bar" to the console. 
 
 
@@ -189,7 +191,10 @@ This is beacause functions in JavaScript form closures ( functions along with th
 consists of any local variables that were in-scope at the time that the closure was created.
 
 In this case when we call `makeCounter`, it creates a counter function and returns it along with an environment containing the 
-free variable `count` (actual reference to the count variable, not a copy). In other words, it creates a **closure**. The 
+free variable `count` (actual reference to the count variable, not a copy). 
+
+
+In other words, it creates a **closure**. The 
 function returned from `makeCounter` is stored in `doCount`. So whenever we call `doCount` it looks for a variable named 
 `count` in the lexical environment and retrieves its value.
 
