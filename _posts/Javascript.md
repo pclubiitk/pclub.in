@@ -140,7 +140,7 @@ but it is better understood as you read further.
 
 Now we'll look at an example where we will actually see how these closures may be helpful.  
 Take a simple example of implementing a counter function. It can be implemented easily by running the following code.
-```
+```javascript
 var count = 0; // Global Variable
 function counter(){
   count = count + 1;
@@ -155,7 +155,7 @@ run into a problem.
 
 The other possibility is using a local variable:
 
-```
+```javascript
 function counter(){
   var count = 0; // local variable
   count = count + 1;
@@ -168,7 +168,7 @@ always reassigned to 0 whenever we call the function.
 Thats where closures come in.
 
 We define the function in the following manner:
-```
+```javascript
 function makeCounter() {
   var count = 0;
   function counter() {
@@ -179,7 +179,7 @@ function makeCounter() {
 }
 ```
 Then we run the following commands:
-```
+```javascript
 var doCount = makeCounter();
 console.log(doCount()); // outputs 1
 console.log(doCount()); // outputs 2
@@ -201,6 +201,4 @@ function returned from `makeCounter` is stored in `doCount`. So whenever we call
 
 So this is basically what a closure is. There are many applications of closures and if you are interested you can 
 read further in the [documentation](https://developer.mozilla.org/en/docs/Web/JavaScript/Closures)
-
-
 
