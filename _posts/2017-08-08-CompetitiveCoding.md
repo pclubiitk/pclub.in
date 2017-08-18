@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Competitive Coding: From Novice to Expert"
+title: "Competitive Coding: Getting Started"
 date: 2017-08-08
 author: Pushkar Dixit
 
