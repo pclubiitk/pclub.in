@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Buffer Overflows from scratch"
+title: "Buffer Overflows from Scratch"
 date: 2017-08-08
 author: Abhishek Yadav
 category: System security and Exploitation
@@ -12,7 +12,7 @@ image:
 ---
 ### What is a Buffer and What are Buffer overflows ?
 
-To keep it simple ; Buffer is a memory used temporarily to store output or input data 
+To keep it simple; a buffer is a memory used temporarily to store output or input data 
 while it is transferred.
 From naive perspective, Buffer is just an array of a particular data type.
 
@@ -25,7 +25,7 @@ weird things happen.
 Every function ( even main() ) has a Stack frame in the memory. 
 When some function is called it creates a new stack frame just below
 the stack frame of the previous function.
-Lets take an example by considering a simple source code in C :
+Let's take an example by considering a simple source code in C :
 
 ```c
 
@@ -49,7 +49,7 @@ and the stack grows in reverse order.
 Moreover there is a sequential allocation of memory to the variables onto the stack.
 The variable which is declared earlier is at higher memory address and the one which 
 is declared after is at lower memory address 
-### Lets get some hands-on
+### Let's get hands-on
 
 From the above image we get a feel of what would happen if we try to 
 overflow the array beyond 10 characters and then type a character of 
@@ -90,15 +90,15 @@ For these things you need to be thorough with the stack layout and memory alloca
 
 ### A deeper look at the stack layout
 
-Lets look at the stack layout once more:
+Let's look at the stack layout once more:
 
 ![](https://files.slack.com/files-pri/T3NG5QPT4-F6K3VQXHN/capture.png)  
 
-* Arguments: It has the parameters that are being passed to the function.
+* Arguments : It has the parameters that are being passed to the function.
 * Return address : it has the address to which the current function has to return after it complete its execution .
 * old EBP : It has the base pointer of the function which called the current function.
 * Exception Handler : Dont worry about this for now :P
-* Local Variable : It has the values of all local variables being stored onto th stack.
+* Local Variable : It has the values of all local variables being stored onto the stack.
 
 You can find a detailed explanation of stack layout [here](http://www.tenouk.com/Bufferoverflowc/Bufferoverflow2a.html).
 I will just tell you what to do ,you will have to figure out, how it is to be done, yourself.
@@ -110,16 +110,6 @@ You can literally redirect the order of execution of program to any function you
 
 ### References     
 
-* To learn about GDB you can go [here](http://www.tutorialspoint.com/gnu_debugger/). 
+* To learn about GDB you can go [here](http://www.tutorialspoint.com/gnu_debugger/).
 * Read more about buffer overflows [Blog of Dhaval Kapil](https://dhavalkapil.com/blogs/Buffer-Overflow-Exploit/).
 * Read about [ASLR](https://en.wikipedia.org/wiki/Address_space_layout_randomization) and [canaries](https://en.wikipedia.org/wiki/Stack_buffer_overflow#Stack_canaries), They are defense mechanisms to prevent Buffer Overflows.
-
-
-
-
-
-
-
-
-
-
