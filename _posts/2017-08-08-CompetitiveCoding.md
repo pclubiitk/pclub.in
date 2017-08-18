@@ -117,7 +117,7 @@ CodeChef SnackDown is an annual multi-round global programming tournament conduc
 Google Code Jam is an international programming competition hosted and administered by Google. The competition began in 2003 as a means to identify top engineering talent for potential employment at Google. The competition consists of a set of algorithmic problems which must be solved in a fixed amount of time. Competitors may use any programming language and development environment to obtain their solutions. From 2003 to 2007, Google Code Jam was deployed on Topcoder's platform and had quite different rule, since 2008 Google has developed their own dedicated infrastructure for the contest.
 
 ### Useful Links:
-[Link 1](https://www.codechef.com/getting-started)*
+[Link 1](https://www.codechef.com/getting-started) *
 [Link 2](https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/)
 
 *Happy coding!!* 
