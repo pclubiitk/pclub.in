@@ -140,6 +140,4 @@ Interesting applications-
 - Google's project on Music Generation - https://magenta.tensorflow.org/welcome-to-magenta
 
 
-- Small web implementations of ASP with open source code on github - https://webaudiodemos.appspot.com/
-
-Github - https://github.com/cwilso
+- Small web implementations of ASP with open source code on github - https://webaudiodemos.appspot.com/    Github - https://github.com/cwilso
