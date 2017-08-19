@@ -193,7 +193,7 @@ There is a lot more to grids, we can provide grid offsets, which can be used to 
 
 
 ### _Conclusion and Further Reading:_
-Bootstrap is one of the easiest webpage development packages. It is a very useful package to accomplish almost any formatting task. I recommend you to read about all the bootstrap components I mentioned like buttons, forms, icons, and modals. When you are comfortable with the topics, start making your own webpages. It takes a great deal of practice to be a good front-end designer. Now, for some inspiration as to what you can create with bootstrap, check out this bootstrap [official link](http://expo.getbootstrap.com/), where you will find some amazing applications of bootstrap tools for creating some mind-blowing websites!
+Bootstrap is one of the easiest webpage development packages. It is a very useful package to accomplish almost any formatting task. I recommend that you read about all the bootstrap components I mentioned like buttons, forms, icons, and modals. When you are comfortable with the topics, start making your own webpages. It takes a great deal of practice to be a good front-end designer. Now, for some inspiration as to what you can create with bootstrap, check out this bootstrap [official link](http://expo.getbootstrap.com/), where you will find some amazing applications of bootstrap tools for creating some mind-blowing websites!
 Here are some sources from where you can learn more about bootstrap:
 * [Tutorial Replublic bootstrap](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/)
 * [w3 schools bootstrap](https://www.w3schools.com/bootstrap/)
