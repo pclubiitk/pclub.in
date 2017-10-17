@@ -6,8 +6,8 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Aug 2017 13:00:50 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Aug 2017 13:00:50 +0000</lastBuildDate>
+    <pubDate>Tue, 17 Oct 2017 18:05:28 +0000</pubDate>
+    <lastBuildDate>Tue, 17 Oct 2017 18:05:28 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -579,13 +579,13 @@ Github Wiki: &lt;a href=&quot;https://github.com/heyitssat/Project_pragati/wiki&
         <title>Install Fest: Linux Mint</title>
         <description>&lt;ol&gt;
   &lt;li&gt;Place Linux Mint DVD or USB bootable image in the appropriate drive and reboot the computer in order to start with Linux Mint 18 installation.&lt;/li&gt;
-  &lt;li&gt;After reboot, press the special function key and instruct the machine firmware (UEFI) to boot-up from the appropriate DVD or USB drive (the special function keys usually are F12, F10 or F2 depending on the motherboard manufacturer). Once the media boots-up a new screen should appear on your monitor. Choose Start Linux Mint 18 Cinnamon and hit Enter to continue.
+  &lt;li&gt;After reboot, press the special function key and instruct the machine firmware (UEFI) to boot-up from the appropriate DVD or USB drive (the special function keys usually are F1, F8, F12, F10, F2 or sometimes del, depending on the motherboard manufacturer). Once the media boots-up a new screen should appear on your monitor. Choose Start Linux Mint 18 Cinnamon and hit Enter to continue.
 &lt;img src=&quot;http://www.tecmint.com/wp-content/uploads/2016/07/Select-Start-Linux-Mint-Cinnamon-Install.png&quot; alt=&quot;Boot Image&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;Wait until the system loads into RAM in order to run in live-mode and open the installer by double clicking on Install Linux Mint icon. Choose the language you wish to perform the installation and click on Continue button to proceed further.&lt;/li&gt;
   &lt;li&gt;On the next screen hit on Continue button to proceed further. Third-party software can be automatically download and installed on this step by checking the check-box. The recommendation would be to leave the box unchecked for the moment and manually install proprietary software later, after the installation process completes. &lt;img src=&quot;http://www.tecmint.com/wp-content/uploads/2016/07/Preparing-to-Install-Linux-Mint-18.png&quot; alt=&quot;Preparing to Install Linux Mint 18&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;At the next screen you can choose the Installation Type. If Windows Boot manager is automatically detected you can choose to Install Linux Mint alongside Windows Boot Manager. This option ensures that the HDD will be automatically partitioned by the installer without any data loss.The second option, Erase disk and install Ubuntu, should be avoided for dual-boot because is potentially dangerous and will wipe-out your disk. For a more flexible partition layout you should go with Something else option and hit on Continue button to proceed further.&lt;/li&gt;
-  &lt;li&gt;Now let’s create the partition layout for Linux Mint 18. I would recommend that you create three partitions, one for / (root), one for /home accounts data and one partition for swap.First create the swap partition. Select the free space and hit on the + icon from below. On this partition use the following settings and hit OK to create the partition.
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Size = 1024 MB
+  &lt;li&gt;At the next screen you can choose the Installation Type. If Windows Boot manager is automatically detected you can choose to Install Linux Mint alongside Windows Boot Manager. This option ensures that the HDD will be automatically partitioned by the installer without any data loss.The second option, Erase disk and install Linux Mint, should be avoided for dual-boot because is potentially dangerous and will wipe-out your disk. For a more flexible partition layout you should go with Something else option and hit on Continue button to proceed further.&lt;/li&gt;
+  &lt;li&gt;Now let’s create the partition layout for Linux Mint 18. I would recommend that you create three partitions, one for / (root), one for /home accounts data and one partition for swap. Swap partition is necessary if you have RAM less than 8 GB, if you have RAM greater than 8GB, feel free to leave making the swap partition. Select the free space and hit on the + icon from below. On this partition use the following settings and hit OK to create the partition.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Size = 4096 MB
 Type for for the new partition = Beginning of this space
 Use as = swap area
 &lt;/code&gt;&lt;/pre&gt;
@@ -693,7 +693,7 @@ If you do use one, select ‘India’ as your country and iitk as your mirror.&l
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Insert the bootable USB stick, reboot the system and instruct the &lt;strong&gt;BIOS&lt;/strong&gt; to boot from the USB by pressing a special function key (usually &lt;strong&gt;F9&lt;/strong&gt;, &lt;strong&gt;F10&lt;/strong&gt; or &lt;strong&gt;F12&lt;/strong&gt; depending on your device) after the boot up a new grub screen should appear on the screen. From the menu select &lt;strong&gt;Install Ubuntu&lt;/strong&gt; and press &lt;strong&gt;Enter&lt;/strong&gt;.&lt;/p&gt;
+    &lt;p&gt;Insert the bootable USB stick, reboot the system and instruct the &lt;strong&gt;BIOS&lt;/strong&gt; to boot from the USB by pressing a special function key (usually &lt;strong&gt;F1&lt;/strong&gt;, &lt;strong&gt;F2&lt;/strong&gt; &lt;strong&gt;F9&lt;/strong&gt;, &lt;strong&gt;F10&lt;/strong&gt;, &lt;strong&gt;F12&lt;/strong&gt; or maybe &lt;strong&gt;del&lt;/strong&gt; depending on your device) after the boot up a new grub screen should appear on the screen. From the menu select &lt;strong&gt;Install Ubuntu&lt;/strong&gt; and press &lt;strong&gt;Enter&lt;/strong&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;After this a completely functional Ubuntu system running in live-mode will start up. On the launcher on left side hit on the second icon from top, &lt;strong&gt;Install Ubuntu 16.04 LTS&lt;/strong&gt;, and the installer utility will start. Choose language and hit &lt;strong&gt;Continue&lt;/strong&gt;.&lt;/li&gt;
   &lt;li&gt;In &lt;strong&gt;Preparing to install ubuntu&lt;/strong&gt; click &lt;strong&gt;Continue&lt;/strong&gt;.&lt;/li&gt;
@@ -709,9 +709,13 @@ If you do use one, select ‘India’ as your country and iitk as your mirror.&l
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Now we create two partitions one for &lt;strong&gt;&lt;em&gt;root&lt;/em&gt;&lt;/strong&gt; and other for &lt;strong&gt;&lt;em&gt;home&lt;/em&gt;&lt;/strong&gt;. To create the first partition, the &lt;strong&gt;&lt;em&gt;root&lt;/em&gt;&lt;/strong&gt; partition select the free space (the shrink space from windows created earlier) and hit on the &lt;strong&gt;+&lt;/strong&gt; icon below. On partition settings use the following configurations and hit &lt;strong&gt;OK&lt;/strong&gt; to continue:&lt;/p&gt;
+    &lt;p&gt;Now we create three partitions one for &lt;strong&gt;&lt;em&gt;root&lt;/em&gt;&lt;/strong&gt;, one for &lt;strong&gt;&lt;em&gt;swap&lt;/em&gt;&lt;/strong&gt; and other for &lt;strong&gt;&lt;em&gt;home&lt;/em&gt;&lt;/strong&gt;. To create the swap partition and the &lt;strong&gt;&lt;em&gt;root&lt;/em&gt;&lt;/strong&gt; partition select the free space (the shrink space from windows created earlier) and hit on the &lt;strong&gt;+&lt;/strong&gt; icon below one by one. Swap partition is for when RAM gets depleted so if you have RAM greater than 8 GB, feel free to leave making the swap partition. On partition settings use the following configurations and hit &lt;strong&gt;OK&lt;/strong&gt; to continue:&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   Size = at least 20000 MB
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   Size = 4096 MB
+   Location for the new partition = Beginning
+   Mount = swap area
+
+   Size = at least 20000 MB
    Type for the new partition = Primary
    Location for the new partition = Beginning
    Use as = EXT4 journaling file system
@@ -739,7 +743,7 @@ If you do use one, select ‘India’ as your country and iitk as your mirror.&l
 
     &lt;p&gt;&lt;img src=&quot;https://s24.postimg.org/69d47u52t/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Hit the &lt;strong&gt;Install Now&lt;/strong&gt; button to apply changes and start the installation process. An alert regarding swap space will appear click on &lt;strong&gt;Continue&lt;/strong&gt;. Again a pop-up window will appear, hit &lt;strong&gt;Continue&lt;/strong&gt; to write changes to disc and the installation process will now begin.&lt;/li&gt;
+  &lt;li&gt;Hit the &lt;strong&gt;Install Now&lt;/strong&gt; button to apply changes and start the installation process. Again a pop-up window will appear, hit &lt;strong&gt;Continue&lt;/strong&gt; to write changes to disc and the installation process will now begin.&lt;/li&gt;
   &lt;li&gt;Next select a nearby city and hit &lt;strong&gt;Continue&lt;/strong&gt;.&lt;/li&gt;
   &lt;li&gt;Next select &lt;strong&gt;keyboard layout&lt;/strong&gt; and hit &lt;strong&gt;Continue&lt;/strong&gt;.&lt;/li&gt;
   &lt;li&gt;

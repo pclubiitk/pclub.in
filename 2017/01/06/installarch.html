@@ -219,33 +219,42 @@ sda                                                      931.5G disk
   on, I will refer to it as <code>/dev/sdx</code> (<code>x</code> = variable corresponding to your harddisk).</p>
 <p>Now find the partitions you created. They will probably be the ones with the highest index
   (it's still your job to verify that).</p>
-<p>To format the main root partition (the 50-100 gb one), use:</p>
+<p>To format the main root partition (let it be /dev/sdxr) (the 50-100 gb one), use:</p>
 <pre class="example">
-# mkfs.ext4 /dev/sdxy
+# mkfs.ext4 /dev/sdxr
 </pre>
-<p>where <code>y</code> is the number of the partition from the output of <code>lsblk</code></p>
-<p>To format the swap partition (the partition with the same size as your RAM), use:</p>
+<p>where <code>r</code> is the number of the root partition from the output of <code>lsblk</code></p>
+<p>Swap partition is required if you have RAM less than 8 GB, else you can leave it out if you want.
+  To format the swap partition (the partition with the same size as your RAM), use:</p>
 <pre class="example">
-# mkswap /dev/sdxy
+# mkfs.ext4 /dev/sdxs
 </pre>
-<p>where <code>x</code> is the number of the root partition from the output of <code>lsblk</code></p>
+<p>where <code>s</code> is the number of the swap partition from the output of <code>lsblk</code></p>
+<p>To format the home partition, use:</p>
+<pre class="example">
+# mkfs.ext4 /dev/sdxh
+</pre>
+<p>where <code>h</code> is the number of the home partition from the output of <code>lsblk</code></p>
 <h4>Mount the file systems</h4>
 <p>Mount the root partition to <code>/mnt</code>, for example:</p>
 <pre class="example">
-# mount /dev/sdxy /mnt
+# mount /dev/sdxh /mnt
 </pre>
 <p>Find out if your computer uses UEFI or not. The best way (I know) is to verify
   whether you have a <code>vfat</code> partition (as in my case <code>/dev/sda1</code>).
   If yes, then:</p>
 <pre class="example">
 # mkdir /mnt/boot
-# mount /dev/sdxy
+# mkdir /mnt/home
+# mount /dev/sdxh /mnt/home
+# mount /dev/sdxe /mnt/boot
 </pre>
-<p>(Here <code>/dev/sdxy</code> is the <code>vfat</code> partition)
+<p>(Here <code>/dev/sdxe</code> is the <code>vfat</code> partition)
+  This new partition which we are mounting to boot is Windows EFI Partition which containes Windows Boot Manager.
   Also remember this info(whether you have a UEFI system or not) for one of the future steps.</p>
 <p>Mount the swap partition:</p>
 <pre class="example">
-# mkswap /dev/sdxy
+# mkswap /dev/sdxs
 </pre>
 <h2>Installation</h2>
 <h4>Select the mirrors</h4>
@@ -255,14 +264,15 @@ sda                                                      931.5G disk
 <pre class="example">
 # nano /etc/pacman.d/mirrorlist
 </pre>
-<p>And insert this line at the very top just below the initial comments:</p>
+<p>And insert these line at the very top just below the initial comments in this order:</p>
 <pre class="example">
 Server = http://mirror.cse.iitk.ac.in/archlinux/$repo/os/$arch
+Server = http://ftp.iitm.ac.in/archlinux/$repo/os/$arch
 </pre>
 <h4>Install the base packages</h4>
 <p>Use the pacstrap script to install the base package group and other useful stuff:</p>
 <pre class="example">
-# pacstrap /mnt base wifi-menu dialog iw wpa_supplicant sudo
+# pacstrap /mnt base dialog iw wpa_supplicant sudo
 </pre>
 <h2>Configure the system</h2>
 <h4>Fstab</h4>
@@ -293,7 +303,7 @@ Server = http://mirror.cse.iitk.ac.in/archlinux/$repo/os/$arch
 <pre class="example">
 #en_US.UTF-8 UTF-8
 </pre>
-<p>Generate localisations with:</p>
+<p>Generate localisations with (execute):</p>
 <pre class="example">
 # locale-gen
 </pre>
@@ -341,9 +351,9 @@ myhostname
 <h4>New User</h4>
 <p>Now, its time to create a new user:</p>
 <pre class="example">
-# useradd -m -G wheel -s /bin/bash archie
+# useradd -m -G wheel -s /bin/bash &lt;username&gt;
 </pre>
-<p>Here, a new user was added with the username <code>archie</code> and default shell <code>/bin/bash</code>.
+<p>Here, a new user was added with the username you give and default shell <code>/bin/bash</code>.
   Just changing the username should suffice for most people.
   To change the user's password:</p>
 <pre class="example">
@@ -352,7 +362,7 @@ myhostname
 <p>Now setup <code>sudo</code> by typing <code>visudo</code>. This opens up the sudo configuration file in <code>vim</code>.
   Press <code>&lt;Shift&gt; + g</code> to goto the end of the file. Now go up, till you see this line:</p>
 <pre class="example">
-## Uncomment to allow members of group wheel to execute any command
+## Uncomment the below line to allow members of group wheel to execute any command
 # %wheel ALL=(ALL) ALL
 </pre>
 <p>Now, carefully place your cursor on the <code>#</code> just before <code>%wheel</code> and press <code>x</code>.

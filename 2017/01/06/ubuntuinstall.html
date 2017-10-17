@@ -145,7 +145,7 @@
 
 <ul>
   <li>
-    <p>Insert the bootable USB stick, reboot the system and instruct the <strong>BIOS</strong> to boot from the USB by pressing a special function key (usually <strong>F9</strong>, <strong>F10</strong> or <strong>F12</strong> depending on your device) after the boot up a new grub screen should appear on the screen. From the menu select <strong>Install Ubuntu</strong> and press <strong>Enter</strong>.</p>
+    <p>Insert the bootable USB stick, reboot the system and instruct the <strong>BIOS</strong> to boot from the USB by pressing a special function key (usually <strong>F1</strong>, <strong>F2</strong> <strong>F9</strong>, <strong>F10</strong>, <strong>F12</strong> or maybe <strong>del</strong> depending on your device) after the boot up a new grub screen should appear on the screen. From the menu select <strong>Install Ubuntu</strong> and press <strong>Enter</strong>.</p>
   </li>
   <li>After this a completely functional Ubuntu system running in live-mode will start up. On the launcher on left side hit on the second icon from top, <strong>Install Ubuntu 16.04 LTS</strong>, and the installer utility will start. Choose language and hit <strong>Continue</strong>.</li>
   <li>In <strong>Preparing to install ubuntu</strong> click <strong>Continue</strong>.</li>
@@ -161,9 +161,13 @@
 
 <ul>
   <li>
-    <p>Now we create two partitions one for <strong><em>root</em></strong> and other for <strong><em>home</em></strong>. To create the first partition, the <strong><em>root</em></strong> partition select the free space (the shrink space from windows created earlier) and hit on the <strong>+</strong> icon below. On partition settings use the following configurations and hit <strong>OK</strong> to continue:</p>
+    <p>Now we create three partitions one for <strong><em>root</em></strong>, one for <strong><em>swap</em></strong> and other for <strong><em>home</em></strong>. To create the swap partition and the <strong><em>root</em></strong> partition select the free space (the shrink space from windows created earlier) and hit on the <strong>+</strong> icon below one by one. Swap partition is for when RAM gets depleted so if you have RAM greater than 8 GB, feel free to leave making the swap partition. On partition settings use the following configurations and hit <strong>OK</strong> to continue:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>   Size = at least 20000 MB
+    <div class="highlighter-rouge"><pre class="highlight"><code>   Size = 4096 MB
+   Location for the new partition = Beginning
+   Mount = swap area
+
+   Size = at least 20000 MB
    Type for the new partition = Primary
    Location for the new partition = Beginning
    Use as = EXT4 journaling file system
@@ -191,7 +195,7 @@
 
     <p><img src="https://s24.postimg.org/69d47u52t/5.png" alt="" /></p>
   </li>
-  <li>Hit the <strong>Install Now</strong> button to apply changes and start the installation process. An alert regarding swap space will appear click on <strong>Continue</strong>. Again a pop-up window will appear, hit <strong>Continue</strong> to write changes to disc and the installation process will now begin.</li>
+  <li>Hit the <strong>Install Now</strong> button to apply changes and start the installation process. Again a pop-up window will appear, hit <strong>Continue</strong> to write changes to disc and the installation process will now begin.</li>
   <li>Next select a nearby city and hit <strong>Continue</strong>.</li>
   <li>Next select <strong>keyboard layout</strong> and hit <strong>Continue</strong>.</li>
   <li>
