@@ -4,18 +4,22 @@ title: Contact
 permalink: /contact.html
 coordies:
   'Arjun Sinha':
+    number: +919223294314
     mail: arjuns@iitk.ac.in
     github: ajs97
     image: arjun.jpg
   'Milind Luthra':
+    number: +919767235556
     mail: milindl@iitk.ac.in
     github: milindl
     image: milind.jpg
   'Varun Khare':
+    number: +918717983153
     mail: varun@iitk.ac.in
     github: varunkhare1234
     image: varun.png
   'Yash Srivastav':
+    number: +917054133662
     mail: yashsriv@iitk.ac.in
     github: yashsriv
     image: yash.jpg
@@ -166,6 +170,7 @@ secys:
             <div> <img src="assets/image/{{ coordie[1].image }}" class="pic" alt="{{ coordie[0] }}"> </div>
             <div class="flex-col flex-grow-1">
               <div> <b> {{ coordie[0] }} </b> </div>
+              <div> <a href="tel:{{ coordie[1].number }}"> {{ coordie[1].number }} </a> </div>
               <div> <a href="mailto:{{ coordie[1].mail }}"> {{ coordie[1].mail }} </a> </div>
               <div> <a href="https://github.com/{{ coordie[1].github }}" target="_blank">{{ coordie[1].github }}@github</a></div>
             </div>
