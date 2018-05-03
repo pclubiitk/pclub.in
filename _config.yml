@@ -18,34 +18,64 @@ facebook_username:  pclubiitk
 disqus_id: 
 
 excoordies:
+  '2017 - 18':
+    'Arjun Sinha':
+      mail: arjuns@iitk.ac.in
+      github: ajs97
+      image: arjun.jpg
+      body: |
+          Interning at Tower Research in Summer 2018.
+          ACM ICPC World Finalist.
+    'Milind Luthra':
+      mail: milindl@iitk.ac.in
+      github: milindl
+      image: milind.jpg
+      body: |
+          Interning at Flipkart, Bangalore in Summer 2018.
+    'Varun Khare':
+      mail: varun@iitk.ac.in
+      github: varunkhare1234
+      image: varun.jpg
+      body: |
+          Research Intern at National University of Singapore in Summer 2018.
+    'Yash Srivastav':
+      mail: yashsriv@iitk.ac.in
+      github: yashsriv
+      image: yash.jpg
+      body: |
+          Research Intern at New York University in Summer 2018.
+          Successfully completed GSoC in 2017 under the Linux Foundation.
   '2016 - 17':
     'Kunal Kapila':
       mail: kunalapila@gmail.com
       github: kunalapila
       image: kunal.jpg
       body: |
-        Interning at Tower Research in Summer 2017.
+        PPO at Tower Research.
+        Interned at Tower Research in Summer 2017.
         Chairperson Students&#39; Senate 2017-18.
     'Pallav Agarwal':
       mail: pallavagarwal07@gmail.com
       github: pallavagarwal07
       image: pallav.jpg
       body: |
-        Interning at Google, NYC in Summer 2017. Successfully
+        Joining Google, India.
+        Interned at Google, NYC in Summer 2017. Successfully
         completed GSoC in 2016 under the Gentoo Foundation.
     'Saksham Sharma':
       mail: saksham0808@gmail.com
       github: sakshamsharma
       image: saksham.jpg
       body: |
-        Interning at Google, Seattle in Summer 2017. Has been a
+        Joining Tower Research, NYC.
+        Interned at Google, Seattle in Summer 2017. Has been a
         research fellow at Max Planck Institute for Software System.
     'Vinayak Tantia':
       mail: tantia.vinayak1@gmail.com
       github: vtantia
       image: vinayak.jpg
       body: |
-        Interning at Google, India in Summer 2017.
+        Interned at Google, India in Summer 2017.
 
 
 # Gems
