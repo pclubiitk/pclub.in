@@ -35,7 +35,7 @@ excoordies:
     'Varun Khare':
       mail: varun@iitk.ac.in
       github: varunkhare1234
-      image: varun.jpg
+      image: varun.png
       body: |
           Research Intern at National University of Singapore in Summer 2018.
     'Yash Srivastav':
@@ -75,6 +75,7 @@ excoordies:
       github: vtantia
       image: vinayak.jpg
       body: |
+        Interning MILA, Canada. Joining Tower Research, India.
         Interned at Google, India in Summer 2017.
 
 
