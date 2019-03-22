@@ -2,10 +2,11 @@
 layout: post
 title: "Installing Ubuntu 18.04 In Latest Asus Rog PCs"
 author: Mohit Kumar Singh
-date: 2019-03-21 09:00:00 +530
 subsection: installfest17
 hidden: true
 ---
+Updated: 21/03/2019
+
 **Problem occurs due to loading of Nvidia Drivers during booting.**
 
 ### Follow the following simple steps:
