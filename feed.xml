@@ -6,13 +6,15 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 22 Mar 2019 08:04:04 +0000</pubDate>
-    <lastBuildDate>Fri, 22 Mar 2019 08:04:04 +0000</lastBuildDate>
+    <pubDate>Fri, 22 Mar 2019 09:38:13 +0000</pubDate>
+    <lastBuildDate>Fri, 22 Mar 2019 09:38:13 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Installing Ubuntu 18.04 In Latest Asus Rog PCs</title>
-        <description>&lt;p&gt;&lt;strong&gt;Problem occurs due to loading of Nvidia Drivers during booting. Follow the following simple steps.&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Problem occurs due to loading of Nvidia Drivers during booting.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;follow-the-following-simple-steps&quot;&gt;Follow the following simple steps:&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -23,8 +25,9 @@
 You will be brought to a page where you can make some edits.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;add the following right after the word “splash”\
- &lt;code class=&quot;highlighter-rouge&quot;&gt;nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;add the following right after the word “splash”&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Press the “f10” key to boot into the installer&lt;/p&gt;
@@ -54,16 +57,19 @@ You will be brought to a page where you can make some edits.&lt;/p&gt;
     &lt;p&gt;Press “f10”&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Once your back into the desktop open your terminal. Press &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+Alt+T&lt;/code&gt; if touch pad is not working and enter:\
-&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo gedit /etc/default/grub&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Once your back into the desktop open your terminal. Press &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+Alt+T&lt;/code&gt; if touch pad is not working and enter:&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo gedit /etc/default/grub&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Find the line that reads ‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”‘ and change it to read\
-&lt;code class=&quot;highlighter-rouge&quot;&gt;‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Find the line that reads ‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”‘ and change it to read&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Ignore this step if touchpad is working else add &lt;code class=&quot;highlighter-rouge&quot;&gt;i8042.reset&lt;/code&gt; to read:\
-&lt;code class=&quot;highlighter-rouge&quot;&gt;‘GRUB_CMDLINE_LINUX_DEFAULT=”i8042.reset quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Ignore this step if touchpad is working else add &lt;code class=&quot;highlighter-rouge&quot;&gt;i8042.reset&lt;/code&gt; to read:&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;‘GRUB_CMDLINE_LINUX_DEFAULT=”i8042.reset quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Save the changes then exit gedit.&lt;/p&gt;
@@ -78,8 +84,9 @@ You will be brought to a page where you can make some edits.&lt;/p&gt;
     &lt;p&gt;The PC may hang at this point which means the OS doesn’t support restart with dual boot.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Force switch off the PC from power button and on next boot follow steps 13-17 and add &lt;code class=&quot;highlighter-rouge&quot;&gt;acpi=force&lt;/code&gt; in step 14/15 to read: \
-&lt;code class=&quot;highlighter-rouge&quot;&gt;‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait acpi=force”‘&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Force switch off the PC from power button and on next boot follow steps 13-17 and add &lt;code class=&quot;highlighter-rouge&quot;&gt;acpi=force&lt;/code&gt; in step 14/15 to read:&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait acpi=force”‘&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -92,8 +99,9 @@ You will be brought to a page where you can make some edits.&lt;/p&gt;
     &lt;p&gt;Connect to a network&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Remove all Nvidia installs(if any), run this command: \
- &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get purge nvidia* &amp;amp; sudo apt autoremove &amp;amp; sudo apt auto-clean&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Remove all Nvidia installs(if any), run this command:&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get purge nvidia* &amp;amp; sudo apt autoremove &amp;amp; sudo apt auto-clean&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;Open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo vim /etc/modprobe.d/blacklist.conf&lt;/code&gt; and add these lines at the end:
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; blacklist nouveau
@@ -109,45 +117,51 @@ You will be brought to a page where you can make some edits.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Add the PPA graphic drivers:\
- &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo add-apt-repository ppa:graphics-drivers/ppa&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Add the PPA graphic drivers:&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo add-apt-repository ppa:graphics-drivers/ppa&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Check recommended drivers:\
- &lt;code class=&quot;highlighter-rouge&quot;&gt;ubuntu-drivers devices&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Check recommended drivers:&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ubuntu-drivers devices&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;AutoInstall recommended drivers:\
- &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo ubuntu-drivers autoinstall&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;AutoInstall recommended drivers:&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo ubuntu-drivers autoinstall&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;If secure boot is not switched off, while installing it asks for a password, enter and remember it. Shutdown the PC 
+    &lt;p&gt;If secure boot is not switched off, while installing it asks for a password, enter and remember it. Shutdown the PC
 (DONT RESTART).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Go to step 11 if secure boot is already disabled else on grub menu select &lt;code class=&quot;highlighter-rouge&quot;&gt;system setup&lt;/code&gt; to open boot manager.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Switch off secure boot (use right left arrow to switch tabs, enter to select and esc for back in boot manager):\
- &lt;code class=&quot;highlighter-rouge&quot;&gt;security tab-&amp;gt;secure boot-&amp;gt;secure boot controller-&amp;gt; disabled&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Switch off secure boot (use right left arrow to switch tabs, enter to select and esc for back in boot manager):&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;security tab-&amp;gt;secure boot-&amp;gt;secure boot controller-&amp;gt; disabled&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Press F10 to Save and exit.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Verify Nvidia installation (shows a nice table with nvidia hardware and driver specs):\
-&lt;code class=&quot;highlighter-rouge&quot;&gt;nvidia-smi&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Verify Nvidia installation (shows a nice table with nvidia hardware and driver specs):&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nvidia-smi&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Use “nvidia-X-server” from applications or following command to select profile for next boot (available profiles are intel and nvidia)\
-&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo prime-select nvidia&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Use “nvidia-X-server” from applications or following command to select profile for next boot (available profiles are intel and nvidia)&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo prime-select nvidia&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;If you are not a beginner and wish to switch profiles without reboot use: https://github.com/matthieugras/Prime-Ubuntu-18.04.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;strong&gt;Potential Problems&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;If anything goes wrong during driver installation, you are likely to get a black screen. In that case follow these steps to 
+&lt;p&gt;If anything goes wrong during driver installation, you are likely to get a black screen. In that case follow these steps to
 uninstall nvidia:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -164,12 +178,14 @@ uninstall nvidia:&lt;/p&gt;
     &lt;p&gt;Select root and press enter key twice. You will be dropped in root shell.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Run this command\
- &lt;code class=&quot;highlighter-rouge&quot;&gt;apt purge nvidia*&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Run this command&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt purge nvidia*&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Reboot\
- &lt;code class=&quot;highlighter-rouge&quot;&gt;reboot&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Reboot&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;reboot&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;You can either retry the above steps to install nvidia-drivers or use ubuntu with intel card.&lt;/p&gt;
@@ -181,8 +197,9 @@ crashing of windows. Switching OFF automatic updates is RECOMMENDED. In case, yo
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Make windows first boot option from boot manager.\
- &lt;code class=&quot;highlighter-rouge&quot;&gt;Grub-&amp;gt;system setup-&amp;gt;boot tab-&amp;gt;change boot order(swap 1st and second option)&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Make windows first boot option from boot manager.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Grub-&amp;gt;system setup-&amp;gt;boot tab-&amp;gt;change boot order(swap 1st and second option)&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Perform the update and shut down the PC.&lt;/p&gt;
@@ -195,7 +212,7 @@ crashing of windows. Switching OFF automatic updates is RECOMMENDED. In case, yo
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Source: https://jeremymdyson.wordpress.com/2016/04/27/ubuntugnome-16-04-on-asus-rog-gl552v/&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://jeremymdyson.wordpress.com/2016/04/27/ubuntugnome-16-04-on-asus-rog-gl552v/&quot;&gt;ubuntugnome-16-04-on-asus-rog-gl552v&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 21 Mar 2019 03:30:00 +0000</pubDate>
         <link>http://pclub.in/2019/03/21/Linux-on-Asus-ROG.html</link>

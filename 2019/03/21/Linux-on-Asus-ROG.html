@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Installing Ubuntu 18.04 In Latest Asus Rog PCs</title>
-  <meta name="description" content="Problem occurs due to loading of Nvidia Drivers during booting. Follow the following simple steps.">
+  <meta name="description" content="Problem occurs due to loading of Nvidia Drivers during booting.">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
@@ -141,7 +141,9 @@
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <p><strong>Problem occurs due to loading of Nvidia Drivers during booting. Follow the following simple steps.</strong></p>
+    <p><strong>Problem occurs due to loading of Nvidia Drivers during booting.</strong></p>
+
+<h3 id="follow-the-following-simple-steps">Follow the following simple steps:</h3>
 
 <ol>
   <li>
@@ -152,8 +154,9 @@
 You will be brought to a page where you can make some edits.</p>
   </li>
   <li>
-    <p>add the following right after the word “splash”\
- <code class="highlighter-rouge">nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait</code></p>
+    <p>add the following right after the word “splash”</p>
+
+    <p><code class="highlighter-rouge">nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait</code></p>
   </li>
   <li>
     <p>Press the “f10” key to boot into the installer</p>
@@ -183,16 +186,19 @@ You will be brought to a page where you can make some edits.</p>
     <p>Press “f10”</p>
   </li>
   <li>
-    <p>Once your back into the desktop open your terminal. Press <code class="highlighter-rouge">Ctrl+Alt+T</code> if touch pad is not working and enter:\
-<code class="highlighter-rouge">sudo gedit /etc/default/grub</code></p>
+    <p>Once your back into the desktop open your terminal. Press <code class="highlighter-rouge">Ctrl+Alt+T</code> if touch pad is not working and enter:</p>
+
+    <p><code class="highlighter-rouge">sudo gedit /etc/default/grub</code></p>
   </li>
   <li>
-    <p>Find the line that reads ‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”‘ and change it to read\
-<code class="highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘</code></p>
+    <p>Find the line that reads ‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”‘ and change it to read</p>
+
+    <p><code class="highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘</code></p>
   </li>
   <li>
-    <p>Ignore this step if touchpad is working else add <code class="highlighter-rouge">i8042.reset</code> to read:\
-<code class="highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”i8042.reset quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘</code></p>
+    <p>Ignore this step if touchpad is working else add <code class="highlighter-rouge">i8042.reset</code> to read:</p>
+
+    <p><code class="highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”i8042.reset quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘</code></p>
   </li>
   <li>
     <p>Save the changes then exit gedit.</p>
@@ -207,8 +213,9 @@ You will be brought to a page where you can make some edits.</p>
     <p>The PC may hang at this point which means the OS doesn’t support restart with dual boot.</p>
   </li>
   <li>
-    <p>Force switch off the PC from power button and on next boot follow steps 13-17 and add <code class="highlighter-rouge">acpi=force</code> in step 14/15 to read: \
-<code class="highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait acpi=force”‘</code></p>
+    <p>Force switch off the PC from power button and on next boot follow steps 13-17 and add <code class="highlighter-rouge">acpi=force</code> in step 14/15 to read:</p>
+
+    <p><code class="highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait acpi=force”‘</code></p>
   </li>
 </ol>
 
@@ -221,8 +228,9 @@ You will be brought to a page where you can make some edits.</p>
     <p>Connect to a network</p>
   </li>
   <li>
-    <p>Remove all Nvidia installs(if any), run this command: \
- <code class="highlighter-rouge">sudo apt-get purge nvidia* &amp; sudo apt autoremove &amp; sudo apt auto-clean</code></p>
+    <p>Remove all Nvidia installs(if any), run this command:</p>
+
+    <p><code class="highlighter-rouge">sudo apt-get purge nvidia* &amp; sudo apt autoremove &amp; sudo apt auto-clean</code></p>
   </li>
   <li>Open the file <code class="highlighter-rouge">sudo vim /etc/modprobe.d/blacklist.conf</code> and add these lines at the end:
     <div class="highlighter-rouge"><pre class="highlight"><code> blacklist nouveau
@@ -238,45 +246,51 @@ You will be brought to a page where you can make some edits.</p>
     </div>
   </li>
   <li>
-    <p>Add the PPA graphic drivers:\
- <code class="highlighter-rouge">sudo add-apt-repository ppa:graphics-drivers/ppa</code></p>
+    <p>Add the PPA graphic drivers:</p>
+
+    <p><code class="highlighter-rouge">sudo add-apt-repository ppa:graphics-drivers/ppa</code></p>
   </li>
   <li>
-    <p>Check recommended drivers:\
- <code class="highlighter-rouge">ubuntu-drivers devices</code></p>
+    <p>Check recommended drivers:</p>
+
+    <p><code class="highlighter-rouge">ubuntu-drivers devices</code></p>
   </li>
   <li>
-    <p>AutoInstall recommended drivers:\
- <code class="highlighter-rouge">sudo ubuntu-drivers autoinstall</code></p>
+    <p>AutoInstall recommended drivers:</p>
+
+    <p><code class="highlighter-rouge">sudo ubuntu-drivers autoinstall</code></p>
   </li>
   <li>
-    <p>If secure boot is not switched off, while installing it asks for a password, enter and remember it. Shutdown the PC 
+    <p>If secure boot is not switched off, while installing it asks for a password, enter and remember it. Shutdown the PC
 (DONT RESTART).</p>
   </li>
   <li>
     <p>Go to step 11 if secure boot is already disabled else on grub menu select <code class="highlighter-rouge">system setup</code> to open boot manager.</p>
   </li>
   <li>
-    <p>Switch off secure boot (use right left arrow to switch tabs, enter to select and esc for back in boot manager):\
- <code class="highlighter-rouge">security tab-&gt;secure boot-&gt;secure boot controller-&gt; disabled</code></p>
+    <p>Switch off secure boot (use right left arrow to switch tabs, enter to select and esc for back in boot manager):</p>
+
+    <p><code class="highlighter-rouge">security tab-&gt;secure boot-&gt;secure boot controller-&gt; disabled</code></p>
   </li>
   <li>
     <p>Press F10 to Save and exit.</p>
   </li>
   <li>
-    <p>Verify Nvidia installation (shows a nice table with nvidia hardware and driver specs):\
-<code class="highlighter-rouge">nvidia-smi</code></p>
+    <p>Verify Nvidia installation (shows a nice table with nvidia hardware and driver specs):</p>
+
+    <p><code class="highlighter-rouge">nvidia-smi</code></p>
   </li>
   <li>
-    <p>Use “nvidia-X-server” from applications or following command to select profile for next boot (available profiles are intel and nvidia)\
-<code class="highlighter-rouge">sudo prime-select nvidia</code></p>
+    <p>Use “nvidia-X-server” from applications or following command to select profile for next boot (available profiles are intel and nvidia)</p>
+
+    <p><code class="highlighter-rouge">sudo prime-select nvidia</code></p>
   </li>
   <li>If you are not a beginner and wish to switch profiles without reboot use: https://github.com/matthieugras/Prime-Ubuntu-18.04.</li>
 </ol>
 
 <p><strong>Potential Problems</strong></p>
 
-<p>If anything goes wrong during driver installation, you are likely to get a black screen. In that case follow these steps to 
+<p>If anything goes wrong during driver installation, you are likely to get a black screen. In that case follow these steps to
 uninstall nvidia:</p>
 
 <ol>
@@ -293,12 +307,14 @@ uninstall nvidia:</p>
     <p>Select root and press enter key twice. You will be dropped in root shell.</p>
   </li>
   <li>
-    <p>Run this command\
- <code class="highlighter-rouge">apt purge nvidia*</code></p>
+    <p>Run this command</p>
+
+    <p><code class="highlighter-rouge">apt purge nvidia*</code></p>
   </li>
   <li>
-    <p>Reboot\
- <code class="highlighter-rouge">reboot</code></p>
+    <p>Reboot</p>
+
+    <p><code class="highlighter-rouge">reboot</code></p>
   </li>
   <li>
     <p>You can either retry the above steps to install nvidia-drivers or use ubuntu with intel card.</p>
@@ -310,8 +326,9 @@ crashing of windows. Switching OFF automatic updates is RECOMMENDED. In case, yo
 
 <ol>
   <li>
-    <p>Make windows first boot option from boot manager.\
- <code class="highlighter-rouge">Grub-&gt;system setup-&gt;boot tab-&gt;change boot order(swap 1st and second option)</code></p>
+    <p>Make windows first boot option from boot manager.</p>
+
+    <p><code class="highlighter-rouge">Grub-&gt;system setup-&gt;boot tab-&gt;change boot order(swap 1st and second option)</code></p>
   </li>
   <li>
     <p>Perform the update and shut down the PC.</p>
@@ -324,7 +341,7 @@ crashing of windows. Switching OFF automatic updates is RECOMMENDED. In case, yo
   </li>
 </ol>
 
-<p>Source: https://jeremymdyson.wordpress.com/2016/04/27/ubuntugnome-16-04-on-asus-rog-gl552v/</p>
+<p>Source: <a href="https://jeremymdyson.wordpress.com/2016/04/27/ubuntugnome-16-04-on-asus-rog-gl552v/">ubuntugnome-16-04-on-asus-rog-gl552v</a></p>
 
   </div>
 
