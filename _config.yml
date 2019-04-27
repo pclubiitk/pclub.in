@@ -18,6 +18,22 @@ facebook_username:  pclubiitk
 disqus_id: 
 
 excoordies:
+  '2018 - 19':
+    'Ahsan Barkati':
+      mail: ahsanb@iitk.ac.in
+      github: ahsanbarkati
+      image: ahsan.jpg
+      body:
+    'Anant Prakash':
+      mail: anantp@iitk.ac.in
+      github: apwhitehat
+      image: anant.jpg
+      body:
+    'Ayush Bansal':
+      mail: ayushb@iitk.ac.in
+      github: ayush268
+      image: ayush.jpg
+      body:
   '2017 - 18':
     'Arjun Sinha':
       mail: arjuns@iitk.ac.in
