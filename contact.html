@@ -3,27 +3,129 @@ layout: default
 title: Contact
 permalink: /contact.html
 coordies:
-  'Ahsan Barkati':
-    number: +917318018978
-    mail: ahsanb@iitk.ac.in
-    github: ahsanbarkati
-    image: ahsan.jpg
-  'Anant Prakash':
-    number: +917318019930
-    mail: anantp@iitk.ac.in
-    github: apwhitehat
-    image: anant.jpg
-  'Ayush Bansal':
-    number: +919462545882
-    mail: ayushb@iitk.ac.in
-    github: ayush268
-    image: ayush.jpg
-  'Parv Mor':
-    number: +917318019085
-    mail: parv@iitk.ac.in
-    github: parvmor
-    image: parv.jpg
+  'Aditya Gulati':
+    number: +919996548714
+    mail: aditg@iitk.ac.in
+    github: ditttu
+    image: adityagulati.jpg
+  'Anish Saxena':
+    number: +917405805164
+    mail: anishs@iitk.ac.in
+    github: Anish-Saxena
+    image: anishsaxena.jpg
+  'Kushagra Gupta':
+    number: +917062347318
+    mail: kushgpt@iitk.ac.in
+    github: kushagragpt99 
+    image: kushagragupta.jpg
+  'Yugesh Kothari':
+    number: +919123159658
+    mail: yugeshk@iitk.ac.in
+    github: yugeshk 
+    image: yugeshkothari.jpg
 secys:
+  'aaryans':
+    name: Aaryan Srivastava
+    github: aaryans941
+    fb: AaryanS941
+    number: 9354263587
+    hall: 5
+  'akhilsh':
+    name: Akhilesh Sharma
+    github: dragnoid99
+    fb: 100011421215094
+    number: 9773873557
+    hall: 5
+  'apoorvg':
+    name: Apoorv Goyal
+    github: goyal-apoorv
+    fb: 100010514855490
+    number: 7895366587
+    hall: 5
+  'avibose':
+    name: Avinandan Bose
+    github: Avinandan22
+    fb: avinandan.bose.92
+    number: 6290665147
+    hall: 12
+  'bhuvans':
+    name: Bhuvan Singla
+    github: bhuvansingla
+    fb: singlabhuvan
+    number: 8437809786
+    hall: 2
+  'chinmayg':
+    name: Chinmay Goyal
+    github: Chinmaygoyal
+    fb: cg2chinmay
+    number: 7891555552
+    hall: 2
+  'deepank':
+    name: Deepankur
+    github: DeepankurK
+    fb: deepankur.kansal.5
+    number: 9457509700
+    hall: 5
+  'dipeshk':
+    name: Dipesh Khandelwal
+    github: dipeshdk
+    fb: 100008524415390
+    number: 9024254441
+    hall: 12
+  'divyu':
+    name: Divyanshu Bhardwaj
+    github: d1vyanshu
+    fb: d1vyaanshu
+    number: 6397745947
+    hall: 2
+  'dhakshin':
+    name: K. Krishna Dhakshin
+    github: k-k-d
+    fb: krishnadhakshin.karthikeyan
+    number: 6379361473
+    hall: 12
+  'namanb':
+    name: Naman Biyani
+    github: namanbiyani
+    fb: naman.biyani.5
+    number: 7003164776
+    hall: 2
+  'majorwar':
+    name: Nilay Majorwar
+    github: NilayMajorwar
+    fb: nilay.majorwar
+    number: 9559084545
+    hall: 2
+  'darshi':
+    name: Priydarshi Singh
+    github: dryairship
+    fb: dryairship
+    number: 7318301507
+    hall: 12
+  'sartkap':
+    name: Sarthak Kapoor
+    github: sartkap
+    fb: sarthak.kapoor.007
+    number: 9910175150
+    hall: 5
+  'tanvin':
+    name: Tanvi Ajay Nerkar
+    github: tanvinerkar
+    fb: tanvi.nerkar.5
+    number: 9916304234
+    hall: 6
+  'gvarun':
+    name: Varun Goyal
+    github: govarun
+    fb: varungoyal23
+    number: 9125825897
+    hall: 12
+  'vivekgt':
+    name: Vivek Kumar Gupta
+    github: vivekg7
+    fb: vivekkumar.gupta.35762
+    number: 9572572570
+    hall: 3
 ---
 
 <br>
@@ -53,16 +155,18 @@ secys:
         <th>Hall</th>
         <th>Mobile Number</th>
         <th>Email-ID</th>
-        <th>Room No.</th>
+        <th>GitHub</th>
+        <th>Facebook</th>
       </tr>
       {% for secy in page.secys %}
         <tr>
           <td class="secyRow" align="center"> {{ secy[1].name }}</td>
-          <td class="secyRow" align="center"> {{ secy[1].hall }} </td>
-          <td class="secyRow" align="center"> {{ secy[1].number }} </td>
+          <td class="secyRow" align="center"> {{ secy[1].hall}} </td>
+          <td class="secyRow" align="center"> <a href="tel:{{ secy[1].number }}">{{ secy[1].number }}</a></td>
           <td class="secyRow" align="center"> <a href="mailto:{{ secy[0] }}@iitk.ac.in"> {{ secy[0] }}@iitk.ac.in </a> </td>
-          <td class="secyRow" align="center"> {{ secy[1].room }} </td>
-        </tr>
+          <td> <a href="https://github.com/{{ secy[1].github }}" target="_blank">{{ secy[1].github }}@github</a></td>
+          <td> <a href="https://facebook.com/{{ secy[1].fb }}" target="_blank">{{ secy[1].fb }}</a></td>
+       </tr>
       {% endfor %}
     </table>
   </div>
