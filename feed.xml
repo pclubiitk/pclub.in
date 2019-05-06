@@ -6,9 +6,87 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 May 2019 17:36:55 +0000</pubDate>
-    <lastBuildDate>Mon, 06 May 2019 17:36:55 +0000</lastBuildDate>
+    <pubDate>Mon, 06 May 2019 17:38:12 +0000</pubDate>
+    <lastBuildDate>Mon, 06 May 2019 17:38:12 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Data Encryption Standard</title>
+        <description>&lt;p&gt;Data encryption standard is a &lt;strong&gt;symmetric-key block cipher&lt;/strong&gt; published by National Institute of Standard and Technology(NIST).&lt;/p&gt;
+
+&lt;h3 id=&quot;symmetric-key-block-cipher&quot;&gt;Symmetric-key block cipher&lt;/h3&gt;
+
+&lt;p&gt;Let us first understand what this means.
+Every encryption algorithm uses a key to encrypt data and decrypt it. Since the key used for encryption and decryption is same in DES it is a symmetric-key cipher. It encrypts a 64-bit block at once so it is also a block cipher. Hence the name “symmetric-key block cipher”.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Now we are ready to dive into what happens to the data in DES:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The input data is passed through 16 similar rounds where the input is broken into two blocks(32-bits each) and the right block is passed through an encrypting function which gives 32-bit output. This output is then xor’ed with left block and the blocks obtained serve as input to the next round. Each round has a different 48-bit key which is generated from a 64-bit key using key-scheduling function.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://manansingh.github.io/Cryptolab-Offline/images/c/des-1.GIF&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step1-initial-permutation&quot;&gt;Step1: Initial Permutation&lt;/h2&gt;
+&lt;p&gt;The 64-bits input first goes through a standard permutation which is known publicly. It is available on the internet.&lt;/p&gt;
+
+&lt;p&gt;After this permutation, &lt;strong&gt;the rest of the steps are common to all 16 rounds&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;step2-expansion-of-input&quot;&gt;Step2: Expansion of input&lt;/h2&gt;
+&lt;p&gt;The permuted input is now broken into two blocks of 32-bits each. The right block is always input of the encrypting function while the left block remains unchanged.
+ So we have this 32-bits input and a 48-bits key. The first thing we do is expand the 32-bits input to 48 bits.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.tutorialspoint.com/cryptography/images/permutation_logic.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step3-xor-input-with-key&quot;&gt;Step3: XOR input with key&lt;/h2&gt;
+&lt;p&gt;The right block of input which was expanded to 48-bits is now xor’ed with the key. XOR means bit by bit addition modulo 2.&lt;/p&gt;
+
+&lt;h2 id=&quot;step3s-boxes&quot;&gt;Step3:S Boxes&lt;/h2&gt;
+&lt;p&gt;This step makes use of S boxes which are non-linear mappings from 6-bits input to a 4-bits output.
+The xor’ed value (48 bit) from the previous step is divided into 8 blocks of 6-bits. The first block is fed to S1, second to S2 and so on. Each S box now maps the 6-bit entry to a 4-bit output, so the output of all S boxes form a 32-bits output.The inner configurations of S boxes is also available on the internet.&lt;/p&gt;
+
+&lt;h2 id=&quot;step4-permutation-again&quot;&gt;Step4: Permutation again!&lt;/h2&gt;
+&lt;p&gt;The output of S boxes, forming 32-bits, is again permuted to give 32-bits block according to another standard permutation table.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.pngkit.com/png/detail/375-3754049_data-encryption-standard-infobox-diagram-des-algorithm-s.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The encrypting function&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step5-xor-with-left-block&quot;&gt;Step5: XOR with left block&lt;/h2&gt;
+&lt;p&gt;The final output obtained from the previous step is now xor’ed with the left block. This xor’ed value now serves as the right block for next round and the left block will be the right block of the previous round before operating the encrypting function.&lt;/p&gt;
+
+&lt;h4 id=&quot;ln--rn-1&quot;&gt;L&lt;sub&gt;n&lt;/sub&gt; = R&lt;sub&gt;n-1&lt;/sub&gt;&lt;br /&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;rn--ln-1--xor-fkn-1-rn-1&quot;&gt;R&lt;sub&gt;n&lt;/sub&gt; = L&lt;sub&gt;n-1&lt;/sub&gt;  xor f(K&lt;sub&gt;n-1&lt;/sub&gt;, R&lt;sub&gt;n-1&lt;/sub&gt;)&lt;/h4&gt;
+
+&lt;h2 id=&quot;step6-last-permutation&quot;&gt;Step6: Last Permutation&lt;/h2&gt;
+&lt;p&gt;After last round, the bits are permuted for one last time. This permutation is the opposite of initial permutation. It is chosen this way to make DES completely symmetric so that nothing new has to be done to decrypt ciphered data.&lt;/p&gt;
+
+&lt;h1 id=&quot;decryption&quot;&gt;Decryption&lt;/h1&gt;
+&lt;p&gt;Decryption in DES is very easy. Since it is a symmetric cipher, all we need to do is put the encrypted text as input and use keys in opposite order. The output you will get will be the plain text.&lt;/p&gt;
+
+&lt;h2 id=&quot;security&quot;&gt;Security&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;DES was published as an official Federal Information Processing Standard (FIPS) for the United States in 1977.&lt;/li&gt;
+  &lt;li&gt;It is no more a secure standard.&lt;/li&gt;
+  &lt;li&gt;Due to small length of key(56-bits), key can be found using brute force method.&lt;/li&gt;
+  &lt;li&gt;Differential cryptanalysis can also reduce the area of search for the possible key.&lt;/li&gt;
+  &lt;li&gt;In July 2017, a chosen-plaintext attack utilizing a rainbow table can recover the DES key for a single specific chosen plaintext 1122334455667788 in 25 seconds. A new rainbow table has to be calculated per plaintext.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 15 Apr 2019 11:04:00 +0000</pubDate>
+        <link>http://pclub.in/cryptography/2019/04/15/DES.html</link>
+        <guid isPermaLink="true">http://pclub.in/cryptography/2019/04/15/DES.html</guid>
+        
+        <category>Cryptography</category>
+        
+        <category>DES</category>
+        
+        <category>Symmetric Cipher</category>
+        
+        <category>Block Cipher</category>
+        
+        
+        <category>Cryptography</category>
+        
+      </item>
     
       <item>
         <title>Introductory Workshop 2017</title>
@@ -757,44 +835,6 @@ If you do use one, select ‘India’ as your country and iitk as your mirror.&l
         <link>http://pclub.in/2017/01/06/ubuntuinstall.html</link>
         <guid isPermaLink="true">http://pclub.in/2017/01/06/ubuntuinstall.html</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>Linux Install Fest</title>
-        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;Hi all, welcome to the Programming Club Linux Install Fest 2017!&lt;/p&gt;
-
-&lt;p&gt;Here are the separate posts for each supported Linux Distribution:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/2017/01/06/Mint_install.html&quot;&gt;Install Fest: Linux Mint&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/2017/01/06/debianinstall.html&quot;&gt;Install Fest: Debian&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/2017/01/06/ubuntuinstall.html&quot;&gt;Install Fest: Ubuntu&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/2017/01/06/installarch.html&quot;&gt;Install Fest: Arch Linux&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/2017/01/06/Linux-on-Asus-ROG.html&quot;&gt;Installing Ubuntu 18.04 In Latest Asus Rog PCs&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Fri, 06 Jan 2017 14:55:00 +0000</pubDate>
-        <link>http://pclub.in/installfest17/2017/01/06/installfest.html</link>
-        <guid isPermaLink="true">http://pclub.in/installfest17/2017/01/06/installfest.html</guid>
-        
-        <category>linux</category>
-        
-        
-        <category>installfest17</category>
         
       </item>
     

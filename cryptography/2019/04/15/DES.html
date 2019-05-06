@@ -8,9 +8,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>About</title>
-  <meta name="description" content="The Programming Club, IIT Kanpur
-">
+  <title>Data Encryption Standard</title>
+  <meta name="description" content="Data encryption standard is a symmetric-key block cipher published by National Institute of Standard and Technology(NIST).">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
@@ -18,7 +17,7 @@
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/about.html">
+  <link rel="canonical" href="http://pclub.in/cryptography/2019/04/15/DES.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/image/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/image/apple-icon-60x60.png">
@@ -129,328 +128,158 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="row">
-  <div class="large-7 columns samping">
-    <div style="margin-top: 0;
+        <div style="margin: 4.5rem auto;">
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="inpost-header">
+    <h1 class="inpost-title" itemprop="name headline">Data Encryption Standard</h1>
+    <h1 style="float:right" class="comment-postingatas">
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/cryptography/2019/04/15/DES.html#disqus_thread" data-disqus-identifier="/cryptography/2019/04/15/DES"style="color:#fff"> 0</a>
+    </h1>
+    </p>
+  </header>
+  
+  <div class="post-content" itemprop="articleBody">
+    <p>Data encryption standard is a <strong>symmetric-key block cipher</strong> published by National Institute of Standard and Technology(NIST).</p>
+
+<h3 id="symmetric-key-block-cipher">Symmetric-key block cipher</h3>
+
+<p>Let us first understand what this means.
+Every encryption algorithm uses a key to encrypt data and decrypt it. Since the key used for encryption and decryption is same in DES it is a symmetric-key cipher. It encrypts a 64-bit block at once so it is also a block cipher. Hence the name “symmetric-key block cipher”.</p>
+
+<p><em>Now we are ready to dive into what happens to the data in DES:</em></p>
+
+<p>The input data is passed through 16 similar rounds where the input is broken into two blocks(32-bits each) and the right block is passed through an encrypting function which gives 32-bit output. This output is then xor’ed with left block and the blocks obtained serve as input to the next round. Each round has a different 48-bit key which is generated from a 64-bit key using key-scheduling function.</p>
+
+<p><img src="https://manansingh.github.io/Cryptolab-Offline/images/c/des-1.GIF" alt="image" /></p>
+
+<h2 id="step1-initial-permutation">Step1: Initial Permutation</h2>
+<p>The 64-bits input first goes through a standard permutation which is known publicly. It is available on the internet.</p>
+
+<p>After this permutation, <strong>the rest of the steps are common to all 16 rounds</strong>.</p>
+
+<h2 id="step2-expansion-of-input">Step2: Expansion of input</h2>
+<p>The permuted input is now broken into two blocks of 32-bits each. The right block is always input of the encrypting function while the left block remains unchanged.
+ So we have this 32-bits input and a 48-bits key. The first thing we do is expand the 32-bits input to 48 bits.</p>
+
+<p><img src="https://www.tutorialspoint.com/cryptography/images/permutation_logic.jpg" alt="image" /></p>
+
+<h2 id="step3-xor-input-with-key">Step3: XOR input with key</h2>
+<p>The right block of input which was expanded to 48-bits is now xor’ed with the key. XOR means bit by bit addition modulo 2.</p>
+
+<h2 id="step3s-boxes">Step3:S Boxes</h2>
+<p>This step makes use of S boxes which are non-linear mappings from 6-bits input to a 4-bits output.
+The xor’ed value (48 bit) from the previous step is divided into 8 blocks of 6-bits. The first block is fed to S1, second to S2 and so on. Each S box now maps the 6-bit entry to a 4-bit output, so the output of all S boxes form a 32-bits output.The inner configurations of S boxes is also available on the internet.</p>
+
+<h2 id="step4-permutation-again">Step4: Permutation again!</h2>
+<p>The output of S boxes, forming 32-bits, is again permuted to give 32-bits block according to another standard permutation table.</p>
+
+<p><img src="https://www.pngkit.com/png/detail/375-3754049_data-encryption-standard-infobox-diagram-des-algorithm-s.png" alt="image" /></p>
+
+<p><em>The encrypting function</em></p>
+
+<h2 id="step5-xor-with-left-block">Step5: XOR with left block</h2>
+<p>The final output obtained from the previous step is now xor’ed with the left block. This xor’ed value now serves as the right block for next round and the left block will be the right block of the previous round before operating the encrypting function.</p>
+
+<h4 id="ln--rn-1">L<sub>n</sub> = R<sub>n-1</sub><br /></h4>
+<h4 id="rn--ln-1--xor-fkn-1-rn-1">R<sub>n</sub> = L<sub>n-1</sub>  xor f(K<sub>n-1</sub>, R<sub>n-1</sub>)</h4>
+
+<h2 id="step6-last-permutation">Step6: Last Permutation</h2>
+<p>After last round, the bits are permuted for one last time. This permutation is the opposite of initial permutation. It is chosen this way to make DES completely symmetric so that nothing new has to be done to decrypt ciphered data.</p>
+
+<h1 id="decryption">Decryption</h1>
+<p>Decryption in DES is very easy. Since it is a symmetric cipher, all we need to do is put the encrypted text as input and use keys in opposite order. The output you will get will be the plain text.</p>
+
+<h2 id="security">Security</h2>
+<ul>
+  <li>DES was published as an official Federal Information Processing Standard (FIPS) for the United States in 1977.</li>
+  <li>It is no more a secure standard.</li>
+  <li>Due to small length of key(56-bits), key can be found using brute force method.</li>
+  <li>Differential cryptanalysis can also reduce the area of search for the possible key.</li>
+  <li>In July 2017, a chosen-plaintext attack utilizing a rainbow table can recover the DES key for a single specific chosen plaintext 1122334455667788 in 25 seconds. A new rainbow table has to be calculated per plaintext.</li>
+</ul>
+
+  </div>
+
+<div class="arrowNav">
+ 
+
+
+ 
+<div class="arrowRight" style="float:right">
+<a id="route" class="tooltip-left" href="/pclub/2017/08/11/introworkshop17.html" title="
+&lt;p class=hoveratas&gt;Introductory Workshop 2017&lt;/p&gt; &lt;p class=hoverbawah&gt;Introduction Hi all, welcome to the Programming Club Introductory Workshop...&lt;/p&gt;
+"><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
-    padding-bottom: 1rem;
-    /* border-bottom: #636363 1px solid; */
-    word-wrap: break-word;
-    background: #3E3E3E;
-    padding: 32px 20px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;">
-      <center>
-        <img src="/assets/image/pclub.png" style="border-radius:10px; max-width: 80%;">
-      </center>
-
-      <br><br>
-      Programming Club (or PClub) is a community of students highly enthusiastic about coding,
-      ethical hacking, Web Designing and all other aspects of programming.
-      We are a team currently of 4 coordinators (pre-final year) and 25 secretaries (sophomores).
-
-      <br><br>
-      Our Facebook group <a href="https://www.facebook.com/groups/pclubiitk">pclubiitk</a> has grown to a massive size of
-      18K members, who use it as a QnA forum, or to get information about activities and competitions happening in the world of Programming.
-
-      <br><br>
-      We organize activities related to Development (Web Development, Open Source, Game/App Development), programming contests, hackathons, Capture The Flag contests, et all.
-      Lecture series are regularly taken on algorithms, web hijacking, development, among other things.
-
-      <br><br>
-      Apart from this, we also develop various applications to be used by the campus junta; like Puppy Love (during valentines week), organize activities like Linux
-      Install fest, and promote Open Source.
-
-      <br><br>
-      During summers, we offer a large number of projects to the first year students through our Summer Camp. The 2016 Summer Camp saw close to 350 applicants.
-
-      <br><br>
-      Feel free to contact any of our members any time in case of any queries! We hang out on IRC at #pclub
-      <br>
-      <br>
-      Happy Coding!
-      <br>
-      <br>
-      <pre> while(!(succeed = try () ));</pre>
-
-    </div>
-  </div>
-  <div class="large-4 columns">
-<div class="widgetnya">
-  <h1 class="page-heading">Search</h1>
-  <div class="badanwidget" style="width:0">
-    <input type="text" placeholder="Search for articles..." id="countries"/>
-  </div>
-</div>
-
-<div class="widgetnya">
-  <h1 class="page-heading">Tags</h1>
-  <div class="badanwidget">
-    <ul class="tags" style="padding-bottom: 20px; list-style: none;">
-      
-      <li style="font-size: 103%">
-        <a id="route" href="/tags#summer16">
-          summer16
-          <span>12</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 100%">
-        <a id="route" href="/tags#project">
-          project
-          <span>11</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 81%">
-        <a id="route" href="/tags#meta">
-          meta
-          <span>4</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 95%">
-        <a id="route" href="/tags#tutorial">
-          tutorial
-          <span>9</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 75%">
-        <a id="route" href="/tags#git">
-          git
-          <span>2</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 78%">
-        <a id="route" href="/tags#vim">
-          vim
-          <span>3</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#R">
-          R
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#Summers">
-          Summers
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#Analytics">
-          Analytics
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#Data Plotting">
-          Data Plotting
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#Statistics">
-          Statistics
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#web development">
-          web development
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#javascript">
-          javascript
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#angularjs">
-          angularjs
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#ip">
-          ip
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 78%">
-        <a id="route" href="/tags#linux">
-          linux
-          <span>3</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#bash">
-          bash
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#augmented_reality">
-          augmented_reality
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#game dev">
-          game dev
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#html5">
-          html5
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 108%">
-        <a id="route" href="/tags#competitive">
-          competitive
-          <span>14</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#WPC">
-          WPC
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 78%">
-        <a id="route" href="/tags#pclub">
-          pclub
-          <span>3</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#Dynamic Programming">
-          Dynamic Programming
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#open source">
-          open source
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 75%">
-        <a id="route" href="/tags#ML">
-          ML
-          <span>2</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#Web Development">
-          Web Development
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#Wifi Portal">
-          Wifi Portal
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#Dashboard">
-          Dashboard
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#webd">
-          webd
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#lecture">
-          lecture
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#opensource">
-          opensource
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#Cryptography">
-          Cryptography
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#DES">
-          DES
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#Symmetric Cipher">
-          Symmetric Cipher
-          <span>1</span>
-        </a>
-      </li>
-      
-      <li style="font-size: 72%">
-        <a id="route" href="/tags#Block Cipher">
-          Block Cipher
-          <span>1</span>
-        </a>
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="widgetnya" style="background: transparent;">
-  <img src="/assets/image/iitklogo.png" class="iitklogo">
-  <div class="badanwidget">
-  </div>
+   
+    "></i></a>
 </div>
 
 </div>
+
+
+  <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
+  <time datetime="2019-04-15T11:04:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Apr 15, 2019</time>
+   
+  • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">
+      
+      Divyanshu Bhardwaj
+      
+    </span>
+  </span>
+   
+    |
+  
+  <a href="/tags.html#Cryptography" style="color: #fff;"><i class="typcn typcn-tags"></i> Cryptography</a>
+  
+  <a href="/tags.html#DES" style="color: #fff;"><i class="typcn typcn-tags"></i> DES</a>
+  
+  <a href="/tags.html#Symmetric Cipher" style="color: #fff;"><i class="typcn typcn-tags"></i> Symmetric Cipher</a>
+  
+  <a href="/tags.html#Block Cipher" style="color: #fff;"><i class="typcn typcn-tags"></i> Block Cipher</a>
+  
+  </p>
+
+</article>
+
+
+
+
+
+<style>
+    #disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+</style>
+<div id="disqus_thread"></div>
+<script>
+  // For debugging
+  // var disqus_developer = 1;
+  var disqus_shortname = 'pclubiitk';
+  var disqus_config = function () {
+    this.page.url = 'https://pclub.in/cryptography/2019/04/15/DES';
+    this.page.identifier = '/cryptography/2019/04/15/DES';
+  };
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 </div>
 
       </div>
