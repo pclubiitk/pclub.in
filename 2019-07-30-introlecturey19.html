@@ -8,8 +8,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Introductory Workshop 2016</title>
-  <meta name="description" content="Introduction">
+  <title>Introductory Workshop 2017</title>
+  <meta name="description" content="The Programming Club, IIT Kanpur
+">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
@@ -17,7 +18,7 @@
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://pclub.in/pclub/2016/08/13/introworkshop16.html">
+  <link rel="canonical" href="http://pclub.in/2019-07-30-introlecturey19.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://pclub.in/feed.xml">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/image/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/image/apple-icon-60x60.png">
@@ -141,9 +142,9 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Introductory Workshop 2016</h1>
+    <h1 class="inpost-title" itemprop="name headline">Introductory Workshop 2017</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/pclub/2016/08/13/introworkshop16.html#disqus_thread" data-disqus-identifier="/pclub/2016/08/13/introworkshop16"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/2019-07-30-introlecturey19.html#disqus_thread" data-disqus-identifier=""style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
@@ -151,12 +152,24 @@
   <div class="post-content" itemprop="articleBody">
     <h1 id="introduction">Introduction</h1>
 
-<p>Hi all, welcome to the Programming Club Introductory Workshop 2016!</p>
+<p>Hello world!, welcome to the Programming Club Introductory Workshop 2019!</p>
+
+<h2 id="slack">Slack</h2>
+<p>First of all, please join our slack at <a href="https://pclubiitk.slack.com">https://pclubiitk.slack.com</a>
+and join the channel <code class="highlighter-rouge">#y19</code> to receive future notifications regarding events and other stuff
+from slack announcements directly.</p>
+
+<h2 id="lifeiitk">Life@IITK</h2>
+<p>Programming Club worked extremely hard this summer to design your life @ IITK. We’ve brought together the various factes that will span your wonderful journey through 4 years. You’ll find your personal academic schedule, can subscribe to Gymkhana events, gloat over your PORs, feel hungry with the mess menus of all halls, not get lost with the Map and plan your year with a customizable callendar.</p>
 
 <h2 id="terminal">Terminal</h2>
+<p>A vital skill for any wanna-be programmer.</p>
+
 <p>Try opening Terminal (sometimes known as Command Line) from the top-left menus. You should find it in the ‘System’ applications.</p>
 
-<p>Mind it, some operating systems like Ubuntu might have a shortcut for this, you can open it using <code class="highlighter-rouge">Ctrl+Alt+T</code>, but <em>not</em> in the CC machines.</p>
+<p>All the computer systems running today run over a terminal. You can do everything possible on a graphical system using this terminal (except of course the things requiring visual manipulation).</p>
+
+<p>Some operating systems like Ubuntu might have a shortcut for this, you can open it using <code class="highlighter-rouge">Ctrl+Alt+T</code>, but <em>not</em> in the CC machines.</p>
 
 <p>This is where you should learn to do all stuff related to programming, since this gives you <em>unfathomable</em> power.</p>
 
@@ -165,12 +178,45 @@
 
 <ul>
   <li>Files are kept inside folders</li>
-  <li>You can enter and exit folders just like in Windows</li>
+  <li>You can enter and exit folders just like in Windows`</li>
   <li>Folders are named in the following way: <code class="highlighter-rouge">/path-to-folder/folder-name</code>. This is what completely describes a folder (or a file).</li>
   <li>We will be using the word <code class="highlighter-rouge">directory</code> for folders. Please note this.</li>
 </ul>
 
 <p>To play around with this, try to use the following commands:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ ls
+
+# Lists contents of current folder
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ cd Desktop
+
+# Move to the folder named Desktop
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ cd ..
+
+# Go Back to previous folder
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ cd ~
+
+# Go back to home folder(where you start on opening a terminal)
+</code></pre>
+</div>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ touch try.txt
+
+# Create a new file named try.txt
+
+
+
+
+</code></pre>
+</div>
 
 <table>
   <tbody>
@@ -212,29 +258,75 @@
   </tbody>
 </table>
 
-<h2 id="gedit">Gedit</h2>
-<p>We will be using <code class="highlighter-rouge">gedit</code> to write your programs. Find it from the applications menu and open it. Don’t be scared, it’s very much like <code class="highlighter-rouge">notepad</code> from Windows.</p>
+<h2 id="vim">VIM</h2>
+<p>We will be using <code class="highlighter-rouge">vim</code> to write programs. Open it from the applications menu. It’s very much like <code class="highlighter-rouge">notepad</code> from Windows.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ vim try.txt
 
-<h1 id="python">Python</h1>
+# Opens the file in vim
+</code></pre>
+</div>
+
+<p>Type “An interesting programming activity”</p>
+
+<p>If you are currently in insert or append mode, press ‘ESC’ key.</p>
+
+<p>Press : (colon). The cursor should reappear at the lower left corner of the screen beside a colon prompt.</p>
+
+<p>Type wq! and press Enter key to save and exit</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ cat try.txt
+
+# Displays the content of the file.
+</code></pre>
+</div>
+
+<h1 id="python-interpreter">Python Interpreter</h1>
 
 <p>Try running <code class="highlighter-rouge">python</code> command in the terminal. You should see something like:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Python 2.7.10 (default, Jul  6 2016, 22:05:31) 
+<div class="highlighter-rouge"><pre class="highlight"><code>Python 2.7.10 (default, Aug 12 2017, 22:05:31)
 [GCC 4.9.3] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
 &gt;&gt;&gt; 
 </code></pre>
 </div>
 
-<p>The <code class="highlighter-rouge">&gt;&gt;&gt;</code> is the place where you type. Try typing the following:</p>
+<p>The <code class="highlighter-rouge">&gt;&gt;&gt;</code> is the place where you type. Try typing some of the
+commands like:</p>
 
 <ul>
   <li>2+2</li>
   <li>print “hello world!”</li>
-  <li>print a (you should get an error)</li>
-  <li>a = 4</li>
-  <li>print a*2</li>
 </ul>
+
+<h1 id="python">Python</h1>
+
+<p>Here are a few python expressions:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">a = 2+2</code></li>
+  <li><code class="highlighter-rouge">print "hello world!"</code></li>
+  <li><code class="highlighter-rouge">print a</code></li>
+  <li><code class="highlighter-rouge">print a*2</code></li>
+</ul>
+
+<p>Try typing the above lines in vim and then saving the file as
+<code class="highlighter-rouge">test.py</code>.</p>
+
+<p>After saving the file, you will need to navigate to its location
+from the terminal. Once you are in the folder containing <code class="highlighter-rouge">test.py</code> such
+that <code class="highlighter-rouge">ls</code> shows <code class="highlighter-rouge">test.py</code> as one of the files, run:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ python test.py
+</code></pre>
+</div>
+
+<p>The output would be something like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>hello world!
+4
+8
+</code></pre>
+</div>
 
 <p>You used an <em>operator</em> in <code class="highlighter-rouge">a*2</code> - the multiplication operator. Other operators you need to try out are:</p>
 
@@ -267,7 +359,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <p>Now that you know how to write simple things, let’s proceed to something interesting.</p>
 
-<p>Python reads spaces and tabs in your program as well. So for writing a complicated instruction for the computer, we will need to use multiple lines. We will <code class="highlighter-rouge">indent</code> the lines in such a way that the computer can understand that they are meant to be read together.</p>
+<p>Python reads spaces and tabs in your program as well. So for writing a complicated
+instruction for the computer, we will need to use multiple lines.
+We will <code class="highlighter-rouge">indent</code> the lines in such a way that the computer can understand that
+they are meant to be read together.</p>
 
 <p>Try the following:</p>
 
@@ -317,6 +412,34 @@ Type "help", "copyright", "credits" or "license" for more information.
 </code></pre>
 </div>
 
+<h2 id="arrays">Arrays</h2>
+
+<p>Now for some adorable arrays!</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">a</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+	<span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre>
+</div>
+<h2 id="functions">Functions</h2>
+
+<p>Adding modularity to your code</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">max</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
+	<span class="k">if</span> <span class="n">a</span><span class="o">/</span><span class="n">b</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+		<span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="n">b</span><span class="p">,</span><span class="n">a</span>
+	<span class="k">if</span> <span class="n">b</span><span class="o">/</span><span class="n">c</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+		<span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="n">c</span><span class="p">,</span><span class="n">b</span>
+	<span class="k">if</span> <span class="n">a</span><span class="o">/</span><span class="n">c</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+		<span class="n">a</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="n">c</span><span class="p">,</span><span class="n">a</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+
+</code></pre>
+</div>
+
 <h2 id="reading-input">Reading input</h2>
 <p>You can read input from the user using something like this:</p>
 
@@ -347,36 +470,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <p>So you should now <strong>certainly</strong> create an account on CodeChef! Try submitting the solution there (don’t forget to select Python when you submit). Happy coding!</p>
 
-<h1 id="c">C</h1>
-
-<p>Create a file called <code class="highlighter-rouge">hello.c</code> with the following content:</p>
-
-<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
-
-<h2 id="compiling">Compiling</h2>
-
-<p>To actually run the code, execute the following command on the terminal:</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>gcc -o hello hello.c
-</code></pre>
-</div>
-
-<p>The above command tells the computer to create an executable called <code class="highlighter-rouge">hello</code> (The part after <code class="highlighter-rouge">-o</code>) using the code from the file <code class="highlighter-rouge">hello.c</code>.</p>
-
-<p>Now to run the executable, type:</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>./hello
-</code></pre>
-</div>
-
-<p>in the terminal.</p>
-
 <h1 id="follow-up">Follow up</h1>
 
 <p>Congrats on finishing up to here! If you’re now pumped up for trying out some more challenges, try your hand at the following problems:</p>
@@ -388,38 +481,26 @@ Type "help", "copyright", "credits" or "license" for more information.
   <li><a href="https://www.codechef.com/problems/TLG">The Lead Game</a></li>
 </ul>
 
-<p><em>Note</em> C/C++/Java is the preferred language while participating in competitive contests, as ACM ICPC does not allow Python.</p>
+<p><em>Note</em> C/C++/Java are commonly the preferred languages while participating in competitive contests. Recently, ACM ICPC has started allowing Python as well.</p>
+
+<p>The ultimate feel to programming.
+P.S:-Attempt at your own risk.</p>
+<ul>
+  <li><a href="https://capturetheflag.withgoogle.com/#beginners/misc-satellite">Google Hacking Practice competitons</a></li>
+</ul>
 
   </div>
 
 <div class="arrowNav">
  
- 
-<div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/tutorial/algos/2016/08/22/dpconvex.html" title="
-&lt;p class=hoveratas&gt;Dynamic Programming Optimization with Convex Hull Trick&lt;/p&gt; &lt;p class=hoverbawah&gt;## Dynamic Programming Optimisation with Convex Hull Trick : ####...&lt;/p&gt;
-"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
-    position: relative;
-   
-    "></i></a>
-</div>
 
 
- 
-<div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/competitive/2016/08/12/SummerContestReport.html" title="
-&lt;p class=hoveratas&gt;Summer WPC&lt;/p&gt; &lt;p class=hoverbawah&gt;REPORT This summer, Programming Club IIT Kanpur kicked off the...&lt;/p&gt;
-"><i class="typcn typcn-chevron-right" style="    font-size: 30px;
-    position: relative;
-   
-    "></i></a>
-</div>
 
 </div>
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2016-08-13T04:55:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Aug 13, 2016</time>
+  <time datetime="2017-08-11T04:55:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Aug 11, 2017</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
@@ -456,8 +537,8 @@ Type "help", "copyright", "credits" or "license" for more information.
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/pclub/2016/08/13/introworkshop16';
-    this.page.identifier = '/pclub/2016/08/13/introworkshop16';
+    this.page.url = 'https://pclub.in';
+    this.page.identifier = '';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
