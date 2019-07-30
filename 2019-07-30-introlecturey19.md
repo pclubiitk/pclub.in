@@ -21,18 +21,17 @@ and join the channel `#y19` to receive future notifications regarding events and
 from slack announcements directly.
 
 ## Life@IITK
-Programming Club worked extremely hard this summer to design your life @ IITK. We've brought together the various factes that will span your wonderful journey through 4 years.
+Programming Club worked extremely hard this summer to design your life @ IITK. We've brought together the various factes that will span your wonderful journey through 4 years. You'll find your personal academic schedule, can subscribe to Gymkhana events, gloat over your PORs, feel hungry with the mess menus of all halls, not get lost with the Map and plan your year with a customizable callendar.
 
 ## Terminal
-What is going to be the useful part is to learn how to use the Linux terminal.
+A vital skill for any wanna-be programmer.
 
 Try opening Terminal (sometimes known as Command Line) from the top-left menus. You should find it in the 'System' applications.
 
-You'd see a _hacking-waala-box_.
 
-The computer systems running today all run over such a thing. The graphics are mostly a farce, and a terminal is the one running things (Yes, really), and running the graphics as well. You can do everything you can do on a graphical system using this terminal (except of course the things requiring visual manipulation).
+All the computer systems running today run over a terminal. You can do everything possible on a graphical system using this terminal (except of course the things requiring visual manipulation).
 
-Mind it, some operating systems like Ubuntu might have a shortcut for this, you can open it using `Ctrl+Alt+T`, but *not* in the CC machines.
+Some operating systems like Ubuntu might have a shortcut for this, you can open it using `Ctrl+Alt+T`, but *not* in the CC machines.
 
 This is where you should learn to do all stuff related to programming, since this gives you *unfathomable* power.
 
@@ -89,7 +88,7 @@ $ touch try.txt
 | exit | Exit | Exit the terminal |
 
 ## VIM
-We will be using `vim` to write your programs. Find it from the applications menu and open it. Don't be scared, it's very much like `notepad` from Windows.
+We will be using `vim` to write programs. Open it from the applications menu. It's very much like `notepad` from Windows.
 ```
 $ vim try.txt
 
@@ -102,7 +101,7 @@ If you are currently in insert or append mode, press 'ESC' key.
 
 Press : (colon). The cursor should reappear at the lower left corner of the screen beside a colon prompt.
 
-Type q! and press Enter key to save and exit
+Type wq! and press Enter key to save and exit
 ```
 $ cat try.txt
 
@@ -121,8 +120,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-The `>>>` is the place where you type. Try typing the some of the
-commands up like:
+The `>>>` is the place where you type. Try typing some of the
+commands like:
 
 - 2+2
 - print "hello world!"
@@ -136,10 +135,10 @@ Here are a few python expressions:
 - `print a`
 - `print a*2`
 
-Try typing all the above lines in vim and then saving the file as
+Try typing the above lines in vim and then saving the file as
 `test.py`.
 
-Now after saving the file, you will need to navigate to its location
+After saving the file, you will need to navigate to its location
 from the terminal. Once you are in the folder containing `test.py` such
 that `ls` shows `test.py` as one of the files, run:
 
@@ -223,7 +222,7 @@ while a < 10:
 
 ## Arrays
 
-Now for some creative arrays!!
+Now for some adorable arrays!
 
 ```python
 a=[]
@@ -233,8 +232,7 @@ print(a)
 ```
 ## Functions
 
-Now enough with the chit chat, we get to the real stuff now.
-Comparing 3 values and prints the largest.
+Adding modularity to your code
 
 ```python
 def max(a,b,c):
@@ -291,7 +289,6 @@ Congrats on finishing up to here! If you're now pumped up for trying out some mo
 
 *Note* C/C++/Java are commonly the preferred languages while participating in competitive contests. Recently, ACM ICPC has started allowing Python as well.
 
-
-Now for something interesting.
+The ultimate feel to programming.
 P.S:-Attempt at your own risk.
 * [Google Hacking Practice competitons](https://capturetheflag.withgoogle.com/#beginners/misc-satellite)
