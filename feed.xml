@@ -6,15 +6,16 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jul 2019 18:48:55 +0000</pubDate>
-    <lastBuildDate>Tue, 30 Jul 2019 18:48:55 +0000</lastBuildDate>
+    <pubDate>Tue, 30 Jul 2019 18:56:27 +0000</pubDate>
+    <lastBuildDate>Tue, 30 Jul 2019 18:56:27 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Introductory Workshop 2019</title>
         <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;Hello world!, welcome to the Programming Club Introductory Workshop 2019!&lt;/p&gt;
+&lt;p&gt;Hello world!&lt;br /&gt;
+Welcome to the Programming Club Introductory Workshop 2019!&lt;/p&gt;
 
 &lt;h2 id=&quot;slack&quot;&gt;Slack&lt;/h2&gt;
 &lt;p&gt;First of all, please join our slack at &lt;a href=&quot;https://pclubiitk.slack.com&quot;&gt;https://pclubiitk.slack.com&lt;/a&gt;
@@ -22,7 +23,7 @@ and join the channel &lt;code class=&quot;highlighter-rouge&quot;&gt;#y19&lt;/co
 from slack announcements directly.&lt;/p&gt;
 
 &lt;h2 id=&quot;lifeiitk&quot;&gt;Life@IITK&lt;/h2&gt;
-&lt;p&gt;Programming Club worked extremely hard this summer to design your life @ IITK. We’ve brought together the various factes that will span your wonderful journey through 4 years. You’ll find your personal academic schedule, can subscribe to Gymkhana events, gloat over your PORs, feel hungry with the mess menus of all halls, not get lost with the Map and plan your year with a customizable callendar.&lt;/p&gt;
+&lt;p&gt;Programming Club worked extremely hard this summer to design your life @ IITK. We’ve brought together the various factes that will span your wonderful journey through 4 years. You’ll find your personal academic schedule, can subscribe to Gymkhana events, gloat over your PORs, feel hungry with the mess menus of all halls, not get lost with the Map and plan your year with a customizable calendar.&lt;/p&gt;
 
 &lt;h2 id=&quot;terminal&quot;&gt;Terminal&lt;/h2&gt;
 &lt;p&gt;A vital skill for any wanna-be programmer.&lt;/p&gt;
@@ -356,6 +357,8 @@ P.S:-Attempt at your own risk.&lt;/p&gt;
         <guid isPermaLink="true">http://pclub.in/pclub/2019/07/30/introlecturey19.html</guid>
         
         <category>pclub</category>
+        
+        <category>introduction</category>
         
         
         <category>pclub</category>
