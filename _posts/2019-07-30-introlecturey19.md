@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introductory Workshop 2019
-date: 2017-08-11 10:25:00 +530
+date: 2019-07-30 10:25:00 +530
 author: Deepankur Kansal
 website: pclub.in
 category: pclub
