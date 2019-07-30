@@ -7,13 +7,15 @@ website: pclub.in
 category: pclub
 tags:
 - pclub
+- introduction
 image:
-  url:
+  url: 
 ---
 
 # Introduction
 
-Hello world!, welcome to the Programming Club Introductory Workshop 2019!
+Hello world!  
+Welcome to the Programming Club Introductory Workshop 2019!
 
 ## Slack
 First of all, please join our slack at [https://pclubiitk.slack.com](https://pclubiitk.slack.com)
@@ -21,7 +23,7 @@ and join the channel `#y19` to receive future notifications regarding events and
 from slack announcements directly.
 
 ## Life@IITK
-Programming Club worked extremely hard this summer to design your life @ IITK. We've brought together the various factes that will span your wonderful journey through 4 years. You'll find your personal academic schedule, can subscribe to Gymkhana events, gloat over your PORs, feel hungry with the mess menus of all halls, not get lost with the Map and plan your year with a customizable callendar.
+Programming Club worked extremely hard this summer to design your life @ IITK. We've brought together the various factes that will span your wonderful journey through 4 years. You'll find your personal academic schedule, can subscribe to Gymkhana events, gloat over your PORs, feel hungry with the mess menus of all halls, not get lost with the Map and plan your year with a customizable calendar.
 
 ## Terminal
 A vital skill for any wanna-be programmer.
