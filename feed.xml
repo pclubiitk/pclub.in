@@ -6,196 +6,9 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jul 2019 18:48:05 +0000</pubDate>
-    <lastBuildDate>Tue, 30 Jul 2019 18:48:05 +0000</lastBuildDate>
+    <pubDate>Tue, 30 Jul 2019 18:48:55 +0000</pubDate>
+    <lastBuildDate>Tue, 30 Jul 2019 18:48:55 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
-    
-      <item>
-        <title>Data Encryption Standard</title>
-        <description>&lt;p&gt;Data encryption standard is a &lt;strong&gt;symmetric-key block cipher&lt;/strong&gt; published by National Institute of Standard and Technology(NIST).&lt;/p&gt;
-
-&lt;h3 id=&quot;symmetric-key-block-cipher&quot;&gt;Symmetric-key block cipher&lt;/h3&gt;
-
-&lt;p&gt;Let us first understand what this means.
-Every encryption algorithm uses a key to encrypt data and decrypt it. Since the key used for encryption and decryption is same in DES it is a symmetric-key cipher. It encrypts a 64-bit block at once so it is also a block cipher. Hence the name “symmetric-key block cipher”.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Now we are ready to dive into what happens to the data in DES:&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The input data is passed through 16 similar rounds where the input is broken into two blocks(32-bits each) and the right block is passed through an encrypting function which gives 32-bit output. This output is then xor’ed with left block and the blocks obtained serve as input to the next round. Each round has a different 48-bit key which is generated from a 64-bit key using key-scheduling function.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://manansingh.github.io/Cryptolab-Offline/images/c/des-1.GIF&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step1-initial-permutation&quot;&gt;Step1: Initial Permutation&lt;/h2&gt;
-&lt;p&gt;The 64-bits input first goes through a standard permutation which is known publicly. It is available on the internet.&lt;/p&gt;
-
-&lt;p&gt;After this permutation, &lt;strong&gt;the rest of the steps are common to all 16 rounds&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;step2-expansion-of-input&quot;&gt;Step2: Expansion of input&lt;/h2&gt;
-&lt;p&gt;The permuted input is now broken into two blocks of 32-bits each. The right block is always input of the encrypting function while the left block remains unchanged.
- So we have this 32-bits input and a 48-bits key. The first thing we do is expand the 32-bits input to 48 bits.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.tutorialspoint.com/cryptography/images/permutation_logic.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step3-xor-input-with-key&quot;&gt;Step3: XOR input with key&lt;/h2&gt;
-&lt;p&gt;The right block of input which was expanded to 48-bits is now xor’ed with the key. XOR means bit by bit addition modulo 2.&lt;/p&gt;
-
-&lt;h2 id=&quot;step3s-boxes&quot;&gt;Step3:S Boxes&lt;/h2&gt;
-&lt;p&gt;This step makes use of S boxes which are non-linear mappings from 6-bits input to a 4-bits output.
-The xor’ed value (48 bit) from the previous step is divided into 8 blocks of 6-bits. The first block is fed to S1, second to S2 and so on. Each S box now maps the 6-bit entry to a 4-bit output, so the output of all S boxes form a 32-bits output.The inner configurations of S boxes is also available on the internet.&lt;/p&gt;
-
-&lt;h2 id=&quot;step4-permutation-again&quot;&gt;Step4: Permutation again!&lt;/h2&gt;
-&lt;p&gt;The output of S boxes, forming 32-bits, is again permuted to give 32-bits block according to another standard permutation table.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.pngkit.com/png/detail/375-3754049_data-encryption-standard-infobox-diagram-des-algorithm-s.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The encrypting function&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step5-xor-with-left-block&quot;&gt;Step5: XOR with left block&lt;/h2&gt;
-&lt;p&gt;The final output obtained from the previous step is now xor’ed with the left block. This xor’ed value now serves as the right block for next round and the left block will be the right block of the previous round before operating the encrypting function.&lt;/p&gt;
-
-&lt;h4 id=&quot;ln--rn-1&quot;&gt;L&lt;sub&gt;n&lt;/sub&gt; = R&lt;sub&gt;n-1&lt;/sub&gt;&lt;br /&gt;&lt;/h4&gt;
-&lt;h4 id=&quot;rn--ln-1--xor-fkn-1-rn-1&quot;&gt;R&lt;sub&gt;n&lt;/sub&gt; = L&lt;sub&gt;n-1&lt;/sub&gt;  xor f(K&lt;sub&gt;n-1&lt;/sub&gt;, R&lt;sub&gt;n-1&lt;/sub&gt;)&lt;/h4&gt;
-
-&lt;h2 id=&quot;step6-last-permutation&quot;&gt;Step6: Last Permutation&lt;/h2&gt;
-&lt;p&gt;After last round, the bits are permuted for one last time. This permutation is the opposite of initial permutation. It is chosen this way to make DES completely symmetric so that nothing new has to be done to decrypt ciphered data.&lt;/p&gt;
-
-&lt;h1 id=&quot;decryption&quot;&gt;Decryption&lt;/h1&gt;
-&lt;p&gt;Decryption in DES is very easy. Since it is a symmetric cipher, all we need to do is put the encrypted text as input and use keys in opposite order. The output you will get will be the plain text.&lt;/p&gt;
-
-&lt;h2 id=&quot;security&quot;&gt;Security&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;DES was published as an official Federal Information Processing Standard (FIPS) for the United States in 1977.&lt;/li&gt;
-  &lt;li&gt;It is no more a secure standard.&lt;/li&gt;
-  &lt;li&gt;Due to small length of key(56-bits), key can be found using brute force method.&lt;/li&gt;
-  &lt;li&gt;Differential cryptanalysis can also reduce the area of search for the possible key.&lt;/li&gt;
-  &lt;li&gt;In July 2017, a chosen-plaintext attack utilizing a rainbow table can recover the DES key for a single specific chosen plaintext 1122334455667788 in 25 seconds. A new rainbow table has to be calculated per plaintext.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 15 Apr 2019 11:04:00 +0000</pubDate>
-        <link>http://pclub.in/cryptography/2019/04/15/DES.html</link>
-        <guid isPermaLink="true">http://pclub.in/cryptography/2019/04/15/DES.html</guid>
-        
-        <category>Cryptography</category>
-        
-        <category>DES</category>
-        
-        <category>Symmetric Cipher</category>
-        
-        <category>Block Cipher</category>
-        
-        
-        <category>Cryptography</category>
-        
-      </item>
-    
-      <item>
-        <title>Variational Autoencoders</title>
-        <description>&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
-
-&lt;p&gt;Neural networks , especially convolutional neural networks, have a lot to offer than classification tasks and its optimization. Variational autoencoders are an example of a use case of CNN lets you generate new images by learning the probability distribution of the images of the input dataset . Although they are currently inferior to the state of the art networks for similar usecase, i.e GANs ,  a fully probabilistic approach for Variational autoencoders make them quite interesting to explore.&lt;/p&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Elementary&lt;/strong&gt; knowledge about probability distributions and convolutional neural networks&lt;/li&gt;
-  &lt;li&gt;Desire to learn about generative networks&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let us begin. We’ll start with a deep dive into pros and cons of autoencoders and KL divergence .&lt;/p&gt;
-
-&lt;h3 id=&quot;autoencoders&quot;&gt;Autoencoders&lt;/h3&gt;
-
-&lt;p&gt;An autoencoder network is a pair of two connected networks- an encoder and a decoder. An encoder network takes in an input, and converts it into a smaller, dense representation, which the decoder network can use to convert it back to the 
-original input.
-Usually , the convolutional layers of any CNN take in a large image (eg. rank 3 tensor of size 28x28x3), and convert it to a much more compact, dense representation (eg. rank 1 tensor of size 10) which is then used by the fully connected classifier network to classify the image. Similary, the encoder network takes in an input and produces a much smaller representation that contains enough information for the decoder network to process and convert it into the desired output format. 
-Autoencoders take this idea, and slightly flip it on its head, by making the encoder generate encodings specifically useful for reconstructing its own input.&lt;/p&gt;
-
-&lt;p&gt;The entire network is usually trained as a whole. The loss function is usually either the mean-squared error or cross-entropy between the output and the input, known as the reconstruction loss, which penalizes the network for creating outputs different 
-from the input.&lt;/p&gt;
-
-&lt;p&gt;As the encoding has far less units than the input, the encoder must choose to discard information. The encoder learns to preserve as much of the relevant information as possible and discards the irrelevant stuff. The decoder learns to take the encoding and reconstruct it into a proper image. Together, they form an autoencoder network which indeed is quite successful in reconstructing the input data .&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.oreilly.com/library/view/neural-network-programming/9781788390392/assets/f98d20e7-7c2e-4a37-8e18-5fc0bc23ab87.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;why-vartional-autoencoders&quot;&gt;Why Vartional Autoencoders?&lt;/h3&gt;
-
-&lt;p&gt;Standard autoencoders learn to generate compact representations and reconstruct their inputs well to a good accuracy level but the input data does not cover the entire latent space (where encoded vectors lie) . Due to this discontinuous latent space, the purpose of generating new data is not served by simple autoencoders .
-For example, training an autoencoder on the MNIST dataset, and visualizing the encodings from a 2D latent space reveals the formation of distinct clusters. This makes sense, as distinct encodings for each image type makes it far easier for the decoder to decode them. This is fine if you’re just replicating the same images.
-But when you’re building a generative model, you don’t want to prepare to replicate the same image you put in. You want to randomly sample from the latent space, or generate variations on an input image, from a continuous latent space.
-If the space has discontinuities (eg. gaps between clusters) and you sample/generate a variation from there, the decoder will simply generate an unrealistic output, because the decoder has no idea how to deal with that region of the latent space.&lt;/p&gt;
-
-&lt;p&gt;Variational Autoencoders (VAEs) have one fundamentally unique property that differentiates them from autoencoders : their latent spaces are, by design, continuous, allowing easy random sampling .This property that makes them so useful and accurate for generating data&lt;/p&gt;
-
-&lt;h3 id=&quot;kl-divergence&quot;&gt;KL divergence&lt;/h3&gt;
-
-&lt;p&gt;In this post we’re going to take a look at way of comparing two probability distributions called Kullback-Leibler Divergence (often shortened to just KL divergence). Very often in Probability and Statistics, we’ll replace observed data or a complex distributions with a simpler, approximating distribution. KL Divergence helps us to measure just how much information we lose when we choose an approximation.
-KL Divergence has its origins in information theory. The primary goal of information theory is to measure how much information is in data. The most important metric in information theory is called Entropy, typically denoted as &lt;strong&gt;H&lt;/strong&gt;. Entropy of a probability distribution is defined as following :
-&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/527fa6ed7da2d6fcfb64cc71b4fc09b4c248887a&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
- ,where common values of b are 2 or e and P(X) denotes the Probability mass function .&lt;/p&gt;
-
-&lt;p&gt;Kullback-Leibler Divergence is just a slight modification of our formula for entropy. Rather than just having our probability distribution &lt;strong&gt;P&lt;/strong&gt; ,we measure the difference of the log values of the approximating probability distribution &lt;strong&gt;Q&lt;/strong&gt;
- &lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/726edcd02293461b82768ea2fd299c3a3ef16112&quot; alt=&quot;image&quot; /&gt;   for discrete probability distributions &lt;br /&gt;
-&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/756dd25036c5da76a59e58a001f3196e059f537d&quot; alt=&quot;image&quot; /&gt;   for continuous probability distributions &lt;br /&gt;
-Relating this with entropy,
-&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/3576ec5ae54b2b2df156b620d4982009c0a73432&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
-where &lt;strong&gt;H(P,Q)&lt;/strong&gt; is the cross entropy of &lt;strong&gt;P&lt;/strong&gt; and &lt;strong&gt;Q&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;We can observe here that by  minimizing the KL divergence of two probability distributions , we can make our approximating distribution more closer to the actual probability distribution and this optimization is tractable .Combining KL divergence with neural networks allows us to learn very complex approximating distribution for our data and this approach is used Variational  Autoencoders .&lt;/p&gt;
-
-&lt;h3 id=&quot;deep-dive-into-vaes&quot;&gt;Deep dive into VAEs&lt;/h3&gt;
-&lt;p&gt;The unique property in VAEs which makes them so useful in maing generative models is that their latent space is continuous which allows random sampling .This happens because its encoder does not output an encoding vector of size n, rather, outputs two vectors of size n: a vector of means, &lt;strong&gt;μ&lt;/strong&gt;, and another vector of standard deviations, &lt;strong&gt;σ&lt;/strong&gt; . &lt;strong&gt;μ&lt;/strong&gt; and &lt;strong&gt;σ&lt;/strong&gt; now become the parameters for a vector of size n containing random values having mean and standard deviation as &lt;strong&gt;μ&lt;/strong&gt; and &lt;strong&gt;σ&lt;/strong&gt; respectively . This will result in random generation of data having mean and standard deviation close to the input data.&lt;br /&gt;
-&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*96ho7qSyW0nKrLvSoZHOtA.png&quot; alt=&quot;image&quot; /&gt;  &lt;br /&gt;
-Hence,the mean vector controls where the encoding of an input should be centered around, while the standard deviation controls the area, how much from the mean the encoding can vary. As encodings are generated at random from anywhere inside the shaded portion, the decoder learns all the nearby points that refer to sample of that class . This allows the decoder to not just decode specific encodings in the latent space but also the ones which vary thus making the latent space continuous .&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*xCjoga9IPyNUSiz9E7ao7A.png&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
-We want our encodings to be as close as possible while still being distinct to make smooth interpolation, but sometimes we might end up making our latent space similar to the right picture shown above as there are no limits on what values vectors μ and σ can take on, so to avoid this , we introduce KL divergence in the loss function . 
-The following image shows the calculation of the log of the data likelihood&lt;br /&gt;
-&lt;img src=&quot;https://github.com/namanbiyani/images/blob/master/Screenshot%20from%202019-04-16%2010-30-17.png?raw=true&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Although the third term in intractable, by Gibbs inequality , we know that KL divergence of two distributions is always non-negative . Hence, the first two terms can be a tractable lower bound to the log data likelihood which we can easily differentiate (P(X&lt;/td&gt;
-      &lt;td&gt;Z) is mostly a simple distribution like Guassian and KL term is also differntiable ) and hence optimize .The combination of first two terms is also known as Variational Lower Bound (“ELBO”) . The first term here is responsible for reconstructing the original input data and the second term is responsible for making approximate distribution close to input distribution .&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;applications-of-vaes&quot;&gt;Applications of VAEs&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;One can generate fake human face photos as accurate as the following&lt;br /&gt;
-&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*EhsiaTuiKtvuRDe_wBRX5Q.png&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;VAEs are highly successful in Vector arithmetic . For example, if we would like to add features like adding glasses on a face ,we can find two samples, one with glasses and one without, obtain their encoded vectors from the encoder, and save the difference. Add this new “glasses” vector to any other face image and decode it.&lt;br /&gt;
-&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*YTV9WARg5fdQ2jKieExb0A.png&quot; alt=&quot;image&quot; /&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*El2DhlTK5duHyVxVbdqk9Q.png&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;One could even train an autoencoder using LSTM encoder-decoder pairs for sequential, discrete data (something not possible with methods such as GANs), to produce synthetic text, or even interpolate between MIDI samples such as Google Brain’s Magenta’s MusicVAE .&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;supporting-links&quot;&gt;Supporting Links&lt;/h3&gt;
-
-&lt;p&gt;So I guess this is enough for a start. There is much to learn, but perhaps that would be covered in another article. I present to you a few useful links:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/&quot;&gt;Tutorial on Variational autoencoder&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained&quot;&gt;KL divergence blog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Do read research papers related to this as literature survey is highly important to get a feel of it.&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
-        <link>http://pclub.in/probabilistic%20machine%20learning/generative%20networks/2019/04/10/variational-autoencoder.html</link>
-        <guid isPermaLink="true">http://pclub.in/probabilistic%20machine%20learning/generative%20networks/2019/04/10/variational-autoencoder.html</guid>
-        
-        <category>probabilistic machine learning</category>
-        
-        <category>probability distributions</category>
-        
-        <category>optimizing divergences</category>
-        
-        
-        <category>probabilistic machine learning</category>
-        
-        <category>generative networks</category>
-        
-      </item>
     
       <item>
         <title>Introductory Workshop 2019</title>
@@ -538,14 +351,201 @@ P.S:-Attempt at your own risk.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://capturetheflag.withgoogle.com/#beginners/misc-satellite&quot;&gt;Google Hacking Practice competitons&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 11 Aug 2017 04:55:00 +0000</pubDate>
-        <link>http://pclub.in/pclub/2017/08/11/introlecturey19.html</link>
-        <guid isPermaLink="true">http://pclub.in/pclub/2017/08/11/introlecturey19.html</guid>
+        <pubDate>Tue, 30 Jul 2019 04:55:00 +0000</pubDate>
+        <link>http://pclub.in/pclub/2019/07/30/introlecturey19.html</link>
+        <guid isPermaLink="true">http://pclub.in/pclub/2019/07/30/introlecturey19.html</guid>
         
         <category>pclub</category>
         
         
         <category>pclub</category>
+        
+      </item>
+    
+      <item>
+        <title>Data Encryption Standard</title>
+        <description>&lt;p&gt;Data encryption standard is a &lt;strong&gt;symmetric-key block cipher&lt;/strong&gt; published by National Institute of Standard and Technology(NIST).&lt;/p&gt;
+
+&lt;h3 id=&quot;symmetric-key-block-cipher&quot;&gt;Symmetric-key block cipher&lt;/h3&gt;
+
+&lt;p&gt;Let us first understand what this means.
+Every encryption algorithm uses a key to encrypt data and decrypt it. Since the key used for encryption and decryption is same in DES it is a symmetric-key cipher. It encrypts a 64-bit block at once so it is also a block cipher. Hence the name “symmetric-key block cipher”.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Now we are ready to dive into what happens to the data in DES:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The input data is passed through 16 similar rounds where the input is broken into two blocks(32-bits each) and the right block is passed through an encrypting function which gives 32-bit output. This output is then xor’ed with left block and the blocks obtained serve as input to the next round. Each round has a different 48-bit key which is generated from a 64-bit key using key-scheduling function.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://manansingh.github.io/Cryptolab-Offline/images/c/des-1.GIF&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step1-initial-permutation&quot;&gt;Step1: Initial Permutation&lt;/h2&gt;
+&lt;p&gt;The 64-bits input first goes through a standard permutation which is known publicly. It is available on the internet.&lt;/p&gt;
+
+&lt;p&gt;After this permutation, &lt;strong&gt;the rest of the steps are common to all 16 rounds&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;step2-expansion-of-input&quot;&gt;Step2: Expansion of input&lt;/h2&gt;
+&lt;p&gt;The permuted input is now broken into two blocks of 32-bits each. The right block is always input of the encrypting function while the left block remains unchanged.
+ So we have this 32-bits input and a 48-bits key. The first thing we do is expand the 32-bits input to 48 bits.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.tutorialspoint.com/cryptography/images/permutation_logic.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step3-xor-input-with-key&quot;&gt;Step3: XOR input with key&lt;/h2&gt;
+&lt;p&gt;The right block of input which was expanded to 48-bits is now xor’ed with the key. XOR means bit by bit addition modulo 2.&lt;/p&gt;
+
+&lt;h2 id=&quot;step3s-boxes&quot;&gt;Step3:S Boxes&lt;/h2&gt;
+&lt;p&gt;This step makes use of S boxes which are non-linear mappings from 6-bits input to a 4-bits output.
+The xor’ed value (48 bit) from the previous step is divided into 8 blocks of 6-bits. The first block is fed to S1, second to S2 and so on. Each S box now maps the 6-bit entry to a 4-bit output, so the output of all S boxes form a 32-bits output.The inner configurations of S boxes is also available on the internet.&lt;/p&gt;
+
+&lt;h2 id=&quot;step4-permutation-again&quot;&gt;Step4: Permutation again!&lt;/h2&gt;
+&lt;p&gt;The output of S boxes, forming 32-bits, is again permuted to give 32-bits block according to another standard permutation table.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.pngkit.com/png/detail/375-3754049_data-encryption-standard-infobox-diagram-des-algorithm-s.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The encrypting function&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step5-xor-with-left-block&quot;&gt;Step5: XOR with left block&lt;/h2&gt;
+&lt;p&gt;The final output obtained from the previous step is now xor’ed with the left block. This xor’ed value now serves as the right block for next round and the left block will be the right block of the previous round before operating the encrypting function.&lt;/p&gt;
+
+&lt;h4 id=&quot;ln--rn-1&quot;&gt;L&lt;sub&gt;n&lt;/sub&gt; = R&lt;sub&gt;n-1&lt;/sub&gt;&lt;br /&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;rn--ln-1--xor-fkn-1-rn-1&quot;&gt;R&lt;sub&gt;n&lt;/sub&gt; = L&lt;sub&gt;n-1&lt;/sub&gt;  xor f(K&lt;sub&gt;n-1&lt;/sub&gt;, R&lt;sub&gt;n-1&lt;/sub&gt;)&lt;/h4&gt;
+
+&lt;h2 id=&quot;step6-last-permutation&quot;&gt;Step6: Last Permutation&lt;/h2&gt;
+&lt;p&gt;After last round, the bits are permuted for one last time. This permutation is the opposite of initial permutation. It is chosen this way to make DES completely symmetric so that nothing new has to be done to decrypt ciphered data.&lt;/p&gt;
+
+&lt;h1 id=&quot;decryption&quot;&gt;Decryption&lt;/h1&gt;
+&lt;p&gt;Decryption in DES is very easy. Since it is a symmetric cipher, all we need to do is put the encrypted text as input and use keys in opposite order. The output you will get will be the plain text.&lt;/p&gt;
+
+&lt;h2 id=&quot;security&quot;&gt;Security&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;DES was published as an official Federal Information Processing Standard (FIPS) for the United States in 1977.&lt;/li&gt;
+  &lt;li&gt;It is no more a secure standard.&lt;/li&gt;
+  &lt;li&gt;Due to small length of key(56-bits), key can be found using brute force method.&lt;/li&gt;
+  &lt;li&gt;Differential cryptanalysis can also reduce the area of search for the possible key.&lt;/li&gt;
+  &lt;li&gt;In July 2017, a chosen-plaintext attack utilizing a rainbow table can recover the DES key for a single specific chosen plaintext 1122334455667788 in 25 seconds. A new rainbow table has to be calculated per plaintext.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 15 Apr 2019 11:04:00 +0000</pubDate>
+        <link>http://pclub.in/cryptography/2019/04/15/DES.html</link>
+        <guid isPermaLink="true">http://pclub.in/cryptography/2019/04/15/DES.html</guid>
+        
+        <category>Cryptography</category>
+        
+        <category>DES</category>
+        
+        <category>Symmetric Cipher</category>
+        
+        <category>Block Cipher</category>
+        
+        
+        <category>Cryptography</category>
+        
+      </item>
+    
+      <item>
+        <title>Variational Autoencoders</title>
+        <description>&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;Neural networks , especially convolutional neural networks, have a lot to offer than classification tasks and its optimization. Variational autoencoders are an example of a use case of CNN lets you generate new images by learning the probability distribution of the images of the input dataset . Although they are currently inferior to the state of the art networks for similar usecase, i.e GANs ,  a fully probabilistic approach for Variational autoencoders make them quite interesting to explore.&lt;/p&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Elementary&lt;/strong&gt; knowledge about probability distributions and convolutional neural networks&lt;/li&gt;
+  &lt;li&gt;Desire to learn about generative networks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let us begin. We’ll start with a deep dive into pros and cons of autoencoders and KL divergence .&lt;/p&gt;
+
+&lt;h3 id=&quot;autoencoders&quot;&gt;Autoencoders&lt;/h3&gt;
+
+&lt;p&gt;An autoencoder network is a pair of two connected networks- an encoder and a decoder. An encoder network takes in an input, and converts it into a smaller, dense representation, which the decoder network can use to convert it back to the 
+original input.
+Usually , the convolutional layers of any CNN take in a large image (eg. rank 3 tensor of size 28x28x3), and convert it to a much more compact, dense representation (eg. rank 1 tensor of size 10) which is then used by the fully connected classifier network to classify the image. Similary, the encoder network takes in an input and produces a much smaller representation that contains enough information for the decoder network to process and convert it into the desired output format. 
+Autoencoders take this idea, and slightly flip it on its head, by making the encoder generate encodings specifically useful for reconstructing its own input.&lt;/p&gt;
+
+&lt;p&gt;The entire network is usually trained as a whole. The loss function is usually either the mean-squared error or cross-entropy between the output and the input, known as the reconstruction loss, which penalizes the network for creating outputs different 
+from the input.&lt;/p&gt;
+
+&lt;p&gt;As the encoding has far less units than the input, the encoder must choose to discard information. The encoder learns to preserve as much of the relevant information as possible and discards the irrelevant stuff. The decoder learns to take the encoding and reconstruct it into a proper image. Together, they form an autoencoder network which indeed is quite successful in reconstructing the input data .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.oreilly.com/library/view/neural-network-programming/9781788390392/assets/f98d20e7-7c2e-4a37-8e18-5fc0bc23ab87.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;why-vartional-autoencoders&quot;&gt;Why Vartional Autoencoders?&lt;/h3&gt;
+
+&lt;p&gt;Standard autoencoders learn to generate compact representations and reconstruct their inputs well to a good accuracy level but the input data does not cover the entire latent space (where encoded vectors lie) . Due to this discontinuous latent space, the purpose of generating new data is not served by simple autoencoders .
+For example, training an autoencoder on the MNIST dataset, and visualizing the encodings from a 2D latent space reveals the formation of distinct clusters. This makes sense, as distinct encodings for each image type makes it far easier for the decoder to decode them. This is fine if you’re just replicating the same images.
+But when you’re building a generative model, you don’t want to prepare to replicate the same image you put in. You want to randomly sample from the latent space, or generate variations on an input image, from a continuous latent space.
+If the space has discontinuities (eg. gaps between clusters) and you sample/generate a variation from there, the decoder will simply generate an unrealistic output, because the decoder has no idea how to deal with that region of the latent space.&lt;/p&gt;
+
+&lt;p&gt;Variational Autoencoders (VAEs) have one fundamentally unique property that differentiates them from autoencoders : their latent spaces are, by design, continuous, allowing easy random sampling .This property that makes them so useful and accurate for generating data&lt;/p&gt;
+
+&lt;h3 id=&quot;kl-divergence&quot;&gt;KL divergence&lt;/h3&gt;
+
+&lt;p&gt;In this post we’re going to take a look at way of comparing two probability distributions called Kullback-Leibler Divergence (often shortened to just KL divergence). Very often in Probability and Statistics, we’ll replace observed data or a complex distributions with a simpler, approximating distribution. KL Divergence helps us to measure just how much information we lose when we choose an approximation.
+KL Divergence has its origins in information theory. The primary goal of information theory is to measure how much information is in data. The most important metric in information theory is called Entropy, typically denoted as &lt;strong&gt;H&lt;/strong&gt;. Entropy of a probability distribution is defined as following :
+&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/527fa6ed7da2d6fcfb64cc71b4fc09b4c248887a&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
+ ,where common values of b are 2 or e and P(X) denotes the Probability mass function .&lt;/p&gt;
+
+&lt;p&gt;Kullback-Leibler Divergence is just a slight modification of our formula for entropy. Rather than just having our probability distribution &lt;strong&gt;P&lt;/strong&gt; ,we measure the difference of the log values of the approximating probability distribution &lt;strong&gt;Q&lt;/strong&gt;
+ &lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/726edcd02293461b82768ea2fd299c3a3ef16112&quot; alt=&quot;image&quot; /&gt;   for discrete probability distributions &lt;br /&gt;
+&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/756dd25036c5da76a59e58a001f3196e059f537d&quot; alt=&quot;image&quot; /&gt;   for continuous probability distributions &lt;br /&gt;
+Relating this with entropy,
+&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/3576ec5ae54b2b2df156b620d4982009c0a73432&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
+where &lt;strong&gt;H(P,Q)&lt;/strong&gt; is the cross entropy of &lt;strong&gt;P&lt;/strong&gt; and &lt;strong&gt;Q&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;We can observe here that by  minimizing the KL divergence of two probability distributions , we can make our approximating distribution more closer to the actual probability distribution and this optimization is tractable .Combining KL divergence with neural networks allows us to learn very complex approximating distribution for our data and this approach is used Variational  Autoencoders .&lt;/p&gt;
+
+&lt;h3 id=&quot;deep-dive-into-vaes&quot;&gt;Deep dive into VAEs&lt;/h3&gt;
+&lt;p&gt;The unique property in VAEs which makes them so useful in maing generative models is that their latent space is continuous which allows random sampling .This happens because its encoder does not output an encoding vector of size n, rather, outputs two vectors of size n: a vector of means, &lt;strong&gt;μ&lt;/strong&gt;, and another vector of standard deviations, &lt;strong&gt;σ&lt;/strong&gt; . &lt;strong&gt;μ&lt;/strong&gt; and &lt;strong&gt;σ&lt;/strong&gt; now become the parameters for a vector of size n containing random values having mean and standard deviation as &lt;strong&gt;μ&lt;/strong&gt; and &lt;strong&gt;σ&lt;/strong&gt; respectively . This will result in random generation of data having mean and standard deviation close to the input data.&lt;br /&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*96ho7qSyW0nKrLvSoZHOtA.png&quot; alt=&quot;image&quot; /&gt;  &lt;br /&gt;
+Hence,the mean vector controls where the encoding of an input should be centered around, while the standard deviation controls the area, how much from the mean the encoding can vary. As encodings are generated at random from anywhere inside the shaded portion, the decoder learns all the nearby points that refer to sample of that class . This allows the decoder to not just decode specific encodings in the latent space but also the ones which vary thus making the latent space continuous .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*xCjoga9IPyNUSiz9E7ao7A.png&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
+We want our encodings to be as close as possible while still being distinct to make smooth interpolation, but sometimes we might end up making our latent space similar to the right picture shown above as there are no limits on what values vectors μ and σ can take on, so to avoid this , we introduce KL divergence in the loss function . 
+The following image shows the calculation of the log of the data likelihood&lt;br /&gt;
+&lt;img src=&quot;https://github.com/namanbiyani/images/blob/master/Screenshot%20from%202019-04-16%2010-30-17.png?raw=true&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Although the third term in intractable, by Gibbs inequality , we know that KL divergence of two distributions is always non-negative . Hence, the first two terms can be a tractable lower bound to the log data likelihood which we can easily differentiate (P(X&lt;/td&gt;
+      &lt;td&gt;Z) is mostly a simple distribution like Guassian and KL term is also differntiable ) and hence optimize .The combination of first two terms is also known as Variational Lower Bound (“ELBO”) . The first term here is responsible for reconstructing the original input data and the second term is responsible for making approximate distribution close to input distribution .&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;applications-of-vaes&quot;&gt;Applications of VAEs&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;One can generate fake human face photos as accurate as the following&lt;br /&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*EhsiaTuiKtvuRDe_wBRX5Q.png&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;VAEs are highly successful in Vector arithmetic . For example, if we would like to add features like adding glasses on a face ,we can find two samples, one with glasses and one without, obtain their encoded vectors from the encoder, and save the difference. Add this new “glasses” vector to any other face image and decode it.&lt;br /&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*YTV9WARg5fdQ2jKieExb0A.png&quot; alt=&quot;image&quot; /&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*El2DhlTK5duHyVxVbdqk9Q.png&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;One could even train an autoencoder using LSTM encoder-decoder pairs for sequential, discrete data (something not possible with methods such as GANs), to produce synthetic text, or even interpolate between MIDI samples such as Google Brain’s Magenta’s MusicVAE .&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;supporting-links&quot;&gt;Supporting Links&lt;/h3&gt;
+
+&lt;p&gt;So I guess this is enough for a start. There is much to learn, but perhaps that would be covered in another article. I present to you a few useful links:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/&quot;&gt;Tutorial on Variational autoencoder&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained&quot;&gt;KL divergence blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Do read research papers related to this as literature survey is highly important to get a feel of it.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
+        <link>http://pclub.in/probabilistic%20machine%20learning/generative%20networks/2019/04/10/variational-autoencoder.html</link>
+        <guid isPermaLink="true">http://pclub.in/probabilistic%20machine%20learning/generative%20networks/2019/04/10/variational-autoencoder.html</guid>
+        
+        <category>probabilistic machine learning</category>
+        
+        <category>probability distributions</category>
+        
+        <category>optimizing divergences</category>
+        
+        
+        <category>probabilistic machine learning</category>
+        
+        <category>generative networks</category>
         
       </item>
     
