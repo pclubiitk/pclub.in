@@ -6,9 +6,204 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jul 2019 18:56:27 +0000</pubDate>
-    <lastBuildDate>Tue, 30 Jul 2019 18:56:27 +0000</lastBuildDate>
+    <pubDate>Fri, 25 Oct 2019 21:59:55 +0000</pubDate>
+    <lastBuildDate>Fri, 25 Oct 2019 21:59:55 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Travis CI</title>
+        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h4 id=&quot;travis-ci&quot;&gt;Travis CI&lt;/h4&gt;
+
+&lt;p&gt;The aim is to fully dockerise Life@IITK and look at implementation, the constant integration and deployment of new features as per updation.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
+        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-travis-ci.html</link>
+        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-travis-ci.html</guid>
+        
+        <category>winter19</category>
+        
+        <category>wocproject</category>
+        
+        
+        <category>wocproject</category>
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
+        <title>Nomination Portal</title>
+        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h4 id=&quot;nomination-portal&quot;&gt;Nomination portal&lt;/h4&gt;
+
+&lt;p&gt;The portal will be used to announce empty positions in gymkhana and students can apply for the positions on portal itself. This will have the following projects :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Creating new positions and announcing vacancy: It will be used by authorised users to create new positions in gymkhana whenever required and to announce vacancies.&lt;/li&gt;
+  &lt;li&gt;Filing nominations: Students can apply for vacant positions using the portal.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
+        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-nomination-portal.html</link>
+        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-nomination-portal.html</guid>
+        
+        <category>winter19</category>
+        
+        <category>wocproject</category>
+        
+        
+        <category>wocproject</category>
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
+        <title>Music App</title>
+        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h4 id=&quot;music-application&quot;&gt;Music Application&lt;/h4&gt;
+
+&lt;p&gt;We aim to develop a music app with extra features to make listening to music more entertaining. Features include searching for what your friends are listening, private mode for listening to music and sharing music with friends.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
+        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-music.html</link>
+        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-music.html</guid>
+        
+        <category>winter19</category>
+        
+        <category>wocproject</category>
+        
+        
+        <category>wocproject</category>
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
+        <title>Mess Portal</title>
+        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h4 id=&quot;mess-portal&quot;&gt;Mess portal&lt;/h4&gt;
+
+&lt;p&gt;Mess portal will be used as a one stop to view mess menu and other details such as timing of all messes. It will be a feature integrated in Life IITK app.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
+        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-mess-portal.html</link>
+        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-mess-portal.html</guid>
+        
+        <category>winter19</category>
+        
+        <category>wocproject</category>
+        
+        
+        <category>wocproject</category>
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
+        <title>Map Integration</title>
+        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h4 id=&quot;map-integration&quot;&gt;Map Integration&lt;/h4&gt;
+
+&lt;p&gt;A 3D map needs to be developed for use in Life IITK app. The map will have all the locations of campus tagged and can be used to see the upcoming events at any venue.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
+        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-map.html</link>
+        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-map.html</guid>
+        
+        <category>winter19</category>
+        
+        <category>wocproject</category>
+        
+        
+        <category>wocproject</category>
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
+        <title>Election Portal</title>
+        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h4 id=&quot;election-portal&quot;&gt;Election portal&lt;/h4&gt;
+
+&lt;p&gt;Portal that will handle all the election related work online will be developed and integrated to the currently existing Life IITK app. It will include the following projects.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Position creation: To create and notify about new positions for elections only by authorised accounts.&lt;/li&gt;
+  &lt;li&gt;Filing nominations: To file nominations for running in elections. This will also submitting details of campaigners.&lt;/li&gt;
+  &lt;li&gt;Actual voting: To handle voting on election day. It should be secure and able to cater to the election day needs of institute.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
+        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-election-portal.html</link>
+        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-election-portal.html</guid>
+        
+        <category>winter19</category>
+        
+        <category>wocproject</category>
+        
+        
+        <category>wocproject</category>
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
+        <title>Buy and Sell</title>
+        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h4 id=&quot;buy-and-sell&quot;&gt;Buy and Sell&lt;/h4&gt;
+
+&lt;p&gt;The current buy and sell forum of iitk on facebook is very disorganised and chaotic. We aim to develop and integrate a portal to buy and sell things on campus into life@IITK app.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
+        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-buy-and-sell.html</link>
+        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-buy-and-sell.html</guid>
+        
+        <category>winter19</category>
+        
+        <category>wocproject</category>
+        
+        
+        <category>wocproject</category>
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
+        <title>Blogs</title>
+        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h4 id=&quot;blogs&quot;&gt;Blogs&lt;/h4&gt;
+
+&lt;p&gt;Various clubs and cells publish articles frequently but since they are published on different platforms, it is hard to follow them. So we want to create a platform where various clubs and cells can put up their blogs and students can follow blogs of their interest.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
+        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-blogs.html</link>
+        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-blogs.html</guid>
+        
+        <category>winter19</category>
+        
+        <category>wocproject</category>
+        
+        
+        <category>wocproject</category>
+        
+        <category>Project</category>
+        
+      </item>
     
       <item>
         <title>Introductory Workshop 2019</title>
@@ -440,725 +635,6 @@ The xor’ed value (48 bit) from the previous step is divided into 8 blocks of 6
         
         
         <category>Cryptography</category>
-        
-      </item>
-    
-      <item>
-        <title>Variational Autoencoders</title>
-        <description>&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
-
-&lt;p&gt;Neural networks , especially convolutional neural networks, have a lot to offer than classification tasks and its optimization. Variational autoencoders are an example of a use case of CNN lets you generate new images by learning the probability distribution of the images of the input dataset . Although they are currently inferior to the state of the art networks for similar usecase, i.e GANs ,  a fully probabilistic approach for Variational autoencoders make them quite interesting to explore.&lt;/p&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Elementary&lt;/strong&gt; knowledge about probability distributions and convolutional neural networks&lt;/li&gt;
-  &lt;li&gt;Desire to learn about generative networks&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let us begin. We’ll start with a deep dive into pros and cons of autoencoders and KL divergence .&lt;/p&gt;
-
-&lt;h3 id=&quot;autoencoders&quot;&gt;Autoencoders&lt;/h3&gt;
-
-&lt;p&gt;An autoencoder network is a pair of two connected networks- an encoder and a decoder. An encoder network takes in an input, and converts it into a smaller, dense representation, which the decoder network can use to convert it back to the 
-original input.
-Usually , the convolutional layers of any CNN take in a large image (eg. rank 3 tensor of size 28x28x3), and convert it to a much more compact, dense representation (eg. rank 1 tensor of size 10) which is then used by the fully connected classifier network to classify the image. Similary, the encoder network takes in an input and produces a much smaller representation that contains enough information for the decoder network to process and convert it into the desired output format. 
-Autoencoders take this idea, and slightly flip it on its head, by making the encoder generate encodings specifically useful for reconstructing its own input.&lt;/p&gt;
-
-&lt;p&gt;The entire network is usually trained as a whole. The loss function is usually either the mean-squared error or cross-entropy between the output and the input, known as the reconstruction loss, which penalizes the network for creating outputs different 
-from the input.&lt;/p&gt;
-
-&lt;p&gt;As the encoding has far less units than the input, the encoder must choose to discard information. The encoder learns to preserve as much of the relevant information as possible and discards the irrelevant stuff. The decoder learns to take the encoding and reconstruct it into a proper image. Together, they form an autoencoder network which indeed is quite successful in reconstructing the input data .&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.oreilly.com/library/view/neural-network-programming/9781788390392/assets/f98d20e7-7c2e-4a37-8e18-5fc0bc23ab87.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;why-vartional-autoencoders&quot;&gt;Why Vartional Autoencoders?&lt;/h3&gt;
-
-&lt;p&gt;Standard autoencoders learn to generate compact representations and reconstruct their inputs well to a good accuracy level but the input data does not cover the entire latent space (where encoded vectors lie) . Due to this discontinuous latent space, the purpose of generating new data is not served by simple autoencoders .
-For example, training an autoencoder on the MNIST dataset, and visualizing the encodings from a 2D latent space reveals the formation of distinct clusters. This makes sense, as distinct encodings for each image type makes it far easier for the decoder to decode them. This is fine if you’re just replicating the same images.
-But when you’re building a generative model, you don’t want to prepare to replicate the same image you put in. You want to randomly sample from the latent space, or generate variations on an input image, from a continuous latent space.
-If the space has discontinuities (eg. gaps between clusters) and you sample/generate a variation from there, the decoder will simply generate an unrealistic output, because the decoder has no idea how to deal with that region of the latent space.&lt;/p&gt;
-
-&lt;p&gt;Variational Autoencoders (VAEs) have one fundamentally unique property that differentiates them from autoencoders : their latent spaces are, by design, continuous, allowing easy random sampling .This property that makes them so useful and accurate for generating data&lt;/p&gt;
-
-&lt;h3 id=&quot;kl-divergence&quot;&gt;KL divergence&lt;/h3&gt;
-
-&lt;p&gt;In this post we’re going to take a look at way of comparing two probability distributions called Kullback-Leibler Divergence (often shortened to just KL divergence). Very often in Probability and Statistics, we’ll replace observed data or a complex distributions with a simpler, approximating distribution. KL Divergence helps us to measure just how much information we lose when we choose an approximation.
-KL Divergence has its origins in information theory. The primary goal of information theory is to measure how much information is in data. The most important metric in information theory is called Entropy, typically denoted as &lt;strong&gt;H&lt;/strong&gt;. Entropy of a probability distribution is defined as following :
-&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/527fa6ed7da2d6fcfb64cc71b4fc09b4c248887a&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
- ,where common values of b are 2 or e and P(X) denotes the Probability mass function .&lt;/p&gt;
-
-&lt;p&gt;Kullback-Leibler Divergence is just a slight modification of our formula for entropy. Rather than just having our probability distribution &lt;strong&gt;P&lt;/strong&gt; ,we measure the difference of the log values of the approximating probability distribution &lt;strong&gt;Q&lt;/strong&gt;
- &lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/726edcd02293461b82768ea2fd299c3a3ef16112&quot; alt=&quot;image&quot; /&gt;   for discrete probability distributions &lt;br /&gt;
-&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/756dd25036c5da76a59e58a001f3196e059f537d&quot; alt=&quot;image&quot; /&gt;   for continuous probability distributions &lt;br /&gt;
-Relating this with entropy,
-&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/3576ec5ae54b2b2df156b620d4982009c0a73432&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
-where &lt;strong&gt;H(P,Q)&lt;/strong&gt; is the cross entropy of &lt;strong&gt;P&lt;/strong&gt; and &lt;strong&gt;Q&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;We can observe here that by  minimizing the KL divergence of two probability distributions , we can make our approximating distribution more closer to the actual probability distribution and this optimization is tractable .Combining KL divergence with neural networks allows us to learn very complex approximating distribution for our data and this approach is used Variational  Autoencoders .&lt;/p&gt;
-
-&lt;h3 id=&quot;deep-dive-into-vaes&quot;&gt;Deep dive into VAEs&lt;/h3&gt;
-&lt;p&gt;The unique property in VAEs which makes them so useful in maing generative models is that their latent space is continuous which allows random sampling .This happens because its encoder does not output an encoding vector of size n, rather, outputs two vectors of size n: a vector of means, &lt;strong&gt;μ&lt;/strong&gt;, and another vector of standard deviations, &lt;strong&gt;σ&lt;/strong&gt; . &lt;strong&gt;μ&lt;/strong&gt; and &lt;strong&gt;σ&lt;/strong&gt; now become the parameters for a vector of size n containing random values having mean and standard deviation as &lt;strong&gt;μ&lt;/strong&gt; and &lt;strong&gt;σ&lt;/strong&gt; respectively . This will result in random generation of data having mean and standard deviation close to the input data.&lt;br /&gt;
-&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*96ho7qSyW0nKrLvSoZHOtA.png&quot; alt=&quot;image&quot; /&gt;  &lt;br /&gt;
-Hence,the mean vector controls where the encoding of an input should be centered around, while the standard deviation controls the area, how much from the mean the encoding can vary. As encodings are generated at random from anywhere inside the shaded portion, the decoder learns all the nearby points that refer to sample of that class . This allows the decoder to not just decode specific encodings in the latent space but also the ones which vary thus making the latent space continuous .&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*xCjoga9IPyNUSiz9E7ao7A.png&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
-We want our encodings to be as close as possible while still being distinct to make smooth interpolation, but sometimes we might end up making our latent space similar to the right picture shown above as there are no limits on what values vectors μ and σ can take on, so to avoid this , we introduce KL divergence in the loss function . 
-The following image shows the calculation of the log of the data likelihood&lt;br /&gt;
-&lt;img src=&quot;https://github.com/namanbiyani/images/blob/master/Screenshot%20from%202019-04-16%2010-30-17.png?raw=true&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Although the third term in intractable, by Gibbs inequality , we know that KL divergence of two distributions is always non-negative . Hence, the first two terms can be a tractable lower bound to the log data likelihood which we can easily differentiate (P(X&lt;/td&gt;
-      &lt;td&gt;Z) is mostly a simple distribution like Guassian and KL term is also differntiable ) and hence optimize .The combination of first two terms is also known as Variational Lower Bound (“ELBO”) . The first term here is responsible for reconstructing the original input data and the second term is responsible for making approximate distribution close to input distribution .&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;applications-of-vaes&quot;&gt;Applications of VAEs&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;One can generate fake human face photos as accurate as the following&lt;br /&gt;
-&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*EhsiaTuiKtvuRDe_wBRX5Q.png&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;VAEs are highly successful in Vector arithmetic . For example, if we would like to add features like adding glasses on a face ,we can find two samples, one with glasses and one without, obtain their encoded vectors from the encoder, and save the difference. Add this new “glasses” vector to any other face image and decode it.&lt;br /&gt;
-&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*YTV9WARg5fdQ2jKieExb0A.png&quot; alt=&quot;image&quot; /&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*El2DhlTK5duHyVxVbdqk9Q.png&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;One could even train an autoencoder using LSTM encoder-decoder pairs for sequential, discrete data (something not possible with methods such as GANs), to produce synthetic text, or even interpolate between MIDI samples such as Google Brain’s Magenta’s MusicVAE .&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;supporting-links&quot;&gt;Supporting Links&lt;/h3&gt;
-
-&lt;p&gt;So I guess this is enough for a start. There is much to learn, but perhaps that would be covered in another article. I present to you a few useful links:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/&quot;&gt;Tutorial on Variational autoencoder&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained&quot;&gt;KL divergence blog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Do read research papers related to this as literature survey is highly important to get a feel of it.&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
-        <link>http://pclub.in/probabilistic%20machine%20learning/generative%20networks/2019/04/10/variational-autoencoder.html</link>
-        <guid isPermaLink="true">http://pclub.in/probabilistic%20machine%20learning/generative%20networks/2019/04/10/variational-autoencoder.html</guid>
-        
-        <category>probabilistic machine learning</category>
-        
-        <category>probability distributions</category>
-        
-        <category>optimizing divergences</category>
-        
-        
-        <category>probabilistic machine learning</category>
-        
-        <category>generative networks</category>
-        
-      </item>
-    
-      <item>
-        <title>Introductory Workshop 2017</title>
-        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;Hi all, welcome to the Programming Club Introductory Workshop 2017!&lt;/p&gt;
-
-&lt;h2 id=&quot;slack&quot;&gt;Slack&lt;/h2&gt;
-&lt;p&gt;First of all, please join our slack at &lt;a href=&quot;https://pclubiitk.slack.com&quot;&gt;https://pclubiitk.slack.com&lt;/a&gt;
-and join the channel &lt;code class=&quot;highlighter-rouge&quot;&gt;#y17&lt;/code&gt; to receive future emails regarding events and other stuff
-from slack announcements directly.&lt;/p&gt;
-
-&lt;h2 id=&quot;terminal&quot;&gt;Terminal&lt;/h2&gt;
-&lt;p&gt;Try opening Terminal (sometimes known as Command Line) from the top-left menus. You should find it in the ‘System’ applications.&lt;/p&gt;
-
-&lt;p&gt;Mind it, some operating systems like Ubuntu might have a shortcut for this, you can open it using &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+Alt+T&lt;/code&gt;, but &lt;em&gt;not&lt;/em&gt; in the CC machines.&lt;/p&gt;
-
-&lt;p&gt;This is where you should learn to do all stuff related to programming, since this gives you &lt;em&gt;unfathomable&lt;/em&gt; power.&lt;/p&gt;
-
-&lt;h2 id=&quot;directory-structure&quot;&gt;Directory structure&lt;/h2&gt;
-&lt;p&gt;Linux organizes files and folders in the following way:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Files are kept inside folders&lt;/li&gt;
-  &lt;li&gt;You can enter and exit folders just like in Windows&lt;/li&gt;
-  &lt;li&gt;Folders are named in the following way: &lt;code class=&quot;highlighter-rouge&quot;&gt;/path-to-folder/folder-name&lt;/code&gt;. This is what completely describes a folder (or a file).&lt;/li&gt;
-  &lt;li&gt;We will be using the word &lt;code class=&quot;highlighter-rouge&quot;&gt;directory&lt;/code&gt; for folders. Please note this.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To play around with this, try to use the following commands:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls
-
-# Lists contents of current folder
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd Desktop
-
-# Move to the folder named Desktop
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ..
-
-# Go Back to previous folder
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~
-
-# Go back to home folder(where you start on opening a terminal)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Command&lt;/td&gt;
-      &lt;td&gt;Full form&lt;/td&gt;
-      &lt;td&gt;Description&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;ls&lt;/td&gt;
-      &lt;td&gt;list screen&lt;/td&gt;
-      &lt;td&gt;List all the files and folders in current directory&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cd&lt;/td&gt;
-      &lt;td&gt;change directory&lt;/td&gt;
-      &lt;td&gt;Enter a folder whose path is known&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;pwd&lt;/td&gt;
-      &lt;td&gt;present working directory&lt;/td&gt;
-      &lt;td&gt;Full name of the current folder you are in&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;~&lt;/td&gt;
-      &lt;td&gt;tilde&lt;/td&gt;
-      &lt;td&gt;Short form for your home folder&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+c&lt;/code&gt;(keyboard)&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Exit/Cancel the current command&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;exit&lt;/td&gt;
-      &lt;td&gt;Exit&lt;/td&gt;
-      &lt;td&gt;Exit the terminal&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;gedit&quot;&gt;Gedit&lt;/h2&gt;
-&lt;p&gt;We will be using &lt;code class=&quot;highlighter-rouge&quot;&gt;gedit&lt;/code&gt; to write your programs. Find it from the applications menu and open it. Don’t be scared, it’s very much like &lt;code class=&quot;highlighter-rouge&quot;&gt;notepad&lt;/code&gt; from Windows.&lt;/p&gt;
-
-&lt;h1 id=&quot;python&quot;&gt;Python&lt;/h1&gt;
-
-&lt;p&gt;Here are a few python expressions:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a = 2+2&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print &quot;hello world!&quot;&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print a&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print a*2&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Try typing all the above lines in gedit and then saving the file as
-&lt;code class=&quot;highlighter-rouge&quot;&gt;test.py&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now after saving the file, you will need to navigate to its location
-from the terminal. Once you are in the folder containing &lt;code class=&quot;highlighter-rouge&quot;&gt;test.py&lt;/code&gt; such
-that &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt; shows &lt;code class=&quot;highlighter-rouge&quot;&gt;test.py&lt;/code&gt; as one of the files, run:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python test.py
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The output would be something like this:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;hello world!
-4
-8
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;You used an &lt;em&gt;operator&lt;/em&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;a*2&lt;/code&gt; - the multiplication operator. Other operators you need to try out are:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;+&lt;/td&gt;
-      &lt;td&gt;Addition&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;Subtraction&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;*&lt;/td&gt;
-      &lt;td&gt;Multiplication&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;/&lt;/td&gt;
-      &lt;td&gt;Division&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;**&lt;/td&gt;
-      &lt;td&gt;To the power of&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;ifelse&quot;&gt;If/Else&lt;/h2&gt;
-
-&lt;p&gt;Now that you know how to write simple things, let’s proceed to something interesting.&lt;/p&gt;
-
-&lt;p&gt;Python reads spaces and tabs in your program as well. So for writing a complicated
-instruction for the computer, we will need to use multiple lines.
-We will &lt;code class=&quot;highlighter-rouge&quot;&gt;indent&lt;/code&gt; the lines in such a way that the computer can understand that
-they are meant to be read together.&lt;/p&gt;
-
-&lt;p&gt;Try the following:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is not zero&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is zero&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;That’s it! See?&lt;/p&gt;
-
-&lt;p&gt;Sometimes one condition isn’t enough though. In that case, you are allowed to chain up multiple conditions using &lt;code class=&quot;highlighter-rouge&quot;&gt;and&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;or&lt;/code&gt; like so:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Condition successful&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;condition failed&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;That’s all good, but what if you want multiple checks on a variable? For example, let’s say you want to do Action 1 if &lt;code class=&quot;highlighter-rouge&quot;&gt;a&amp;lt;10&lt;/code&gt; and Action 2 if &lt;code class=&quot;highlighter-rouge&quot;&gt;a=10&lt;/code&gt; and Action 3 when &lt;code class=&quot;highlighter-rouge&quot;&gt;a&amp;gt;10&lt;/code&gt;, what then? This is where &lt;code class=&quot;highlighter-rouge&quot;&gt;if-elif-elif-elif-...-else&lt;/code&gt; construct comes into the picture. Use it like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is less than 0&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is between 0 and 4&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is between 4 and 10&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is bigger than 10&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;loops&quot;&gt;Loops&lt;/h2&gt;
-
-&lt;p&gt;Now for some loopy-loops!&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;reading-input&quot;&gt;Reading input&lt;/h2&gt;
-&lt;p&gt;You can read input from the user using something like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello mr. &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;See what happens there?&lt;/p&gt;
-
-&lt;h1 id=&quot;codechef&quot;&gt;CodeChef!&lt;/h1&gt;
-&lt;p&gt;Try this link &lt;a href=&quot;https://www.codechef.com/problems/TEST&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Can you solve this problem? Try writing a program for this! Please give it a try before you scroll down.&lt;/p&gt;
-
-&lt;p&gt;It’s quite small! Here’s the solution!&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;So you should now &lt;strong&gt;certainly&lt;/strong&gt; create an account on CodeChef! Try submitting the solution there (don’t forget to select Python when you submit). Happy coding!&lt;/p&gt;
-
-&lt;h1 id=&quot;python-interpreter&quot;&gt;Python Interpreter&lt;/h1&gt;
-
-&lt;p&gt;Try running &lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt; command in the terminal. You should see something like:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Python 2.7.10 (default, Aug 12 2017, 22:05:31)
-[GCC 4.9.3] on linux2
-Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
-&amp;gt;&amp;gt;&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; is the place where you type. Try typing the some of the
-commands up like:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;2+2&lt;/li&gt;
-  &lt;li&gt;print “hello world!”&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;follow-up&quot;&gt;Follow up&lt;/h1&gt;
-
-&lt;p&gt;Congrats on finishing up to here! If you’re now pumped up for trying out some more challenges, try your hand at the following problems:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/HS08TEST&quot;&gt;ATM&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/FCTRL&quot;&gt;Factorial&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/INTEST&quot;&gt;Enormous Input Test&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/TLG&quot;&gt;The Lead Game&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;Note&lt;/em&gt; C/C++/Java are commonly the preferred languages while participating in competitive contests. Recently, ACM ICPC has started allowing Python as well.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 11 Aug 2017 04:55:00 +0000</pubDate>
-        <link>http://pclub.in/pclub/2017/08/11/introworkshop17.html</link>
-        <guid isPermaLink="true">http://pclub.in/pclub/2017/08/11/introworkshop17.html</guid>
-        
-        <category>pclub</category>
-        
-        
-        <category>pclub</category>
-        
-      </item>
-    
-      <item>
-        <title>Summer'17 Plans and Workshops</title>
-        <description>&lt;center&gt;
-  &lt;img src=&quot;/assets/image/summer.png&quot; style=&quot;width: 70%;&quot; /&gt;
-&lt;/center&gt;
-
-&lt;p&gt;Hello everyone!&lt;/p&gt;
-
-&lt;p&gt;This summer, the programming club has many activities planned, including
-lectures on open-source, web-dev, competitive programming and more. We also plan to
-conduct a hackathon to give people an opportunity to work on stuff and learn new technologies
-like Django, Node.JS, Ruby on Rails, etc.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h2 id=&quot;finalized-events&quot;&gt;Finalized Events&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Event&lt;/th&gt;
-      &lt;th&gt;Date Time&lt;/th&gt;
-      &lt;th&gt;Venue&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Linux Install Fest&lt;/td&gt;
-      &lt;td&gt;21/05, 2-7 PM&lt;/td&gt;
-      &lt;td&gt;L1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Basic Linux + Git&lt;/td&gt;
-      &lt;td&gt;23/05, 2-5 PM&lt;/td&gt;
-      &lt;td&gt;L1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;LaTeX&lt;/td&gt;
-      &lt;td&gt;24/05, 7-9 PM&lt;/td&gt;
-      &lt;td&gt;L1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;C/C++ for Competitive Coding&lt;/td&gt;
-      &lt;td&gt;28/05, 8-10 PM&lt;/td&gt;
-      &lt;td&gt;L1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Basic Python Intro&lt;/td&gt;
-      &lt;td&gt;29/05, 8-10 PM&lt;/td&gt;
-      &lt;td&gt;L1&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;tentative-events&quot;&gt;Tentative Events&lt;/h2&gt;
-
-&lt;p&gt;These may or may not occur based on interest of campus junta. Feel free to suggest more topics in the comments below.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Event&lt;/th&gt;
-      &lt;th&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Javascript&lt;/td&gt;
-      &lt;td&gt;From Intermediate to Advanced (3-4 Lectures)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Open Source Bootcamp&lt;/td&gt;
-      &lt;td&gt;Basic introduction to open source&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Competitive Programming Contests&lt;/td&gt;
-      &lt;td&gt;Various contests of different levels&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Hackathon&lt;/td&gt;
-      &lt;td&gt;Hackathon for people to try out new technologies&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Object Oriented Programming&lt;/td&gt;
-      &lt;td&gt;Introduction to OOP and common pitfalls (oops!)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Functional Programming&lt;/td&gt;
-      &lt;td&gt;Introduction to FP with some examples&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Capture the Flag Contest&lt;/td&gt;
-      &lt;td&gt;CTF for first-timers&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Parallel Programming&lt;/td&gt;
-      &lt;td&gt;Intro to threads, mutex, etc.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Deploying Applications&lt;/td&gt;
-      &lt;td&gt;Intro to docker and modifying apps for docker based deployment.(This might be compulsory for people doing web based projects)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-        <pubDate>Mon, 15 May 2017 04:25:20 +0000</pubDate>
-        <link>http://pclub.in/2017/05/15/summerplans.html</link>
-        <guid isPermaLink="true">http://pclub.in/2017/05/15/summerplans.html</guid>
-        
-        <category>pclub</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Antaragni-App</title>
-        <description>&lt;h1 id=&quot;antaragni-app-16&quot;&gt;Antaragni App 16&lt;/h1&gt;
-
-&lt;h2 id=&quot;synopsis&quot;&gt;Synopsis&lt;/h2&gt;
-
-&lt;p&gt;The objective of this project was to update the android app Antaragni-App 15 making it more dynamic and user-friendly for the Antaragni-16, the Annual cultural festival of IITK. Major changes include integration with the online database of Antaragni.
-The App is available at &lt;a href=&quot;https://play.google.com/store/apps/details?id=antaragni.in.antaragni&quot;&gt;https://play.google.com/store/apps/details?id=antaragni.in.antaragni&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/saransh7/pics/master/14729083_1280036892028146_8754690254501950483_n.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;updates-included&quot;&gt;Updates Included&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Integrating Real-Time database&lt;/li&gt;
-  &lt;li&gt;Extending its support to API 24(permission access)&lt;/li&gt;
-  &lt;li&gt;Integrating Facebook Sign-in&lt;/li&gt;
-  &lt;li&gt;Updating Theme(Hues of Bliss)&lt;/li&gt;
-  &lt;li&gt;Various Bug fixes in Antaragni-App 15&lt;/li&gt;
-  &lt;li&gt;Inclusion of Google Map services&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Github Repositories&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Project-Ant : &lt;a href=&quot;https://github.com/navya/Project-Ant&quot;&gt;https://github.com/navya/Project-Ant&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Antaragni-App : &lt;a href=&quot;https://github.com/kunalapila/Antaragni-App&quot;&gt;https://github.com/kunalapila/Antaragni-App&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;project-timeline&quot;&gt;Project Timeline&lt;/h1&gt;
-&lt;p&gt;At first changes were made to the &lt;a href=&quot;https://github.com/navya/Project-Ant&quot;&gt;Project-Ant&lt;/a&gt; repository during summers-16. Afterwards during mid-october work shifted to a new repository &lt;a href=&quot;https://github.com/kunalapila/Antaragni-App&quot;&gt;Antaragni-App&lt;/a&gt; using basic framework of Project-Ant in collaboration with the Updates.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
-        <link>http://pclub.in/project/2017/03/18/Antaragni_App.html</link>
-        <guid isPermaLink="true">http://pclub.in/project/2017/03/18/Antaragni_App.html</guid>
-        
-        <category>summer16</category>
-        
-        <category>project</category>
-        
-        
-        <category>project</category>
-        
-        <category>Project</category>
-        
-      </item>
-    
-      <item>
-        <title>I got my first PR accepted!</title>
-        <description>&lt;p&gt;It can be intimidating to contribute to open source. Making a Pull Request (PR) is the first barrier you need to overcome. To encourage everyone, Programming Club is awarding a free T-Shirt to anyone who makes his/her first successful Pull Request to a reputable third party repository.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/NFf5CQ6.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To qualify for the prize, the repository needs to:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Be older than 15th January 2017.&lt;/li&gt;
-  &lt;li&gt;Must be owned by someone outside of IIT Kanpur.&lt;/li&gt;
-  &lt;li&gt;Must have at least 200 stars in GitHub.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So get to work, and shoot us an email on our &lt;a href=&quot;mailto:pclubiitk@gmail.com&quot;&gt;official Email-ID&lt;/a&gt; the moment you succeed in getting your first PR accepted!&lt;/p&gt;
-
-&lt;p&gt;The following students have managed to get a pull request accepted successfully till date (and get a T-Shirt!):&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Name: Anant Prakash&lt;br /&gt;
-GitHub: &lt;a href=&quot;https://github.com/APwhitehat&quot;&gt;APwhitehat&lt;/a&gt;&lt;br /&gt;
-Project: https://github.com/catapult-project/catapult&lt;br /&gt;
-Pull Request: https://codereview.chromium.org/2670003007/&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Name: Vardhan Gupta&lt;br /&gt;
-GitHub: &lt;a href=&quot;https://github.com/vardhan26&quot;&gt;vardhan26&lt;/a&gt;&lt;br /&gt;
-Project and PR: https://github.com/whatwg/html/pull/2350&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Name: Parv Mor&lt;br /&gt;
-GitHub: &lt;a href=&quot;https://github.com/parvmor&quot;&gt;parvmor&lt;/a&gt;&lt;br /&gt;
-Project and PR: https://github.com/pybee/batavia/pull/421&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Name: Bhavishya Gopesh&lt;br /&gt;
-GitHub: &lt;a href=&quot;https://github.com/bhavishyagopesh&quot;&gt;bhavishyagopesh&lt;/a&gt;&lt;br /&gt;
-Project and PR: https://github.com/python-hyper/hyper-h2/pull/464&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Name: Hritwik Taneja&lt;br /&gt;
-GitHub: &lt;a href=&quot;https://github.com/hritwik567&quot;&gt;hritwik567&lt;/a&gt;&lt;br /&gt;
-Project and PR: https://github.com/mozilla/thimble.mozilla.org/pull/1732&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Congratulations! Keep Hacking!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 16 Mar 2017 17:53:21 +0000</pubDate>
-        <link>http://pclub.in/events/2017/03/16/praccepted.html</link>
-        <guid isPermaLink="true">http://pclub.in/events/2017/03/16/praccepted.html</guid>
-        
-        <category>git</category>
-        
-        <category>opensource</category>
-        
-        
-        <category>events</category>
-        
-      </item>
-    
-      <item>
-        <title>Ethical Hacking</title>
-        <description>&lt;p&gt;‘Ethical Hacking’ was a ‘project’ under the PClub with an aim to familiarise the campus junta with the field and to prepare for CTFs. 
-After an initial reading on HTML, Javascript and PHP, we moved on to beginner challeges - &lt;a href=&quot;http://overthewire.org/wargames/bandit/&quot;&gt;Bandits&lt;/a&gt; and &lt;a href=&quot;http://overthewire.org/wargames/natas/&quot;&gt;Natas&lt;/a&gt;. These were helpful for learning basic bash commands and web security. The challenges on Hack This Site!, primarily the &lt;a href=&quot;https://www.hackthissite.org/missions/javascript/&quot;&gt;javascript challenges&lt;/a&gt; were also attempted.&lt;/p&gt;
-
-&lt;p&gt;We also completed the first two weeks of the Cyber Security course on &lt;a href=&quot;https://www.coursera.org/learn/software-security/home&quot;&gt;Coursera&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Apart from this, we also read basic assembly language and binary exploitation. First few challeges on &lt;a href=&quot;https://microcorruption.com/&quot;&gt;MicroCorruption&lt;/a&gt; were completed.&lt;/p&gt;
-
-&lt;p&gt;We also participated in an intra-campus CTF and attempted a few archived challenges of &lt;a href=&quot;https://backdoor.sdslabs.co/&quot;&gt;Backdoor&lt;/a&gt;, SDS Labs.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/samarthc/project-report/blob/master/Pclub-Ethical-Hacking.pdf&quot;&gt;Link to the Project Report&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
-        <link>http://pclub.in/project/2017/01/31/Ethical-Hacking.html</link>
-        <guid isPermaLink="true">http://pclub.in/project/2017/01/31/Ethical-Hacking.html</guid>
-        
-        <category>summer16</category>
-        
-        <category>project</category>
-        
-        
-        <category>project</category>
-        
-        <category>Project</category>
-        
-      </item>
-    
-      <item>
-        <title>Web Forum</title>
-        <description>&lt;h1 id=&quot;web-forum&quot;&gt;&lt;a href=&quot;https://github.com/heyitssat/Forum.github.io&quot;&gt;Web forum&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;This project is a forum where you can Read posts, Write , Discuss , Share your views and Ask your questions. It organizes all content in various tags to make it easier for you to connect with people of same interests. Here ideas and views on a particular issue can be exchanged.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/heyitssat/heyitssat.github.io/master/report_image/1%20(2).png&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ckeditor and kcfinder provides you with the tools you may feel the need of to make your post interactive.&lt;/li&gt;
-  &lt;li&gt;Phpmailer is used to send emails for user verification making it secure.&lt;/li&gt;
-  &lt;li&gt;Use of materealizecss and bootstrap makes the portal interactive and responsive.&lt;/li&gt;
-  &lt;li&gt;Back-end programming is coded in php and database stored using mysql.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Website: &lt;a href=&quot;https://heyitssat.github.io/&quot;&gt;https://heyitssat.github.io/&lt;/a&gt; 
-Github Wiki: &lt;a href=&quot;https://github.com/heyitssat/Project_pragati/wiki&quot;&gt;Forum wiki&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 08 Jan 2017 11:28:00 +0000</pubDate>
-        <link>http://pclub.in/project/2017/01/08/web_forum.html</link>
-        <guid isPermaLink="true">http://pclub.in/project/2017/01/08/web_forum.html</guid>
-        
-        <category>summer16</category>
-        
-        <category>project</category>
-        
-        
-        <category>project</category>
-        
-        <category>Project</category>
-        
-      </item>
-    
-      <item>
-        <title>Install Fest: Linux Mint</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;Place Linux Mint DVD or USB bootable image in the appropriate drive and reboot the computer in order to start with Linux Mint 18 installation.&lt;/li&gt;
-  &lt;li&gt;After reboot, press the special function key and instruct the machine firmware (UEFI) to boot-up from the appropriate DVD or USB drive (the special function keys usually are F1, F8, F12, F10, F2 or sometimes del, depending on the motherboard manufacturer). Once the media boots-up a new screen should appear on your monitor. Choose Start Linux Mint 18 Cinnamon and hit Enter to continue.
-&lt;img src=&quot;http://www.tecmint.com/wp-content/uploads/2016/07/Select-Start-Linux-Mint-Cinnamon-Install.png&quot; alt=&quot;Boot Image&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Wait until the system loads into RAM in order to run in live-mode and open the installer by double clicking on Install Linux Mint icon. Choose the language you wish to perform the installation and click on Continue button to proceed further.&lt;/li&gt;
-  &lt;li&gt;On the next screen hit on Continue button to proceed further. Third-party software can be automatically download and installed on this step by checking the check-box. The recommendation would be to leave the box unchecked for the moment and manually install proprietary software later, after the installation process completes. &lt;img src=&quot;http://www.tecmint.com/wp-content/uploads/2016/07/Preparing-to-Install-Linux-Mint-18.png&quot; alt=&quot;Preparing to Install Linux Mint 18&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;At the next screen you can choose the Installation Type. If Windows Boot manager is automatically detected you can choose to Install Linux Mint alongside Windows Boot Manager. This option ensures that the HDD will be automatically partitioned by the installer without any data loss.The second option, Erase disk and install Linux Mint, should be avoided for dual-boot because is potentially dangerous and will wipe-out your disk. For a more flexible partition layout you should go with Something else option and hit on Continue button to proceed further.&lt;/li&gt;
-  &lt;li&gt;Now let’s create the partition layout for Linux Mint 18. I would recommend that you create three partitions, one for / (root), one for /home accounts data and one partition for swap. Swap partition is necessary if you have RAM less than 8 GB, if you have RAM greater than 8GB, feel free to leave making the swap partition. Select the free space and hit on the + icon from below. On this partition use the following settings and hit OK to create the partition.
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Size = 4096 MB
-Type for for the new partition = Beginning of this space
-Use as = swap area
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Using the same steps as above create the /(root) partition with the below settings:
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Size = minimum 20 GB
-Type for the new partition = Primary
-Location for the new partition = Beginning of this space
-Use as = EXT4 journaling file system
-Mount point = /
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Finally, create the home slice with the below settings (use all the available free space to create home partition). Home partition is the place where all documents for user accounts will be stored by default, except the root account. In case of a system failure you can reinstall the operating system for scratch without touching or losing the settings and documents of all users.
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Size = remaining free space
-Type for the new partition = Primary
-Location for the new partition = Beginning 
-Use as = EXT4 journaling file system
-Mount point = /home
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-    &lt;p&gt;&lt;img src=&quot;http://www.tecmint.com/wp-content/uploads/2016/07/Create-Home-Partition.png&quot; alt=&quot;Installation type&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;After finishing creating the partition layout, select Windows Boot Manager as the device for installing the Grub boot loader and hit on Install Now button in order to commit changes to disk and proceed with the installation. Next a new pop-up window will ask you if you agree with committing changes to disk. Hit on Continue to accept changes and the installer will now start to write changes to disk. &lt;a href=&quot;https://http://www.tecmint.com/install-linux-mint-18-alongside-windows-10-or-8-in-dual-boot-uefi-mode/&quot;&gt;This has been taken from tecmint.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Fri, 06 Jan 2017 19:45:00 +0000</pubDate>
-        <link>http://pclub.in/2017/01/06/Mint_install.html</link>
-        <guid isPermaLink="true">http://pclub.in/2017/01/06/Mint_install.html</guid>
-        
         
       </item>
     
