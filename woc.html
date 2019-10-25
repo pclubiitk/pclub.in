@@ -1,0 +1,46 @@
+---
+layout: default
+title: Winter of Code 2019
+permalink: /woc.html
+---
+<div style="margin: 1rem auto;">
+
+<h1 class="archive-header"></h1>
+<div class="wf-container" style="margin-top: 80px;">
+  {% for post in site.posts %}
+    {% if post.categories contains 'wocproject' %}
+      <div class="wf-box">
+        <a id="route" href="{{ post.url | prepend: site.baseurl }}">
+          <div class="tglgede" style="
+            background-color: rgba(105, 105, 105, 0.44);
+            background-image: url({{post.image.url}});
+            background-position:  center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          ">
+            <p style="
+              background-color: rgba(0, 0, 0, 0.21);
+              padding: 30%;
+              color: #DADADA;
+              justify-content: center;
+              text-align: center;
+              margin-bottom: 0;
+            ">
+            </p>
+          </div>
+         </a>
+         <div class="content">
+            <a id="route" href="{{ post.url | prepend: site.baseurl }}">
+              <h3 style="padding: 5px 8px;
+                margin-bottom: 0;
+                background-color: #00bc8c;
+                color: #fff;
+                font-size: 15px;
+                border-top: 3px solid #03775A;">{{ post.title }}
+              </h3>
+            </a>
+         </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
