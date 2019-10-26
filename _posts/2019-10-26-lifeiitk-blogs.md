@@ -13,8 +13,16 @@ categories:
 
 ---
 
-# [Life@IITK](https://github.com/life-iitk)
+#### Description
+ - Develop a blog feature for the Life@IITK app, where various clubs and cells can put up their blogs and students can follow blogs of their interest.
 
-#### Blogs
+#### Relevant Technologies
+- Python
+- Django
+- React
 
- Various clubs and cells publish articles frequently but since they are published on different platforms, it is hard to follow them. So we want to create a platform where various clubs and cells can put up their blogs and students can follow blogs of their interest.
+#### Repository
+- [Life@IITK](https://github.com/life-iitk)
+
+#### Mentor
+- Aditya Gulati

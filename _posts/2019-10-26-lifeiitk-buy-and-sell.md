@@ -13,8 +13,18 @@ categories:
 
 ---
 
-# [Life@IITK](https://github.com/life-iitk)
+#### Description
 
-#### Buy and Sell
+- The current buy and sell forum of iitk on facebook is very disorganised and chaotic. 
+- Develop and integrate a portal to buy and sell things on campus into the Life@IITK app. 
 
- The current buy and sell forum of iitk on facebook is very disorganised and chaotic. We aim to develop and integrate a portal to buy and sell things on campus into life@IITK app. 
+#### Relevant Technologies
+- Python
+- Django
+- React
+
+#### Repository
+- [Life@IITK](https://github.com/life-iitk)
+
+#### Mentor
+- Aditya Gulati

@@ -22,3 +22,9 @@ Portal that will handle all the election related work online will be developed a
 - Position creation: To create and notify about new positions for elections only by authorised accounts.
 - Filing nominations: To file nominations for running in elections. This will also submitting details of campaigners.
 - Actual voting: To handle voting on election day. It should be secure and able to cater to the election day needs of institute.
+
+#### Repository
+- [Life@IITK](https://github.com/life-iitk)
+
+#### Mentor
+- Priydarshi Singh
