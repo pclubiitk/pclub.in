@@ -13,8 +13,18 @@ categories:
 
 ---
 
-# [Life@IITK](https://github.com/life-iitk)
-
-#### Map Integration
+#### Description
  
-A 3D map needs to be developed for use in Life IITK app. The map will have all the locations of campus tagged and can be used to see the upcoming events at any venue.
+- Develop a 3D map for the Life IITK app. 
+- The map will have all the locations of campus tagged and can be used to see the upcoming events at any venue.
+
+#### Relevant Technologies
+- Python
+- Django
+- React
+
+#### Repository
+- [Life@IITK](https://github.com/life-iitk)
+
+#### Mentor
+- Aditya Gulati
