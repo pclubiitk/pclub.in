@@ -6,17 +6,44 @@
 </description>
     <link>http://pclub.in/</link>
     <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Oct 2019 21:59:55 +0000</pubDate>
-    <lastBuildDate>Fri, 25 Oct 2019 21:59:55 +0000</lastBuildDate>
+    <pubDate>Sat, 26 Oct 2019 14:57:49 +0000</pubDate>
+    <lastBuildDate>Sat, 26 Oct 2019 14:57:49 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Travis CI</title>
-        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+        <description>&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
 
-&lt;h4 id=&quot;travis-ci&quot;&gt;Travis CI&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;The aim is to streamline all further development of LifeIITK such that there is consistency and reproducibility across developers.&lt;/li&gt;
+  &lt;li&gt;Setup proper development, test and production environments for lifeiitk.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;The aim is to fully dockerise Life@IITK and look at implementation, the constant integration and deployment of new features as per updation.&lt;/p&gt;
+&lt;h4 id=&quot;relevant-technologies&quot;&gt;Relevant Technologies&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Docker&lt;/li&gt;
+  &lt;li&gt;Travis CI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;application-task&quot;&gt;Application Task&lt;/h4&gt;
+&lt;p&gt;Write a &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; that spins up 3 docker containers&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;node.js backend&lt;/li&gt;
+  &lt;li&gt;react frontend&lt;/li&gt;
+  &lt;li&gt;mysql database.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For reference look up &lt;a href=&quot;https://github.com/yugeshk/hotel-management/blob/master/docker-compose.yml&quot;&gt;this&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;repository&quot;&gt;Repository&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;mentor&quot;&gt;Mentor&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Yugesh Kothari&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
         <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-travis-ci.html</link>
@@ -35,15 +62,32 @@
     
       <item>
         <title>Nomination Portal</title>
-        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+        <description>&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
 
-&lt;h4 id=&quot;nomination-portal&quot;&gt;Nomination portal&lt;/h4&gt;
+&lt;p&gt;The portal will be used to announce empty positions in gymkhana and students can apply for the positions on portal itself.&lt;/p&gt;
 
-&lt;p&gt;The portal will be used to announce empty positions in gymkhana and students can apply for the positions on portal itself. This will have the following projects :&lt;/p&gt;
-
+&lt;p&gt;This will have the following projects :&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Creating new positions and announcing vacancy: It will be used by authorised users to create new positions in gymkhana whenever required and to announce vacancies.&lt;/li&gt;
   &lt;li&gt;Filing nominations: Students can apply for vacant positions using the portal.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This portal will be added to the Life@IITK application.&lt;/p&gt;
+
+&lt;h4 id=&quot;relevant-technologies&quot;&gt;Relevant Technologies&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Python&lt;/li&gt;
+  &lt;li&gt;Django&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;repository&quot;&gt;Repository&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;mentor&quot;&gt;Mentor&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Aditya Gulati&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
@@ -63,11 +107,36 @@
     
       <item>
         <title>Music App</title>
-        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+        <description>&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
 
-&lt;h4 id=&quot;music-application&quot;&gt;Music Application&lt;/h4&gt;
+&lt;p&gt;Develop a music app for the campus with the following features:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;See music that friends are playing currently&lt;/li&gt;
+  &lt;li&gt;Private mode to hide currently playing music&lt;/li&gt;
+  &lt;li&gt;Music rooms - to livestream music to all users currently using the app and live updation of playlists&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;We aim to develop a music app with extra features to make listening to music more entertaining. Features include searching for what your friends are listening, private mode for listening to music and sharing music with friends.&lt;/p&gt;
+&lt;p&gt;This project will have multiple members. (approximately 3 to 4)&lt;/p&gt;
+
+&lt;h4 id=&quot;application-task&quot;&gt;Application Task&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Setup the below mentioned repo and get it run locally.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;relevant-technologies&quot;&gt;Relevant Technologies&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;TypeScript/JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;repository&quot;&gt;Repository&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Cloud-Player/web&quot;&gt;Music Player&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;mentor&quot;&gt;Mentor&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Yugesh Kothari&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
         <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-music.html</link>
@@ -109,11 +178,29 @@
     
       <item>
         <title>Map Integration</title>
-        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+        <description>&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
 
-&lt;h4 id=&quot;map-integration&quot;&gt;Map Integration&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Develop a 3D map for the Life IITK app.&lt;/li&gt;
+  &lt;li&gt;The map will have all the locations of campus tagged and can be used to see the upcoming events at any venue.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;A 3D map needs to be developed for use in Life IITK app. The map will have all the locations of campus tagged and can be used to see the upcoming events at any venue.&lt;/p&gt;
+&lt;h4 id=&quot;relevant-technologies&quot;&gt;Relevant Technologies&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Python&lt;/li&gt;
+  &lt;li&gt;Django&lt;/li&gt;
+  &lt;li&gt;React&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;repository&quot;&gt;Repository&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;mentor&quot;&gt;Mentor&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Aditya Gulati&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
         <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-map.html</link>
@@ -143,6 +230,16 @@
   &lt;li&gt;Filing nominations: To file nominations for running in elections. This will also submitting details of campaigners.&lt;/li&gt;
   &lt;li&gt;Actual voting: To handle voting on election day. It should be secure and able to cater to the election day needs of institute.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h4 id=&quot;repository&quot;&gt;Repository&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;mentor&quot;&gt;Mentor&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Priydarshi Singh&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
         <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-election-portal.html</link>
@@ -161,11 +258,29 @@
     
       <item>
         <title>Buy and Sell</title>
-        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+        <description>&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
 
-&lt;h4 id=&quot;buy-and-sell&quot;&gt;Buy and Sell&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;The current buy and sell forum of iitk on facebook is very disorganised and chaotic.&lt;/li&gt;
+  &lt;li&gt;Develop and integrate a portal to buy and sell things on campus into the Life@IITK app.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;The current buy and sell forum of iitk on facebook is very disorganised and chaotic. We aim to develop and integrate a portal to buy and sell things on campus into life@IITK app.&lt;/p&gt;
+&lt;h4 id=&quot;relevant-technologies&quot;&gt;Relevant Technologies&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Python&lt;/li&gt;
+  &lt;li&gt;Django&lt;/li&gt;
+  &lt;li&gt;React&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;repository&quot;&gt;Repository&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;mentor&quot;&gt;Mentor&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Aditya Gulati&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
         <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-buy-and-sell.html</link>
@@ -184,11 +299,27 @@
     
       <item>
         <title>Blogs</title>
-        <description>&lt;h1 id=&quot;lifeiitk&quot;&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/h1&gt;
+        <description>&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Develop a blog feature for the Life@IITK app, where various clubs and cells can put up their blogs and students can follow blogs of their interest.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h4 id=&quot;blogs&quot;&gt;Blogs&lt;/h4&gt;
+&lt;h4 id=&quot;relevant-technologies&quot;&gt;Relevant Technologies&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Python&lt;/li&gt;
+  &lt;li&gt;Django&lt;/li&gt;
+  &lt;li&gt;React&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Various clubs and cells publish articles frequently but since they are published on different platforms, it is hard to follow them. So we want to create a platform where various clubs and cells can put up their blogs and students can follow blogs of their interest.&lt;/p&gt;
+&lt;h4 id=&quot;repository&quot;&gt;Repository&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/life-iitk&quot;&gt;Life@IITK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;mentor&quot;&gt;Mentor&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Aditya Gulati&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
         <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-blogs.html</link>
