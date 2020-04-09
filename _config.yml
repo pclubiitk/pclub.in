@@ -18,6 +18,24 @@ facebook_username:  pclubiitk
 disqus_id: 
 
 excoordies:
+  '2019 - 20':
+    'Aditya Gulati':
+      mail: aditg@iitk.ac.in
+      github: ditttu
+      image: adityagulati.jpg
+    'Anish Saxena':
+      mail: anishs@iitk.ac.in
+      github: Anish-Saxena
+      image: anishsaxena.jpg
+    'Kushagra Gupta':
+      mail: kushgpt@iitk.ac.in
+      github: kushagragpt99 
+      image: kushagragupta.jpg
+    'Yugesh Kothari':
+      mail: yugeshk@iitk.ac.in
+      github: yugeshk 
+      image: yugeshkothari.jpg
+
   '2018 - 19':
     'Ahsan Barkati':
       mail: ahsanb@iitk.ac.in
