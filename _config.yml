@@ -11,7 +11,7 @@ email: pclubiitk@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   The Programming Club, IIT Kanpur
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://pclub.in" # the base hostname & protocol for your site
+url: "https://pclub.in" # the base hostname & protocol for your site
 twitter_username: pclubiitk
 github_username:  pclubiitk
 facebook_username:  pclubiitk
