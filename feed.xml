@@ -4,11 +4,188 @@
     <title>Programming Club IIT Kanpur</title>
     <description>The Programming Club, IIT Kanpur
 </description>
-    <link>http://pclub.in/</link>
-    <atom:link href="http://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Apr 2020 22:10:28 +0000</pubDate>
-    <lastBuildDate>Thu, 09 Apr 2020 22:10:28 +0000</lastBuildDate>
+    <link>https://pclub.in/</link>
+    <atom:link href="https://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 30 Aug 2020 15:56:59 +0000</pubDate>
+    <lastBuildDate>Sun, 30 Aug 2020 15:56:59 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Celebrating Open Source at IITK!</title>
+        <description>&lt;p&gt;Statistics for Google Summer of Code 2020 are out, and we have a reason to celebrate. IIT Kanpur ranked 2nd worldwide in the list of universities with the most accepted students. The list is available &lt;a href=&quot;https://opensource.googleblog.com/2020/08/google-summer-of-code-2020-statistics.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our numbers have been increasing steadily over the last few years, as you can see in the table below:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Year&lt;/th&gt;
+      &lt;th&gt;Number of accepted students&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2016&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2017&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2018&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2019&lt;/td&gt;
+      &lt;td&gt;19&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2020&lt;/td&gt;
+      &lt;td&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;In fact, some of the previously selected students have also started becoming GSoC mentors for their organisations!&lt;/p&gt;
+
+&lt;p&gt;Following is the list of students selected in the year 2020:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Roll Number&lt;/th&gt;
+      &lt;th&gt;Organisation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Aakash Lahoti&lt;/td&gt;
+      &lt;td&gt;160004&lt;/td&gt;
+      &lt;td&gt;The Linux Foundation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ahsan Barkati&lt;/td&gt;
+      &lt;td&gt;160055&lt;/td&gt;
+      &lt;td&gt;FreeBSD Project&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ankit Kumar&lt;/td&gt;
+      &lt;td&gt;170124&lt;/td&gt;
+      &lt;td&gt;Blender Foundation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Apurva Nandan&lt;/td&gt;
+      &lt;td&gt;170141&lt;/td&gt;
+      &lt;td&gt;The NetBSD Foundation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Dipanshu Garg&lt;/td&gt;
+      &lt;td&gt;190306&lt;/td&gt;
+      &lt;td&gt;Xapian Search Engine Library&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Karan Takalkar&lt;/td&gt;
+      &lt;td&gt;180341&lt;/td&gt;
+      &lt;td&gt;The Mifos Initiative&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Kartikeya Sanwal&lt;/td&gt;
+      &lt;td&gt;180348&lt;/td&gt;
+      &lt;td&gt;The Terasology Foundation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Lakshay Bandlish&lt;/td&gt;
+      &lt;td&gt;160360&lt;/td&gt;
+      &lt;td&gt;The Linux Foundation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mohit Mohan&lt;/td&gt;
+      &lt;td&gt;180429&lt;/td&gt;
+      &lt;td&gt;The Linux Foundation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mohit Tyagi&lt;/td&gt;
+      &lt;td&gt;160414&lt;/td&gt;
+      &lt;td&gt;CERN-HSF&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Naman Jain&lt;/td&gt;
+      &lt;td&gt;160427&lt;/td&gt;
+      &lt;td&gt;The NetBSD Foundation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Nidhi Hegde&lt;/td&gt;
+      &lt;td&gt;180472&lt;/td&gt;
+      &lt;td&gt;CERN-HSF&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Nilay Majorwar&lt;/td&gt;
+      &lt;td&gt;180483&lt;/td&gt;
+      &lt;td&gt;GDevelop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Nirmal Praveen Suthar&lt;/td&gt;
+      &lt;td&gt;180484&lt;/td&gt;
+      &lt;td&gt;The Julia Language&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Preeti Menghwani&lt;/td&gt;
+      &lt;td&gt;180550&lt;/td&gt;
+      &lt;td&gt;apertus° Association&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Priydarshi Singh&lt;/td&gt;
+      &lt;td&gt;180561&lt;/td&gt;
+      &lt;td&gt;The Linux Foundation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shivank Garg&lt;/td&gt;
+      &lt;td&gt;160658&lt;/td&gt;
+      &lt;td&gt;FreeBSD Project&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shubh Gupta&lt;/td&gt;
+      &lt;td&gt;160668&lt;/td&gt;
+      &lt;td&gt;FreeBSD Project&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Suraj Verma&lt;/td&gt;
+      &lt;td&gt;160726&lt;/td&gt;
+      &lt;td&gt;MZmine&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Utkarsh Rajput&lt;/td&gt;
+      &lt;td&gt;170767&lt;/td&gt;
+      &lt;td&gt;The Julia Language&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Vikrant Malik&lt;/td&gt;
+      &lt;td&gt;180862&lt;/td&gt;
+      &lt;td&gt;The Linux Foundation&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;In my first year, I was once talking to yashsriv, a former coordinator of PClub. He recalled that during his time, IITK did not even feature in the list, while our sister IITs like KGP and Roorkee had 30+ selections. We have come a long way since then. Initiatives, that were started by the former coordinators years ago, and were continued in the subsequent years, have helped create a wonderful open source culture at IITK. In fact, besides GSoC, IITK students are starting to participate in other open source programmes (like Outreachy, Linux Foundation Mentorship Programme etc.) as well.&lt;/p&gt;
+
+&lt;p&gt;In our tenure, we would certainly try to conduct more events that help people get started with open source development. In particular, we would try to help more first year students (if we have any) get selected. This time, we had only one Y19 UG selected for GSoC. It would be great to see many first year students in that list.&lt;/p&gt;
+
+&lt;p&gt;Congratulations to all those who have been successful in their open source journey! All the best to those who’ll try in the future! Keep hacking!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 30 Aug 2020 14:14:00 +0000</pubDate>
+        <link>https://pclub.in/events/2020/08/30/celebrating-open-source.html</link>
+        <guid isPermaLink="true">https://pclub.in/events/2020/08/30/celebrating-open-source.html</guid>
+        
+        <category>opensource</category>
+        
+        <category>gsoc</category>
+        
+        
+        <category>events</category>
+        
+      </item>
     
       <item>
         <title>Travis CI</title>
@@ -46,8 +223,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-travis-ci.html</link>
-        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-travis-ci.html</guid>
+        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-travis-ci.html</link>
+        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-travis-ci.html</guid>
         
         <category>winter19</category>
         
@@ -91,8 +268,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-nomination-portal.html</link>
-        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-nomination-portal.html</guid>
+        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-nomination-portal.html</link>
+        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-nomination-portal.html</guid>
         
         <category>winter19</category>
         
@@ -139,8 +316,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-music.html</link>
-        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-music.html</guid>
+        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-music.html</link>
+        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-music.html</guid>
         
         <category>winter19</category>
         
@@ -162,8 +339,8 @@
 &lt;p&gt;Mess portal will be used as a one stop to view mess menu and other details such as timing of all messes. It will be a feature integrated in Life IITK app.&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-mess-portal.html</link>
-        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-mess-portal.html</guid>
+        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-mess-portal.html</link>
+        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-mess-portal.html</guid>
         
         <category>winter19</category>
         
@@ -203,8 +380,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-map.html</link>
-        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-map.html</guid>
+        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-map.html</link>
+        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-map.html</guid>
         
         <category>winter19</category>
         
@@ -242,8 +419,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-election-portal.html</link>
-        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-election-portal.html</guid>
+        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-election-portal.html</link>
+        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-election-portal.html</guid>
         
         <category>winter19</category>
         
@@ -283,8 +460,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-buy-and-sell.html</link>
-        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-buy-and-sell.html</guid>
+        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-buy-and-sell.html</link>
+        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-buy-and-sell.html</guid>
         
         <category>winter19</category>
         
@@ -322,8 +499,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>http://pclub.in/wocproject/project/2019/10/25/lifeiitk-blogs.html</link>
-        <guid isPermaLink="true">http://pclub.in/wocproject/project/2019/10/25/lifeiitk-blogs.html</guid>
+        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-blogs.html</link>
+        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-blogs.html</guid>
         
         <category>winter19</category>
         
@@ -679,8 +856,8 @@ P.S:-Attempt at your own risk.&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 30 Jul 2019 04:55:00 +0000</pubDate>
-        <link>http://pclub.in/pclub/2019/07/30/introlecturey19.html</link>
-        <guid isPermaLink="true">http://pclub.in/pclub/2019/07/30/introlecturey19.html</guid>
+        <link>https://pclub.in/pclub/2019/07/30/introlecturey19.html</link>
+        <guid isPermaLink="true">https://pclub.in/pclub/2019/07/30/introlecturey19.html</guid>
         
         <category>pclub</category>
         
@@ -688,84 +865,6 @@ P.S:-Attempt at your own risk.&lt;/p&gt;
         
         
         <category>pclub</category>
-        
-      </item>
-    
-      <item>
-        <title>Data Encryption Standard</title>
-        <description>&lt;p&gt;Data encryption standard is a &lt;strong&gt;symmetric-key block cipher&lt;/strong&gt; published by National Institute of Standard and Technology(NIST).&lt;/p&gt;
-
-&lt;h3 id=&quot;symmetric-key-block-cipher&quot;&gt;Symmetric-key block cipher&lt;/h3&gt;
-
-&lt;p&gt;Let us first understand what this means.
-Every encryption algorithm uses a key to encrypt data and decrypt it. Since the key used for encryption and decryption is same in DES it is a symmetric-key cipher. It encrypts a 64-bit block at once so it is also a block cipher. Hence the name “symmetric-key block cipher”.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Now we are ready to dive into what happens to the data in DES:&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The input data is passed through 16 similar rounds where the input is broken into two blocks(32-bits each) and the right block is passed through an encrypting function which gives 32-bit output. This output is then xor’ed with left block and the blocks obtained serve as input to the next round. Each round has a different 48-bit key which is generated from a 64-bit key using key-scheduling function.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://manansingh.github.io/Cryptolab-Offline/images/c/des-1.GIF&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step1-initial-permutation&quot;&gt;Step1: Initial Permutation&lt;/h2&gt;
-&lt;p&gt;The 64-bits input first goes through a standard permutation which is known publicly. It is available on the internet.&lt;/p&gt;
-
-&lt;p&gt;After this permutation, &lt;strong&gt;the rest of the steps are common to all 16 rounds&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;step2-expansion-of-input&quot;&gt;Step2: Expansion of input&lt;/h2&gt;
-&lt;p&gt;The permuted input is now broken into two blocks of 32-bits each. The right block is always input of the encrypting function while the left block remains unchanged.
- So we have this 32-bits input and a 48-bits key. The first thing we do is expand the 32-bits input to 48 bits.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.tutorialspoint.com/cryptography/images/permutation_logic.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step3-xor-input-with-key&quot;&gt;Step3: XOR input with key&lt;/h2&gt;
-&lt;p&gt;The right block of input which was expanded to 48-bits is now xor’ed with the key. XOR means bit by bit addition modulo 2.&lt;/p&gt;
-
-&lt;h2 id=&quot;step3s-boxes&quot;&gt;Step3:S Boxes&lt;/h2&gt;
-&lt;p&gt;This step makes use of S boxes which are non-linear mappings from 6-bits input to a 4-bits output.
-The xor’ed value (48 bit) from the previous step is divided into 8 blocks of 6-bits. The first block is fed to S1, second to S2 and so on. Each S box now maps the 6-bit entry to a 4-bit output, so the output of all S boxes form a 32-bits output.The inner configurations of S boxes is also available on the internet.&lt;/p&gt;
-
-&lt;h2 id=&quot;step4-permutation-again&quot;&gt;Step4: Permutation again!&lt;/h2&gt;
-&lt;p&gt;The output of S boxes, forming 32-bits, is again permuted to give 32-bits block according to another standard permutation table.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.pngkit.com/png/detail/375-3754049_data-encryption-standard-infobox-diagram-des-algorithm-s.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The encrypting function&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step5-xor-with-left-block&quot;&gt;Step5: XOR with left block&lt;/h2&gt;
-&lt;p&gt;The final output obtained from the previous step is now xor’ed with the left block. This xor’ed value now serves as the right block for next round and the left block will be the right block of the previous round before operating the encrypting function.&lt;/p&gt;
-
-&lt;h4 id=&quot;ln--rn-1&quot;&gt;L&lt;sub&gt;n&lt;/sub&gt; = R&lt;sub&gt;n-1&lt;/sub&gt;&lt;br /&gt;&lt;/h4&gt;
-&lt;h4 id=&quot;rn--ln-1--xor-fkn-1-rn-1&quot;&gt;R&lt;sub&gt;n&lt;/sub&gt; = L&lt;sub&gt;n-1&lt;/sub&gt;  xor f(K&lt;sub&gt;n-1&lt;/sub&gt;, R&lt;sub&gt;n-1&lt;/sub&gt;)&lt;/h4&gt;
-
-&lt;h2 id=&quot;step6-last-permutation&quot;&gt;Step6: Last Permutation&lt;/h2&gt;
-&lt;p&gt;After last round, the bits are permuted for one last time. This permutation is the opposite of initial permutation. It is chosen this way to make DES completely symmetric so that nothing new has to be done to decrypt ciphered data.&lt;/p&gt;
-
-&lt;h1 id=&quot;decryption&quot;&gt;Decryption&lt;/h1&gt;
-&lt;p&gt;Decryption in DES is very easy. Since it is a symmetric cipher, all we need to do is put the encrypted text as input and use keys in opposite order. The output you will get will be the plain text.&lt;/p&gt;
-
-&lt;h2 id=&quot;security&quot;&gt;Security&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;DES was published as an official Federal Information Processing Standard (FIPS) for the United States in 1977.&lt;/li&gt;
-  &lt;li&gt;It is no more a secure standard.&lt;/li&gt;
-  &lt;li&gt;Due to small length of key(56-bits), key can be found using brute force method.&lt;/li&gt;
-  &lt;li&gt;Differential cryptanalysis can also reduce the area of search for the possible key.&lt;/li&gt;
-  &lt;li&gt;In July 2017, a chosen-plaintext attack utilizing a rainbow table can recover the DES key for a single specific chosen plaintext 1122334455667788 in 25 seconds. A new rainbow table has to be calculated per plaintext.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 15 Apr 2019 11:04:00 +0000</pubDate>
-        <link>http://pclub.in/cryptography/2019/04/15/DES.html</link>
-        <guid isPermaLink="true">http://pclub.in/cryptography/2019/04/15/DES.html</guid>
-        
-        <category>Cryptography</category>
-        
-        <category>DES</category>
-        
-        <category>Symmetric Cipher</category>
-        
-        <category>Block Cipher</category>
-        
-        
-        <category>Cryptography</category>
         
       </item>
     
