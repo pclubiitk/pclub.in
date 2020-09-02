@@ -6,9 +6,106 @@
 </description>
     <link>https://pclub.in/</link>
     <atom:link href="https://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Aug 2020 15:56:59 +0000</pubDate>
-    <lastBuildDate>Sun, 30 Aug 2020 15:56:59 +0000</lastBuildDate>
+    <pubDate>Wed, 02 Sep 2020 18:09:00 +0000</pubDate>
+    <lastBuildDate>Wed, 02 Sep 2020 18:09:00 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Bug Bounty on Hello IITK Platform</title>
+        <description>&lt;p&gt;To help strengthen the security of the new &lt;a href=&quot;https://hello.iitk.ac.in&quot;&gt;Hello IITK&lt;/a&gt; platform, we are starting a bug bounty program. We realize the when building a large platform, a small oversight on the part of the developers can lead to serious security bugs. While the developers of Hello IITK have tried their best to make the platform as secure as possible, there may still be some unfixed vulnerabilites.&lt;/p&gt;
+
+&lt;p&gt;If you believe you have found a security vulnerability on Hello IITK, we encourage you to let us know right away. We will investigate all legitimate reports and will help to get the problem fixed ASAP. If you wish to participate, read this entire document very carefully.&lt;/p&gt;
+
+&lt;h2 id=&quot;submitting-a-report&quot;&gt;Submitting a report&lt;/h2&gt;
+&lt;p&gt;You can submit your reports by filling &lt;a href=&quot;https://forms.gle/rkiQjcq6hD5XUGR29&quot;&gt;this form&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;rewards&quot;&gt;Rewards&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;We will classify your report as one of the following, and you’ll get the corresponding rewards:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Not a security vulnerability&lt;/strong&gt;: No rewards.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Extremely low-risk vulnerability&lt;/strong&gt;: Mention in our Hall of Fame.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Mild Severity Vulnerability&lt;/strong&gt;: Mention in our Hall of Fame + INR 400&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Medium Severity Vulnerability&lt;/strong&gt;: Mention in our Hall of Fame + INR 600&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;High Severity Vulnerability&lt;/strong&gt;: Mention in our Hall of Fame + INR 800&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In addition to the above, you may get a certificate awarded by the Institute. The certification, and the contents of the certificate, will be at the discretion of Prof. T. V. Prabhakar.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;responsible-disclosure-policy&quot;&gt;Responsible Disclosure Policy&lt;/h2&gt;
+
+&lt;p&gt;For you to participate in the program, we require that:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You do not modify or access data from any other user’s account, without the account owner’s explicit consent.&lt;/li&gt;
+  &lt;li&gt;You try your best to avoid privacy violations and disruptions to others (which may include things like unauthorized access to or destruction of data, and interruption or degradation of the services of the Hello IITK platform).&lt;/li&gt;
+  &lt;li&gt;If, while investigating an issue, you inadvertently access any data that you are not supposed to, you must promptly notify us and then immediately delete the information from your system. You must also acknowledge the inadvertent access in any related bug bounty report you may subsequently submit. You may not share the inadvertently accessed information with anyone else.&lt;/li&gt;
+  &lt;li&gt;You do not exploit a security issue you discover for any reason other than for testing purposes, and you do not conduct testing outside of your own account, or another account for which you have the explicit written consent of the account owner to test.&lt;/li&gt;
+  &lt;li&gt;You give us reasonable time to investigate and mitigate an issue you report before publicly disclosing any information about the report or sharing such information with others.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tldr&quot;&gt;TL;DR&lt;/h3&gt;
+&lt;p&gt;Don’t do anything that can dirsupt the proceeding of any course. For testing vulnerabilities that may provide unauthorized access to another user’s account, we encourage you to form teams and test the vulnerabilities on your teammates’ accounts only. Also, don’t share the details of the vulnerability publicly.&lt;/p&gt;
+
+&lt;h2 id=&quot;bug-bounty-program-processes&quot;&gt;Bug Bounty Program Processes&lt;/h2&gt;
+
+&lt;p&gt;We will recognize and reward security researchers who help us secure the Hello IITK platform by reporting any found vulnerabilities. Rewards for such reports are entirely at the discretion of the organisers (that include the Coordinators of the Programming Club and Prof. T. V. Prabhakar’s team of developers), based on risk, impact, and other factors. To be considered for a bounty, you must meet the following requirements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Adhere to our Responsible Disclosure Policy.&lt;/li&gt;
+  &lt;li&gt;Report a security bug: that is, identify a vulnerability in the platform which creates a security or privacy risk. (Note that the organisers ultimately determine the risk of an issue, and that many software bugs are not security issues.) Report the vulnerability upon discovery or as soon as is feasible.&lt;/li&gt;
+  &lt;li&gt;Submit your report via the form link given in the “Submitting a report” section of this document (one submission per report) and respond to any follow-up requests from the organisers for updates or further information.&lt;/li&gt;
+  &lt;li&gt;Use your own or your teammates’ accounts when investigating issues. Do not use or interact with the account belonging to another person without explicit consent of the account owner.&lt;/li&gt;
+  &lt;li&gt;Contact the coordinators of the Programming Club for clarification on anything not covered in these terms.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In turn, we will follow these guidelines when evaluating reports under our bug bounty program:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;We investigate and respond to all valid reports.&lt;/li&gt;
+  &lt;li&gt;We determine the rewards based on a variety of factors, including (but not limited to) impact, ease of exploitation, and quality of the report. Note that extremely low-risk issues may not qualify for a bounty at all.&lt;/li&gt;
+  &lt;li&gt;In the event of duplicate reports, we award a bounty to the first person to submit an issue.&lt;/li&gt;
+  &lt;li&gt;We reserve the right to publish reports (and accompanying updates).&lt;/li&gt;
+  &lt;li&gt;We publish a list of researchers who have submitted valid security reports.&lt;/li&gt;
+  &lt;li&gt;We may retain any communications about security issues you report for as long as we deem necessary for program purposes, and we may cancel or modify this program at any time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;issues-not-eligible-for-bounties&quot;&gt;Issues not eligible for bounties&lt;/h2&gt;
+
+&lt;h3 id=&quot;out-of-scope&quot;&gt;Out of Scope&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spamming the platform.&lt;/li&gt;
+  &lt;li&gt;Social Engineering attacks.&lt;/li&gt;
+  &lt;li&gt;Denial-of-service attacks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note that you may be subject to punishment if you perform any of the above mentioned attacks.&lt;/p&gt;
+
+&lt;h3 id=&quot;false-positives&quot;&gt;False positives&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bugs that are not security vulnerabilities.&lt;/li&gt;
+  &lt;li&gt;Reports that are not reproducible.&lt;/li&gt;
+  &lt;li&gt;Accessing data that is available publicly by design.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;We hope that you will enjoy trying to find security bugs on the Hello IITK platform. Even if you don’t find any vulnerabilities, we hope it will be a great learning experience for you.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 02 Sep 2020 09:10:00 +0000</pubDate>
+        <link>https://pclub.in/events/2020/09/02/bug-bounty-on-hello-iitk.html</link>
+        <guid isPermaLink="true">https://pclub.in/events/2020/09/02/bug-bounty-on-hello-iitk.html</guid>
+        
+        <category>security</category>
+        
+        <category>bugbounty</category>
+        
+        
+        <category>events</category>
+        
+      </item>
     
       <item>
         <title>Celebrating Open Source at IITK!</title>
@@ -510,361 +607,6 @@
         <category>wocproject</category>
         
         <category>Project</category>
-        
-      </item>
-    
-      <item>
-        <title>Introductory Workshop 2019</title>
-        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;Hello world!&lt;br /&gt;
-Welcome to the Programming Club Introductory Workshop 2019!&lt;/p&gt;
-
-&lt;h2 id=&quot;slack&quot;&gt;Slack&lt;/h2&gt;
-&lt;p&gt;First of all, please join our slack at &lt;a href=&quot;https://pclubiitk.slack.com&quot;&gt;https://pclubiitk.slack.com&lt;/a&gt;
-and join the channel &lt;code class=&quot;highlighter-rouge&quot;&gt;#y19&lt;/code&gt; to receive future notifications regarding events and other stuff
-from slack announcements directly.&lt;/p&gt;
-
-&lt;h2 id=&quot;lifeiitk&quot;&gt;Life@IITK&lt;/h2&gt;
-&lt;p&gt;Programming Club worked extremely hard this summer to design your life @ IITK. We’ve brought together the various factes that will span your wonderful journey through 4 years. You’ll find your personal academic schedule, can subscribe to Gymkhana events, gloat over your PORs, feel hungry with the mess menus of all halls, not get lost with the Map and plan your year with a customizable calendar.&lt;/p&gt;
-
-&lt;h2 id=&quot;terminal&quot;&gt;Terminal&lt;/h2&gt;
-&lt;p&gt;A vital skill for any wanna-be programmer.&lt;/p&gt;
-
-&lt;p&gt;Try opening Terminal (sometimes known as Command Line) from the top-left menus. You should find it in the ‘System’ applications.&lt;/p&gt;
-
-&lt;p&gt;All the computer systems running today run over a terminal. You can do everything possible on a graphical system using this terminal (except of course the things requiring visual manipulation).&lt;/p&gt;
-
-&lt;p&gt;Some operating systems like Ubuntu might have a shortcut for this, you can open it using &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+Alt+T&lt;/code&gt;, but &lt;em&gt;not&lt;/em&gt; in the CC machines.&lt;/p&gt;
-
-&lt;p&gt;This is where you should learn to do all stuff related to programming, since this gives you &lt;em&gt;unfathomable&lt;/em&gt; power.&lt;/p&gt;
-
-&lt;h2 id=&quot;directory-structure&quot;&gt;Directory structure&lt;/h2&gt;
-&lt;p&gt;Linux organizes files and folders in the following way:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Files are kept inside folders&lt;/li&gt;
-  &lt;li&gt;You can enter and exit folders just like in Windows`&lt;/li&gt;
-  &lt;li&gt;Folders are named in the following way: &lt;code class=&quot;highlighter-rouge&quot;&gt;/path-to-folder/folder-name&lt;/code&gt;. This is what completely describes a folder (or a file).&lt;/li&gt;
-  &lt;li&gt;We will be using the word &lt;code class=&quot;highlighter-rouge&quot;&gt;directory&lt;/code&gt; for folders. Please note this.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To play around with this, try to use the following commands:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls
-
-# Lists contents of current folder
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd Desktop
-
-# Move to the folder named Desktop
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ..
-
-# Go Back to previous folder
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~
-
-# Go back to home folder(where you start on opening a terminal)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ touch try.txt
-
-# Create a new file named try.txt
-
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Command&lt;/td&gt;
-      &lt;td&gt;Full form&lt;/td&gt;
-      &lt;td&gt;Description&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;ls&lt;/td&gt;
-      &lt;td&gt;list screen&lt;/td&gt;
-      &lt;td&gt;List all the files and folders in current directory&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cd&lt;/td&gt;
-      &lt;td&gt;change directory&lt;/td&gt;
-      &lt;td&gt;Enter a folder whose path is known&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;pwd&lt;/td&gt;
-      &lt;td&gt;present working directory&lt;/td&gt;
-      &lt;td&gt;Full name of the current folder you are in&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;~&lt;/td&gt;
-      &lt;td&gt;tilde&lt;/td&gt;
-      &lt;td&gt;Short form for your home folder&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+c&lt;/code&gt;(keyboard)&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Exit/Cancel the current command&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;exit&lt;/td&gt;
-      &lt;td&gt;Exit&lt;/td&gt;
-      &lt;td&gt;Exit the terminal&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;vim&quot;&gt;VIM&lt;/h2&gt;
-&lt;p&gt;We will be using &lt;code class=&quot;highlighter-rouge&quot;&gt;vim&lt;/code&gt; to write programs. Open it from the applications menu. It’s very much like &lt;code class=&quot;highlighter-rouge&quot;&gt;notepad&lt;/code&gt; from Windows.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ vim try.txt
-
-# Opens the file in vim
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Type “An interesting programming activity”&lt;/p&gt;
-
-&lt;p&gt;If you are currently in insert or append mode, press ‘ESC’ key.&lt;/p&gt;
-
-&lt;p&gt;Press : (colon). The cursor should reappear at the lower left corner of the screen beside a colon prompt.&lt;/p&gt;
-
-&lt;p&gt;Type wq! and press Enter key to save and exit&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat try.txt
-
-# Displays the content of the file.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;python-interpreter&quot;&gt;Python Interpreter&lt;/h1&gt;
-
-&lt;p&gt;Try running &lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt; command in the terminal. You should see something like:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Python 2.7.10 (default, Aug 12 2017, 22:05:31)
-[GCC 4.9.3] on linux2
-Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
-&amp;gt;&amp;gt;&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; is the place where you type. Try typing some of the
-commands like:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;2+2&lt;/li&gt;
-  &lt;li&gt;print “hello world!”&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;python&quot;&gt;Python&lt;/h1&gt;
-
-&lt;p&gt;Here are a few python expressions:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a = 2+2&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print &quot;hello world!&quot;&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print a&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print a*2&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Try typing the above lines in vim and then saving the file as
-&lt;code class=&quot;highlighter-rouge&quot;&gt;test.py&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;After saving the file, you will need to navigate to its location
-from the terminal. Once you are in the folder containing &lt;code class=&quot;highlighter-rouge&quot;&gt;test.py&lt;/code&gt; such
-that &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt; shows &lt;code class=&quot;highlighter-rouge&quot;&gt;test.py&lt;/code&gt; as one of the files, run:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python test.py
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The output would be something like this:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;hello world!
-4
-8
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;You used an &lt;em&gt;operator&lt;/em&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;a*2&lt;/code&gt; - the multiplication operator. Other operators you need to try out are:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;+&lt;/td&gt;
-      &lt;td&gt;Addition&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;Subtraction&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;*&lt;/td&gt;
-      &lt;td&gt;Multiplication&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;/&lt;/td&gt;
-      &lt;td&gt;Division&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;**&lt;/td&gt;
-      &lt;td&gt;To the power of&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;ifelse&quot;&gt;If/Else&lt;/h2&gt;
-
-&lt;p&gt;Now that you know how to write simple things, let’s proceed to something interesting.&lt;/p&gt;
-
-&lt;p&gt;Python reads spaces and tabs in your program as well. So for writing a complicated
-instruction for the computer, we will need to use multiple lines.
-We will &lt;code class=&quot;highlighter-rouge&quot;&gt;indent&lt;/code&gt; the lines in such a way that the computer can understand that
-they are meant to be read together.&lt;/p&gt;
-
-&lt;p&gt;Try the following:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is not zero&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is zero&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;That’s it! See?&lt;/p&gt;
-
-&lt;p&gt;Sometimes one condition isn’t enough though. In that case, you are allowed to chain up multiple conditions using &lt;code class=&quot;highlighter-rouge&quot;&gt;and&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;or&lt;/code&gt; like so:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Condition successful&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;condition failed&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;That’s all good, but what if you want multiple checks on a variable? For example, let’s say you want to do Action 1 if &lt;code class=&quot;highlighter-rouge&quot;&gt;a&amp;lt;10&lt;/code&gt; and Action 2 if &lt;code class=&quot;highlighter-rouge&quot;&gt;a=10&lt;/code&gt; and Action 3 when &lt;code class=&quot;highlighter-rouge&quot;&gt;a&amp;gt;10&lt;/code&gt;, what then? This is where &lt;code class=&quot;highlighter-rouge&quot;&gt;if-elif-elif-elif-...-else&lt;/code&gt; construct comes into the picture. Use it like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is less than 0&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is between 0 and 4&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is between 4 and 10&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a is bigger than 10&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;loops&quot;&gt;Loops&lt;/h2&gt;
-
-&lt;p&gt;Now for some loopy-loops!&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;arrays&quot;&gt;Arrays&lt;/h2&gt;
-
-&lt;p&gt;Now for some adorable arrays!&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;h2 id=&quot;functions&quot;&gt;Functions&lt;/h2&gt;
-
-&lt;p&gt;Adding modularity to your code&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;reading-input&quot;&gt;Reading input&lt;/h2&gt;
-&lt;p&gt;You can read input from the user using something like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello mr. &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;See what happens there?&lt;/p&gt;
-
-&lt;h1 id=&quot;codechef&quot;&gt;CodeChef!&lt;/h1&gt;
-&lt;p&gt;Try this link &lt;a href=&quot;https://www.codechef.com/problems/TEST&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Can you solve this problem? Try writing a program for this! Please give it a try before you scroll down.&lt;/p&gt;
-
-&lt;p&gt;It’s quite small! Here’s the solution!&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;So you should now &lt;strong&gt;certainly&lt;/strong&gt; create an account on CodeChef! Try submitting the solution there (don’t forget to select Python when you submit). Happy coding!&lt;/p&gt;
-
-&lt;h1 id=&quot;follow-up&quot;&gt;Follow up&lt;/h1&gt;
-
-&lt;p&gt;Congrats on finishing up to here! If you’re now pumped up for trying out some more challenges, try your hand at the following problems:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/HS08TEST&quot;&gt;ATM&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/FCTRL&quot;&gt;Factorial&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/INTEST&quot;&gt;Enormous Input Test&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/problems/TLG&quot;&gt;The Lead Game&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;Note&lt;/em&gt; C/C++/Java are commonly the preferred languages while participating in competitive contests. Recently, ACM ICPC has started allowing Python as well.&lt;/p&gt;
-
-&lt;p&gt;The ultimate feel to programming.
-P.S:-Attempt at your own risk.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://capturetheflag.withgoogle.com/#beginners/misc-satellite&quot;&gt;Google Hacking Practice competitons&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 30 Jul 2019 04:55:00 +0000</pubDate>
-        <link>https://pclub.in/pclub/2019/07/30/introlecturey19.html</link>
-        <guid isPermaLink="true">https://pclub.in/pclub/2019/07/30/introlecturey19.html</guid>
-        
-        <category>pclub</category>
-        
-        <category>introduction</category>
-        
-        
-        <category>pclub</category>
         
       </item>
     

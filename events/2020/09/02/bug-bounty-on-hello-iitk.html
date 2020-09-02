@@ -8,9 +8,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Winter of Code 2019</title>
-  <meta name="description" content="The Programming Club, IIT Kanpur
-">
+  <title>Bug Bounty on Hello IITK Platform</title>
+  <meta name="description" content="To help strengthen the security of the new Hello IITK platform, we are starting a bug bounty program. We realize the when building a large platform, a small ...">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
@@ -18,7 +17,7 @@
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="https://pclub.in/woc.html">
+  <link rel="canonical" href="https://pclub.in/events/2020/09/02/bug-bounty-on-hello-iitk.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="https://pclub.in/feed.xml">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/image/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/image/apple-icon-60x60.png">
@@ -141,397 +140,177 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div style="margin: 1rem auto;">
+        <div style="margin: 4.5rem auto;">
 
-<h1 class="archive-header"></h1>
-<div class="wf-container" style="margin-top: 80px;">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="inpost-header">
+    <h1 class="inpost-title" itemprop="name headline">Bug Bounty on Hello IITK Platform</h1>
+    <h1 style="float:right" class="comment-postingatas">
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/events/2020/09/02/bug-bounty-on-hello-iitk.html#disqus_thread" data-disqus-identifier="/events/2020/09/02/bug-bounty-on-hello-iitk"style="color:#fff"> 0</a>
+    </h1>
+    </p>
+  </header>
   
-    
+  <div class="post-content" itemprop="articleBody">
+    <p>To help strengthen the security of the new <a href="https://hello.iitk.ac.in">Hello IITK</a> platform, we are starting a bug bounty program. We realize the when building a large platform, a small oversight on the part of the developers can lead to serious security bugs. While the developers of Hello IITK have tried their best to make the platform as secure as possible, there may still be some unfixed vulnerabilites.</p>
+
+<p>If you believe you have found a security vulnerability on Hello IITK, we encourage you to let us know right away. We will investigate all legitimate reports and will help to get the problem fixed ASAP. If you wish to participate, read this entire document very carefully.</p>
+
+<h2 id="submitting-a-report">Submitting a report</h2>
+<p>You can submit your reports by filling <a href="https://forms.gle/rkiQjcq6hD5XUGR29">this form</a>.</p>
+
+<h2 id="rewards">Rewards</h2>
+<ul>
+  <li>We will classify your report as one of the following, and you’ll get the corresponding rewards:
+    <ul>
+      <li><strong>Not a security vulnerability</strong>: No rewards.</li>
+      <li><strong>Extremely low-risk vulnerability</strong>: Mention in our Hall of Fame.</li>
+      <li><strong>Mild Severity Vulnerability</strong>: Mention in our Hall of Fame + INR 400</li>
+      <li><strong>Medium Severity Vulnerability</strong>: Mention in our Hall of Fame + INR 600</li>
+      <li><strong>High Severity Vulnerability</strong>: Mention in our Hall of Fame + INR 800</li>
+    </ul>
+  </li>
+  <li>In addition to the above, you may get a certificate awarded by the Institute. The certification, and the contents of the certificate, will be at the discretion of Prof. T. V. Prabhakar.</li>
+</ul>
+
+<h2 id="responsible-disclosure-policy">Responsible Disclosure Policy</h2>
+
+<p>For you to participate in the program, we require that:</p>
+
+<ul>
+  <li>You do not modify or access data from any other user’s account, without the account owner’s explicit consent.</li>
+  <li>You try your best to avoid privacy violations and disruptions to others (which may include things like unauthorized access to or destruction of data, and interruption or degradation of the services of the Hello IITK platform).</li>
+  <li>If, while investigating an issue, you inadvertently access any data that you are not supposed to, you must promptly notify us and then immediately delete the information from your system. You must also acknowledge the inadvertent access in any related bug bounty report you may subsequently submit. You may not share the inadvertently accessed information with anyone else.</li>
+  <li>You do not exploit a security issue you discover for any reason other than for testing purposes, and you do not conduct testing outside of your own account, or another account for which you have the explicit written consent of the account owner to test.</li>
+  <li>You give us reasonable time to investigate and mitigate an issue you report before publicly disclosing any information about the report or sharing such information with others.</li>
+</ul>
+
+<h3 id="tldr">TL;DR</h3>
+<p>Don’t do anything that can dirsupt the proceeding of any course. For testing vulnerabilities that may provide unauthorized access to another user’s account, we encourage you to form teams and test the vulnerabilities on your teammates’ accounts only. Also, don’t share the details of the vulnerability publicly.</p>
+
+<h2 id="bug-bounty-program-processes">Bug Bounty Program Processes</h2>
+
+<p>We will recognize and reward security researchers who help us secure the Hello IITK platform by reporting any found vulnerabilities. Rewards for such reports are entirely at the discretion of the organisers (that include the Coordinators of the Programming Club and Prof. T. V. Prabhakar’s team of developers), based on risk, impact, and other factors. To be considered for a bounty, you must meet the following requirements:</p>
+
+<ul>
+  <li>Adhere to our Responsible Disclosure Policy.</li>
+  <li>Report a security bug: that is, identify a vulnerability in the platform which creates a security or privacy risk. (Note that the organisers ultimately determine the risk of an issue, and that many software bugs are not security issues.) Report the vulnerability upon discovery or as soon as is feasible.</li>
+  <li>Submit your report via the form link given in the “Submitting a report” section of this document (one submission per report) and respond to any follow-up requests from the organisers for updates or further information.</li>
+  <li>Use your own or your teammates’ accounts when investigating issues. Do not use or interact with the account belonging to another person without explicit consent of the account owner.</li>
+  <li>Contact the coordinators of the Programming Club for clarification on anything not covered in these terms.</li>
+</ul>
+
+<p>In turn, we will follow these guidelines when evaluating reports under our bug bounty program:</p>
+<ul>
+  <li>We investigate and respond to all valid reports.</li>
+  <li>We determine the rewards based on a variety of factors, including (but not limited to) impact, ease of exploitation, and quality of the report. Note that extremely low-risk issues may not qualify for a bounty at all.</li>
+  <li>In the event of duplicate reports, we award a bounty to the first person to submit an issue.</li>
+  <li>We reserve the right to publish reports (and accompanying updates).</li>
+  <li>We publish a list of researchers who have submitted valid security reports.</li>
+  <li>We may retain any communications about security issues you report for as long as we deem necessary for program purposes, and we may cancel or modify this program at any time.</li>
+</ul>
+
+<h2 id="issues-not-eligible-for-bounties">Issues not eligible for bounties</h2>
+
+<h3 id="out-of-scope">Out of Scope</h3>
+<ul>
+  <li>Spamming the platform.</li>
+  <li>Social Engineering attacks.</li>
+  <li>Denial-of-service attacks.</li>
+</ul>
+
+<p>Note that you may be subject to punishment if you perform any of the above mentioned attacks.</p>
+
+<h3 id="false-positives">False positives</h3>
+
+<ul>
+  <li>Bugs that are not security vulnerabilities.</li>
+  <li>Reports that are not reproducible.</li>
+  <li>Accessing data that is available publicly by design.</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>We hope that you will enjoy trying to find security bugs on the Hello IITK platform. Even if you don’t find any vulnerabilities, we hope it will be a great learning experience for you.</p>
+
+
+  </div>
+
+<div class="arrowNav">
+ 
+
+
+ 
+<div class="arrowRight" style="float:right">
+<a id="route" class="tooltip-left" href="/events/2020/08/30/celebrating-open-source.html" title="
+&lt;p class=hoveratas&gt;Celebrating Open Source at IITK!&lt;/p&gt; &lt;p class=hoverbawah&gt;Statistics for Google Summer of Code 2020 are out, and...&lt;/p&gt;
+"><i class="typcn typcn-chevron-right" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+</div>
+
+
+  <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
+  <time datetime="2020-09-02T09:10:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Sep 2, 2020</time>
+   
+  • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">
+      
+      <a href="https://dryairship.github.io" target="_blank" style="color: #fff;">Priydarshi Singh</a>
+      
+    </span>
+  </span>
+   
+    |
   
-    
+  <a href="/tags.html#security" style="color: #fff;"><i class="typcn typcn-tags"></i> security</a>
   
-    
-      <div class="wf-box">
-        <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-travis-ci.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url();
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-travis-ci.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Travis CI
-              </h3>
-            </a>
-         </div>
-      </div>
-    
+  <a href="/tags.html#bugbounty" style="color: #fff;"><i class="typcn typcn-tags"></i> bugbounty</a>
   
-    
-      <div class="wf-box">
-        <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-nomination-portal.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url();
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-nomination-portal.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Nomination Portal
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-      <div class="wf-box">
-        <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-music.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url();
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-music.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Music App
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-      <div class="wf-box">
-        <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-mess-portal.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url();
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-mess-portal.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Mess Portal
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-      <div class="wf-box">
-        <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-map.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url();
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-map.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Map Integration
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-      <div class="wf-box">
-        <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-election-portal.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url();
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-election-portal.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Election Portal
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-      <div class="wf-box">
-        <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-buy-and-sell.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url();
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-buy-and-sell.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Buy and Sell
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-      <div class="wf-box">
-        <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-blogs.html">
-          <div class="tglgede" style="
-            background-color: rgba(105, 105, 105, 0.44);
-            background-image: url();
-            background-position:  center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          ">
-            <p style="
-              background-color: rgba(0, 0, 0, 0.21);
-              padding: 30%;
-              color: #DADADA;
-              justify-content: center;
-              text-align: center;
-              margin-bottom: 0;
-            ">
-            </p>
-          </div>
-         </a>
-         <div class="content">
-            <a id="route" href="/wocproject/project/2019/10/25/lifeiitk-blogs.html">
-              <h3 style="padding: 5px 8px;
-                margin-bottom: 0;
-                background-color: #00bc8c;
-                color: #fff;
-                font-size: 15px;
-                border-top: 3px solid #03775A;">Blogs
-              </h3>
-            </a>
-         </div>
-      </div>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
+  </p>
+
+</article>
+
+
+
+
+
+<style>
+    #disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+</style>
+<div id="disqus_thread"></div>
+<script>
+  // For debugging
+  // var disqus_developer = 1;
+  var disqus_shortname = 'pclubiitk';
+  var disqus_config = function () {
+    this.page.url = 'https://pclub.in/events/2020/09/02/bug-bounty-on-hello-iitk';
+    this.page.identifier = '/events/2020/09/02/bug-bounty-on-hello-iitk';
+  };
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 </div>
 
       </div>
