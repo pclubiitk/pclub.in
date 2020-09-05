@@ -6,13 +6,13 @@
 </description>
     <link>https://pclub.in/</link>
     <atom:link href="https://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Sep 2020 18:13:00 +0000</pubDate>
-    <lastBuildDate>Wed, 02 Sep 2020 18:13:00 +0000</lastBuildDate>
+    <pubDate>Sat, 05 Sep 2020 08:23:11 +0000</pubDate>
+    <lastBuildDate>Sat, 05 Sep 2020 08:23:11 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Bug Bounty on Hello IITK Platform</title>
-        <description>&lt;p&gt;To help strengthen the security of the new &lt;a href=&quot;https://hello.iitk.ac.in&quot;&gt;Hello IITK&lt;/a&gt; platform, we are starting a bug bounty program. We realize the when building a large platform, a small oversight on the part of the developers can lead to serious security bugs. While the developers of Hello IITK have tried their best to make the platform as secure as possible, there may still be some unfixed vulnerabilites.&lt;/p&gt;
+        <description>&lt;p&gt;To help strengthen the security of the new &lt;a href=&quot;https://hello.iitk.ac.in&quot;&gt;Hello IITK&lt;/a&gt; platform, we are starting a bug bounty program. We realize that when building a large platform, a small oversight on the part of the developers can lead to serious security bugs. While the developers of Hello IITK have tried their best to make the platform as secure as possible, there may still be some unfixed vulnerabilites.&lt;/p&gt;
 
 &lt;p&gt;If you believe you have found a security vulnerability on Hello IITK, we encourage you to let us know right away. We will investigate all legitimate reports and will help to get the problem fixed ASAP. If you wish to participate, read this entire document very carefully.&lt;/p&gt;
 
@@ -47,6 +47,10 @@
 
 &lt;h3 id=&quot;tldr&quot;&gt;TL;DR&lt;/h3&gt;
 &lt;p&gt;Don’t do anything that can dirsupt the proceeding of any course. For testing vulnerabilities that may provide unauthorized access to another user’s account, we encourage you to form teams and test the vulnerabilities on your teammates’ accounts only. Also, don’t share the details of the vulnerability publicly.&lt;/p&gt;
+
+&lt;h2 id=&quot;important-note&quot;&gt;Important Note&lt;/h2&gt;
+
+&lt;p&gt;Any queries or API requests made by you, while logged in, may be tracked. So if you violate any rule, you will be liable to punishment.&lt;/p&gt;
 
 &lt;h2 id=&quot;bug-bounty-program-processes&quot;&gt;Bug Bounty Program Processes&lt;/h2&gt;
 
