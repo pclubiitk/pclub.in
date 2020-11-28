@@ -4,25 +4,29 @@ title: Contact
 permalink: /contact.html
 coordies:
   'Deepankur Kansal':
-    number: +919457509700
+    number: 9457509700
     mail: deepank@iitk.ac.in
     github: DeepankurK
     image: deepankur.jpg
+    fb: DeepankurK
   'Nilay Majorwar':
-    number: +919559084545
+    number: 9559084545
     mail: majorwar@iitk.ac.in
     github: NilayMajorwar 
     image: nilay.jpg
+    fb: nilay.majorwar
   'Nirmal Suthar':
-    number: +918238486606
+    number: 8238486606
     mail: nirmalps@iitk.ac.in
     github: nirmal-suthar
     image: nirmal.jpg
+    fb: nirmal.suthar.p
   'Priydarshi Singh':
-    number: +917318301507
+    number: 7318301507
     mail: darshi@iitk.ac.in
     github: dryairship
-    image: priydarshi.jpg    
+    image: priydarshi.jpg
+    fb: dryairship
 secys:
   'aashishp':
     name: Aashish Patel
@@ -166,7 +170,8 @@ secys:
               <div> <b> {{ coordie[0] }} </b> </div>
               <div> <a href="tel:{{ coordie[1].number }}"> {{ coordie[1].number }} </a> </div>
               <div> <a href="mailto:{{ coordie[1].mail }}"> {{ coordie[1].mail }} </a> </div>
-              <div> <a href="https://github.com/{{ coordie[1].github }}" target="_blank">{{ coordie[1].github }}@github</a></div>
+              <div> <a href="https://github.com/{{ coordie[1].github }}" target="_blank">GitHub: {{ coordie[1].github }}</a></div>
+              <div> <a href="https://facebook.com/{{ coordie[1].fb }}" target="_blank">Facebook: {{ coordie[1].fb }}</a></div>
             </div>
           </div>
         {% endfor %}
