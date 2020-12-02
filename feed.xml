@@ -6,8 +6,8 @@
 </description>
     <link>https://pclub.in/</link>
     <atom:link href="https://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 28 Nov 2020 15:07:15 +0000</pubDate>
-    <lastBuildDate>Sat, 28 Nov 2020 15:07:15 +0000</lastBuildDate>
+    <pubDate>Wed, 02 Dec 2020 12:56:20 +0000</pubDate>
+    <lastBuildDate>Wed, 02 Dec 2020 12:56:20 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -15,6 +15,16 @@
         <description>&lt;p&gt;To help strengthen the security of the new &lt;a href=&quot;https://hello.iitk.ac.in&quot;&gt;Hello IITK&lt;/a&gt; platform, we are starting a bug bounty program. We realize that when building a large platform, a small oversight on the part of the developers can lead to serious security bugs. While the developers of Hello IITK have tried their best to make the platform as secure as possible, there may still be some unfixed vulnerabilites.&lt;/p&gt;
 
 &lt;p&gt;If you believe you have found a security vulnerability on Hello IITK, we encourage you to let us know right away. We will investigate all legitimate reports and will help to get the problem fixed ASAP. If you wish to participate, read this entire document very carefully.&lt;/p&gt;
+
+&lt;h2 id=&quot;update-winners&quot;&gt;Update: Winners!&lt;/h2&gt;
+&lt;p&gt;The programme is now over. &lt;strong&gt;You will not receive any prizes for submitting reports after October 31st, 2020&lt;/strong&gt;. However, we will be monitoring the submission form. So if you find any security vulnerability, you can still fill the form to let us know.&lt;/p&gt;
+
+&lt;p&gt;We received a total of 17 reports over a period of 2 months. We had to close most of them as “Not a security vulnerability” or “Duplicate report”. However, we had a few winners:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Ketan Chaturvedi (190428)&lt;/strong&gt; : Sumitted 2 reports and won coupons worth a total amount of INR 1800.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Azad Prajapat (190222)&lt;/strong&gt; : Submitted 3 reports and won coupons worth a total amount of INR 1000.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;submitting-a-report&quot;&gt;Submitting a report&lt;/h2&gt;
 &lt;p&gt;You can submit your reports by filling &lt;a href=&quot;https://forms.gle/rkiQjcq6hD5XUGR29&quot;&gt;this form&lt;/a&gt;.&lt;/p&gt;
