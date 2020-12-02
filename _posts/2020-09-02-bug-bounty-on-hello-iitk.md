@@ -17,6 +17,15 @@ To help strengthen the security of the new [Hello IITK](https://hello.iitk.ac.in
 
 If you believe you have found a security vulnerability on Hello IITK, we encourage you to let us know right away. We will investigate all legitimate reports and will help to get the problem fixed ASAP. If you wish to participate, read this entire document very carefully.
 
+## Update: Winners!
+The programme is now over. **You will not receive any prizes for submitting reports after October 31st, 2020**. However, we will be monitoring the submission form. So if you find any security vulnerability, you can still fill the form to let us know. 
+
+We received a total of 17 reports over a period of 2 months. We had to close most of them as "Not a security vulnerability" or "Duplicate report". However, we had a few winners:
+
+ - **Ketan Chaturvedi (190428)** : Sumitted 2 reports and won coupons worth a total amount of INR 1800.
+ - **Azad Prajapat (190222)** : Submitted 3 reports and won coupons worth a total amount of INR 1000.
+
+
 ## Submitting a report
 You can submit your reports by filling [this form](https://forms.gle/rkiQjcq6hD5XUGR29).
 
