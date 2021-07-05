@@ -46,3 +46,5 @@ jekyll-archives:
 kramdown:
   input: GFM
   hard_wrap: false
+
+cloudsh_token: "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMWVhZGI4NWItMDgwNS00MDRkLWJhYmMtOGQ5Mjc5OGYzNDliIiwiaW5kZXhfaWQiOiIyMzk3Yjk4Yy1lMTk3LTRjMGQtOTlkYS04NGIxOWEzMjk1ZjEiLCJpbmRleF91cmwiOiJodHRwOi8vcGNsdWIuaW4ifQ.49yI9ac98bXkeoIzXxW_LRA_tTJgHeAErr_aVgu1MQg"

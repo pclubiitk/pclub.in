@@ -88,6 +88,24 @@ var options = {
     theme: "square"
 };
 $("#countries").easyAutocomplete(options);
+var options2 = {
+    url: "/gblk2.json",
+    getValue: "author",
+    list: {
+        match: {
+            enabled: !0,
+            maxNumberOfElements: 5
+        }
+    },
+    template: {
+        type: "custom",
+        method: function(value, item) {
+            return "<a href='" + (item.url) + "' >"+ (item.title) +"</a>";
+        }
+    },
+    theme: "square"
+};
+$("#countries2").easyAutocomplete(options2);
 var waterfall = new Waterfall({
     containerSelector: ".wf-container",
     boxSelector: ".wf-box",
