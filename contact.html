@@ -28,6 +28,134 @@ coordies:
     image: som.jpg
     fb: tambesom
 
+
+secys:
+    'premr20':
+       name: 'Prem Bharwani'
+       hall: '3'
+       github: 'PremBharwani'
+       fb: 'bharwaniprem'
+    'somyagupta20':
+       name: 'Somya Gupta'
+       hall: '6'
+       github: 'SG-is-me'
+       fb: 'somya.gupta.52493'
+    'vgoyal20':
+       name: 'Vaibhav goyal'
+       hall: '2'
+       github: 'code-vaibhav'
+       fb: 'goyalvaibhav25'
+    'bipplavkt20':
+       name: 'Bipplav Kumar Tiwari'
+       hall: '12'
+       github: 'BipplavTiwari'
+       fb: 'bipplav.tiwari'
+    'kunwarps20':
+       name: 'Kunwar Preet Singh'
+       hall: '3'
+       github: 'Enkryp'
+       fb: 'kunwarpreet.singh.509'
+    'pratyushg20':
+       name: 'Pratyush Gupta'
+       hall: '12'
+       github: 'pratyushg20'
+       fb: 'pratyush.gupta.1272'
+    'hetpatel20':
+       name: 'Het Hitendrakumar Patel'
+       hall: '12'
+       github: 'wiredinhp'
+       fb: 'wiredinhp'
+    'bpiyush20':
+       name: 'Piyush Beegala'
+       hall: '12'
+       github: 'franticalien'
+       fb: 'franticalien'
+    'adityas20':
+       name: 'Aditya Subramanian'
+       hall: '3'
+       github: 'Pingy711'
+       fb: 'aditya.subramanian.7549'
+    'ayusha20':
+       name: 'Ayush Anand'
+       hall: '5'
+       github: 'yushananda'
+       fb: 'yushananda'
+    'gpratyush20 ':
+       name: 'Pratyush Gupta '
+       hall: '3'
+       github: 'PratyushGupta0'
+       fb: 'pratyush.gupta.39566'
+    'parinayc20':
+       name: 'Parinay Chauhan'
+       hall: '3'
+       github: 'parinayc20'
+       fb: 'parinay.chauhan.1'
+    'harshitb20':
+       name: 'Harshit Bansal'
+       hall: '12'
+       github: 'harshit-bansal18'
+       fb: 'harshit.bansal.39904'
+    'sahilsingh20 ':
+       name: 'Sahil Singh '
+       hall: '3'
+       github: 'Sahilsingh0808'
+       fb: 'sahilsingh082'
+    'rajarshi20':
+       name: 'Rajarshi Dutta'
+       hall: '2'
+       github: 'Rajarshi1001'
+       fb: 'rajarshi.dutta.507'
+    'tanwar20':
+       name: 'Aditya Tanwar'
+       hall: '2'
+       github: 'cliche-niche'
+       fb: 'adityatanwar.fb'
+    'jayagupta20':
+       name: 'Jaya Gupta'
+       hall: '6'
+       github: '27-JayaGupta'
+       fb: '27JayaGupta'
+    'shreea20':
+       name: 'Abhishek Shree'
+       hall: '5'
+       github: 'abhishekshree'
+       fb: 'abhishek.shree30'
+    'shivamb20':
+       name: 'Shivam Bhadani'
+       hall: '3'
+       github: 'shivam-bhadani'
+       fb: 'shivam.bhadani.77'
+    'arnavg20 ':
+       name: 'Arnav Gupta'
+       hall: '5'
+       github: 'arnav4567'
+       fb: 'arnav4567'
+    'dhwanitb20':
+       name: 'Dhwanit Balwani'
+       hall: '3'
+       github: 'dhwanit75'
+       fb: 'dhwanit.balwani'
+    'mshivam20':
+       name: 'Shivam Mishra'
+       hall: '2'
+       github: '7shivamx'
+       fb: '7shivamx'
+    'banshuman20':
+       name: 'B.Anshuman'
+       hall: '2'
+       github: 'ba-13'
+       fb: 'b.anshuman1305'
+    'akhilag20':
+       name: 'Akhil Agrawal'
+       hall: '2'
+       github: 'akhilagrawal1001'
+       fb: 'akhil.agrawal.10236'
+    'satyamkr20':
+       name: 'Satyam Kumar Roy'
+       hall: '12'
+       github: 'bitstack343'
+       fb: 'skroy343'
+
 excoordies:
   '2020 - 21':
     'Deepankur Kansal':
@@ -163,12 +291,11 @@ excoordies:
         {% endfor %}
       </div>
     </div>
-    {% comment %} <h1 style="color: #00ffff;">Current Secretaries</h1>
+    <h1 style="color: #00ffff;">Current Secretaries</h1>
     <table class="secyTable" cellpadding="5">
       <tr>
         <th>Name</th>
         <th>Hall</th>
-        <th>Mobile Number</th>
         <th>Email-ID</th>
         <th>GitHub</th>
         <th>Facebook</th>
@@ -176,14 +303,13 @@ excoordies:
       {% for secy in page.secys %}
         <tr>
           <td class="secyRow" align="center"> {{ secy[1].name }}</td>
-          <td class="secyRow" align="center"> {{ secy[1].hall}} </td>
-          <td class="secyRow" align="center"> <a href="tel:{{ secy[1].number }}">{{ secy[1].number }}</a></td>
+          <td class="secyRow" align="center"> {{ secy[1].hall }}</td>
           <td class="secyRow" align="center"> <a href="mailto:{{ secy[0] }}@iitk.ac.in"> {{ secy[0] }}@iitk.ac.in </a> </td>
-          <td> <a href="https://github.com/{{ secy[1].github }}" target="_blank">{{ secy[1].github }}@github</a></td>
+          <td> <a href="https://github.com/{{ secy[1].github }}" target="_blank">{{ secy[1].github }} </a></td>
           <td> <a href="https://facebook.com/{{ secy[1].fb }}" target="_blank">{{ secy[1].fb }}</a></td>
        </tr>
       {% endfor %}
-    </table> {% endcomment %}
+    </table>
   </div>
 </div>
 
