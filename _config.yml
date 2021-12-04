@@ -16,7 +16,7 @@ twitter_username: pclubiitk
 github_username:  pclubiitk
 facebook_username:  pclubiitk
 disqus_id: 
-
+timezone: Etc/UTC
 
 # Gems
 gems: 
