@@ -4,10 +4,10 @@
     <title>Programming Club IIT Kanpur</title>
     <description>The Programming Club, IIT Kanpur
 </description>
-    <link>https://pclub.in/</link>
-    <atom:link href="https://pclub.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Dec 2021 16:39:58 +0000</pubDate>
-    <lastBuildDate>Sat, 04 Dec 2021 16:39:58 +0000</lastBuildDate>
+    <link>http://0.0.0.0:8080/</link>
+    <atom:link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 07 May 2022 12:53:58 +0000</pubDate>
+    <lastBuildDate>Sat, 07 May 2022 12:53:58 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -109,8 +109,8 @@
 
 </description>
         <pubDate>Wed, 02 Sep 2020 09:10:00 +0000</pubDate>
-        <link>https://pclub.in/events/2020/09/02/bug-bounty-on-hello-iitk.html</link>
-        <guid isPermaLink="true">https://pclub.in/events/2020/09/02/bug-bounty-on-hello-iitk.html</guid>
+        <link>http://0.0.0.0:8080/events/2020/09/02/bug-bounty-on-hello-iitk.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:8080/events/2020/09/02/bug-bounty-on-hello-iitk.html</guid>
         
         <category>security</category>
         
@@ -286,8 +286,8 @@
 &lt;p&gt;Congratulations to all those who have been successful in their open source journey! All the best to those who’ll try in the future! Keep hacking!&lt;/p&gt;
 </description>
         <pubDate>Sun, 30 Aug 2020 14:14:00 +0000</pubDate>
-        <link>https://pclub.in/events/2020/08/30/celebrating-open-source.html</link>
-        <guid isPermaLink="true">https://pclub.in/events/2020/08/30/celebrating-open-source.html</guid>
+        <link>http://0.0.0.0:8080/events/2020/08/30/celebrating-open-source.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:8080/events/2020/08/30/celebrating-open-source.html</guid>
         
         <category>opensource</category>
         
@@ -334,8 +334,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-travis-ci.html</link>
-        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-travis-ci.html</guid>
+        <link>http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-travis-ci.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-travis-ci.html</guid>
         
         <category>winter19</category>
         
@@ -379,8 +379,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-nomination-portal.html</link>
-        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-nomination-portal.html</guid>
+        <link>http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-nomination-portal.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-nomination-portal.html</guid>
         
         <category>winter19</category>
         
@@ -427,8 +427,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-music.html</link>
-        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-music.html</guid>
+        <link>http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-music.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-music.html</guid>
         
         <category>winter19</category>
         
@@ -450,8 +450,8 @@
 &lt;p&gt;Mess portal will be used as a one stop to view mess menu and other details such as timing of all messes. It will be a feature integrated in Life IITK app.&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-mess-portal.html</link>
-        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-mess-portal.html</guid>
+        <link>http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-mess-portal.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-mess-portal.html</guid>
         
         <category>winter19</category>
         
@@ -491,8 +491,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-map.html</link>
-        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-map.html</guid>
+        <link>http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-map.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-map.html</guid>
         
         <category>winter19</category>
         
@@ -530,8 +530,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-election-portal.html</link>
-        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-election-portal.html</guid>
+        <link>http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-election-portal.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-election-portal.html</guid>
         
         <category>winter19</category>
         
@@ -571,8 +571,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-buy-and-sell.html</link>
-        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-buy-and-sell.html</guid>
+        <link>http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-buy-and-sell.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-buy-and-sell.html</guid>
         
         <category>winter19</category>
         
@@ -610,8 +610,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 21:08:00 +0000</pubDate>
-        <link>https://pclub.in/wocproject/project/2019/10/25/lifeiitk-blogs.html</link>
-        <guid isPermaLink="true">https://pclub.in/wocproject/project/2019/10/25/lifeiitk-blogs.html</guid>
+        <link>http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-blogs.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-blogs.html</guid>
         
         <category>winter19</category>
         
