@@ -8,8 +8,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Election Portal</title>
-  <meta name="description" content="Life@IITK">
+  <title>Weird Chemists</title>
+  <meta name="description" content="You run a chemical laboratory which contains N beakers containing certain amount of solutions. The ith beaker contains ai ml of a reactant solution. There al...">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://0.0.0.0:8080/wocproject/project/2019/10/26/lifeiitk-election-portal.html">
-  <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://0.0.0.0:8080/feed.xml">
+  <link rel="canonical" href="https://pclub.in/competitive/2016/08/12/weirdchemists.html">
+  <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="https://pclub.in/feed.xml">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/image/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/image/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/image/apple-icon-72x72.png">
@@ -128,7 +128,7 @@
         
           
         
-        <!--<a class="page-link" href="http://0.0.0.0:8080/feed.xml"> Feeds</a>-->
+        <!--<a class="page-link" href="https://pclub.in/feed.xml"> Feeds</a>-->
         <a class="page-link" href="http://github.com/pclubiitk?tab=repositories"><i class="typico typcn typcn-social-github" style="font-size:"></i> Repositories</a>
       </div>
     </nav>
@@ -145,35 +145,41 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Election Portal</h1>
+    <h1 class="inpost-title" itemprop="name headline">Weird Chemists</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/wocproject/project/2019/10/26/lifeiitk-election-portal.html#disqus_thread" data-disqus-identifier="/wocproject/project/2019/10/26/lifeiitk-election-portal"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/competitive/2016/08/12/weirdchemists.html#disqus_thread" data-disqus-identifier="/competitive/2016/08/12/weirdchemists"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <h1 id="lifeiitk"><a href="https://github.com/life-iitk">Life@IITK</a></h1>
+    <p>You run a chemical laboratory which contains <strong>N</strong> beakers containing certain amount of solutions. The i<sup>th</sup> beaker contains a<sub>i</sub> ml of a reactant solution. There also <strong>M</strong> chemists waiting outside your laboratory. Each chemist has a parchment of paper which has 3 integers written on it. The i<sup>th</sup> chemist’s parchment contains 3 integers of the form: <strong>l<sub>i</sub> r<sub>i</sub> x<sub>i</sub></strong></p>
 
-<h4 id="election-portal">Election portal</h4>
+<p>It denotes that the i<sup>th</sup> chemist needs atleast x<sub>i</sub> ml of reactant solution but you can only take it from the bottles numbered l<sub>i</sub> to r<sub>i</sub>. If you are able to meet the i<sup>th</sup> chemists needs, he is happy .</p>
 
-<p>Portal that will handle all the election related work online will be developed and integrated to the currently existing Life IITK app. It will include the following projects.</p>
+<p>To put it more succinctly, to make the i<sup>th</sup> chemist happy, it should be possible to take some beakers from l<sub>i</sub> to r<sub>i</sub> such that the sum of their solutions is at least x<sub>i</sub>.</p>
 
-<ul>
-  <li>Position creation: To create and notify about new positions for elections only by authorised accounts.</li>
-  <li>Filing nominations: To file nominations for running in elections. This will also submitting details of campaigners.</li>
-  <li>Actual voting: To handle voting on election day. It should be secure and able to cater to the election day needs of institute.</li>
-</ul>
+<p>Print the number of chemists that returned happy after their transaction with you .</p>
 
-<h4 id="repository">Repository</h4>
-<ul>
-  <li><a href="https://github.com/life-iitk">Life@IITK</a></li>
-</ul>
+<p>Please note that a transaction with one chemist is independent of that with another chemist , that is the the values of the beakers doesn’t change for a new transaction. For each transaction consider that the values to be those that were there initially.</p>
 
-<h4 id="mentor">Mentor</h4>
-<ul>
-  <li>Priydarshi Singh</li>
-</ul>
+<p><strong>Input</strong>:</p>
+
+<p>The first line contains 2 integers N and M.<br />
+The next line contains N integers, the i<sup>th</sup> integer denoting a<sub>i</sub>.<br />
+The next M lines are of the form: l<sub>i</sub> r<sub>i</sub> x<sub>i</sub></p>
+
+<p><strong>Output</strong>:</p>
+
+<p>Output a single integer: the number of happy chemists.</p>
+
+<p><strong>Constraints</strong>:</p>
+
+<p>1&lt;=N&lt;= 10<sup>4</sup><br />
+1&lt;=M&lt;=1000<br />
+1&lt;=ai&lt;=10<sup>4</sup><br />
+1&lt;=l<sub>i</sub>&lt;=r<sub>i</sub>&lt;=N<br />
+1&lt;=x<sub>i</sub>&lt;=10<sup>9</sup></p>
 
   </div>
 
@@ -181,8 +187,8 @@
  
  
 <div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/wocproject/project/2019/10/26/lifeiitk-map.html" title="
-&lt;p class=hoveratas&gt;Map Integration&lt;/p&gt; &lt;p class=hoverbawah&gt;#### Description - Develop a 3D map for the Life...&lt;/p&gt;
+<a id="route" class="tooltip-right" href="/competitive/2016/08/12/SummerContestReport.html" title="
+&lt;p class=hoveratas&gt;Summer WPC&lt;/p&gt; &lt;p class=hoverbawah&gt;# REPORT This summer, Programming Club IIT Kanpur kicked off...&lt;/p&gt;
 "><i class="typcn typcn-chevron-left" style="    font-size: 30px;
     position: relative;
    
@@ -192,8 +198,8 @@
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/wocproject/project/2019/10/26/lifeiitk-buy-and-sell.html" title="
-&lt;p class=hoveratas&gt;Buy and Sell&lt;/p&gt; &lt;p class=hoverbawah&gt;Description The current buy and sell forum of iitk on...&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/competitive/2016/08/12/treetank.html" title="
+&lt;p class=hoveratas&gt;Tree Tank&lt;/p&gt; &lt;p class=hoverbawah&gt;Rose- a car manufacturer finds herself as the mayor of...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -204,21 +210,19 @@
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2019-10-25T21:08:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Oct 26, 2019</time>
+  <time datetime="2016-08-12T18:55:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Aug 12, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      <a href="https://github.com/life-iitk" target="_blank" style="color: #fff;">tanvinerkar</a>
+      Arjun Sinha
       
     </span>
   </span>
    
     |
   
-  <a href="/tags.html#winter19" style="color: #fff;"><i class="typcn typcn-tags"></i> winter19</a>
-  
-  <a href="/tags.html#wocproject" style="color: #fff;"><i class="typcn typcn-tags"></i> wocproject</a>
+  <a href="/tags.html#competitive" style="color: #fff;"><i class="typcn typcn-tags"></i> competitive</a>
   
   </p>
 
@@ -243,8 +247,8 @@
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/wocproject/project/2019/10/26/lifeiitk-election-portal';
-    this.page.identifier = '/wocproject/project/2019/10/26/lifeiitk-election-portal';
+    this.page.url = 'https://pclub.in/competitive/2016/08/12/weirdchemists';
+    this.page.identifier = '/competitive/2016/08/12/weirdchemists';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

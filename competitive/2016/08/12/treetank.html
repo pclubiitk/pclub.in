@@ -8,8 +8,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Install Fest: Linux Mint</title>
-  <meta name="description" content="  Place Linux Mint DVD or USB bootable image in the appropriate drive and reboot the computer in order to start with Linux Mint 18 installation.  After reboo...">
+  <title>Tree Tank</title>
+  <meta name="description" content="Rose- a car manufacturer finds herself as the mayor of TreeTop. The city of TreeTop is in the form of a tree with N nodes and N-1 roads joining them. For eac...">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://0.0.0.0:8080/2017/01/07/Mint_install.html">
-  <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://0.0.0.0:8080/feed.xml">
+  <link rel="canonical" href="https://pclub.in/competitive/2016/08/12/treetank.html">
+  <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="https://pclub.in/feed.xml">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/image/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/image/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/image/apple-icon-72x72.png">
@@ -128,7 +128,7 @@
         
           
         
-        <!--<a class="page-link" href="http://0.0.0.0:8080/feed.xml"> Feeds</a>-->
+        <!--<a class="page-link" href="https://pclub.in/feed.xml"> Feeds</a>-->
         <a class="page-link" href="http://github.com/pclubiitk?tab=repositories"><i class="typico typcn typcn-social-github" style="font-size:"></i> Repositories</a>
       </div>
     </nav>
@@ -145,49 +145,37 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Install Fest: Linux Mint</h1>
+    <h1 class="inpost-title" itemprop="name headline">Tree Tank</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/2017/01/07/Mint_install.html#disqus_thread" data-disqus-identifier="/2017/01/07/Mint_install"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/competitive/2016/08/12/treetank.html#disqus_thread" data-disqus-identifier="/competitive/2016/08/12/treetank"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <ol>
-  <li>Place Linux Mint DVD or USB bootable image in the appropriate drive and reboot the computer in order to start with Linux Mint 18 installation.</li>
-  <li>After reboot, press the special function key and instruct the machine firmware (UEFI) to boot-up from the appropriate DVD or USB drive (the special function keys usually are F1, F8, F12, F10, F2 or sometimes del, depending on the motherboard manufacturer). Once the media boots-up a new screen should appear on your monitor. Choose Start Linux Mint 18 Cinnamon and hit Enter to continue.
-<img src="http://www.tecmint.com/wp-content/uploads/2016/07/Select-Start-Linux-Mint-Cinnamon-Install.png" alt="Boot Image" /></li>
-  <li>Wait until the system loads into RAM in order to run in live-mode and open the installer by double clicking on Install Linux Mint icon. Choose the language you wish to perform the installation and click on Continue button to proceed further.</li>
-  <li>On the next screen hit on Continue button to proceed further. Third-party software can be automatically download and installed on this step by checking the check-box. The recommendation would be to leave the box unchecked for the moment and manually install proprietary software later, after the installation process completes. <img src="http://www.tecmint.com/wp-content/uploads/2016/07/Preparing-to-Install-Linux-Mint-18.png" alt="Preparing to Install Linux Mint 18" /></li>
-  <li>At the next screen you can choose the Installation Type. If Windows Boot manager is automatically detected you can choose to Install Linux Mint alongside Windows Boot Manager. This option ensures that the HDD will be automatically partitioned by the installer without any data loss.The second option, Erase disk and install Linux Mint, should be avoided for dual-boot because is potentially dangerous and will wipe-out your disk. For a more flexible partition layout you should go with Something else option and hit on Continue button to proceed further.</li>
-  <li>Now let’s create the partition layout for Linux Mint 18. I would recommend that you create three partitions, one for / (root), one for /home accounts data and one partition for swap. Swap partition is necessary if you have RAM less than 8 GB, if you have RAM greater than 8GB, feel free to leave making the swap partition. Select the free space and hit on the + icon from below. On this partition use the following settings and hit OK to create the partition.
-    <div class="highlighter-rouge"><pre class="highlight"><code>Size = 4096 MB
-Type for for the new partition = Beginning of this space
-Use as = swap area
-</code></pre>
-    </div>
-  </li>
-  <li>Using the same steps as above create the /(root) partition with the below settings:
-    <div class="highlighter-rouge"><pre class="highlight"><code>Size = minimum 20 GB
-Type for the new partition = Primary
-Location for the new partition = Beginning of this space
-Use as = EXT4 journaling file system
-Mount point = /
-</code></pre>
-    </div>
-  </li>
-  <li>Finally, create the home slice with the below settings (use all the available free space to create home partition). Home partition is the place where all documents for user accounts will be stored by default, except the root account. In case of a system failure you can reinstall the operating system for scratch without touching or losing the settings and documents of all users.
-    <div class="highlighter-rouge"><pre class="highlight"><code>Size = remaining free space
-Type for the new partition = Primary
-Location for the new partition = Beginning 
-Use as = EXT4 journaling file system
-Mount point = /home
-</code></pre>
-    </div>
-    <p><img src="http://www.tecmint.com/wp-content/uploads/2016/07/Create-Home-Partition.png" alt="Installation type" /></p>
-  </li>
-  <li>After finishing creating the partition layout, select Windows Boot Manager as the device for installing the Grub boot loader and hit on Install Now button in order to commit changes to disk and proceed with the installation. Next a new pop-up window will ask you if you agree with committing changes to disk. Hit on Continue to accept changes and the installer will now start to write changes to disk. <a href="https://http://www.tecmint.com/install-linux-mint-18-alongside-windows-10-or-8-in-dual-boot-uefi-mode/">This has been taken from tecmint.com</a></li>
-</ol>
+    <p>Rose- a car manufacturer finds herself as the mayor of TreeTop. The city of TreeTop is in the form of a tree with <strong>N</strong> nodes and <strong>N-1</strong> roads joining them. For each pair of nodes <strong>u</strong> and <strong>v</strong> that are connected, the distance between them is <strong>1</strong> unit, however it takes <strong>c(u,v)</strong> litres of petrol to cross it (weird, isn’t it?). Each node in TreeTop has a petrol pump in which one can fill the tank of their car to the fullest. The fact that there is a pump in every node means that the tank of the car only needs to have that c(u, v) litres of petrol to cross the edge <strong>u-v</strong>.</p>
+
+<p>Rose also has <strong>K</strong> dollars. She has to decide a certain capacity for the tank of the car. Given a certain capacity for the tank, results in certain roads not being crossed (for example. if the tank’s capacity is 6 litres and c(u,v) is 10 then the car can’t go from u to v or vice versa). Of Course, when some roads can’t be crossed, TreeTop decomposes into a forest (number of disjoint trees). For each tree in the forest, Rose has to assign some node in that tree as a centre. The cost of assigning a particular node as a centre is the <em>sum of the distances of all nodes in that tree from the centre</em>. Rose has to ensure that the cost of setting up centres in all the trees in the forest is less than or equal to K dollars.</p>
+
+<p>Rose wants to choose the maximum capacity of the petrol tank so that the cost of setting up centres is not more than K. Also, the maximum capacity that the car can have is 10<sup>9</sup> litres. You have to output this maximum capacity.</p>
+
+<p><strong>Input</strong></p>
+
+<p>The first line contains 2 integers- <strong>N</strong> the number of nodes in TreeTop and <strong>K</strong>, the amount of money in dollars that Rose has.<br />
+The next <strong>N-1</strong> lines are of the form : <em>u v c(u, v)</em> - denoting there is an edge between u and v of length 1 and takes c(u, v) litres of petrol to cross.</p>
+
+<p><strong>Output</strong></p>
+
+<p>Print a single integer - the maximum capacity of the car’s tank.</p>
+
+<p><strong>Constraints</strong></p>
+
+<p>1 &lt;= N &lt;= 10<sup>5</sup><br />
+1 &lt;= u, v &lt;= N<br />
+1 &lt;= K &lt;= 10<sup>15</sup><br />
+1 &lt;=c (u, v) &lt;= 10<sup>9</sup>   <br />
+It is guaranteed that the graph in the input is a tree, without multiple edges or self-loops.</p>
+
 
   </div>
 
@@ -195,8 +183,8 @@ Mount point = /home
  
  
 <div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/project/2017/01/08/web_forum.html" title="
-&lt;p class=hoveratas&gt;Web Forum&lt;/p&gt; &lt;p class=hoverbawah&gt;# [Web forum](https://github.com/heyitssat/Forum.github.io) This project is a forum where you...&lt;/p&gt;
+<a id="route" class="tooltip-right" href="/competitive/2016/08/12/weirdchemists.html" title="
+&lt;p class=hoveratas&gt;Weird Chemists&lt;/p&gt; &lt;p class=hoverbawah&gt;You run a chemical laboratory which contains **N** beakers containing...&lt;/p&gt;
 "><i class="typcn typcn-chevron-left" style="    font-size: 30px;
     position: relative;
    
@@ -206,8 +194,8 @@ Mount point = /home
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/2017/01/07/debianinstall.html" title="
-&lt;p class=hoveratas&gt;Install Fest: Debian&lt;/p&gt; &lt;p class=hoverbawah&gt;Installing Debian Jessie This is almost the same for debian...&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/competitive/2016/08/12/rendezvous.html" title="
+&lt;p class=hoveratas&gt;Rendezvous&lt;/p&gt; &lt;p class=hoverbawah&gt;The city Manyonok has N substations . The substation numbered...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -218,17 +206,19 @@ Mount point = /home
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2017-01-06T19:45:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Jan 7, 2017</time>
+  <time datetime="2016-08-12T18:55:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Aug 12, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      Sayash Kapoor
+      Arjun Sinha
       
     </span>
   </span>
    
     |
+  
+  <a href="/tags.html#competitive" style="color: #fff;"><i class="typcn typcn-tags"></i> competitive</a>
   
   </p>
 
@@ -253,8 +243,8 @@ Mount point = /home
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/2017/01/07/Mint_install';
-    this.page.identifier = '/2017/01/07/Mint_install';
+    this.page.url = 'https://pclub.in/competitive/2016/08/12/treetank';
+    this.page.identifier = '/competitive/2016/08/12/treetank';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

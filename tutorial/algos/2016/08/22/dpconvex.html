@@ -8,8 +8,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Tree Tank</title>
-  <meta name="description" content="Rose- a car manufacturer finds herself as the mayor of TreeTop. The city of TreeTop is in the form of a tree with N nodes and N-1 roads joining them. For eac...">
+  <title>Dynamic Programming Optimization with Convex Hull Trick</title>
+  <meta name="description" content="Dynamic Programming Optimisation with  Convex Hull Trick :">
   <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
   <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="/assets/css/alternative.css">
   <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://0.0.0.0:8080/competitive/2016/08/13/treetank.html">
-  <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="http://0.0.0.0:8080/feed.xml">
+  <link rel="canonical" href="https://pclub.in/tutorial/algos/2016/08/22/dpconvex.html">
+  <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="https://pclub.in/feed.xml">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/image/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/image/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/image/apple-icon-72x72.png">
@@ -128,7 +128,7 @@
         
           
         
-        <!--<a class="page-link" href="http://0.0.0.0:8080/feed.xml"> Feeds</a>-->
+        <!--<a class="page-link" href="https://pclub.in/feed.xml"> Feeds</a>-->
         <a class="page-link" href="http://github.com/pclubiitk?tab=repositories"><i class="typico typcn typcn-social-github" style="font-size:"></i> Repositories</a>
       </div>
     </nav>
@@ -145,37 +145,121 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="inpost-header">
-    <h1 class="inpost-title" itemprop="name headline">Tree Tank</h1>
+    <h1 class="inpost-title" itemprop="name headline">Dynamic Programming Optimization with Convex Hull Trick</h1>
     <h1 style="float:right" class="comment-postingatas">
-      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/competitive/2016/08/13/treetank.html#disqus_thread" data-disqus-identifier="/competitive/2016/08/13/treetank"style="color:#fff"> 0</a>
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/tutorial/algos/2016/08/22/dpconvex.html#disqus_thread" data-disqus-identifier="/tutorial/algos/2016/08/22/dpconvex"style="color:#fff"> 0</a>
     </h1>
     </p>
   </header>
   
   <div class="post-content" itemprop="articleBody">
-    <p>Rose- a car manufacturer finds herself as the mayor of TreeTop. The city of TreeTop is in the form of a tree with <strong>N</strong> nodes and <strong>N-1</strong> roads joining them. For each pair of nodes <strong>u</strong> and <strong>v</strong> that are connected, the distance between them is <strong>1</strong> unit, however it takes <strong>c(u,v)</strong> litres of petrol to cross it (weird, isn’t it?). Each node in TreeTop has a petrol pump in which one can fill the tank of their car to the fullest. The fact that there is a pump in every node means that the tank of the car only needs to have that c(u, v) litres of petrol to cross the edge <strong>u-v</strong>.</p>
+    <h2 id="dynamic-programming-optimisation-with--convex-hull-trick-">Dynamic Programming Optimisation with  Convex Hull Trick :</h2>
 
-<p>Rose also has <strong>K</strong> dollars. She has to decide a certain capacity for the tank of the car. Given a certain capacity for the tank, results in certain roads not being crossed (for example. if the tank’s capacity is 6 litres and c(u,v) is 10 then the car can’t go from u to v or vice versa). Of Course, when some roads can’t be crossed, TreeTop decomposes into a forest (number of disjoint trees). For each tree in the forest, Rose has to assign some node in that tree as a centre. The cost of assigning a particular node as a centre is the <em>sum of the distances of all nodes in that tree from the centre</em>. Rose has to ensure that the cost of setting up centres in all the trees in the forest is less than or equal to K dollars.</p>
+<h4 id="why-dynamic-programming">Why Dynamic programming?</h4>
 
-<p>Rose wants to choose the maximum capacity of the petrol tank so that the cost of setting up centres is not more than K. Also, the maximum capacity that the car can have is 10<sup>9</sup> litres. You have to output this maximum capacity.</p>
+<ul>
+  <li>
+    <p>Dynamic programming is a very useful method for solving a particular class of problems in which the problem is broken into smaller sub-problems and the optimal solution of sub-problems contribute towards the optimal solution of given problem.</p>
+  </li>
+  <li>
+    <p>If you are new to Dynamic Programming you can read a good tutorial here:
+<a href="https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/">link1</a></p>
+  </li>
+  <li>
+    <p>Most of the problems solved by DP(dynamic programming) seem to be of brute force type, but you can identify them by observing the repetative calculation of sub-problems and by formulating a recursive relationship to get the optimal soution.</p>
+  </li>
+</ul>
 
-<p><strong>Input</strong></p>
+<h4 id="whats-a-convex-hull-trick">What’s a Convex Hull Trick?</h4>
 
-<p>The first line contains 2 integers- <strong>N</strong> the number of nodes in TreeTop and <strong>K</strong>, the amount of money in dollars that Rose has.<br />
-The next <strong>N-1</strong> lines are of the form : <em>u v c(u, v)</em> - denoting there is an edge between u and v of length 1 and takes c(u, v) litres of petrol to cross.</p>
+<ul>
+  <li>
+    <p>Although it seems to be related to the <strong>Convex Hull Algorithm</strong> from its name, but it’s not. It is a “trick”, as its name suggests, in which from a set of linear function, the function which attains the extreme value for an independent variable is obtained effeciently by some preprocessing. Only because the soultion looks like an open convex polygon it is known as “Convex Hull Trick”.</p>
+  </li>
+  <li>
+    <p>For simple understanding, consider <strong>N</strong> lines of the form:</p>
 
-<p><strong>Output</strong></p>
+    <p><strong>y=m<sub>i</sub>x+c<sub>i</sub></strong> , ∀ i ∈[1,<strong>N</strong>]</p>
+  </li>
+  <li>
+    <p>The problem is to find the line with extremum value of y for a particular value of x.
+Let’s consider finding the minimum value of y.</p>
 
-<p>Print a single integer - the maximum capacity of the car’s tank.</p>
+    <p><img src="http://www.cs.wustl.edu/~pless/506/f8_3.gif" alt="img" /></p>
+  </li>
+  <li>
+    <p>From the figure you can see that the parts of lines marked as <em>lower envelope</em> gives us the required solution.</p>
+  </li>
+  <li>
+    <p>Few simple observations that can be made are :</p>
 
-<p><strong>Constraints</strong></p>
+    <ul>
+      <li>A part of line can be the solution for a <strong>continuous range</strong> of <strong>x</strong>.</li>
+      <li>As <strong>x</strong> increases, the slope of the required line keeps on decreasing and these parts of lines form an open convex hull.</li>
+    </ul>
+  </li>
+  <li>
+    <p>So, if you are given the set of lines initially, the you can sort the lines with decresasing value of slope and add then build the solution based on their point of intersection.</p>
 
-<p>1 &lt;= N &lt;= 10<sup>5</sup><br />
-1 &lt;= u, v &lt;= N<br />
-1 &lt;= K &lt;= 10<sup>15</sup><br />
-1 &lt;=c (u, v) &lt;= 10<sup>9</sup>   <br />
-It is guaranteed that the graph in the input is a tree, without multiple edges or self-loops.</p>
+    <p><img src="http://img1.mnimgs.com/img/shared/userimages/mn_images/image/Tr1.png" alt="img1" /></p>
+  </li>
+  <li>
+    <p>To build the solution you should discard the lines that can’t be a part of the solution. As you can see the above image, the slopes of lines are such that :</p>
 
+    <p>m<sub>m</sub> &gt; m<sub>l</sub> &gt; m<sub>n</sub></p>
+
+    <p>First, consider you have only lines <strong>m</strong> &amp; <strong>l</strong>. Then, add the line n to the set of line. Here, you can see that the x-co-ordinate of point <strong>C</strong> is less than the x-co-ordinate of point <strong>A</strong>. Hence, the line <strong>n</strong> attains minimum value even before the line <strong>l</strong>. From this you can see that the line <strong>l</strong> can be discarded from the solution set.</p>
+  </li>
+  <li>After discarding all such unnecessary lines, you can maintain the lines with decresing slope and the x-co-ordinate of its point of intersection with its previous line. (Observe that these x-co-ordinates will be in increasing order).</li>
+  <li>
+    <p>For the query, you can do <strong>binary search</strong> on the x-co-ordinate  of point of intersections and and get the line with the minimum value of <strong>y</strong> effeciently in <strong>Ο</strong>(log<strong>N</strong>), where <strong>N</strong> is number of lines.</p>
+  </li>
+  <li>
+    <p>PreProcessing time: <strong>Ο</strong>(<strong>N</strong>log<strong>N</strong>).</p>
+  </li>
+  <li>
+    <p>There is also a fully <strong>dynamic variant</strong> of this Convex Hull Trick in which the lines are added during the query time. For this a data structure like <a href="https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/#set"><strong>set</strong></a> can be used which maintain the sorted list of slopes of lines dynamically. The only difference is after each insertion of a new line(insertion of slope) into set, we check its intersection with its neighbouring elements in <strong>set</strong> and decide wheathter to discard it or not using the same condition as stated above. We should also check if any line already present in the set is discarded after the insertion of the line.</p>
+  </li>
+  <li>You can also try solving this problem <a href="https://www.codechef.com/JAN16/problems/CYCLRACE/">here</a>, which is based on direct implementation of its dynamic variant.</li>
+</ul>
+
+<h4 id="how-can-you-optimise-dp-with-convex-hull-trick">How can you optimise DP with Convex Hull Trick?</h4>
+
+<ul>
+  <li>
+    <p>In some specific problems that can be solved by <strong>Dynamic Programming</strong> we can do faster calculation of the state using the Convex Hull Trick. In these type of problems, the recursive relation between the states is as follows:</p>
+
+    <ul>
+      <li><strong>dp<sub>i</sub> = min(b<sub>j</sub>*a<sub>i</sub> + dp<sub>j</sub>)</strong> ,where j ∈ [1,i-1]</li>
+      <li><strong>b<sub>i</sub></strong> &gt; <strong>b<sub>j</sub></strong> ,∀ i&lt;j.</li>
+    </ul>
+
+    <p>Our task is to calculate <strong>dp<sub>N</sub></strong> from this relation. Here <strong>b<sub>i</sub></strong> and <strong>dp<sub>i</sub></strong> can be analogously interpreted as the <strong>slope</strong> and <strong>y-intercept</strong> for a line, and our problem of calculating the i’th state can be viewed as finding the minimum value of a line for x-co-ordinate <strong>a<sub>i</sub></strong>,which can be effeciently done using the convex hull trick.
+The slopes of the are given in the decreasing order here, so after calculating <strong>dp<sub>i</sub></strong> we can add a line with slope <strong>b<sub>i</sub></strong> and y-intercept <strong>dp<sub>i</sub></strong> directly to the right of the sorted list maintained for calculating further states.</p>
+  </li>
+  <li>
+    <p>In the above problem if we directly calculate <strong>dp<sub>i</sub></strong> by taking i-1 steps for each i, the the time complexity turns out to be <strong>Ο</strong>(<strong>N<sup>2</sup></strong>), but by using this optimisation technique we can calculate each state in <strong>Ο</strong>(log<strong>N</strong>) and the total complexity of the problem reduces to <strong>Ο</strong>(<strong>N</strong>log<strong>N</strong>)</p>
+  </li>
+  <li>This problem can also be more constrained by a condition:
+    <ul>
+      <li><strong>a<sub>i</sub></strong> &lt; <strong>a<sub>j</sub></strong>, ∀ i&lt;j.</li>
+    </ul>
+
+    <p>In this case, as we know that the x-co-ordinates are in increasing order, we can just maintain a pointer to the line giving minimunm value and then update the pointer to the next line according to the query. Here the steps taken for binary search are replaced by some amortised constant steps to update the pointer to the next lines(decreasing slope order). So, the calculation of each
+state takes time <strong>Ο</strong>(<strong>1</strong>) and the total time complexity reduces to <strong>Ο</strong>(<strong>N</strong>)</p>
+  </li>
+  <li>
+    <p>If there if no constraints given for <strong>a<sub>i</sub></strong> and <strong>b<sub>i</sub></strong>, then you can relate the problem with the dynamic variant of Convex Hull Trick. For this problem, we use the data structure <strong>set</strong> that maintains the lines in decreasing order of slopes along with dynamic insertions. Each insertion of line into <strong>set</strong> takes time <strong>Ο</strong>(log<strong>N</strong>) and calculation of each state takes time <strong>Ο</strong>(log<strong>N</strong>). So, the total time complexity will be <strong>Ο</strong>(<strong>N</strong>log<strong>N</strong>). You should be <strong>cautious</strong> in using <strong>set</strong> when you are given a constraint  for <strong>b<sub>i</sub></strong> because even though by both ways you get <strong>Ο</strong>(<strong>N</strong>log<strong>N</strong>), <strong>set</strong> has a high proportionality time constant.</p>
+  </li>
+  <li>You can try solving some problems here :
+ <a href="http://codeforces.com/contest/536/problem/C">link1</a>
+ <a href="http://codeforces.com/contest/319/problem/C">link2</a>
+ <a href="http://www.spoj.com/problems/NKLEAVES/en/">link3</a></li>
+  <li>Here’s an image just for fun :)
+<a href="https://cdn.meme.am/instances/500x/54146722.jpg">img</a></li>
+</ul>
+
+<p>………………………………………</p>
 
   </div>
 
@@ -183,8 +267,8 @@ It is guaranteed that the graph in the input is a tree, without multiple edges o
  
  
 <div class="arrowLeft">
-<a id="route" class="tooltip-right" href="/competitive/2016/08/13/weirdchemists.html" title="
-&lt;p class=hoveratas&gt;Weird Chemists&lt;/p&gt; &lt;p class=hoverbawah&gt;You run a chemical laboratory which contains **N** beakers containing...&lt;/p&gt;
+<a id="route" class="tooltip-right" href="/project/2016/08/26/nbodysimulation.html" title="
+&lt;p class=hoveratas&gt;N-Body Simulation&lt;/p&gt; &lt;p class=hoverbawah&gt;# [N-body simulation](http://sagnikb.github.io/Simulati-ON/) The N-body simulation is an interesting topic...&lt;/p&gt;
 "><i class="typcn typcn-chevron-left" style="    font-size: 30px;
     position: relative;
    
@@ -194,8 +278,8 @@ It is guaranteed that the graph in the input is a tree, without multiple edges o
 
  
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="/competitive/2016/08/13/rendezvous.html" title="
-&lt;p class=hoveratas&gt;Rendezvous&lt;/p&gt; &lt;p class=hoverbawah&gt;The city Manyonok has N substations . The substation numbered...&lt;/p&gt;
+<a id="route" class="tooltip-left" href="/pclub/2016/08/13/introworkshop16.html" title="
+&lt;p class=hoveratas&gt;Introductory Workshop 2016&lt;/p&gt; &lt;p class=hoverbawah&gt;Introduction Hi all, welcome to the Programming Club Introductory Workshop...&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
    
@@ -206,17 +290,21 @@ It is guaranteed that the graph in the input is a tree, without multiple edges o
 
 
   <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
-  <time datetime="2016-08-12T18:55:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Aug 13, 2016</time>
+  <time datetime="2016-08-22T20:45:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Aug 22, 2016</time>
    
   • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <span itemprop="name">
       
-      Arjun Sinha
+      Ginuga Saketh
       
     </span>
   </span>
    
     |
+  
+  <a href="/tags.html#tutorial" style="color: #fff;"><i class="typcn typcn-tags"></i> tutorial</a>
+  
+  <a href="/tags.html#Dynamic Programming" style="color: #fff;"><i class="typcn typcn-tags"></i> Dynamic Programming</a>
   
   <a href="/tags.html#competitive" style="color: #fff;"><i class="typcn typcn-tags"></i> competitive</a>
   
@@ -243,8 +331,8 @@ It is guaranteed that the graph in the input is a tree, without multiple edges o
   // var disqus_developer = 1;
   var disqus_shortname = 'pclubiitk';
   var disqus_config = function () {
-    this.page.url = 'https://pclub.in/competitive/2016/08/13/treetank';
-    this.page.identifier = '/competitive/2016/08/13/treetank';
+    this.page.url = 'https://pclub.in/tutorial/algos/2016/08/22/dpconvex';
+    this.page.identifier = '/tutorial/algos/2016/08/22/dpconvex';
   };
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
