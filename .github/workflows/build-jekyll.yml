@@ -1,0 +1,23 @@
+name: Build and deploy site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: bundler install
+        run: sudo gem install bundler:1.12.5
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses: helaili/jekyll-action@2.3.1    
+        with:                                
+          token: ${{ secrets.GITHUB_TOKEN }}
