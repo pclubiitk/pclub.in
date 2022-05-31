@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <!---
+  Dark Kimochi By Spaghetti
+  -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Installing Ubuntu 18.04 In Latest Asus Rog PCs</title>
+  <meta name="description" content="Updated: 21/03/2019">
+  <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
+  <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/css/flex.css">
+  <link rel="stylesheet" href="/assets/css/alternative.css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
+  <link rel="canonical" href="https://pclub.in/2017/01/06/Linux-on-Asus-ROG.html">
+  <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="https://pclub.in/feed.xml">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/image/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/image/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/image/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/image/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/image/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/image/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/image/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/image/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/image/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/image/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/image/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/image/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/image/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/image/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+
+  <Body>
+
+    <header class="site-header">
+  <div class="wrapper">
+<div class="pacel"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+  <a id="route" class="site-title" href="/">Programming Club IIT Kanpur</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#fff" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#fff" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#fff" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/about.html">About</a>
+          
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/archive.html">Archive</a>
+          
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/contact.html">Contact</a>
+          
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/projects.html">Projects</a>
+          
+          
+        
+          
+        
+          
+          
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/woc.html">Winter of Code 2019</a>
+          
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <!--<a class="page-link" href="https://pclub.in/feed.xml"> Feeds</a>-->
+        <a class="page-link" href="http://github.com/pclubiitk?tab=repositories"><i class="typico typcn typcn-social-github" style="font-size:"></i> Repositories</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div style="margin: 4.5rem auto;">
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="inpost-header">
+    <h1 class="inpost-title" itemprop="name headline">Installing Ubuntu 18.04 In Latest Asus Rog PCs</h1>
+    <h1 style="float:right" class="comment-postingatas">
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/2017/01/06/Linux-on-Asus-ROG.html#disqus_thread" data-disqus-identifier="/2017/01/06/Linux-on-Asus-ROG"style="color:#fff"> 0</a>
+    </h1>
+    </p>
+  </header>
+  
+  <div class="post-content" itemprop="articleBody">
+    <p>Updated: 21/03/2019</p>
+
+<p><strong>Problem occurs due to loading of Nvidia Drivers during booting.</strong></p>
+
+<h3 id="follow-the-following-simple-steps">Follow the following simple steps:</h3>
+
+<ol>
+  <li>
+    <p>When the grub boot loader menu is visible highlight “Try Ubuntu GNOME without installing” (use your up and down arrows)</p>
+  </li>
+  <li>
+    <p>Press “e” on your keyboard, this will allow you to edit the boot config.
+You will be brought to a page where you can make some edits.</p>
+  </li>
+  <li>
+    <p>add the following right after the word “splash”</p>
+
+    <p><code class="highlighter-rouge">nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait</code></p>
+  </li>
+  <li>
+    <p>Press the “f10” key to boot into the installer</p>
+  </li>
+  <li>
+    <p>When the desktop load move your mouse into the upper left hand corner, when the app launcher shows itself click on the very top icon “Install Ubuntu GNOME 18.04 LTS”</p>
+  </li>
+  <li>
+    <p>Do not install third party software.</p>
+  </li>
+  <li>
+    <p>Then follow the steps to install Ubuntu.</p>
+  </li>
+  <li>
+    <p>After installation click “Keep trying Ubuntu”</p>
+  </li>
+  <li>
+    <p>Shut down (NOT RESTART) your computer, remove installation media, hit enter.</p>
+  </li>
+  <li>
+    <p>Hold down shift then press the power button to turn on your computer. (holding down shift while powering on will load the grub boot menu)</p>
+  </li>
+  <li>
+    <p>When the grub boot menu appears press “e” and make the changes in step 3.</p>
+  </li>
+  <li>
+    <p>Press “f10”</p>
+  </li>
+  <li>
+    <p>Once your back into the desktop open your terminal. Press <code class="highlighter-rouge">Ctrl+Alt+T</code> if touch pad is not working and enter:</p>
+
+    <p><code class="highlighter-rouge">sudo gedit /etc/default/grub</code></p>
+  </li>
+  <li>
+    <p>Find the line that reads ‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”‘ and change it to read</p>
+
+    <p><code class="highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘</code></p>
+  </li>
+  <li>
+    <p>Ignore this step if touchpad is working else add <code class="highlighter-rouge">i8042.reset</code> to read:</p>
+
+    <p><code class="highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”i8042.reset quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘</code></p>
+  </li>
+  <li>
+    <p>Save the changes then exit gedit.</p>
+  </li>
+  <li>
+    <p>In your terminal run the command: sudo update-grub</p>
+  </li>
+  <li>
+    <p>Reboot your computer: sudo reboot.</p>
+  </li>
+  <li>
+    <p>The PC may hang at this point which means the OS doesn’t support restart with dual boot.</p>
+  </li>
+  <li>
+    <p>Force switch off the PC from power button and on next boot follow steps 13-17 and add <code class="highlighter-rouge">acpi=force</code> in step 14/15 to read:</p>
+
+    <p><code class="highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait acpi=force”‘</code></p>
+  </li>
+</ol>
+
+<p>Enjoy UbuntuGNOME!!!!</p>
+
+<p><strong>Next, we need to install Nvidia Drivers.</strong></p>
+
+<ol>
+  <li>
+    <p>Connect to a network</p>
+  </li>
+  <li>
+    <p>Remove all Nvidia installs(if any), run this command:</p>
+
+    <p><code class="highlighter-rouge">sudo apt-get purge nvidia* &amp; sudo apt autoremove &amp; sudo apt auto-clean</code></p>
+  </li>
+  <li>Open the file <code class="highlighter-rouge">sudo vim /etc/modprobe.d/blacklist.conf</code> and add these lines at the end:
+    <div class="highlighter-rouge"><pre class="highlight"><code> blacklist nouveau
+ blacklist vga16fb
+ blacklist rivafb
+ blacklist nvidiafb
+ blacklist rivatv
+ blacklist amd76_edac
+ alias nouveau off
+ alias lbm-nouveau off
+ options nouveau modeset=0
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Add the PPA graphic drivers:</p>
+
+    <p><code class="highlighter-rouge">sudo add-apt-repository ppa:graphics-drivers/ppa</code></p>
+  </li>
+  <li>
+    <p>Check recommended drivers:</p>
+
+    <p><code class="highlighter-rouge">ubuntu-drivers devices</code></p>
+  </li>
+  <li>
+    <p>AutoInstall recommended drivers:</p>
+
+    <p><code class="highlighter-rouge">sudo ubuntu-drivers autoinstall</code></p>
+  </li>
+  <li>
+    <p>If secure boot is not switched off, while installing it asks for a password, enter and remember it. Shutdown the PC
+(DONT RESTART).</p>
+  </li>
+  <li>
+    <p>Go to step 11 if secure boot is already disabled else on grub menu select <code class="highlighter-rouge">system setup</code> to open boot manager.</p>
+  </li>
+  <li>
+    <p>Switch off secure boot (use right left arrow to switch tabs, enter to select and esc for back in boot manager):</p>
+
+    <p><code class="highlighter-rouge">security tab-&gt;secure boot-&gt;secure boot controller-&gt; disabled</code></p>
+  </li>
+  <li>
+    <p>Press F10 to Save and exit.</p>
+  </li>
+  <li>
+    <p>Verify Nvidia installation (shows a nice table with nvidia hardware and driver specs):</p>
+
+    <p><code class="highlighter-rouge">nvidia-smi</code></p>
+  </li>
+  <li>
+    <p>Use “nvidia-X-server” from applications or following command to select profile for next boot (available profiles are intel and nvidia)</p>
+
+    <p><code class="highlighter-rouge">sudo prime-select nvidia</code></p>
+  </li>
+  <li>If you are not a beginner and wish to switch profiles without reboot use: https://github.com/matthieugras/Prime-Ubuntu-18.04.</li>
+</ol>
+
+<p><strong>Potential Problems</strong></p>
+
+<p>If anything goes wrong during driver installation, you are likely to get a black screen. In that case follow these steps to
+uninstall nvidia:</p>
+
+<ol>
+  <li>
+    <p>Try “Ctrl+Alt+F1”. if console opens simply login and go to step 5 else force shutdown the PC.</p>
+  </li>
+  <li>
+    <p>Hold shift and power on the computer.</p>
+  </li>
+  <li>
+    <p>Select “advanced options” and then “recovery mode”.</p>
+  </li>
+  <li>
+    <p>Select root and press enter key twice. You will be dropped in root shell.</p>
+  </li>
+  <li>
+    <p>Run this command</p>
+
+    <p><code class="highlighter-rouge">apt purge nvidia*</code></p>
+  </li>
+  <li>
+    <p>Reboot</p>
+
+    <p><code class="highlighter-rouge">reboot</code></p>
+  </li>
+  <li>
+    <p>You can either retry the above steps to install nvidia-drivers or use ubuntu with intel card.</p>
+  </li>
+</ol>
+
+<p>Windows update which requires multiple restarts would be problem because grub selects ubuntu as default. This may lead to
+crashing of windows. Switching OFF automatic updates is RECOMMENDED. In case, you want to do an update :</p>
+
+<ol>
+  <li>
+    <p>Make windows first boot option from boot manager.</p>
+
+    <p><code class="highlighter-rouge">Grub-&gt;system setup-&gt;boot tab-&gt;change boot order(swap 1st and second option)</code></p>
+  </li>
+  <li>
+    <p>Perform the update and shut down the PC.</p>
+  </li>
+  <li>
+    <p>Press <code class="highlighter-rouge">esc</code> repeatedly to open boot menu. Select <code class="highlighter-rouge">enter setup</code>.</p>
+  </li>
+  <li>
+    <p>Restore the boot tab to previous settings.</p>
+  </li>
+</ol>
+
+<p>Source: <a href="https://jeremymdyson.wordpress.com/2016/04/27/ubuntugnome-16-04-on-asus-rog-gl552v/">ubuntugnome-16-04-on-asus-rog-gl552v</a></p>
+
+  </div>
+
+<div class="arrowNav">
+ 
+ 
+<div class="arrowLeft">
+<a id="route" class="tooltip-right" href="/2017/01/06/installarch.html" title="
+&lt;p class=hoveratas&gt;Installarch&lt;/p&gt; &lt;p class=hoverbawah&gt;#+LAYOUT: post #+TITLE: Install Fest: Arch Linux #+DATE: 2017-01-06 18:35:20...&lt;/p&gt;
+"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+
+ 
+<div class="arrowRight" style="float:right">
+<a id="route" class="tooltip-left" href="/project/2016/12/23/Air-war.html" title="
+&lt;p class=hoveratas&gt;Air War Unity&lt;/p&gt; &lt;p class=hoverbawah&gt;Air war This is a single player air-fight based game...&lt;/p&gt;
+"><i class="typcn typcn-chevron-right" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+</div>
+
+
+  <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
+  <time datetime="2017-01-06T00:00:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> Jan 6, 2017</time>
+   
+  • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">
+      
+      Mohit Kumar Singh
+      
+    </span>
+  </span>
+   
+    |
+  
+  </p>
+
+</article>
+
+
+
+
+
+<style>
+    #disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+</style>
+<div id="disqus_thread"></div>
+<script>
+  // For debugging
+  // var disqus_developer = 1;
+  var disqus_shortname = 'pclubiitk';
+  var disqus_config = function () {
+    this.page.url = 'https://pclub.in/2017/01/06/Linux-on-Asus-ROG';
+    this.page.identifier = '/2017/01/06/Linux-on-Asus-ROG';
+  };
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
+
+      </div>
+    </div>
+
+    
+<footer class="site-footer">
+  <div class="wrapper">
+    <h2 class="footer-heading">Programming Club IIT Kanpur</h2>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>The Programming Club, IIT Kanpur
+</li>
+          <li><a href="mailto:pclubiitk@gmail.com">pclubiitk@gmail.com</a></li>
+          <li>Send us Pull Requests to this website <a href="https://github.com/pclubiitk/pclub.in" target="_blank">here</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/pclubiitk"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">pclubiitk</span></a>
+
+          </li>
+          
+          
+          
+          <li>
+            <a href="https://facebook.com/groups/pclubiitk"><span class="icon icon--facebook"><?xml version="1.0"?>
+<svg class="icon icon-facebook" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path class="background" fill="#828282" d="M 0.875,0 C 0.38722,0 0,0.38721 0,0.875 l 0,14.25 C 0,15.61266 0.38715,16 0.875,16 l 7.65625,0 0,-6.1875 -2.0625,0 0,-2.4375 2.0625,0 0,-1.78125 c 0,-2.06656 1.2814395,-3.1875 3.125,-3.1875 0.88307,0 1.62261,0.06435 1.84375,0.09375 l 0,2.15625 -1.25,0.03125 c -1.00252,0 -1.21875,0.45713 -1.21875,1.15625 l 0,1.53125 2.40625,0 -0.3125,2.4375 -2.09375,0 0,6.1875 4.09375,0 C 15.612599,16 16,15.61272 16,15.125 L 16,0.875 C 16,0.38721 15.61266,0 15.125,0 L 0.875,0 z"/>
+  <path class="foreground" fill="white" d="m 11.03968,16.000001 v -6.19608 h 2.07973 l 0.31141,-2.41472 h -2.39114 v -1.54165 c 0,-0.69912 0.19414,-1.17555 1.19666,-1.17555 l 1.27866,-5.6e-4 v -2.15974 c -0.22114,-0.0294 -0.98017,-0.0952 -1.86324,-0.0952 -1.8435605,0 -3.1057105,1.12532 -3.1057105,3.19188 v 1.7808 h -2.08506 v 2.41472 h 2.08506 v 6.19608 H 11.03968 z"/>
+</svg>
+</span><span class="username">PClubIITK</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/pclubiitk"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">pclubiitk</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+      <div class="footer-col footer-col-3">
+        <p style="font-size: xx-small;">Design by Spaghetti</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Loading JavaScript -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-preload.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-tooltipster.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-autocomplete.js"></script>
+<script type="text/javascript" src="/assets/js/responsive_waterfall.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    "/" != location.pathname ? $('.trigger a[href^="/' + location.pathname.split("/")[1] + '"]').addClass("active") : $(".none a:eq(0)").addClass("active")
+}), $(document).ready(function() {
+    $(".tooltip-right").tooltipster({
+        contentAsHTML: !0,
+        position: "right"
+    })
+}), $(document).ready(function() {
+    $(".tooltip-left").tooltipster({
+        contentAsHTML: !0,
+        position: "left"
+    })
+});
+$(document).ready(function() {
+    $(".menu-icon").click(function() {
+        $(".trigger").toggle()
+    })
+}), Pace.on("done", function() {
+    $(".pacel").hide()
+}), $(function() {
+    $("img").lazyload({})
+});
+var options = {
+    url: "/gblk.json",
+    getValue: "title",
+    list: {
+        match: {
+            enabled: !0,
+            maxNumberOfElements: 5
+        }
+    },
+    template: {
+        type: "links",
+        fields: {
+            link: "url"
+        }
+    },
+    theme: "square"
+};
+$("#countries").easyAutocomplete(options);
+var waterfall = new Waterfall({
+    containerSelector: ".wf-container",
+    boxSelector: ".wf-box",
+    minBoxWidth: 180
+});
+</script>
+
+
+  </Body>
+
+</html>

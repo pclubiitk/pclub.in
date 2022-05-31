@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <!---
+  Dark Kimochi By Spaghetti
+  -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Introduction to R (Part 1)</title>
+  <meta name="description" content="Basics Of RWhy Learn R ?  Free, Open Source, Cross Platform Compatible  No Windows, No Doors – R runs on all the platforms. Just name it and you got it!!  R ...">
+  <meta name="google-site-verification" content="Jo2tsvJukG-gUtQpsqsSJRDXKo5XD10xutu1oJd-eTU" />
+  <meta name="msvalidate.01" content="39EAB6293E810C6EFD770A53ECE7C7FE" />
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/css/flex.css">
+  <link rel="stylesheet" href="/assets/css/alternative.css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css" rel="stylesheet">
+  <link rel="canonical" href="https://pclub.in/tutorial/data%20analytics/2016/05/25/rpart1.html">
+  <link rel="alternate" type="application/rss+xml" title="Programming Club IIT Kanpur" href="https://pclub.in/feed.xml">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/image/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/image/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/image/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/image/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/image/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/image/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/image/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/image/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/image/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/image/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/image/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/image/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/image/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/image/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+
+  <Body>
+
+    <header class="site-header">
+  <div class="wrapper">
+<div class="pacel"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+  <a id="route" class="site-title" href="/">Programming Club IIT Kanpur</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#fff" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#fff" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#fff" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/about.html">About</a>
+          
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/archive.html">Archive</a>
+          
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/contact.html">Contact</a>
+          
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/projects.html">Projects</a>
+          
+          
+        
+          
+        
+          
+          
+          
+        
+          
+          
+          <a id="route" class="page-link" href="/woc.html">Winter of Code 2019</a>
+          
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <!--<a class="page-link" href="https://pclub.in/feed.xml"> Feeds</a>-->
+        <a class="page-link" href="http://github.com/pclubiitk?tab=repositories"><i class="typico typcn typcn-social-github" style="font-size:"></i> Repositories</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div style="margin: 4.5rem auto;">
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="inpost-header">
+    <h1 class="inpost-title" itemprop="name headline">Introduction to R (Part 1)</h1>
+    <h1 style="float:right" class="comment-postingatas">
+      <i class="typcn typcn-messages"></i> <a class="disqus-comment-count" href="/tutorial/data%20analytics/2016/05/25/rpart1.html#disqus_thread" data-disqus-identifier="/tutorial/data%20analytics/2016/05/25/rpart1"style="color:#fff"> 0</a>
+    </h1>
+    </p>
+  </header>
+  
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="basics-of-r">Basics Of R</h1>
+
+<h3 id="why-learn-r-">Why Learn R ?</h3>
+<ul>
+  <li>Free, Open Source, Cross Platform Compatible</li>
+  <li>No <em>Windows</em>, No Doors – R runs on all the platforms. Just name it and you got it!!</li>
+  <li>R is a language evolved from the <strong>Language</strong> <strong><em>S</em></strong> (<em>created by Bell Technologies</em>)</li>
+  <li>I bet plotting graphs could never have been easier</li>
+  <li>
+    <p>It is the leading open source statistical and data analysis programming language,  as it handles and manipulates data too efficiently.</p>
+  </li>
+  <li>I personally recommend you to use R on <em>UNIX</em> machines . I haven’t tried it on <em>Windows</em> yet :P</li>
+  <li>Still not convinced ? <a href="http://blog.revolutionanalytics.com/2012/07/a-big-list-of-the-things-r-can-do.html">Here</a> is a list of things that R can do . Keep Counting !!</li>
+</ul>
+
+<p><strong><em>Having Fun with R</em></strong></p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">install.packages</span><span class="p">(</span><span class="s2">"sudoku"</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">sudoku</span><span class="p">)</span><span class="w">
+</span><span class="n">s</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">readSudoku</span><span class="p">(</span><span class="s2">"c:/hard sudoku problem.txt"</span><span class="p">)</span><span class="w">
+</span><span class="n">solveSudoku</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></code></pre></figure>
+
+<p>Wondering what the above 4 lines of code can do ? Well It can solve the <strong>hardest</strong> <em>Soduku Puzzle</em> ever made ! Sounds Cool ?</p>
+
+<p>Google <strong><em>“Making a word cloud in R”</em></strong> and see how easy it is !</p>
+
+<h2 id="some-pre-requiste-knowledge">Some Pre Requiste Knowledge</h2>
+
+<ul>
+  <li>How to start R ?</li>
+  <li>Will their be an IDE where I can code ?</li>
+</ul>
+
+<p>The installation instructions for various platforms (including Non <em>UNIX</em> products) can be found <a href="https://cran.r-project.org/doc/manuals/r-release/R-admin.html">here</a></p>
+
+<p>After Installation. Just open your terminal and type <code class="highlighter-rouge">R</code></p>
+
+<h3 id="some-important-things-first"><strong>Some important things first</strong></h3>
+
+<ul>
+  <li>Whenever you are done with this language or simply wanna quit this Just type <code class="highlighter-rouge">q()</code></li>
+  <li>Whenever you are struck anywhere just type <code class="highlighter-rouge">help(commandname)</code></li>
+  <li><strong><em>R</em></strong> is an expression language and is <em>case sensitive</em></li>
+  <li>
+    <p>“R” &amp; “r” are two different things</p>
+  </li>
+  <li>Whenever you type an expression, the value is <strong>calculated , printed and lost</strong>.</li>
+  <li>You better save the results of your expressions in a variable</li>
+  <li>
+    <p>An <strong>assignment</strong> also evaluates an expression and passes the value to a variable but the result is <strong><em>not automatically printed</em></strong></p>
+  </li>
+  <li>Comments can be put anywhere starting with a Hashmark ( <code class="highlighter-rouge">#</code> )</li>
+  <li>Commands are separated either by a <strong><em>semi-colon</em></strong> <code class="highlighter-rouge">;</code> or by a <strong><em>newline</em></strong></li>
+  <li>If your command is incomplete R by default will give a <code class="highlighter-rouge">+</code> prompt and will continue to give a <code class="highlighter-rouge">+</code> prompt until your syntax is corrected.</li>
+  <li><strong><em>NaN</em></strong> stands for Not a Number</li>
+</ul>
+
+<h3 id="programming-in-r-finally"><strong><em>Programming in R Finally</em></strong></h3>
+
+<p>After reading so much about <strong><em>R</em></strong> . It’s time to really start coding</p>
+
+<h4 id="loading-commands-in-r">Loading commands in R</h4>
+
+<p>If you already have a .R extension file with certain commands already written , you can load it with the following syntax</p>
+
+<p><code class="highlighter-rouge">source(“nameofthefile".R)</code></p>
+
+<p>Wanna store all the outputs for a particular session ?</p>
+
+<p><code class="highlighter-rouge">sink (“nameoffile”)</code></p>
+
+<p>Simliar to a <em>UNIX</em> terminal you can type <code class="highlighter-rouge">ls()</code> to view all the objects you created in <strong><em>R</em></strong> for a particular session.</p>
+
+<blockquote>
+  <p>The collection of objects currently stored is called the <strong><em>workspace</em></strong></p>
+</blockquote>
+
+<p>How to remove an object ?</p>
+
+<p>Use <code class="highlighter-rouge">rm(objectname1,objectname2)</code></p>
+
+<p><strong>Removing all objects</strong></p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">rm</span><span class="p">(</span><span class="n">list</span><span class="o">=</span><span class="n">ls</span><span class="p">())</span></code></pre></figure>
+
+<p><em>Try to understand this command on your own.It’s pretty easy</em></p>
+
+<h4 id="data-types">Data Types</h4>
+
+<p>Used Python ? <strong><em>R</em></strong> might look familiar!</p>
+
+<p>You can do mathematical operations like</p>
+
+<p><code class="highlighter-rouge">1+1</code> : Prints 2</p>
+
+<p>Time to make vectors!</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">test</code> : name of the variable where the vector is stored</p>
+
+  <p><code class="highlighter-rouge"> &lt;-</code>  :  assignment operator (points in direction of the variable in which value is to be updated/stored)</p>
+
+  <p><code class="highlighter-rouge">c()</code> : a function used to concatenate</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="s2">"Hello World"</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="nf">c</span><span class="p">(</span><span class="s2">"Hello "</span><span class="p">,</span><span class="s2">"World"</span><span class="p">)</span></code></pre></figure>
+
+<p><br />
+Here you can see different ways to defining the same string.</p>
+
+<p><code class="highlighter-rouge">1:9</code> :   Creates sequence : <strong>1 2 3 4 5 6 7 8 9</strong></p>
+
+<p><code class="highlighter-rouge">1.5:10</code> Creates sequence : <strong>1.5 2.5 3.5 4.5 5.5 6.5 7.5 8.5 9.5</strong></p>
+
+<p><code class="highlighter-rouge">seq(intial,final,by,length)</code> : Function use to create sequence; we can provide increment values or number of values</p>
+
+<p><code class="highlighter-rouge">rep()</code>:  Function used for Replicating</p>
+
+<p><strong>Examples</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">seq(1,5,by=1.5)</code></td>
+      <td><strong>1.0 2.5 4.0</strong></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">seq(1,5,length=9)</code></td>
+      <td><strong>1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0</strong></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">rep(10,10)</code></td>
+      <td><strong>10 10 10 10 10 10 10 10 10 10</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+<strong>Try it yourself</strong></p>
+
+<p>Try to understand the code snippet below, guess the output and then run on <strong><em>R</em></strong> and check</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">temp</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="w">
+</span><span class="n">matrix</span><span class="p">(</span><span class="nf">rep</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span></code></pre></figure>
+
+<h4 id="operations-on-vector">Operations on vector</h4>
+
+<p>You can do almost all possible arithemetic operations on a vector
+Adding 2 vectors of same size, different size, multiplying, dividing, <code class="highlighter-rouge">log()</code>,<code class="highlighter-rouge">exp()</code>,<code class="highlighter-rouge">sin()</code>, <code class="highlighter-rouge">sum()</code>,<code class="highlighter-rouge">length()</code>,<code class="highlighter-rouge">var()</code>,<code class="highlighter-rouge">mean()</code>,<code class="highlighter-rouge">sort()</code>,<code class="highlighter-rouge">max()</code>,<code class="highlighter-rouge">min()</code></p>
+
+<blockquote>
+  <p><strong>pmin and pmax</strong> :Returns parallel max and min of input values</p>
+
+  <p><em>Example</em>
+Run these commands and you will get a clear idea of pmin and pmax</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">10</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">7</span><span class="p">,</span><span class="m">9</span><span class="p">)</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">9</span><span class="p">,</span><span class="m">4</span><span class="p">,</span><span class="m">6</span><span class="p">,</span><span class="m">4</span><span class="p">)</span><span class="w">
+</span><span class="n">c</span><span class="w"> </span><span class="o">-&lt;</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">9</span><span class="p">,</span><span class="m">6</span><span class="p">,</span><span class="m">8</span><span class="p">,</span><span class="m">6</span><span class="p">)</span><span class="w">
+</span><span class="n">pmin</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span><span class="w">
+</span><span class="n">pmax</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span><span class="w">
+</span><span class="nf">max</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span><span class="w">
+</span><span class="nf">min</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span></code></pre></figure>
+
+<p>To intialize a vector with a value <code class="highlighter-rouge">numeric()</code> is used</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>a &lt;- numeric(10)` : a has now value 10
+</code></pre>
+</div>
+
+<p><strong>An Intersting Thing to Note</strong></p>
+
+<p>Try the following commands</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">test</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">numeric</span><span class="p">()</span><span class="w">
+</span><span class="n">test</span><span class="p">[</span><span class="m">10</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="n">test</span></code></pre></figure>
+
+<p>You should now see <strong>NA’s</strong> in the vector</p>
+
+<p><strong>NA</strong> stands for Not Available</p>
+
+<p><strong><em>NA</em></strong> : Missing values are represented by the symbol NA (not available)</p>
+
+<p>How to check for <strong>NA</strong> in a vector ? : <code class="highlighter-rouge">is.na()</code></p>
+
+<p><strong>Example</strong></p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">test</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="kc">NA</span><span class="p">)</span><span class="w">
+</span><span class="n">check</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">is.na</span><span class="p">(</span><span class="n">test</span><span class="p">)</span><span class="w">
+</span><span class="n">check</span></code></pre></figure>
+
+<p>check will be <strong>FALSE</strong> for non NA values and <strong>TRUE</strong> for NA values</p>
+
+<p>How to remove <strong>NA</strong> values ? Let’s substitute NA with -1
+<code class="highlighter-rouge">test[is.na(test)] &lt;- -1</code></p>
+
+<h4 id="logical-vectors">LOGICAL VECTORS</h4>
+<p>Can contain <strong>TRUE</strong> or <strong>FALSE</strong>.  What else ? <strong>NA</strong> : Don’t forget this :P</p>
+
+<p>Example: <code class="highlighter-rouge">test &lt;- 5&lt;6</code></p>
+
+<p><strong>Operations on Logical Vectors</strong></p>
+
+<p><code class="highlighter-rouge">!</code>: For Negation</p>
+
+<p><code class="highlighter-rouge">&amp;</code> or <code class="highlighter-rouge">&amp;&amp;</code> : for <em>Logical AND</em></p>
+
+<p><code class="highlighter-rouge">|</code> or <code class="highlighter-rouge">||</code> : for <em>LOGICAL OR</em></p>
+
+<h4 id="determining-the-type-of-a-variable">Determining the type of a variable</h4>
+<p><code class="highlighter-rouge">typeof(variablename)</code> : Return the type of variable</p>
+<blockquote>
+  <p>Check out <code class="highlighter-rouge">mode()</code> and <code class="highlighter-rouge">class()</code> and read about the difference between the three</p>
+</blockquote>
+
+<p><em>We will discuss this in the next part :D</em></p>
+
+<h5 id="mathematical-basic-operations">Mathematical Basic Operations</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Syntax</th>
+      <th>Operation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">sqrt(a)</code></td>
+      <td>Returns the square root of <strong><em>a</em></strong></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">exp(a)</code></td>
+      <td>Return the value of exponent of <strong><em>a</em></strong></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">log(a)</code></td>
+      <td>Returns the Logarithm base <strong>e</strong> of <strong><em>a</em></strong> Try <code class="highlighter-rouge">log10()</code> for base <strong>10</strong></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">var()</code></td>
+      <td>Returns Variance of a vector which is passed as an argument</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">sd()</code></td>
+      <td>Returns	Standard Deviation of a vector which is passed as an argument</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<blockquote>
+  <p>Note : Providing an input to a function outside it’s domain will result in NaN <strong><em>Not a Number</em></strong></p>
+</blockquote>
+
+<h4 id="strings">Strings</h4>
+
+<p>Also called <strong><em>Character Vectors</em></strong> follow <strong>C</strong> type escape character <code class="highlighter-rouge">\</code></p>
+
+<p>Combining Characters to Numbers !</p>
+
+<p><code class="highlighter-rouge">test &lt;- paste(c("X,"Y"),1:10,sep="")</code></p>
+
+<p><code class="highlighter-rouge">test</code></p>
+
+<p>The Output should look like <strong><em>“X1”  “Y2”  “X3”  “Y4”  “X5”  “Y6”  “X7”  “Y8”  “X9”  “Y10”</em></strong></p>
+
+<blockquote>
+  <p><strong><em>paste()</em></strong></p>
+
+  <p>Function takes an arbitrary number of arguments and concatenates them one by
+one into character strings.</p>
+
+  <p>The arguments are by default separated in the result by a single blank character, but this can be
+changed by the named argument, <code class="highlighter-rouge">sep=</code></p>
+</blockquote>
+
+<p><strong><em>That’s all for the Part 1 :D , We will be posting Part 2 soon</em></strong>
+** We will look into arrays, factors, table, matrix, data frames in the next part **</p>
+
+  </div>
+
+<div class="arrowNav">
+ 
+ 
+<div class="arrowLeft">
+<a id="route" class="tooltip-right" href="/angularjs/web%20development/2016/05/27/angular.html" title="
+&lt;p class=hoveratas&gt;AngularJS --- Superheroic Javascript Framework&lt;/p&gt; &lt;p class=hoverbawah&gt;### AngularJS: Superheroic Javascript Framework For all those who have...&lt;/p&gt;
+"><i class="typcn typcn-chevron-left" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+
+ 
+<div class="arrowRight" style="float:right">
+<a id="route" class="tooltip-left" href="/pclub/2016/05/14/pclubci.html" title="
+&lt;p class=hoveratas&gt;Setting up a CI for pclub.in&lt;/p&gt; &lt;p class=hoverbawah&gt;To begin with, I urge you to have a look...&lt;/p&gt;
+"><i class="typcn typcn-chevron-right" style="    font-size: 30px;
+    position: relative;
+   
+    "></i></a>
+</div>
+
+</div>
+
+
+  <p class="post-meta" style="background: #00bc8c; padding: 15px 0px 15px 20px;">
+  <time datetime="2016-05-25T16:36:00+00:00" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> May 25, 2016</time>
+   
+  • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">
+      
+      <a href="http://home.iitk.ac.in/~anishl/" target="_blank" style="color: #fff;">Anish Lamba</a>
+      
+    </span>
+  </span>
+   
+    |
+  
+  <a href="/tags.html#R" style="color: #fff;"><i class="typcn typcn-tags"></i> R</a>
+  
+  <a href="/tags.html#Summers" style="color: #fff;"><i class="typcn typcn-tags"></i> Summers</a>
+  
+  <a href="/tags.html#Analytics" style="color: #fff;"><i class="typcn typcn-tags"></i> Analytics</a>
+  
+  <a href="/tags.html#Data Plotting" style="color: #fff;"><i class="typcn typcn-tags"></i> Data Plotting</a>
+  
+  <a href="/tags.html#Statistics" style="color: #fff;"><i class="typcn typcn-tags"></i> Statistics</a>
+  
+  </p>
+
+</article>
+
+
+
+
+
+<style>
+    #disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+</style>
+<div id="disqus_thread"></div>
+<script>
+  // For debugging
+  // var disqus_developer = 1;
+  var disqus_shortname = 'pclubiitk';
+  var disqus_config = function () {
+    this.page.url = 'https://pclub.in/tutorial/data%20analytics/2016/05/25/rpart1';
+    this.page.identifier = '/tutorial/data%20analytics/2016/05/25/rpart1';
+  };
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
+
+      </div>
+    </div>
+
+    
+<footer class="site-footer">
+  <div class="wrapper">
+    <h2 class="footer-heading">Programming Club IIT Kanpur</h2>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>The Programming Club, IIT Kanpur
+</li>
+          <li><a href="mailto:pclubiitk@gmail.com">pclubiitk@gmail.com</a></li>
+          <li>Send us Pull Requests to this website <a href="https://github.com/pclubiitk/pclub.in" target="_blank">here</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/pclubiitk"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">pclubiitk</span></a>
+
+          </li>
+          
+          
+          
+          <li>
+            <a href="https://facebook.com/groups/pclubiitk"><span class="icon icon--facebook"><?xml version="1.0"?>
+<svg class="icon icon-facebook" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path class="background" fill="#828282" d="M 0.875,0 C 0.38722,0 0,0.38721 0,0.875 l 0,14.25 C 0,15.61266 0.38715,16 0.875,16 l 7.65625,0 0,-6.1875 -2.0625,0 0,-2.4375 2.0625,0 0,-1.78125 c 0,-2.06656 1.2814395,-3.1875 3.125,-3.1875 0.88307,0 1.62261,0.06435 1.84375,0.09375 l 0,2.15625 -1.25,0.03125 c -1.00252,0 -1.21875,0.45713 -1.21875,1.15625 l 0,1.53125 2.40625,0 -0.3125,2.4375 -2.09375,0 0,6.1875 4.09375,0 C 15.612599,16 16,15.61272 16,15.125 L 16,0.875 C 16,0.38721 15.61266,0 15.125,0 L 0.875,0 z"/>
+  <path class="foreground" fill="white" d="m 11.03968,16.000001 v -6.19608 h 2.07973 l 0.31141,-2.41472 h -2.39114 v -1.54165 c 0,-0.69912 0.19414,-1.17555 1.19666,-1.17555 l 1.27866,-5.6e-4 v -2.15974 c -0.22114,-0.0294 -0.98017,-0.0952 -1.86324,-0.0952 -1.8435605,0 -3.1057105,1.12532 -3.1057105,3.19188 v 1.7808 h -2.08506 v 2.41472 h 2.08506 v 6.19608 H 11.03968 z"/>
+</svg>
+</span><span class="username">PClubIITK</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/pclubiitk"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">pclubiitk</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+      <div class="footer-col footer-col-3">
+        <p style="font-size: xx-small;">Design by Spaghetti</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Loading JavaScript -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-preload.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-tooltipster.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-autocomplete.js"></script>
+<script type="text/javascript" src="/assets/js/responsive_waterfall.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    "/" != location.pathname ? $('.trigger a[href^="/' + location.pathname.split("/")[1] + '"]').addClass("active") : $(".none a:eq(0)").addClass("active")
+}), $(document).ready(function() {
+    $(".tooltip-right").tooltipster({
+        contentAsHTML: !0,
+        position: "right"
+    })
+}), $(document).ready(function() {
+    $(".tooltip-left").tooltipster({
+        contentAsHTML: !0,
+        position: "left"
+    })
+});
+$(document).ready(function() {
+    $(".menu-icon").click(function() {
+        $(".trigger").toggle()
+    })
+}), Pace.on("done", function() {
+    $(".pacel").hide()
+}), $(function() {
+    $("img").lazyload({})
+});
+var options = {
+    url: "/gblk.json",
+    getValue: "title",
+    list: {
+        match: {
+            enabled: !0,
+            maxNumberOfElements: 5
+        }
+    },
+    template: {
+        type: "links",
+        fields: {
+            link: "url"
+        }
+    },
+    theme: "square"
+};
+$("#countries").easyAutocomplete(options);
+var waterfall = new Waterfall({
+    containerSelector: ".wf-container",
+    boxSelector: ".wf-box",
+    minBoxWidth: 180
+});
+</script>
+
+
+  </Body>
+
+</html>
