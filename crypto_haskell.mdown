@@ -1,0 +1,27 @@
+---
+layout: post
+title: “Cryptography Using Haskell”
+date: 2017-04-10 01:00:00 +0530
+author: mayankgt
+category: Project
+tags:
+- summer16
+- project
+categories:
+- project
+
+---
+
+# [Cryptography using Haskell](https://github.com/mayankgt/final_project)
+
+Cryptography is a topic of vast research and application in real world. Various Cryptographic ciphers are implied depending upon the level of secrecy required. The standard algorithm like DES and AES are generally used in today’s world. Besides this, various other HASH functions like SHA-1 is used for the secure transfer of passwords and other sensitive informations. An implementation of 64-bit DES is constructed on Haskell which inputs a text file of arbitrary length and outputs an equivalent Cipher text file and vice-versa. 
+
+*Used Functional programming to code the Cryptographic Algorithm
+*Implemented 64-bit DES, which requires an equivalent key for Encryption and Decryption.
+*Successfully implemented a random number generator, which generates random large Prime Numbers for RSA algorithm.
+*Developed an efficient algorithm to check the primality of a large number.
+
+
+
+LaTeX Report: [Report.pdf](https://github.com/mayankgt/final_project/blob/master/Report.pdf)
+Timeline: [Timeline.pdf](https://github.com/mayankgt/final_project/blob/master/Timeline.pdf)
