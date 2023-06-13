@@ -10,7 +10,8 @@ tags:
 - wocproject
 categories:
 - wocproject
-
+image:
+  url: https://media.istockphoto.com/id/1277965612/photo/conceptual-image-of-a-person-voting-during-elections.jpg?s=612x612&w=0&k=20&c=lNfkt2SMrYFPEl6CQPxWACuHEMQs-WArSkGhsCs6EP4=
 ---
 
 #### Description

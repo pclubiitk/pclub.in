@@ -2,95 +2,47 @@
 layout: default
 ---
 
-<script type="text/javascript">
-// For animating the title to appear one by one
-var title = "We're the PClub!"
-window.onload = function() {
-    var dv = $('#titlePclub');
-    dv.text("");
-    jQuery({count:0}).animate({count:title.length}, {
-        duration: 1500,
-        step: function() {
-          dv.text(title.substring(0, Math.round(this.count)));
-        }
-    });
-};
-</script>
-
-<div class="row">
-
-  <div class="large-7 columns samping">
-
-    <article class="headerpost tag-speeches">
-      <div style="padding: 20px;">
-        <header class="post-header">
-          <h1 class="post-title" style="font-size: 3em;"><center id="titlePclub"></center></h1>
-        </header>
-        <center>
-          <img src="/assets/image/pclub.png" style="max-width: 80%;">
-        </center>
-        <br>
-        <section class="post-excerpt">
-          <em><center><h4>Talk is cheap, show us the code!</h4></center></em>
-        </section>
-      </div>
-    </article>
-
-    {% for post in paginator.posts %}
-    <article class="post tag-speeches">
-      <div style="padding: 20px;">
-        <header class="post-header">
-          <h2 class="post-title"><a id="route" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        </header>
-        <section class="post-excerpt">
-          <p>{{ post.content | strip_html | truncatewords:45}} <a id="route" class="read-more" href="{{ post.url | prepend: site.baseurl }}">»</a></p>
-        </section>
-      </div>
-      <footer class="post-meta" style="    background: #00bc8c;
-      padding: 10px 0 0px 20px;">
-
-
-        <p class="post-tags"><i class="typico typcn typcn-tags" style="    font-size: 28px;
-        position: relative;
-        top: 1px;
-        font-size:15px"></i> {% include post-tags.html %}</p>
-        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" style="color:#fff;"><i class="typico typcn typcn-calendar-outline" style="    font-size: 28px;
-        position: relative;
-        top: 1px;
-        font-size:15px"></i> {{ post.date | date: "%b %-d, %Y" }}</time>
-        {% if post.website == nil %}
-        <p class="post-tags" style="text-align: right;"> -- {{ post.author }}</p>
-        {% else %}
-        <p class="post-tags" style="text-align: right;"> -- <a href="{{ post.website }}" target="_blank">{{ post.author }}</a></p>
-        {% endif %}
-        <!--<p class="post-date"><i class="typico typcn typcn-messages" style="    font-size: 28px;-->
-        <!--position: relative;-->
-        <!--top: 1px;-->
-        <!--font-size:15px"></i> <a id="route" class="disqus-comment-count"  href="{{ post.url | prepend: site.baseurl }}#disqus_thread" style="color:#fff"> 0 Comments</a></p>-->
-      </footer>
-    </article>
-    {% endfor %}
-
-
-    <!-- Pagination links -->
-    <div class="pagination">
-      {% if paginator.previous_page %}
-      <a id="route" href="{{ paginator.previous_page_path }}" class="previous"><i class="typcn typcn-chevron-left-outline" style="font-size: 14px;
-      position: relative;"></i> Previous</a>
-      {% else %}
-      <!--<span class="previous" align="left" style="color: #cccccc;"><i class="typcn typcn-chevron-left-outline" style="    font-size: 14px; position: relative; "></i> Previous</span>-->
-      {% endif %}
-
-      {% if paginator.next_page %}
-      <a id="route" href="{{ paginator.next_page_path }}" class="next">Next <i class="typcn typcn-chevron-right-outline" style="font-size: 14px;
-      position: relative;"></i></a>
-      {% else %}
-      <!--<span class="next" align="right" style="color: #cccccc;">Next <i class="typcn typcn-chevron-right-outline" style="    font-size: 14px; position: relative; "></i></span>-->
-      {% endif %}
+<!-- begin hero -->
+{% if site.hero.image %}
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__image">
+      <img class="lazy" data-src="{{site.baseurl}}{{site.hero.image}}" alt="{{site.hero.title}}">
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__title">{{site.hero.title}}</h1>
+      <p class="hero__desc">{{site.hero.description}}</p>
     </div>
   </div>
+</section>
+{% else %}
+<section class="hero-without-image">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1 class="hero__title">{{site.hero.title}}</h1>
+      <p class="hero__desc">{{site.hero.description}}</p>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- begin hero -->
 
-  {% include widgets.html %}
+{% include featured-posts.html %}
 
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <div class="container__inner">
+        <div class="row grid">
+          {% if site.posts.size > 0 %}
+            {% for post in paginator.posts %}
+              {% include article-content.html %}
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
+
+{% include pagination.html %}

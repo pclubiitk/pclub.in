@@ -1,0 +1,91 @@
+{% for post in site.posts %}
+  {% if post.featured == true %}
+    {% assign is-featured = true %}
+  {% endif %}
+{% endfor %}
+
+{% if is-featured == true %}
+<!-- begin featured post -->
+<section class="featured-post">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="container__inner">
+          <div class="row">
+            {% for post in site.posts %}
+            {% if post.featured == true %}
+            <div class="article col col-4 col-d-6 col-t-12 animate">
+
+              <div class="article__inner">
+                {% if post.featured %}
+                <span class="featured-post ion ion-ios-star-outline"></span>
+                {% endif %}
+
+                
+                <a class="article__image" href="{{post.url | prepend: site.baseurl}}">
+                  {% if post.image.url %}
+                  <img src="{{post.image.url}}" alt="{{post.title}}">
+                  {% else %}
+                  <img src="/images/bg.jpg" alt="{{post.title}}">
+                  {% endif %}
+                </a>
+                
+
+                <div class="article__content">
+
+                  <div class="article__meta">
+                    <span class="article__minutes">
+                      {% assign words = post.content | number_of_words %}
+                      {% if words < 360 %}
+                        1 min read
+                      {% else %}
+                        {{ words | divided_by:180 }} min read
+                      {% endif %}
+                    </span>
+                    <time class="article__date"
+                      datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}{{ post.date | date: date_format }}</time>
+                  </div>
+
+                  <h2 class="article__title">
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  </h2>
+
+                  <p class="article__excerpt">{{ post.description }}</p>
+
+                  <div class="article__bottom">
+
+                    {% if site.author.avatar %}
+                    <div class="article__author">
+                      <a href="{{site.baseurl}}/about/" aria-label="{{site.author.name}}"><img class="article__author-image" src="{{site.baseurl}}{{site.author.avatar}}" alt="{{site.author.name}}'s Picture"></a>
+                    </div>
+                    {% endif %}
+
+                    <div class="article__bottom-meta">
+                      {% if site.author.name %}
+                        <a href="{{site.baseurl}}/about/" class="article__author-link">{{site.author.name}}</a>
+                      {% endif %}
+                      {% if post.tags.size >= 1 %}
+                      <span>in</span>
+                      <span class="article-tags">
+                        {% for tag in post.tags %}
+                          <a href="{{ site.baseurl }}/tag/{{ tag | downcase}}" class="article__tag">{{ tag }}</a>
+                        {% endfor %}
+                      </span>
+                      {% endif %}
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end featured post -->
+{% endif %}

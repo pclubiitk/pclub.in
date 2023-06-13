@@ -12,8 +12,7 @@ tags:
 categories:
 - competitive
 
-image:
-  url: 
+
 ---
 Andrew recently bought a new motorbike and wants to try it out on the roads of TreeLand. As the name suggests, Treeland is in the shape of a Tree, i.e, **it is an undirected acyclic graph**. Treeland has _n_ junctions connected by _n-1_ roads. It is guaranteed that treeland is connected, i.e, any two junctions are reachable from each other. Andrew is at junction number 1. Andrew wants to ride his bike on a valid path from junction number 1 to another junction (he may even come back to junction number 1). A valid path is one which visits any given junction atmost 2 times.  
 

@@ -1,48 +1,98 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+#-------------------------------
+# General Site Settings
+title: #Programming Club IITK
+logo: '/images/pclub.png' # You can add own logo. For example '/images/logo.png'.
+description: The Programming Club, IIT Kanpur
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "" # The base hostname & protocol for your site, e.g. http://example.com
 
-# Site settings
-title: Programming Club IIT Kanpur
-email: pclubiitk@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  The Programming Club, IIT Kanpur
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pclub.in" # the base hostname & protocol for your site
-twitter_username: pclubiitk
-github_username:  pclubiitk
-facebook_username:  pclubiitk
-disqus_id: 
-timezone: Etc/UTC
+collections:
+  - medium_posts
 
-# Gems
-plugins: 
-- jekyll-archives
-- jekyll-paginate
+#-------------------------------
+# Author Settings
+author:
+  name: Programming Club IITK
+  avatar: '/images/pclub.png'
 
-# Config
-paginate: 5
-paginate_path: "page/:num"
+
+#-------------------------------
+# Hero Settings
+hero:
+  title: Programming Club IIT Kanpur
+  description: Talk is cheap, Show us the code.
+  image: '/images/bg.jpg'
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: pclubiitk@gmail.com # Add your email for contact form
+  description: Norlin comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form
+
+# NOTE
+# Norlin theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+
+
+#-------------------------------
+# Footer section
+# Example of adding a new link to the footer - {icon: "ion-logo-github", link: "https://github.com"}
+# Other icons can be found at https://ionicons.com/v4/
+social:
+- {icon: "ion-logo-twitter", link: "https://twitter.com/pclubiitk"}
+- {icon: "ion-logo-youtube", link: "https://www.youtube.com/@pclubiitk"}
+- {icon: "ion-logo-github", link: "https://github.com/pclubiitk"}
+- {icon: "ion-logo-linkedin", link: "https://www.linkedin.com/in/pclubiitk"}
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: https-pclub-in # Add your shortname for Disqus Comment. For example anvodstudio-demo
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
+
+
+#-------------------------------
+# Newsletter
+mailchimp: disable # To enable the mailchimp form, use the value 'enable'. To disable the form, leave the field blank.
+mailchimp-identifier: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+
+#-------------------------------
 # Build settings
 markdown: kramdown
-# Exclude dirs
-exclude: [vendor]
+permalink: pretty
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll/tagging
 
-# Archive
-jekyll-archives:
-  enabled: []
-  layout: 'archive'
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
-
-# Kramdown
 kramdown:
-  input: GFM
-  hard_wrap: false
+  parse_block_html: true
+
+paginate: 8
+paginate_path: "/page/:num"
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  
+  

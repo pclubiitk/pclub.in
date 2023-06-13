@@ -10,7 +10,8 @@ tags:
 - wocproject
 categories:
 - wocproject
-
+image:
+  url: /images/music.png
 ---
 
 #### Description

@@ -9,6 +9,8 @@ tags:
 - bash
 categories:
 - tutorial
+image:
+    url: https://www.tecmint.com/wp-content/uploads/2017/09/List-Processes-in-Standard-Format.png
 ---
 
 # Managing Processes in Linux

@@ -1,0 +1,54 @@
+/* Buttons */
+.button {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  font: inherit;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  -webkit-appearance: none;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+  }
+
+  &--primary {
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    background-color: $blue-dark;
+    &:hover {
+      color: $dark;
+      background-color: darken($brand-color, 5%);
+    }
+  }
+
+  &--middle {
+    position: relative;
+    padding: 24px 48px;
+    width: 100%;
+    max-width: 412px;
+    font-family: $heading-font-family;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    background-color: $dark;
+
+    &:hover {
+      background-color: $blue-dark;
+    }
+  }
+
+  &--big {
+    display: block;
+    width: 100%;
+  }
+}

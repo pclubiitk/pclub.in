@@ -12,8 +12,7 @@ tags:
 categories:
 - competitive
 
-image:
-  url:
+
 ---
 You run a chemical laboratory which contains **N** beakers containing certain amount of solutions. The i<sup>th</sup> beaker contains a<sub>i</sub> ml of a reactant solution. There also **M** chemists waiting outside your laboratory. Each chemist has a parchment of paper which has 3 integers written on it. The i<sup>th</sup> chemist’s parchment contains 3 integers of the form: **l<sub>i</sub> r<sub>i</sub> x<sub>i</sub>**
 

@@ -12,8 +12,7 @@ tags:
 categories:
 - competitive
 
-image:
-  url: 
+
 ---
 You have a tree _T_ (an undirected connected graph containing no cycles) of _N_ nodes rooted at node number *1*. Each node is painted either **White** or __Black__ . You intend to gift this tree to your girlfriend . However , your girlfriend is rather stubborn and will accept it only if it matches the color scheme the one that she has chosen .  
 

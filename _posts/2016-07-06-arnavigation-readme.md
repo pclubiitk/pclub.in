@@ -10,6 +10,10 @@ tags:
 - augmented_reality
 categories:
 - project
+
+summary: "Our aim was to design a navigation app which instead of showing top view of map shows directions on real time camera feed."
+image:
+    url: https://www.la.mercedes-benz.com/en/passengercars/mercedes-benz-cars/models/eqc/comfort/comfort-gallery/augmented-video/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide_59cb/image.MQ6.12.20210705200406.jpeg
 ---
 
 # [AR Navigation]
@@ -20,6 +24,8 @@ We tried out experimenting Augmented Reality as a summer project. Our aim was to
 * The users will not have to match roads and adjust map to understand where to go
 * Since it shows real time camera feed the user can remain in real world while looking for directions preventing accidents
 * Received the **Best Programming Club Project** during the Science & Technology Summer Camp 2016.
+
+![image](https://www.la.mercedes-benz.com/en/passengercars/mercedes-benz-cars/models/eqc/comfort/comfort-gallery/augmented-video/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide_59cb/image.MQ6.12.20210705200406.jpeg)
 
 ### Approach to inculcate AR in android app
 Unlike infrared sensors we didn't have any means to calculate the exact distance of the real time objects in the mobiles so we switched to MATHEMATICS for our answers. OH! Technical Arts also played a key role in devising our strategy.

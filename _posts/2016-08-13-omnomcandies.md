@@ -12,8 +12,7 @@ tags:
 categories:
 - competitive
 
-image:
-  url: 
+
 ---
 There are **N** boxes. The i<sup>th</sup> box contains a<sub>i</sub> candies. The frog Om Nom is sitting in box number 1. Om Nom wants to collect as many candies as he can. However, Om Nom jumps in a peculiar fashion. Om Nom can jump from box number **j** to box number **i** only if _j divides i_. Whenever Om Nom lands in a box, he collects all the candies in that box. You have to report the maximum number of Candies that Om Nom can collect for all i from 1 to N if i is the last box that Om Nom visits.See the samples for more details.    
 

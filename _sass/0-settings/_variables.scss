@@ -1,0 +1,52 @@
+// *****************
+// Global Variables
+// *****************
+
+// Spaces
+$base-spacing-unit: 20px;
+
+// Transition
+$global-transition: all .2s;
+
+
+// *****************
+// Color Variables
+// *****************
+$brand-color: #ff7b7b;
+$dark: #09080f;
+$blue-dark: #17151E;
+$gray: #aaa;
+$light-gray: #eee;
+$white: #fff;
+
+// Body Color
+$text-color: $light-gray;
+
+// Background Colors
+$background-color: #0f0e15;
+
+
+// *****************
+// Typography
+// *****************
+$base-font-size: 18px;
+$base-font-style: normal;
+$base-font-variant: normal;
+$base-font-weight: normal;
+$base-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+$base-line-height: 1.7;
+
+// Headings
+$heading-font-weight: 900;
+$heading-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+$heading-color: $text-color;
+
+$font-size-h1:  36px;
+$font-size-h2:  28px;
+$font-size-h3:  24px;
+$font-size-h4:  20px;
+$font-size-h5:  18px;
+$font-size-h6:  16px;
+
+$heading-line-height: 1.4em;
+$heading-letter-spacing: -1px;

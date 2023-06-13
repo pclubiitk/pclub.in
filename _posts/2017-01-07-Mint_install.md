@@ -5,6 +5,8 @@ date: 2017-01-07 01:15:00 +530
 author: Sayash Kapoor	  
 subsection: installfest17
 hidden: true
+image:
+    url: http://www.tecmint.com/wp-content/uploads/2016/07/Preparing-to-Install-Linux-Mint-18.png
 ---
 
 1. Place Linux Mint DVD or USB bootable image in the appropriate drive and reboot the computer in order to start with Linux Mint 18 installation.

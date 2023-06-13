@@ -1,0 +1,105 @@
+/* Search */
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  background-color: $dark;
+  transition: all 0.5s ease-in-out;
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    -webkit-backdrop-filter: saturate(180%) blur(24px);
+    backdrop-filter: saturate(180%) blur(24px);
+    background-color: rgba($dark, .9);
+  }
+}
+
+.search__box {
+  position: relative;
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 140px;
+
+  .search__close {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    line-height: 1;
+    color: rgba($text-color, .5);
+    transition: all .25s;
+    cursor: pointer;
+    &:hover {
+      color: $text-color;
+    }
+  }
+
+  @media only screen and (max-width: $tablet) {
+    width: 80%;
+    padding-top: 100px;
+  }
+  @media only screen and (max-width: $mobile) {
+    width: 90%;
+  }
+}
+
+.search__group {
+  position: relative;
+  margin-bottom: 64px;
+
+  .search__text {
+    width: 100%;
+    height: auto;
+    padding: 16px 24px;
+    font-family: $heading-font-family;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 42px;
+    border-radius: 8px;
+    border: 4px solid rgba($text-color, .1);
+    transition: all .3s;
+    color: $white;
+    background-color: transparent;
+
+    &::-webkit-input-placeholder {
+      font-weight: 900;
+      color: rgba($text-color, .8);
+    }
+    &::placeholder {
+      font-weight: 900;
+      color: rgba($text-color, .8);
+    }
+    &::-ms-clear {
+      display: none;
+    }
+    &:focus {
+      color: $text-color;
+      background: $dark;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 26px;
+    }
+  }
+}
+
+.search-results-list {
+  .no-results {
+    width: 100%;
+    list-style: none;
+    h3 {
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+}

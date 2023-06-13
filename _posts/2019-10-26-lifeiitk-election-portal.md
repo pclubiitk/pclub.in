@@ -10,7 +10,8 @@ tags:
 - wocproject
 categories:
 - wocproject
-
+image:
+  url: /images/election.png
 ---
 
 # [Life@IITK](https://github.com/life-iitk)

@@ -1,96 +1,36 @@
+<!-- begin footer-widgets -->
+{% if page.title != "Contact Us" %}
+<section class="footer-widgets">
+  <div class="container">
+    <div class="row">
+      {% include footer-widgets/widget-recent-posts.html %}
+      {% include footer-widgets/widget-tag-cloud.html %}
+      {% include footer-widgets/widget-subscribe.html %}
+    </div>
+  </div>
+</section>
+{% else %}
+<section class="footer-widgets">
+  <div class="container">
+    <div class="row">
+      {% include footer-widgets/widget-subscribe.html %}
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- end footer-widgets -->
 
-<footer class="site-footer">
-  <div class="wrapper">
-    <h2 class="footer-heading">{{ site.title }}</h2>
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.description }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          <li>Send us Pull Requests to this website <a href="https://github.com/pclubiitk/pclub.in" target="_blank">here</a></li>
-        </ul>
-      </div>
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-          
-          {% if site.facebook_username %}
-          <li>
-            {% include icon-facebook.html username=site.facebook_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-      <div class="footer-col footer-col-3">
-        <p style="font-size: xx-small;">Design by Spaghetti</p>
+<!-- begin footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+      <div class="footer__inner">
+        <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.title}}</a>Developed & Maintained by <a href="https://pclub.in">Programming Club IITK</a>.</div>
+        {% include social-links.html %}
+        </div>
       </div>
     </div>
   </div>
 </footer>
-
-<!-- Loading JavaScript -->
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery-preload.js"></script>
-<script type="text/javascript" src="/assets/js/jquery-tooltipster.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery-autocomplete.js"></script>
-<script type="text/javascript" src="/assets/js/responsive_waterfall.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
-
-<script>
-$(document).ready(function() {
-    "/" != location.pathname ? $('.trigger a[href^="/' + location.pathname.split("/")[1] + '"]').addClass("active") : $(".none a:eq(0)").addClass("active")
-}), $(document).ready(function() {
-    $(".tooltip-right").tooltipster({
-        contentAsHTML: !0,
-        position: "right"
-    })
-}), $(document).ready(function() {
-    $(".tooltip-left").tooltipster({
-        contentAsHTML: !0,
-        position: "left"
-    })
-});
-$(document).ready(function() {
-    $(".menu-icon").click(function() {
-        $(".trigger").toggle()
-    })
-}), Pace.on("done", function() {
-    $(".pacel").hide()
-}), $(function() {
-    $("img").lazyload({})
-});
-var options = {
-    url: "/gblk.json",
-    getValue: "title",
-    list: {
-        match: {
-            enabled: !0,
-            maxNumberOfElements: 5
-        }
-    },
-    template: {
-        type: "links",
-        fields: {
-            link: "url"
-        }
-    },
-    theme: "square"
-};
-$("#countries").easyAutocomplete(options);
-var waterfall = new Waterfall({
-    containerSelector: ".wf-container",
-    boxSelector: ".wf-box",
-    minBoxWidth: 180
-});
-</script>
+<!-- end footer -->

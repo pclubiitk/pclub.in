@@ -1,0 +1,51 @@
+/* Social Links */
+.social {
+  text-align: center;
+
+  .social__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social__item {
+    display: inline-block;
+    margin-left: 8px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 8px;
+    color: $white;
+    background-color: $blue-dark;
+    &:hover {
+      color: $dark;
+      background-color: $brand-color;
+    }
+  }
+
+  @media only screen and (max-width: $desktop) {
+    margin-bottom: 5px;
+
+    .social__item {
+      margin-bottom: 10px;
+    }
+
+    .social__link {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 16px;
+    }
+  }
+}

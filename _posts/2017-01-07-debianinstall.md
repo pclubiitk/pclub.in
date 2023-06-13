@@ -5,6 +5,8 @@ date: 2017-01-07 00:57:00 +530
 author: milindl
 subsection: installfest17
 hidden: true
+image:
+    url: https://i.imgur.com/LqVGmO0.png
 ---
 
 

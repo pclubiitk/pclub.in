@@ -1,0 +1,36 @@
+/* Tags Page */
+.archive-box {
+  position: relative;
+  margin: 50px 0 80px;
+  text-align: center;
+  @media only screen and (max-width: $mobile) {
+    margin: 20px 0 50px;
+  }
+}
+
+.archive-meta {
+  font-size: 16px;
+  color: rgba($text-color, .6);
+}
+
+.archive-title {
+  position: relative;
+  margin: 0;
+  font-size: 47px;
+  line-height: 57px;
+  @media only screen and (max-width: $mobile) {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+
+.archive-description {
+  max-width: 600px;
+  margin: 10px auto 0;
+  font-size: 16px;
+  line-height: 32px;
+  @media only screen and (max-width: $mobile) {
+    margin: 5px auto 0;
+    line-height: 28px;
+  }
+}

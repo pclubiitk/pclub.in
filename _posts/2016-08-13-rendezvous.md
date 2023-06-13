@@ -12,8 +12,7 @@ tags:
 categories:
 - competitive
 
-image:
-  url: 
+
 ---
 The city Manyonok has **N** substations . The substation numbered 1 houses the mayor Alisa. Each substation has a chief who is in charge of the functioning of that particular substation.  Due to an emergency the Alisa has decided to call all her chiefs to substation number 1.   
 

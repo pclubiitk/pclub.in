@@ -14,7 +14,7 @@ categories:
 - tutorial
 
 image:
-  url:
+  url: /images/html5.png
 ---
 # HTML5 Game Development
 For all those gaming nerds out there, there isn't a better way to develop your gaming skills but to start from scratch of how a game works and to build your own one!

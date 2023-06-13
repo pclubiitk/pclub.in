@@ -1,0 +1,262 @@
+/* Base */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  &.is-in {
+    &::after {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  &::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $dark;
+    z-index: 999;
+    transition: 1s;
+  }
+  input, textarea {
+    border: 1px solid $light-gray;
+    outline: none;
+  }
+  
+  @media only screen and (max-width: $mobile) {
+    font-size: 16px;
+    line-height: 29px;
+  }
+}
+
+::placeholder {
+  color: $gray;
+}
+
+*::selection {
+  color: $white;
+  background-color: rgba($brand-color, 0.7);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  letter-spacing: $heading-letter-spacing;
+  color: $heading-color;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+h5 {
+  font-size: $font-size-h5;
+}
+
+h6 {
+  font-size: $font-size-h6;
+}
+
+blockquote {
+  position: relative;
+  padding: 34px 20px 34px 64px;
+  margin-bottom: 0;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 900;
+  color: $white;
+  
+  &:before {
+    content: '\201C';
+    position: absolute;
+    top: 0.59em;
+    left: -0.01em;
+    font-size: 4em;
+    color: $brand-color;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+  
+  cite {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: $text-color;
+    &:before {
+      content: '\2014' '\00a0';
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 20px 20px 20px 48px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+pre {
+  overflow: auto;
+  padding: 20px;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+code[class*=language-], pre[class*=language-] {
+  white-space: pre-wrap;
+  word-break: break-all;
+  line-height: inherit;
+}
+
+img, 
+.zoom-img-wrap {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  &+em {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 0;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1;
+    text-align: center;
+    color: $text-color;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  transition: $global-transition;
+  &:hover {
+    color: $brand-color;
+  }
+}
+
+hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 64px 0;
+  border: 0;
+  background: $dark;
+}
+
+.table-container {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  font-size: 12px;
+  color: rgba($text-color, .7);
+  width: 100%;
+  border-width: 1px;
+  border-color: $dark;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: 12px;
+  font-size: 16px;
+  text-align: left;
+  border: 1px solid $dark;
+  color: $white;
+  background-color: $blue-dark;
+}
+
+table tr {
+  background-color: $dark;
+  transition: all .3s ease;
+  &:nth-child(even) {
+    background-color: transparent;
+  }
+}
+
+table td {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid $dark;
+}
+
+table tr:hover {
+  color: $white;
+}
+
+.gallery-box {
+  margin-bottom: 30px;
+  em {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 0;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1;
+    text-align: center;
+    color: $text-color;
+    a {
+      border-bottom: 2px solid rgba($text-color, .1);
+      &:hover {
+        border-color: $brand-color;
+        color: $text-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.lazy {
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.lazy.loaded {
+  opacity: 1;
+}

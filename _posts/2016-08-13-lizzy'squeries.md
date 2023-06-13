@@ -12,8 +12,7 @@ tags:
 categories:
 - competitive
 
-image:
-  url: 
+
 ---
 Lizzy's boss has made her in charge of the Palindrome Accentuator(abbreviated as PA) . Initially you have the string s . The PA does the following 2 operations on the string:  
 

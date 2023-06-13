@@ -10,7 +10,8 @@ tags:
 - wocproject
 categories:
 - wocproject
-
+image:
+  url: https://thumbs.dreamstime.com/b/street-map-113326.jpg
 ---
 
 #### Description

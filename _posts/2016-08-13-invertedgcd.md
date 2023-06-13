@@ -12,8 +12,7 @@ tags:
 categories:
 - competitive
 
-image:
-  url: 
+
 ---
 Given an array a of N numbers , you have to find the number of pair of indices _i_ and _j_ that satisfy the following relation:    
 1. i < j       

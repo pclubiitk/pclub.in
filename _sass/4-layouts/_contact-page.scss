@@ -1,0 +1,27 @@
+/* Contact Page */
+.form__group {
+  margin-bottom: 20px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 20px;
+  font-family: $heading-font-family;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: $light-gray;
+  background: $blue-dark;
+  transition: border-color .2s ease-in-out;
+  &::placeholder {
+    color: $white;
+  }
+  &:focus {
+    border-color: $brand-color;
+  }
+}
+
+textarea {
+  resize: vertical;
+}

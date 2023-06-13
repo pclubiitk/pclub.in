@@ -1,22 +1,8 @@
-pclub.in
-========
+# pclub-web-revamp
+Programming Club IIT Kanpur Website Revamp
 
-[![Build Status](https://travis-ci.org/pclubiitk/pclub.in.svg?branch=master)](https://travis-ci.org/pclubiitk/pclub.in)
+### Deployment
 
-Source for Jekyll based static-website cum blog for the *Programming Club* IIT Kanpur.
-Based off: spaghetti.ga
+To run the theme locally,clone and navigate to the theme directory and run `bundle install` to install the dependencies, then run `bundle exec jekyll serve` to start the Jekyll server. Check `http://127.0.0.1:4000/` now.
 
-## Test plan
-First off, you'll need Ruby. Get `gem` with your package manager.
-You should not be installing Jekyll directly, since that's likely to break things.
-Instead, install bundle with 
-```
-gem install bundle
-```
-
-Then, execute these in the repo directory:
-```
-bundle install --path vendor/bundle
-bundler exec jekyll server --port 8080 --host 0.0.0.0
-```
-Here the `--path` flag is optional to keep your system's packages sane.
+I would recommend checking the [Official Documentation](https://jekyllrb.com/docs/) page on Jekyll website.

@@ -11,7 +11,8 @@ tags:
 categories:
 - probabilistic machine learning
 - generative networks
-
+image:
+  url: https://i.ytimg.com/vi/d0W_Ab-aZGo/maxresdefault.jpg
 ---
 
 

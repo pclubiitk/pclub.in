@@ -10,7 +10,8 @@ tags:
 - wocproject
 categories:
 - wocproject
-
+image:
+  url: /images/blog.jpg
 ---
 
 #### Description

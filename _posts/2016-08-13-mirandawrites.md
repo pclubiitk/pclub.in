@@ -12,8 +12,7 @@ tags:
 categories:
 - competitive
 
-image:
-  url: 
+
 ---
 Miranda lives in a city containing N junctions and M bidirectional roads between some pairs of these junctions.Miranda is a programming enthusiast - though in  her spare time she does make time for a bit of creative writing . She takes part in Individual Creative Penning Contest organized by the Annual Cultural Melange (ACM ICPC) . The competition is on Sunday and it is already Saturday . Miranda realizes she needs to buy K items for her competition tomorrow . Each of these K items can be found in exactly one junction in her city.  
 

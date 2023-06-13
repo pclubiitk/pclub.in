@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="row">
+    <div class="col col-8 col-d-10 col-m-12 push-m-0 push-d-1 push-2">
+      <div class="archive-box">
+        <span class="archive-meta">{{ site.tags[page.tag].size }} {% if site.tags[page.tag].size < 2 %}post {% else %}posts{% endif %} tagged</span>
+        <h1 class="archive-title">{{ page.tag }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-d-10 col-m-12 push-m-0 push-d-1">
+      <div class="container__inner">
+        <div class="row grid">
+          {% for post in page.posts %}
+            {% include article-content.html %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

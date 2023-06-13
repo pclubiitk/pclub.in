@@ -12,8 +12,7 @@ tags:
 categories:
 - competitive
 
-image:
-  url: 
+
 ---
 Our favorite truck driver Ramesh has become quite bored driving trucks.So to make his long tedious journey more enjoyable he decides to do the following mental activity - he chooses a number N , and finds the sum of all i such that   
 

@@ -13,7 +13,8 @@ categories:
 
 image:
   url: https://github.com/11000011/Smart-Mirror/raw/gh-pages/img/sample.png
-
+summary: "It displays
+the current weather, your schedule for the day, notifications and performs facial recognition from your mobile"
 ---
 
 # [Smart Mirror](http://11000011.github.io/Smart-Mirror/)

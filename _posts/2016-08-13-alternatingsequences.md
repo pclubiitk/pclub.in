@@ -12,8 +12,7 @@ tags:
 categories:
 - competitive
 
-image:
-  url: 
+
 ---
 Given an array **a** of **N** integers a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ...  a<sub>N</sub> you have to find the longest alternating sub-sequence of this array .  
 

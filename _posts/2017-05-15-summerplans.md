@@ -10,10 +10,10 @@ tags:
 - pclub
 
 image:
-  url: /assets/image/summer.png
+  url: https://raw.githubusercontent.com/pclubiitk/pclub.in/master/assets/image/summer.png
 ---
 <center>
-  <img src="/assets/image/summer.png" style="width: 70%;">
+  <img src="https://raw.githubusercontent.com/pclubiitk/pclub.in/master/assets/image/summer.png" style="width: 70%;">
 </center>
 
 Hello everyone! 

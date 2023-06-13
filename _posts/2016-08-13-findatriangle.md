@@ -12,8 +12,7 @@ tags:
 categories:
 - competitive
 
-image:
-  url: 
+
 ---
 You are given **N** sticks, the length of the i<sup>th</sup> stick being a<sub>i</sub>. As your professor is very interested in triangles he gives you a problem:
 From the N given sticks, choose **3** sticks that form a triangle. If there are many such triangles, choose the sticks in such a way such that the perimeter of the triangle formed is maximized. If there are many such triangles output the one that maximizes the largest side. If still there are many then output one that maximizes the second side. If still there are many output any one of them.  

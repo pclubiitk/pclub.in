@@ -12,7 +12,7 @@ categories:
 - tutorial
 
 image:
-  url: http://sitehostingfaqs.com/wp-content/uploads/2013/03/website-browser-icon.png
+  url: /images/globe.jpeg
 
 ---
 
