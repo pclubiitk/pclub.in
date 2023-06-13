@@ -19,7 +19,7 @@ disqus_id:
 timezone: Etc/UTC
 
 # Gems
-gems: 
+plugins: 
 - jekyll-archives
 - jekyll-paginate
 
